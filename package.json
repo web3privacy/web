@@ -1,0 +1,20 @@
+{
+  "name": "w3pn-web",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "contribs": "deno run --allow-all utils/contributors.js"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.0.2",
+    "@rollup/plugin-yaml": "^4.1.2",
+    "astro": "^3.4.3",
+    "cfonts": "^3.2.0",
+    "tailwindcss": "^3.3.5"
+  }
+}

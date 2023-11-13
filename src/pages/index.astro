@@ -1,0 +1,81 @@
+---
+
+import BaseLayout from '../layouts/base.astro';
+import * as config from '../config.yaml';
+import contributors from '../contributors.json';
+
+---
+
+<BaseLayout title="Home Page" banner="true">
+
+	<div class="middle-pane-big">
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w3pn-hp-grid gap-2 mt-2">
+			<div>a</div>
+			<div>b</div>
+			<div>c</div>
+		</div>
+	</div>
+
+
+	<div class="middle-pane-medium mt-10">
+		<div class="grid grid-cols-1 xl:grid-cols-2 gap-16">
+			<div>
+				<h1>Our mission</h1>
+				<div set:html={config.landing.mission}></div>
+				<div class="mt-8">
+					<a class="button inverted" href={config.links.manifesto}><button>Read manifesto</button></a>
+				</div>
+			</div>
+			<div>
+				<h1>Topics</h1>
+				<div class="columns-2 uppercase text-sm w3pn-topics">
+					{config.landing.topics.map((topic) => (
+						<div>{topic}</div>
+					))}
+				</div>
+			</div>
+		</div>
+		<div class="mt-20">
+			<h1>Follow us</h1>
+			<div class="w3pn-wgrid">
+				{config.landing.follow.map((item) => (
+					<div>
+						<div><div class="icon" class:list={[item.ico || ""]}></div></div>
+						<div class="title"><a href={item.url} target="_blank">{item.name}</a></div>
+						<div>{item.text}</div>
+					</div>
+				))}
+			</div>
+		</div>
+		<div class="mt-10">
+			<h1>Coordination</h1>
+			<div class="w3pn-wgrid">
+				{config.landing.coord.map((item) => (
+					<div>
+						<div><div class="icon" class:list={[item.ico || ""]}></div></div>
+						<div class="title"><a href={item.url} target="_blank">{item.name}</a></div>
+						<div>{item.text}</div>
+					</div>
+				))}
+			</div>
+		</div>
+
+		<div class="mt-16">
+			<h1>Join the Community</h1>
+			<div>{config.landing.community}</div>
+
+			<div class="flex gap-4 flex-wrap my-14 items-center">
+				{contributors.map((contrib) => (
+					<div><a href={contrib.html_url} target="_blank" title={contrib.login}><img src={contrib.avatar_url} class="w-16 rounded-full aspect-square"></a></div>
+				))}
+			</div>
+
+			<div class="flex gap-10 pt-4">
+				<a href="" class="button inverted"><button>Enter the community</button></a>
+				<a href="" class="button inverted"><button>Become the contributor</button></a>
+				<a href="" class="button inverted"><button>Become the partner</button></a>
+			</div>
+		</div>
+	</div>
+
+</BaseLayout>

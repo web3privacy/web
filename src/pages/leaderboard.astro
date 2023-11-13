@@ -1,0 +1,38 @@
+---
+
+import BaseLayout from '../layouts/base.astro';
+import contributors from '../contributors.json';
+
+---
+
+<BaseLayout title="Leaderboard">
+
+	<div class="middle-pane-medium mt-10">
+        <table class="w3pn-leaderboard-table w-1/2">
+            <thead>
+                <tr>
+                    <th align="" class="pb-4 uppercase" colspan="2">Contributor</th>
+                    <th align="left" class="pb-4 uppercase"># Contributions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {contributors.map((contrib) => (
+                    <tr>
+                        <td align="right" class="py-2 px-4"><div class="w-16 h-16"><img src={contrib.avatar_url} class="rounded-full" /></div></td>
+                        <td class="pl-6 pr-16"><a href={contrib.html_url} target="_blank" class="hover:underline">{contrib.login}</a></td>
+                        <td class="text-white pl-10 text-lg" align="left">{contrib.contributions}</td>
+                    </tr>
+                ))}
+            </tbody>
+        </table>
+	</div>
+
+</BaseLayout>
+
+<style>
+
+.w3pn-leaderboard-table tbody tr:nth-child(2n+1) {
+    background-color: #0f0f0f;
+}
+
+</style>

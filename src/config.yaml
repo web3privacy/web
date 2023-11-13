@@ -1,0 +1,83 @@
+title: Web3Privacy Now
+links:
+  docs: https://docs.web3privacy.info/
+  manifesto: https://docs.web3privacy.info/manifesto
+header:
+  menu:
+    - name: Home
+      url: /
+    - name: Projects
+      url: /projects
+    - name: Events
+      url: /events
+    - name: Talks
+      url: /talks
+    - name: Articles
+      url: /articles
+    - name: Leaderboard
+      url: /leaderboard
+    - name: Docs
+      url: https://docs.web3privacy.info
+    #- name: Manifesto
+    #  url: /manifesto
+footer:
+  menu:
+    - title: "@web3privacy"
+      ico: twitter
+      url: https://twitter.com/web3privacy
+    - title: GitHub
+      ico: github
+      url: https://github.com/web3privacy
+    - title: Matrix
+      url: https://matrix.web3privacy.info
+hero:
+  text: |
+    Privacy advocates worldwide are coming together to discuss how to mainstream privacy within the Web3 industry. So it will become a cultural phenomenon embodying both decentralisation & anti-surveillance capitalism practices.
+landing:
+  mission: |
+    To make humans gain control over their privacy by utilizing Web3 stack. So privacy would become a conscious choice (active lifestyle) & be accessible to everyone worldwide.
+    <br><br>
+    Privacy advocates worldwide are coming together to discuss how to mainstream privacy within the Web3 industry. So it will become a cultural phenomenon embodying both decentralisation.
+  topics:
+    - Identity
+    - Private Messaging
+    - Regulation vs. Privacy
+    - On-chain Privacy
+    - Privacy wars
+    - Privacy activism
+    - Network states
+    - "R&D: ZK, MPC, THE"
+    - Fullstack Privacy
+    - Lunarpunk vs. Solarpunk
+    - Human rights DAO
+  follow:
+    - name: "@web3privacy"
+      url: https://twitter.com/web3privacy
+      text: 800+ followers
+      ico: twitter
+    - name: "@web3privacy.info"
+      url: https://bsky.app/profile/web3privacy.info
+      text: Bluesky
+    - name: Mirror
+      url: https://mirror.xyz/0x0f1F3DAf416B74DB3DE55Eb4D7513a80F4841073/
+      text: Articles, reports, etc.
+    - name: YouTube
+      url: https://youtube.com/@Web3PrivacyNow/
+      text: Videos
+  coord:
+    - name: Documentation
+      url: https://docs.web3privacy.info
+      text: About our initiative
+    - name: GitHub
+      url: https://github.com/web3privacy
+      text: Source-code repositories
+      ico: github
+    - name: Matrix
+      url: https://matrix.web3privacy.info
+      text: Real-time communication
+    - name: Forum
+      url: https://forum.web3privacy.info
+      text: Community discussion
+      ico: forum
+  community: |
+    Our aim with gatherings is to bring together key players, different perspectives, skills and visions. We aggregate tech and non tech people, key players and contributors, builders, researchers, philosophers, lawyers, policymakers, activists, local communities and general public.

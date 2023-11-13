@@ -1,0 +1,90 @@
+---
+import * as config from '../config.yaml';
+import '../styles/base.css';
+const {banner, title} = Astro.props;
+
+import cfonts from 'cfonts';
+
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{config.title}</title>
+		<link
+			rel="preload"
+			href="/fonts/archivo-regular-latin-ext.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+	  	/>
+		<link
+		  rel="preload"
+		  href="/fonts/archivo-regular-latin.woff2"
+		  as="font"
+		  type="font/woff2"
+		  crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/fonts/major-mono-display-v13-latin-regular.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+	</head>
+	<body class="bg-black text-white">
+		<div class="w-full z-10" class:list={[banner ? "h-[600px]" : "pb-6"]} id={banner ? "intro" : "no-intro"}>
+			<header class="flex pt-6 middle-pane-big">
+				<div class="w-40">
+					<img src="/logo.svg" class:list={["w-40", banner ? "hidden" : "block"]} />
+				</div>
+				<div class="flex gap-8 mt-2 ml-10">
+					{config.header.menu.map((menuItem) => (
+						<div class="uppercase hover:underline" class:list={[menuItem.url.match(/^http/) ? "external" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]}>
+							<a href={menuItem.url} class="" target={menuItem.url.match(/^http/) ? '_blank' : '_self'}>{menuItem.name}</a>
+						</div>
+					))}
+				</div>
+			</header>
+			{banner &&
+				<div class="w-full h-full flex mt-20 sm:mt-32 middle-pane-medium">
+					<div>
+						<img src="/logo.svg" class="w-64 sm:w-72 lg:w-80 xl:w-96" />
+						<div class="text-left mt-10">
+							{config.hero.text}
+						</div>
+						<div class="mt-6">
+							<a class="button" href={config.links.docs}><button>About Web3Privacy Now</button></a>
+						</div>
+					</div>
+				</div>
+			}
+			{!banner &&
+				<div class="middle-pane-medium mt-14">
+					<div class="leading-none text-[8px] text-white"><pre>{cfonts.render(title + ' ', { font: '' }).string}</pre></div>
+				</div>
+			}
+		</div>
+
+		<slot />
+
+		<div class="border border-t-2 border-b-0 border-l-0 border-r-0 border-[#0f0f0f] mt-20 pt-10 pb-10">
+			<div class="middle-pane-big">
+				<div class="flex gap-10 text-lg items-center" id="footerMenu">
+					<div class="grow">
+						<img src="/logo.svg" class="w-44" />
+					</div>
+					{config.footer.menu.map((item) => (
+						<div class="flex gap-4 items-center menuItem">
+							<div class="icon small opacity-50" class:list={[item.ico]}></div>
+							<div class="text-white hover:underline"><a href={item.url}>{item.title}</a></div>
+						</div>
+					))}
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
