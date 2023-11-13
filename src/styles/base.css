@@ -58,7 +58,7 @@
 
   #intro {
 		background-image: url(/hp-bg.webp);
-		background-repeat: no-repeat;
+		background-repeat: repeat;
 		background-color: #0f0f0f;
 		background-position: center;
 	}
@@ -110,9 +110,9 @@
     @apply inline-block w-12 h-12;
   }
   .icon.small {
-    @apply w-7 h-7;
+    @apply w-6 h-6;
   }
-
+  
   .icon.twitter {
     background-image: url('data:image/svg+xml,<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.7895 16.9392L38.6704 0H35.1454L22.2188 14.7051L11.9021 0H0L15.6043 22.2388L0 40H3.52506L17.167 24.4676L28.0646 40H39.9667M4.79734 2.60316H10.2128L35.1427 37.5247H29.7259" fill="%23C0C0C0"/></svg>');
     background-size: 100% 100%;
@@ -148,7 +148,6 @@
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #ff9776;
   display: none;
   margin: 0;
 }
@@ -158,12 +157,9 @@
   text-align: center;
   padding: 10px 0;
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
-.nav-links a:hover, a:focus {
+.nav-links a:hover, .nav-links a:focus {
   background-color: white;
   text-color: black;
 }
