@@ -36,15 +36,24 @@ import cfonts from 'cfonts';
 		/>
 	</head>
 	<body class="bg-black text-white">
+		<div class="nav-links">
+			{config.header.menu.map((menuItem) => (
+				<a href={menuItem.url} class="inline-block hover:underline px-4 py-2" target={menuItem.url.match(/^http/) ? '_blank' : '_self'}>{menuItem.name}</a>
+			))}
+		</div>
 		<div class="w-full z-10" class:list={[banner ? "h-[600px]" : "pb-6"]} id={banner ? "intro" : "no-intro"}>
 			<header class="flex pt-6 middle-pane-big">
-				<div class="w-40">
+				<div class="mr-4 lg:hidden">
+					<div class="hamburger"></div>
+				</div>
+
+				<div class="w-32 lg:w-40">
 					<img src="/logo.svg" class:list={["w-40", banner ? "hidden" : "block"]} />
 				</div>
-				<div class="flex gap-8 mt-2 ml-10">
+				<div class="hidden lg:flex gap-2 ml-10">
 					{config.header.menu.map((menuItem) => (
-						<div class="uppercase hover:underline" class:list={[menuItem.url.match(/^http/) ? "external" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]}>
-							<a href={menuItem.url} class="" target={menuItem.url.match(/^http/) ? '_blank' : '_self'}>{menuItem.name}</a>
+						<div class="uppercase" class:list={[menuItem.url.match(/^http/) ? "external" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]}>
+							<a href={menuItem.url} class="inline-block hover:underline px-4 py-2" target={menuItem.url.match(/^http/) ? '_blank' : '_self'}>{menuItem.name}</a>
 						</div>
 					))}
 				</div>
@@ -73,7 +82,7 @@ import cfonts from 'cfonts';
 
 		<div class="border border-t-2 border-b-0 border-l-0 border-r-0 border-[#0f0f0f] mt-20 pt-10 pb-10">
 			<div class="middle-pane-big">
-				<div class="flex gap-10 text-lg items-center" id="footerMenu">
+				<div class="flex gap-10 text-lg items-center flex-wrap" id="footerMenu">
 					<div class="grow">
 						<img src="/logo.svg" class="w-44" />
 					</div>
@@ -86,5 +95,10 @@ import cfonts from 'cfonts';
 				</div>
 			</div>
 		</div>
+		<script>
+			document.querySelector('.hamburger').addEventListener('click', () => {
+			  document.querySelector('.nav-links').classList.toggle('expanded');
+			});
+		  </script>
 	</body>
 </html>
