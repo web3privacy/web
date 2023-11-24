@@ -1,16 +1,72 @@
 ---
 
 import BaseLayout from '../layouts/base.astro';
+import events from '../events.json';
+import EventItem from '../components/EventItem.astro';
+import { isFuture } from 'date-fns';
+
+function eventsFilter (year, future=true) {
+	return function (x) {
+		if (!x.date.match(new RegExp(`^${year}`))) {
+			return false
+		}
+		const isDate = x.date.match(/^\d{4}-\d{2}-\d{2}$/)
+		if (!isDate) {
+			return false
+		}
+		return future ? isFuture(new Date(x.date)) : !isFuture(new Date(x.date))
+	}
+}
+
+const currentYear = "2024";
+const pastYears = [ 2023, 2024 ];
+const upcoming = events.filter(x => x.date.match(/^2024/))
+
+const past = {}
+for (const year of pastYears.reverse()) {
+	past[year] = events.filter(eventsFilter(year, false)).reverse()
+}
 
 ---
 
 <BaseLayout title="Events">
     <div>
-
     </div>
 
 	<div class="middle-pane-medium mt-10">
-		<p>My page content, wrapped in a layout!</p>
+
+		<!--div class="mb-10">
+			<img src="/events-map.svg" class="w-full" />
+		</div-->
+
+		<h1>Upcoming events in 2024</h1>
+
+		<div class="mb-10">
+			{upcoming.map((event) => (
+				<EventItem item={event} />
+			))}
+		</div>
+
+		<h1>Past events</h1>
+		{pastYears.map((year) => (
+			past[year].length > 0 &&
+				<h2>{year}</h2>
+				<div class="mt-4 mb-10">
+					{past[year]?.map((event) => (
+						<EventItem item={event} />
+					))}
+				</div>
+		))}
 	</div>
+
+	<script>
+		document.querySelectorAll('.event-header').forEach((el) => {
+			el.addEventListener('click', () => {
+				const detail = el.parentElement.querySelector('.detail')
+				document.querySelectorAll('.detail:not(.hidden)').forEach(e => (detail !== e ? e.classList.add('hidden') : null));
+		  		detail.classList.toggle('hidden');
+			});
+		});
+	</script>
 
 </BaseLayout>

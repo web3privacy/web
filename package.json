@@ -8,13 +8,15 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "contribs": "deno run --allow-all utils/contributors.js"
+    "contribs": "deno run --allow-all utils/contributors.js",
+    "events": "deno run --allow-all utils/events.js"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.0.2",
     "@rollup/plugin-yaml": "^4.1.2",
     "astro": "^3.4.3",
     "cfonts": "^3.2.0",
+    "date-fns": "^2.30.0",
     "tailwindcss": "^3.3.5"
   }
 }

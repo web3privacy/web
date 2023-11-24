@@ -18,7 +18,28 @@
     "received_events_url": "https://api.github.com/users/Msiusko/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 1012
+    "contributions": 1050
+  },
+  {
+    "login": "burningtree",
+    "id": 67269,
+    "node_id": "MDQ6VXNlcjY3MjY5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/67269?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/burningtree",
+    "html_url": "https://github.com/burningtree",
+    "followers_url": "https://api.github.com/users/burningtree/followers",
+    "following_url": "https://api.github.com/users/burningtree/following{/other_user}",
+    "gists_url": "https://api.github.com/users/burningtree/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/burningtree/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/burningtree/subscriptions",
+    "organizations_url": "https://api.github.com/users/burningtree/orgs",
+    "repos_url": "https://api.github.com/users/burningtree/repos",
+    "events_url": "https://api.github.com/users/burningtree/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/burningtree/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 275
   },
   {
     "login": "cryptomar1o",
@@ -42,27 +63,6 @@
     "contributions": 257
   },
   {
-    "login": "burningtree",
-    "id": 67269,
-    "node_id": "MDQ6VXNlcjY3MjY5",
-    "avatar_url": "https://avatars.githubusercontent.com/u/67269?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/burningtree",
-    "html_url": "https://github.com/burningtree",
-    "followers_url": "https://api.github.com/users/burningtree/followers",
-    "following_url": "https://api.github.com/users/burningtree/following{/other_user}",
-    "gists_url": "https://api.github.com/users/burningtree/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/burningtree/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/burningtree/subscriptions",
-    "organizations_url": "https://api.github.com/users/burningtree/orgs",
-    "repos_url": "https://api.github.com/users/burningtree/repos",
-    "events_url": "https://api.github.com/users/burningtree/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/burningtree/received_events",
-    "type": "User",
-    "site_admin": false,
-    "contributions": 250
-  },
-  {
     "login": "EclecticSamurai",
     "id": 101947219,
     "node_id": "U_kgDOBhOXUw",
@@ -81,7 +81,7 @@
     "received_events_url": "https://api.github.com/users/EclecticSamurai/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 146
+    "contributions": 152
   },
   {
     "login": "jiricepelka",

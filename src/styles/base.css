@@ -89,6 +89,18 @@
   .w3pn-hp-grid > div {
     @apply aspect-video bg-[#0f0f0f];
   }
+  
+  .w3pn-event-item {
+    @apply w-full border border-[#202020] mb-3 hover:bg-[#0f0f0f]/30;
+  }
+
+  .w3pn-event-item .event-header {
+    @apply px-4 py-3 cursor-pointer;
+  }
+
+  .w3pn-event-item .detail {
+    @apply bg-[#0f0f0f] px-4 py-3;
+  }
 
   .w3pn-wgrid {
     @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2;

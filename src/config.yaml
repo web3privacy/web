@@ -13,14 +13,14 @@ header:
   menu:
     - name: Home
       url: /
-    - name: Projects
-      url: /projects
+    #- name: Projects
+    #  url: /projects
     - name: Events
       url: /events
-    - name: Talks
-      url: /talks
-    - name: Articles
-      url: /articles
+    #- name: Talks
+    #  url: /talks
+    #- name: Articles
+    #  url: /articles
     #- name: Leaderboard
     #  url: /leaderboard
     - name: Docs

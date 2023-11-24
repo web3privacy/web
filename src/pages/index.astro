@@ -3,6 +3,7 @@
 import BaseLayout from '../layouts/base.astro';
 import * as config from '../config.yaml';
 import contributors from '../contributors.json';
+import { isRenderTemplateResult } from 'astro/runtime/server/render/astro/render-template.js';
 
 ---
 
@@ -36,7 +37,7 @@ import contributors from '../contributors.json';
 			</div>
 		</div>
 		<div class="mt-20">
-			<h1>Follow us</h1>
+			<h1><a href="https://docs.web3privacy.info/follow-us">Follow us</a></h1>
 			<div class="w3pn-wgrid">
 				{config.landing.follow.map((item) => (
 					<a href={item.url || config.links[item.link]} target="_blank">
@@ -48,7 +49,7 @@ import contributors from '../contributors.json';
 			</div>
 		</div>
 		<div class="mt-10">
-			<h1>Coordination</h1>
+			<h1><a href="https://docs.web3privacy.info/communication">Coordination</a></h1>
 			<div class="w3pn-wgrid">
 				{config.landing.coord.map((item) => (
 					<a href={item.url || config.links[item.link]} target="_blank">
@@ -61,7 +62,7 @@ import contributors from '../contributors.json';
 		</div>
 
 		<div class="mt-16">
-			<h1>Join the Community</h1>
+			<h1><a href="https://docs.web3privacy.info/get-involved">Join the Community</a></h1>
 			<div>{config.landing.community}</div>
 
 			<div class="flex gap-4 flex-wrap my-14 items-center">

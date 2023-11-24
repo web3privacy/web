@@ -14,12 +14,12 @@ async function getContributors () {
 	const output = [];
 	for (const cr of contributorRepos) {
 		const response = await fetch(`https://api.github.com/repos/${cr}/contributors`, {
-            headers: {
-                "Authorization": `Token ${Deno.env.get('GITHUB_TOKEN')}`
-            }
+            //headers: {
+            //    "Authorization": `Token ${Deno.env.get('GITHUB_TOKEN')}`
+            //}
         });
 		const arr = await response.json();
-		//console.log(arr)
+		console.log(arr)
 		for (const item of arr) {
             const found = output.find(i => i.login === item.login)
 			if (!found) {
