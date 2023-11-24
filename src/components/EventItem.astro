@@ -47,7 +47,7 @@ function dateEnd(str, days) {
 
 <div class="w3pn-event-item">
     <div class="event-header flex gap-4">
-        <div class="w-32 text-right leading-normal">
+        <div class="w-28 text-right leading-normal">
             <div>{dateFormat(item.date)}</div>
             {item.days && item.days > 1 &&
                 <div>{dateFormat(dateEnd(item.date, item.days))}</div>
@@ -67,11 +67,20 @@ function dateEnd(str, days) {
         </div>
         <div class="grow"></div>
     </div>
-    <div class="detail hidden flex gap-4">
-        <div class="w-32"></div>
+    <div class="detail hidden flex sm:gap-4">
+        <div class="w-0 sm:w-28"></div>
         <div>
             <div>Date: <span class="text-white">{dateFormat(item.date)} {item.days ? ' - ' + dateFormat(dateEnd(item.date, item.days)) + ` (${item.days} days)` : ''}</span></div>
             <div>Lead: <span class="text-white">{item.lead || 'n/a'}</span></div>
+
+            <div class="mt-4 mb-2">
+                {item.links?.rsvp &&
+                    <a href={item.links.rsvp} class="button inverted"><button>More details & pre-registration</button></a>
+                }
+                {item.links?.web &&
+                    <a href={item.links.web} class="button inverted"><button>Website</button></a>
+                }
+            </div>
         </div>
     </div>
 </div>

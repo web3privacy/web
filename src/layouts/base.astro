@@ -12,7 +12,7 @@ import cfonts from 'cfonts';
 		<link rel="icon" type="image/x-icon" href="/favicon.ico">
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{config.title}</title>
+		<title>{title ? title + ' | ' + config.title : config.title}</title>
 		<link
 			rel="preload"
 			href="/fonts/archivo-regular-latin-ext.woff2"
@@ -55,8 +55,13 @@ import cfonts from 'cfonts';
 				</div>
 				<div class="hidden lg:flex grow gap-0 xl:gap-2 justify-center">
 					{config.header.menu.map((menuItem) => (
-						<div class="uppercase hover:text-[#c2c2c2]" class:list={[menuItem.link ? "external" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]}>
-							<a href={config.links[menuItem.link] || menuItem.url} class="inline-block hover:underline px-4 py-2" target={menuItem.link ? '_blank' : '_self'}>{menuItem.name}</a>
+						<div class="uppercase hover:text-[#c2c2c2]" class:list={[menuItem.link ? "xexternal" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]}>
+							<a href={config.links[menuItem.link] || menuItem.url} class="inline-block hover:underline px-4 py-2" target={menuItem.link ? '_blank' : '_self'}>
+								{menuItem.name}
+								{menuItem.link &&
+									<span class="external"></span>
+								}
+							</a>
 						</div>
 					))}
 				</div>

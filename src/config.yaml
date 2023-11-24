@@ -23,6 +23,8 @@ header:
     #  url: /articles
     #- name: Leaderboard
     #  url: /leaderboard
+    - name: Articles
+      link: mirror
     - name: Docs
       link: docs
     #- name: Manifesto
