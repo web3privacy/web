@@ -91,12 +91,16 @@
   }
   
   .w3pn-event-item {
-    @apply w-full border border-[#202020] mb-3 hover:bg-[#0f0f0f]/30;
+    @apply w-full border border-[#202020] mb-3;
   }
 
-  .w3pn-event-item .event-header {
-    @apply px-4 py-3 cursor-pointer;
+  .w3pn-event-item .header-base:hover {
+    @apply bg-[#0f0f0f]/30;
   }
+
+  /*.w3pn-event-item .event-header {
+    @apply ;
+  }*/
 
   .w3pn-event-item .detail {
     @apply bg-[#0f0f0f] px-4 py-3;

@@ -60,9 +60,12 @@ for (const year of pastYears.reverse()) {
 	</div>
 
 	<script>
-		document.querySelectorAll('.event-header').forEach((el) => {
-			el.addEventListener('click', () => {
-				const detail = el.parentElement.querySelector('.detail')
+		document.querySelectorAll('.event-header .header-base').forEach((el) => {
+			el.addEventListener('click', (ev) => {
+				if (ev.target.tagName === "BUTTON") {
+					return false;
+				}
+				const detail = el.parentElement.parentElement.querySelector('.detail')
 				document.querySelectorAll('.detail:not(.hidden)').forEach(e => (detail !== e ? e.classList.add('hidden') : null));
 		  		detail.classList.toggle('hidden');
 			});

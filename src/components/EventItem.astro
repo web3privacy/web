@@ -46,26 +46,34 @@ function dateEnd(str, days) {
 ---
 
 <div class="w3pn-event-item">
-    <div class="event-header flex gap-4">
-        <div class="w-28 text-right leading-normal">
-            <div>{dateFormat(item.date)}</div>
-            {item.days && item.days > 1 &&
-                <div>{dateFormat(dateEnd(item.date, item.days))}</div>
-            }
-        </div>
-        <div>
-            <div class="text-lg text-white">{nameRenderer(item)}</div>
-            <div class="flex gap-2">
-                <img src={`/flags/${item.country}.svg`} class="w-4" />
-                <div>
-                    {item.city}, {item.country.toUpperCase()}
-                    {item.coincidence &&
-                        <span>&nbsp; - {ccRenderer(item)}</span>
-                    }
+    <div class="event-header flex">
+        <div class="header-base sm:flex gap-4 grow px-3 py-2.5 sm:px-4 sm:py-3 cursor-pointer">
+            <div class="w-full sm:w-28 flex sm:block sm:text-right leading-normal">
+                <div class="">{dateFormat(item.date)}</div>
+                {item.days && item.days > 1 &&
+                    <div class="ml-1.5"> <span class="inline-block sm:hidden">- </span>{dateFormat(dateEnd(item.date, item.days))}</div>
+                }
+            </div>
+            <div>
+                <div class="text-lg text-white">{nameRenderer(item)}</div>
+                <div class="flex gap-2">
+                    <img src={`/flags/${item.country}.svg`} class="w-4" />
+                    <div>
+                        {item.city}, {item.country.toUpperCase()}
+                        {item.coincidence &&
+                            <span>&nbsp; - {ccRenderer(item)}</span>
+                        }
+                    </div>
                 </div>
             </div>
+            {item.links?.rsvp &&
+                <div class="py-1 grow text-right">
+                    <a href={item.links?.rsvp} class="button inverted"><button>Join</button></a>
+                </div>
+            }
+
         </div>
-        <div class="grow"></div>
+
     </div>
     <div class="detail hidden flex sm:gap-4">
         <div class="w-0 sm:w-28"></div>
@@ -75,7 +83,7 @@ function dateEnd(str, days) {
 
             <div class="mt-4 mb-2">
                 {item.links?.rsvp &&
-                    <a href={item.links.rsvp} class="button inverted"><button>More details & pre-registration</button></a>
+                    <a href={item.links.rsvp} class="button inverted"><button>More details & RSVP</button></a>
                 }
                 {item.links?.web &&
                     <a href={item.links.web} class="button inverted"><button>Website</button></a>
