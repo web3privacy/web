@@ -40,7 +40,7 @@ import cfonts from 'cfonts';
 			<div class="w-full">
 				{config.header.menu.map((menuItem) => (
 					<div class="uppercase w-full">
-						<a href={menuItem.url} class="inline-block hover:underline px-4 py-2" class:list={[menuItem.url.match(/^http/) ? "external" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]} target={menuItem.url.match(/^http/) ? '_blank' : '_self'}>{menuItem.name}</a>
+						<a href={menuItem.url || config.links} class="inline-block hover:underline px-4 py-2" class:list={[menuItem.url?.match(/^http/) ? "external" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]} target={menuItem.url?.match(/^http/) ? '_blank' : '_self'}>{menuItem.name}</a>
 					</div>
 				))}
 			</div>
@@ -50,26 +50,26 @@ import cfonts from 'cfonts';
 				<div class="mr-4 lg:hidden">
 					<div class="hamburger"></div>
 				</div>
-
 				<div class="w-40">
-					<img src="/logo.svg" class:list={["w-40", banner ? "hidden" : "block"]} onclick="location.href='/'" />
+					<a href="/" class="w3pn-logo" class:list={["w-32 lg:w-40", banner ? "hidden" : "block"]}></a>
 				</div>
-				<div class="hidden lg:flex gap-2 ml-10">
+				<div class="hidden lg:flex grow gap-0 xl:gap-2 justify-center">
 					{config.header.menu.map((menuItem) => (
-						<div class="uppercase" class:list={[menuItem.url.match(/^http/) ? "external" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]}>
-							<a href={menuItem.url} class="inline-block hover:underline px-4 py-2" target={menuItem.url.match(/^http/) ? '_blank' : '_self'}>{menuItem.name}</a>
+						<div class="uppercase hover:text-[#c2c2c2]" class:list={[menuItem.link ? "external" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]}>
+							<a href={config.links[menuItem.link] || menuItem.url} class="inline-block hover:underline px-4 py-2" target={menuItem.link ? '_blank' : '_self'}>{menuItem.name}</a>
 						</div>
 					))}
 				</div>
-				<div class="grow flex gap-6 justify-end lg:pt-2">
-					<a href={config.links.github} class="block icon github small opacity-50 hover:opacity-100" target="_blank"></a>
-					<a href={config.links.twitter} class="block icon twitter small opacity-50 hover:opacity-100" target="_blank"></a>
+				<div class="flex grow lg:grow-0 gap-3 lg:gap-6 justify-end pt-1 lg:pt-2.5">
+					{config.header.rightMenu.map((key) => (
+						<a href={config.links[key]} class="block icon xsmall sm:small opacity-50 hover:opacity-100" class:list={[key]} target="_blank"></a>
+					))}
 				</div>
 			</header>
 			{banner &&
 				<div class="w-full h-full flex mt-20 sm:mt-32 middle-pane-medium">
 					<div>
-						<img src="/logo.svg" class="w-64 sm:w-72 lg:w-80 xl:w-96" />
+						<div class="w3pn-logo w-64 sm:w-72 lg:w-80 xl:w-96"></div>
 						<div class="text-left mt-10">
 							{config.hero.text}
 						</div>
@@ -90,16 +90,18 @@ import cfonts from 'cfonts';
 
 		<div class="border border-t-2 border-b-0 border-l-0 border-r-0 border-[#0f0f0f] mt-20 pt-10 pb-10">
 			<div class="middle-pane-big">
-				<div class="flex gap-10 text-lg items-center flex-wrap" id="footerMenu">
-					<div class="grow">
-						<img src="/logo.svg" class="w-44" />
-					</div>
-					{config.footer.menu.map((item) => (
-						<div class="flex gap-4 items-center menuItem">
-							<div class="icon small opacity-50" class:list={[item.ico]}></div>
-							<div class="text-white hover:underline"><a href={item.url}>{item.title}</a></div>
+				<div class="flex gap-10 text-lg items-center flex-wrap align-top" id="footerMenu">
+					<a href="/" class="w3pn-logo w-32"></a>
+					<div class="grow flex justify-end">
+						<div class="lg:flex justify-center flex-wrap gap-4 lg:gap-10">
+							{config.footer.menu.map((item) => (
+								<div class="flex gap-4 items-center menuItem lg:mb-0 mb-2">
+									<div class="icon small opacity-50" class:list={[item.ico]}></div>
+									<div class="text-white hover:underline"><a href={item.url || config.links[item.link]}>{item.title}</a></div>
+								</div>
+							))}
 						</div>
-					))}
+					</div>
 				</div>
 			</div>
 		</div>

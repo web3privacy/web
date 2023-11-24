@@ -39,11 +39,11 @@ import contributors from '../contributors.json';
 			<h1>Follow us</h1>
 			<div class="w3pn-wgrid">
 				{config.landing.follow.map((item) => (
-					<div>
-						<div><div class="icon" class:list={[item.ico || ""]}></div></div>
-						<div class="title"><a href={item.url} target="_blank">{item.name}</a></div>
-						<div>{item.text}</div>
-					</div>
+					<a href={item.url || config.links[item.link]} target="_blank">
+						<span><span class="icon" class:list={[item.ico || ""]}></span></span>
+						<span class="title">{item.name}</span>
+						<span>{item.text}</span>
+					</a>
 				))}
 			</div>
 		</div>
@@ -51,11 +51,11 @@ import contributors from '../contributors.json';
 			<h1>Coordination</h1>
 			<div class="w3pn-wgrid">
 				{config.landing.coord.map((item) => (
-					<div>
-						<div><div class="icon" class:list={[item.ico || ""]}></div></div>
-						<div class="title"><a href={item.url} target="_blank">{item.name}</a></div>
-						<div>{item.text}</div>
-					</div>
+					<a href={item.url || config.links[item.link]} target="_blank">
+						<span><span class="icon" class:list={[item.ico || ""]}></span></span>
+						<span class="title">{item.name}</span>
+						<span>{item.text}</span>
+					</a>
 				))}
 			</div>
 		</div>
@@ -77,5 +77,4 @@ import contributors from '../contributors.json';
 			</div>
 		</div>
 	</div>
-
 </BaseLayout>

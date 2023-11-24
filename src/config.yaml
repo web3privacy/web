@@ -4,6 +4,11 @@ links:
   manifesto: https://docs.web3privacy.info/manifesto
   github: https://github.com/web3privacy
   twitter: https://twitter.com/web3privacy
+  matrix: https://matrix.web3privacy.info
+  bluesky: https://bsky.app/profile/web3privacy.info
+  mirror: https://mirror.xyz/0x0f1F3DAf416B74DB3DE55Eb4D7513a80F4841073/
+  youtube: https://youtube.com/@Web3PrivacyNow/
+  forum: https://forum.web3privacy.info
 header:
   menu:
     - name: Home
@@ -19,19 +24,28 @@ header:
     #- name: Leaderboard
     #  url: /leaderboard
     - name: Docs
-      url: https://docs.web3privacy.info
+      link: docs
     #- name: Manifesto
     #  url: /manifesto
+  rightMenu:
+    - twitter
+    - telegram
+    - github
+    - matrix
 footer:
   menu:
     - title: "@web3privacy"
       ico: twitter
-      url: https://twitter.com/web3privacy
+      link: twitter
+    - title: Telegram
+      ico: telegram
+      link: telegram
     - title: GitHub
       ico: github
-      url: https://github.com/web3privacy
+      link: github
     - title: Matrix
-      url: https://matrix.web3privacy.info
+      ico: matrix
+      link: matrix
 hero:
   text: |
     Privacy advocates worldwide are coming together to discuss how to mainstream privacy within the Web3 industry. So it will become a cultural phenomenon embodying both decentralisation & anti-surveillance capitalism practices.
@@ -54,31 +68,40 @@ landing:
     - Human rights DAO
   follow:
     - name: "@web3privacy"
-      url: https://twitter.com/web3privacy
+      link: twitter
       text: 800+ followers
       ico: twitter
-    - name: "@web3privacy.info"
-      url: https://bsky.app/profile/web3privacy.info
-      text: Bluesky
+    #- name: "@web3privacy.info"
+    #  link: bluesky
+    #  text: Bluesky
+    #  ico: bluesky
+    - name: Telegram
+      link: telegram
+      text: Telegram group
+      ico: telegram
     - name: Mirror
-      url: https://mirror.xyz/0x0f1F3DAf416B74DB3DE55Eb4D7513a80F4841073/
+      link: mirror
       text: Articles, reports, etc.
+      ico: mirror
     - name: YouTube
-      url: https://youtube.com/@Web3PrivacyNow/
+      link: youtube
       text: Videos
+      ico: youtube
   coord:
     - name: Documentation
-      url: https://docs.web3privacy.info
+      link: docs
       text: About our initiative
+      ico: docs
     - name: GitHub
-      url: https://github.com/web3privacy
+      link: github
       text: Source-code repositories
       ico: github
     - name: Matrix
-      url: https://matrix.web3privacy.info
+      link: matrix
       text: Real-time communication
+      ico: matrix
     - name: Forum
-      url: https://forum.web3privacy.info
+      link: forum
       text: Community discussion
       ico: forum
   community: |
