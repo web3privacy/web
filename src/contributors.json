@@ -18,7 +18,7 @@
     "received_events_url": "https://api.github.com/users/Msiusko/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 1050
+    "contributions": 1132
   },
   {
     "login": "burningtree",
@@ -39,7 +39,7 @@
     "received_events_url": "https://api.github.com/users/burningtree/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 275
+    "contributions": 278
   },
   {
     "login": "cryptomar1o",
@@ -81,7 +81,7 @@
     "received_events_url": "https://api.github.com/users/EclecticSamurai/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 152
+    "contributions": 155
   },
   {
     "login": "jiricepelka",
@@ -145,6 +145,27 @@
     "type": "User",
     "site_admin": false,
     "contributions": 6
+  },
+  {
+    "login": "Ressac-No1",
+    "id": 119933943,
+    "node_id": "U_kgDOByYL9w",
+    "avatar_url": "https://avatars.githubusercontent.com/u/119933943?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Ressac-No1",
+    "html_url": "https://github.com/Ressac-No1",
+    "followers_url": "https://api.github.com/users/Ressac-No1/followers",
+    "following_url": "https://api.github.com/users/Ressac-No1/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Ressac-No1/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Ressac-No1/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Ressac-No1/subscriptions",
+    "organizations_url": "https://api.github.com/users/Ressac-No1/orgs",
+    "repos_url": "https://api.github.com/users/Ressac-No1/repos",
+    "events_url": "https://api.github.com/users/Ressac-No1/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Ressac-No1/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 4
   },
   {
     "login": "wslyvh",
@@ -315,6 +336,27 @@
     "contributions": 2
   },
   {
+    "login": "kleinpetr",
+    "id": 17269309,
+    "node_id": "MDQ6VXNlcjE3MjY5MzA5",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17269309?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kleinpetr",
+    "html_url": "https://github.com/kleinpetr",
+    "followers_url": "https://api.github.com/users/kleinpetr/followers",
+    "following_url": "https://api.github.com/users/kleinpetr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kleinpetr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kleinpetr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kleinpetr/subscriptions",
+    "organizations_url": "https://api.github.com/users/kleinpetr/orgs",
+    "repos_url": "https://api.github.com/users/kleinpetr/repos",
+    "events_url": "https://api.github.com/users/kleinpetr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kleinpetr/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 1
+  },
+  {
     "login": "coinmandeer",
     "id": 62942796,
     "node_id": "MDQ6VXNlcjYyOTQyNzk2",
@@ -373,6 +415,27 @@
     "repos_url": "https://api.github.com/users/root1m3/repos",
     "events_url": "https://api.github.com/users/root1m3/events{/privacy}",
     "received_events_url": "https://api.github.com/users/root1m3/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 1
+  },
+  {
+    "login": "ordzllg",
+    "id": 149235589,
+    "node_id": "U_kgDOCOUnhQ",
+    "avatar_url": "https://avatars.githubusercontent.com/u/149235589?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ordzllg",
+    "html_url": "https://github.com/ordzllg",
+    "followers_url": "https://api.github.com/users/ordzllg/followers",
+    "following_url": "https://api.github.com/users/ordzllg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ordzllg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ordzllg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ordzllg/subscriptions",
+    "organizations_url": "https://api.github.com/users/ordzllg/orgs",
+    "repos_url": "https://api.github.com/users/ordzllg/repos",
+    "events_url": "https://api.github.com/users/ordzllg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ordzllg/received_events",
     "type": "User",
     "site_admin": false,
     "contributions": 1
@@ -525,6 +588,27 @@
     "contributions": 1
   },
   {
+    "login": "0xMimir",
+    "id": 108837858,
+    "node_id": "U_kgDOBny74g",
+    "avatar_url": "https://avatars.githubusercontent.com/u/108837858?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/0xMimir",
+    "html_url": "https://github.com/0xMimir",
+    "followers_url": "https://api.github.com/users/0xMimir/followers",
+    "following_url": "https://api.github.com/users/0xMimir/following{/other_user}",
+    "gists_url": "https://api.github.com/users/0xMimir/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/0xMimir/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/0xMimir/subscriptions",
+    "organizations_url": "https://api.github.com/users/0xMimir/orgs",
+    "repos_url": "https://api.github.com/users/0xMimir/repos",
+    "events_url": "https://api.github.com/users/0xMimir/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/0xMimir/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 1
+  },
+  {
     "login": "KeeJef",
     "id": 27277414,
     "node_id": "MDQ6VXNlcjI3Mjc3NDE0",
@@ -562,6 +646,27 @@
     "repos_url": "https://api.github.com/users/therealjmj/repos",
     "events_url": "https://api.github.com/users/therealjmj/events{/privacy}",
     "received_events_url": "https://api.github.com/users/therealjmj/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 1
+  },
+  {
+    "login": "fmarkor",
+    "id": 37598270,
+    "node_id": "MDQ6VXNlcjM3NTk4Mjcw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/37598270?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fmarkor",
+    "html_url": "https://github.com/fmarkor",
+    "followers_url": "https://api.github.com/users/fmarkor/followers",
+    "following_url": "https://api.github.com/users/fmarkor/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fmarkor/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fmarkor/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fmarkor/subscriptions",
+    "organizations_url": "https://api.github.com/users/fmarkor/orgs",
+    "repos_url": "https://api.github.com/users/fmarkor/repos",
+    "events_url": "https://api.github.com/users/fmarkor/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fmarkor/received_events",
     "type": "User",
     "site_admin": false,
     "contributions": 1

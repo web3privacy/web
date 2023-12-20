@@ -11,7 +11,7 @@ export default defineConfig({
     plugins: [yaml()],
     server: {
       watch: {
-        ignored: ["**/.sl/**/*"],
+        ignored: ["**/.sl/**/*", "**/.watchman-**"],
       },
     },
   },

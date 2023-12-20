@@ -1,9 +1,28 @@
 ---
 
 import BaseLayout from '../layouts/base.astro';
+import AboutFooter from '../components/AboutFooter.astro';
 import * as config from '../config.yaml';
-import contributors from '../contributors.json';
+import events from '../events.json';
+import articles from '../articles.json';
+import talks from '../talks.json';
 import { isRenderTemplateResult } from 'astro/runtime/server/render/astro/render-template.js';
+import { isPast, format } from 'date-fns';
+
+let eventsPast = 0
+let eventsUpcoming = 0
+for (const ev of events) {
+	let future = true
+	if (ev.date.match(/^\d{4}-\d{2}-\d{2}$/) && isPast(new Date(ev.date))) {
+		future = false
+	}
+	if (future) {
+		eventsUpcoming++
+	} else {
+		eventsPast++
+	}
+}
+
 
 ---
 
@@ -11,71 +30,99 @@ import { isRenderTemplateResult } from 'astro/runtime/server/render/astro/render
 
 	<div class="middle-pane-big">
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w3pn-hp-grid gap-2 mt-2">
-			<div>a</div>
-			<div>b</div>
-			<div>c</div>
+			<div class="bg-events" data-url="/events">
+				<div class="title">Events</div>
+				<div class="numbers">
+					<div>
+						<div class="big">{eventsUpcoming}</div>
+						<div>Upcoming events</div>
+					</div>
+					<div>
+						<div class="big">{ eventsPast}</div>
+						<div>Past events</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg-talks" data-url="/talks">
+				<div class="title">Talks</div>
+				<div class="numbers">
+					<div>
+						<div class="big">?</div>
+						<div>Talks</div>
+					</div>
+					<div>
+						<div class="big">?</div>
+						<div>Recordings</div>
+					</div>
+					<div>
+						<div class="big">?</div>
+						<div>Speakers</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg-projects" data-url="/projects">
+				<div class="title">Projects</div>
+				<div class="numbers">
+					<div>
+						<div class="semibig">Privacy explorer →</div>
+					</div>
+					<div>
+						<div class="semibig">3 reserch projects →</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
 
 	<div class="middle-pane-medium mt-10">
-		<div class="grid grid-cols-1 xl:grid-cols-2 gap-16">
-			<div>
-				<h1>Our mission</h1>
-				<div set:html={config.landing.mission}></div>
-				<div class="mt-8">
-					<a class="button inverted" href={config.links.manifesto}><button>Read manifesto</button></a>
-				</div>
-			</div>
-			<div>
-				<h1>Topics</h1>
-				<div class="columns-2 uppercase text-sm w3pn-topics">
-					{config.landing.topics.map((topic) => (
-						<div>{topic}</div>
-					))}
-				</div>
-			</div>
-		</div>
-		<div class="mt-20">
-			<h1><a href="https://docs.web3privacy.info/follow-us">Follow us</a></h1>
-			<div class="w3pn-wgrid">
-				{config.landing.follow.map((item) => (
-					<a href={item.url || config.links[item.link]} target="_blank">
-						<span><span class="icon" class:list={[item.ico || ""]}></span></span>
-						<span class="title">{item.name}</span>
-						<span>{item.text}</span>
-					</a>
-				))}
-			</div>
-		</div>
 		<div class="mt-10">
-			<h1><a href="https://docs.web3privacy.info/communication">Coordination</a></h1>
-			<div class="w3pn-wgrid">
-				{config.landing.coord.map((item) => (
-					<a href={item.url || config.links[item.link]} target="_blank">
-						<span><span class="icon" class:list={[item.ico || ""]}></span></span>
-						<span class="title">{item.name}</span>
-						<span>{item.text}</span>
-					</a>
-				))}
-			</div>
+			<h1>Our Projects</h1>
 		</div>
 
 		<div class="mt-16">
-			<h1><a href="https://docs.web3privacy.info/get-involved">Join the Community</a></h1>
-			<div>{config.landing.community}</div>
-
-			<div class="flex gap-4 flex-wrap my-14 items-center">
-				{contributors.map((contrib) => (
-					<div><a href={contrib.html_url} target="_blank" title={contrib.login}><img src={contrib.avatar_url} class="w-16 rounded-full aspect-square"></a></div>
-				))}
-			</div>
-
-			<div class="flex gap-4 lg:gap-10 pt-4 flex-wrap">
-				<a href="" class="button inverted"><button>Enter the community</button></a>
-				<a href="" class="button inverted"><button>Become the contributor</button></a>
-				<a href="" class="button inverted"><button>Become the partner</button></a>
-			</div>
+			<h1>Featured Events</h1>
 		</div>
+
+		<div class="mt-16">
+			<h1>Latest Talks</h1>
+		</div>
+
+		<div class="grid md:grid-cols-2 gap-6">
+			{talks.slice(0,4).map((entry) => (
+				<div class="basegrid-entry aspect-video" style={{backgroundImage: `url("${entry.img}")`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+					<a href={entry.url} class="w-full h-full" title={entry.title}></a>
+				</div>
+			))}
+		</div>
+
+		<div class="mt-16">
+			<h1>Latest Articles</h1>
+		</div>
+
+		<div class="w3pn-articles grid md:grid-cols-2 gap-6">
+			{articles.slice(0,4).map((entry) => (
+				<div class="basegrid-entry aspect-video" style={{backgroundImage: `url("${entry.img}")`, backgroundSize: '100% 100%;'}}>
+					<div class="title">
+						<a href={entry.url}>{entry.title}</a>
+						<span class="date">{format(new Date(entry.date), 'MMMM do, yyyy')}</span>
+					</div>
+				</div>
+			))}
+		</div>
+
+		<AboutFooter />
 	</div>
+	<script>
+		document.querySelectorAll('.w3pn-hp-grid > div').forEach(el => {
+			el.addEventListener('click', () => {
+			  window.location = el.getAttribute('data-url');
+			});
+		});
+		document.querySelectorAll('.w3pn-articles > div').forEach(el => {
+			el.addEventListener('click', () => {
+			  window.location = el.querySelector('a').getAttribute('href');
+			});
+		});
+	</script>
 </BaseLayout>

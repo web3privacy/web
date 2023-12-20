@@ -2,11 +2,13 @@ import "https://deno.land/std@0.206.0/dotenv/load.ts";
 
 const contributorRepos = [
 	"web3privacy/web3privacy",
-	"web3privacy/data",
 	"web3privacy/events",
 	"web3privacy/w3ps1",
     "web3privacy/grants",
     "web3privacy/website",
+	"web3privacy/explorer",
+	"web3privacy/explorer-data",
+	"web3privacy/explorer-app",
 	//"web3privacy/w3pn-web",
 ]
 

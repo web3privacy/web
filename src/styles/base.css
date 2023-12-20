@@ -77,6 +77,26 @@
     content: "→";
   }
 
+  .basegrid-entry {
+    @apply opacity-80 hover:opacity-100 cursor-pointer flex items-end;
+  }
+
+  .basegrid-entry .title {
+    @apply p-6 bg-black/80 w-full font-semibold;
+  }
+
+  .basegrid-entry .title a {
+    @apply text-white text-lg;
+  }
+
+  .basegrid-entry:hover .title a {
+    @apply underline;
+  }
+
+  .basegrid-entry .date {
+    @apply block text-sm;
+  }
+
   .w3pn-topics > div {
     @apply mb-3;
   }
@@ -86,8 +106,47 @@
     content: url('data:image/svg+xml,<svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg"><rect opacity="0.25" width="12" height="2" fill="white"/></svg>')
   }
 
+  .w3pn-hp-grid .bg-events {
+    background-image: url(/hp-box-events.svg);
+    background-position: center;
+    background-size: cover;
+  }
+  .w3pn-hp-grid .bg-talks {
+    background-image: url(/hp-box-talks.png);
+    background-position: center;
+    background-size: cover;
+  }
+  .w3pn-hp-grid .bg-projects {
+    background-image: url(/hp-box-projects.png);
+    background-position: center;
+    background-size: cover;
+  }
+  .w3pn-hp-grid .numbers {
+    @apply flex gap-2 m-4 items-end;
+  }
+
+  .w3pn-hp-grid .numbers > div {
+    @apply bg-white px-3 py-2;
+  }
+
+  .w3pn-hp-grid .numbers .big {
+    @apply text-2xl font-bold;
+  }
+
+  .w3pn-hp-grid .numbers .semibig {
+    @apply text-lg font-bold;
+  }
+
+  .w3pn-hp-grid .numbers > div > div {
+    @apply text-black text-sm;
+  }
+
+  .w3pn-hp-grid .title {
+    @apply text-white uppercase my-3 mx-4;
+  }
+
   .w3pn-hp-grid > div {
-    @apply aspect-video bg-[#0f0f0f];
+    @apply aspect-video bg-[#0f0f0f] grid grid-rows-2 hover:bg-[#202020] cursor-pointer;
   }
   
   .w3pn-event-item {

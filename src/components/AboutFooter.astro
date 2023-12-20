@@ -1,0 +1,47 @@
+---
+
+import * as config from '../config.yaml';
+import contributors from '../contributors.json';
+
+---
+
+<div class="mt-20">
+    <h1><a href="https://docs.web3privacy.info/follow-us">Follow us</a></h1>
+    <div class="w3pn-wgrid">
+        {config.landing.follow.map((item) => (
+            <a href={item.url || config.links[item.link]} target="_blank">
+                <span><span class="icon" class:list={[item.ico || ""]}></span></span>
+                <span class="title">{item.name}</span>
+                <span>{item.text}</span>
+            </a>
+        ))}
+    </div>
+</div>
+<div class="mt-10">
+    <h1><a href="https://docs.web3privacy.info/communication">Coordination</a></h1>
+    <div class="w3pn-wgrid">
+        {config.landing.coord.map((item) => (
+            <a href={item.url || config.links[item.link]} target="_blank">
+                <span><span class="icon" class:list={[item.ico || ""]}></span></span>
+                <span class="title">{item.name}</span>
+                <span>{item.text}</span>
+            </a>
+        ))}
+    </div>
+</div>
+<div class="mt-16">
+    <h1><a href="https://docs.web3privacy.info/get-involved">Join the Community</a></h1>
+    <div>{config.landing.community}</div>
+
+    <div class="flex gap-4 flex-wrap my-14 items-center">
+        {contributors.map((contrib) => (
+            <div><a href={contrib.html_url} target="_blank" title={contrib.login}><img src={contrib.avatar_url} class="w-16 rounded-full aspect-square"></a></div>
+        ))}
+    </div>
+
+    <div class="flex gap-4 lg:gap-10 pt-4 flex-wrap">
+        <a href="" class="button inverted"><button>Enter the community</button></a>
+        <a href="" class="button inverted"><button>Become the contributor</button></a>
+        <a href="" class="button inverted"><button>Become the partner</button></a>
+    </div>
+</div>

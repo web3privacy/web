@@ -39,7 +39,7 @@ for (const year of pastYears.reverse()) {
 			<img src="/events-map.svg" class="w-full" />
 		</div-->
 
-		<h1>Upcoming events in 2024</h1>
+		<h1 id="upcoming">Upcoming ({upcoming.length})</h1>
 
 		<div class="mb-10">
 			{upcoming.map((event) => (
@@ -47,10 +47,10 @@ for (const year of pastYears.reverse()) {
 			))}
 		</div>
 
-		<h1>Past events</h1>
+		<h1 id="past">Past events ({events.length-upcoming.length})</h1>
 		{pastYears.map((year) => (
 			past[year].length > 0 &&
-				<h2>{year}</h2>
+				<h2>{year} ({past[year].length})</h2>
 				<div class="mt-4 mb-10">
 					{past[year]?.map((event) => (
 						<EventItem item={event} />

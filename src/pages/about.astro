@@ -1,0 +1,33 @@
+---
+
+import BaseLayout from '../layouts/base.astro';
+import * as config from '../config.yaml';
+import AboutFooter from '../components/AboutFooter.astro';
+
+---
+
+<BaseLayout title="About">
+
+	<div class="middle-pane-medium mt-10">
+		<div class="grid grid-cols-1 xl:grid-cols-2 gap-16">
+			<div>
+				<h1>Our mission</h1>
+				<div set:html={config.landing.mission}></div>
+				<div class="mt-8">
+					<a class="button inverted" href={config.links.manifesto}><button>Read manifesto</button></a>
+				</div>
+			</div>
+			<div>
+				<h1>Topics</h1>
+				<div class="columns-2 uppercase text-sm w3pn-topics">
+					{config.landing.topics.map((topic) => (
+						<div>{topic}</div>
+					))}
+				</div>
+			</div>
+		</div>
+
+        <AboutFooter />
+    </div>
+
+</BaseLayout>

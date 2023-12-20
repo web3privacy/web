@@ -9,7 +9,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "contribs": "deno run --allow-all utils/contributors.js",
-    "events": "deno run --allow-all utils/events.js"
+    "events": "deno run --allow-all utils/events.js",
+    "articles": "deno run --allow-all utils/articles.js",
+    "talks": "deno run --allow-all utils/talks.js"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.0.2",

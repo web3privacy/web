@@ -9,12 +9,15 @@ links:
   mirror: https://mirror.xyz/0x0f1F3DAf416B74DB3DE55Eb4D7513a80F4841073/
   youtube: https://youtube.com/@Web3PrivacyNow/
   forum: https://forum.web3privacy.info
+  explorer: https://explorer.web3privacy.info
 header:
   menu:
     - name: Home
       url: /
-    #- name: Projects
-    #  url: /projects
+    - name: About
+      url: /about
+    - name: Research
+      url: /research
     - name: Events
       url: /events
     #- name: Talks
@@ -23,8 +26,8 @@ header:
     #  url: /articles
     #- name: Leaderboard
     #  url: /leaderboard
-    - name: Articles
-      link: mirror
+    - name: Explorer
+      link: explorer
     - name: Docs
       link: docs
     #- name: Manifesto
