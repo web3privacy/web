@@ -148,6 +148,14 @@
   .w3pn-hp-grid > div {
     @apply aspect-video bg-[#0f0f0f] grid grid-rows-2 hover:bg-[#202020] cursor-pointer;
   }
+
+  .w3pn-project-item {
+    @apply w-full border border-[#202020] mb-3;
+  }
+
+  .w3pn-project-item a:hover {
+    @apply bg-[#0f0f0f]/30;
+  }
   
   .w3pn-event-item {
     @apply w-full border border-[#202020] mb-3;

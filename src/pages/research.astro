@@ -1,13 +1,24 @@
 ---
 
 import BaseLayout from '../layouts/base.astro';
+import core from '../core.json';
+
+const research = core.projects.filter(x => x.type && x.type === "research");
 
 ---
 
 <BaseLayout title="Research">
 
 	<div class="middle-pane-medium mt-10">
-		<p>My page content, wrapped in a layout!</p>
+
+		<h1 id="upcoming">Research ({research.length})</h1>
+
+		{research.map((item) => (
+			<div class="w3pn-project-item">
+				<a href={item.links.docs} class="block p-6 text-white text-xl">{item.name}</a>
+			</div>
+		))}
+
 	</div>
 
 </BaseLayout>
