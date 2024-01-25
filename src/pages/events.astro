@@ -1,9 +1,11 @@
 ---
 
 import BaseLayout from '../layouts/base.astro';
-import events from '../events.json';
+import core from '../core.json';
 import EventItem from '../components/EventItem.astro';
 import { isFuture } from 'date-fns';
+
+const events = core.events;
 
 function eventsFilter (year, future=true) {
 	return function (x) {

@@ -1,5 +1,6 @@
 ---
 import * as config from '../config.yaml';
+import core from '../core.json';
 import '../styles/base.css';
 const {banner, title, description} = Astro.props;
 
@@ -41,7 +42,7 @@ import cfonts from 'cfonts';
 			<div class="w-full">
 				{config.header.menu.map((menuItem) => (
 					<div class="uppercase w-full">
-						<a href={menuItem.url || config.links} class="inline-block hover:underline px-4 py-2" class:list={[menuItem.url?.match(/^http/) ? "external" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]}>{menuItem.name}</a>
+						<a href={menuItem.url || core.links} class="inline-block hover:underline px-4 py-2" class:list={[menuItem.url?.match(/^http/) ? "external" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]}>{menuItem.name}</a>
 					</div>
 				))}
 			</div>
@@ -57,7 +58,7 @@ import cfonts from 'cfonts';
 				<div class="hidden lg:flex grow gap-0 xl:gap-2 justify-center">
 					{config.header.menu.map((menuItem) => (
 						<div class="uppercase hover:text-[#c2c2c2]" class:list={[menuItem.link ? "xexternal" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]}>
-							<a href={config.links[menuItem.link] || menuItem.url} class="inline-block hover:underline px-4 py-2">
+							<a href={core.links[menuItem.link] || menuItem.url} class="inline-block hover:underline px-4 py-2">
 								{menuItem.name}
 
 							</a>
@@ -66,7 +67,7 @@ import cfonts from 'cfonts';
 				</div>
 				<div class="flex grow lg:grow-0 gap-3 lg:gap-6 justify-end pt-1 lg:pt-2.5">
 					{config.header.rightMenu.map((key) => (
-						<a href={config.links[key]} class="block icon xsmall sm:small opacity-50 hover:opacity-100" class:list={[key]} target="_blank"></a>
+						<a href={core.links[key]} class="block icon xsmall sm:small opacity-50 hover:opacity-100" class:list={[key]} target="_blank"></a>
 					))}
 				</div>
 			</header>
@@ -104,7 +105,7 @@ import cfonts from 'cfonts';
 							{config.footer.menu.map((item) => (
 								<div class="flex gap-4 items-center menuItem lg:mb-0 mb-2">
 									<div class="icon small opacity-50" class:list={[item.ico]}></div>
-									<div class="text-white hover:underline"><a href={item.url || config.links[item.link]}>{item.title}</a></div>
+									<div class="text-white hover:underline"><a href={item.url || core.links[item.link]}>{item.title}</a></div>
 								</div>
 							))}
 						</div>

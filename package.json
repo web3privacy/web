@@ -8,12 +8,12 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "core": "deno run --allow-all utils/core.js",
     "contribs": "deno run --allow-all utils/contributors.js",
-    "events": "deno run --allow-all utils/events.js",
     "articles": "deno run --allow-all utils/articles.js",
     "talks": "deno run --allow-all utils/talks.js",
     "explorer": "deno run --allow-all utils/explorer.js",
-    "all": "npm run contribs && npm run events && npm run articles && npm run talks && npm run explorer"
+    "all": "npm run core && npm run contribs && npm run articles && npm run talks && npm run explorer"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.0.2",

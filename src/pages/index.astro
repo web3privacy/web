@@ -3,12 +3,14 @@
 import BaseLayout from '../layouts/base.astro';
 import AboutFooter from '../components/AboutFooter.astro';
 import * as config from '../config.yaml';
-import events from '../events.json';
+import core from '../core.json';
 import articles from '../articles.json';
 import talks from '../talks.json';
 import explorer from '../explorer.json';
 import { isRenderTemplateResult } from 'astro/runtime/server/render/astro/render-template.js';
 import { isPast, format } from 'date-fns';
+
+const events = core.events;
 
 let eventsPast = 0
 let eventsUpcoming = 0
@@ -44,14 +46,6 @@ for (const ev of events) {
 					</div>
 				</div>
 			</div>
-			<div class="bg-talks" data-url="/research">
-				<div class="title">Research</div>
-				<div class="numbers">
-					<div>
-						<div class="big">3 reserch projects →</div>
-					</div>
-				</div>
-			</div>
 			<div class="bg-projects" data-url="https://explorer.web3privacy.info">
 				<div class="title">Explorer</div>
 				<div class="numbers">
@@ -62,6 +56,14 @@ for (const ev of events) {
 					<div>
 						<div class="big">{explorer.contributors}</div>
 						<div>Contributors</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg-talks" data-url="/research">
+				<div class="title">Research</div>
+				<div class="numbers">
+					<div>
+						<div class="big">{core.projects.filter(x => x.type && x.type === "research").length} research projects →</div>
 					</div>
 				</div>
 			</div>

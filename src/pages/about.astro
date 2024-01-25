@@ -2,6 +2,7 @@
 
 import BaseLayout from '../layouts/base.astro';
 import * as config from '../config.yaml';
+import core from '../core.json';
 import AboutFooter from '../components/AboutFooter.astro';
 
 ---
@@ -14,7 +15,7 @@ import AboutFooter from '../components/AboutFooter.astro';
 				<h1>Our mission</h1>
 				<div set:html={config.landing.mission}></div>
 				<div class="mt-8">
-					<a class="button inverted" href={config.links.manifesto}><button>Read manifesto</button></a>
+					<a class="button inverted" href={core.links.manifesto}><button>Read manifesto</button></a>
 				</div>
 			</div>
 			<div>

@@ -1,16 +1,4 @@
 title: Web3Privacy Now
-links:
-  docs: https://docs.web3privacy.info/
-  manifesto: https://docs.web3privacy.info/manifesto
-  github: https://github.com/web3privacy
-  twitter: https://twitter.com/web3privacy
-  matrix: https://matrix.web3privacy.info
-  bluesky: https://bsky.app/profile/web3privacy.info
-  mirror: https://mirror.xyz/0x0f1F3DAf416B74DB3DE55Eb4D7513a80F4841073/
-  youtube: https://youtube.com/@Web3PrivacyNow/
-  forum: https://forum.web3privacy.info
-  explorer: https://explorer.web3privacy.info
-  telegram: https://t.me/web3privacynow
 header:
   menu:
     - name: Home
