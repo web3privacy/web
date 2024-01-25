@@ -160,7 +160,7 @@
     {
       "id": "w3pm-ath1",
       "type": "meetup",
-      "date": "2024/Q1",
+      "date": "2024/Feb",
       "city": "Athens",
       "country": "gr",
       "coincidence": "",
@@ -243,6 +243,9 @@
       "place": "[c-base](https://c-base.org/)",
       "coincidence": "ETHBerlin",
       "lead": "Tree",
+      "helpers": [
+        "ligi"
+      ],
       "slots": 3,
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-berlin1"
@@ -341,6 +344,20 @@
       "lead": "Tree",
       "slots": 3,
       "optional": true
+    },
+    {
+      "id": "w3pm-cph1",
+      "type": "meetup",
+      "date": "2024/Sep",
+      "city": "Copenhagen",
+      "country": "dk",
+      "coincidence": "",
+      "lead": "Tree",
+      "slots": 3,
+      "optional": true,
+      "helpers": [
+        "czepluch"
+      ]
     },
     {
       "id": "w3pm-rom2",
