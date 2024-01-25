@@ -1,7 +1,10 @@
 ---
 const { item } = Astro.props;
-import { format, compareAsc, addDays } from 'date-fns';
+import { format, compareAsc, addDays, isFuture } from 'date-fns';
 import { marked } from 'marked';
+
+const isDate = item.date.match(/^\d{4}-\d{2}-\d{2}$/)
+const future = isDate && !isFuture(new Date(item.date));
 
 function dateFormat (str) {
     if (str.match(/^\d{4}-\d{2}-\d{2}$/)) {
@@ -56,10 +59,16 @@ const statuses = {
     confirmed: {
         title: 'Confirmed',
         color: 'text-green-500',
+    },
+    past: {
+        title: 'Already happened',
+        color: 'text-green-800',
     }
 }
 
-const status = item.confirmed ? statuses.confirmed : (item.links?.rsvp ? statuses.preregistration : statuses.unconfirmed)
+const status = item.confirmed
+    ? (future ? statuses.past : statuses.confirmed)
+    : (item.links?.rsvp ? statuses.preregistration : statuses.unconfirmed);
 
 ---
 
@@ -73,7 +82,14 @@ const status = item.confirmed ? statuses.confirmed : (item.links?.rsvp ? statuse
                 }
             </div>
             <div>
-                <div class="text-lg text-white">{nameRenderer(item)}</div>
+                <div class="">
+                    <span class="text-white text-lg">{nameRenderer(item)}</span>
+                    <div class="inline-block ml-2">
+                        {item.type === "hackathon" && <span class="text-xs ml-2 text-black bg-white px-1 py-0.5">HACKATHON</span>}
+                        {item.type === "summit" && <span class="text-xs ml-2 text-black bg-white px-1 py-0.5">SUMMIT</span>}
+                        {item.tags && item.tags.includes("sfe") && <span class="text-xs ml-2 text-black bg-gray-500 px-1 py-0.5" title="Sponsorship Free Edition (SFE)">SFE</span>}
+                    </div>
+                </div>
                 <div class="flex gap-2">
                     <img src={`/flags/${item.country}.svg`} class="w-4" />
                     <div>
@@ -99,7 +115,10 @@ const status = item.confirmed ? statuses.confirmed : (item.links?.rsvp ? statuse
         <div class="w-0 sm:w-28"></div>
         <div>
             <div>Date: <span class="text-white">{dateFormat(item.date)} {item.days ? ' - ' + dateFormat(dateEnd(item.date, item.days)) + ` (${item.days} days)` : ''}</span></div>
-            <div>Place: {item.place && <span set:html={marked.parseInline(item.place)} class="text-white"></span> || "TBD"}</div>
+            <div>
+                Place: {item.place && <span set:html={marked.parseInline(item.place)} class="text-white"></span> || "TBD"}
+                {item.place && item['place-address'] && <span> @ </span><span class="text-white">{item['place-address']}</span>}
+            </div>
             <div>Status: <span class:list={[status.color]} class="mr-1.5 text-xs">●</span> {status.title}</div>
             <div>Lead: <span class="text-white">{item.lead || 'n/a'}</span></div>
 
