@@ -1,6 +1,7 @@
 ---
 const { item } = Astro.props;
-import { format, compareAsc, addDays } from 'date-fns'
+import { format, compareAsc, addDays } from 'date-fns';
+import { marked } from 'marked';
 
 function dateFormat (str) {
     if (str.match(/^\d{4}-\d{2}-\d{2}$/)) {
@@ -98,6 +99,7 @@ const status = item.confirmed ? statuses.confirmed : (item.links?.rsvp ? statuse
         <div class="w-0 sm:w-28"></div>
         <div>
             <div>Date: <span class="text-white">{dateFormat(item.date)} {item.days ? ' - ' + dateFormat(dateEnd(item.date, item.days)) + ` (${item.days} days)` : ''}</span></div>
+            <div>Place: {item.place && <span set:html={marked.parseInline(item.place)} class="text-white"></span> || "TBD"}</div>
             <div>Status: <span class:list={[status.color]} class="mr-1.5 text-xs">●</span> {status.title}</div>
             <div>Lead: <span class="text-white">{item.lead || 'n/a'}</span></div>
 
