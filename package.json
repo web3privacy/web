@@ -13,7 +13,7 @@
     "articles": "deno run --allow-all utils/articles.js",
     "talks": "deno run --allow-all utils/talks.js",
     "explorer": "deno run --allow-all utils/explorer.js",
-    "all": "npm run core && npm run contribs && npm run articles && npm run talks && npm run explorer"
+    "sync-all": "npm run core && npm run contribs && npm run articles && npm run talks && npm run explorer"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.0.2",

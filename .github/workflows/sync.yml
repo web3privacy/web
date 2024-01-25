@@ -1,0 +1,27 @@
+name: Synchronize data
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v3
+
+      - uses: denoland/setup-deno@v1
+        with:
+            deno-version: v1.x
+
+      - name: Run synchronization script
+        run: npm run sync-all
+    
+      - uses: EndBug/add-and-commit@v9
+        with:
+          default_author: github_actions
