@@ -28,8 +28,11 @@ async function getContributors () {
             //}
         });
 		const arr = await response.json();
-		console.log(arr)
 		for (const item of arr) {
+			if (item.login === "github-actions[bot]") {
+				continue;
+			}
+
             const found = output.find(i => i.login === item.login)
 			if (!found) {
 				output.push(item)
