@@ -42,7 +42,7 @@ import cfonts from 'cfonts';
 			<div class="w-full">
 				{config.header.menu.map((menuItem) => (
 					<div class="uppercase w-full">
-						<a href={menuItem.url || core.links} class="inline-block hover:underline px-4 py-2" class:list={[menuItem.url?.match(/^http/) ? "external" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]}>{menuItem.name}</a>
+						<a href={core.links[menuItem.link] || menuItem.url} class="inline-block hover:underline px-4 py-2" class:list={[menuItem.url?.match(/^http/) ? "external" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]}>{menuItem.name}</a>
 					</div>
 				))}
 			</div>
