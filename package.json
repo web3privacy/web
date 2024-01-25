@@ -11,7 +11,8 @@
     "contribs": "deno run --allow-all utils/contributors.js",
     "events": "deno run --allow-all utils/events.js",
     "articles": "deno run --allow-all utils/articles.js",
-    "talks": "deno run --allow-all utils/talks.js"
+    "talks": "deno run --allow-all utils/talks.js",
+    "explorer": "deno run --allow-all utils/explorer.js"
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.0.2",

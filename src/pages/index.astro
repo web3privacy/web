@@ -6,6 +6,7 @@ import * as config from '../config.yaml';
 import events from '../events.json';
 import articles from '../articles.json';
 import talks from '../talks.json';
+import explorer from '../explorer.json';
 import { isRenderTemplateResult } from 'astro/runtime/server/render/astro/render-template.js';
 import { isPast, format } from 'date-fns';
 
@@ -26,7 +27,7 @@ for (const ev of events) {
 
 ---
 
-<BaseLayout title="Home Page" banner="true">
+<BaseLayout banner="true" description="Privacy advocates worldwide are coming together to discuss how to mainstream privacy within the Web3 industry. So it will become a cultural phenomenon embodying both decentralisation & anti-surveillance capitalism practices.">
 
 	<div class="middle-pane-big">
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w3pn-hp-grid gap-2 mt-2">
@@ -43,31 +44,20 @@ for (const ev of events) {
 					</div>
 				</div>
 			</div>
-			<div class="bg-talks" data-url="/talks">
-				<div class="title">Talks</div>
+			<div class="bg-talks" data-url="/research">
+				<div class="title">Research</div>
 				<div class="numbers">
 					<div>
-						<div class="big">?</div>
-						<div>Talks</div>
-					</div>
-					<div>
-						<div class="big">?</div>
-						<div>Recordings</div>
-					</div>
-					<div>
-						<div class="big">?</div>
-						<div>Speakers</div>
+						<div class="semibig">3 reserch projects →</div>
 					</div>
 				</div>
 			</div>
-			<div class="bg-projects" data-url="/projects">
-				<div class="title">Projects</div>
+			<div class="bg-projects" data-url="https://explorer.web3privacy.info">
+				<div class="title">Explorer</div>
 				<div class="numbers">
 					<div>
-						<div class="semibig">Privacy explorer →</div>
-					</div>
-					<div>
-						<div class="semibig">3 reserch projects →</div>
+						<div class="big">{explorer.projects}</div>
+						<div>Projects</div>
 					</div>
 				</div>
 			</div>
@@ -76,25 +66,13 @@ for (const ev of events) {
 
 
 	<div class="middle-pane-medium mt-10">
-		<div class="mt-10">
+		<!--div class="mt-10">
 			<h1>Our Projects</h1>
 		</div>
 
 		<div class="mt-16">
 			<h1>Featured Events</h1>
-		</div>
-
-		<div class="mt-16">
-			<h1>Latest Talks</h1>
-		</div>
-
-		<div class="grid md:grid-cols-2 gap-6">
-			{talks.slice(0,4).map((entry) => (
-				<div class="basegrid-entry aspect-video" style={{backgroundImage: `url("${entry.img}")`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-					<a href={entry.url} class="w-full h-full" title={entry.title}></a>
-				</div>
-			))}
-		</div>
+		</div-->
 
 		<div class="mt-16">
 			<h1>Latest Articles</h1>
@@ -107,6 +85,18 @@ for (const ev of events) {
 						<a href={entry.url}>{entry.title}</a>
 						<span class="date">{format(new Date(entry.date), 'MMMM do, yyyy')}</span>
 					</div>
+				</div>
+			))}
+		</div>
+
+		<div class="mt-16">
+			<h1>Latest Talks</h1>
+		</div>
+
+		<div class="grid md:grid-cols-2 gap-6">
+			{talks.slice(0,4).map((entry) => (
+				<div class="basegrid-entry aspect-video" style={{backgroundImage: `url("${entry.img}")`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+					<a href={entry.url} class="w-full h-full" title={entry.title}></a>
 				</div>
 			))}
 		</div>

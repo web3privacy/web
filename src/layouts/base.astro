@@ -1,7 +1,7 @@
 ---
 import * as config from '../config.yaml';
 import '../styles/base.css';
-const {banner, title} = Astro.props;
+const {banner, title, description} = Astro.props;
 
 import cfonts from 'cfonts';
 
@@ -12,6 +12,7 @@ import cfonts from 'cfonts';
 		<link rel="icon" type="image/x-icon" href="/favicon.ico">
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
 		<title>{title ? title + ' | ' + config.title : config.title}</title>
 		<link
 			rel="preload"
@@ -40,7 +41,7 @@ import cfonts from 'cfonts';
 			<div class="w-full">
 				{config.header.menu.map((menuItem) => (
 					<div class="uppercase w-full">
-						<a href={menuItem.url || config.links} class="inline-block hover:underline px-4 py-2" class:list={[menuItem.url?.match(/^http/) ? "external" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]}>2@@@{menuItem.name}</a>
+						<a href={menuItem.url || config.links} class="inline-block hover:underline px-4 py-2" class:list={[menuItem.url?.match(/^http/) ? "external" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]}>{menuItem.name}</a>
 					</div>
 				))}
 			</div>
@@ -77,7 +78,7 @@ import cfonts from 'cfonts';
 							{config.hero.text}
 						</div>
 						<div class="mt-6">
-							<a class="button" href={config.links.docs}><button>About Web3Privacy Now</button></a>
+							<a class="button" href="/about"><button>About Web3Privacy Now</button></a>
 						</div>
 					</div>
 				</div>
