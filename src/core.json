@@ -405,9 +405,9 @@
     {
       "id": "w3pm-dc1",
       "type": "meetup",
-      "date": "2024-11-20",
-      "city": "SE Asia",
-      "country": "xx",
+      "date": "2024-11-11",
+      "city": "Bangkok",
+      "country": "th",
       "coincidence": "[Devcon](https://devcon.org/)",
       "slots": 5,
       "links": {
