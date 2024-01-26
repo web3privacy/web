@@ -18,7 +18,7 @@ for (const c of contributors) {
 function getPoint (num){
     const key = `c:${num}`
     const obj = points[key];
-    return `${obj.start+1}${obj.arr.length > 1 ? '-'+(obj.start+1+obj.arr.length) : ''}`;
+    return `${obj.start+1}${obj.arr.length > 1 ? '-'+(obj.start+obj.arr.length) : ''}`;
 }
 
 ---
