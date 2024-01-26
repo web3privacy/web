@@ -240,6 +240,9 @@
     {
       "id": "w3pm-ber1",
       "type": "meetup",
+      "tags": [
+        "sfe"
+      ],
       "date": "2024-05-22",
       "city": "Berlin",
       "country": "de",
@@ -314,7 +317,7 @@
       }
     },
     {
-      "id": "w3pm-bcn2",
+      "id": "w3pm-bcn1",
       "type": "meetup",
       "date": "2024/Jul",
       "city": "Barcelona",
