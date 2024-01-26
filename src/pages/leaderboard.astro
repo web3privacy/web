@@ -3,23 +3,61 @@
 import BaseLayout from '../layouts/base.astro';
 import contributors from '../contributors.json';
 
+const points = {}
+let i = 0;
+for (const c of contributors) {
+    const key = `c:${c.contributions}`
+    if (!points[key]) {
+        points[key] = { arr: [c.login], start: i }
+    } else {
+        points[key].arr.push(c.login)
+    }
+    i++
+}
+
+function getPoint (num){
+    const key = `c:${num}`
+    const obj = points[key];
+    return `${obj.start+1}${obj.arr.length > 1 ? '-'+(obj.start+1+obj.arr.length) : ''}`;
+}
+
 ---
 
 <BaseLayout title="Leaderboard">
 
-	<div class="middle-pane-medium mt-10">
-        <table class="w3pn-leaderboard-table w-1/2">
+	<div class="middle-pane-medium mt-10 flex items-center justify-center">
+        <!--code><pre>
+            {JSON.stringify(points, null, 2)}
+        </pre></code-->
+        <table class="w3pn-leaderboard-table w-full sm:w-5/6 md:w-2/3 lg:w-1/2">
             <thead>
                 <tr>
+                    <th></th>
                     <th class="pb-4 uppercase" colspan="2">Contributor</th>
-                    <th align="left" class="pb-4 uppercase"># Contribs</th>
+                    <th align="left" class="pb-4 uppercase"># Contributions</th>
                 </tr>
             </thead>
             <tbody>
-                {contributors.map((contrib) => (
+                {contributors.map((contrib, i) => (
                     <tr>
-                        <td align="right" class="py-2 px-4"><div class="w-16 h-16"><img src={contrib.avatar_url} class="rounded-full" /></div></td>
-                        <td class="px-2"><a href={contrib.html_url} target="_blank" class="hover:underline">{contrib.login}</a></td>
+                        <td align="right">
+                            {[getPoint(contrib.contributions)].map((r) => (
+                                <div>
+                                    {r < 3 && 
+                                        <span class="mr-4">
+                                            {r === "1" && "🥇"}
+                                            {r === "2" && "🥈"}
+                                            {r === "3" && "🥉"}
+                                        </span>
+                                    }
+                                    <b>{r}.</b>
+                                </div>
+                            ))}
+                        </td>
+                        <td align="right" class="py-3 px-4"><div class="w-16 h-16"><img src={contrib.avatar_url} class="rounded-full border" /></div></td>
+                        <td class="px-2">
+                            <a href={contrib.html_url} target="_blank" class="hover:underline">{contrib.login}</a>
+                        </td>
                         <td class="text-white pl-10 text-lg pr-4" align="left">{contrib.contributions}</td>
                     </tr>
                 ))}
