@@ -7,6 +7,10 @@ const contributorRepos = [
 	"web3privacy/data",
 	"web3privacy/docs",
 	"web3privacy/web",
+	"web3privacy/brand",
+
+	// events workgroup
+	"web3privacy/events",
 
 	// explorer
 	"web3privacy/explorer",
@@ -14,9 +18,11 @@ const contributorRepos = [
 	"web3privacy/explorer-app",
 
 	// old - deprecated
-	"web3privacy/events",
 	"web3privacy/w3ps1",
     "web3privacy/grants",
+	"web3privacy/old-website",
+	"web3privacy/web3privacy-app-old",
+
 ]
 
 async function getContributors () {
