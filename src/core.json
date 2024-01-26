@@ -220,12 +220,16 @@
     {
       "id": "w3pm-tal1",
       "type": "meetup",
-      "date": "2024/Apr",
+      "date": "2024-04-18",
       "city": "Tallinn",
       "country": "ee",
+      "lead": "Tree",
       "coincidence": "[ETHTallinn](https://www.ethtallinn.org/)",
       "slots": 3,
-      "optional": true
+      "optional": true,
+      "links": {
+        "rsvp": "https://lu.ma/w3pn-meetup-tallinn1"
+      }
     },
     {
       "id": "w3pm-por1",
