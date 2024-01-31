@@ -25,6 +25,12 @@ const contributorRepos = [
 
 ]
 
+function isBlacklisted (login) {
+	if (login.match(/\[bot\]$/)) {
+		return true;
+	}
+}
+
 async function getContributors () {
 	const output = [];
 	for (const cr of contributorRepos) {
@@ -35,7 +41,7 @@ async function getContributors () {
         });
 		const arr = await response.json();
 		for (const item of arr) {
-			if (item.login === "github-actions[bot]") {
+			if (isBlacklisted(item.login)) {
 				continue;
 			}
 
