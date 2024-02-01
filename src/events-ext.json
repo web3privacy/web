@@ -1,0 +1,293 @@
+[
+  {
+    "url": "w3pn-meetup-bucharest1",
+    "name": "W3PN Meetup @ ETHBucharest 2024",
+    "period": [
+      "2024-03-28T13:00:00.000Z",
+      "2024-03-28T19:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/pq/73637b17-538e-44fa-a75a-5da505ba9d47",
+    "guestCount": 3,
+    "guests": [
+      {
+        "name": "tree",
+        "avatarUrl": "https://cdn.lu.ma/avatars/39/1bf939a4-c139-4008-96d8-ad5f729d94c3"
+      },
+      {
+        "name": "RSSC No1",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_39.png"
+      },
+      {
+        "name": "bryce_gabari",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_18.png"
+      }
+    ]
+  },
+  {
+    "url": "w3pn-meetup-ams1",
+    "name": "W3PN Meetup @ ETHDam 2024",
+    "period": [
+      "2024-04-11T13:00:00.000Z",
+      "2024-04-11T19:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/pq/73637b17-538e-44fa-a75a-5da505ba9d47",
+    "guestCount": 12,
+    "guests": [
+      {
+        "name": "Lanaryx",
+        "avatarUrl": "https://images.lumacdn.com/avatars/fu/355e98ad-8cdc-4e6a-8066-96fd9c505f24"
+      },
+      {
+        "name": "Alina Latinina",
+        "avatarUrl": "https://images.lumacdn.com/avatars/1x/73d8754f-c813-4603-90cd-a1233e12eb1a"
+      },
+      {
+        "name": "Kieran Mesquita",
+        "avatarUrl": "https://images.lumacdn.com/avatars/0c/b0ba4716-d35b-48b3-9523-62242e583013"
+      },
+      {
+        "name": "Dietrich Ayala",
+        "avatarUrl": "https://cdn.lu.ma/avatars/yx/da86d2b5-aa0e-4c77-8f06-eda042415b2c"
+      },
+      {
+        "name": "limone.eth",
+        "avatarUrl": "https://cdn.lu.ma/avatars/zo/9b09a4b5-59b6-47cd-b988-32ed7f22dc1e"
+      },
+      {
+        "name": "tree",
+        "avatarUrl": "https://cdn.lu.ma/avatars/39/1bf939a4-c139-4008-96d8-ad5f729d94c3"
+      },
+      {
+        "name": "Jacob Czepluch",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_13.png"
+      },
+      {
+        "name": "HW",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_19.png"
+      },
+      {
+        "name": "Who?",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_24.png"
+      },
+      {
+        "name": "bryce_gabari",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_18.png"
+      }
+    ]
+  },
+  {
+    "url": "w3pn-meetup-tallinn1",
+    "name": "W3PN Meetup @ ETHTallinn 2024",
+    "period": [
+      "2024-04-18T12:00:00.000Z",
+      "2024-04-18T18:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/pq/73637b17-538e-44fa-a75a-5da505ba9d47",
+    "guestCount": 4,
+    "guests": [
+      {
+        "name": "Sander Gansen",
+        "avatarUrl": "https://images.lumacdn.com/avatars/n9/3185a69c-8877-44a2-a3bd-d8ca324dae8d"
+      },
+      {
+        "name": "tree",
+        "avatarUrl": "https://cdn.lu.ma/avatars/39/1bf939a4-c139-4008-96d8-ad5f729d94c3"
+      },
+      {
+        "name": "HW",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_19.png"
+      },
+      {
+        "name": "Ashton Barger",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_29.png"
+      }
+    ]
+  },
+  {
+    "url": "w3pn-meetup-berlin1",
+    "name": "W3PN Meetup @ ETHBerlin 4",
+    "period": [
+      "2024-05-22T13:00:00.000Z",
+      "2024-05-22T19:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/pq/73637b17-538e-44fa-a75a-5da505ba9d47",
+    "guestCount": 7,
+    "guests": [
+      {
+        "name": "will scott",
+        "avatarUrl": "https://cdn.lu.ma/avatars/66/778a15b0-1e8b-4c45-9011-f3d19dd7cc90"
+      },
+      {
+        "name": "tree",
+        "avatarUrl": "https://cdn.lu.ma/avatars/39/1bf939a4-c139-4008-96d8-ad5f729d94c3"
+      },
+      {
+        "name": "Orion",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_16.png"
+      },
+      {
+        "name": "alex v",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_37.png"
+      },
+      {
+        "name": "Elena Grafenhorst",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_38.png"
+      },
+      {
+        "name": "Jacob Czepluch",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_13.png"
+      },
+      {
+        "name": "bryce_gabari",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_18.png"
+      }
+    ]
+  },
+  {
+    "url": "w3pn-summit-prague2",
+    "name": "W3PN Summit @ ETHPrague 2024",
+    "period": [
+      "2024-05-30T07:00:00.000Z",
+      "2024-05-31T02:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/pq/73637b17-538e-44fa-a75a-5da505ba9d47",
+    "guestCount": 4,
+    "guests": [
+      {
+        "name": "Ashoat Tevosyan",
+        "avatarUrl": "https://cdn.lu.ma/avatars/b1/66f83394-ad58-4848-8c29-292cac308fa1"
+      },
+      {
+        "name": "tree",
+        "avatarUrl": "https://cdn.lu.ma/avatars/39/1bf939a4-c139-4008-96d8-ad5f729d94c3"
+      },
+      {
+        "name": "HW",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_19.png"
+      },
+      {
+        "name": "bryce_gabari",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_18.png"
+      }
+    ]
+  },
+  {
+    "url": "w3pn-bled-hackathon1",
+    "name": "W3PN Hackathon @ Bled",
+    "period": [
+      "2024-06-19T13:00:00.000Z",
+      "2024-06-26T13:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/pq/73637b17-538e-44fa-a75a-5da505ba9d47",
+    "guestCount": 0,
+    "guests": []
+  },
+  {
+    "url": "w3pn-meetup-ljubljana1",
+    "name": "W3PN Meetup @ Ljubljana",
+    "period": [
+      "2024-06-21T13:00:00.000Z",
+      "2024-06-21T19:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/pq/73637b17-538e-44fa-a75a-5da505ba9d47",
+    "guestCount": 2,
+    "guests": [
+      {
+        "name": "tree",
+        "avatarUrl": "https://cdn.lu.ma/avatars/39/1bf939a4-c139-4008-96d8-ad5f729d94c3"
+      },
+      {
+        "name": "bryce_gabari",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_18.png"
+      }
+    ]
+  },
+  {
+    "url": "w3pn-meetup-bru1",
+    "name": "W3PN Meetup @ EthCC 7",
+    "period": [
+      "2024-07-12T13:00:00.000Z",
+      "2024-07-12T19:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/pq/73637b17-538e-44fa-a75a-5da505ba9d47",
+    "guestCount": 2,
+    "guests": [
+      {
+        "name": "tree",
+        "avatarUrl": "https://cdn.lu.ma/avatars/39/1bf939a4-c139-4008-96d8-ad5f729d94c3"
+      },
+      {
+        "name": "bryce_gabari",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_18.png"
+      }
+    ]
+  },
+  {
+    "url": "w3pn-meetup-rome1",
+    "name": "W3PN Meetup @ ETHRome 2024",
+    "period": [
+      "2024-10-03T13:00:00.000Z",
+      "2024-10-03T19:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/pq/73637b17-538e-44fa-a75a-5da505ba9d47",
+    "guestCount": 2,
+    "guests": [
+      {
+        "name": "tree",
+        "avatarUrl": "https://cdn.lu.ma/avatars/39/1bf939a4-c139-4008-96d8-ad5f729d94c3"
+      },
+      {
+        "name": "bryce_gabari",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_18.png"
+      }
+    ]
+  },
+  {
+    "url": "w3pn-summit-brno1",
+    "name": "W3PN Summit @ ETHBrno 2024",
+    "period": [
+      "2024-10-24T07:00:00.000Z",
+      "2024-10-25T02:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/pq/73637b17-538e-44fa-a75a-5da505ba9d47",
+    "guestCount": 2,
+    "guests": [
+      {
+        "name": "tree",
+        "avatarUrl": "https://cdn.lu.ma/avatars/39/1bf939a4-c139-4008-96d8-ad5f729d94c3"
+      },
+      {
+        "name": "bryce_gabari",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_18.png"
+      }
+    ]
+  },
+  {
+    "url": "w3pn-meetup-devcon7",
+    "name": "W3PN Meetup @ Devcon 7",
+    "period": [
+      "2024-11-11T08:00:00.000Z",
+      "2024-11-11T14:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/pq/73637b17-538e-44fa-a75a-5da505ba9d47",
+    "guestCount": 4,
+    "guests": [
+      {
+        "name": "tree",
+        "avatarUrl": "https://cdn.lu.ma/avatars/39/1bf939a4-c139-4008-96d8-ad5f729d94c3"
+      },
+      {
+        "name": "Orion",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_16.png"
+      },
+      {
+        "name": "vincent",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_40.png"
+      },
+      {
+        "name": "bryce_gabari",
+        "avatarUrl": "https://cdn.lu.ma/avatars-default/avatar_18.png"
+      }
+    ]
+  }
+]

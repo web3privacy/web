@@ -2,6 +2,23 @@
 const { item } = Astro.props;
 import { format, compareAsc, addDays, isFuture } from 'date-fns';
 import { marked } from 'marked';
+import EventsExt from '../events-ext.json';
+
+function findExt () {
+    let slug = null
+    if (item.links?.web && item.links.web.match(/^https:\/\/lu.ma\//)) {
+        slug = item.links.web.match(/^https:\/\/lu.ma\/(.+)$/)[1]
+    }
+    if (item.links?.rsvp && item.links.rsvp.match(/^https:\/\/lu.ma\//)) {
+        slug = item.links.rsvp.match(/^https:\/\/lu.ma\/(.+)$/)[1]
+    }
+    if (!slug) {
+        return null
+    }
+    return EventsExt.find(ex => ex.url === slug)
+}
+
+const ext = findExt()
 
 const isDate = item.date.match(/^\d{4}-\d{2}-\d{2}$/)
 const future = isDate && !isFuture(new Date(item.date));
@@ -102,6 +119,13 @@ const status = item.confirmed
             </div>
             <div class="py-1 grow text-right items-center flex gap-4">
                 <div class="grow"></div>
+                {ext && 
+                    <div class="flex -space-x-3">
+                        {ext.guests.map((guest) => (
+                            <div><img src={guest.avatarUrl} class="w-8 h-8 aspect-square object-fit rounded-full border-gray-800 border-2" /></div>
+                        ))}
+                    </div>
+                }
                 {/*<div class="text-sm"></div>*/}
                 {item.links?.rsvp &&
                         <a href={item.links?.rsvp} class="button inverted"><button>Join</button></a>
