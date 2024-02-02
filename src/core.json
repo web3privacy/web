@@ -255,6 +255,16 @@
       "imageUrl": "https://data.web3privacy.info/img/people/tibor-csoka.jpg"
     },
     {
+      "id": "gabari",
+      "name": "Bryce",
+      "nickname": "gabari",
+      "caption": "[Brume Wallet](https://brume.money/) co-founder & [MangroveDAO](https://mangrovedao.earth/) Core",
+      "refs": {
+        "twitter": "bryce_gabari"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/gabari.jpeg"
+    },
+    {
       "id": "costanza-gallo",
       "name": "Costanza Gallo",
       "caption": "Head of partnerships at the [The Swarm Foundation](https://www.ethswarm.org/foundation)",
@@ -509,7 +519,10 @@
         "merula",
         "serinko",
         "steffen-kux",
-        "althea"
+        "althea",
+        "mykola-siusko",
+        "pg",
+        "tree"
       ]
     },
     {
@@ -610,7 +623,10 @@
       ],
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-bucharest1"
-      }
+      },
+      "speakers": [
+        "gabari"
+      ]
     },
     {
       "id": "w3pm-ams1",
@@ -628,7 +644,10 @@
       "slots": 3,
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-ams1"
-      }
+      },
+      "speakers": [
+        "gabari"
+      ]
     },
     {
       "id": "w3pm-tal1",
@@ -652,7 +671,10 @@
       "country": "pt",
       "coincidence": "[ETHPorto](https://ethporto.org/)",
       "slots": 3,
-      "optional": true
+      "optional": true,
+      "speakers": [
+        "gabari"
+      ]
     },
     {
       "id": "w3pm-ber1",
@@ -691,7 +713,10 @@
       "slots": 16,
       "links": {
         "rsvp": "https://lu.ma/w3pn-summit-prague2"
-      }
+      },
+      "speakers": [
+        "gabari"
+      ]
     },
     {
       "id": "w3ph1",
