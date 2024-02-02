@@ -357,6 +357,15 @@
       "imageUrl": "https://data.web3privacy.info/img/people/alex-kampa.jpg"
     },
     {
+      "id": "odysseas",
+      "name": "Odysseas",
+      "caption": "Blockchain innovator & privacy advocate",
+      "refs": {
+        "twitter": "odysseas_eth"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/odysseas.jpeg"
+    },
+    {
       "id": "manu-alzuru",
       "name": "Manu Alzuru",
       "caption": "Humanist, solarpunk, Founder of [DoinGud](https://doingud.com/) & [ETH Barcelona](https://ethbarcelona.com/)",
@@ -570,7 +579,11 @@
       "coincidence": "",
       "lead": "Mykola",
       "optional": true,
-      "slots": 3
+      "slots": 3,
+      "speakers": [
+        "odysseas",
+        "mykola-siusko"
+      ]
     },
     {
       "id": "w3pm-lib1",
