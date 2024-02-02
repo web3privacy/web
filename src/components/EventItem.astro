@@ -3,6 +3,7 @@ const { item } = Astro.props;
 import { format, compareAsc, addDays, isFuture } from 'date-fns';
 import { marked } from 'marked';
 import EventsExt from '../events-ext.json';
+import core from "../core.json";
 
 function findExt () {
     let slug = null
@@ -16,6 +17,10 @@ function findExt () {
         return null
     }
     return EventsExt.find(ex => ex.url === slug)
+}
+
+function getSpeaker (id) {
+    return core.people.find(p => p.id === id)
 }
 
 const ext = findExt()
@@ -119,11 +124,21 @@ const status = item.confirmed
             </div>
             <div class="py-1 grow text-right items-center flex gap-4">
                 <div class="grow"></div>
-                {ext && 
+                {/*ext && 
                     <div class="flex -space-x-3">
                         {ext.guests.map((guest) => (
                             <div><img src={guest.avatarUrl} class="w-8 h-8 aspect-square object-fit rounded-full border-gray-800 border-2" /></div>
                         ))}
+                    </div>
+                */}
+                {item.speakers &&
+                    <div class="flex -space-x-3">
+                        {item.speakers.map(spId => getSpeaker(spId)).slice(0,7).map((speaker) => (
+                            <div><img src={speaker.imageUrl} class="w-8 h-8 aspect-square object-fit rounded-full border-gray-800 border-2" /></div>
+                        ))}
+                        {item.speakers.length > 7 &&
+                            <div class="flex items-center justify-center w-8 h-8 rounded-full aspect-square border-2 border-gray-800 bg-gray-800 text-xs">+{item.speakers.length - 7}</div>
+                        }
                     </div>
                 }
                 {/*<div class="text-sm"></div>*/}

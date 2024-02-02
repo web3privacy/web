@@ -1,0 +1,16 @@
+---
+
+import BaseLayout from '../layouts/base.astro';
+import core from '../core.json';
+
+---
+
+<BaseLayout title="People">
+
+	<div class="middle-pane-medium mt-10">
+        {core.people.map((person) => (
+            <div>{person.name}</div>
+        ))}
+	</div>
+
+</BaseLayout>
