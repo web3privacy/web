@@ -625,6 +625,7 @@
         "rsvp": "https://lu.ma/w3pn-meetup-bucharest1"
       },
       "speakers": [
+        "mykola-siusko",
         "gabari"
       ]
     },
@@ -646,6 +647,7 @@
         "rsvp": "https://lu.ma/w3pn-meetup-ams1"
       },
       "speakers": [
+        "mykola-siusko",
         "gabari"
       ]
     },
@@ -715,6 +717,7 @@
         "rsvp": "https://lu.ma/w3pn-summit-prague2"
       },
       "speakers": [
+        "mykola-siusko",
         "gabari"
       ]
     },
@@ -738,7 +741,13 @@
       "slots": 10,
       "links": {
         "rsvp": "https://lu.ma/w3pn-bled-hackathon1"
-      }
+      },
+      "speakers": [
+        "vaclav-pavlin",
+        "mykola-siusko",
+        "pg",
+        "tree"
+      ]
     },
     {
       "id": "w3pm-lju1",
@@ -756,7 +765,10 @@
       "slots": 5,
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-ljubljana1"
-      }
+      },
+      "speakers": [
+        "mykola-siusko"
+      ]
     },
     {
       "id": "w3pm-bcn1",
@@ -782,7 +794,10 @@
       ],
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-bru1"
-      }
+      },
+      "speakers": [
+        "mykola-siusko"
+      ]
     },
     {
       "id": "w3pm-waw1",
@@ -824,7 +839,10 @@
       ],
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-rome1"
-      }
+      },
+      "speakers": [
+        "mykola-siusko"
+      ]
     },
     {
       "id": "w3ps4",
@@ -842,7 +860,12 @@
       "slots": 16,
       "links": {
         "rsvp": "https://lu.ma/w3pn-summit-brno1"
-      }
+      },
+      "speakers": [
+        "mykola-siusko",
+        "pg",
+        "tree"
+      ]
     },
     {
       "id": "w3pm-dc1",
