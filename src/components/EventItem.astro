@@ -4,6 +4,7 @@ import { format, compareAsc, addDays, isFuture } from 'date-fns';
 import { marked } from 'marked';
 import EventsExt from '../events-ext.json';
 import core from "../core.json";
+import { imageMetadata } from 'astro/assets/utils';
 
 function findExt () {
     let slug = null
@@ -172,7 +173,7 @@ const status = item.confirmed
 
             {item.speakers &&
                 <div class="mt-6 mb-6">
-                    <h2>Speakers</h2>
+                    <h2>Speakers ({item.speakers.length})</h2>
                     <div class="grid grid-cols-1 gap-6 mt-4">
                         {item.speakers.map(spId => getSpeaker(spId)).map((speaker) => (
                             <div class="flex gap-4">
