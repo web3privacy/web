@@ -169,6 +169,28 @@ const status = item.confirmed
                     <a href={item.links.web} class="button inverted"><button>Website</button></a>
                 }
             </div>
+
+            {item.speakers &&
+                <div class="mt-6 mb-6">
+                    <h2>Speakers</h2>
+                    <div class="grid grid-cols-1 gap-6 mt-4">
+                        {item.speakers.map(spId => getSpeaker(spId)).map((speaker) => (
+                            <div class="flex gap-4">
+                                <div><img class="w-14 h-14 aspect-square rounded-full" src={speaker.imageUrl} /></div>
+                                <div>
+                                    <div>
+                                        <span class="text-white">{speaker.name}</span>
+                                        {speaker.refs?.twitter &&
+                                            <span class="ml-2">(<a href={"https://twitter.com/"+speaker.refs.twitter}>@{speaker.refs.twitter}</a>)</span>
+                                        }
+                                    </div>
+                                    <div set:html={marked.parseInline(speaker.caption)} class="text-sm"></div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            }
         </div>
     </div>
 </div>
