@@ -7,8 +7,16 @@
       "2024-03-28T19:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/pq/73637b17-538e-44fa-a75a-5da505ba9d47",
-    "guestCount": 3,
+    "guestCount": 5,
     "guests": [
+      {
+        "name": "ostanescu.eth",
+        "avatarUrl": "https://images.lumacdn.com/avatars/c6/a4e869e0-fda1-4118-b24f-f1ee22470ffc"
+      },
+      {
+        "name": "Andreea Cia",
+        "avatarUrl": "https://images.lumacdn.com/avatars/jl/f7a0ef8e-3e84-43d9-ac24-9484b4a896cc"
+      },
       {
         "name": "tree",
         "avatarUrl": "https://cdn.lu.ma/avatars/39/1bf939a4-c139-4008-96d8-ad5f729d94c3"
