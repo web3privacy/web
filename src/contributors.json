@@ -18,7 +18,7 @@
     "received_events_url": "https://api.github.com/users/Msiusko/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 1271
+    "contributions": 1272
   },
   {
     "login": "burningtree",
@@ -105,6 +105,27 @@
     "contributions": 43
   },
   {
+    "login": "niclaz",
+    "id": 83479948,
+    "node_id": "MDQ6VXNlcjgzNDc5OTQ4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/83479948?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/niclaz",
+    "html_url": "https://github.com/niclaz",
+    "followers_url": "https://api.github.com/users/niclaz/followers",
+    "following_url": "https://api.github.com/users/niclaz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/niclaz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/niclaz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/niclaz/subscriptions",
+    "organizations_url": "https://api.github.com/users/niclaz/orgs",
+    "repos_url": "https://api.github.com/users/niclaz/repos",
+    "events_url": "https://api.github.com/users/niclaz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/niclaz/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 14
+  },
+  {
     "login": "jakubklim",
     "id": 93137966,
     "node_id": "U_kgDOBY0sLg",
@@ -124,27 +145,6 @@
     "type": "User",
     "site_admin": false,
     "contributions": 12
-  },
-  {
-    "login": "niclaz",
-    "id": 83479948,
-    "node_id": "MDQ6VXNlcjgzNDc5OTQ4",
-    "avatar_url": "https://avatars.githubusercontent.com/u/83479948?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/niclaz",
-    "html_url": "https://github.com/niclaz",
-    "followers_url": "https://api.github.com/users/niclaz/followers",
-    "following_url": "https://api.github.com/users/niclaz/following{/other_user}",
-    "gists_url": "https://api.github.com/users/niclaz/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/niclaz/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/niclaz/subscriptions",
-    "organizations_url": "https://api.github.com/users/niclaz/orgs",
-    "repos_url": "https://api.github.com/users/niclaz/repos",
-    "events_url": "https://api.github.com/users/niclaz/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/niclaz/received_events",
-    "type": "User",
-    "site_admin": false,
-    "contributions": 9
   },
   {
     "login": "coinmandeer",
