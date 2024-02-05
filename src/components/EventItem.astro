@@ -142,6 +142,18 @@ const status = item.confirmed
                         }
                     </div>
                 }
+                {ext && ext.guestCount > 0 &&
+                    <div>
+                        <div class="text-center text-white leading-tight">{ext.guestCount}</div>
+                        <div class="text-xs">guests</div>
+                    </div>
+                }
+                {item.visitors && item.visitors > 0 &&
+                    <div>
+                        <div class="text-center text-white leading-tight">{item.visitors}</div>
+                        <div class="text-xs">guests</div>
+                    </div>
+                }
                 {/*<div class="text-sm"></div>*/}
                 {item.links?.rsvp &&
                         <a href={item.links?.rsvp} class="button inverted"><button>Join</button></a>
