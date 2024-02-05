@@ -20,10 +20,10 @@ for (const item of items) {
     period: [evt.start_at, evt.end_at],
     coverUrl: evt.cover_url,
     guestCount: item.guest_count,
-    guests: item.featured_guests.map((fg) => ({
+    /*guests: item.featured_guests.map((fg) => ({
       name: fg.name,
       avatarUrl: fg.avatar_url,
-    })),
+    })),*/
   });
   //console.log(item);
 }
