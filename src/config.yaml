@@ -23,7 +23,7 @@ header:
     #  url: /manifesto
   rightMenu:
     - twitter
-    - telegram
+    - mirror
     - github
     - matrix
 footer:
@@ -31,9 +31,12 @@ footer:
     - title: "@web3privacy"
       ico: twitter
       link: twitter
-    - title: Telegram
-      ico: telegram
-      link: telegram
+    - title: Mirror
+      ico: mirror
+      link: mirror
+    #- title: Telegram
+    #  ico: telegram
+    #  link: telegram
     - title: GitHub
       ico: github
       link: github
