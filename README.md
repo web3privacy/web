@@ -1,5 +1,7 @@
 # Web3Privacy Now Website
 
+<img width="1480" alt="w3pn-website-screen" src="https://github.com/web3privacy/web/assets/67269/fa80a3ce-ddd6-4a75-bbf1-e82c7cf68abd">
+
 ## Development
 
 ### Install
