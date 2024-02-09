@@ -63,7 +63,7 @@ for (const year of pastYears.reverse()) {
 		</p>
 	</div>
 
-	<script>
+	<script is:inline>
 		document.querySelectorAll('.event-header .header-base').forEach((el) => {
 			el.addEventListener('click', (ev) => {
 				if (ev.target.tagName === "BUTTON") {

@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+
 import * as config from '../config.yaml';
 import core from '../core.json';
 import '../styles/base.css';
@@ -19,6 +21,8 @@ function genHeading(str) {
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
 		<title>{title ? title + ' | ' + config.title : config.title}</title>
+
+		<ViewTransitions />
 		<link
 			rel="preload"
 			href="/fonts/archivo-regular-latin-ext.woff2"
