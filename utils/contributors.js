@@ -16,6 +16,10 @@ const contributorRepos = [
   "web3privacy/explorer-data",
   "web3privacy/explorer-app",
 
+  // news project
+  "web3privacy/news",
+  "web3privacy/news-app",
+
   // old - deprecated
   "web3privacy/w3ps1",
   "web3privacy/grants",
