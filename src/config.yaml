@@ -17,6 +17,8 @@ header:
     #  url: /leaderboard
     - name: Explorer
       link: explorer
+    - name: News
+      link: news
     - name: Docs
       link: docs
     #- name: Manifesto
