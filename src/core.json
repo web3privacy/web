@@ -132,35 +132,34 @@
   ],
   "people": [
     {
-      "id": "r-prokh",
-      "name": "Roma",
-      "nickname": "r_prokh",
-      "caption": "Growth Lead @ [Questbook](https://questbook.app/)",
-      "country": "pt",
+      "id": "jaromil",
+      "name": "Denis Roio",
+      "nickname": "Jaromil",
+      "caption": "Founder of [Dyne.org](https://dyne.org/)",
       "refs": {
-        "twitter": "r_prokh"
+        "twitter": "jaromil"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/r-prokh.jpeg"
+      "imageUrl": "https://data.web3privacy.info/img/people/jaromil.jpeg"
     },
     {
-      "id": "eleanore-blanc",
-      "name": "Eléonore Blanc",
-      "caption": "Crypto Educator & Founder of [CryptoCanal](https://www.cryptocanal.org/), [ETHDam](https://www.ethdam.com/) organiser",
-      "country": "nl",
+      "id": "vaclav-pavlin",
+      "name": "Václav Pavlín",
+      "caption": "Core contributor @ [Status](https://status.app/), [Logos](https://logos.co/about), [Waku](https://waku.org/)",
+      "country": "cz",
       "refs": {
-        "twitter": "blockblanc"
+        "twitter": "vpavlin"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/eleanore-blanc.jpeg"
+      "imageUrl": "https://data.web3privacy.info/img/people/vaclav-pavlin.jpeg"
     },
     {
-      "id": "manu-alzuru",
-      "name": "Manu Alzuru",
-      "caption": "Humanist, solarpunk, Founder of [DoinGud](https://doingud.com/) & [ETH Barcelona](https://ethbarcelona.com/)",
-      "country": "es",
+      "id": "max-hampshire",
+      "name": "Max Hampshire",
+      "caption": "Senior devrel of [Nym](https://nymtech.net/), Co-founder of [terra0](https://terra0.org/)",
+      "country": "at",
       "refs": {
-        "twitter": "ManuAlzuru"
+        "twitter": "_wjth"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/manu-alzuru.jpg"
+      "imageUrl": "https://data.web3privacy.info/img/people/max-hampshire.jpg"
     },
     {
       "id": "alex-kampa",
@@ -173,65 +172,34 @@
       "imageUrl": "https://data.web3privacy.info/img/people/alex-kampa.jpg"
     },
     {
-      "id": "limone-eth",
-      "name": "limone.eth",
-      "caption": "Serial hacker and community builder | core [urbeEth](https://twitter.com/urbeeth) & [ETHRome](https://www.ethrome.org/)",
-      "country": "it",
+      "id": "dcbuilder",
+      "name": "dcbuilder.eth",
+      "caption": "Research engineer at [Worldcoin](https://worldcoin.org/), ZKML & Rust enthusiast",
+      "country": "cz",
       "refs": {
-        "twitter": "limone_eth"
+        "twitter": "DCbuild3r"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/limone-eth.jpeg"
+      "imageUrl": "https://data.web3privacy.info/img/people/dcbuilder.jpg"
     },
     {
-      "id": "merula",
-      "name": "Merula",
-      "caption": "Software engineer and cryptographer Circles Entropy",
-      "imageUrl": "https://data.web3privacy.info/img/people/merula.jpeg"
-    },
-    {
-      "id": "mykola-siusko",
-      "name": "Mykola Siusko",
-      "caption": "Web3 privacy advocate behind [Web3Privacy Now](https://web3privacy.info/)",
-      "country": "es",
+      "id": "tree",
+      "name": "Tree",
+      "caption": "Orchestrating lunarpunk events [ETHBrno](https://ethbrno.cz) & [w3ps](https://github.com/web3privacy/w3ps) w/ [gwei.cz](https://gwei.cz)",
+      "country": "cz",
       "refs": {
-        "twitter": "nicksvyaznoy"
+        "bsky": "tree.fail"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/mykola-siusko.png"
+      "imageUrl": "https://data.web3privacy.info/img/people/tree.jpg"
     },
     {
-      "id": "andrea-togni",
-      "name": "Andrea Togni",
-      "caption": "Philosopher, Monero policy workgroup",
-      "imageUrl": "https://data.web3privacy.info/img/people/andrea-togni.jpg"
-    },
-    {
-      "id": "vincenzo-iovino",
-      "name": "Vincenzo Iovino",
-      "caption": "Researcher at [Aragon ZK Research](https://research.aragon.org/)",
-      "country": "it",
+      "id": "guy-zyskind",
+      "name": "Guy Zyskind",
+      "caption": "Founder of [Secret Network](https://scrt.network/), CEO [SCRT Labs](https://www.scrtlabs.com/)",
+      "country": "is",
       "refs": {
-        "twitter": "vincenzoiovino"
+        "twitter": "GuyZys"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/vincenzo-iovino.jpg"
-    },
-    {
-      "id": "wslyvh",
-      "name": "Wesley",
-      "caption": "Events @ Ethereum 🛠️ Indie Maker",
-      "refs": {
-        "twitter": "wslyvh"
-      },
-      "imageUrl": "https://data.web3privacy.info/img/people/wslyvh.png"
-    },
-    {
-      "id": "ameen-soleimani",
-      "name": "Ameen Soleimani",
-      "caption": "Summoner of [IranUnchained](https://www.iranunchained.com/), [Privacy Pools](https://www.privacypools.com/), [MolochDAO](https://molochdao.com/)",
-      "country": "us",
-      "refs": {
-        "twitter": "ameensol"
-      },
-      "imageUrl": "https://data.web3privacy.info/img/people/ameen-soleimani.jpg"
+      "imageUrl": "https://data.web3privacy.info/img/people/guy-zyskind.jpg"
     },
     {
       "id": "marcel-kolaja",
@@ -244,13 +212,172 @@
       "imageUrl": "https://data.web3privacy.info/img/people/marcel-kolaja.jpeg"
     },
     {
-      "id": "alex-zaidelson",
-      "name": "Alex Zaidelson",
-      "caption": "CEO [SCRT Labs](https://www.scrtlabs.com/)",
+      "id": "oliver-gale",
+      "name": "Oliver Gale",
+      "caption": "CEO of [Panther Protocol](https://www.pantherprotocol.io/)",
       "refs": {
-        "twitter": "azaidelson"
+        "twitter": "OriginalOlii"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/alex-zaidelson.jpeg"
+      "imageUrl": "https://data.web3privacy.info/img/people/oliver-gale.jpeg"
+    },
+    {
+      "id": "gabari",
+      "name": "Bryce",
+      "nickname": "gabari",
+      "caption": "[Brume Wallet](https://brume.money/) co-founder & [MangroveDAO](https://mangrovedao.earth/) Core",
+      "refs": {
+        "twitter": "bryce_gabari"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/gabari.jpeg"
+    },
+    {
+      "id": "merula",
+      "name": "Merula",
+      "caption": "Software engineer and cryptographer Circles Entropy",
+      "imageUrl": "https://data.web3privacy.info/img/people/merula.jpeg"
+    },
+    {
+      "id": "wslyvh",
+      "name": "Wesley",
+      "caption": "Events @ Ethereum 🛠️ Indie Maker",
+      "refs": {
+        "twitter": "wslyvh"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/wslyvh.png"
+    },
+    {
+      "id": "steffen-kux",
+      "name": "Steffen Kux",
+      "caption": "CEO dm3",
+      "refs": {
+        "twitter": "SteffenKux"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/steffen-kux.jpeg"
+    },
+    {
+      "id": "vincenzo-iovino",
+      "name": "Vincenzo Iovino",
+      "caption": "Researcher at [Aragon ZK Research](https://research.aragon.org/)",
+      "country": "it",
+      "refs": {
+        "twitter": "vincenzoiovino"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/vincenzo-iovino.jpg"
+    },
+    {
+      "id": "mario-havel",
+      "name": "Mario Havel",
+      "caption": "Hacker, Co-Founder of [Bordel Hackerspace](https://bordel.paralelnipolis.cz/#/)",
+      "country": "cz",
+      "refs": {
+        "twitter": "TMIYChao"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/mario-havel.jpg"
+    },
+    {
+      "id": "ameen-soleimani",
+      "name": "Ameen Soleimani",
+      "caption": "Summoner of [IranUnchained](https://www.iranunchained.com/), [Privacy Pools](https://www.privacypools.com/), [MolochDAO](https://molochdao.com/)",
+      "country": "us",
+      "refs": {
+        "twitter": "ameensol"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/ameen-soleimani.jpg"
+    },
+    {
+      "id": "andrea-togni",
+      "name": "Andrea Togni",
+      "caption": "Philosopher, Monero policy workgroup",
+      "imageUrl": "https://data.web3privacy.info/img/people/andrea-togni.jpg"
+    },
+    {
+      "id": "alona-shevchenko",
+      "name": "Alona Shevchenko",
+      "caption": "Unapologetic Ukrainian behind [Ukraine DAO](https://ukrainedao.love/) & [Kyiv Tech Summit](https://www.kyivtechsummit.com/)",
+      "country": "ua",
+      "refs": {
+        "twitter": "cryptodrftng"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/alona-shevchenko.jpg"
+    },
+    {
+      "id": "antoni-zolciak",
+      "name": "Antoni Zolciak",
+      "caption": "Co-founder of [Aleph Zero](https://alephzero.org/) & [Cardinal](https://cardinal.co/)",
+      "country": "pl",
+      "refs": {
+        "twitter": "AntoniZolciak"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/antoni-zolciak.jpg"
+    },
+    {
+      "id": "serinko",
+      "name": "Serinko",
+      "caption": "Privacy Researcher",
+      "refs": {
+        "twitter": "serinko13"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/serinko.jpeg"
+    },
+    {
+      "id": "carlo-chialastri",
+      "name": "Carlo Avv. Chialastri",
+      "caption": "Urbe.eth lawyer",
+      "country": "it",
+      "refs": {
+        "linkedin": "carlo-avv-chialastri-8456a544"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/carlo-chialastri.jpeg"
+    },
+    {
+      "id": "manu-alzuru",
+      "name": "Manu Alzuru",
+      "caption": "Humanist, solarpunk, Founder of [DoinGud](https://doingud.com/) & [ETH Barcelona](https://ethbarcelona.com/)",
+      "country": "es",
+      "refs": {
+        "twitter": "ManuAlzuru"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/manu-alzuru.jpg"
+    },
+    {
+      "id": "nick-almond",
+      "name": "Nick Almond",
+      "caption": "Building next generation DAOs with [FactoryDAO](https://www.factorydao.xyz/)",
+      "country": "gb",
+      "refs": {
+        "twitter": "DrNickA"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/nick-almond.jpg"
+    },
+    {
+      "id": "costanza-gallo",
+      "name": "Costanza Gallo",
+      "caption": "Head of partnerships at the [The Swarm Foundation](https://www.ethswarm.org/foundation)",
+      "country": "it",
+      "refs": {
+        "twitter": "costgallo"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/costanza-gallo.jpeg"
+    },
+    {
+      "id": "rachel-rose-oleary",
+      "name": "Rachel-Rose O'Leary",
+      "caption": "[DarkFi](https://dark.fi/) core dev, writer",
+      "refs": {
+        "twitter": "lunar_mining"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/rachel-rose-oleary.jpg"
+    },
+    {
+      "id": "r-prokh",
+      "name": "Roma",
+      "nickname": "r_prokh",
+      "caption": "Growth Lead @ [Questbook](https://questbook.app/)",
+      "country": "pt",
+      "refs": {
+        "twitter": "r_prokh"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/r-prokh.jpeg"
     },
     {
       "id": "rik-krieger",
@@ -264,53 +391,20 @@
       "imageUrl": "https://data.web3privacy.info/img/people/rik-krieger.jpg"
     },
     {
-      "id": "costanza-gallo",
-      "name": "Costanza Gallo",
-      "caption": "Head of partnerships at the [The Swarm Foundation](https://www.ethswarm.org/foundation)",
+      "id": "pg",
+      "name": "PG",
+      "caption": "Organizing [ETHRome](https://ethrome.org) w/ [urbe.eth](https://linktr.ee/urbe.eth), making sauce w/ [SpaghettETH](https://linktr.ee/spaghetteth)",
       "country": "it",
       "refs": {
-        "twitter": "costgallo"
+        "twitter": "PG_CDG"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/costanza-gallo.jpeg"
+      "imageUrl": "https://data.web3privacy.info/img/people/pg.jpg"
     },
     {
-      "id": "carlo-chialastri",
-      "name": "Carlo Avv. Chialastri",
-      "caption": "Urbe.eth lawyer",
-      "country": "it",
-      "refs": {
-        "linkedin": "carlo-avv-chialastri-8456a544"
-      },
-      "imageUrl": "https://data.web3privacy.info/img/people/carlo-chialastri.jpeg"
-    },
-    {
-      "id": "rachel-rose-oleary",
-      "name": "Rachel-Rose O'Leary",
-      "caption": "[DarkFi](https://dark.fi/) core dev, writer",
-      "refs": {
-        "twitter": "lunar_mining"
-      },
-      "imageUrl": "https://data.web3privacy.info/img/people/rachel-rose-oleary.jpg"
-    },
-    {
-      "id": "nick-almond",
-      "name": "Nick Almond",
-      "caption": "Building next generation DAOs with [FactoryDAO](https://www.factorydao.xyz/)",
-      "country": "gb",
-      "refs": {
-        "twitter": "DrNickA"
-      },
-      "imageUrl": "https://data.web3privacy.info/img/people/nick-almond.jpg"
-    },
-    {
-      "id": "max-hampshire",
-      "name": "Max Hampshire",
-      "caption": "Senior devrel of [Nym](https://nymtech.net/), Co-founder of [terra0](https://terra0.org/)",
-      "country": "at",
-      "refs": {
-        "twitter": "_wjth"
-      },
-      "imageUrl": "https://data.web3privacy.info/img/people/max-hampshire.jpg"
+      "id": "althea",
+      "name": "Althea",
+      "caption": "Head of Comms, Privacy & Scaling Exploration",
+      "imageUrl": "https://data.web3privacy.info/img/people/althea.jpeg"
     },
     {
       "id": "catsnaks",
@@ -318,22 +412,30 @@
       "caption": "[PSE](https://pse.dev/)"
     },
     {
-      "id": "odysseas",
-      "name": "Odysseas",
-      "caption": "Blockchain innovator & privacy advocate",
+      "id": "mykola-siusko",
+      "name": "Mykola Siusko",
+      "caption": "Web3 privacy advocate behind [Web3Privacy Now](https://web3privacy.info/)",
+      "country": "es",
       "refs": {
-        "twitter": "odysseas_eth"
+        "twitter": "nicksvyaznoy"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/odysseas.jpeg"
+      "imageUrl": "https://data.web3privacy.info/img/people/mykola-siusko.png"
     },
     {
-      "id": "steffen-kux",
-      "name": "Steffen Kux",
-      "caption": "CEO dm3",
+      "id": "tibor-csoka",
+      "name": "Tibor Csóka",
+      "caption": "Software Engineer at [HOPR](https://hoprnet.org/)",
+      "imageUrl": "https://data.web3privacy.info/img/people/tibor-csoka.jpg"
+    },
+    {
+      "id": "radek-svarz",
+      "name": "Radek Švarz",
+      "country": "cz",
+      "caption": "Visionary, architect, connecting business and IT",
       "refs": {
-        "twitter": "SteffenKux"
+        "twitter": "radk"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/steffen-kux.jpeg"
+      "imageUrl": "https://data.web3privacy.info/img/people/radek-svarz.webp"
     },
     {
       "id": "juraj-bednar",
@@ -346,117 +448,32 @@
       "imageUrl": "https://data.web3privacy.info/img/people/juraj-bednar.jpg"
     },
     {
-      "id": "guy-zyskind",
-      "name": "Guy Zyskind",
-      "caption": "Founder of [Secret Network](https://scrt.network/), CEO [SCRT Labs](https://www.scrtlabs.com/)",
-      "country": "is",
+      "id": "alex-zaidelson",
+      "name": "Alex Zaidelson",
+      "caption": "CEO [SCRT Labs](https://www.scrtlabs.com/)",
       "refs": {
-        "twitter": "GuyZys"
+        "twitter": "azaidelson"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/guy-zyskind.jpg"
+      "imageUrl": "https://data.web3privacy.info/img/people/alex-zaidelson.jpeg"
     },
     {
-      "id": "serinko",
-      "name": "Serinko",
-      "caption": "Privacy Researcher",
+      "id": "odysseas",
+      "name": "Odysseas",
+      "caption": "Blockchain innovator & privacy advocate",
       "refs": {
-        "twitter": "serinko13"
+        "twitter": "odysseas_eth"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/serinko.jpeg"
+      "imageUrl": "https://data.web3privacy.info/img/people/odysseas.jpeg"
     },
     {
-      "id": "antoni-zolciak",
-      "name": "Antoni Zolciak",
-      "caption": "Co-founder of [Aleph Zero](https://alephzero.org/) & [Cardinal](https://cardinal.co/)",
-      "country": "pl",
+      "id": "limone-eth",
+      "name": "limone.eth",
+      "caption": "Serial hacker and community builder | core [urbeEth](https://twitter.com/urbeeth) & [ETHRome](https://www.ethrome.org/)",
+      "country": "it",
       "refs": {
-        "twitter": "AntoniZolciak"
+        "twitter": "limone_eth"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/antoni-zolciak.jpg"
-    },
-    {
-      "id": "vaclav-pavlin",
-      "name": "Václav Pavlín",
-      "caption": "Core contributor @ [Status](https://status.app/), [Logos](https://logos.co/about), [Waku](https://waku.org/)",
-      "country": "cz",
-      "refs": {
-        "twitter": "vpavlin"
-      },
-      "imageUrl": "https://data.web3privacy.info/img/people/vaclav-pavlin.jpeg"
-    },
-    {
-      "id": "gabari",
-      "name": "Bryce",
-      "nickname": "gabari",
-      "caption": "[Brume Wallet](https://brume.money/) co-founder & [MangroveDAO](https://mangrovedao.earth/) Core",
-      "refs": {
-        "twitter": "bryce_gabari"
-      },
-      "imageUrl": "https://data.web3privacy.info/img/people/gabari.jpeg"
-    },
-    {
-      "id": "jaromil",
-      "name": "Denis Roio",
-      "nickname": "Jaromil",
-      "caption": "Founder of [Dyne.org](https://dyne.org/)",
-      "refs": {
-        "twitter": "jaromil"
-      },
-      "imageUrl": "https://data.web3privacy.info/img/people/jaromil.jpeg"
-    },
-    {
-      "id": "tree",
-      "name": "Tree",
-      "caption": "Orchestrating lunarpunk events [ETHBrno](https://ethbrno.cz) & [w3ps](https://github.com/web3privacy/w3ps) w/ [gwei.cz](https://gwei.cz)",
-      "country": "cz",
-      "refs": {
-        "bsky": "tree.fail"
-      },
-      "imageUrl": "https://data.web3privacy.info/img/people/tree.jpg"
-    },
-    {
-      "id": "tibor-csoka",
-      "name": "Tibor Csóka",
-      "caption": "Software Engineer at [HOPR](https://hoprnet.org/)",
-      "imageUrl": "https://data.web3privacy.info/img/people/tibor-csoka.jpg"
-    },
-    {
-      "id": "kieran-mesquita",
-      "name": "Kieran Mesquita",
-      "caption": "Chief scientist [Railgun DAO](https://www.railgun.org/)",
-      "refs": {
-        "twitter": "mesquka"
-      },
-      "imageUrl": "https://data.web3privacy.info/img/people/kieran-mesquita.jpeg"
-    },
-    {
-      "id": "oliver-gale",
-      "name": "Oliver Gale",
-      "caption": "CEO of [Panther Protocol](https://www.pantherprotocol.io/)",
-      "refs": {
-        "twitter": "OriginalOlii"
-      },
-      "imageUrl": "https://data.web3privacy.info/img/people/oliver-gale.jpeg"
-    },
-    {
-      "id": "dcbuilder",
-      "name": "dcbuilder.eth",
-      "caption": "Research engineer at [Worldcoin](https://worldcoin.org/), ZKML & Rust enthusiast",
-      "country": "cz",
-      "refs": {
-        "twitter": "DCbuild3r"
-      },
-      "imageUrl": "https://data.web3privacy.info/img/people/dcbuilder.jpg"
-    },
-    {
-      "id": "alona-shevchenko",
-      "name": "Alona Shevchenko",
-      "caption": "Unapologetic Ukrainian behind [Ukraine DAO](https://ukrainedao.love/) & [Kyiv Tech Summit](https://www.kyivtechsummit.com/)",
-      "country": "ua",
-      "refs": {
-        "twitter": "cryptodrftng"
-      },
-      "imageUrl": "https://data.web3privacy.info/img/people/alona-shevchenko.jpg"
+      "imageUrl": "https://data.web3privacy.info/img/people/limone-eth.jpeg"
     },
     {
       "id": "alan-scott",
@@ -469,40 +486,23 @@
       "imageUrl": "https://data.web3privacy.info/img/people/alan-scott.jpeg"
     },
     {
-      "id": "althea",
-      "name": "Althea",
-      "caption": "Head of Comms, Privacy & Scaling Exploration",
-      "imageUrl": "https://data.web3privacy.info/img/people/althea.jpeg"
+      "id": "eleanore-blanc",
+      "name": "Eléonore Blanc",
+      "caption": "Crypto Educator & Founder of [CryptoCanal](https://www.cryptocanal.org/), [ETHDam](https://www.ethdam.com/) organiser",
+      "country": "nl",
+      "refs": {
+        "twitter": "blockblanc"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/eleanore-blanc.jpeg"
     },
     {
-      "id": "pg",
-      "name": "PG",
-      "caption": "Organizing [ETHRome](https://ethrome.org) w/ [urbe.eth](https://linktr.ee/urbe.eth), making sauce w/ [SpaghettETH](https://linktr.ee/spaghetteth)",
-      "country": "it",
+      "id": "kieran-mesquita",
+      "name": "Kieran Mesquita",
+      "caption": "Chief scientist [Railgun DAO](https://www.railgun.org/)",
       "refs": {
-        "twitter": "PG_CDG"
+        "twitter": "mesquka"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/pg.jpg"
-    },
-    {
-      "id": "mario-havel",
-      "name": "Mario Havel",
-      "caption": "Hacker, Co-Founder of [Bordel Hackerspace](https://bordel.paralelnipolis.cz/#/)",
-      "country": "cz",
-      "refs": {
-        "twitter": "TMIYChao"
-      },
-      "imageUrl": "https://data.web3privacy.info/img/people/mario-havel.jpg"
-    },
-    {
-      "id": "radek-svarz",
-      "name": "Radek Švarz",
-      "country": "cz",
-      "caption": "Visionary, architect, connecting business and IT",
-      "refs": {
-        "twitter": "radk"
-      },
-      "imageUrl": "https://data.web3privacy.info/img/people/radek-svarz.webp"
+      "imageUrl": "https://data.web3privacy.info/img/people/kieran-mesquita.jpeg"
     }
   ],
   "events": [
@@ -645,7 +645,8 @@
         "Alina"
       ],
       "links": {
-        "rsvp": "https://lu.ma/w3pn-meetup-bucharest1"
+        "rsvp": "https://lu.ma/w3pn-meetup-bucharest1",
+        "signal": "https://signal.group/#CjQKILd3qhOu7_p8OB0bob3bU3Ko0jfgfxm9DK39oK1eiMe_EhA47ns-aCFke2YA3iMnuxqJ"
       },
       "speakers": [
         "mykola-siusko",
@@ -667,7 +668,8 @@
       "coincidence": "[ETHDam](https://www.ethdam.com/)",
       "slots": 3,
       "links": {
-        "rsvp": "https://lu.ma/w3pn-meetup-ams1"
+        "rsvp": "https://lu.ma/w3pn-meetup-ams1",
+        "signal": "https://signal.group/#CjQKIEZbdyGk2CnVLXJ4u87cdRPPE2W4crwz7U-Tt1AFHsu2EhCxC25OkPV47uoTrNa2dww6"
       },
       "speakers": [
         "mykola-siusko",
@@ -719,7 +721,8 @@
       ],
       "slots": 3,
       "links": {
-        "rsvp": "https://lu.ma/w3pn-meetup-berlin1"
+        "rsvp": "https://lu.ma/w3pn-meetup-berlin1",
+        "signal": "https://signal.group/#CjQKIHv5swzLDOrTd1QqR4L9eb-6XPZERnp3ZEoxBCJeY12fEhAPmoC2dqZzLMRWV7wlAq5A"
       }
     },
     {
