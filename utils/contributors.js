@@ -7,6 +7,7 @@ const contributorRepos = [
   "web3privacy/docs",
   "web3privacy/web",
   "web3privacy/brand",
+  "web3privacy/association",
 
   // events workgroup
   "web3privacy/events",
@@ -18,13 +19,13 @@ const contributorRepos = [
 
   // news project
   "web3privacy/news",
-  "web3privacy/news-app",
 
   // old - deprecated
   "web3privacy/w3ps1",
   "web3privacy/grants",
   "web3privacy/old-website",
   "web3privacy/web3privacy-app-old",
+  "web3privacy/news-app",
 ];
 
 function isBlacklisted(login) {
