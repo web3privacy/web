@@ -61,7 +61,10 @@ async function getContributors() {
   return output.sort((x, y) => y.contributions > x.contributions ? 1 : -1);
 }
 
-const contributors = await getContributors();
+const contributors = {
+  repos: contributorRepos,
+  items: await getContributors(),
+};
 await Deno.writeTextFile(
   "./src/contributors.json",
   JSON.stringify(contributors, null, 2),

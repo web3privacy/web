@@ -35,7 +35,7 @@ import contributors from '../contributors.json';
     <div>{config.landing.community}</div>
 
     <div class="flex gap-4 flex-wrap my-14 items-center">
-        {contributors.map((contrib) => (
+        {contributors.items.map((contrib) => (
             <div><a href={contrib.html_url} target="_blank" title={contrib.login}><img src={contrib.avatar_url} class="w-16 rounded-full aspect-square"></a></div>
         ))}
     </div>

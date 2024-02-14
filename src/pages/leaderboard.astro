@@ -5,7 +5,7 @@ import contributors from '../contributors.json';
 
 const points = {}
 let i = 0;
-for (const c of contributors) {
+for (const c of contributors.items) {
     const key = `c:${c.contributions}`
     if (!points[key]) {
         points[key] = { arr: [c.login], start: i }
@@ -34,11 +34,11 @@ function getPoint (num){
                 <tr>
                     <th></th>
                     <th class="pb-4 uppercase" colspan="2">Contributor</th>
-                    <th align="left" class="pb-4 uppercase"># Contributions</th>
+                    <th align="left" class="pb-4 uppercase"># Commits</th>
                 </tr>
             </thead>
             <tbody>
-                {contributors.map((contrib, i) => (
+                {contributors.items.map((contrib, i) => (
                     <tr>
                         <td align="right">
                             {[getPoint(contrib.contributions)].map((r) => (
@@ -63,6 +63,16 @@ function getPoint (num){
                 ))}
             </tbody>
         </table>
+    </div>
+    <div class="middle-pane-medium flex items-center justify-center">
+        <div class="mt-20">
+            <h2>Eligible repositories</h2>
+            <div class="mt-6">
+                {contributors.repos.map(repo => (
+                    <div><a href=`https://github.com/${repo}` class="hover:underline">@{repo}</a></div>
+                ))}
+            </div>
+        </div>
 	</div>
 
 </BaseLayout>
