@@ -5,16 +5,17 @@
     "web3privacy/docs",
     "web3privacy/web",
     "web3privacy/brand",
+    "web3privacy/association",
     "web3privacy/events",
     "web3privacy/explorer",
     "web3privacy/explorer-data",
     "web3privacy/explorer-app",
     "web3privacy/news",
-    "web3privacy/news-app",
     "web3privacy/w3ps1",
     "web3privacy/grants",
     "web3privacy/old-website",
-    "web3privacy/web3privacy-app-old"
+    "web3privacy/web3privacy-app-old",
+    "web3privacy/news-app"
   ],
   "items": [
     {
@@ -57,7 +58,7 @@
       "received_events_url": "https://api.github.com/users/burningtree/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 609
+      "contributions": 631
     },
     {
       "login": "EclecticSamurai",
