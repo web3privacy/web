@@ -285,6 +285,17 @@
       "imageUrl": "https://data.web3privacy.info/img/people/ameen-soleimani.jpg"
     },
     {
+      "id": "afri-schoedon",
+      "name": "Afri Schoedon",
+      "caption": "libre software and disrupting tech, [Department of Decentralization](https://dod.ngo)",
+      "country": "de",
+      "refs": {
+        "twitter": "q9fcc",
+        "bsky": "q9f.cc"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/afri-schoedon.jpg"
+    },
+    {
       "id": "andrea-togni",
       "name": "Andrea Togni",
       "caption": "Philosopher, Monero policy workgroup",
@@ -719,6 +730,9 @@
       "helpers": [
         "ligi"
       ],
+      "speakers": [
+        "afri-schoedon"
+      ],
       "slots": 3,
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-berlin1",
@@ -770,6 +784,7 @@
       },
       "speakers": [
         "vaclav-pavlin",
+        "afri-schoedon",
         "mykola-siusko",
         "pg",
         "tree"
