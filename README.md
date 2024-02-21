@@ -5,6 +5,14 @@
 
 <a href="https://web3privacy.info"><img width="50%" alt="w3pn-website-screen" src="https://github.com/web3privacy/web/assets/67269/fa80a3ce-ddd6-4a75-bbf1-e82c7cf68abd"></a>
 
+## Deployments
+
+| Deployment | URL | Hosting |
+| --- | --- | --- |
+| Production | [web3privacy.info](https://web3privacy.info) | GitHub Pages |
+| Production (mirror) | [w3pn-web.vercel.app](https://w3pn-web.vercel.app) | Vercel |
+| Beta (dev) | [beta.web3privacy.info](https://beta.web3privacy.info) | Vercel |
+
 ## Used technologies
 
 * Web framework - [Astro](https://astro.build/) v4+
