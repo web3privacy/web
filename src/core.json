@@ -632,17 +632,6 @@
       ]
     },
     {
-      "id": "w3pm-lib1",
-      "type": "meetup",
-      "date": "2024/Mar",
-      "city": "Liberec",
-      "country": "cz",
-      "coincidence": "[ETHBohemia](https://ethbohemia.ethevents.club/)",
-      "lead": "Tree",
-      "optional": true,
-      "slots": 3
-    },
-    {
       "id": "w3pm-buc1",
       "type": "meetup",
       "date": "2024-03-28",
