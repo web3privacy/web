@@ -50,15 +50,15 @@ function nameRenderer (item) {
     switch (item.type) {
         case 'summit':
             num = item.id.match(/^w3ps(\d+)$/)[1]
-            return `Summmit #${num} ${item.city}`// + (cc ? ` @ ${cc}` : '')
+            return `W3PN Summmit #${num} ${item.city}`// + (cc ? ` @ ${cc}` : '')
             break;
         case 'meetup':
             num = item.id.match(/(\d+)$/)
-            return `Meetup ${item.city} #${num ? num[1] : 'TBD'}`// + (cc ? ` @ ${cc}` : '')
+            return `W3PN Meetup ${item.city} #${num ? num[1] : 'TBD'}`// + (cc ? ` @ ${cc}` : '')
             break;
         case 'hackathon':
             num = item.id.match(/^w3ph(\d+)$/)[1]
-            return `Hackathon #${num} ${item.city}`// + (cc ? ` @ ${cc}` : '')
+            return `W3PN Hackathon #${num} ${item.city}`// + (cc ? ` @ ${cc}` : '')
             break;
         case 'privacy-corner':
             return `Privacy Corner at `+ (item.coincidenceFull ? item.coincidenceFull : `${item.coincidence} ${year}`)
