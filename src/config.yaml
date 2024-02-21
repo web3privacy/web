@@ -30,6 +30,9 @@ header:
     - matrix
 footer:
   menu:
+    - title: Docs
+      ico: docs
+      link: docs
     - title: "@web3privacy"
       ico: twitter
       link: twitter

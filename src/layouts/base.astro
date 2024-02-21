@@ -2,6 +2,7 @@
 //import { ViewTransitions } from 'astro:transitions';
 
 import * as config from '../config.yaml';
+import * as pkg from '../../package.json';
 import core from '../core.json';
 import '../styles/base.css';
 const {banner, title, description} = Astro.props;
@@ -107,8 +108,9 @@ function genHeading(str) {
 			<div class="middle-pane-big">
 				<div class="flex gap-10 text-lg items-center flex-wrap align-top" id="footerMenu">
 					<a href="/" class="w3pn-logo w-32"></a>
-					<div class="grow flex justify-end">
-						<div class="lg:flex justify-center flex-wrap gap-4 lg:gap-10">
+					<div class="text-md"><a href="https://github.com/web3privacy/web" class="text-white hover:underline">v{pkg.version}</a></div>
+					<div class="grow flex sm:justify-end">
+						<div class="sm:flex justify-center flex-wrap gap-4 lg:gap-10">
 							{config.footer.menu.map((item) => (
 								<div class="flex gap-4 items-center menuItem lg:mb-0 mb-2">
 									<div class="icon small opacity-50" class:list={[item.ico]}></div>
