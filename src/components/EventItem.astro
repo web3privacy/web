@@ -26,8 +26,11 @@ function getSpeaker (id) {
 
 const ext = findExt()
 
+
 const isDate = item.date.match(/^\d{4}-\d{2}-\d{2}$/)
 const future = isDate && !isFuture(new Date(item.date));
+const dateMatch = item.date.match(/^(\d{4})/)
+const year = dateMatch ? dateMatch[1] : null
 
 function dateFormat (str) {
     if (str.match(/^\d{4}-\d{2}-\d{2}$/)) {
@@ -56,6 +59,9 @@ function nameRenderer (item) {
         case 'hackathon':
             num = item.id.match(/^w3ph(\d+)$/)[1]
             return `Hackathon #${num} ${item.city}`// + (cc ? ` @ ${cc}` : '')
+            break;
+        case 'privacy-corner':
+            return `Privacy Corner at `+ (item.coincidenceFull ? item.coincidenceFull : `${item.coincidence} ${year}`)
             break;
     }
 }
@@ -110,6 +116,8 @@ const status = item.confirmed
                     <div class="inline-block ml-2">
                         {item.type === "hackathon" && <span class="text-xs ml-2 text-black bg-white px-1 py-0.5">HACKATHON</span>}
                         {item.type === "summit" && <span class="text-xs ml-2 text-black bg-white px-1 py-0.5">SUMMIT</span>}
+                        {item.type === "privacy-corner" && <span class="text-xs ml-2 text-black bg-gray-500 px-1 py-0.5">↴ PC</span>}
+
                         {item.tags && item.tags.includes("sfe") && <span class="text-xs ml-2 text-black bg-gray-500 px-1 py-0.5" title="Sponsorship Free Edition (SFE)">SFE</span>}
                     </div>
                 </div>
@@ -118,7 +126,7 @@ const status = item.confirmed
                     <div>
                         {item.city}, {item.country.toUpperCase()}
                         {item.coincidence &&
-                            <span>&nbsp; - {ccRenderer(item)}</span>
+                            <span>&nbsp;- {ccRenderer(item)}</span>
                         }
                     </div>
                 </div>
