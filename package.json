@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "cleanup-flags": "deno run --allow-all utils/cleanup-flags.js",
     "preview": "astro preview",
     "astro": "astro",
     "core": "deno run --allow-all utils/core.js",
