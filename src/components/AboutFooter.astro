@@ -58,7 +58,7 @@ function filterCoreTeam(person) {
     <h1><a href="https://docs.web3privacy.info/get-involved">Join the Community</a></h1>
     <div>{config.landing.community}</div>
 
-    <h2 class="my-6">Core Team</h2>
+    <!--h2 class="my-6">Core Team</h2>
     <div class="flex gap-4 flex-wrap mb-14 items-center">
         {core['core-team'].map(findPerson).map((person) => (
             <div>
@@ -67,10 +67,10 @@ function filterCoreTeam(person) {
                 </a>
             </div>
         ))}
-    </div>
+    </div-->
 
     <h2 class="my-6">Speakers</h2>
-    <div class="flex gap-4 flex-wrap mb-14 items-center">
+    <div class="flex gap-4 flex-wrap items-center">
         {core.people.filter(filterCoreTeam).filter(p => p.imageUrl).map((person) => (
             <div>
                 <a href={personLink(person)}>
@@ -80,14 +80,19 @@ function filterCoreTeam(person) {
         ))}
     </div>
 
+    <div class="flex gap-4 lg:gap-6 pt-4 flex-wrap mt-4 mb-14">
+        <a href="https://cfp.web3privacy.info" class="button inverted"><button>Submit your proposal (CfP)</button></a>
+
+    </div>
+
     <h2 class="my-6">Git Contributors</h2>
-    <div class="flex gap-4 flex-wrap mb-14 items-center">
+    <div class="flex gap-4 flex-wrap mb-4 items-center">
         {contributors.items.filter(filterCoreTeam).map((contrib) => (
             <div><a href={contrib.html_url} target="_blank" title={contrib.login}><img src={contrib.avatar_url} class="w-14 rounded-full aspect-square"></a></div>
         ))}
     </div>
 
-    <div class="flex gap-4 lg:gap-10 pt-4 flex-wrap">
+    <div class="flex gap-4 lg:gap-6 pt-4 flex-wrap">
         <a href="https://docs.web3privacy.info/get-involved" class="button inverted"><button>Get involved</button></a>
         <a href="/leaderboard" class="button inverted"><button>Leaderboard</button></a>
         <a href="https://docs.web3privacy.info/donate/" class="button inverted"><button>Donate</button></a>
