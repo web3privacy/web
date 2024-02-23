@@ -4,6 +4,30 @@ import * as config from '../config.yaml';
 import core from '../core.json';
 import contributors from '../contributors.json';
 
+function findPerson(src) {
+    const p = core.people.find(p => src.refs?.twitter ? p.refs?.twitter === src.refs.twitter : (src.refs?.bsky ? p.refs.bsky === src.refs.bsky : {}))
+    if (p) {
+        p.ct = src
+    }
+    return p
+}
+
+function personLink(person) {
+    return person.refs?.twitter ? `https://twitter.com/${person.refs.twitter}` : (person.refs?.bsky ? `https://bsky.app/profile/${person.refs.bsky}` : '#')
+}
+
+function coreTeamGithubLink(person) {
+    return `https://github.com/${person.ct.refs.github}`
+}
+
+function filterCoreTeam(person) {
+    if (person.login) {
+        return !(core['core-team'].find(ctm => ctm.refs.github.toLowerCase() === person.login.toLowerCase()))
+    }
+    const res = core['core-team'].find(ctm => ctm.refs.twitter ? ctm.refs.twitter?.toLowerCase() === person.refs?.twitter?.toLowerCase() : ctm.refs?.bsky?.toLowerCase() === person.refs?.bsky?.toLowerCase())
+    return !res
+}
+
 ---
 
 <div class="mt-20">
@@ -34,9 +58,32 @@ import contributors from '../contributors.json';
     <h1><a href="https://docs.web3privacy.info/get-involved">Join the Community</a></h1>
     <div>{config.landing.community}</div>
 
-    <div class="flex gap-4 flex-wrap my-14 items-center">
-        {contributors.items.map((contrib) => (
-            <div><a href={contrib.html_url} target="_blank" title={contrib.login}><img src={contrib.avatar_url} class="w-16 rounded-full aspect-square"></a></div>
+    <h2 class="my-6">Core Team</h2>
+    <div class="flex gap-4 flex-wrap mb-14 items-center">
+        {core['core-team'].map(findPerson).map((person) => (
+            <div>
+                <a href={coreTeamGithubLink(person)}>
+                    <img src={person.imageUrl} title={person.name} class="w-14 rounded-full aspect-square" />
+                </a>
+            </div>
+        ))}
+    </div>
+
+    <h2 class="my-6">Speakers</h2>
+    <div class="flex gap-4 flex-wrap mb-14 items-center">
+        {core.people.filter(filterCoreTeam).filter(p => p.imageUrl).map((person) => (
+            <div>
+                <a href={personLink(person)}>
+                    <img src={person.imageUrl} title={person.name} class="w-14 rounded-full aspect-square" />
+                </a>
+            </div>
+        ))}
+    </div>
+
+    <h2 class="my-6">Git Contributors</h2>
+    <div class="flex gap-4 flex-wrap mb-14 items-center">
+        {contributors.items.filter(filterCoreTeam).map((contrib) => (
+            <div><a href={contrib.html_url} target="_blank" title={contrib.login}><img src={contrib.avatar_url} class="w-14 rounded-full aspect-square"></a></div>
         ))}
     </div>
 
