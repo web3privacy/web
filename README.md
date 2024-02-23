@@ -10,8 +10,8 @@
 | Deployment | URL | Hosting |
 | --- | --- | --- |
 | Production | [web3privacy.info](https://web3privacy.info) | GitHub Pages |
-| Production (mirror) | [w3pn-web.vercel.app](https://w3pn-web.vercel.app) | Vercel |
-| Production (IPFS) | TBA | IPFS |
+| Production (mirror) | [mirror.web3privacy.info](https://mirror.web3privacy.info) | Vercel |
+| Production (IPFS) | TBA | TBA |
 | Beta (dev) | [beta.web3privacy.info](https://beta.web3privacy.info) | Vercel |
 
 ## Used technologies
