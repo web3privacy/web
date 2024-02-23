@@ -296,6 +296,16 @@
       "imageUrl": "https://data.web3privacy.info/img/people/afri-schoedon.jpg"
     },
     {
+      "id": "pavol-luptak",
+      "name": "Pavol Lupták",
+      "nickname": "wilder",
+      "caption": "Perpetual traveler focused on technology and society hacking ([Nethemba](https://nethemba.com/), [Liberation Travel](https://www.liberationtravel.com/))",
+      "refs": {
+        "twitter": "wilderko"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/pavol-luptak.jpeg"
+    },
+    {
       "id": "andrea-togni",
       "name": "Andrea Togni",
       "caption": "Philosopher, Monero policy workgroup",
@@ -746,8 +756,9 @@
         "rsvp": "https://lu.ma/w3pn-summit-prague2"
       },
       "speakers": [
-        "mykola-siusko",
-        "gabari"
+        "pavol-luptak",
+        "gabari",
+        "mykola-siusko"
       ]
     },
     {
