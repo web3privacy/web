@@ -69,6 +69,9 @@ for (const year of pastYears.reverse()) {
 				if (ev.target.tagName === "BUTTON") {
 					return false;
 				}
+				if (ev.target.tagName === "A") {
+					return false;
+				}
 				const detail = el.parentElement.parentElement.querySelector('.detail')
 				document.querySelectorAll('.detail:not(.hidden)').forEach(e => (detail !== e ? e.classList.add('hidden') : null));
 		  		detail.classList.toggle('hidden');

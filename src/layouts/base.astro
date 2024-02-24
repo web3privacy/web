@@ -5,7 +5,7 @@ import * as config from '../config.yaml';
 import * as pkg from '../../package.json';
 import core from '../core.json';
 import '../styles/base.css';
-const {banner, title, description} = Astro.props;
+const {banner, title, metaTitle, description} = Astro.props;
 
 import cfonts from 'cfonts';
 
@@ -21,7 +21,7 @@ function genHeading(str) {
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
-		<title>{title ? title + ' | ' + config.title : config.title}</title>
+		<title>{(metaTitle || title) ? ((metaTitle || title) + ' | ' + config.title) : config.title}</title>
 
 		<link
 			rel="preload"
