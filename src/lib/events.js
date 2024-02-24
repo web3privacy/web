@@ -31,15 +31,15 @@ export function nameRenderer (item, full = false) {
     const date = dateInfo(item)
     switch (item.type) {
         case 'summit':
-            num = item.id.match(/^w3ps(\d+)$/)[1]
+            //num = item.id.match(/^w3ps(\d+)$/)[1]
             return `Summmit ${item.city}` + (full ? ` ${date.year}`: '')// + (cc ? ` @ ${cc}` : '')
             break;
         case 'meetup':
-            num = item.id.match(/(\d+)$/)
+            //num = item.id.match(/(\d+)$/)
             return `Meetup ${item.city}` + (full ? ` ${date.year}`: '')// + (cc ? ` @ ${cc}` : '')
             break;
         case 'hackathon':
-            num = item.id.match(/^w3ph(\d+)$/)[1]
+            //num = item.id.match(/^w3ph(\d+)$/)[1]
             return `Hackathon ${item.city}` + (full ? ` ${date.year}`: '')// + (cc ? ` @ ${cc}` : '')
             break;
         case 'privacy-corner':

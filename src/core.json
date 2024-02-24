@@ -540,7 +540,7 @@
   ],
   "events": [
     {
-      "id": "w3ps1",
+      "id": "s23prg",
       "type": "summit",
       "date": "2023-06-05",
       "city": "Prague",
@@ -582,7 +582,7 @@
       ]
     },
     {
-      "id": "w3ps2",
+      "id": "s23rom",
       "type": "summit",
       "date": "2023-10-05",
       "city": "Rome",
@@ -617,7 +617,7 @@
       ]
     },
     {
-      "id": "w3pm-prg1",
+      "id": "m23prg",
       "type": "meetup",
       "date": "2023-11-14",
       "city": "Prague",
@@ -639,7 +639,7 @@
       ]
     },
     {
-      "id": "w3pm-ath1",
+      "id": "m24ath",
       "issue": 22,
       "type": "meetup",
       "date": "2024/Mar",
@@ -655,7 +655,7 @@
       ]
     },
     {
-      "id": "w3pm-buc1",
+      "id": "m24buc",
       "issue": 8,
       "type": "meetup",
       "date": "2024-03-28",
@@ -678,7 +678,7 @@
       ]
     },
     {
-      "id": "w3pm-ams1",
+      "id": "m24ams",
       "issue": 9,
       "type": "meetup",
       "date": "2024-04-11",
@@ -702,7 +702,7 @@
       ]
     },
     {
-      "id": "w3pm-tal1",
+      "id": "m24tll",
       "issue": 10,
       "type": "meetup",
       "date": "2024-04-18",
@@ -717,7 +717,7 @@
       }
     },
     {
-      "id": "w3pm-por1",
+      "id": "m24opo",
       "issue": 21,
       "type": "meetup",
       "date": "2024/May",
@@ -731,7 +731,7 @@
       ]
     },
     {
-      "id": "w3pm-ber1",
+      "id": "m24ber",
       "issue": 6,
       "type": "meetup",
       "tags": [
@@ -757,7 +757,7 @@
       }
     },
     {
-      "id": "w3ps3",
+      "id": "s24prg",
       "issue": 11,
       "type": "summit",
       "date": "2024-05-30",
@@ -781,7 +781,7 @@
       ]
     },
     {
-      "id": "w3ph1",
+      "id": "h24ble",
       "issue": 7,
       "type": "hackathon",
       "date": "2024-06-19",
@@ -811,7 +811,7 @@
       ]
     },
     {
-      "id": "w3pm-lju1",
+      "id": "m24lju",
       "issue": 12,
       "type": "meetup",
       "date": "2024-06-21",
@@ -833,7 +833,7 @@
       ]
     },
     {
-      "id": "w3pm-bcn1",
+      "id": "m24bcn",
       "issue": 20,
       "type": "meetup",
       "date": "2024/Jul",
@@ -844,7 +844,7 @@
       "optional": true
     },
     {
-      "id": "w3pm-bru1",
+      "id": "m24bru",
       "issue": 16,
       "type": "meetup",
       "date": "2024-07-12",
@@ -864,7 +864,7 @@
       ]
     },
     {
-      "id": "w3pm-waw1",
+      "id": "m24waw",
       "issue": 19,
       "type": "meetup",
       "date": "2024/Sep",
@@ -876,7 +876,7 @@
       "optional": true
     },
     {
-      "id": "w3pm-cph1",
+      "id": "m24cph",
       "issue": 18,
       "type": "meetup",
       "date": "2024/Sep",
@@ -891,7 +891,7 @@
       ]
     },
     {
-      "id": "w3pm-rom2",
+      "id": "m24rom",
       "issue": 13,
       "type": "meetup",
       "date": "2024-10-04",
@@ -912,7 +912,7 @@
       ]
     },
     {
-      "id": "pc-rome-2024",
+      "id": "pc24rom",
       "issue": 23,
       "type": "privacy-corner",
       "date": "2024-10-04",
@@ -924,7 +924,7 @@
       "lead": "Tree"
     },
     {
-      "id": "w3ps4",
+      "id": "s24brn",
       "issue": 14,
       "type": "summit",
       "date": "2024-10-24",
@@ -948,7 +948,7 @@
       ]
     },
     {
-      "id": "pc-brno-2024",
+      "id": "pc24brn",
       "issue": 24,
       "type": "privacy-corner",
       "date": "2024-10-25",
@@ -960,7 +960,7 @@
       "lead": "Tree"
     },
     {
-      "id": "w3pm-dc1",
+      "id": "m24dc",
       "issue": 15,
       "type": "meetup",
       "date": "2024-11-11",
