@@ -22,7 +22,10 @@ const ext = findExt(EventsExt, item)
 
 	<div class="middle-pane-medium mt-10">
 
-        <div class="sm:flex w-full">
+        <div class="lg:flex w-full ">
+            <div class="lg:mr-10 mb-8 lg:mb-0">
+                <div><img src={ext ? ext.coverUrl : '/logo.svg'} class="rounded border border-white/20 w-80 aspect-square object-contain" class:list={[!ext ? 'p-10' : '']} /></div>
+            </div>
             <div class="grow">
                 <h1 id="upcoming">W3PN {nameRenderer(item, true)}</h1>
 
@@ -68,11 +71,6 @@ const ext = findExt(EventsExt, item)
                         }
                     </div>
                 </div>
-            </div>
-            <div class="items-right">
-                {ext &&
-                    <div><img src={ext.coverUrl} class="rounded border border-white/20 w-80 h-80 aspect-square" /></div>
-                }
             </div>
         </div>
 
