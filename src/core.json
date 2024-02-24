@@ -19,20 +19,20 @@
   },
   "core-team": [
     {
+      "name": "Mykola",
+      "refs": {
+        "github": "msiusko",
+        "twitter": "nicksvyaznoy",
+        "matrix": "k1983:matrix.org"
+      }
+    },
+    {
       "name": "Tree",
       "refs": {
         "github": "burningtree",
         "bsky": "tree.fail",
         "email": "tree@tree.fail",
         "matrix": "tree:gwei.cz"
-      }
-    },
-    {
-      "name": "Mykola",
-      "refs": {
-        "github": "msiusko",
-        "twitter": "nicksvyaznoy",
-        "matrix": "k1983:matrix.org"
       }
     },
     {
@@ -47,7 +47,8 @@
       "name": "Coinmandeer",
       "refs": {
         "github": "coinmandeer",
-        "matrix": "coinmandeer:matrix.org"
+        "matrix": "coinmandeer:matrix.org",
+        "twitter": "KeenOfCoin"
       }
     }
   ],
@@ -132,6 +133,15 @@
     }
   ],
   "people": [
+    {
+      "id": "coinmandeer",
+      "name": "Coinmandeer",
+      "refs": {
+        "twitter": "KeenOfCoin",
+        "github": "coinmandeer"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/coinmandeer.png"
+    },
     {
       "id": "jaromil",
       "name": "Denis Roio",
@@ -891,8 +901,8 @@
       "type": "privacy-corner",
       "date": "2024-10-04",
       "days": 3,
-      "city": "Brno",
-      "country": "cz",
+      "city": "Rome",
+      "country": "it",
       "coincidence": "ETHRome",
       "coincidenceFull": "ETHRome 2024",
       "lead": "Tree"
