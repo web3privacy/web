@@ -7,7 +7,7 @@ import core from "../core.json";
 ---
 
 {item.speakers &&
-    <div class="mt-6 mb-6">
+    <div class="my-6">
         <h2>Speakers ({item.speakers.length})</h2>
         <div class="w3pn-speaker-list grid grid-cols-1 gap-6 mt-4">
             {item.speakers.map(spId => getSpeaker(core, spId)).map((speaker) => (
@@ -24,6 +24,21 @@ import core from "../core.json";
                     </div>
                 </div>
             ))}
+        </div>
+
+        <div class="mt-8">
+            <a href={core.links.cfp} class="button inverted"><button>Submit proposal (CfP)</button></a>
+        </div>
+    </div>
+}
+{!item.speakers &&
+    <div class="my-6">
+        <h2>Speakers (0)</h2>
+
+        <div class="mt-4">Stay tuned. Speakers coming :-)</div>
+
+        <div class="mt-6">
+            <a href={core.links.cfp} class="button inverted"><button>Submit proposal (CfP)</button></a>
         </div>
     </div>
 }

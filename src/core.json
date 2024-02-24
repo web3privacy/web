@@ -15,7 +15,8 @@
     "forum": "https://forum.web3privacy.info",
     "explorer": "https://explorer.web3privacy.info",
     "news": "https://news.web3privacy.info",
-    "telegram": "https://t.me/web3privacynow"
+    "telegram": "https://t.me/web3privacynow",
+    "cfp": "https://cfp.web3privacy.info"
   },
   "core-team": [
     {
@@ -639,6 +640,7 @@
     },
     {
       "id": "w3pm-ath1",
+      "issue": 22,
       "type": "meetup",
       "date": "2024/Mar",
       "city": "Athens",
@@ -654,6 +656,7 @@
     },
     {
       "id": "w3pm-buc1",
+      "issue": 8,
       "type": "meetup",
       "date": "2024-03-28",
       "city": "Bucharest",
@@ -676,6 +679,7 @@
     },
     {
       "id": "w3pm-ams1",
+      "issue": 9,
       "type": "meetup",
       "date": "2024-04-11",
       "city": "Amsterdam",
@@ -699,6 +703,7 @@
     },
     {
       "id": "w3pm-tal1",
+      "issue": 10,
       "type": "meetup",
       "date": "2024-04-18",
       "city": "Tallinn",
@@ -713,6 +718,7 @@
     },
     {
       "id": "w3pm-por1",
+      "issue": 21,
       "type": "meetup",
       "date": "2024/May",
       "city": "Porto",
@@ -726,6 +732,7 @@
     },
     {
       "id": "w3pm-ber1",
+      "issue": 6,
       "type": "meetup",
       "tags": [
         "sfe"
@@ -751,6 +758,7 @@
     },
     {
       "id": "w3ps3",
+      "issue": 11,
       "type": "summit",
       "date": "2024-05-30",
       "city": "Prague",
@@ -774,6 +782,7 @@
     },
     {
       "id": "w3ph1",
+      "issue": 7,
       "type": "hackathon",
       "date": "2024-06-19",
       "days": 7,
@@ -803,6 +812,7 @@
     },
     {
       "id": "w3pm-lju1",
+      "issue": 12,
       "type": "meetup",
       "date": "2024-06-21",
       "city": "Ljubljana",
@@ -824,6 +834,7 @@
     },
     {
       "id": "w3pm-bcn1",
+      "issue": 20,
       "type": "meetup",
       "date": "2024/Jul",
       "city": "Barcelona",
@@ -834,6 +845,7 @@
     },
     {
       "id": "w3pm-bru1",
+      "issue": 16,
       "type": "meetup",
       "date": "2024-07-12",
       "city": "Brussels",
@@ -853,6 +865,7 @@
     },
     {
       "id": "w3pm-waw1",
+      "issue": 19,
       "type": "meetup",
       "date": "2024/Sep",
       "city": "Warsaw",
@@ -864,6 +877,7 @@
     },
     {
       "id": "w3pm-cph1",
+      "issue": 18,
       "type": "meetup",
       "date": "2024/Sep",
       "city": "Copenhagen",
@@ -878,6 +892,7 @@
     },
     {
       "id": "w3pm-rom2",
+      "issue": 13,
       "type": "meetup",
       "date": "2024-10-04",
       "city": "Rome",
@@ -898,17 +913,19 @@
     },
     {
       "id": "pc-rome-2024",
+      "issue": 23,
       "type": "privacy-corner",
       "date": "2024-10-04",
       "days": 3,
-      "city": "Brno",
-      "country": "cz",
+      "city": "Rome",
+      "country": "it",
       "coincidence": "ETHRome",
       "coincidenceFull": "ETHRome 2024",
       "lead": "Tree"
     },
     {
       "id": "w3ps4",
+      "issue": 14,
       "type": "summit",
       "date": "2024-10-24",
       "city": "Brno",
@@ -932,6 +949,7 @@
     },
     {
       "id": "pc-brno-2024",
+      "issue": 24,
       "type": "privacy-corner",
       "date": "2024-10-25",
       "days": 3,
@@ -943,6 +961,7 @@
     },
     {
       "id": "w3pm-dc1",
+      "issue": 15,
       "type": "meetup",
       "date": "2024-11-11",
       "city": "Bangkok",

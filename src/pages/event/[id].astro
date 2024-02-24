@@ -60,8 +60,6 @@ const ext = findExt(EventsExt, item)
                             <span>n/a</span>
                         }
                     </div>
-                    <div>Lead: <span class="text-white">{item.lead || 'n/a'}</span></div>
-
                     <div class="mt-4 mb-2">
                         {item.links?.rsvp &&
                             <a href={item.links.rsvp} class="button inverted"><button>{status.title === 'Pre-registration' ? 'Pre-registration' : 'Registration'}</button></a>
@@ -71,6 +69,20 @@ const ext = findExt(EventsExt, item)
                         }
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="bg-[#0f0f0f] px-4 py-2 mt-6 flex gap-6 w-full">
+            <div>ID: <span class="py-1 px-2 rounded bg-white/70 text-black">{item.id}</span></div>
+            <div>Lead: <span class="">{item.lead || 'n/a'}</span></div>
+            <div class="grow flex items-right justify-end gap-6">
+                {item.links?.rsvp &&
+                    <a href={item.links.rsvp} class="hover:text-white">Lu.ma</a>
+                }
+                {item.issue &&
+                    <a href={`https://github.com/web3privacy/events/issues/${item.issue}`} class="hover:text-white">PM</a>
+                }
+                <a href="https://github.com/web3privacy/data/blob/main/src/events/index.yaml" class="hover:text-white">Source</a>
             </div>
         </div>
 
