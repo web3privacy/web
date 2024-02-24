@@ -1,0 +1,92 @@
+---
+
+import BaseLayout from '../../layouts/base.astro';
+import SpeakerList from '../../components/SpeakerList.astro';
+import core from '../../core.json';
+import EventsExt from '../../events-ext.json';
+import { dateFormat, dateInfo, dateEnd, nameRenderer, ccRenderer, eventStatus, findExt } from '../../lib/events.js';
+import { marked } from 'marked';
+
+const { id } = Astro.params;
+
+export async function getStaticPaths() {
+    return core.events.map(event => ({ params: { id: event.id }}));
+}
+
+const item = core.events.find(event => event.id === id)
+const status = eventStatus(item)
+const ext = findExt(EventsExt, item)
+---
+
+<BaseLayout title={id} metaTitle={nameRenderer(item, true)}>
+
+	<div class="middle-pane-medium mt-10">
+
+        <div class="lg:flex w-full ">
+            <div class="lg:mr-10 mb-8 lg:mb-0">
+                <div><img src={ext ? ext.coverUrl : '/logo.svg'} class="rounded border border-white/20 w-80 aspect-square object-contain" class:list={[!ext ? 'p-10' : '']} /></div>
+            </div>
+            <div class="grow">
+                <h1 id="upcoming">W3PN {nameRenderer(item, true)}</h1>
+
+                <div class="flex gap-2 mb-4 text-lg">
+                    <img src={`/flags/${item.country}.svg`} class="w-4" />
+                    <div>
+                        {item.city}, {item.country.toUpperCase()}
+                        {item.coincidence &&
+                            <span>&nbsp;- {ccRenderer(item)}</span>
+                        }
+                    </div>
+                </div>
+
+                <div>
+                    <div>Date: <span class="text-white">{dateFormat(item.date)} {item.days ? ' - ' + dateFormat(dateEnd(item.date, item.days)) + ` (${item.days} days)` : ''}</span></div>
+                    <div>
+                        Venue: {item.place && <span class="text-white" set:html={marked.parseInline(item.place)}></span> || "TBD"}
+                        {item.place && item['place-address'] && 
+                            <span> @ </span>
+                            <span class="text-white">{item['place-address']}</span>
+                        }
+                    </div>
+                    <div>Status: <span class:list={[status.color]} class="mr-1.5 text-xs">●</span> {status.title}</div>
+                    <div>Visitors: 
+                        {item.visitors &&
+                            <span class="text-white">{item.visitors} people</span>
+                        }
+                        {!item.visitors && ext &&
+                            <span><span class="text-white">{ext.guestCount > 0 ? (ext.guestCount + ' people') : 'n/a'}</span> {status.title === 'Pre-registration' ? 'pre-registered' : 'registered'}</span>
+                        }
+                        {!item.visitors && !ext &&
+                            <span>n/a</span>
+                        }
+                    </div>
+                    <div class="mt-4 mb-2">
+                        {item.links?.rsvp &&
+                            <a href={item.links.rsvp} class="button inverted"><button>{status.title === 'Pre-registration' ? 'Pre-registration' : 'Registration'}</button></a>
+                        }
+                        {item.links?.web &&
+                            <a href={item.links.web} class="button inverted"><button>Website</button></a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#0f0f0f] px-4 py-2 mt-6 flex gap-6 w-full">
+            <div>ID: <span class="py-1 px-2 rounded bg-white/70 text-black">{item.id}</span></div>
+            <div>Lead: <span class="">{item.lead || 'n/a'}</span></div>
+            <div class="grow flex items-right justify-end gap-6">
+                {item.links?.rsvp &&
+                    <a href={item.links.rsvp} class="hover:text-white">Lu.ma</a>
+                }
+                {item.issue &&
+                    <a href={`https://github.com/web3privacy/events/issues/${item.issue}`} class="hover:text-white">PM</a>
+                }
+                <a href="https://github.com/web3privacy/data/blob/main/src/events/index.yaml" class="hover:text-white">Source</a>
+            </div>
+        </div>
+
+        <SpeakerList {item} thumbSize="big"/>
+	</div>
+
+</BaseLayout>
