@@ -4,7 +4,7 @@ import * as config from '../config.yaml';
 
 const { title, description, metaTitle,  image } = Astro.props;
 
-const titleFull = {(metaTitle || title) ? ((metaTitle || title) + ' | ' + config.title) : config.title}
+const titleFull = (metaTitle || title) ? ((metaTitle || title) + ' | ' + config.title) : config.title;
 
 ---
 
