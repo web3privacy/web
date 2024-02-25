@@ -5,7 +5,9 @@ import * as config from '../config.yaml';
 import * as pkg from '../../package.json';
 import core from '../core.json';
 import '../styles/base.css';
-const {banner, title, metaTitle, description} = Astro.props;
+import MetaTags from '../components/MetaTags.astro';
+
+const {banner, title, metaTitle, description, image} = Astro.props;
 
 import cfonts from 'cfonts';
 
@@ -18,10 +20,12 @@ function genHeading(str) {
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico">
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content={description} />
-		<title>{(metaTitle || title) ? ((metaTitle || title) + ' | ' + config.title) : config.title}</title>
+
+		   <MetaTags
+            title={metaTitle ? metaTitle : (title ? title : config.name)}
+            description={description ? description : config.description}
+            image={image}
+        />
 
 		<link
 			rel="preload"
