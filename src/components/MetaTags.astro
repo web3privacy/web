@@ -4,11 +4,13 @@ import * as config from '../config.yaml';
 
 const { title, description, metaTitle,  image } = Astro.props;
 
+const titleFull = {(metaTitle || title) ? ((metaTitle || title) + ' | ' + config.title) : config.title}
+
 ---
 
 <meta name="viewport" content="width=device-width" />
 <meta name="generator" content={Astro.generator} />
-<title>{(metaTitle || title) ? ((metaTitle || title) + ' | ' + config.title) : config.title}</title>
+<title>{titleFull}</title>
 
 
 <meta name="description" content={description} />
@@ -16,13 +18,13 @@ const { title, description, metaTitle,  image } = Astro.props;
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content={Astro.request.url} />
-<meta property="og:title" content={(metaTitle || title) ? (metaTitle || title) : config.title} />
+<meta property="og:title" content={titleFull} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={image ? `https://web3privacy.info/og/${image}.png` : 'https://web3privacy.info/og/og_index.png'} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.request.url} />
-<meta property="twitter:title" content={(metaTitle || title) ? (metaTitle || title) : config.title}  />
+<meta property="twitter:title" content={titleFull}  />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={image ? `https://web3privacy.info/og/${image}.png` : 'https://web3privacy.info/og/og_index.png'} />
