@@ -58,7 +58,7 @@
       "received_events_url": "https://api.github.com/users/burningtree/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 710
+      "contributions": 714
     },
     {
       "login": "EclecticSamurai",
@@ -539,6 +539,27 @@
       "repos_url": "https://api.github.com/users/wowario/repos",
       "events_url": "https://api.github.com/users/wowario/events{/privacy}",
       "received_events_url": "https://api.github.com/users/wowario/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 1
+    },
+    {
+      "login": "agonist",
+      "id": 2346698,
+      "node_id": "MDQ6VXNlcjIzNDY2OTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2346698?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/agonist",
+      "html_url": "https://github.com/agonist",
+      "followers_url": "https://api.github.com/users/agonist/followers",
+      "following_url": "https://api.github.com/users/agonist/following{/other_user}",
+      "gists_url": "https://api.github.com/users/agonist/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/agonist/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/agonist/subscriptions",
+      "organizations_url": "https://api.github.com/users/agonist/orgs",
+      "repos_url": "https://api.github.com/users/agonist/repos",
+      "events_url": "https://api.github.com/users/agonist/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/agonist/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 1
