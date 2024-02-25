@@ -2,12 +2,10 @@
 
 import BaseLayout from '../layouts/base.astro';
 import AboutFooter from '../components/AboutFooter.astro';
-import * as config from '../config.yaml';
 import core from '../core.json';
 import articles from '../articles.json';
 import talks from '../talks.json';
 import explorer from '../explorer.json';
-import { isRenderTemplateResult } from 'astro/runtime/server/render/astro/render-template.js';
 import { isPast, format } from 'date-fns';
 
 const events = core.events;
