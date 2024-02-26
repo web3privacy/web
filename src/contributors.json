@@ -58,7 +58,7 @@
       "received_events_url": "https://api.github.com/users/burningtree/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 715
+      "contributions": 716
     },
     {
       "login": "EclecticSamurai",
@@ -332,6 +332,27 @@
       "type": "User",
       "site_admin": false,
       "contributions": 3
+    },
+    {
+      "login": "0xdevant",
+      "id": 26415019,
+      "node_id": "MDQ6VXNlcjI2NDE1MDE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26415019?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/0xdevant",
+      "html_url": "https://github.com/0xdevant",
+      "followers_url": "https://api.github.com/users/0xdevant/followers",
+      "following_url": "https://api.github.com/users/0xdevant/following{/other_user}",
+      "gists_url": "https://api.github.com/users/0xdevant/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/0xdevant/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/0xdevant/subscriptions",
+      "organizations_url": "https://api.github.com/users/0xdevant/orgs",
+      "repos_url": "https://api.github.com/users/0xdevant/repos",
+      "events_url": "https://api.github.com/users/0xdevant/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/0xdevant/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 2
     },
     {
       "login": "nullfekt",
@@ -896,27 +917,6 @@
       "repos_url": "https://api.github.com/users/Itsumo-tsukareta/repos",
       "events_url": "https://api.github.com/users/Itsumo-tsukareta/events{/privacy}",
       "received_events_url": "https://api.github.com/users/Itsumo-tsukareta/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 1
-    },
-    {
-      "login": "0xdevant",
-      "id": 26415019,
-      "node_id": "MDQ6VXNlcjI2NDE1MDE5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26415019?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/0xdevant",
-      "html_url": "https://github.com/0xdevant",
-      "followers_url": "https://api.github.com/users/0xdevant/followers",
-      "following_url": "https://api.github.com/users/0xdevant/following{/other_user}",
-      "gists_url": "https://api.github.com/users/0xdevant/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/0xdevant/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/0xdevant/subscriptions",
-      "organizations_url": "https://api.github.com/users/0xdevant/orgs",
-      "repos_url": "https://api.github.com/users/0xdevant/repos",
-      "events_url": "https://api.github.com/users/0xdevant/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/0xdevant/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 1
