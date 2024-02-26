@@ -21,6 +21,12 @@ function getPoint (num){
     return `${obj.start+1}${obj.arr.length > 1 ? '-'+(obj.start+obj.arr.length) : ''}`;
 }
 
+const median = arr => {
+  const mid = Math.floor(arr.length / 2),
+    nums = [...arr].sort((a, b) => a - b);
+  return arr.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;
+};
+
 ---
 
 <BaseLayout title="Leaderboard" image="og_leaderboard">
@@ -66,6 +72,17 @@ function getPoint (num){
     </div>
     <div class="middle-pane-medium flex items-center justify-center">
         <div class="mt-20">
+            <div class="mb-10">
+                <div><span class="text-white">{contributors.items.reduce((a, b) => (a + b.contributions), 0)}</span> total commits</div>
+                <div><span class="text-white">{contributors.items.length}</span> total contributors</div>
+                <div class="mt-4"><span class="text-white">{contributors.items.filter(c => c.contributions >= 2).length}</span> contributors with >= 2 commits</div>
+                <div><span class="text-white">{contributors.items.filter(c => c.contributions >= 5).length}</span> contributors with >= 5 commits</div>
+                <div><span class="text-white">{contributors.items.filter(c => c.contributions >= 10).length}</span> contributors with >= 10 commits</div>
+                <div><span class="text-white">{contributors.items.filter(c => c.contributions >= 50).length}</span> contributors with >= 50 commits</div>
+                <div><span class="text-white">{contributors.items.filter(c => c.contributions >= 100).length}</span> contributors with >= 100 commits</div>
+                <div class="mt-4">Median <span class="text-white">{median(contributors.items.map(c => c.contributions))}</span> commits per contributor</div>
+                <div>Average <span class="text-white">{(Math.round((contributors.items.reduce((a, b) => (a + b.contributions), 0) / contributors.items.length)*100)/100)}</span> commits per contributor</div>
+            </div>
             <h2>Eligible repositories</h2>
             <div class="mt-6">
                 {contributors.repos.map(repo => (
