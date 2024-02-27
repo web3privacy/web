@@ -80,6 +80,16 @@
     "guestCount": 4
   },
   {
+    "url": "w3pn-m24cph",
+    "name": "W3PN Meetup @ Copenhagen",
+    "period": [
+      "2024-09-19T13:00:00.000Z",
+      "2024-09-19T18:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/ig/1f239f2c-574d-4c00-b827-c23a8c4317eb",
+    "guestCount": 1
+  },
+  {
     "url": "w3pn-meetup-rome1",
     "name": "W3PN Meetup @ ETHRome 2024",
     "period": [

@@ -879,7 +879,7 @@
       "id": "m24cph",
       "issue": 18,
       "type": "meetup",
-      "date": "2024/Sep",
+      "date": "2024-09-19",
       "city": "Copenhagen",
       "country": "dk",
       "coincidence": "",
@@ -888,7 +888,10 @@
       "optional": true,
       "helpers": [
         "czepluch"
-      ]
+      ],
+      "links": {
+        "rsvp": "https://lu.ma/w3pn-m24cph"
+      }
     },
     {
       "id": "m24rom",
