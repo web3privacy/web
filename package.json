@@ -15,6 +15,7 @@
     "talks": "deno run --allow-all utils/talks.js",
     "explorer": "deno run --allow-all utils/explorer.js",
     "events-ext": "deno run --allow-all utils/events-ext.js",
+    "db-repo": "deno run --allow-all utils/db-repo.js",
     "sync-all": "npm run core && npm run contribs && npm run articles && npm run talks && npm run explorer && npm run events-ext"
   },
   "dependencies": {

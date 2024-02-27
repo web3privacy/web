@@ -6,6 +6,7 @@ import core from '../core.json';
 import articles from '../articles.json';
 import talks from '../talks.json';
 import explorer from '../explorer.json';
+import dbRepo from '../db-repo.json';
 import { isPast, format } from 'date-fns';
 
 const events = core.events;
@@ -44,15 +45,22 @@ for (const ev of events) {
 					</div>
 				</div>
 			</div>
-			<div class="bg-projects" data-url="https://explorer.web3privacy.info">
-				<div class="title">Explorer</div>
+			<div class="bg-projects relative" data-url="https://github.com/web3privacy/web3privacy/blob/main/README.md#contents">
+				<div class="title">
+					<div class="flex items-center">
+						<div class="icon github small mr-1.5 inline-block"></div>
+						<div class="text-white mt-1 ml-1.5"><a href="https://github.com/web3privacy/web3privacy/blob/main/README.md#contents">Web3 Privacy Database</a></div>
+					</div>
+				</div>
+				<!-- Place this tag where you want the button to render. -->
+				<div class="flex items-center absolute top-4 right-4 text-white opacity-30"><div class="icon star small mr-1.5"></div> {dbRepo.stars}</div>
 				<div class="numbers">
 					<div>
-						<div class="big">{explorer.projects}</div>
+						<div class="big">{dbRepo.count}</div>
 						<div>Projects</div>
 					</div>
 					<div>
-						<div class="big">{explorer.contributors}</div>
+						<div class="big">{dbRepo.contributors}</div>
 						<div>Contributors</div>
 					</div>
 				</div>

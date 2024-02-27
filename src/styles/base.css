@@ -207,6 +207,11 @@
   .icon.small {
     @apply w-6 h-6;
   }
+
+  .icon.star {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16' fill='white' class='octicon octicon-star' aria-hidden='true'%3E%3Cpath d='M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z'%3E%3C/path%3E%3C/svg%3E");
+    background-size: 100% 100%;
+  }
   
   .icon.twitter {
     background-image: url('data:image/svg+xml,<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.7895 16.9392L38.6704 0H35.1454L22.2188 14.7051L11.9021 0H0L15.6043 22.2388L0 40H3.52506L17.167 24.4676L28.0646 40H39.9667M4.79734 2.60316H10.2128L35.1427 37.5247H29.7259" fill="%23C0C0C0"/></svg>');
