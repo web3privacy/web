@@ -16,8 +16,8 @@ header:
     #  url: /articles
     #- name: Leaderboard
     #  url: /leaderboard
-    - name: Explorer
-      link: explorer
+    #- name: Explorer
+    #  link: explorer
     - name: News
       link: news
     - name: Docs
