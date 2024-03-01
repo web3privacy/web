@@ -440,6 +440,15 @@
       "imageUrl": "https://data.web3privacy.info/img/people/althea.jpeg"
     },
     {
+      "id": "tim-bansemer",
+      "name": "Tim Bansemer",
+      "caption": "[Aqua Protocol](https://aqua-protocol.org/)",
+      "refs": {
+        "twitter": "https://twitter.com/tim_bansemer"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/tim-bansemer.jpeg"
+    },
+    {
       "id": "catsnaks",
       "name": "Catsnaks",
       "caption": "[PSE](https://pse.dev/)"
@@ -673,6 +682,7 @@
         "signal": "https://signal.group/#CjQKILd3qhOu7_p8OB0bob3bU3Ko0jfgfxm9DK39oK1eiMe_EhA47ns-aCFke2YA3iMnuxqJ"
       },
       "speakers": [
+        "tim-bansemer",
         "mykola-siusko",
         "gabari"
       ]
