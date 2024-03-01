@@ -20,6 +20,9 @@ const contributorRepos = [
   // news project
   "web3privacy/news",
 
+  // jobs
+  "web3privacy/jobs",
+
   // old - deprecated
   "web3privacy/w3ps1",
   "web3privacy/grants",
