@@ -48,7 +48,9 @@ const ext = findExt(EventsExt, item)
                 <div>
                     <div>Date: <span class="text-white">{dateFormat(item.date)} {item.days ? ' - ' + dateFormat(dateEnd(item.date, item.days)) + ` (${item.days} days)` : ''}</span></div>
                     <div>
-                        Venue: {item.place && <span class="text-white" set:html={marked.parseInline(item.place)}></span> || "TBD"}
+                        {item.type !== 'online-summit' &&
+                            <div>Venue: {item.place && <span class="text-white" set:html={marked.parseInline(item.place)}></span> || "TBD"}</div>
+                        }
                         {item.place && item['place-address'] && 
                             <span> @ </span>
                             <span class="text-white">{item['place-address']}</span>
