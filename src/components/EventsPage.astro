@@ -9,7 +9,17 @@ import { types, countryNames } from '../lib/events.js';
 const { type: selectedType } = Astro.props;
 const { country: selectedCountry } = Astro.props;
 
-let typeObj = selectedType ? types.find(t => t.id === selectedType) : null
+const typeObj = selectedType ? types.find(t => t.id === selectedType) : null
+const countryObj = selectedCountry ? { name: countryNames[selectedCountry] } : null
+
+let title = 'Events';
+if (selectedType) {
+	title = typeObj.plural
+}
+if (selectedCountry) {
+	title = 'Events in ' + countryObj.name
+}
+
 let events = core.events;
 
 if (selectedType) {
@@ -32,13 +42,14 @@ function eventsFilter (year, future=true) {
 	}
 }
 
-const currentYear = "2024";
-const pastYears = [ 2023, 2024 ];
+const pastYears = [...new Set(events.map(e => e.date.match(/^(\d{4})/)[1]))];
 const upcoming = events.filter(x => x.date.match(/^2024/))
 
 const past = {}
+let pastTotal = 0
 for (const year of pastYears.reverse()) {
 	past[year] = events.filter(eventsFilter(year, false)).reverse()
+	pastTotal += past[year].length
 }
 
 let places = [{ id: '', country: 'All countries', num: core.events.length }];
@@ -60,11 +71,11 @@ for (const ev of core.events) {
 places = places.sort((x, y) => x.num < y.num ? 1 : -1)
 ---
 
-<BaseLayout title="Events" image="og_events">
+<BaseLayout title="Events" metaTitle={title} image="og_events">
 
 	<div class="middle-pane-medium mt-10">
 
-        <div class="mb-8 sm:mb-14">
+        <div class="mb-10 sm:mb-14">
             <div class="flex flex-wrap gap-3 uppercase mb-4">
                 {types.map((type) => (
                     <a href={`/events/${type.id}`} class="px-2 py-0 border border-white/15 rounded-xl" class:list={[ (type.id === selectedType) || (!type.id && !selectedType)? 'text-white border-white' : 'hover:bg-white/20']}>{type.plural} ({type.id ? core.events.filter(obj => obj.type === type.id).length : core.events.length})</a>
@@ -86,24 +97,31 @@ places = places.sort((x, y) => x.num < y.num ? 1 : -1)
 			<img src="/events-map.svg" class="w-full" />
 		</div-->
 
-		<h1 id="upcoming">Upcoming {selectedType ? ` ${typeObj.plural} ` : ''}({upcoming.length})</h1>
-
-		<div class="mb-10">
-			{upcoming.map((event) => (
-				<EventItem item={event} />
-			))}
-		</div>
-
-		<h1 id="past">Past {selectedType ? ` ${typeObj.plural} ` : ''}({events.length-upcoming.length})</h1>
-		{pastYears.map((year) => (
-			past[year].length > 0 &&
-				<h2>{year} ({past[year].length})</h2>
-				<div class="mt-4 mb-10">
-					{past[year]?.map((event) => (
+		{upcoming.length > 0 &&
+			<div>
+				<h1 id="upcoming">Upcoming {title} ({upcoming.length})</h1>
+				<div class="mb-10">
+					{upcoming.map((event) => (
 						<EventItem item={event} />
 					))}
 				</div>
-		))}
+			</div>
+		}
+
+		{pastTotal > 0 &&
+			<div>
+				<h1 id="past">Past {title} ({events.length-upcoming.length})</h1>
+				{pastYears.map((year) => (
+					past[year].length > 0 &&
+						<h2>{year} ({past[year].length})</h2>
+						<div class="mt-4 mb-10">
+							{past[year]?.map((event) => (
+								<EventItem item={event} />
+							))}
+						</div>
+				))}
+			</div>
+		}
 
 		<p>
 			<a href="https://github.com/web3privacy/data/tree/main/src/events" class="hover:underline">Source repository</a>
