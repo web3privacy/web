@@ -1,5 +1,30 @@
 import { format, compareAsc, addDays, isFuture } from 'date-fns';
 
+export const types = [
+    { id: "", plural: 'All events'},
+    { id: "meetup", name: 'Meetup', plural: 'Meetups' },
+    { id: "summit", name: 'Summit', plural: 'Summits' },
+    { id: "privacy-corner", name: 'Privacy Corner', plural: 'Privacy Corners' },
+    { id: "online-summit", name: 'Online Summit', plural: 'Online Summits' },
+]
+
+export const countryNames = {
+    cz: 'Czechia',
+    it: 'Italy',
+    de: 'Germany',
+    es: 'Spain',
+    si: 'Slovenia',
+    dk: 'Denmark',
+    pl: 'Poland',
+    be: 'Belgium',
+    pt: 'Portugal',
+    ee: 'Estonia',
+    nl: 'Netherlands',
+    ro: 'Romania',
+    gr: 'Greece',
+    th: 'Thailand',
+}
+
 export function dateInfo (item) {
     const isDate = item.date.match(/^\d{4}-\d{2}-\d{2}$/)
     const future = isDate && !isFuture(new Date(item.date));
@@ -44,6 +69,9 @@ export function nameRenderer (item, full = false) {
             break;
         case 'privacy-corner':
             return `Privacy Corner at `+ (item.coincidenceFull ? item.coincidenceFull : `${item.coincidence} ${date.year}`)
+            break;
+        case 'online-summit':
+            return "ONLINE Summit" + (item['name-extension'] ? ' ' + item['name-extension'] : '') + (full ? ` ${date.year}` : '');
             break;
     }
 }

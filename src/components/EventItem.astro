@@ -31,13 +31,19 @@ const status = eventStatus(item)
                     </div>
                 </div>
                 <div class="flex gap-2">
-                    <img src={`/flags/${item.country}.svg`} class="w-4" />
-                    <div>
-                        {item.city}, {item.country.toUpperCase()}
-                        {item.coincidence &&
-                            <span>&nbsp;- {ccRenderer(item)}</span>
-                        }
-                    </div>
+                    {item.type !== 'online-summit' &&
+                        <img src={`/flags/${item.country}.svg`} class="w-4" />
+                        <div>
+                            {item.city}, {item.country.toUpperCase()}
+                            {item.coincidence &&
+                                <span>&nbsp;- {ccRenderer(item)}</span>
+                            }
+                        </div>
+                    }
+                    {item.type === 'online-summit' && 
+                        <img src="/flags/other/earth.svg" class="w-4" />
+                        <div>Online</div>
+                    }
                 </div>
             </div>
             <div class="py-1 grow text-right items-center flex gap-4">
