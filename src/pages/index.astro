@@ -99,10 +99,14 @@ for (const e of upcomingEvents) {
 			<h1>Featured Upcoming Events</h1>
 		</div>
 
-		<div class="mb-10">
+		<div class="mb-6">
 			{featuredEvents.map((event) => (
 				<EventItem item={event} />
 			))}
+		</div>
+
+		<div class="mt-6">
+			<a href="/events" class="button inverted"><button>Show all events</button></a>
 		</div>
 
 		<div class="mt-16">
