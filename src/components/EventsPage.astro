@@ -67,12 +67,12 @@ places = places.sort((x, y) => x.num < y.num ? 1 : -1)
         <div class="mb-8 sm:mb-14">
             <div class="flex flex-wrap gap-3 uppercase mb-4">
                 {types.map((type) => (
-                    <a href={`/events/${type.id}`} class="px-2 py-0 border border-white/15 rounded-xl" class:list={[ (type.id === selectedType) || (!type.id && !selectedType)? 'text-black bg-white' : 'hover:bg-white/20']}>{type.plural} ({type.id ? core.events.filter(obj => obj.type === type.id).length : core.events.length})</a>
+                    <a href={`/events/${type.id}`} class="px-2 py-0 border border-white/15 rounded-xl" class:list={[ (type.id === selectedType) || (!type.id && !selectedType)? 'text-white border-white' : 'hover:bg-white/20']}>{type.plural} ({type.id ? core.events.filter(obj => obj.type === type.id).length : core.events.length})</a>
                 ))}
             </div>
             <div class="flex flex-wrap gap-2 uppercase text-sm">
                 {places.map((place) => (
-                    <a href={place.id ? `/events/country/${place.id}` : `/events`} class="px-2 py-0.5 border border-white/15 rounded-xl flex gap-2" class:list={[ (place.id === selectedCountry) || (!place.id && !selectedCountry)? 'text-black bg-white' : 'hover:bg-white/20']}>
+                    <a href={place.id ? `/events/country/${place.id}` : `/events`} class="px-2 py-0.5 border border-white/15 rounded-xl flex gap-2" class:list={[ (place.id === selectedCountry) || (!place.id && !selectedCountry)? 'text-white border-white' : 'hover:bg-white/20']}>
                         {place.id &&
                             <img src={`/flags/${place.country}.svg`} class="w-4 inline-block" />
                         }
