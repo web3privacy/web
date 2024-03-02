@@ -70,6 +70,16 @@
     "guestCount": 2
   },
   {
+    "url": "w3pn-os24q2",
+    "name": "W3PN ONLINE Summit Q2/2024",
+    "period": [
+      "2024-06-23T16:00:00.000Z",
+      "2024-06-24T01:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/ig/1f239f2c-574d-4c00-b827-c23a8c4317eb",
+    "guestCount": 1
+  },
+  {
     "url": "w3pn-meetup-bru1",
     "name": "W3PN Meetup @ EthCC 7",
     "period": [
@@ -87,7 +97,7 @@
       "2024-09-07T17:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/pq/73637b17-538e-44fa-a75a-5da505ba9d47",
-    "guestCount": 0
+    "guestCount": 1
   },
   {
     "url": "w3pn-m24cph",
