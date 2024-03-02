@@ -1,0 +1,24 @@
+---
+
+import EventsPage from '../../../components/EventsPage.astro';
+import { types } from '../../../lib/events.js';
+import core from '../../../core.json';
+
+const { country } = Astro.params;
+
+export async function getStaticPaths() {
+    const countries = []
+    for (const ev of core.events) {
+        if (!ev.country) {
+            continue
+        }
+        if (!countries.includes(ev.country)) {
+            countries.push(ev.country)
+        }
+    }
+    return countries.map(country => ({ params: { country }}));
+}
+
+---
+
+<EventsPage {country} />

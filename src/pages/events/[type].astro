@@ -1,0 +1,14 @@
+---
+
+import EventsPage from '../../components/EventsPage.astro';
+import { types } from '../../lib/events.js';
+
+const { type } = Astro.params;
+
+export async function getStaticPaths() {
+    return types.filter(obj => obj.id).map(obj => ({ params: { type: obj.id }}));
+}
+
+---
+
+<EventsPage {type} />

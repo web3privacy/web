@@ -22,22 +22,32 @@ const status = eventStatus(item)
             <div>
                 <div class="">
                     <a href={`/event/${item.id}`} class="text-white text-lg hover:underline">{nameRenderer(item)}</a>
+                    {item.issue &&
+                        <a href={`https://github.com/web3privacy/events/issues/${item.issue}`} class="ml-0.5 text-white/30 hover:underline">#{item.issue}</a>
+                    }
                     <div class="inline-block ml-2">
                         {item.type === "hackathon" && <span class="text-xs ml-2 text-black bg-white px-1 py-0.5">HACKATHON</span>}
                         {item.type === "summit" && <span class="text-xs ml-2 text-black bg-white px-1 py-0.5">SUMMIT</span>}
+                        {item.type === "online-summit" && <span class="text-xs ml-2 text-black bg-white px-1 py-0.5">ONLINE</span>}
                         {item.type === "privacy-corner" && <span class="text-xs ml-2 text-black bg-gray-500 px-1 py-0.5">↴ PC</span>}
 
                         {item.tags && item.tags.includes("sfe") && <span class="text-xs ml-2 text-black bg-gray-500 px-1 py-0.5" title="Sponsorship Free Edition (SFE)">SFE</span>}
                     </div>
                 </div>
                 <div class="flex gap-2">
-                    <img src={`/flags/${item.country}.svg`} class="w-4" />
-                    <div>
-                        {item.city}, {item.country.toUpperCase()}
-                        {item.coincidence &&
-                            <span>&nbsp;- {ccRenderer(item)}</span>
-                        }
-                    </div>
+                    {item.type !== 'online-summit' &&
+                        <img src={`/flags/${item.country}.svg`} class="w-4" />
+                        <div>
+                            {item.city}, {item.country.toUpperCase()}
+                            {item.coincidence &&
+                                <span>&nbsp;- {ccRenderer(item)}</span>
+                            }
+                        </div>
+                    }
+                    {item.type === 'online-summit' && 
+                        <img src="/flags/other/earth.svg" class="w-4" />
+                        <div>Global</div>
+                    }
                 </div>
             </div>
             <div class="py-1 grow text-right items-center flex gap-4">
@@ -78,18 +88,21 @@ const status = eventStatus(item)
         <div>
             <div>Date: <span class="text-white">{dateFormat(item.date)} {item.days ? ' - ' + dateFormat(dateEnd(item.date, item.days)) + ` (${item.days} days)` : ''}</span></div>
             <div>
-                Venue: {item.place && <span class="text-white" set:html={marked.parseInline(item.place)}></span> || "TBD"}
+                {item.type !== 'online-summit' &&
+                    <div>Venue: {item.place && <span class="text-white" set:html={marked.parseInline(item.place)}></span> || "TBD"}</div>
+                }
                 {item.place && item['place-address'] && 
                     <span> @ </span>
                     <span class="text-white">{item['place-address']}</span>
                 }
             </div>
             <div>Status: <span class:list={[status.color]} class="mr-1.5 text-xs">●</span> {status.title}</div>
-            <div>Lead: <span class="text-white">{item.lead || 'n/a'}</span></div>
+            <!--div>Lead: <span class="text-white">{item.lead || 'n/a'}</span></div-->
 
-            <div class="mt-4 mb-2">
+            <div class="mt-4 mb-2 flex flex-wrap gap-4">
+                <a href={`/event/${item.id}`} class="button inverted"><button>More details</button></a>
                 {item.links?.rsvp &&
-                    <a href={item.links.rsvp} class="button inverted"><button>More details & RSVP</button></a>
+                    <a href={item.links.rsvp} class="button inverted"><button>RSVP</button></a>
                 }
                 {item.links?.web &&
                     <a href={item.links.web} class="button inverted"><button>Website</button></a>

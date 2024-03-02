@@ -30,19 +30,27 @@ const ext = findExt(EventsExt, item)
                 <h1 id="upcoming">W3PN {nameRenderer(item, true)}</h1>
 
                 <div class="flex gap-2 mb-4 text-lg">
-                    <img src={`/flags/${item.country}.svg`} class="w-4" />
-                    <div>
-                        {item.city}, {item.country.toUpperCase()}
-                        {item.coincidence &&
-                            <span>&nbsp;- {ccRenderer(item)}</span>
-                        }
-                    </div>
+                    {item.type !== 'online-summit' &&
+                        <img src={`/flags/${item.country}.svg`} class="w-4" />
+                        <div>
+                            {item.city}, {item.country.toUpperCase()}
+                            {item.coincidence &&
+                                <span>&nbsp;- {ccRenderer(item)}</span>
+                            }
+                        </div>
+                    }
+                    {item.type === 'online-summit' && 
+                        <img src="/flags/other/earth.svg" class="w-4" />
+                        <div>Online</div>
+                    }
                 </div>
 
                 <div>
                     <div>Date: <span class="text-white">{dateFormat(item.date)} {item.days ? ' - ' + dateFormat(dateEnd(item.date, item.days)) + ` (${item.days} days)` : ''}</span></div>
                     <div>
-                        Venue: {item.place && <span class="text-white" set:html={marked.parseInline(item.place)}></span> || "TBD"}
+                        {item.type !== 'online-summit' &&
+                            <div>Venue: {item.place && <span class="text-white" set:html={marked.parseInline(item.place)}></span> || "TBD"}</div>
+                        }
                         {item.place && item['place-address'] && 
                             <span> @ </span>
                             <span class="text-white">{item['place-address']}</span>

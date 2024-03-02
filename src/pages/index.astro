@@ -8,9 +8,11 @@ import talks from '../talks.json';
 import explorer from '../explorer.json';
 import dbRepo from '../db-repo.json';
 import { isPast, format } from 'date-fns';
+import EventItem from '../components/EventItem.astro';
 
 const events = core.events;
 
+const upcomingEvents = []
 let eventsPast = 0
 let eventsUpcoming = 0
 for (const ev of events) {
@@ -19,12 +21,23 @@ for (const ev of events) {
 		future = false
 	}
 	if (future) {
+		upcomingEvents.push(ev)
 		eventsUpcoming++
 	} else {
 		eventsPast++
 	}
 }
 
+const featuredEvents = []
+for (const e of upcomingEvents) {
+	if (featuredEvents.length > 2) {
+		break;
+	}
+	if (['summit', 'meetup', 'online-summit'].includes(e.type) &&
+			e.links?.rsvp && !featuredEvents.find(ex => ex.type === e.type))  {
+		featuredEvents.push(e)
+	}
+}
 
 ---
 
@@ -80,11 +93,21 @@ for (const ev of events) {
 	<div class="middle-pane-medium mt-10">
 		<!--div class="mt-10">
 			<h1>Our Projects</h1>
-		</div>
+		</div-->
 
 		<div class="mt-16">
-			<h1>Featured Events</h1>
-		</div-->
+			<h1>Featured Upcoming Events</h1>
+		</div>
+
+		<div class="mb-6">
+			{featuredEvents.map((event) => (
+				<EventItem item={event} />
+			))}
+		</div>
+
+		<div class="mt-6">
+			<a href="/events" class="button inverted"><button>Show all events</button></a>
+		</div>
 
 		<div class="mt-16">
 			<h1>Latest Articles</h1>

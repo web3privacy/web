@@ -1,0 +1,147 @@
+---
+
+import BaseLayout from '../layouts/base.astro';
+import core from '../core.json';
+import EventItem from '../components/EventItem.astro';
+import { isFuture } from 'date-fns';
+import { types, countryNames } from '../lib/events.js';
+
+const { type: selectedType } = Astro.props;
+const { country: selectedCountry } = Astro.props;
+
+const typeObj = selectedType ? types.find(t => t.id === selectedType) : null
+const countryObj = selectedCountry ? { name: countryNames[selectedCountry] } : null
+
+let title = 'Events';
+if (selectedType) {
+	title = typeObj.plural
+}
+if (selectedCountry) {
+	title = 'Events in ' + countryObj.name
+}
+
+let events = core.events;
+
+if (selectedType) {
+    events = core.events.filter(ev => ev.type === selectedType)
+}
+if (selectedCountry) {
+    events = core.events.filter(ev => ev.country === selectedCountry)
+}
+
+function eventsFilter (year, future=true) {
+	return function (x) {
+		if (!x.date.match(new RegExp(`^${year}`))) {
+			return false
+		}
+		const isDate = x.date.match(/^\d{4}-\d{2}-\d{2}$/)
+		if (!isDate) {
+			return false
+		}
+		return future ? isFuture(new Date(x.date)) : !isFuture(new Date(x.date))
+	}
+}
+
+const pastYears = [...new Set(events.map(e => e.date.match(/^(\d{4})/)[1]))];
+const upcoming = events.filter(x => x.date.match(/^2024/))
+
+const past = {}
+let pastTotal = 0
+for (const year of pastYears.reverse()) {
+	past[year] = events.filter(eventsFilter(year, false)).reverse()
+	pastTotal += past[year].length
+}
+
+let places = [{ id: '', country: 'All countries', num: core.events.length }];
+for (const ev of core.events) {
+    const found = places.find(p => p.country === ev.country)
+    if (found) {
+        found.num++;
+        continue;
+    }
+    if (!ev.country) {
+        continue;
+    }
+    places.push({
+        id: ev.country?.toLowerCase(),
+        country: ev.country,
+        num: 1,
+    })
+}
+places = places.sort((x, y) => x.num < y.num ? 1 : -1)
+---
+
+<BaseLayout title="Events" metaTitle={title} image="og_events">
+
+	<div class="middle-pane-medium mt-10">
+
+        <div class="mb-8 sm:mb-14">
+            <div class="flex flex-wrap gap-3 uppercase mb-4">
+                {types.map((type) => (
+                    <a href={`/events/${type.id}`} class="px-2 py-0 border border-white/15 rounded-xl" class:list={[ (type.id === selectedType) || (!type.id && !selectedType)? 'text-white border-white/60' : 'hover:bg-white/20']}>{type.plural} ({type.id ? core.events.filter(obj => obj.type === type.id).length : core.events.length})</a>
+                ))}
+            </div>
+            <div class="flex flex-wrap gap-2 uppercase text-sm">
+                {places.map((place) => (
+                    <a href={place.id ? `/events/country/${place.id}` : `/events`} class="px-2 py-0.5 border border-white/15 rounded-xl flex gap-2" class:list={[ (place.id === selectedCountry) || (!place.id && !selectedCountry)? 'text-white border-white/60' : 'hover:bg-white/20']}>
+                        {place.id &&
+                            <img src={`/flags/${place.country}.svg`} class="w-4 inline-block" />
+                        }
+                        {countryNames[place.country] || place.country} ({place.num})
+                    </a>
+                ))}
+            </div>
+        </div>
+
+		<!--div class="mb-10">
+			<img src="/events-map.svg" class="w-full" />
+		</div-->
+
+		{upcoming.length > 0 &&
+			<div>
+				<h1 id="upcoming">Upcoming {title} ({upcoming.length})</h1>
+				<div class="mb-10">
+					{upcoming.map((event) => (
+						<EventItem item={event} />
+					))}
+				</div>
+			</div>
+		}
+
+		{pastTotal > 0 &&
+			<div>
+				<h1 id="past">Past {title} ({events.length-upcoming.length})</h1>
+				{pastYears.map((year) => (
+					past[year].length > 0 &&
+						<h2>{year} ({past[year].length})</h2>
+						<div class="mt-4 mb-10">
+							{past[year]?.map((event) => (
+								<EventItem item={event} />
+							))}
+						</div>
+				))}
+			</div>
+		}
+
+		<p>
+			<a href="https://github.com/web3privacy/data/tree/main/src/events" class="hover:underline">Source repository</a>
+		</p>
+	</div>
+
+	<script is:inline>
+		document.querySelectorAll('.event-header .header-base').forEach((el) => {
+			el.addEventListener('click', (ev) => {
+				if (ev.target.tagName === "BUTTON") {
+					return false;
+				}
+				if (ev.target.tagName === "A") {
+					return false;
+				}
+				const detail = el.parentElement.parentElement.querySelector('.detail')
+				document.querySelectorAll('.detail:not(.hidden)').forEach(e => (detail !== e ? e.classList.add('hidden') : null));
+		  		detail.classList.toggle('hidden');
+			});
+		});
+	</script>
+
+</BaseLayout>
