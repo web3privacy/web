@@ -865,6 +865,14 @@
       ]
     },
     {
+      "id": "os24q2",
+      "type": "online-summit",
+      "name-extension": "Q2",
+      "date": "2024-06-23",
+      "lead": "Tree",
+      "slots": 8
+    },
+    {
       "id": "m24bcn",
       "issue": 20,
       "type": "meetup",
@@ -904,13 +912,24 @@
       "id": "m24waw",
       "issue": 19,
       "type": "meetup",
-      "date": "2024/Sep",
+      "date": "2024-09-07",
       "city": "Warsaw",
       "country": "pl",
       "coincidence": "ETHWarsaw",
       "lead": "Tree",
       "slots": 3,
-      "optional": true
+      "optional": true,
+      "links": {
+        "rsvp": "https://lu.ma/w3pn-m24waw"
+      }
+    },
+    {
+      "id": "os24q3",
+      "type": "online-summit",
+      "name-extension": "Q3",
+      "date": "2024/Sep",
+      "lead": "Tree",
+      "slots": 8
     },
     {
       "id": "m24cph",
@@ -1017,6 +1036,14 @@
       "speakers": [
         "edward-fricker"
       ]
+    },
+    {
+      "id": "os24q4",
+      "type": "online-summit",
+      "name-extension": "Q4",
+      "date": "2024/Dec",
+      "lead": "Tree",
+      "slots": 8
     }
   ]
 }
