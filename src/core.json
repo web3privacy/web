@@ -174,6 +174,16 @@
       "imageUrl": "https://data.web3privacy.info/img/people/max-hampshire.jpg"
     },
     {
+      "id": "joshua-davila",
+      "name": "Joshua Davila",
+      "caption": "Blog & podcast \"[The Blockchain Socialist](https://linktr.ee/theblockchainsocialist)\"",
+      "refs": {
+        "twitter": "TBSocialist",
+        "bsky": "tbsocialist.bsky.social"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/joshua-davila.jpg"
+    },
+    {
       "id": "alex-kampa",
       "name": "Alex Kampa",
       "caption": "Director at [Aragon ZK Research](https://research.aragon.org/)",
@@ -202,6 +212,15 @@
         "bsky": "tree.fail"
       },
       "imageUrl": "https://data.web3privacy.info/img/people/tree.jpg"
+    },
+    {
+      "id": "edward-fricker",
+      "name": "Edward P. Fricker",
+      "caption": "right to privacy foundation, deficon, railgun dao, lobsterdao",
+      "refs": {
+        "twitter": "itsthefuture"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/edward-fricker.jpg"
     },
     {
       "id": "guy-zyskind",
@@ -758,7 +777,8 @@
         "ligi"
       ],
       "speakers": [
-        "afri-schoedon"
+        "afri-schoedon",
+        "joshua-davila"
       ],
       "slots": 3,
       "links": {
@@ -839,6 +859,7 @@
         "rsvp": "https://lu.ma/w3pn-meetup-ljubljana1"
       },
       "speakers": [
+        "joshua-davila",
         "mykola-siusko"
       ]
     },
@@ -851,7 +872,10 @@
       "country": "es",
       "coincidence": "ETHBarcelona",
       "slots": 3,
-      "optional": true
+      "optional": true,
+      "speakers": [
+        "joshua-davila"
+      ]
     },
     {
       "id": "m24bru",
@@ -870,6 +894,8 @@
         "rsvp": "https://lu.ma/w3pn-meetup-bru1"
       },
       "speakers": [
+        "edward-fricker",
+        "joshua-davila",
         "mykola-siusko"
       ]
     },
@@ -985,7 +1011,10 @@
       "slots": 5,
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-devcon7"
-      }
+      },
+      "speakers": [
+        "edward-fricker"
+      ]
     }
   ]
 }
