@@ -53,6 +53,174 @@
       }
     }
   ],
+  "research": [
+    {
+      "issue": 1,
+      "title": "ZK solutions DB",
+      "status": "live",
+      "sort": 0,
+      "labels": [
+        "db"
+      ],
+      "assignees": [
+        "Msiusko"
+      ],
+      "caption": "General DB aggregation focused on ZK for privacy.",
+      "links": {
+        "web": "https://github.com/web3privacy/web3privacy/tree/main/ZKprivacylandscape",
+        "docs": "https://docs.web3privacy.info/research/zk-solutions"
+      }
+    },
+    {
+      "issue": 2,
+      "title": "Privacy Use-Cases DB",
+      "status": "live",
+      "sort": 1,
+      "labels": [
+        "db"
+      ],
+      "assignees": [
+        "Msiusko"
+      ],
+      "links": {
+        "docs": "https://docs.web3privacy.info/research/usecase-db"
+      }
+    },
+    {
+      "issue": 3,
+      "title": "Pagency Framework",
+      "status": "live",
+      "sort": 3,
+      "labels": [],
+      "assignees": [
+        "Msiusko"
+      ],
+      "links": {}
+    },
+    {
+      "issue": 4,
+      "title": "Privacy Projects Hiring",
+      "status": "live",
+      "sort": 2,
+      "labels": [
+        "db"
+      ],
+      "assignees": [
+        "Msiusko"
+      ],
+      "links": {
+        "docs": "https://docs.web3privacy.info/research/hiring"
+      }
+    },
+    {
+      "issue": 5,
+      "title": "Privacy Guides",
+      "status": "backlog",
+      "sort": 0,
+      "labels": [],
+      "assignees": [],
+      "links": {}
+    },
+    {
+      "issue": 6,
+      "title": "Hackathon Curation Pack",
+      "status": "backlog",
+      "sort": 2,
+      "labels": [],
+      "assignees": [
+        "EclecticSamurai",
+        "Msiusko"
+      ],
+      "links": {}
+    },
+    {
+      "issue": 7,
+      "title": "Privacy Annual Report 2024",
+      "status": "backlog",
+      "sort": 3,
+      "labels": [],
+      "assignees": [
+        "EclecticSamurai",
+        "Msiusko"
+      ],
+      "links": {}
+    },
+    {
+      "issue": 8,
+      "title": "Ethereum Privacy Ecosystem",
+      "status": "in-progress",
+      "sort": 0,
+      "labels": [],
+      "assignees": [
+        "Msiusko"
+      ],
+      "links": {}
+    },
+    {
+      "issue": 9,
+      "title": "Privacy use-cases DB 2.0 (major update)",
+      "status": "backlog",
+      "sort": 4,
+      "labels": [
+        "db"
+      ],
+      "assignees": [],
+      "links": {}
+    },
+    {
+      "issue": 10,
+      "title": "Privacy features audit concept for security audit organizations & whitehackers",
+      "status": "backlog",
+      "sort": 1,
+      "labels": [],
+      "assignees": [
+        "Msiusko"
+      ],
+      "links": {}
+    },
+    {
+      "issue": 11,
+      "title": "Scoring model for privacy-services",
+      "status": "in-progress",
+      "sort": 1,
+      "labels": [],
+      "assignees": [
+        "Msiusko"
+      ],
+      "links": {}
+    },
+    {
+      "issue": 12,
+      "title": "Privacy market outlook 22'",
+      "status": "live",
+      "sort": 4,
+      "labels": [],
+      "assignees": [
+        "Msiusko"
+      ],
+      "links": {}
+    },
+    {
+      "issue": 13,
+      "title": "Privacy use-cases within the Ukrainian-Russian war",
+      "status": "live",
+      "sort": 5,
+      "labels": [],
+      "assignees": [
+        "Msiusko"
+      ],
+      "links": {}
+    },
+    {
+      "issue": 14,
+      "title": "Privacy market DB",
+      "status": "live",
+      "sort": 6,
+      "labels": [],
+      "assignees": [],
+      "links": {}
+    }
+  ],
   "projects": [
     {
       "id": "privacy-explorer",
