@@ -38,7 +38,7 @@
       "received_events_url": "https://api.github.com/users/Msiusko/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 1378
+      "contributions": 1392
     },
     {
       "login": "burningtree",
@@ -59,7 +59,7 @@
       "received_events_url": "https://api.github.com/users/burningtree/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 786
+      "contributions": 788
     },
     {
       "login": "EclecticSamurai",
@@ -123,27 +123,6 @@
       "type": "User",
       "site_admin": false,
       "contributions": 43
-    },
-    {
-      "login": "vorcigernix",
-      "id": 179384,
-      "node_id": "MDQ6VXNlcjE3OTM4NA==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/179384?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/vorcigernix",
-      "html_url": "https://github.com/vorcigernix",
-      "followers_url": "https://api.github.com/users/vorcigernix/followers",
-      "following_url": "https://api.github.com/users/vorcigernix/following{/other_user}",
-      "gists_url": "https://api.github.com/users/vorcigernix/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/vorcigernix/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/vorcigernix/subscriptions",
-      "organizations_url": "https://api.github.com/users/vorcigernix/orgs",
-      "repos_url": "https://api.github.com/users/vorcigernix/repos",
-      "events_url": "https://api.github.com/users/vorcigernix/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/vorcigernix/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 31
     },
     {
       "login": "niclaz",
