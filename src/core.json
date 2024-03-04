@@ -18,62 +18,18 @@
     "telegram": "https://t.me/web3privacynow",
     "cfp": "https://cfp.web3privacy.info"
   },
-  "core-team": [
-    {
-      "name": "Mykola",
-      "refs": {
-        "github": "msiusko",
-        "twitter": "nicksvyaznoy",
-        "matrix": "k1983:matrix.org"
-      }
-    },
-    {
-      "name": "Tree",
-      "refs": {
-        "github": "burningtree",
-        "bsky": "tree.fail",
-        "email": "tree@tree.fail",
-        "matrix": "tree:gwei.cz"
-      }
-    },
-    {
-      "name": "PG",
-      "refs": {
-        "github": "EclecticSamurai",
-        "twitter": "PG_CDG",
-        "matrix": "pg_cdg:matrix.org"
-      }
-    },
-    {
-      "name": "Coinmandeer",
-      "refs": {
-        "github": "coinmandeer",
-        "matrix": "coinmandeer:matrix.org",
-        "twitter": "KeenOfCoin"
-      }
-    }
-  ],
+  "teams": {
+    "core-team": [
+      "mykola-siusko",
+      "tree",
+      "pg",
+      "coinmandeer"
+    ]
+  },
   "research": [
     {
       "issue": 1,
       "title": "ZK solutions DB",
-      "status": "live",
-      "sort": 0,
-      "labels": [
-        "db"
-      ],
-      "assignees": [
-        "Msiusko"
-      ],
-      "caption": "General DB aggregation focused on ZK for privacy.",
-      "links": {
-        "web": "https://github.com/web3privacy/web3privacy/tree/main/ZKprivacylandscape",
-        "docs": "https://docs.web3privacy.info/research/zk-solutions"
-      }
-    },
-    {
-      "issue": 2,
-      "title": "Privacy Use-Cases DB",
       "status": "live",
       "sort": 1,
       "labels": [
@@ -82,7 +38,26 @@
       "assignees": [
         "Msiusko"
       ],
+      "caption": "General DB aggregation focused on ZK for privacy.",
       "links": {
+        "web": "https://github.com/web3privacy/web3privacy/tree/main/ZKprivacylandscape#readme",
+        "docs": "https://docs.web3privacy.info/research/zk-solutions"
+      }
+    },
+    {
+      "issue": 2,
+      "title": "Privacy Use-Cases DB",
+      "status": "live",
+      "sort": 3,
+      "labels": [
+        "db"
+      ],
+      "assignees": [
+        "Msiusko"
+      ],
+      "caption": "Basic DB of the privacy-centric use-cases.",
+      "links": {
+        "web": "https://github.com/Msiusko/web3privacy/blob/main/Use-cases.md",
         "docs": "https://docs.web3privacy.info/research/usecase-db"
       }
     },
@@ -90,25 +65,31 @@
       "issue": 3,
       "title": "Pagency Framework",
       "status": "live",
-      "sort": 3,
+      "sort": 5,
       "labels": [],
       "assignees": [
         "Msiusko"
       ],
-      "links": {}
+      "caption": "Pagency framework for facilitation privacy use-cases (privacy services modelling)",
+      "links": {
+        "web": "https://github.com/web3privacy/web3privacy/blob/main/Pagency/Pagency%20-%20privacy%20use-case%20facilitation%20framework.pdf",
+        "docs": "https://docs.web3privacy.info/research/pagency"
+      }
     },
     {
       "issue": 4,
       "title": "Privacy Projects Hiring",
       "status": "live",
-      "sort": 2,
+      "sort": 4,
       "labels": [
         "db"
       ],
       "assignees": [
         "Msiusko"
       ],
+      "caption": "Hiring snapshot across the market: total vacancies, grades, technical x non-technical positions, hiring scope within specific companies & domains.",
       "links": {
+        "web": "https://docs.google.com/spreadsheets/d/1dN6bIWyOh01Dl-y1iZh-1TASZxKUefD098BUALcnUb8/edit?usp=sharing",
         "docs": "https://docs.web3privacy.info/research/hiring"
       }
     },
@@ -154,7 +135,11 @@
       "assignees": [
         "Msiusko"
       ],
-      "links": {}
+      "caption": "Comprehensive privacy-centric research aimed to map Ethereum-centric privacy services, use-cases, product stages, missing areas (use-cases), funding landscape etc Supported by MolochDAO",
+      "links": {
+        "web": "https://github.com/web3privacy/web3privacy/blob/main/Market%20overview/Ethereum%20Ecosystem/Readme.md",
+        "docs": "https://docs.web3privacy.info/research/ethereum-privacy-ecosystem/"
+      }
     },
     {
       "issue": 9,
@@ -191,34 +176,43 @@
     },
     {
       "issue": 12,
-      "title": "Privacy market outlook 22'",
+      "title": "Privacy market outlook (2022)",
       "status": "live",
-      "sort": 4,
+      "sort": 2,
       "labels": [],
       "assignees": [
         "Msiusko"
       ],
-      "links": {}
+      "caption": "150-pages report on the state of privacy x web3 from funding to key projects.",
+      "links": {
+        "web": "https://github.com/web3privacy/web3privacy/blob/main/Market%20overview/Privacy%20market%20outlook%20in%20Web3%20by%20Mykola%20Siusko%20(Jan%202023).pdf"
+      }
     },
     {
       "issue": 13,
       "title": "Privacy use-cases within the Ukrainian-Russian war",
       "status": "live",
-      "sort": 5,
+      "sort": 6,
       "labels": [],
       "assignees": [
         "Msiusko"
       ],
-      "links": {}
+      "caption": "Research how privacy tools can protect human rights, vulnerable audiences within the war, migration & cross-border relations. Supported by Zcash Foundation.",
+      "links": {
+        "web": "https://github.com/web3privacy/grants/blob/main/staticobjects/Privacy%20use%20cases%20with%20the%20focus%20on%20Zcash%20(privacy%20coins)_Siusko.pdf"
+      }
     },
     {
       "issue": 14,
       "title": "Privacy market DB",
       "status": "live",
-      "sort": 6,
+      "sort": 0,
       "labels": [],
       "assignees": [],
-      "links": {}
+      "caption": "Privacy services x web3 initial market DB aggregation: segmentation, key links (web, git, docs), ecosystem, product liveliness etc. 600 projects in the DB.",
+      "links": {
+        "web": "https://github.com/web3privacy/web3privacy?tab=readme-ov-file#contents"
+      }
     }
   ],
   "projects": [
@@ -307,7 +301,8 @@
       "name": "Coinmandeer",
       "refs": {
         "twitter": "KeenOfCoin",
-        "github": "coinmandeer"
+        "github": "coinmandeer",
+        "matrix": "coinmandeer:matrix.org"
       },
       "imageUrl": "https://data.web3privacy.info/img/people/coinmandeer.png"
     },
@@ -377,7 +372,10 @@
       "caption": "Orchestrating lunarpunk events [ETHBrno](https://ethbrno.cz) & [w3ps](https://github.com/web3privacy/w3ps) w/ [gwei.cz](https://gwei.cz)",
       "country": "cz",
       "refs": {
-        "bsky": "tree.fail"
+        "github": "burningtree",
+        "bsky": "tree.fail",
+        "email": "tree@tree.fail",
+        "matrix": "tree:gwei.cz"
       },
       "imageUrl": "https://data.web3privacy.info/img/people/tree.jpg"
     },
@@ -616,7 +614,9 @@
       "caption": "Organizing [ETHRome](https://ethrome.org) w/ [urbe.eth](https://linktr.ee/urbe.eth), making sauce w/ [SpaghettETH](https://linktr.ee/spaghetteth)",
       "country": "it",
       "refs": {
-        "twitter": "PG_CDG"
+        "twitter": "PG_CDG",
+        "github": "EclecticSamurai",
+        "matrix": "pg_cdg:matrix.org"
       },
       "imageUrl": "https://data.web3privacy.info/img/people/pg.jpg"
     },
@@ -646,7 +646,9 @@
       "caption": "Web3 privacy advocate behind [Web3Privacy Now](https://web3privacy.info/)",
       "country": "es",
       "refs": {
-        "twitter": "nicksvyaznoy"
+        "twitter": "nicksvyaznoy",
+        "github": "msiusko",
+        "matrix": "k1983:matrix.org"
       },
       "imageUrl": "https://data.web3privacy.info/img/people/mykola-siusko.png"
     },
