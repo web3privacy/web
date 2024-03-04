@@ -1,0 +1,24 @@
+---
+import { personLink } from "../lib/core.js";
+
+const { items, limit = 7 } = Astro.props;
+let { size = 'w-8 h-8' } = Astro.props;
+---
+
+<!--div>{JSON.stringify(items)}</div-->
+<div class="">
+    <div class="flex -space-x-3 flex-wrap">
+        {items.slice(0, limit).filter(p => p).map((p) => (
+            <div class="hover:z-0">
+                <a href={personLink(p)} class="aspect-square inline-block" class:list={[size]}>
+                    <img src={p.imageUrl} class="w-full aspect-square object-cover rounded-full border-gray-800 border-2 hover:border-white" alt={p.name} title={p.name} />
+                </a>
+            </div>
+        ))}
+        {items.length > limit &&
+            <div class="flex items-center justify-center rounded-full aspect-square border-2 border-gray-800 bg-gray-800 text-xs" class:list={[size]}>
+                    +{items.length - limit}
+            </div>
+        }
+    </div>
+</div>

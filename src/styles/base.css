@@ -152,13 +152,21 @@
   .w3pn-project-item {
     @apply w-full border border-[#202020] mb-3;
   }
+  
+  .w3pn-project-item:hover {
+    @apply bg-[#0f0f0f]/30;
+  }
 
   .w3pn-project-item a:hover {
-    @apply bg-[#0f0f0f]/30;
+    @apply underline;
   }
   
   .w3pn-event-item {
     @apply w-full border border-[#202020] mb-3;
+  }
+
+  .w3pn-event-item .event-header {
+    @apply cursor-zoom-in;
   }
 
   .w3pn-event-item .header-base:hover {
@@ -171,6 +179,10 @@
 
   .w3pn-event-item .detail {
     @apply bg-[#0f0f0f] px-4 py-3;
+  }
+
+  .w3pn-event-item:has(.detail:not(.hidden)) .event-header {
+    @apply cursor-zoom-out;
   }
 
   .w3pn-wgrid {

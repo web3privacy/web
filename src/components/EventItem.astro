@@ -5,6 +5,7 @@ import EventsExt from '../events-ext.json';
 import core from "../core.json";
 import { dateFormat, dateInfo, dateEnd, nameRenderer, ccRenderer, eventStatus, getSpeaker, findExt } from '../lib/events.js';
 import SpeakerList from './SpeakerList.astro';
+import PeopleCarousel from './PeopleCarousel.astro';
 
 const ext = findExt(EventsExt, item)
 const status = eventStatus(item)
@@ -12,7 +13,7 @@ const status = eventStatus(item)
 
 <div class="w3pn-event-item">
     <div class="event-header flex">
-        <div class="header-base sm:flex gap-4 grow px-3 py-2.5 sm:px-4 sm:py-3 cursor-pointer">
+        <div class="header-base sm:flex gap-4 grow px-3 py-2.5 sm:px-4 sm:py-3">
             <div class="w-full sm:w-28 flex sm:block sm:text-right leading-normal">
                 <div class="">{dateFormat(item.date)}</div>
                 {item.days && item.days > 1 &&
@@ -53,14 +54,7 @@ const status = eventStatus(item)
             <div class="py-1 grow text-right items-center flex gap-4">
                 <div class="grow"></div>
                 {item.speakers &&
-                    <div class="flex -space-x-3">
-                        {item.speakers.map(spId => getSpeaker(core, spId)).slice(0,7).map((speaker) => (
-                            <div><img src={speaker.imageUrl} class="w-8 h-8 aspect-square object-fit rounded-full border-gray-800 border-2" /></div>
-                        ))}
-                        {item.speakers.length > 7 &&
-                            <div class="flex items-center justify-center w-8 h-8 rounded-full aspect-square border-2 border-gray-800 bg-gray-800 text-xs">+{item.speakers.length - 7}</div>
-                        }
-                    </div>
+                    <PeopleCarousel items={item.speakers.map(spId => getSpeaker(core, spId))} />
                 }
                 {ext && ext.guestCount > 0 &&
                     <div>

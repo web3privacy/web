@@ -1,0 +1,39 @@
+---
+import PeopleCarousel from './PeopleCarousel.astro';
+import { getPersonByGH } from '../lib/core.js';
+
+const { item } = Astro.props;
+
+---
+
+<div class="w3pn-project-item flex flex-wrap md:flex-nowrap">
+    <div class="p-6">
+        <div class=""> 
+            <span href={item.links.docs} class="text-white text-xl">{item.title}</span>
+            <a href={`https://github.com/web3privacy/research/issues/${item.issue}`} class="text-white/30 ml-1">#{item.issue}</span>
+            <div class="inline-block ml-1.5">
+                {item.labels.map(label => (
+                    <span class="text-xs ml-2 text-black bg-white px-1 py-0.5 uppercase">{label}</span>
+                ))}
+            </div>
+        </div>
+        {item.caption &&
+            <div class="mt-1">{item.caption}</div>
+        }
+    </div>
+    <div class="p-6 flex gap-6 justify-end grow">
+        {item.assignees.length > 0 &&
+            <PeopleCarousel items={item.assignees.map(getPersonByGH)} size="w-10 h-10" />
+        }
+        {(item.links?.docs || item.links?.web) && 
+            <div class="flex gap-3">
+                {item.links.docs &&
+                    <a href={item.links.docs} class="button inverted"><button>Docs</button></a>
+                }
+                {item.links.web &&
+                    <a href={item.links.web} class="button inverted"><button>View</button></a>
+                }
+            </div>
+        }
+    </div>
+</div>

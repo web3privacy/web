@@ -12,7 +12,7 @@ import core from "../core.json";
         <div class="w3pn-speaker-list grid grid-cols-1 gap-6 mt-4">
             {item.speakers.map(spId => getSpeaker(core, spId)).map((speaker) => (
                 <div class="flex gap-4">
-                    <div><img class={`${thumbSize === 'big' ? 'w-16 h-16' : 'w-14 h-14'} aspect-square rounded-full object-contain`} src={speaker.imageUrl} /></div>
+                    <div class={`${thumbSize === 'big' ? 'w-16 h-16' : 'w-14 h-14'}`}><img class={`${thumbSize === 'big' ? 'w-16 h-16' : 'w-14 h-14'} aspect-square rounded-full object-cover`} src={speaker.imageUrl} /></div>
                     <div>
                         <div>
                             <span class="text-white">{speaker.name}</span>
