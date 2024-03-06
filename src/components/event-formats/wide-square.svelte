@@ -24,8 +24,8 @@
             </div>
         </div>
         <div class="flex" style="margin-top: -2px;">
-            <div class="border-2 border-white py-1 px-2 bg-white text-black">
-                Meetup
+            <div class="border-2 border-white py-1 px-2 bg-white text-black uppercase">
+                {event.type}
             </div>  
         </div>
     </div>

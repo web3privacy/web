@@ -15,7 +15,8 @@ import PosterSimple from './event-formats/poster-simple.svelte';
 
 const topics = [
     'identity',
-    'netw./event-formats/square.svelterivacy',
+    'network states',
+    'fullstack privacy',
     'private messaging',
     'r&d: ZK, MPC, THE',
     'on-chain privacy',
@@ -32,7 +33,7 @@ const events = {
     m24tll: { image: 'tallinn01' },
     m24opo: { image: 'porto01' },
     m24ber: { image: 'berlin02' },
-    s24prg: { image: 'summit01' },
+    s24prg: { image: 'summit02' },
     m24lju: { image: 'ljubljana01' },
     m24bcn: { image: 'barcelona01' },
     m24cph: { image: 'copenhagen01' },
