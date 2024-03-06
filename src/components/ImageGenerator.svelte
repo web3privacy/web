@@ -19,17 +19,21 @@ const topics = [
     'privacy activism',
 ]
 
-
 const images = {
     meetup01: {},
     meetup02: {},
     summit01: {}
 }
 
+const events = {
+    m24buc: { image: 'meetup02' },
+    m24ams: { image: 'meetup01' },
+}
+
 let searchParams = null
 let imageSelected = Object.keys(images)[0];
 //let eventSelected = core.events[0].id;
-const eventSelected = writable(core.events[0].id)
+const eventSelected = writable(Object.keys(events)[0]);
 const speakerSelected = writable('alona-shevchenko');
 
 onMount(() => {
@@ -50,7 +54,7 @@ eventSelected.subscribe((id, next) => {
     return next
 })
 
-$: image = `/gen-img/events/${imageSelected}.png`;
+$: image = `/gen-img/events/${events[$eventSelected]?.image}.png`;
 $: event = core.events.find(e => e.id === $eventSelected);
 $: speaker = core.people.find(p => p.id === $speakerSelected);
 
@@ -62,19 +66,19 @@ $: speaker = core.people.find(p => p.id === $speakerSelected);
         <div>
             Event:
             <select bind:value={$eventSelected} class="text-black">
-                {#each core.events as e}
+                {#each Object.keys(events).map(eId => core.events.find(e => e.id === eId)) as e}
                     <option value={e.id}>[{e.id}] {e.type} {e.city} - {dateFormat(event.date)}</option>
                 {/each}
             </select>
         </div>
-        <div>
+        <!--div>
             Image:
             <select bind:value={imageSelected} class="text-black">
                 {#each Object.keys(images) as image}
                     <option value={image}>{image}</option>
                 {/each}
             </select>
-        </div>
+        </div-->
     </div>
 </div>
 <div class="w-full flex flex-wrap gap-10 p-10">
