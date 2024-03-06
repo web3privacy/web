@@ -1,0 +1,11 @@
+---
+import BaseLayout from './base.astro';
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout title={frontmatter.title}>
+    <div class="middle-pane-medium mt-10">
+        <slot />
+    </div>
+</BaseLayout>
