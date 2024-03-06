@@ -25,20 +25,19 @@ const topics = [
     'privacy activism',
 ]
 
-const images = {
-    meetup01: {},
-    meetup02: {},
-    summit01: {}
-}
-
 const events = {
+    m24ath: { image: 'athens01' },
     m24buc: { image: 'meetup02' },
-    m24ams: { image: 'meetup01' },
+    m24ams: { image: 'amsterdam01' },
+    m24ber: { image: 'berlin01' },
     s24prg: { image: 'summit01' },
+    m24opo: { image: 'porto01' },
+    m24rom: { image: 'rome01' },
+    s24brn: { image: 'brno01' },
 }
 
 let searchParams = null
-let imageSelected = Object.keys(images)[0];
+
 //let eventSelected = core.events[0].id;
 const eventSelected = writable('');
 const speakerSelected = writable('alona-shevchenko');
