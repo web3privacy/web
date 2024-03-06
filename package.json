@@ -19,12 +19,15 @@
     "sync-all": "npm run core && npm run contribs && npm run articles && npm run talks && npm run explorer && npm run events-ext && npm run db-repo"
   },
   "dependencies": {
+    "@astrojs/svelte": "^5.2.0",
     "@astrojs/tailwind": "^5.1.0",
     "@rollup/plugin-yaml": "^4.1.2",
     "astro": "^4.3.5",
     "cfonts": "^3.2.0",
     "date-fns": "^2.30.0",
     "marked": "^11.1.1",
-    "tailwindcss": "^3.4.1"
+    "svelte": "^4.2.12",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
   }
 }
