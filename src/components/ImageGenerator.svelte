@@ -245,7 +245,7 @@ $: speaker = core.people.find(p => p.id === speakerSelected);
 
                 <div class="absolute top-28 left-0 h-32 w-full z-10" style="background: linear-gradient(black, transparent);"></div>
                 <div class="absolute top-28 left-[-70px] w-[900px] h-[900px] -z-0" style="background-image: url({image}); background-size: 100% 100%; background-position: center;"></div>
-                <div class="absolute bottom-[7em] left-0 h-1/3 w-full z-10" style="background: linear-gradient(transparent, black);"></div>
+                <div class="absolute bottom-[7em] left-0 h-48 w-full z-10" style="background: linear-gradient(transparent, black);"></div>
 
                 <div class="absolute bottom-10 left-10 uppercase text-3xl z-20">
                     <div class="flex">
