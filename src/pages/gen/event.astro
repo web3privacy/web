@@ -1,0 +1,61 @@
+---
+
+const topics = [
+    'identity',
+    'network states',
+    'fullstack privacy',
+    'private messaging',
+    'r&d: ZK, MPC, THE',
+    'on-chain privacy',
+    'regulation vs. privacy',
+    'lunarpunk vs. solarpunk',
+    'human rights daos',
+    'privacy activism',
+]
+---
+
+<html>
+    <head>
+        <link
+        rel="preload"
+        href="/fonts/dm-mono-regular-latin.woff2"
+        as="font"
+        type="font/woff2"
+        crossorigin
+/>
+</head>
+<body class="bg-black text-white font-mono font-['DM Mono Regular Latin']">
+
+    <div class="w-screen h-screen">
+        <div class="p-10 w-1/2">
+            <div class="border-2 border-yello-500">
+                <div class="aspect-[2/3] relative">
+                    <img src="/logo.svg" class="m-10" />
+
+                    <img src="/gen-img/events/summit01.png" class="absolute top-12 left-0 -z-10" />
+
+                    <div class="absolute top-[45rem] left-10 uppercase text-2xl">
+                        <div class="relative">
+                            <div class="border-2 border-white py-2 px-4 border-b-0 inline-block bg-black">
+                                May 30, 2024
+                            </div>
+                            <div class="border-2 border-white py-2 px-4 bg-black">
+                                Prague, Czechia
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-10 right-10 bottom-28 uppercase text-lg flex flex-wrap gap-3">
+                        {topics.map(topic => (
+                            <div><span class="inline-block w-2 h-2 bg-white"></span> {topic}</div>
+                        ))}
+                    </div>
+                    <div class="absolute left-10 bottom-10 bg-white text-black text-sm uppercase py-1.5 px-3">
+                        summit2024.web3privacy.info
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
