@@ -42,7 +42,10 @@ onMount(() => {
     const id = searchParams.get('id');
     if (id) {
         eventSelected.set(id);
-
+    }
+    const speaker = searchParams.get('speaker');
+    if (speaker) {
+        speakerSelected.set(speaker);
     }
 });
 
