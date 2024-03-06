@@ -26,23 +26,22 @@ const topics = [
 </head>
 <body class="bg-black text-white font-mono font-['DM Mono Regular Latin']">
 
-    <div class="w-screen h-screen">
-        <div class="p-10 w-1/2">
+    <div class="w-full">
+        <div class="p-10 w-[820px]">
             <div class="border-2 border-yello-500">
                 <div class="aspect-[2/3] relative">
                     <img src="/logo.svg" class="m-10" />
 
                     <img src="/gen-img/events/summit01.png" class="absolute top-12 left-0 -z-10" />
 
-                    <div class="absolute top-[45rem] left-10 uppercase text-2xl">
-                        <div class="relative">
-                            <div class="border-2 border-white py-2 px-4 border-b-0 inline-block bg-black">
-                                May 30, 2024
-                            </div>
-                            <div class="border-2 border-white py-2 px-4 bg-black">
-                                Prague, Czechia
-                            </div>
+                    <div class="absolute bottom-80 left-10 uppercase text-2xl">
+                        <div class="border-2 border-white py-2 px-4 border-b-0 inline-block bg-black">
+                            May 30, 2024
                         </div>
+                        <div class="border-2 border-white py-2 px-4 bg-black">
+                            Prague, Czechia
+                        </div>
+
                     </div>
                     <div class="absolute left-10 right-10 bottom-28 uppercase text-lg flex flex-wrap gap-3">
                         {topics.map(topic => (
