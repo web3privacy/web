@@ -33,7 +33,7 @@ const events = {
 let searchParams = null
 let imageSelected = Object.keys(images)[0];
 //let eventSelected = core.events[0].id;
-const eventSelected = writable(Object.keys(events)[0]);
+const eventSelected = writable('');
 const speakerSelected = writable('alona-shevchenko');
 
 onMount(() => {
@@ -48,6 +48,9 @@ onMount(() => {
 
 eventSelected.subscribe((id, next) => {
     const event = core.events.find(e => e.id === id);
+    if (!event) {
+        return;
+    }
     if (event.speakers?.length > 0) {
         speakerSelected.set(event.speakers[0]);
     }
@@ -66,8 +69,9 @@ $: speaker = core.people.find(p => p.id === $speakerSelected);
         <div>
             Event:
             <select bind:value={$eventSelected} class="text-black">
+                <option value="">---</option>
                 {#each Object.keys(events).map(eId => core.events.find(e => e.id === eId)) as e}
-                    <option value={e.id}>[{e.id}] {e.type} {e.city} - {dateFormat(event.date)}</option>
+                    <option value={e.id}>[{e.id}] {e.type} {e.city} - {dateFormat(e.date)}</option>
                 {/each}
             </select>
         </div>
@@ -81,6 +85,12 @@ $: speaker = core.people.find(p => p.id === $speakerSelected);
         </div-->
     </div>
 </div>
+
+{#if !$eventSelected}
+<div class="w-full flex flex-wrap gap-10 p-10">
+    Please select event.
+</div>
+{:else}
 <div class="w-full flex flex-wrap gap-10 p-10">
 
     <div>
@@ -294,3 +304,4 @@ $: speaker = core.people.find(p => p.id === $speakerSelected);
         </div>
     </div>
 </div>
+{/if}
