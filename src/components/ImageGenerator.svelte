@@ -209,7 +209,7 @@ $: speaker = core.people.find(p => p.id === speakerSelected);
                 <img src={image} class="absolute top-20 left-0 -z-0" />
                 <div class="absolute bottom-[18.5rem] left-0 h-36 w-full z-10" style="background: linear-gradient(transparent, black);"></div>
 
-                <div class="absolute bottom-80 left-10 uppercase text-2xl z-20">
+                <div class="absolute bottom-80 left-10 uppercase text-3xl z-20">
                     <div class="flex">
                         <div class="border-2 border-white py-2 px-4 border-r-0 inline-block bg-black">
                             {dateFormat(event.date)}
@@ -231,6 +231,36 @@ $: speaker = core.people.find(p => p.id === speakerSelected);
                 </div>
                 <div class="absolute left-10 bottom-10 bg-white text-black text-sm uppercase py-1.5 px-3">
                     summit2024.web3privacy.info
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="mb-4 text-xl text-green-500">Poster (simple) (3:2)</div>
+        
+        <div class="w-[764px] border-2 border-green-500 overflow-hidden">
+            <div id="img-poster" class="aspect-[2/3] w-[760px] h-[1140px] relative bg-black">
+                <img src="/logo.svg" class="absolute top-10 left-10 w-1/3 z-20" />
+
+                <div class="absolute top-28 left-0 h-32 w-full z-10" style="background: linear-gradient(black, transparent);"></div>
+                <div class="absolute top-28 left-[-70px] w-[900px] h-[900px] -z-0" style="background-image: url({image}); background-size: 100% 100%; background-position: center;"></div>
+                <div class="absolute bottom-[7em] left-0 h-1/3 w-full z-10" style="background: linear-gradient(transparent, black);"></div>
+
+                <div class="absolute bottom-10 left-10 uppercase text-3xl z-20">
+                    <div class="flex">
+                        <div class="border-2 border-white py-2 px-4 border-r-0 inline-block bg-black">
+                            {dateFormat(event.date)}
+                        </div>
+                        <div class="border-2 border-white py-2 px-4 bg-black">
+                            {event.city}, {event.country}
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="border-2 border-white py-2 px-4 bg-white text-black">
+                            {event.type}
+                        </div>  
+                    </div>
                 </div>
             </div>
         </div>
