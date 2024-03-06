@@ -16,9 +16,10 @@ const topics = [
     'privacy activism',
 ]
 
-const img = 'meetup01';
+const img = 'meetup02';
 const images = {
     meetup01: {},
+    meetup02: {},
     summit01: {}
 }
 
