@@ -16,15 +16,15 @@ const topics = [
     'privacy activism',
 ]
 
-const img = 'meetup02';
+
 const images = {
     meetup01: {},
     meetup02: {},
     summit01: {}
 }
 
-let imageSelected = Object.keys(images)[0]
-let eventSelected = core.events[0].id
+let imageSelected = Object.keys(images)[0];
+let eventSelected = core.events[0].id;
 
 $: image = `/gen-img/events/${imageSelected}.png`;
 $: event = core.events.find(e => e.id === eventSelected);
@@ -53,6 +53,101 @@ $: event = core.events.find(e => e.id === eventSelected);
     </div>
 </div>
 <div class="w-full flex flex-wrap gap-10 p-10">
+
+    <div>
+        <div class="mb-4 text-xl text-green-500">Square (1:1)</div>
+
+        <div class="w-[404px] border-2 border-green-500 overflow-hidden">
+            <div id="img-square" class="aspect-square w-[400px] relative bg-black">
+                <img src="/logo.svg" class="absolute top-8 left-8 w-1/2 z-20" />
+
+                <div class="absolute top-0 left-0 h-36 w-full z-10" style="background: linear-gradient(black, transparent);"></div>
+                <div class="absolute top-0 left-0 h-full w-1/2 z-10" style="background: linear-gradient(to left, transparent, black);"></div>
+                <img src={image} class="absolute top-0 left-0 -z-0" />
+
+                <div class="absolute bottom-8 left-8 uppercase z-20">
+                    <div class="flex">
+                        <div class="border-2 border-white py-1 px-2 border-r-0 inline-block bg-black">
+                            {dateFormat(event.date)}
+                        </div>
+                        <div class="border-2 border-white py-1 px-2 bg-black">
+                            {event.city}, {event.country}
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="border-2 border-white py-1 px-2 bg-white text-black">
+                            Meetup
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="mb-4 text-xl text-green-500">Wide-square (4:3)</div>
+
+        <div class="h-[404px] border-2 border-green-500 overflow-hidden">
+            <div id="img-square" class="aspect-[4/3] h-[400px] relative bg-black">
+
+                <img src="/logo.svg" class="absolute top-8 left-8 w-1/4 z-20" />
+
+                <div class="absolute top-0 left-24 h-full w-1/3 z-10" style="background: linear-gradient(to left, transparent, black);"></div>
+                <img src={image} class="absolute top-0 left-24 -z-0 w-[28rem]" />
+
+                <div class="absolute bottom-8 left-8 uppercase z-20 text-xl">
+                    <div class="flex">
+                        <div class="border-2 border-white py-1 px-2 inline-block bg-black">
+                            {dateFormat(event.date)}
+                        </div>
+                    </div>
+                    <div class="flex" style="margin-top: -2px;">
+                        <div class="border-2 border-white py-1 px-2 bg-black">
+                            {event.city}, {event.country}
+                        </div>
+                    </div>
+                    <div class="flex" style="margin-top: -2px;">
+                        <div class="border-2 border-white py-1 px-2 bg-white text-black">
+                            Meetup
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="mb-4 text-xl text-green-500">Wide (16:9)</div>
+
+        <div class="h-[404px] border-2 border-green-500 overflow-hidden">
+            <div id="img-square" class="aspect-video h-[400px] relative bg-black">
+
+                <img src="/logo.svg" class="absolute top-8 left-8 w-1/4 z-20" />
+
+                <div class="absolute top-0 left-48 h-full w-1/3 z-10" style="background: linear-gradient(to left, transparent, black);"></div>
+                <img src={image} class="absolute top-0 left-48 -z-0 w-[33rem]" />
+
+                <div class="absolute bottom-8 left-8 uppercase z-20 text-xl">
+                    <div class="flex">
+                        <div class="border-2 border-white py-1 px-2 inline-block bg-black">
+                            {dateFormat(event.date)}
+                        </div>
+                    </div>
+                    <div class="flex" style="margin-top: -2px;">
+                        <div class="border-2 border-white py-1 px-2 bg-black">
+                            {event.city}, {event.country}
+                        </div>
+                    </div>
+                    <div class="flex" style="margin-top: -2px;">
+                        <div class="border-2 border-white py-1 px-2 bg-white text-black">
+                            Meetup
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div>
         <div class="mb-4 text-xl text-green-500">Poster (3:2)</div>
         
@@ -86,35 +181,6 @@ $: event = core.events.find(e => e.id === eventSelected);
                 </div>
                 <div class="absolute left-10 bottom-10 bg-white text-black text-sm uppercase py-1.5 px-3">
                     summit2024.web3privacy.info
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="mb-4 text-xl text-green-500">Square (1:1)</div>
-
-        <div class="w-[404px] border-2 border-green-500 overflow-hidden">
-            <div id="img-square" class="aspect-square w-[400px] relative bg-black">
-                <img src="/logo.svg" class="absolute top-8 left-8 w-1/2 z-20" />
-
-                <div class="absolute top-0 left-0 h-36 w-full z-10" style="background: linear-gradient(black, transparent);"></div>
-                <div class="absolute top-0 left-0 h-full w-1/2 z-10" style="background: linear-gradient(to left, transparent, black);"></div>
-                <img src={image} class="absolute top-0 left-0 -z-0" />
-
-                <div class="absolute bottom-8 left-8 uppercase z-20">
-                    <div class="flex">
-                        <div class="border-2 border-white py-1 px-2 border-r-0 inline-block bg-black">
-                            {dateFormat(event.date)}
-                        </div>
-                        <div class="border-2 border-white py-1 px-2 bg-black">
-                            {event.city}, {event.country}
-                        </div>
-                    </div>
-                    <div class="flex">
-                        <div class="border-2 border-white py-1 px-2 bg-white text-black">
-                            Meetup
-                        </div>  
-                    </div>
                 </div>
             </div>
         </div>
