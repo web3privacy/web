@@ -2,7 +2,9 @@
 
 import core from '../core.json';
 import { dateFormat } from '../lib/events.js';
-import { marked,  } from 'marked';
+import { marked } from 'marked';
+import { onMount } from 'svelte';
+import { writable } from 'svelte/store';
 
 const topics = [
     'identity',
@@ -24,13 +26,33 @@ const images = {
     summit01: {}
 }
 
+let searchParams = null
 let imageSelected = Object.keys(images)[0];
-let eventSelected = core.events[0].id;
-let speakerSelected = 'alona-shevchenko';
+//let eventSelected = core.events[0].id;
+const eventSelected = writable(core.events[0].id)
+const speakerSelected = writable('alona-shevchenko');
+
+onMount(() => {
+    searchParams = new URL(document.location).searchParams;
+
+    const id = searchParams.get('id');
+    if (id) {
+        eventSelected.set(id);
+
+    }
+});
+
+eventSelected.subscribe((id, next) => {
+    const event = core.events.find(e => e.id === id);
+    if (event.speakers?.length > 0) {
+        speakerSelected.set(event.speakers[0]);
+    }
+    return next
+})
 
 $: image = `/gen-img/events/${imageSelected}.png`;
-$: event = core.events.find(e => e.id === eventSelected);
-$: speaker = core.people.find(p => p.id === speakerSelected);
+$: event = core.events.find(e => e.id === $eventSelected);
+$: speaker = core.people.find(p => p.id === $speakerSelected);
 
 </script>
 
@@ -39,9 +61,9 @@ $: speaker = core.people.find(p => p.id === speakerSelected);
     <div>
         <div>
             Event:
-            <select bind:value={eventSelected} class="text-black">
+            <select bind:value={$eventSelected} class="text-black">
                 {#each core.events as e}
-                    <option value={e.id}>{e.type} {e.city}</option>
+                    <option value={e.id}>[{e.id}] {e.type} {e.city} - {dateFormat(event.date)}</option>
                 {/each}
             </select>
         </div>
@@ -155,10 +177,12 @@ $: speaker = core.people.find(p => p.id === speakerSelected);
         <div class="mb-4 text-xl text-green-500">Square (speaker) (1:1)</div>
         <div class="my-4">
             Speaker: 
-            <select bind:value={speakerSelected} class="text-black">
-                {#each event.speakers as sp}
-                    <option value={sp}>{sp}</option>
-                {/each}
+            <select bind:value={$speakerSelected} class="text-black">
+                {#if event.speakers}
+                    {#each event.speakers as sp}
+                        <option value={sp}>{sp}</option>
+                    {/each}
+                {/if}
             </select>
         </div>
 
