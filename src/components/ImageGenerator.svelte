@@ -185,7 +185,7 @@ $: speaker = core.people.find(p => p.id === speakerSelected);
                         </div>
                     </div>
                     <div class="flex justify-center" style="margin-top: -2px;">
-                        <div class="border-2 border-white py-1 px-2 bg-black">
+                        <div class="border-2 border-white py-1 px-2 bg-black uppercase">
                             {speaker.name}
                         </div>
                     </div>
