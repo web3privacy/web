@@ -268,7 +268,7 @@ $: speaker = core.people.find(p => p.id === $speakerSelected);
         <div class="mb-4 text-xl text-green-500">Poster (simple) (3:2)</div>
         
         <div class="w-[764px] border-2 border-green-500 overflow-hidden">
-            <div id="img-poster" class="aspect-[2/3] w-[760px] h-[1140px] relative bg-black">
+            <div id="img-poster-simple" class="aspect-[2/3] w-[760px] h-[1140px] relative bg-black">
                 <img src="/logo.svg" class="absolute top-10 left-10 w-1/3 z-20" />
 
                 <div class="absolute top-28 left-0 h-32 w-full z-10" style="background: linear-gradient(black, transparent);"></div>
