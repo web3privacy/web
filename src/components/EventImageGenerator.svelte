@@ -26,12 +26,16 @@ const topics = [
 ]
 
 const events = {
+    m24buc: { image: 'bucharest01' },
     m24ath: { image: 'athens01' },
     m24ams: { image: 'amsterdam01' },
     m24tll: { image: 'tallinn01' },
-    m24ber: { image: 'berlin01' },
-    s24prg: { image: 'summit01' },
     m24opo: { image: 'porto01' },
+    m24ber: { image: 'berlin02' },
+    s24prg: { image: 'summit01' },
+    m24lju: { image: 'ljubljana01' },
+    m24bcn: { image: 'barcelona01' },
+    m24cph: { image: 'copenhagen01' },
     m24rom: { image: 'rome01' },
     s24brn: { image: 'brno01' },
 }
