@@ -33,6 +33,6 @@
         {/each}
     </div>
     <div class="absolute left-10 bottom-10 bg-white text-black text-sm uppercase py-1.5 px-3">
-        summit2024.web3privacy.info
+        web3privacy.info/events
     </div>
 </div>
