@@ -76,6 +76,8 @@ eventSelected.subscribe((id, next) => {
     }
     if (event.design?.image) {
         imageSelected.set(event.design.image);
+    } else {
+        imageSelected.set('');
     }
     return next
 })
@@ -133,17 +135,22 @@ for (const path in imagesSrc) {
             <div>
                 <div class="mb-2 text-[#909090]">{event.id} [{event.design?.image || '-'}]</div>
                 <div class="w-[380px] h-[570px] relative">
-                    <div class="scale-50 absolute -left-[172px] -top-[270px] bg-red-200 {!event.design?.image ? 'opacity-50' : ''}" style="margin-left: -1rem;">
-                        <a href="/gen/event?id={event.id}"><PosterSimple {event} image={getImageUrl(event.design?.image)} {tools} /></a>
-                    </div>
+                    {#if event.images['poster-simple'] || event.images.poster}
+                        <a href="/gen/event?id={event.id}"><img src={event.images['poster-simple'] || event.images.poster} /></a>
+                    {:else}
+                        <div class="scale-50 absolute -left-[172px] -top-[269px] bg-red-200 {!event.design?.image ? 'opacity-50' : ''}" style="margin-left: -1rem;">
+                            <a href="/gen/event?id={event.id}"><PosterSimple {event} image={getImageUrl(event.design?.image)} {tools} /></a>
+                        </div>
+                    {/if}
                 </div>
             </div>
         {/each}
     </div>
 </div>
 {:else}
-<div class="px-10 py-4">
+<div class="px-10 py-0">
     <a href="/gen/event" class="underline hover:no-underline">Back to events overview</a>
+    <div class="text-2xl mt-6 mb-10"><a href="/event/{event.id}" class="underline hover:no-underline uppercase">[{event.id}] {event.type} {event.city}</a></div>
 </div>
 <div class="px-10 py-4">
     Image:
