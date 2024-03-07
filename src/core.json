@@ -779,7 +779,10 @@
         "mykola-siusko",
         "pg",
         "tree"
-      ]
+      ],
+      "images": {
+        "poster": "https://data.web3privacy.info/img/events/2023/s23prg-poster.png"
+      }
     },
     {
       "id": "s23rom",
@@ -814,7 +817,8 @@
         "costanza-gallo",
         "pg",
         "catsnaks"
-      ]
+      ],
+      "images": {}
     },
     {
       "id": "m23prg",
@@ -836,7 +840,8 @@
         "vaclav-pavlin",
         "radek-svarz",
         "marcel-kolaja"
-      ]
+      ],
+      "images": {}
     },
     {
       "id": "m24ath",

@@ -3,12 +3,13 @@ const { item } = Astro.props;
 import { marked } from 'marked';
 import EventsExt from '../events-ext.json';
 import core from "../core.json";
-import { dateFormat, dateInfo, dateEnd, nameRenderer, ccRenderer, eventStatus, getSpeaker, findExt } from '../lib/events.js';
+import { dateFormat, dateInfo, dateEnd, nameRenderer, ccRenderer, eventStatus, getSpeaker, findExt, getEventPoster } from '../lib/events.js';
 import SpeakerList from './SpeakerList.astro';
 import PeopleCarousel from './PeopleCarousel.astro';
 
 const ext = findExt(EventsExt, item)
 const status = eventStatus(item)
+const eventPoster = getEventPoster(item)
 ---
 
 <div class="w3pn-event-item">
@@ -77,9 +78,9 @@ const status = eventStatus(item)
         </div>
 
     </div>
-    <div class="detail hidden flex sm:gap-4">
+    <div class="detail hidden flex flex-wrap sm:flex-nowrap sm:gap-4">
         <div class="w-0 sm:w-28"></div>
-        <div>
+        <div class="grow">
             <div>Date: <span class="text-white">{dateFormat(item.date)} {item.days ? ' - ' + dateFormat(dateEnd(item.date, item.days)) + ` (${item.days} days)` : ''}</span></div>
             <div>
                 {item.type !== 'online-summit' &&
@@ -105,5 +106,8 @@ const status = eventStatus(item)
 
             <SpeakerList {item} />
         </div>
+        {eventPoster &&
+            <div><a href={`/event/${item.id}`}><img src={eventPoster} class="w-64" /></a></div>
+        }
     </div>
 </div>

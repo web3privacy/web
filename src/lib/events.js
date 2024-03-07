@@ -125,3 +125,13 @@ export function findExt (eventsExt, item) {
     }
     return eventsExt.find(ex => ex.url === slug)
 }
+
+export function getEventPoster (item) {
+    if (item.images && item.images['poster-simple']) {
+        return item.images['poster-simple'];
+    }
+    if (item.images && item.images.poster) {
+        return item.images.poster;
+    }
+    return null
+}

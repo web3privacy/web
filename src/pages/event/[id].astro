@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/base.astro';
 import SpeakerList from '../../components/SpeakerList.astro';
 import core from '../../core.json';
 import EventsExt from '../../events-ext.json';
-import { dateFormat, dateInfo, dateEnd, nameRenderer, ccRenderer, eventStatus, findExt } from '../../lib/events.js';
+import { dateFormat, dateInfo, dateEnd, nameRenderer, ccRenderer, eventStatus, findExt, getEventPoster } from '../../lib/events.js';
 import { marked } from 'marked';
 
 const { id } = Astro.params;
@@ -16,6 +16,7 @@ export async function getStaticPaths() {
 const item = core.events.find(event => event.id === id)
 const status = eventStatus(item)
 const ext = findExt(EventsExt, item)
+const eventPoster = getEventPoster(item)
 
 ---
 
@@ -26,10 +27,10 @@ const ext = findExt(EventsExt, item)
         <div class="lg:flex w-full ">
             <div class="lg:mr-10 mb-8 lg:mb-0">
                 <div>
-                    {item.images && item.images['poster-simple'] &&
-                        <img src={item.images['poster-simple']} class="border border-white/20 w-80 aspect-[1/1.414] object-contain" />
+                    {eventPoster &&
+                        <img src={eventPoster} class="border border-white/20 w-80 aspect-[1/1.414] object-contain" />
                     }
-                    {!(item.images && item.images['poster-simple']) &&
+                    {!eventPoster &&
                         <img src="/logo.svg" class="border border-white/20 w-80 aspect-square object-contain p-10" />
                     }
                 </div>
