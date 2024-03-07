@@ -133,7 +133,7 @@ for (const path in imagesSrc) {
             <div>
                 <div class="mb-2 text-[#909090]">{event.id} [{event.design?.image || '-'}]</div>
                 <div class="w-[380px] h-[570px] relative">
-                    <div class="scale-50 absolute -left-[172px] -top-[285px] bg-red-200 {!event.design?.image ? 'opacity-50' : ''}" style="margin-left: -1rem;">
+                    <div class="scale-50 absolute -left-[172px] -top-[270px] bg-red-200 {!event.design?.image ? 'opacity-50' : ''}" style="margin-left: -1rem;">
                         <a href="/gen/event?id={event.id}"><PosterSimple {event} image={getImageUrl(event.design?.image)} {tools} /></a>
                     </div>
                 </div>
@@ -159,7 +159,7 @@ for (const path in imagesSrc) {
     <div>
         <div class="mb-4 text-xl text-[#909090]">Square (1:1)</div>
 
-        <div class="w-[404px]">
+        <div class="w-[400px]">
            <Square {event} {image} {tools} />
         </div>
     </div>
@@ -167,7 +167,7 @@ for (const path in imagesSrc) {
     <div>
         <div class="mb-4 text-xl text-[#909090]">Wide-square (4:3)</div>
 
-        <div class="h-[404px]">
+        <div class="h-[400px]">
             <WideSquare {event} {image} {tools} />
         </div>
     </div>
@@ -175,7 +175,7 @@ for (const path in imagesSrc) {
     <div>
         <div class="mb-4 text-xl text-[#909090]">Wide (16:9)</div>
 
-        <div class="h-[404px]">
+        <div class="h-[400px]">
             <Wide {event} {image} {tools} />
         </div>
     </div>
@@ -193,23 +193,23 @@ for (const path in imagesSrc) {
             </select>
         </div>
 
-        <div class="w-[404px]">
+        <div class="w-[400px]">
             <SquareSpeaker {speaker} {event} {image} {tools} />
         </div>
     </div>
 
     <div>
-        <div class="mb-4 text-xl text-[#909090]">Poster (3:2)</div>
+        <div class="mb-4 text-xl text-[#909090]">Poster (1:1.414)</div>
         
-        <div class="w-[764px]">
+        <div class="w-[760px]">
             <Poster {topics} {event} {image} {tools} />
         </div>
     </div>
 
     <div>
-        <div class="mb-4 text-xl text-[#909090]">Poster (simple) (3:2)</div>
+        <div class="mb-4 text-xl text-[#909090]">Poster (simple) (1:1.414)</div>
         
-        <div class="w-[764px]">
+        <div class="w-[760px]">
             <PosterSimple {event} {image} {tools} />
         </div>
     </div>

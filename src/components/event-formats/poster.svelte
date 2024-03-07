@@ -5,12 +5,12 @@
     export let topics;
 </script>
 
-<div id="img-poster" class="aspect-[2/3] w-[760px] h-[1140px] relative bg-black text-white overflow-hidden">
+<div id="img-poster" class="aspect-[1/1.414] w-[760px] relative bg-black text-white overflow-hidden">
     <img src="/logo.svg" class="absolute top-10 left-10 w-1/3 z-20" />
 
     <div class="absolute top-20 left-0 h-36 w-full z-10" style="background: linear-gradient(black, transparent);"></div>
     <img src={image} class="absolute top-20 left-0 -z-0" />
-    <div class="absolute bottom-[18.5rem] left-0 h-36 w-full z-10" style="background: linear-gradient(transparent, black);"></div>
+    <div class="absolute bottom-[14rem] left-0 h-64 w-full z-10" style="background: linear-gradient(transparent, black);"></div>
 
     <div class="absolute bottom-80 left-10 uppercase text-3xl z-20">
         <div class="flex">
@@ -27,7 +27,7 @@
             </div>  
         </div>
     </div>
-    <div class="absolute left-10 right-10 bottom-28 uppercase text-lg flex flex-wrap gap-3">
+    <div class="absolute left-10 right-10 bottom-28 uppercase text-lg flex flex-wrap gap-3 z-20">
         {#each topics as topic}
             <div><span class="inline-block w-2 h-2 bg-white"></span> {topic}</div>
         {/each}
