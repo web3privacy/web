@@ -5,7 +5,7 @@
 </script>
 
 
-<div id="img-wide-square" class="aspect-[4/3] h-[400px] relative bg-black">
+<div id="img-wide-square" class="aspect-[4/3] h-[400px] relative bg-black text-white overflow-hidden">
 
     <img src="/logo.svg" class="absolute top-8 left-8 w-1/3 z-20" />
 

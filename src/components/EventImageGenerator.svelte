@@ -129,29 +129,31 @@ const tools = {
 <div class="w-full flex flex-wrap gap-10 p-10">
 
     <div>
-        <div class="mb-4 text-xl text-green-500">Square (1:1)</div>
+        <div class="mb-4 text-xl text-[#909090]">Square (1:1)</div>
 
-        <div class="w-[404px] border-2 border-green-500 overflow-hidden">
+        <div class="w-[404px]">
            <Square {event} {image} {tools} />
         </div>
     </div>
 
     <div>
-        <div class="mb-4 text-xl text-green-500">Wide-square (4:3)</div>
+        <div class="mb-4 text-xl text-[#909090]">Wide-square (4:3)</div>
 
-        <div class="h-[404px] border-2 border-green-500 overflow-hidden">
+        <div class="h-[404px]">
             <WideSquare {event} {image} {tools} />
         </div>
     </div>
 
     <div>
-        <div class="mb-4 text-xl text-green-500">Wide (16:9)</div>
+        <div class="mb-4 text-xl text-[#909090]">Wide (16:9)</div>
 
-        <Wide {event} {image} {tools} />
+        <div class="h-[404px]">
+            <Wide {event} {image} {tools} />
+        </div>
     </div>
 
     <div>
-        <div class="mb-4 text-xl text-green-500">Square (speaker) (1:1)</div>
+        <div class="mb-4 text-xl text-[#909090]">Square (speaker) (1:1)</div>
         <div class="my-4">
             Speaker: 
             <select bind:value={$speakerSelected} class="text-black">
@@ -163,23 +165,23 @@ const tools = {
             </select>
         </div>
 
-        <div class="w-[404px] border-2 border-green-500">
+        <div class="w-[404px]">
             <SquareSpeaker {speaker} {event} {image} {tools} />
         </div>
     </div>
 
     <div>
-        <div class="mb-4 text-xl text-green-500">Poster (3:2)</div>
+        <div class="mb-4 text-xl text-[#909090]">Poster (3:2)</div>
         
-        <div class="w-[764px] border-2 border-green-500">
+        <div class="w-[764px]">
             <Poster {topics} {event} {image} {tools} />
         </div>
     </div>
 
     <div>
-        <div class="mb-4 text-xl text-green-500">Poster (simple) (3:2)</div>
+        <div class="mb-4 text-xl text-[#909090]">Poster (simple) (3:2)</div>
         
-        <div class="w-[764px] border-2 border-green-500">
+        <div class="w-[764px]">
             <PosterSimple {event} {image} {tools} />
         </div>
     </div>

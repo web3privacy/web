@@ -5,7 +5,7 @@
     export let topics;
 </script>
 
-<div id="img-poster" class="aspect-[2/3] w-[760px] h-[1140px] relative bg-black">
+<div id="img-poster" class="aspect-[2/3] w-[760px] h-[1140px] relative bg-black text-white overflow-hidden">
     <img src="/logo.svg" class="absolute top-10 left-10 w-1/3 z-20" />
 
     <div class="absolute top-20 left-0 h-36 w-full z-10" style="background: linear-gradient(black, transparent);"></div>

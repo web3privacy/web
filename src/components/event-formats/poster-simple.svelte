@@ -4,7 +4,7 @@
     export let tools;
 </script>
 
-<div id="img-poster-simple" class="aspect-[2/3] w-[760px] h-[1140px] relative bg-black overflow-hidden">
+<div id="img-poster-simple" class="aspect-[2/3] w-[760px] h-[1140px] relative bg-black overflow-hidden text-white">
     <img src="/logo.svg" class="absolute top-10 left-10 w-1/3 z-20" />
 
     {#if event.type === 'summit'}
