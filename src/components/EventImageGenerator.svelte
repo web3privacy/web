@@ -27,6 +27,7 @@ const topics = [
 ]
 
 const events = {
+    s23prg: { image: 'summit01' },
     m24buc: { image: 'bucharest01' },
     m24ath: { image: 'athens01' },
     m24ams: { image: 'amsterdam01' },

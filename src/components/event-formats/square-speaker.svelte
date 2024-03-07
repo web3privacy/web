@@ -29,9 +29,11 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center" style="margin-top: -2px;">
-            <div class="border-2 border-white py-1 px-2 bg-black uppercase">
-                {speaker.name}
+        <div class="flex w-full justify-center" style="margin-top: -2px;">
+            <div class="flex {speaker.name.length < 19 ? 'w-[200px] justify-start' : 'justify-center'}">
+                <div class="border-2 border-white py-1 px-2 bg-black uppercase">
+                    {speaker.name}
+                </div>
             </div>
         </div>
     </div>
