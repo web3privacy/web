@@ -47,6 +47,7 @@ let searchParams = null
 //let eventSelected = core.events[0].id;
 const eventSelected = writable('');
 const speakerSelected = writable('alona-shevchenko');
+const imageSelected = writable('');
 
 onMount(() => {
     searchParams = new URL(document.location).searchParams;
@@ -58,6 +59,10 @@ onMount(() => {
     const speaker = searchParams.get('speaker');
     if (speaker) {
         speakerSelected.set(speaker);
+    }
+    const img = searchParams.get('img');
+    if (img) {
+        imageSelected.set(img);
     }
 });
 
@@ -73,7 +78,7 @@ eventSelected.subscribe((id, next) => {
 })
 
 function getImage(eId) {
-    return `/gen-img/events/${events[eId]?.image}.png`
+    return `/gen-img/events/${$imageSelected ? $imageSelected : events[eId]?.image}.png`
 }
 
 $: image = getImage($eventSelected);
