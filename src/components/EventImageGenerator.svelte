@@ -110,7 +110,7 @@ const tools = {
 </div>
 
 {#if !$eventSelected}
-<div class="w-full p-10">
+<div class="w-full px-10">
     Please select event.
 
     <div class="mt-10 flex flex-wrap gap-4">
@@ -125,7 +125,7 @@ const tools = {
 </div>
 {:else}
 <div class="px-10 py-4">
-    <a href="/gen/event" class="underline hover:no-underline">Back to overview</a>
+    <a href="/gen/event" class="underline hover:no-underline">Back to events overview</a>
 </div>
 <div class="w-full flex flex-wrap gap-10 p-10">
 

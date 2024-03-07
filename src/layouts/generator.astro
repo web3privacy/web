@@ -5,22 +5,32 @@ const { title } = Astro.props;
 ---
 
 <html>
-    <head>
-        <link
+<head>
+    <title>W3PN Gen | {title}</title>
+    <link
         rel="preload"
         href="/fonts/dm-mono-regular-latin.woff2"
         as="font"
         type="font/woff2"
         crossorigin
-/>
+    />
 </head>
 <body class="bg-[#F0F0F0] text-black font-mono font-['DM Mono Regular Latin']">
 
-<div class="pl-10 pt-10 pb-0 text-4xl">
-    <h1>W3PN Image Generator | {title}</h1>
-</div>
+    <div class="pl-10 pt-10 pb-0">
 
-<slot />
+        <h1 class="text-4xl">W3PN Image Generator</h1>
+        <div class="mt-4 flex gap-4 mb-10">
+            <a href="/gen/event" class="underline hover:no-underline">Events</a>
+            <!--a href="/gen/research" class="underline hover:no-underline">Researches</a>
+            <a href="/gen/article" class="underline hover:no-underline">Articles</a>
+            <a href="/gen/video" class="underline hover:no-underline">Videos</a-->
+        </div>
+
+        <h2 class="text-3xl">{title}</h1>
+    </div>
+
+    <slot />
 
 </body>
 </html>
