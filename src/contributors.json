@@ -38,7 +38,7 @@
       "received_events_url": "https://api.github.com/users/Msiusko/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 1394
+      "contributions": 1396
     },
     {
       "login": "burningtree",
@@ -59,7 +59,7 @@
       "received_events_url": "https://api.github.com/users/burningtree/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 806
+      "contributions": 809
     },
     {
       "login": "EclecticSamurai",
@@ -353,7 +353,7 @@
       "received_events_url": "https://api.github.com/users/0xdevant/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 2
+      "contributions": 3
     },
     {
       "login": "nullfekt",
@@ -587,27 +587,6 @@
       "contributions": 1
     },
     {
-      "login": "sven-hash",
-      "id": 6095048,
-      "node_id": "MDQ6VXNlcjYwOTUwNDg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/6095048?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/sven-hash",
-      "html_url": "https://github.com/sven-hash",
-      "followers_url": "https://api.github.com/users/sven-hash/followers",
-      "following_url": "https://api.github.com/users/sven-hash/following{/other_user}",
-      "gists_url": "https://api.github.com/users/sven-hash/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/sven-hash/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/sven-hash/subscriptions",
-      "organizations_url": "https://api.github.com/users/sven-hash/orgs",
-      "repos_url": "https://api.github.com/users/sven-hash/repos",
-      "events_url": "https://api.github.com/users/sven-hash/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/sven-hash/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 1
-    },
-    {
       "login": "artk42",
       "id": 8707649,
       "node_id": "MDQ6VXNlcjg3MDc2NDk=",
@@ -645,6 +624,27 @@
       "repos_url": "https://api.github.com/users/a1ttech/repos",
       "events_url": "https://api.github.com/users/a1ttech/events{/privacy}",
       "received_events_url": "https://api.github.com/users/a1ttech/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 1
+    },
+    {
+      "login": "shichiro-nakahara",
+      "id": 127815112,
+      "node_id": "U_kgDOB55NyA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127815112?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/shichiro-nakahara",
+      "html_url": "https://github.com/shichiro-nakahara",
+      "followers_url": "https://api.github.com/users/shichiro-nakahara/followers",
+      "following_url": "https://api.github.com/users/shichiro-nakahara/following{/other_user}",
+      "gists_url": "https://api.github.com/users/shichiro-nakahara/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/shichiro-nakahara/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/shichiro-nakahara/subscriptions",
+      "organizations_url": "https://api.github.com/users/shichiro-nakahara/orgs",
+      "repos_url": "https://api.github.com/users/shichiro-nakahara/repos",
+      "events_url": "https://api.github.com/users/shichiro-nakahara/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/shichiro-nakahara/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 1
