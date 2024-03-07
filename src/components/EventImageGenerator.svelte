@@ -26,7 +26,7 @@ const topics = [
     'privacy activism',
 ]
 
-const events = {
+/*const events = {
     s23prg: { image: 'summit01' },
     m24buc: { image: 'bucharest01' },
     m24ath: { image: 'athens01' },
@@ -40,7 +40,7 @@ const events = {
     m24cph: { image: 'copenhagen01' },
     m24rom: { image: 'rome01' },
     s24brn: { image: 'brno01' },
-}
+}*/
 
 let searchParams = null
 
@@ -74,19 +74,29 @@ eventSelected.subscribe((id, next) => {
     if (event.speakers?.length > 0) {
         speakerSelected.set(event.speakers[0]);
     }
+    if (event.design?.image) {
+        imageSelected.set(event.design.image);
+    }
     return next
 })
 
-function getImage(eId) {
-    return `/gen-img/events/${$imageSelected ? $imageSelected : events[eId]?.image}.png`
+function getImageUrl(img) {
+    return `/gen-img/events/${img}.png`
 }
 
-$: image = getImage($eventSelected);
+$: image = $imageSelected ? getImageUrl($imageSelected) : '';
 $: event = core.events.find(e => e.id === $eventSelected);
 $: speaker = core.people.find(p => p.id === $speakerSelected);
 
 const tools = {
     dateFormat
+}
+
+let imagesSrc = import.meta.glob("../../public/gen-img/events/*.png");
+const images = [];
+for (const path in imagesSrc) {
+    const splitted = path.split('/')
+    images.push(splitted[splitted.length-1].split('.')[0])
 }
 
 </script>
@@ -98,7 +108,7 @@ const tools = {
             Event:
             <select bind:value={$eventSelected} class="text-black">
                 <option value="">---</option>
-                {#each Object.keys(events).map(eId => core.events.find(e => e.id === eId)) as e}
+                {#each core.events as e}
                     <option value={e.id}>[{e.id}] {e.type} {e.city} - {dateFormat(e.date)}</option>
                 {/each}
             </select>
@@ -118,11 +128,14 @@ const tools = {
 <div class="w-full px-10">
     Please select event.
 
-    <div class="mt-10 flex flex-wrap gap-4">
-        {#each Object.keys(events).map(eId => core.events.find(e => e.id === eId)) as event}
-            <div class="w-[380px] h-[570px] relative">
-                <div class="scale-50 absolute -left-[160px] -top-[285px] bg-red-200" style="margin-left: -1rem;">
-                    <a href="/gen/event?id={event.id}"><PosterSimple {event} image={getImage(event.id)} {tools} /></a>
+    <div class="mt-10 flex flex-wrap gap-4 mb-20">
+        {#each core.events as event}
+            <div>
+                <div class="mb-2 text-[#909090]">{event.id} [{event.design?.image || '-'}]</div>
+                <div class="w-[380px] h-[570px] relative">
+                    <div class="scale-50 absolute -left-[172px] -top-[285px] bg-red-200 {!event.design?.image ? 'opacity-50' : ''}" style="margin-left: -1rem;">
+                        <a href="/gen/event?id={event.id}"><PosterSimple {event} image={getImageUrl(event.design?.image)} {tools} /></a>
+                    </div>
                 </div>
             </div>
         {/each}
@@ -131,6 +144,15 @@ const tools = {
 {:else}
 <div class="px-10 py-4">
     <a href="/gen/event" class="underline hover:no-underline">Back to events overview</a>
+</div>
+<div class="px-10 py-4">
+    Image:
+    <select bind:value={$imageSelected} class="text-black">
+        <option value="">---</option>
+        {#each images as img}
+            <option value={img}>{img} {#if event.design?.image && event.design.image === img}[fixed]{/if}</option>
+        {/each}
+    </select>
 </div>
 <div class="w-full flex flex-wrap gap-10 p-10">
 
