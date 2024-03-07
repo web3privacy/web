@@ -6,7 +6,7 @@
 
 
 
-<div id="img-wide" class="aspect-video h-[400px] relative bg-black overflow-hidden">
+<div id="img-wide" class="aspect-video h-[400px] relative bg-black overflow-hidden text-white">
 
     <img src="/logo.svg" class="absolute top-8 left-8 w-1/4 z-20" />
 
