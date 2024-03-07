@@ -22,11 +22,13 @@
         <div class="flex justify-center items-center w-full">
             <div class="relative w-[200px]">
                 <img src={speaker.imageUrl} class="w-full border-2 border-white aspect-square object-cover" />
-                <div class="absolute bottom-0 left-0 text-xs">
-                    <div class="bg-white text-black py-1 px-2">
-                        @{speaker.refs?.twitter}
+                {#if speaker.refs?.twitter || speaker.refs?.bsky}
+                    <div class="absolute bottom-0 left-0 text-xs">
+                        <div class="bg-white text-black py-1 px-2">
+                            @{speaker.refs?.twitter || speaker.refs?.bsky}
+                        </div>
                     </div>
-                </div>
+                {/if}
             </div>
         </div>
         <div class="flex w-full justify-center" style="margin-top: -2px;">
