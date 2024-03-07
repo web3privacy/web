@@ -852,7 +852,17 @@
       "speakers": [
         "odysseas",
         "mykola-siusko"
-      ]
+      ],
+      "design": {
+        "image": "athens01"
+      },
+      "images": {
+        "wide-square": "https://data.web3privacy.info/img/events/2024/m24ath-wide-square.png",
+        "poster-simple": "https://data.web3privacy.info/img/events/2024/m24ath-poster-simple.png",
+        "square": "https://data.web3privacy.info/img/events/2024/m24ath-square.png",
+        "wide": "https://data.web3privacy.info/img/events/2024/m24ath-wide.png",
+        "poster": "https://data.web3privacy.info/img/events/2024/m24ath-poster.png"
+      }
     },
     {
       "id": "m24buc",
@@ -876,7 +886,8 @@
         "tim-bansemer",
         "mykola-siusko",
         "gabari"
-      ]
+      ],
+      "images": {}
     },
     {
       "id": "m24ams",
@@ -900,7 +911,17 @@
       "speakers": [
         "mykola-siusko",
         "gabari"
-      ]
+      ],
+      "design": {
+        "image": "amsterdam01"
+      },
+      "images": {
+        "wide-square": "https://data.web3privacy.info/img/events/2024/m24ams-wide-square.png",
+        "square": "https://data.web3privacy.info/img/events/2024/m24ams-square.png",
+        "poster": "https://data.web3privacy.info/img/events/2024/m24ams-poster.png",
+        "wide": "https://data.web3privacy.info/img/events/2024/m24ams-wide.png",
+        "poster-simple": "https://data.web3privacy.info/img/events/2024/m24ams-poster-simple.png"
+      }
     },
     {
       "id": "m24tll",
@@ -915,6 +936,16 @@
       "optional": true,
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-tallinn1"
+      },
+      "design": {
+        "image": "tallinn01"
+      },
+      "images": {
+        "poster-simple": "https://data.web3privacy.info/img/events/2024/m24tll-poster-simple.png",
+        "square": "https://data.web3privacy.info/img/events/2024/m24tll-square.png",
+        "poster": "https://data.web3privacy.info/img/events/2024/m24tll-poster.png",
+        "wide-square": "https://data.web3privacy.info/img/events/2024/m24tll-wide-square.png",
+        "wide": "https://data.web3privacy.info/img/events/2024/m24tll-wide.png"
       }
     },
     {
@@ -929,7 +960,8 @@
       "optional": true,
       "speakers": [
         "gabari"
-      ]
+      ],
+      "images": {}
     },
     {
       "id": "m24ber",
@@ -956,6 +988,16 @@
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-berlin1",
         "signal": "https://signal.group/#CjQKIHv5swzLDOrTd1QqR4L9eb-6XPZERnp3ZEoxBCJeY12fEhAPmoC2dqZzLMRWV7wlAq5A"
+      },
+      "design": {
+        "image": "berlin02"
+      },
+      "images": {
+        "poster": "https://data.web3privacy.info/img/events/2024/m24ber-poster.png",
+        "poster-simple": "https://data.web3privacy.info/img/events/2024/m24ber-poster-simple.png",
+        "wide-square": "https://data.web3privacy.info/img/events/2024/m24ber-wide-square.png",
+        "square": "https://data.web3privacy.info/img/events/2024/m24ber-square.png",
+        "wide": "https://data.web3privacy.info/img/events/2024/m24ber-wide.png"
       }
     },
     {
@@ -981,7 +1023,17 @@
         "gabari",
         "radek-svarz",
         "mykola-siusko"
-      ]
+      ],
+      "design": {
+        "image": "summit02"
+      },
+      "images": {
+        "poster": "https://data.web3privacy.info/img/events/2024/s24prg-poster.png",
+        "poster-simple": "https://data.web3privacy.info/img/events/2024/s24prg-poster-simple.png",
+        "wide": "https://data.web3privacy.info/img/events/2024/s24prg-wide.png",
+        "square": "https://data.web3privacy.info/img/events/2024/s24prg-square.png",
+        "wide-square": "https://data.web3privacy.info/img/events/2024/s24prg-wide-square.png"
+      }
     },
     {
       "id": "h24ble",
@@ -1011,7 +1063,8 @@
         "mykola-siusko",
         "pg",
         "tree"
-      ]
+      ],
+      "images": {}
     },
     {
       "id": "m24lju",
@@ -1034,7 +1087,8 @@
       "speakers": [
         "joshua-davila",
         "mykola-siusko"
-      ]
+      ],
+      "images": {}
     },
     {
       "id": "os24q2",
@@ -1046,7 +1100,8 @@
       "slots": 8,
       "links": {
         "rsvp": "https://lu.ma/w3pn-os24q2"
-      }
+      },
+      "images": {}
     },
     {
       "id": "m24bcn",
@@ -1060,7 +1115,8 @@
       "optional": true,
       "speakers": [
         "joshua-davila"
-      ]
+      ],
+      "images": {}
     },
     {
       "id": "m24bru",
@@ -1082,7 +1138,8 @@
         "edward-fricker",
         "joshua-davila",
         "mykola-siusko"
-      ]
+      ],
+      "images": {}
     },
     {
       "id": "m24waw",
@@ -1097,7 +1154,8 @@
       "optional": true,
       "links": {
         "rsvp": "https://lu.ma/w3pn-m24waw"
-      }
+      },
+      "images": {}
     },
     {
       "id": "os24q3",
@@ -1105,7 +1163,8 @@
       "name-extension": "Q3",
       "date": "2024/Sep",
       "lead": "Tree",
-      "slots": 8
+      "slots": 8,
+      "images": {}
     },
     {
       "id": "m24cph",
@@ -1124,7 +1183,8 @@
       "links": {
         "rsvp": "https://lu.ma/w3pn-m24cph",
         "signal": "https://signal.group/#CjQKIPw56w6ZZ7L3I4dZ0BZNzMQu-Ipxe5sfz7XbYK5Smd8gEhCzs8zSMiSZLW2-gbZfqfwD"
-      }
+      },
+      "images": {}
     },
     {
       "id": "m24rom",
@@ -1145,7 +1205,8 @@
       },
       "speakers": [
         "mykola-siusko"
-      ]
+      ],
+      "images": {}
     },
     {
       "id": "c24rom",
@@ -1157,7 +1218,8 @@
       "country": "it",
       "coincidence": "ETHRome",
       "coincidenceFull": "ETHRome 2024",
-      "lead": "Tree"
+      "lead": "Tree",
+      "images": {}
     },
     {
       "id": "s24brn",
@@ -1183,7 +1245,17 @@
         "mykola-siusko",
         "pg",
         "tree"
-      ]
+      ],
+      "design": {
+        "image": "brno01"
+      },
+      "images": {
+        "poster-simple": "https://data.web3privacy.info/img/events/2024/s24brn-poster-simple.png",
+        "square": "https://data.web3privacy.info/img/events/2024/s24brn-square.png",
+        "poster": "https://data.web3privacy.info/img/events/2024/s24brn-poster.png",
+        "wide-square": "https://data.web3privacy.info/img/events/2024/s24brn-wide-square.png",
+        "wide": "https://data.web3privacy.info/img/events/2024/s24brn-wide.png"
+      }
     },
     {
       "id": "c24brn",
@@ -1195,7 +1267,8 @@
       "country": "cz",
       "coincidence": "ETHBrno",
       "coincidenceFull": "ETHBrno3",
-      "lead": "Tree"
+      "lead": "Tree",
+      "images": {}
     },
     {
       "id": "m24dc",
@@ -1211,7 +1284,8 @@
       },
       "speakers": [
         "edward-fricker"
-      ]
+      ],
+      "images": {}
     },
     {
       "id": "os24q4",
@@ -1219,7 +1293,8 @@
       "name-extension": "Q4",
       "date": "2024/Dec",
       "lead": "Tree",
-      "slots": 8
+      "slots": 8,
+      "images": {}
     }
   ]
 }

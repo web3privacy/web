@@ -16,6 +16,7 @@ export async function getStaticPaths() {
 const item = core.events.find(event => event.id === id)
 const status = eventStatus(item)
 const ext = findExt(EventsExt, item)
+
 ---
 
 <BaseLayout title={id} metaTitle={nameRenderer(item, true)} image="og_events">
@@ -24,7 +25,14 @@ const ext = findExt(EventsExt, item)
 
         <div class="lg:flex w-full ">
             <div class="lg:mr-10 mb-8 lg:mb-0">
-                <div><img src={ext ? ext.coverUrl : '/logo.svg'} class="rounded border border-white/20 w-80 aspect-square object-contain" class:list={[!ext ? 'p-10' : '']} /></div>
+                <div>
+                    {item.images && item.images['poster-simple'] &&
+                        <img src={item.images['poster-simple']} class="border border-white/20 w-80 aspect-[2/3] object-contain" />
+                    }
+                    {!(item.images && item.images['poster-simple']) &&
+                        <img src="/logo.svg" class="border border-white/20 w-80 aspect-square object-contain p-10" />
+                    }
+                </div>
             </div>
             <div class="grow">
                 <h1 id="upcoming">W3PN {nameRenderer(item, true)}</h1>
