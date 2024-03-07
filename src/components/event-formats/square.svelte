@@ -5,7 +5,7 @@
 </script>
 
 
-<div id="img-square" class="aspect-square w-[400px] relative bg-black">
+<div id="img-square" class="aspect-square w-[400px] relative bg-black text-white overflow-hidden">
     <img src="/logo.svg" class="absolute top-8 left-8 w-1/2 z-20" />
 
     <div class="absolute top-0 left-0 h-36 w-full z-10" style="background: linear-gradient(black, transparent);"></div>
