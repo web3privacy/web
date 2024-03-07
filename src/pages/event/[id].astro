@@ -27,7 +27,7 @@ const ext = findExt(EventsExt, item)
             <div class="lg:mr-10 mb-8 lg:mb-0">
                 <div>
                     {item.images && item.images['poster-simple'] &&
-                        <img src={item.images['poster-simple']} class="border border-white/20 w-80 aspect-[2/3] object-contain" />
+                        <img src={item.images['poster-simple']} class="border border-white/20 w-80 aspect-[1/1.414] object-contain" />
                     }
                     {!(item.images && item.images['poster-simple']) &&
                         <img src="/logo.svg" class="border border-white/20 w-80 aspect-square object-contain p-10" />
