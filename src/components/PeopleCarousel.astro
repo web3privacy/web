@@ -1,5 +1,7 @@
 ---
 import { personLink } from "../lib/core.js";
+import { getSpeakerImage } from '../lib/events.js';
+
 
 const { items, limit = 7 } = Astro.props;
 let { size = 'w-8 h-8' } = Astro.props;
@@ -11,7 +13,7 @@ let { size = 'w-8 h-8' } = Astro.props;
         {items.slice(0, limit).filter(p => p).map((p) => (
             <div class="hover:z-0">
                 <a href={personLink(p)} class="aspect-square inline-block" class:list={[size]}>
-                    <img src={p.imageUrl} class="w-full aspect-square object-cover rounded-full border-gray-800 border-2 hover:border-white" alt={p.name} title={p.name} />
+                    <img src={getSpeakerImage(p, '64')} class="w-full aspect-square object-cover rounded-full border-gray-800 border-2 hover:border-white" alt={p.name} title={p.name} />
                 </a>
             </div>
         ))}

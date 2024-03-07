@@ -1,7 +1,7 @@
 ---
 import { marked,  } from 'marked';
 const { item, thumbSize } = Astro.props;
-import { getSpeaker } from '../lib/events.js';
+import { getSpeaker, getSpeakerImage } from '../lib/events.js';
 import core from "../core.json";
 
 ---
@@ -12,7 +12,7 @@ import core from "../core.json";
         <div class="w3pn-speaker-list grid grid-cols-1 gap-6 mt-4">
             {item.speakers.map(spId => getSpeaker(core, spId)).map((speaker) => (
                 <div class="flex gap-4">
-                    <div class={`${thumbSize === 'big' ? 'w-16 h-16' : 'w-14 h-14'}`}><img class={`${thumbSize === 'big' ? 'w-16 h-16' : 'w-14 h-14'} aspect-square rounded-full object-cover`} src={speaker.imageUrl} /></div>
+                    <div class={`${thumbSize === 'big' ? 'w-16 h-16' : 'w-14 h-14'}`}><img class={`${thumbSize === 'big' ? 'w-16 h-16' : 'w-14 h-14'} aspect-square rounded-full object-cover`} src={getSpeakerImage(speaker, '128')} /></div>
                     <div>
                         <div>
                             <span class="text-white">{speaker.name}</span>

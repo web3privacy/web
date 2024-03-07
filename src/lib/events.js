@@ -127,6 +127,13 @@ export function findExt (eventsExt, item) {
 }
 
 export function getEventPoster (item) {
+    if (item.thumbs && item.thumbs['poster-simple:640']) {
+        return item.thumbs['poster-simple:640']
+    }
+    if (item.thumbs && item.thumbs['poster:640']) {
+        return item.thumbs['poster:640']
+    }
+
     if (item.images && item.images['poster-simple']) {
         return item.images['poster-simple'];
     }
@@ -134,4 +141,11 @@ export function getEventPoster (item) {
         return item.images.poster;
     }
     return null
+}
+
+export function getSpeakerImage(speaker, size='400') {
+    if (speaker.thumbs && speaker.thumbs[size]) {
+        return speaker.thumbs[size];
+    }
+    return speaker.imageUrl;
 }
