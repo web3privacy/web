@@ -20,6 +20,13 @@ const eventPoster = getEventPoster(item)
 const eventHeader = item.images?.wide
 const banner = eventHeader ? { img: eventHeader } : false
 
+const imageFormats = {
+    "poster-simple": { name: "Poster (simple)"},
+    "square": { name: "Square" },
+    "wide-square": { name: "Wide-square" },
+    "wide": { name: "Wide" },
+}
+
 ---
 
 <BaseLayout title={id} metaTitle={nameRenderer(item, true)} image="og_events">
@@ -106,6 +113,23 @@ const banner = eventHeader ? { img: eventHeader } : false
         </div>
 
         <SpeakerList {item} thumbSize="big"/>
+
+        {item.images && item.images.poster &&
+            <div class="mt-10">
+                <h2 class="h2 mb-4">Event assets</h2>
+                <div class="flex flex-wrap gap-4">
+                    {Object.keys(imageFormats).map((format) => (
+                        <div>
+                            <div class="font-mono">{imageFormats[format].name}</div>
+                            <a href={item.images[format]}><img src={item.thumbs[`${format}:360`]} class="w-64 mt-2 border border-white/20" /></a>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <div class="mt-6">
+                <a href={`/gen/event/?id=${item.id}`} class="button inverted"><button>More assets</button></a>
+            </div>
+        }
 	</div>
 
 </BaseLayout>
