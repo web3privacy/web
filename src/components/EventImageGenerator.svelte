@@ -1,6 +1,8 @@
 <script>
 
 import core from '../core.json';
+import genImages from '../gen-images.json';
+
 import { dateFormat } from '../lib/events.js';
 import { marked } from 'marked';
 import { onMount, afterUpdate } from 'svelte';
@@ -90,39 +92,11 @@ function getImageUrl(img) {
 $: image = $imageSelected ? getImageUrl($imageSelected) : '';
 $: event = core.events.find(e => e.id === $eventSelected);
 $: speaker = core.people.find(p => p.id === $speakerSelected);
-$: imgSrc = $deepImgSrc?.[image];
+$: imgSrc = genImages[$imageSelected];
 
 const tools = {
     dateFormat
 }
-
-let imagesSrc = import.meta.glob("../../public/gen-img/events/*.png");
-const images = [];
-const dImages = {};
-for (const path in imagesSrc) {
-    const splitted = path.split('/')
-    const ph = splitted[splitted.length-1].split('.')[0];
-    images.push(ph);
-    dImages[ph] = import(path);
-}
-
-//console.log(dImages);
-
-const deepImgSrc = writable(null);
-async function updateImages () {
-
-    const col = {};
-    for (const imgFn of images) {
-        const id = getImageUrl(imgFn)
-        let imgClass = await dImages[imgFn];
-        const i = imgClass.default;
-        i.ratio = i.width / i.height;
-        col[id] = i;
-    }
-    deepImgSrc.set(col);
-}
-onMount(updateImages);
-//afterUpdate(updateImages);
 
 </script>
 
@@ -179,7 +153,7 @@ onMount(updateImages);
     Image:
     <select bind:value={$imageSelected} class="text-black">
         <option value="">---</option>
-        {#each images as img}
+        {#each Object.keys(genImages) as img}
             <option value={img}>{img} {#if event.design?.image && event.design.image === img}[fixed]{/if}</option>
         {/each}
     </select>

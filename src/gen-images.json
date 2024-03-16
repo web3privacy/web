@@ -1,0 +1,128 @@
+{
+  "brno01": {
+    "format": "PNG",
+    "width": 3000,
+    "height": 3000,
+    "ratio": 1
+  },
+  "brussels01": {
+    "format": "PNG",
+    "width": 6951,
+    "height": 3502,
+    "ratio": 1.9848657909765848
+  },
+  "bucharest01": {
+    "format": "PNG",
+    "width": 7025,
+    "height": 3535,
+    "ratio": 1.9872701555869872
+  },
+  "porto01": {
+    "format": "PNG",
+    "width": 1024,
+    "height": 1024,
+    "ratio": 1
+  },
+  "summit01": {
+    "format": "PNG",
+    "width": 2100,
+    "height": 2100,
+    "ratio": 1
+  },
+  "summit02": {
+    "format": "PNG",
+    "width": 2600,
+    "height": 2600,
+    "ratio": 1
+  },
+  "ljubljana01": {
+    "format": "PNG",
+    "width": 768,
+    "height": 768,
+    "ratio": 1
+  },
+  "warsaw01": {
+    "format": "PNG",
+    "width": 6951,
+    "height": 3476,
+    "ratio": 1.9997123130034522
+  },
+  "athens01": {
+    "format": "PNG",
+    "width": 2048,
+    "height": 2048,
+    "ratio": 1
+  },
+  "bangkok01": {
+    "format": "PNG",
+    "width": 6995,
+    "height": 3511,
+    "ratio": 1.9923098832241526
+  },
+  "rome01": {
+    "format": "PNG",
+    "width": 1024,
+    "height": 1024,
+    "ratio": 1
+  },
+  "barcelona02": {
+    "format": "PNG",
+    "width": 7012,
+    "height": 3028,
+    "ratio": 2.3157199471598413
+  },
+  "rome02": {
+    "format": "PNG",
+    "width": 7025,
+    "height": 2876,
+    "ratio": 2.4426286509040334
+  },
+  "tallinn01": {
+    "format": "PNG",
+    "width": 2600,
+    "height": 2600,
+    "ratio": 1
+  },
+  "barcelona01": {
+    "format": "PNG",
+    "width": 768,
+    "height": 768,
+    "ratio": 1
+  },
+  "berlin01": {
+    "format": "PNG",
+    "width": 1536,
+    "height": 1536,
+    "ratio": 1
+  },
+  "copenhagen01": {
+    "format": "PNG",
+    "width": 768,
+    "height": 768,
+    "ratio": 1
+  },
+  "berlin02": {
+    "format": "PNG",
+    "width": 768,
+    "height": 768,
+    "ratio": 1
+  },
+  "berlin03": {
+    "format": "PNG",
+    "width": 7000,
+    "height": 3520,
+    "ratio": 1.9886363636363635
+  },
+  "copenhagen02": {
+    "format": "PNG",
+    "width": 7025,
+    "height": 3511,
+    "ratio": 2.0008544574195386
+  },
+  "amsterdam01": {
+    "format": "PNG",
+    "width": 7025,
+    "height": 3535,
+    "ratio": 1.9872701555869872
+  }
+}
