@@ -11,7 +11,7 @@
 <div id="img-square-speaker" class="aspect-square w-[400px] relative bg-black text-white overflow-hidden">
     <img src="/logo.svg" class="absolute top-6 left-6 w-2/6 z-20" />
 
-    <img src={image} class="-z-10 opacity-40 blur-sm" />
+    <img src={image} class="-z-10 opacity-40 h-full cover blur-sm" />
 
     <div class="absolute right-6 top-6 text-right uppercase text-sm">
         {tools.dateFormat(event.date)}<br/>

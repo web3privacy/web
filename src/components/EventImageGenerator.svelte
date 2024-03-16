@@ -3,7 +3,7 @@
 import core from '../core.json';
 import { dateFormat } from '../lib/events.js';
 import { marked } from 'marked';
-import { onMount } from 'svelte';
+import { onMount, afterUpdate } from 'svelte';
 import { writable } from 'svelte/store';
 
 import Square from './event-formats/square.svelte';
@@ -89,6 +89,7 @@ function getImageUrl(img) {
 $: image = $imageSelected ? getImageUrl($imageSelected) : '';
 $: event = core.events.find(e => e.id === $eventSelected);
 $: speaker = core.people.find(p => p.id === $speakerSelected);
+$: imgSrc = $deepImgSrc?.[image];
 
 const tools = {
     dateFormat
@@ -98,8 +99,25 @@ let imagesSrc = import.meta.glob("../../public/gen-img/events/*.png");
 const images = [];
 for (const path in imagesSrc) {
     const splitted = path.split('/')
-    images.push(splitted[splitted.length-1].split('.')[0])
+    const ph = splitted[splitted.length-1].split('.')[0];
+    images.push(ph);
 }
+
+const deepImgSrc = writable(null);
+async function updateImages () {
+
+    const col = {};
+    for (const imgFn of images) {
+        const id = getImageUrl(imgFn)
+        let imgClass = await import("../../public"+id);
+        const i = imgClass.default;
+        i.ratio = i.width / i.height;
+        col[id] = i;
+    }
+    deepImgSrc.set(col);
+}
+onMount(updateImages);
+afterUpdate(updateImages);
 
 </script>
 
@@ -161,13 +179,15 @@ for (const path in imagesSrc) {
         {/each}
     </select>
 </div>
+
+{#if imgSrc}
 <div class="w-full flex flex-wrap gap-10 p-10">
 
     <div>
         <div class="mb-4 text-xl text-[#909090]">Square (1:1)</div>
 
         <div class="w-[400px]">
-           <Square {event} {image} {tools} />
+           <Square {event} {image} {tools} {imgSrc} />
         </div>
     </div>
 
@@ -175,7 +195,7 @@ for (const path in imagesSrc) {
         <div class="mb-4 text-xl text-[#909090]">Wide-square (4:3)</div>
 
         <div class="h-[400px]">
-            <WideSquare {event} {image} {tools} />
+            <WideSquare {event} {image} {tools} {imgSrc} />
         </div>
     </div>
 
@@ -183,7 +203,7 @@ for (const path in imagesSrc) {
         <div class="mb-4 text-xl text-[#909090]">Wide (16:9)</div>
 
         <div class="h-[400px]">
-            <Wide {event} {image} {tools} />
+            <Wide {event} {image} {tools} {imgSrc} />
         </div>
     </div>
 
@@ -201,7 +221,7 @@ for (const path in imagesSrc) {
         </div>
 
         <div class="w-[400px]">
-            <SquareSpeaker {speaker} {event} {image} {tools} />
+            <SquareSpeaker {speaker} {event} {image} {tools} {imgSrc} />
         </div>
     </div>
 
@@ -209,7 +229,7 @@ for (const path in imagesSrc) {
         <div class="mb-4 text-xl text-[#909090]">Poster (1:1.414)</div>
         
         <div class="w-[760px]">
-            <Poster {topics} {event} {image} {tools} />
+            <Poster {topics} {event} {image} {tools} {imgSrc} />
         </div>
     </div>
 
@@ -217,8 +237,9 @@ for (const path in imagesSrc) {
         <div class="mb-4 text-xl text-[#909090]">Poster (simple) (1:1.414)</div>
         
         <div class="w-[760px]">
-            <PosterSimple {event} {image} {tools} />
+            <PosterSimple {event} {image} {tools} {imgSrc} />
         </div>
     </div>
 </div>
+{/if}
 {/if}

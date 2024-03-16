@@ -2,6 +2,7 @@
     export let event;
     export let image;
     export let tools;
+    export let imgSrc;
 </script>
 
 <div id="img-poster-simple" class="aspect-[1/1.414] w-[760px] relative bg-black overflow-hidden text-white">
@@ -10,7 +11,7 @@
     {#if event.type === 'summit'}
         <img src="/gen-img/summit-title.svg" class="absolute top-28 left-0 w-full z-20" />
         <div class="absolute top-36 left-0 h-64 w-full z-10" style="background: linear-gradient(black, transparent);"></div>
-        <div class="absolute top-36 left-[-70px] w-[900px] h-[900px] -z-0" style="background-image: url({image}); background-size: 100% 100%; background-position: center;"></div>
+        <div class="absolute top-36 left-[-70px] w-[900px] h-[900px] -z-0 object-fit" style="background-image: url({image}); background-size: 100% 100%; background-position: center;"></div>
         <div class="absolute bottom-0 left-0 h-64 w-full z-10" style="background: linear-gradient(transparent, black);"></div>
 
         <div class="absolute bottom-24 left-10 right-10 uppercase text-4xl z-20">
@@ -26,7 +27,7 @@
 
     {:else}
         <div class="absolute top-28 left-0 h-32 w-full z-10" style="background: linear-gradient(black, transparent);"></div>
-        <div class="absolute top-28 left-[-70px] w-[900px] h-[900px] -z-0" style="background-image: url({image}); background-size: 100% 100%; background-position: center;"></div>
+        <div class="absolute top-28 left-[-70px] w-[900px] h-[900px] -z-0" style="background-image: url({image}); background-size: cover; background-position: center;"></div>
         <div class="absolute bottom-[3.5em] left-0 h-48 w-full z-10" style="background: linear-gradient(transparent, black);"></div>
 
         <div class="absolute bottom-10 left-10 uppercase text-3xl z-20">

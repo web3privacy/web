@@ -2,6 +2,7 @@
     export let event;
     export let image;
     export let tools;
+    export let imgSrc;
 </script>
 
 
@@ -10,8 +11,13 @@
 
     <img src="/logo.svg" class="absolute top-8 left-8 w-1/4 z-20" />
 
-    <div class="absolute top-0 left-48 h-full w-1/3 z-10" style="background: linear-gradient(to left, transparent, black);"></div>
-    <img src={image} class="absolute top-0 left-48 -z-0 w-[33rem]" />
+    <div class="flex items-end justify-end w-full h-full">
+        <div class="absolute top-0 h-full {imgSrc.ratio > 1 ? 'w-2/3' : 'w-2/6'} left-1/12 z-10" style="background: linear-gradient(to left, transparent, black); left: {imgSrc.ratio > 1 ? '0px' : '130px'};"></div>
+
+        <div class="h-full {imgSrc.ratio > 1.3 ? 'w-full' : 'w-5/6'} justify-end flex">
+            <img src={imgSrc.src} class="h-full object-cover" />
+        </div>
+    </div>
 
     <div class="absolute bottom-8 left-8 uppercase z-20 text-xl">
         <div class="flex">
