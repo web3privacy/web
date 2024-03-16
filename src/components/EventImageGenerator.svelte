@@ -63,6 +63,7 @@ onMount(() => {
     const img = searchParams.get('img');
     if (img) {
         imageSelected.set(img);
+        updateImages();
     }
 });
 
@@ -97,11 +98,15 @@ const tools = {
 
 let imagesSrc = import.meta.glob("../../public/gen-img/events/*.png");
 const images = [];
+const dImages = {};
 for (const path in imagesSrc) {
     const splitted = path.split('/')
     const ph = splitted[splitted.length-1].split('.')[0];
     images.push(ph);
+    dImages[ph] = import(path);
 }
+
+//console.log(dImages);
 
 const deepImgSrc = writable(null);
 async function updateImages () {
@@ -109,7 +114,7 @@ async function updateImages () {
     const col = {};
     for (const imgFn of images) {
         const id = getImageUrl(imgFn)
-        let imgClass = await import("../../public"+id);
+        let imgClass = await dImages[imgFn];
         const i = imgClass.default;
         i.ratio = i.width / i.height;
         col[id] = i;
@@ -117,7 +122,7 @@ async function updateImages () {
     deepImgSrc.set(col);
 }
 onMount(updateImages);
-afterUpdate(updateImages);
+//afterUpdate(updateImages);
 
 </script>
 
