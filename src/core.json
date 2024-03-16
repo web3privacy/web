@@ -1150,64 +1150,6 @@
       }
     },
     {
-      "id": "m24tll",
-      "issue": 10,
-      "type": "meetup",
-      "date": "2024-04-18",
-      "city": "Tallinn",
-      "country": "ee",
-      "lead": "Tree",
-      "coincidence": "[ETHTallinn](https://www.ethtallinn.org/)",
-      "slots": 3,
-      "optional": true,
-      "links": {
-        "rsvp": "https://lu.ma/w3pn-meetup-tallinn1"
-      },
-      "design": {
-        "image": "tallinn01"
-      },
-      "images": {
-        "square": "https://data.web3privacy.info/img/events/2024/m24tll-square.png",
-        "poster": "https://data.web3privacy.info/img/events/2024/m24tll-poster.png",
-        "wide-square": "https://data.web3privacy.info/img/events/2024/m24tll-wide-square.png",
-        "poster-simple": "https://data.web3privacy.info/img/events/2024/m24tll-poster-simple.png",
-        "wide": "https://data.web3privacy.info/img/events/2024/m24tll-wide.png"
-      },
-      "thumbs": {
-        "poster:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24tll-poster-360px.webp",
-        "square:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24tll-square-360px.webp",
-        "wide-square:640": "https://data.web3privacy.info/img/events/2024/thumbs/m24tll-wide-square-640px.webp",
-        "poster-simple:640": "https://data.web3privacy.info/img/events/2024/thumbs/m24tll-poster-simple-640px.webp",
-        "poster:640": "https://data.web3privacy.info/img/events/2024/thumbs/m24tll-poster-640px.webp",
-        "wide:640": "https://data.web3privacy.info/img/events/2024/thumbs/m24tll-wide-640px.webp",
-        "poster:128": "https://data.web3privacy.info/img/events/2024/thumbs/m24tll-poster-128px.webp",
-        "wide-square:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24tll-wide-square-360px.webp",
-        "poster-simple:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24tll-poster-simple-360px.webp",
-        "wide:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24tll-wide-360px.webp",
-        "poster-simple:128": "https://data.web3privacy.info/img/events/2024/thumbs/m24tll-poster-simple-128px.webp",
-        "wide:128": "https://data.web3privacy.info/img/events/2024/thumbs/m24tll-wide-128px.webp",
-        "square:640": "https://data.web3privacy.info/img/events/2024/thumbs/m24tll-square-640px.webp",
-        "square:128": "https://data.web3privacy.info/img/events/2024/thumbs/m24tll-square-128px.webp",
-        "wide-square:128": "https://data.web3privacy.info/img/events/2024/thumbs/m24tll-wide-square-128px.webp"
-      }
-    },
-    {
-      "id": "m24opo",
-      "issue": 21,
-      "type": "meetup",
-      "date": "2024/May",
-      "city": "Porto",
-      "country": "pt",
-      "coincidence": "[ETHPorto](https://ethporto.org/)",
-      "slots": 3,
-      "optional": true,
-      "speakers": [
-        "gabari"
-      ],
-      "images": {},
-      "thumbs": {}
-    },
-    {
       "id": "m24ber",
       "issue": 6,
       "type": "meetup",
