@@ -1096,15 +1096,7 @@
         "tim-bansemer",
         "mykola-siusko",
         "gabari"
-      ],
-      "images": {
-        "square": "https://data.web3privacy.info/img/events/2024/m24buc-square.png",
-        "wide": "https://data.web3privacy.info/img/events/2024/m24buc-wide.png",
-        "poster": "https://data.web3privacy.info/img/events/2024/m24buc-poster.png",
-        "wide-square": "https://data.web3privacy.info/img/events/2024/m24buc-wide-square.png",
-        "poster-simple": "https://data.web3privacy.info/img/events/2024/m24buc-poster-simple.png"
-      },
-      "thumbs": {}
+      ]
     },
     {
       "id": "m24ams",
@@ -1132,11 +1124,7 @@
       ],
       "design": {
         "image": "amsterdam01"
-      },
-      "images": {
-        "square": "https://data.web3privacy.info/img/events/2024/m24ams-square.png"
-      },
-      "thumbs": {}
+      }
     },
     {
       "id": "m24ber",
@@ -1167,9 +1155,7 @@
       },
       "design": {
         "image": "berlin03"
-      },
-      "images": {},
-      "thumbs": {}
+      }
     },
     {
       "id": "s24prg",
@@ -1199,9 +1185,7 @@
       ],
       "design": {
         "image": "summit02"
-      },
-      "images": {},
-      "thumbs": {}
+      }
     },
     {
       "id": "q24ble",
@@ -1231,9 +1215,7 @@
         "mykola-siusko",
         "pg",
         "tree"
-      ],
-      "images": {},
-      "thumbs": {}
+      ]
     },
     {
       "id": "m24lju",
@@ -1256,9 +1238,7 @@
       "speakers": [
         "joshua-davila",
         "mykola-siusko"
-      ],
-      "images": {},
-      "thumbs": {}
+      ]
     },
     {
       "id": "os24q2",
@@ -1270,9 +1250,7 @@
       "slots": 8,
       "links": {
         "rsvp": "https://lu.ma/w3pn-os24q2"
-      },
-      "images": {},
-      "thumbs": {}
+      }
     },
     {
       "id": "m24bcn",
@@ -1289,9 +1267,7 @@
       },
       "speakers": [
         "joshua-davila"
-      ],
-      "images": {},
-      "thumbs": {}
+      ]
     },
     {
       "id": "m24bru",
@@ -1316,9 +1292,7 @@
         "edward-fricker",
         "joshua-davila",
         "mykola-siusko"
-      ],
-      "images": {},
-      "thumbs": {}
+      ]
     },
     {
       "id": "m24waw",
@@ -1336,9 +1310,7 @@
       },
       "links": {
         "rsvp": "https://lu.ma/w3pn-m24waw"
-      },
-      "images": {},
-      "thumbs": {}
+      }
     },
     {
       "id": "os24q3",
@@ -1346,9 +1318,7 @@
       "name-extension": "Q3",
       "date": "2024/Sep",
       "lead": "Tree",
-      "slots": 8,
-      "images": {},
-      "thumbs": {}
+      "slots": 8
     },
     {
       "id": "m24cph",
@@ -1373,9 +1343,7 @@
       },
       "speakers": [
         "jaromil"
-      ],
-      "images": {},
-      "thumbs": {}
+      ]
     },
     {
       "id": "m24rom",
@@ -1401,9 +1369,7 @@
         "jaromil",
         "vaclav-pavlin",
         "mykola-siusko"
-      ],
-      "images": {},
-      "thumbs": {}
+      ]
     },
     {
       "id": "c24rom",
@@ -1415,9 +1381,7 @@
       "country": "it",
       "coincidence": "ETHRome",
       "coincidenceFull": "ETHRome 2024",
-      "lead": "Tree",
-      "images": {},
-      "thumbs": {}
+      "lead": "Tree"
     },
     {
       "id": "s24brn",
@@ -1447,9 +1411,7 @@
       ],
       "design": {
         "image": "brno01"
-      },
-      "images": {},
-      "thumbs": {}
+      }
     },
     {
       "id": "c24brn",
@@ -1461,9 +1423,7 @@
       "country": "cz",
       "coincidence": "ETHBrno",
       "coincidenceFull": "ETHBrno3",
-      "lead": "Tree",
-      "images": {},
-      "thumbs": {}
+      "lead": "Tree"
     },
     {
       "id": "m24dc",
@@ -1483,9 +1443,7 @@
       "speakers": [
         "edward-fricker",
         "vaclav-pavlin"
-      ],
-      "images": {},
-      "thumbs": {}
+      ]
     },
     {
       "id": "os24q4",
@@ -1493,9 +1451,7 @@
       "name-extension": "Q4",
       "date": "2024/Dec",
       "lead": "Tree",
-      "slots": 8,
-      "images": {},
-      "thumbs": {}
+      "slots": 8
     }
   ]
 }

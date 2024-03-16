@@ -5,7 +5,6 @@
     export let event;
     export let image;
     export let tools;
-    export let imgSrc;
 
 </script>
 
@@ -14,10 +13,10 @@
     <img src="/logo.svg" class="absolute top-8 left-8 w-1/3 z-20" />
 
     <div class="flex items-end justify-end w-full h-full">
-        <div class="absolute top-0 h-full {imgSrc.ratio > 1 ? 'w-2/3' : 'w-2/6'} left-1/12 z-10" style="background: linear-gradient(to left, transparent, black); left: {imgSrc.ratio > 1 ? '0px' : '130px'};"></div>
+        <div class="absolute top-0 h-full {image.ratio > 1 ? 'w-2/3' : 'w-2/6'} left-1/12 z-10" style="background: linear-gradient(to left, transparent, black); left: {image.ratio > 1 ? '0px' : '130px'};"></div>
 
-        <div class="h-full {imgSrc.ratio > 1.3 ? 'w-full' : 'w-5/6'} justify-end flex">
-            <img src={image} class="h-full object-cover" />
+        <div class="h-full {image.ratio > 1.3 ? 'w-full' : 'w-5/6'} justify-end flex">
+            <img src={image.src} class="h-full object-cover" style="{image.calcObjOffsets('wide-square')}" />
         </div>
     </div>
 

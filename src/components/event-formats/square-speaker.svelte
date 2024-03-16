@@ -11,7 +11,7 @@
 <div id="img-square-speaker" class="aspect-square w-[400px] relative bg-black text-white overflow-hidden">
     <img src="/logo.svg" class="absolute top-6 left-6 w-2/6 z-20" />
 
-    <img src={image} class="-z-10 opacity-40 h-full cover blur-sm" />
+    <img src={image.src} class="-z-10 opacity-40 h-full object-cover blur-sm" style="{image.calcObjOffsets('square')}" />
 
     <div class="absolute right-6 top-6 text-right uppercase text-sm">
         {tools.dateFormat(event.date)}<br/>
@@ -21,7 +21,7 @@
     <div class="absolute top-[5.5rem] w-full">
         <div class="flex justify-center items-center w-full">
             <div class="relative w-[200px]">
-                <img src={speaker.imageUrl} class="w-full border-2 border-white aspect-square object-cover" />
+                <img src={speaker.imageUrl} class="w-full border-2 border-white aspect-square object-cover"  />
                 {#if speaker.refs?.twitter || speaker.refs?.bsky}
                     <div class="absolute bottom-0 left-0 text-xs">
                         <div class="bg-white text-black py-1 px-2">

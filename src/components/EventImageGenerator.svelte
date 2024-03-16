@@ -2,6 +2,7 @@
 
 import core from '../core.json';
 import genImages from '../gen-images.json';
+import genImagesOffsets from '../gen-images-offsets.yaml';
 
 import { dateFormat } from '../lib/events.js';
 import { marked } from 'marked';
@@ -88,11 +89,37 @@ eventSelected.subscribe((id, next) => {
 function getImageUrl(img) {
     return `/gen-img/events/${img}.png`
 }
+function getImageData(img) {
+    return Object.assign({}, genImages[img], {
+        src: `/gen-img/events/${img}.png`,
+        offsets: genImagesOffsets[img],
+        calcObjOffsets: function (tp) {
+            const co = image.offsets?.[tp];
+            if (!co) {
+                return '';
+            }
+            return `object-position: ${co.x || 'center'} ${co.y || 'center'}`;
+        },
+        calcBgOffsets: function(tp) {
+            const arr = [];
+            const co = image.offsets?.[tp];
+            if (!co) {
+                return '';
+            }
+            if (co.x) {
+                arr.push(`background-position-x: ${co.x};`)
+            }
+            if (co.y) {
+                arr.push(`background-position-y: ${co.y};`)
+            }
+            return arr.join(' ')
+        }
+    })
+}
 
-$: image = $imageSelected ? getImageUrl($imageSelected) : '';
+$: image = $imageSelected ? getImageData($imageSelected) : '';
 $: event = core.events.find(e => e.id === $eventSelected);
 $: speaker = core.people.find(p => p.id === $speakerSelected);
-$: imgSrc = genImages[$imageSelected];
 
 const tools = {
     dateFormat
@@ -132,11 +159,11 @@ const tools = {
             <div>
                 <div class="mb-2 text-[#909090]">{event.id} [{event.design?.image || '-'}]</div>
                 <div class="w-[304px] h-[430px] relative">
-                    {#if event.images['poster-simple'] || event.images.poster}
-                        <a href="/gen/event?id={event.id}"><img src={event.images['poster-simple'] || event.images.poster} /></a>
+                    {#if event.images?.['poster-simple'] || event.images?.poster}
+                        <a href="/gen/event?id={event.id}"><img src={event.images?.['poster-simple'] || event.images.poster} /></a>
                     {:else}
                         <div class="scale-[0.4] absolute -left-[212px] -top-[322px] bg-red-200 {!event.design?.image ? 'opacity-50' : ''}" style="margin-left: -1rem;">
-                            <a href="/gen/event?id={event.id}"><PosterSimple {event} image={getImageUrl(event.design?.image)} {tools} imgSrc={genImages[event.design?.image]} /></a>
+                            <a href="/gen/event?id={event.id}"><PosterSimple {event} image={getImageData(event.design?.image)} {tools} /></a>
                         </div>
                     {/if}
                 </div>
@@ -159,14 +186,14 @@ const tools = {
     </select>
 </div>
 
-{#if imgSrc}
+
 <div class="w-full flex flex-wrap gap-10 p-10">
 
     <div>
         <div class="mb-4 text-xl text-[#909090]">Square (1:1)</div>
 
         <div class="w-[400px]">
-           <Square {event} {image} {tools} {imgSrc} />
+           <Square {event} {image} {tools} />
         </div>
     </div>
 
@@ -174,7 +201,7 @@ const tools = {
         <div class="mb-4 text-xl text-[#909090]">Wide-square (4:3)</div>
 
         <div class="h-[400px]">
-            <WideSquare {event} {image} {tools} {imgSrc} />
+            <WideSquare {event} {image} {tools} />
         </div>
     </div>
 
@@ -182,7 +209,7 @@ const tools = {
         <div class="mb-4 text-xl text-[#909090]">Wide (16:9)</div>
 
         <div class="h-[400px]">
-            <Wide {event} {image} {tools} {imgSrc} />
+            <Wide {event} {image} {tools} />
         </div>
     </div>
 
@@ -200,7 +227,7 @@ const tools = {
         </div>
 
         <div class="w-[400px]">
-            <SquareSpeaker {speaker} {event} {image} {tools} {imgSrc} />
+            <SquareSpeaker {speaker} {event} {image} {tools} />
         </div>
     </div>
 
@@ -208,7 +235,7 @@ const tools = {
         <div class="mb-4 text-xl text-[#909090]">Poster (1:1.414)</div>
         
         <div class="w-[760px]">
-            <Poster {topics} {event} {image} {tools} {imgSrc} />
+            <Poster {topics} {event} {image} {tools} />
         </div>
     </div>
 
@@ -216,9 +243,8 @@ const tools = {
         <div class="mb-4 text-xl text-[#909090]">Poster (simple) (1:1.414)</div>
         
         <div class="w-[760px]">
-            <PosterSimple {event} {image} {tools} {imgSrc} />
+            <PosterSimple {event} {image} {tools} />
         </div>
     </div>
 </div>
-{/if}
 {/if}

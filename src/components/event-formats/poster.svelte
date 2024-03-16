@@ -3,14 +3,13 @@
     export let image;
     export let tools;
     export let topics;
-    export let imgSrc;
 </script>
 
 <div id="img-poster" class="aspect-[1/1.414] w-[760px] relative bg-black text-white overflow-hidden">
     <img src="/logo.svg" class="absolute top-10 left-10 w-1/3 z-20" />
 
     <div class="absolute top-20 left-0 h-36 w-full z-10" style="background: linear-gradient(black, transparent);"></div>
-    <img src={image} class="absolute top-20 left-0 -z-0 object-cover" style="{imgSrc?.ratio > 1 ? 'height: 760px;' : ''}" />
+    <img src={image.src} class="absolute top-20 left-0 -z-0 object-cover" style="{image.ratio > 1 ? 'height: 760px;' : ''} {image.calcObjOffsets('poster')}" />
     <div class="absolute bottom-[14rem] left-0 h-64 w-full z-10" style="background: linear-gradient(transparent, black);"></div>
 
     <div class="absolute bottom-80 left-10 uppercase text-3xl z-20">

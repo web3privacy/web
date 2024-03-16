@@ -10,7 +10,7 @@
 
     <div class="absolute top-0 left-0 h-36 w-full z-10" style="background: linear-gradient(black, transparent);"></div>
     <div class="absolute top-0 left-0 h-full w-1/2 z-10" style="background: linear-gradient(to left, transparent, black);"></div>
-    <img src={image} class="absolute top-0 left-0 -z-0 h-full cover" />
+    <img src={image.src} class="absolute top-0 left-0 -z-0 h-full object-cover" style="{image.calcObjOffsets('square')}" />
 
     <div class="absolute bottom-8 left-8 uppercase z-20">
         <div class="flex">

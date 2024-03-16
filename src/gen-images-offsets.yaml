@@ -1,0 +1,28 @@
+bucharest01:
+  square: { x: 65% }
+  poster: { x: 65% }
+  poster-simple: { x: 69% }
+amsterdam01:
+  square: { x: 72% }
+  wide-square: { x: 55% }
+  wide: { x: 10% }
+  poster: { x: 75% }
+  poster-simple: { x: 77% }
+barcelona02:
+  square: { x: 0% }
+  poster: { x: 38% }
+  poster-simple: { x: 35% }
+brussels01:
+  square: { x: 55% }
+  wide: { x: 0% }
+warsaw01:
+  square: { x: 93% }
+  wide-square: { x: 70% }
+  poster: { x: 55% }
+  poster-simple: { x: 59% }
+copenhagen02:
+  square: { x: 100% }
+  wide-square: { x: 100% }
+  wide: { x: 100% }
+  poster: { x: 100% }
+  poster-simple: { x: 108% }
