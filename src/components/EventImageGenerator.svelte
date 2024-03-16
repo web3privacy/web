@@ -90,11 +90,12 @@ function getImageUrl(img) {
     return `/gen-img/events/${img}.png`
 }
 function getImageData(img) {
+    const offsets = genImagesOffsets[img];
     return Object.assign({}, genImages[img], {
         src: `/gen-img/events/${img}.png`,
-        offsets: genImagesOffsets[img],
+        offsets,
         calcObjOffsets: function (tp) {
-            const co = image.offsets?.[tp];
+            const co = offsets?.[tp];
             if (!co) {
                 return '';
             }
@@ -102,7 +103,7 @@ function getImageData(img) {
         },
         calcBgOffsets: function(tp) {
             const arr = [];
-            const co = image.offsets?.[tp];
+            const co = offsets?.[tp];
             if (!co) {
                 return '';
             }
