@@ -17,10 +17,12 @@ const item = core.events.find(event => event.id === id)
 const status = eventStatus(item)
 const ext = findExt(EventsExt, item)
 const eventPoster = getEventPoster(item)
+const eventHeader = item.images?.wide
+const banner = eventHeader ? { img: eventHeader } : false
 
 ---
 
-<BaseLayout title={id} metaTitle={nameRenderer(item, true)} image="og_events">
+<BaseLayout {banner} title={id} metaTitle={nameRenderer(item, true)} image="og_events">
 
 	<div class="middle-pane-medium mt-10">
 
