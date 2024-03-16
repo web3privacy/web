@@ -1168,7 +1168,8 @@
       ],
       "speakers": [
         "afri-schoedon",
-        "joshua-davila"
+        "joshua-davila",
+        "vaclav-pavlin"
       ],
       "slots": 3,
       "links": {
@@ -1223,7 +1224,9 @@
       },
       "speakers": [
         "pavol-luptak",
+        "jaromil",
         "gabari",
+        "vaclav-pavlin",
         "radek-svarz",
         "mykola-siusko"
       ],
@@ -1411,6 +1414,9 @@
         "rsvp": "https://lu.ma/w3pn-m24cph",
         "signal": "https://signal.group/#CjQKIPw56w6ZZ7L3I4dZ0BZNzMQu-Ipxe5sfz7XbYK5Smd8gEhCzs8zSMiSZLW2-gbZfqfwD"
       },
+      "speakers": [
+        "jaromil"
+      ],
       "images": {},
       "thumbs": {}
     },
@@ -1432,6 +1438,8 @@
         "rsvp": "https://lu.ma/w3pn-meetup-rome1"
       },
       "speakers": [
+        "jaromil",
+        "vaclav-pavlin",
         "mykola-siusko"
       ],
       "images": {},
@@ -1471,6 +1479,8 @@
       },
       "speakers": [
         "juraj-bednar",
+        "jaromil",
+        "vaclav-pavlin",
         "mykola-siusko",
         "pg",
         "tree"
@@ -1530,7 +1540,8 @@
         "rsvp": "https://lu.ma/w3pn-meetup-devcon7"
       },
       "speakers": [
-        "edward-fricker"
+        "edward-fricker",
+        "vaclav-pavlin"
       ],
       "images": {},
       "thumbs": {}
