@@ -131,12 +131,12 @@ const tools = {
         {#each core.events as event}
             <div>
                 <div class="mb-2 text-[#909090]">{event.id} [{event.design?.image || '-'}]</div>
-                <div class="w-[380px] h-[570px] relative">
+                <div class="w-[304px] h-[430px] relative">
                     {#if event.images['poster-simple'] || event.images.poster}
                         <a href="/gen/event?id={event.id}"><img src={event.images['poster-simple'] || event.images.poster} /></a>
                     {:else}
-                        <div class="scale-50 absolute -left-[172px] -top-[269px] bg-red-200 {!event.design?.image ? 'opacity-50' : ''}" style="margin-left: -1rem;">
-                            <a href="/gen/event?id={event.id}"><PosterSimple {event} image={getImageUrl(event.design?.image)} {tools} /></a>
+                        <div class="scale-[0.4] absolute -left-[212px] -top-[322px] bg-red-200 {!event.design?.image ? 'opacity-50' : ''}" style="margin-left: -1rem;">
+                            <a href="/gen/event?id={event.id}"><PosterSimple {event} image={getImageUrl(event.design?.image)} {tools} imgSrc={genImages[event.design?.image]} /></a>
                         </div>
                     {/if}
                 </div>
