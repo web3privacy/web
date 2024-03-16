@@ -29,6 +29,12 @@
     "height": 2100,
     "ratio": 1
   },
+  "prague01": {
+    "format": "PNG",
+    "width": 7000,
+    "height": 3517,
+    "ratio": 1.99033266988911
+  },
   "summit02": {
     "format": "PNG",
     "width": 2600,

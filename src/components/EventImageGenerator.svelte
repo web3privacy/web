@@ -66,7 +66,6 @@ onMount(() => {
     const img = searchParams.get('img');
     if (img) {
         imageSelected.set(img);
-        updateImages();
     }
 });
 

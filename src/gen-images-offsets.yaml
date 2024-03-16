@@ -26,3 +26,9 @@ copenhagen02:
   wide: { x: 100% }
   poster: { x: 100% }
   poster-simple: { x: 108% }
+prague01:
+  square: { x: 67% }
+  wide-square: { x: 70% }
+  wide: { x: 110% }
+  poster: { x: 60% }
+  poster-simple: { x: 60% }

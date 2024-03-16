@@ -35,9 +35,9 @@ export function dateInfo (item) {
     return { isDate, isFuture: future, year }
 }
 
-export function dateFormat (str) {
+export function dateFormat (str, fmt) {
     if (str.match(/^\d{4}-\d{2}-\d{2}$/)) {
-        return format(new Date(str), 'MMM d, yyyy')
+        return format(new Date(str), fmt || 'MMM d, yyyy')
     }
     const qm = str.match(/^(\d{4})\/(\w+)$/)
     if (qm) {
