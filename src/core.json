@@ -1259,9 +1259,9 @@
       }
     },
     {
-      "id": "h24ble",
+      "id": "q24ble",
       "issue": 7,
-      "type": "hackathon",
+      "type": "meta-hackathon",
       "date": "2024-06-19",
       "days": 7,
       "city": "Bled",

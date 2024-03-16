@@ -6,6 +6,7 @@ export const types = [
     { id: "summit", name: 'Summit', plural: 'Summits' },
     { id: "privacy-corner", name: 'Privacy Corner', plural: 'Privacy Corners' },
     { id: "online-summit", name: 'Online Summit', plural: 'Online Summits' },
+    { id: 'meta-hackathon', name: 'Meta-hackathon', plural: 'Meta-hacktahons'},
 ]
 
 export const countryNames = {
@@ -72,6 +73,9 @@ export function nameRenderer (item, full = false) {
             break;
         case 'online-summit':
             return "ONLINE Summit" + (item['name-extension'] ? ' ' + item['name-extension'] : '') + (full ? ` ${date.year}` : '');
+            break;
+        case 'meta-hackathon':
+            return `Meta-hackathon ${item.city}` + (full ? ` ${date.year}`: '')
             break;
     }
 }
