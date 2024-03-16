@@ -1081,6 +1081,9 @@
       "coincidence": "[ETHBucharest](https://www.ethbucharest.xyz/)",
       "optional": true,
       "slots": 3,
+      "design": {
+        "image": "bucharest01"
+      },
       "lead": "Tree",
       "helpers": [
         "Alina"
@@ -1094,7 +1097,13 @@
         "mykola-siusko",
         "gabari"
       ],
-      "images": {},
+      "images": {
+        "square": "https://data.web3privacy.info/img/events/2024/m24buc-square.png",
+        "wide": "https://data.web3privacy.info/img/events/2024/m24buc-wide.png",
+        "poster": "https://data.web3privacy.info/img/events/2024/m24buc-poster.png",
+        "wide-square": "https://data.web3privacy.info/img/events/2024/m24buc-wide-square.png",
+        "poster-simple": "https://data.web3privacy.info/img/events/2024/m24buc-poster-simple.png"
+      },
       "thumbs": {}
     },
     {
@@ -1125,29 +1134,9 @@
         "image": "amsterdam01"
       },
       "images": {
-        "square": "https://data.web3privacy.info/img/events/2024/m24ams-square.png",
-        "poster": "https://data.web3privacy.info/img/events/2024/m24ams-poster.png",
-        "wide-square": "https://data.web3privacy.info/img/events/2024/m24ams-wide-square.png",
-        "wide": "https://data.web3privacy.info/img/events/2024/m24ams-wide.png",
-        "poster-simple": "https://data.web3privacy.info/img/events/2024/m24ams-poster-simple.png"
+        "square": "https://data.web3privacy.info/img/events/2024/m24ams-square.png"
       },
-      "thumbs": {
-        "wide:640": "https://data.web3privacy.info/img/events/2024/thumbs/m24ams-wide-640px.webp",
-        "wide:128": "https://data.web3privacy.info/img/events/2024/thumbs/m24ams-wide-128px.webp",
-        "square:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24ams-square-360px.webp",
-        "wide:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24ams-wide-360px.webp",
-        "wide-square:128": "https://data.web3privacy.info/img/events/2024/thumbs/m24ams-wide-square-128px.webp",
-        "wide-square:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24ams-wide-square-360px.webp",
-        "poster-simple:640": "https://data.web3privacy.info/img/events/2024/thumbs/m24ams-poster-simple-640px.webp",
-        "wide-square:640": "https://data.web3privacy.info/img/events/2024/thumbs/m24ams-wide-square-640px.webp",
-        "poster-simple:128": "https://data.web3privacy.info/img/events/2024/thumbs/m24ams-poster-simple-128px.webp",
-        "poster-simple:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24ams-poster-simple-360px.webp",
-        "poster:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24ams-poster-360px.webp",
-        "square:640": "https://data.web3privacy.info/img/events/2024/thumbs/m24ams-square-640px.webp",
-        "square:128": "https://data.web3privacy.info/img/events/2024/thumbs/m24ams-square-128px.webp",
-        "poster:128": "https://data.web3privacy.info/img/events/2024/thumbs/m24ams-poster-128px.webp",
-        "poster:640": "https://data.web3privacy.info/img/events/2024/thumbs/m24ams-poster-640px.webp"
-      }
+      "thumbs": {}
     },
     {
       "id": "m24ber",
@@ -1177,32 +1166,10 @@
         "signal": "https://signal.group/#CjQKIHv5swzLDOrTd1QqR4L9eb-6XPZERnp3ZEoxBCJeY12fEhAPmoC2dqZzLMRWV7wlAq5A"
       },
       "design": {
-        "image": "berlin02"
+        "image": "berlin03"
       },
-      "images": {
-        "poster": "https://data.web3privacy.info/img/events/2024/m24ber-poster.png",
-        "poster-simple": "https://data.web3privacy.info/img/events/2024/m24ber-poster-simple.png",
-        "wide-square": "https://data.web3privacy.info/img/events/2024/m24ber-wide-square.png",
-        "square": "https://data.web3privacy.info/img/events/2024/m24ber-square.png",
-        "wide": "https://data.web3privacy.info/img/events/2024/m24ber-wide.png"
-      },
-      "thumbs": {
-        "square:128": "https://data.web3privacy.info/img/events/2024/thumbs/m24ber-square-128px.webp",
-        "wide-square:128": "https://data.web3privacy.info/img/events/2024/thumbs/m24ber-wide-square-128px.webp",
-        "wide:128": "https://data.web3privacy.info/img/events/2024/thumbs/m24ber-wide-128px.webp",
-        "poster-simple:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24ber-poster-simple-360px.webp",
-        "poster:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24ber-poster-360px.webp",
-        "wide:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24ber-wide-360px.webp",
-        "poster-simple:128": "https://data.web3privacy.info/img/events/2024/thumbs/m24ber-poster-simple-128px.webp",
-        "wide-square:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24ber-wide-square-360px.webp",
-        "wide-square:640": "https://data.web3privacy.info/img/events/2024/thumbs/m24ber-wide-square-640px.webp",
-        "square:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24ber-square-360px.webp",
-        "square:640": "https://data.web3privacy.info/img/events/2024/thumbs/m24ber-square-640px.webp",
-        "poster-simple:640": "https://data.web3privacy.info/img/events/2024/thumbs/m24ber-poster-simple-640px.webp",
-        "wide:640": "https://data.web3privacy.info/img/events/2024/thumbs/m24ber-wide-640px.webp",
-        "poster:640": "https://data.web3privacy.info/img/events/2024/thumbs/m24ber-poster-640px.webp",
-        "poster:128": "https://data.web3privacy.info/img/events/2024/thumbs/m24ber-poster-128px.webp"
-      }
+      "images": {},
+      "thumbs": {}
     },
     {
       "id": "s24prg",
@@ -1233,30 +1200,8 @@
       "design": {
         "image": "summit02"
       },
-      "images": {
-        "poster-simple": "https://data.web3privacy.info/img/events/2024/s24prg-poster-simple.png",
-        "wide-square": "https://data.web3privacy.info/img/events/2024/s24prg-wide-square.png",
-        "square": "https://data.web3privacy.info/img/events/2024/s24prg-square.png",
-        "poster": "https://data.web3privacy.info/img/events/2024/s24prg-poster.png",
-        "wide": "https://data.web3privacy.info/img/events/2024/s24prg-wide.png"
-      },
-      "thumbs": {
-        "wide-square:640": "https://data.web3privacy.info/img/events/2024/thumbs/s24prg-wide-square-640px.webp",
-        "poster-simple:640": "https://data.web3privacy.info/img/events/2024/thumbs/s24prg-poster-simple-640px.webp",
-        "wide-square:360": "https://data.web3privacy.info/img/events/2024/thumbs/s24prg-wide-square-360px.webp",
-        "square:128": "https://data.web3privacy.info/img/events/2024/thumbs/s24prg-square-128px.webp",
-        "wide:640": "https://data.web3privacy.info/img/events/2024/thumbs/s24prg-wide-640px.webp",
-        "square:640": "https://data.web3privacy.info/img/events/2024/thumbs/s24prg-square-640px.webp",
-        "wide-square:128": "https://data.web3privacy.info/img/events/2024/thumbs/s24prg-wide-square-128px.webp",
-        "poster:128": "https://data.web3privacy.info/img/events/2024/thumbs/s24prg-poster-128px.webp",
-        "poster-simple:360": "https://data.web3privacy.info/img/events/2024/thumbs/s24prg-poster-simple-360px.webp",
-        "wide:128": "https://data.web3privacy.info/img/events/2024/thumbs/s24prg-wide-128px.webp",
-        "poster-simple:128": "https://data.web3privacy.info/img/events/2024/thumbs/s24prg-poster-simple-128px.webp",
-        "poster:360": "https://data.web3privacy.info/img/events/2024/thumbs/s24prg-poster-360px.webp",
-        "poster:640": "https://data.web3privacy.info/img/events/2024/thumbs/s24prg-poster-640px.webp",
-        "square:360": "https://data.web3privacy.info/img/events/2024/thumbs/s24prg-square-360px.webp",
-        "wide:360": "https://data.web3privacy.info/img/events/2024/thumbs/s24prg-wide-360px.webp"
-      }
+      "images": {},
+      "thumbs": {}
     },
     {
       "id": "q24ble",
@@ -1339,6 +1284,9 @@
       "coincidence": "ETHBarcelona",
       "slots": 3,
       "optional": true,
+      "design": {
+        "image": "barcelona02"
+      },
       "speakers": [
         "joshua-davila"
       ],
@@ -1354,6 +1302,9 @@
       "country": "be",
       "coincidence": "[EthCC](https://www.ethcc.io/)",
       "slots": 3,
+      "design": {
+        "image": "brussels01"
+      },
       "lead": "Mykola",
       "helpers": [
         "Tree"
@@ -1380,6 +1331,9 @@
       "lead": "Tree",
       "slots": 3,
       "optional": true,
+      "design": {
+        "image": "warsaw01"
+      },
       "links": {
         "rsvp": "https://lu.ma/w3pn-m24waw"
       },
@@ -1407,6 +1361,9 @@
       "lead": "Tree",
       "slots": 3,
       "optional": true,
+      "design": {
+        "image": "copenhagen02"
+      },
       "helpers": [
         "czepluch"
       ],
@@ -1430,6 +1387,9 @@
       "coincidence": "ETHRome",
       "lead": "PG",
       "slots": 5,
+      "design": {
+        "image": "rome02"
+      },
       "helpers": [
         "Mykola",
         "Alina"
@@ -1488,30 +1448,8 @@
       "design": {
         "image": "brno01"
       },
-      "images": {
-        "wide-square": "https://data.web3privacy.info/img/events/2024/s24brn-wide-square.png",
-        "wide": "https://data.web3privacy.info/img/events/2024/s24brn-wide.png",
-        "square": "https://data.web3privacy.info/img/events/2024/s24brn-square.png",
-        "poster-simple": "https://data.web3privacy.info/img/events/2024/s24brn-poster-simple.png",
-        "poster": "https://data.web3privacy.info/img/events/2024/s24brn-poster.png"
-      },
-      "thumbs": {
-        "wide:128": "https://data.web3privacy.info/img/events/2024/thumbs/s24brn-wide-128px.webp",
-        "wide-square:128": "https://data.web3privacy.info/img/events/2024/thumbs/s24brn-wide-square-128px.webp",
-        "poster:640": "https://data.web3privacy.info/img/events/2024/thumbs/s24brn-poster-640px.webp",
-        "poster-simple:640": "https://data.web3privacy.info/img/events/2024/thumbs/s24brn-poster-simple-640px.webp",
-        "poster:128": "https://data.web3privacy.info/img/events/2024/thumbs/s24brn-poster-128px.webp",
-        "wide:360": "https://data.web3privacy.info/img/events/2024/thumbs/s24brn-wide-360px.webp",
-        "wide-square:360": "https://data.web3privacy.info/img/events/2024/thumbs/s24brn-wide-square-360px.webp",
-        "poster:360": "https://data.web3privacy.info/img/events/2024/thumbs/s24brn-poster-360px.webp",
-        "poster-simple:360": "https://data.web3privacy.info/img/events/2024/thumbs/s24brn-poster-simple-360px.webp",
-        "poster-simple:128": "https://data.web3privacy.info/img/events/2024/thumbs/s24brn-poster-simple-128px.webp",
-        "wide-square:640": "https://data.web3privacy.info/img/events/2024/thumbs/s24brn-wide-square-640px.webp",
-        "square:640": "https://data.web3privacy.info/img/events/2024/thumbs/s24brn-square-640px.webp",
-        "square:360": "https://data.web3privacy.info/img/events/2024/thumbs/s24brn-square-360px.webp",
-        "square:128": "https://data.web3privacy.info/img/events/2024/thumbs/s24brn-square-128px.webp",
-        "wide:640": "https://data.web3privacy.info/img/events/2024/thumbs/s24brn-wide-640px.webp"
-      }
+      "images": {},
+      "thumbs": {}
     },
     {
       "id": "c24brn",
@@ -1536,6 +1474,9 @@
       "country": "th",
       "coincidence": "[Devcon](https://devcon.org/)",
       "slots": 5,
+      "design": {
+        "image": "bangkok01"
+      },
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-devcon7"
       },
