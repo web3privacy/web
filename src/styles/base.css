@@ -147,7 +147,7 @@
   }
 
   .w3pn-hp-grid > div {
-    @apply z-10 aspect-video bg-[#0f0f0f] grid grid-rows-2 hover:bg-[#202020] cursor-pointer;
+    @apply aspect-video bg-[#0f0f0f] grid grid-rows-2 hover:bg-[#202020] cursor-pointer;
   }
 
   .w3pn-project-item {
