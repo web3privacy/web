@@ -1,15 +1,5 @@
 [
   {
-    "url": "w3pn-meetup-bucharest1",
-    "name": "Web3Privacy now meetup @ ETHBucharest 2024",
-    "period": [
-      "2024-03-28T18:00:00.000Z",
-      "2024-03-28T21:00:00.000Z"
-    ],
-    "coverUrl": "https://images.lumacdn.com/event-covers/jq/b2df83c9-6d8b-49bb-92e7-d39ea829f48b",
-    "guestCount": 109
-  },
-  {
     "url": "w3pn-meetup-ams1",
     "name": "W3PN Meetup @ ETHDam 2024",
     "period": [
