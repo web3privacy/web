@@ -7,7 +7,7 @@
       "2024-04-11T20:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/7h/c460b46a-ff30-4192-a230-f51942673eab",
-    "guestCount": 62
+    "guestCount": 64
   },
   {
     "url": "w3pn-meetup-berlin1",
@@ -21,13 +21,13 @@
   },
   {
     "url": "w3pn-summit-prague2",
-    "name": "W3PN Summit @ ETHPrague 2024",
+    "name": "Web3Privacy now Summit @ ETHPrague 2024",
     "period": [
       "2024-05-30T07:00:00.000Z",
       "2024-05-31T02:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/we/c06a01fc-c70f-4775-b6eb-8e910f6ef3bc",
-    "guestCount": 20
+    "guestCount": 22
   },
   {
     "url": "w3pn-bled-hackathon1",
