@@ -38,7 +38,7 @@
       "received_events_url": "https://api.github.com/users/Msiusko/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 1509
+      "contributions": 1511
     },
     {
       "login": "burningtree",
@@ -503,6 +503,27 @@
       "contributions": 2
     },
     {
+      "login": "Maxnflaxl",
+      "id": 63856008,
+      "node_id": "MDQ6VXNlcjYzODU2MDA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63856008?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Maxnflaxl",
+      "html_url": "https://github.com/Maxnflaxl",
+      "followers_url": "https://api.github.com/users/Maxnflaxl/followers",
+      "following_url": "https://api.github.com/users/Maxnflaxl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Maxnflaxl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Maxnflaxl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Maxnflaxl/subscriptions",
+      "organizations_url": "https://api.github.com/users/Maxnflaxl/orgs",
+      "repos_url": "https://api.github.com/users/Maxnflaxl/repos",
+      "events_url": "https://api.github.com/users/Maxnflaxl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Maxnflaxl/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 2
+    },
+    {
       "login": "akolotov",
       "id": 20793260,
       "node_id": "MDQ6VXNlcjIwNzkzMjYw",
@@ -624,27 +645,6 @@
       "repos_url": "https://api.github.com/users/agonist/repos",
       "events_url": "https://api.github.com/users/agonist/events{/privacy}",
       "received_events_url": "https://api.github.com/users/agonist/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 1
-    },
-    {
-      "login": "artk42",
-      "id": 8707649,
-      "node_id": "MDQ6VXNlcjg3MDc2NDk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8707649?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/artk42",
-      "html_url": "https://github.com/artk42",
-      "followers_url": "https://api.github.com/users/artk42/followers",
-      "following_url": "https://api.github.com/users/artk42/following{/other_user}",
-      "gists_url": "https://api.github.com/users/artk42/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/artk42/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/artk42/subscriptions",
-      "organizations_url": "https://api.github.com/users/artk42/orgs",
-      "repos_url": "https://api.github.com/users/artk42/repos",
-      "events_url": "https://api.github.com/users/artk42/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/artk42/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 1
