@@ -38,7 +38,7 @@
       "received_events_url": "https://api.github.com/users/Msiusko/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 1513
+      "contributions": 1514
     },
     {
       "login": "burningtree",
@@ -545,6 +545,27 @@
       "contributions": 2
     },
     {
+      "login": "ihordiachenko",
+      "id": 11010444,
+      "node_id": "MDQ6VXNlcjExMDEwNDQ0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11010444?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ihordiachenko",
+      "html_url": "https://github.com/ihordiachenko",
+      "followers_url": "https://api.github.com/users/ihordiachenko/followers",
+      "following_url": "https://api.github.com/users/ihordiachenko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ihordiachenko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ihordiachenko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ihordiachenko/subscriptions",
+      "organizations_url": "https://api.github.com/users/ihordiachenko/orgs",
+      "repos_url": "https://api.github.com/users/ihordiachenko/repos",
+      "events_url": "https://api.github.com/users/ihordiachenko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ihordiachenko/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 2
+    },
+    {
       "login": "akolotov",
       "id": 20793260,
       "node_id": "MDQ6VXNlcjIwNzkzMjYw",
@@ -645,27 +666,6 @@
       "repos_url": "https://api.github.com/users/agonist/repos",
       "events_url": "https://api.github.com/users/agonist/events{/privacy}",
       "received_events_url": "https://api.github.com/users/agonist/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 1
-    },
-    {
-      "login": "a1ttech",
-      "id": 84208222,
-      "node_id": "MDQ6VXNlcjg0MjA4MjIy",
-      "avatar_url": "https://avatars.githubusercontent.com/u/84208222?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/a1ttech",
-      "html_url": "https://github.com/a1ttech",
-      "followers_url": "https://api.github.com/users/a1ttech/followers",
-      "following_url": "https://api.github.com/users/a1ttech/following{/other_user}",
-      "gists_url": "https://api.github.com/users/a1ttech/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/a1ttech/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/a1ttech/subscriptions",
-      "organizations_url": "https://api.github.com/users/a1ttech/orgs",
-      "repos_url": "https://api.github.com/users/a1ttech/repos",
-      "events_url": "https://api.github.com/users/a1ttech/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/a1ttech/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 1
