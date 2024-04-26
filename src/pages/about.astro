@@ -1,38 +1,39 @@
 ---
-
-import BaseLayout from '../layouts/base.astro';
-import * as config from '../config.yaml';
-import core from '../core.json';
-import AboutFooter from '../components/AboutFooter.astro';
-
+import BaseLayout from "../layouts/base.astro";
+import * as config from "../config.yaml";
+import core from "../core.json";
+import AboutFooter from "../components/AboutFooter.astro";
 ---
 
 <BaseLayout title="About" image="og_about">
+  <div class="middle-pane-medium mt-10">
+    <!--  <div class="mb-20">
+      <a href="https://docs.web3privacy.info/manifesto"
+        ><img src="/bringing-100m-to-privacy-market.png" /></a
+      >
+    </div> -->
 
-	<div class="middle-pane-medium mt-10">
-		<div class="mb-20">
-			<a href="https://docs.web3privacy.info/manifesto"><img src="/bringing-100m-to-privacy-market.png" /></a>
-		</div>
-
-		<div class="grid grid-cols-1 xl:grid-cols-2 gap-16">
-			<div>
-				<h1>Our mission</h1>
-				<div set:html={config.landing.mission}></div>
-				<div class="mt-8">
-					<a class="button inverted" href={core.links.manifesto}><button>Read manifesto</button></a>
-				</div>
-			</div>
-			<div>
-				<h1>Topics</h1>
-				<div class="columns-2 uppercase text-sm w3pn-topics">
-					{config.landing.topics.map((topic) => (
-						<div>{topic}</div>
-					))}
-				</div>
-			</div>
-		</div>
-
-        <AboutFooter />
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-16">
+      <div>
+        <h1>Our mission</h1>
+        <div set:html={config.landing.mission} />
+        <div class="mt-8 flex gap-6 items-center w-full">
+          <a class="button inverted" href={core.links.manifesto}
+            ><button>Read manifesto</button></a
+          >
+          <a class="button" href={core.links.manifesto}
+            ><button>Join us</button></a
+          >
+        </div>
+      </div>
+      <div>
+        <h1>Topics</h1>
+        <div class="columns-2 uppercase text-sm w3pn-topics">
+          {config.landing.topics.map((topic) => <div>{topic}</div>)}
+        </div>
+      </div>
     </div>
 
+    <AboutFooter />
+  </div>
 </BaseLayout>
