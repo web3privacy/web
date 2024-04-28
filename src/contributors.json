@@ -38,7 +38,7 @@
       "received_events_url": "https://api.github.com/users/Msiusko/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 1547
+      "contributions": 1548
     },
     {
       "login": "burningtree",
@@ -270,6 +270,27 @@
       "type": "User",
       "site_admin": false,
       "contributions": 6
+    },
+    {
+      "login": "salman01zp",
+      "id": 11256491,
+      "node_id": "MDQ6VXNlcjExMjU2NDkx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11256491?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/salman01zp",
+      "html_url": "https://github.com/salman01zp",
+      "followers_url": "https://api.github.com/users/salman01zp/followers",
+      "following_url": "https://api.github.com/users/salman01zp/following{/other_user}",
+      "gists_url": "https://api.github.com/users/salman01zp/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/salman01zp/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/salman01zp/subscriptions",
+      "organizations_url": "https://api.github.com/users/salman01zp/orgs",
+      "repos_url": "https://api.github.com/users/salman01zp/repos",
+      "events_url": "https://api.github.com/users/salman01zp/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/salman01zp/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 5
     },
     {
       "login": "Ressac-No1",
@@ -666,27 +687,6 @@
       "repos_url": "https://api.github.com/users/agonist/repos",
       "events_url": "https://api.github.com/users/agonist/events{/privacy}",
       "received_events_url": "https://api.github.com/users/agonist/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 1
-    },
-    {
-      "login": "nanaknihal",
-      "id": 1316898,
-      "node_id": "MDQ6VXNlcjEzMTY4OTg=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1316898?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/nanaknihal",
-      "html_url": "https://github.com/nanaknihal",
-      "followers_url": "https://api.github.com/users/nanaknihal/followers",
-      "following_url": "https://api.github.com/users/nanaknihal/following{/other_user}",
-      "gists_url": "https://api.github.com/users/nanaknihal/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/nanaknihal/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/nanaknihal/subscriptions",
-      "organizations_url": "https://api.github.com/users/nanaknihal/orgs",
-      "repos_url": "https://api.github.com/users/nanaknihal/repos",
-      "events_url": "https://api.github.com/users/nanaknihal/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/nanaknihal/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 1
