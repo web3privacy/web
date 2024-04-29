@@ -53,10 +53,18 @@ hero:
   text: |
     Privacy advocates worldwide are coming together to discuss how to mainstream privacy within the Web3 industry. So it will become a cultural phenomenon embodying both decentralisation & anti-surveillance capitalism practices.
 landing:
+  merch: |
+    To make humans gain control over their privacy by utilizing Web3 stack. So privacy would become a cultural phenomena & active lifestyle.
+  research: |
+    We cultivate a culture of privacy in web3 making data free and public.  Enjoy our researches, infographics, annual reports, tools, newsletter, guidelines & more.
   mission: |
     Empower individuals to take control of their digital privacy.
     <br><br>
      We envision a world where privacy is a conscious, actively chosen lifestyle, accessible to everyone, everywhere. To turn this into reality, we need to unite our efforts and carve out a path toward a more equitable, decentralized and privacy-respecting digital space.
+  event: |
+    Our aim with gatherings is to build understanding and solidarity between different groups of interests, cultures, states, chains, ecosystems and backgrounds.
+    <br><br>
+      We aggregate web3 & non-tech people, builders, researchers, philosophers, lawyers, policymakers, hacktivists,  key players, local communities and the general public.
   topics:
     - Identity
     - Private Messaging

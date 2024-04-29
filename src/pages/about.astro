@@ -3,9 +3,16 @@ import BaseLayout from "../layouts/base.astro";
 import * as config from "../config.yaml";
 import core from "../core.json";
 import AboutFooter from "../components/AboutFooter.astro";
+import AboutItemGrid from "../components/AboutItemGrid.astro";
+import AboutWidget from "../components/AboutWidget.astro";
 ---
 
-<BaseLayout title="About" image="og_about">
+<BaseLayout
+  title="About web3privacy"
+  image="og_about"
+  subimage="/about/about.png"
+  subtext="we are privacy focused community of enthusiasts developers, event organisers, researchers pushing web3privacy forward"
+>
   <div class="middle-pane-medium mt-10">
     <!--  <div class="mb-20">
       <a href="https://docs.web3privacy.info/manifesto"
@@ -13,27 +20,89 @@ import AboutFooter from "../components/AboutFooter.astro";
       >
     </div> -->
 
-    <div class="grid grid-cols-1 xl:grid-cols-2 gap-16">
-      <div>
-        <h1>Our mission</h1>
-        <div set:html={config.landing.mission} />
-        <div class="mt-8 flex gap-6 items-center w-full">
-          <a class="button inverted" href={core.links.manifesto}
-            ><button>Read manifesto</button></a
-          >
-          <a class="button" href={core.links.manifesto}
-            ><button>Join us</button></a
-          >
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-16 mb-[82px]">
+      <div class="flex flex-col gap-[36px] md:order-2">
+        <div class="md:hidden block mb-[12px]">
+          <h1>Our mission</h1>
+          <div set:html={config.landing.mission} />
+          <div class="mt-8 flex gap-6 items-center w-full">
+            <a class="button inverted" href={core.links.manifesto}
+              ><button>Read manifesto</button></a
+            >
+            <a class="button" href={core.links.manifesto}
+              ><button>Join us</button></a
+            >
+          </div>
         </div>
+        <h1>how we support privacy in web3</h1>
+
+        <AboutItemGrid />
       </div>
-      <div>
-        <h1>Topics</h1>
-        <div class="columns-2 uppercase text-sm w3pn-topics">
-          {config.landing.topics.map((topic) => <div>{topic}</div>)}
+      <div class="md:order-1 order-2">
+        <div class="md:block hidden">
+          <h1>Our mission</h1>
+          <div set:html={config.landing.mission} />
+          <div class="mt-8 flex gap-6 items-center w-full">
+            <a class="button inverted" href={core.links.manifesto}
+              ><button>Read manifesto</button></a
+            >
+            <a class="button" href={core.links.manifesto}
+              ><button>Join us</button></a
+            >
+          </div>
         </div>
+        <div class="md:mt-[56px] mt-[26px]">
+          <h1>our events</h1>
+          <div set:html={config.landing.event} />
+          <div class="mt-8 flex flex-col gap-6 items-start w-full">
+            <div class="grid grid-cols-2 gap-[8px]">
+              <img src="/about/1.png" alt="" />
+              <img src="/about/2.png" alt="" />
+              <img src="/about/3.png" alt="" />
+              <img src="/about/4.png" alt="" />
+            </div>
+            <a class="button inverted" href={"/events"}
+              ><button>EVENTS</button></a
+            >
+          </div>
+        </div>
+        <div class="md:mt-[56px] mt-[26px]">
+          <h1>Our Projects & research</h1>
+          <div set:html={config.landing.research} />
+          <div class="mt-8 flex gap-6 items-center w-full">
+            <a class="button inverted" href={"/projects"}
+              ><button>Projects</button></a
+            >
+            <a class="button inverted" href={"/research"}
+              ><button>Research</button></a
+            >
+          </div>
+        </div>
+        <!-- <div>
+          <h1>Topics</h1>
+          <div class="columns-2 uppercase text-sm w3pn-topics">
+            {config.landing.topics.map((topic) => <div>{topic}</div>)}
+          </div>
+        </div> -->
       </div>
     </div>
-
+    <AboutWidget />
+    <div
+      class="flex md:flex-row flex-col items-center gap-[24px] justify-center w-full mt-[24px]"
+    >
+      <div class="md:mt-[56px] mt-[26px] max-w-[460px] md:order-1 order-2">
+        <h1>empowering community with our brand</h1>
+        <div set:html={config.landing.merch} />
+        <div class="mt-8 flex gap-6 items-center w-full">
+          <a class="button inverted" href={"/merch"}
+            ><button>MERCH STORE</button></a
+          >
+        </div>
+      </div>
+      <div class="md:order-2 order-1">
+        <img src="/about/stickers.png" alt="" />
+      </div>
+    </div>
     <AboutFooter />
   </div>
 </BaseLayout>

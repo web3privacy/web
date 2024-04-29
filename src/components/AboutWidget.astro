@@ -1,0 +1,106 @@
+---
+import * as config from "../config.yaml";
+import core from "../core.json";
+---
+
+<div>
+  <div class="border-4 border-white w-full">
+    <div class="bg-white w-full text-center px-[16px] text-black">
+      <h3 style="color:black !important">
+        together we are stronger - support us via membership
+      </h3>
+    </div>
+    <div class="grid md:grid-cols-2 grid-cols-1">
+      <div
+        class="relative w-full md:border-l-4 border-l-0 md:border-b-0 border-b-4 border-white"
+      >
+        <div class="flex flex-col gap-[16px] p-[24px] z-[10]">
+          <div class="flex flex-col">
+            <span class="text-white font-bold">INDIVIDUAL</span>
+            <span class="leading-[1.4rem]"
+              >Become an integral part of our community! Join us with building
+              privacy platform we all need.</span
+            >
+          </div>
+          <ul class="list-disc ml-[18px] text-white">
+            <li>You are supporting good thing!</li>
+            <li>Free access to all our events</li>
+            <li>"Privacy Survival Kit" swag bundle</li>
+            <li>Access to our researches and special group chats</li>
+            <li>Deals from our partners</li>
+            <li>Voting rights in our association</li>
+          </ul>
+          <div
+            class="flex w-full md:justify-between md:flex-row flex-col gap-[8px] md:items-center"
+          >
+            <div class="flex flex-col">
+              <span>Price</span>
+              <span class="text-white font-bold text-[18px] leading-[1.4rem]">
+                €100 / Year
+              </span>
+            </div>
+            <a class="button" href={core.links.manifesto}
+              ><button>LEARN MORE</button></a
+            >
+          </div>
+        </div>
+        <img
+          src="/about/image1.png"
+          alt=""
+          class="absolute right-0 bottom-0 z-[-1]"
+        />
+      </div>
+      <div
+        class="relative w-full md:border-l-4 border-l-0 md:border-b-0 border-b-4 border-white"
+      >
+        <div class="flex flex-col gap-[16px] p-[24px] z-[10]">
+          <div class="flex flex-col">
+            <span class="text-white font-bold">ORGANISATION</span>
+            <span class="leading-[1.4rem]"
+              >Instead of proposing partnerships for every event and/or
+              initiative, we decided to implement a continuous membership
+              approach.</span
+            >
+          </div>
+          <ul class="list-disc ml-[18px] text-white">
+            <li>Visibility at our Summits, Meetups & Hackathons</li>
+            <li>Free Tickets & discounts for your partners</li>
+            <li>
+              Finding right builders for your beta, product to test or develop
+            </li>
+            <li>Speaking and mentoring opportunities</li>
+            <li>Raise awareness within specific inputs</li>
+            <li>Engage target audience</li>
+          </ul>
+          <div
+            class="flex w-full md:justify-between md:flex-row flex-col gap-[8px] md:items-center"
+          >
+            <div class="flex flex-col">
+              <span>Price</span>
+              <span class="text-white font-bold text-[18px] leading-[1.4rem]">
+                Variable tiers
+              </span>
+            </div>
+            <a class="button" href={core.links.manifesto}
+              ><button>LEARN MORE</button></a
+            >
+          </div>
+        </div>
+        <img
+          src="/about/image2.png"
+          alt=""
+          class="absolute right-0 bottom-0 z-[-1]"
+        />
+      </div>
+    </div>
+  </div>
+  <span
+    class="text-white md:text-center text-left w-full flex md:items-center justify-center mt-[24px]"
+  >
+    <span class="flex md:items-center items-start gap-[8px]">
+      <img src="/icons/gift.svg" alt="" class="md:mt-[0px] mt-[4px]" />
+      Or if you like our ideas and community you can privately donate via Ethereum
+      / Bitcoin / Monero or support us on Gitcoin Grants
+    </span>
+  </span>
+</div>
