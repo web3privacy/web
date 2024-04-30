@@ -24,6 +24,7 @@ header:
       link: docs
     - name: Membership
       link: membership
+      url: /membership
     #- name: Manifesto
     #  url: /manifesto
   rightMenu:
