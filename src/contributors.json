@@ -38,7 +38,7 @@
       "received_events_url": "https://api.github.com/users/Msiusko/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 1608
+      "contributions": 1635
     },
     {
       "login": "burningtree",
@@ -80,7 +80,7 @@
       "received_events_url": "https://api.github.com/users/EclecticSamurai/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 327
+      "contributions": 328
     },
     {
       "login": "cryptomar1o",
@@ -122,7 +122,7 @@
       "received_events_url": "https://api.github.com/users/f1nass/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 52
+      "contributions": 57
     },
     {
       "login": "jiricepelka",
@@ -146,6 +146,27 @@
       "contributions": 44
     },
     {
+      "login": "ethanolo-eth",
+      "id": 167983675,
+      "node_id": "U_kgDOCgM6Ow",
+      "avatar_url": "https://avatars.githubusercontent.com/u/167983675?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ethanolo-eth",
+      "html_url": "https://github.com/ethanolo-eth",
+      "followers_url": "https://api.github.com/users/ethanolo-eth/followers",
+      "following_url": "https://api.github.com/users/ethanolo-eth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ethanolo-eth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ethanolo-eth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ethanolo-eth/subscriptions",
+      "organizations_url": "https://api.github.com/users/ethanolo-eth/orgs",
+      "repos_url": "https://api.github.com/users/ethanolo-eth/repos",
+      "events_url": "https://api.github.com/users/ethanolo-eth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ethanolo-eth/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 42
+    },
+    {
       "login": "niclaz",
       "id": 83479948,
       "node_id": "MDQ6VXNlcjgzNDc5OTQ4",
@@ -165,27 +186,6 @@
       "type": "User",
       "site_admin": false,
       "contributions": 21
-    },
-    {
-      "login": "ethanolo-eth",
-      "id": 167983675,
-      "node_id": "U_kgDOCgM6Ow",
-      "avatar_url": "https://avatars.githubusercontent.com/u/167983675?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/ethanolo-eth",
-      "html_url": "https://github.com/ethanolo-eth",
-      "followers_url": "https://api.github.com/users/ethanolo-eth/followers",
-      "following_url": "https://api.github.com/users/ethanolo-eth/following{/other_user}",
-      "gists_url": "https://api.github.com/users/ethanolo-eth/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/ethanolo-eth/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/ethanolo-eth/subscriptions",
-      "organizations_url": "https://api.github.com/users/ethanolo-eth/orgs",
-      "repos_url": "https://api.github.com/users/ethanolo-eth/repos",
-      "events_url": "https://api.github.com/users/ethanolo-eth/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/ethanolo-eth/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 20
     },
     {
       "login": "coinmandeer",
