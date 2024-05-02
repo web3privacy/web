@@ -1,0 +1,81 @@
+---
+import * as config from "../config.yaml";
+import core from "../core.json";
+---
+
+<div class="border-2 border-white flex flex-col">
+  <div class="px-[16px] py-[18px] flex flex-col gap-4 border-b border-white">
+    <p class="text-white font-bold uppercase">EVENTS</p>
+    <div class="w-full flex flex-col items-start">
+      {
+        config.organisation.table.events.map((item) => (
+          <>
+            <p class="text-white ">{item.objective}</p>
+            <p>{item.details}</p>
+            {item.url && (
+              <a class="button inverted mb-4" href={item.url}>
+                <button>MORE</button>
+              </a>
+            )}
+          </>
+        ))
+      }
+    </div>
+  </div>
+  <div
+    class="px-[16px] py-[18px] flex flex-col gap-4 border-b border-white h-full"
+  >
+    <p class="text-white font-bold uppercase">RESEARCH</p>
+    <div class="w-full flex flex-col items-start">
+      {
+        config.organisation.table.research.map((item) => (
+          <>
+            <p class="text-white ">{item.objective}</p>
+            <p>{item.details}</p>
+            {item.url && (
+              <a class="button inverted mb-4" href={item.url}>
+                <button>MORE</button>
+              </a>
+            )}
+          </>
+        ))
+      }
+    </div>
+  </div>
+  <div class="px-[16px] py-[18px] flex flex-col gap-4 border-b border-white">
+    <p class="text-white font-bold uppercase">tools</p>
+    <div class="w-full flex flex-col items-start">
+      {
+        config.organisation.table.tools.map((item) => (
+          <>
+            <p class="text-white ">{item.objective}</p>
+            <p>{item.details}</p>
+            {item.url && (
+              <a class="button inverted mb-4" href={item.url}>
+                <button>MORE</button>
+              </a>
+            )}
+          </>
+        ))
+      }
+    </div>
+  </div>
+  <div class="px-[16px] py-[18px] flex flex-col gap-4 border-b border-white">
+    <p class="text-white font-bold uppercase">education</p>
+    <div class="w-full flex flex-col items-start">
+      {
+        config.organisation.table.education.map((item) => (
+          <>
+            <p class="text-white ">{item.objective}</p>
+            <p>{item.details}</p>
+            {item.url && (
+              <a class="button inverted mb-4" href={item.url}>
+                <button>MORE</button>
+              </a>
+            )}
+          </>
+        ))
+      }
+    </div>
+  </div>
+</div>

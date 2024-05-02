@@ -120,3 +120,70 @@ landing:
       ico: forum
   community: |
     Our aim with gatherings is to bring together key players, different perspectives, skills and visions. We aggregate tech and non tech people, key players and contributors, builders, researchers, philosophers, lawyers, policymakers, activists, local communities and general public.
+organisation:
+  table:
+    events:
+      - objective: 6+ Events in different countires
+        details: |
+          1 Summit + 1 Hackathon + 3 Meetups [target outreach: 1000 people IRL]
+
+        height: 50
+
+    research:
+      - objective: Privacy in Ethereum
+        details: |
+          The most comprehensive report of privacy
+        url: /research/ethereum
+        height: 50
+      - objective: Use cases DB update & improve (500 → 700 privacy projects
+        details: |
+          Most extensive web3 db of privacy-enhancing solutions
+        url: /research/ethereum
+        height: 80
+      - objective: Privacy Annual Report (150+ pages)
+        details: |
+          Showcase all happenings and achievements of the year (3rd Edition)
+        url: /research/ethereum
+        height: 60
+      - objective: Privacy Awards
+        details: |
+          Annual vote of most popular and interesting privacy projects
+        url: /research/ethereum
+        height: 60
+      - objective: Week in Privacy
+        details: |
+          Newsletter with round-up of the most important privacy news
+        url: /research/ethereum
+        height: 60
+      - objective: Monthly Infographics & Articles
+        details: |
+          Release of useful material for tech & general public
+        url: /research/ethereum
+        height: 30
+    tools:
+      - objective: Privacy Explorer V.2
+        details: |
+          300 services, 5 new categories, improve scoring model
+        url: /research/ethereum
+        height: 50
+      - objective: Privacy Routing tool (V0.1 release)
+        details: |
+          Help users to choose the right service for their transactions
+        url: /research/ethereum
+        height: 50
+    education:
+      - objective: Academy
+        details: |
+          101 privacy educational track with our partners
+
+        height: 50
+      - objective: Hackathon Curation Pack
+        details: |
+          Guidelines to help the builders uderstand actual issues
+        url: /research/ethereum
+        height: 60
+      - objective: Privacy Guidelines for the public
+        details: |
+
+        url: /research/ethereum
+        height: 50

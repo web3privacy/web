@@ -1,0 +1,310 @@
+---
+import BaseLayout from "../../layouts/base.astro";
+import * as config from "../config.yaml";
+import core from "../../core.json";
+import AboutFooter from "../../components/AboutFooter.astro";
+import AboutWidget from "../../components/AboutWidget.astro";
+import OrganisationTableDesktop from "../../components/OrganisationTableDesktop.astro";
+import OrganisationTableMobile from "../../components/OrganisationTableMobile.astro";
+---
+
+<BaseLayout
+  title="MEMBERSHIP"
+  image="og_membership"
+  subimage="/membership/membership.png"
+>
+  <div class="middle-pane-medium my-10">
+    <div class="flex flex-col gap-8 md:max-w-[1000px]">
+      <div class="flex flex-col gap-2">
+        <h1 class="mb-[0px]">organisation membership</h1>
+        <span class="">
+          Instead of proposing partnerships for every event and/or
+          initiative, we decided to implement a continuous membership approach.
+        </span>
+      </div>
+      <div class="relative w-full border-b border-gray-950">
+        <div class="flex flex-col gap-[16px] py-[24px] md:p-[24px] z-[10]">
+          <span class="text-white font-bold text-[18px] leading-[1.4rem]">
+            Benefits
+          </span>
+          <ul class="list-disc ml-[18px] text-white">
+            <li>Visibility at our Summits, Meetups & Hackathons</li>
+            <li>Free Tickets for team and discounts for your partners</li>
+            <li>
+              Finding right builders for your beta, product to test or develop
+            </li>
+            <li>Speaking and mentoring opportunities</li>
+            <li>Raise awareness within specific inputs</li>
+            <li>
+              Engage target audience via using (your and others) experts opinion
+            </li>
+          </ul>
+          <div
+            class="flex w-full md:justify-between md:flex-row flex-col gap-[8px] md:items-center"
+          >
+            <div class="flex flex-col md:flex-row md:items-center gap-4">
+              <span>Price</span>
+              <span class="text-white font-bold text-[18px] leading-[1.4rem]">
+                Variable tiers €7000+
+              </span>
+              <a class="button" href=""><button>CONTACT US</button></a>
+            </div>
+          </div>
+        </div>
+        <img
+          src="/about/image2.png"
+          alt=""
+          class="absolute right-0 bottom-0 z-[-1] md:w-[280px]"
+        />
+      </div>
+      <div class="mb-[12px]">
+        <p class="text-white font-bold text-[18px] leading-[1.4rem]">
+          Why membership?
+        </p>
+        <ul class="list-decimal ml-[18px] text-white">
+          <li>Help to meet our respective specific and market needs</li>
+          <li>Avoid wasting time and resources.</li>
+          <li>
+            Guarantee visibility and services by leveraging all our ecosystem
+            and activities, and to structure a common growth path.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-white font-bold text-[18px] leading-[1.4rem]">
+          Our Principles
+        </p>
+        <ul class="list-decimal ml-[18px] text-white">
+          <li>
+            We care about our independence being an open-source &
+            community-driven organisation.
+          </li>
+          <li>
+            We don’t work for any company, but collaborate with them. The last
+            decision always on us.
+          </li>
+          <li>
+            Perfect match is a partner who cares about privacy market growth &
+            support advocacy. Together we can growth.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p>
+          This enable not just integrity of our work, but increase trust to both
+          W3PN activities & partner representation.
+        </p>
+      </div>
+      <div>
+        <img src="/engine.png" alt="" class="w-full" />
+      </div>
+      <div class="flex flex-col gap-6">
+        <p class="text-white font-bold text-[18px] leading-[1.4rem]">
+          Our OKRs for the year (2024)
+        </p>
+        <div>
+          <p>MAJOR</p>
+          <p class="text-white font-bold text-[18px] leading-[1.6rem]">
+            #1 Privacy-centric think tank behind critical advocacy ecosystem
+          </p>
+          <p>
+            “L2beat for privacy” aka Explorer, the biggest privacy-services DB,
+            privacy reports & researches, essential summits & meetups
+          </p>
+        </div>
+        <div>
+          <p>SUB</p>
+          <ul class="list-disc ml-[18px] text-white">
+            <li>
+              <span class="font-bold"> 10M annual reach </span>(socials, media,
+              events)
+            </li>
+            <li>
+              <span class="font-bold"> 2000 events visitors </span>(incl 100
+              privacy leaders)
+            </li>
+            <li>
+              <span class="font-bold"> 50 contributors </span> (beyond core team)
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-white font-bold text-[18px]">Our Activities</p>
+          <p>
+            Our activities are multispectral as we want to improve privacy
+            alltogetgher.
+          </p>
+        </div>
+        <div>
+          <div class="md:block hidden">
+            <OrganisationTableDesktop />
+          </div>
+          <div class="md:hidden block">
+            <OrganisationTableMobile />
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="text-white text-[24px] font-bold my-8">
+            Value we can deliver
+          </p>
+          <div class="mb-16">
+            <p class="font-bold text-white text-[24px] mb-2">Events</p>
+            <ul class="list-disc ml-4 text-white">
+              <li>10M annual reach (socials, media, events)</li>
+              <li>
+                Visibility - before, during and after - at our Summits, Meetups
+                & Hackathons (Logo, Merch, Talks, Workshops, Recordings)
+              </li>
+              <li>Free Tickets for team and discounts for your partners</li>
+              <li>
+                Finding right builders for your beta, product to test or develop
+              </li>
+              <li>Speaking and mentoring opportunities</li>
+              <li>Panel curation upon specific needs</li>
+              <li>
+                Bigger outreach and Impact (we bring your brand, your team and
+                developing needs around every event we attend  (ETHDam, ETHRome,
+                ETHBrno, ETHBarcelona, BlackSky…)
+              </li>
+              <li>50 contributors (beyond core team)</li>
+            </ul>
+          </div>
+          <div class="mb-6">
+            <p class="font-bold text-white text-[24px]">Research</p>
+            <span class="mb-2">
+              We carry on research delivering essays, reports, infographics,
+              github repos, decks, guidelines
+            </span>
+            <div class="mt-4">
+              <p class="text-white font-bold text-[16px]">Brand</p>
+              <ul class="list-disc ml-4 text-white">
+                <li>
+                  Raise awareness within specific inputs (category, specs,
+                  market)
+                </li>
+                <li>
+                  Empower trust (product of choice, Tier1 category service, top
+                  of mind)
+                </li>
+                <li>Logo at the end of every report</li>
+                <li>
+                  Use report’s results stating you are supporting privacy
+                  research (positive image)
+                </li>
+                <li>Underline your role in the market</li>
+              </ul>
+            </div>
+            <div class="mt-6">
+              <p class="text-white font-bold text-[16px]">Growth</p>
+              <ul class="list-disc ml-4 text-white">
+                <li>
+                  Engage target audience via using (your and others) experts
+                  opinion
+                </li>
+                <li>
+                  Additional marketing content from infographics to charts
+                </li>
+                <li>
+                  Third party validation of your specific claims (if they are
+                  attested)
+                </li>
+                <li>Community building content</li>
+                <li>Priority in our publications and newsletter</li>
+                <li>Tailor made articles based upon specific needs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mb-6">
+            <p class="font-bold text-white text-[24px]">Explorer</p>
+            <span class="mb-2">
+              3in1: a ranking system, database & comprehensive profiling to
+              empower the general public in discerning the privacy levels,
+              security, and reliability of Web3 projects.
+            </span>
+            <div class="mt-4">
+              <p class="text-white font-bold text-[16px]">Brand</p>
+              <ul class="list-disc ml-4 text-white">
+                <li>Raise awareness within the category (gain reach)</li>
+                <li>Increase trust by building great profile</li>
+                <li>Improve trust by receiving a third party validation</li>
+                <li>Visibility through benchmarks</li>
+              </ul>
+            </div>
+            <div class="mt-4">
+              <p class="text-white font-bold text-[16px]">Product</p>
+              <ul class="list-disc ml-4 text-white">
+                <li>
+                  Increase trial or generate leads by building a transparent
+                  profile
+                </li>
+                <li>Support your releases</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mb-4">
+            <p class="font-bold text-white text-[24px]">Academy</p>
+            <span class="mb-2">
+              We aim to realize Academy to educate tech and non tech people,
+              giving basics about digital privacy and practical use-cases,
+              directions…
+            </span>
+            <div class="mt-4">
+              <ul class="list-disc ml-4 text-white">
+                <li>Feature your experts opinion and content</li>
+                <li>Content joint production</li>
+                <li>
+                  Co-develop domain-specific courses (wallet privacy 101,
+                  ethereum privacy…)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mb-4">
+            <p class="font-bold text-white text-[24px]">Financial</p>
+
+            <div class="mt-4">
+              <ul class="list-disc ml-4 text-white">
+                <li>Tax optimization through donation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mb-4">
+            <p class="font-bold text-white text-[24px]">Other</p>
+
+            <div class="mt-4">
+              <ul class="list-disc ml-4 text-white">
+                <li>
+                  Organizing educational seminars for your employees, clients,
+                  target audience
+                </li>
+                <li>Job listings (web, newsletter, socials…)</li>
+                <li>
+                  We transform content you share in conferences into educational
+                  material
+                </li>
+                <li>Special insights on market growth and evolution</li>
+                <li>Group for company members</li>
+                <li>Access to special members-only events</li>
+              </ul>
+            </div>
+          </div>
+          <div class="mb-4">
+            <p class="font-bold text-white text-[24px]">Tiers</p>
+            <div class="mt-4">
+              <ul class="list-disc ml-4 text-white">
+                <li>Membership fee: 7K - 40K EUR / year (depends on tier)</li>
+                <li>Non-profit membership fee: 1K EUR / year</li>
+              </ul>
+            </div>
+          </div>
+          <span class="text-white">
+            For Tier breakdown and details please write us
+            <a href="mailto:hello@web3privacy.info" class="underline"
+              >hello@web3privacy.info</a
+            >
+          </span>
+        </div>
+      </div>
+    </div>
+  </div></BaseLayout
+>

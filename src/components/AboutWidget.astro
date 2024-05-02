@@ -1,6 +1,11 @@
 ---
 import * as config from "../config.yaml";
 import core from "../core.json";
+
+interface Props {
+  variant?: "about" | "membership";
+}
+const { variant = "about" } = Astro.props;
 ---
 
 <div>
@@ -39,7 +44,15 @@ import core from "../core.json";
                 €100 / Year
               </span>
             </div>
-            <a class="button" href="/membership"><button>LEARN MORE</button></a>
+            <a
+              class="button"
+              href={variant === "about"
+                ? "/membership"
+                : "/membership/individual"}
+              ><button
+                >{variant === "about" ? "LEARN MORE" : "INDIVIDUAL"}</button
+              ></a
+            >
           </div>
         </div>
         <img
@@ -79,7 +92,15 @@ import core from "../core.json";
                 Variable tiers
               </span>
             </div>
-            <a class="button" href="/membership"><button>LEARN MORE</button></a>
+            <a
+              class="button"
+              href={variant === "about"
+                ? "/membership"
+                : "/membership/organisation"}
+              ><button
+                >{variant === "about" ? "LEARN MORE" : "ORGANISATION"}</button
+              ></a
+            >
           </div>
         </div>
         <img
