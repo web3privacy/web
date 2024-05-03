@@ -38,7 +38,7 @@
       "received_events_url": "https://api.github.com/users/Msiusko/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 1645
+      "contributions": 1670
     },
     {
       "login": "burningtree",
@@ -122,7 +122,28 @@
       "received_events_url": "https://api.github.com/users/f1nass/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 65
+      "contributions": 75
+    },
+    {
+      "login": "ethanolo-eth",
+      "id": 167983675,
+      "node_id": "U_kgDOCgM6Ow",
+      "avatar_url": "https://avatars.githubusercontent.com/u/167983675?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ethanolo-eth",
+      "html_url": "https://github.com/ethanolo-eth",
+      "followers_url": "https://api.github.com/users/ethanolo-eth/followers",
+      "following_url": "https://api.github.com/users/ethanolo-eth/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ethanolo-eth/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ethanolo-eth/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ethanolo-eth/subscriptions",
+      "organizations_url": "https://api.github.com/users/ethanolo-eth/orgs",
+      "repos_url": "https://api.github.com/users/ethanolo-eth/repos",
+      "events_url": "https://api.github.com/users/ethanolo-eth/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ethanolo-eth/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 56
     },
     {
       "login": "jiricepelka",
@@ -144,27 +165,6 @@
       "type": "User",
       "site_admin": false,
       "contributions": 44
-    },
-    {
-      "login": "ethanolo-eth",
-      "id": 167983675,
-      "node_id": "U_kgDOCgM6Ow",
-      "avatar_url": "https://avatars.githubusercontent.com/u/167983675?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/ethanolo-eth",
-      "html_url": "https://github.com/ethanolo-eth",
-      "followers_url": "https://api.github.com/users/ethanolo-eth/followers",
-      "following_url": "https://api.github.com/users/ethanolo-eth/following{/other_user}",
-      "gists_url": "https://api.github.com/users/ethanolo-eth/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/ethanolo-eth/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/ethanolo-eth/subscriptions",
-      "organizations_url": "https://api.github.com/users/ethanolo-eth/orgs",
-      "repos_url": "https://api.github.com/users/ethanolo-eth/repos",
-      "events_url": "https://api.github.com/users/ethanolo-eth/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/ethanolo-eth/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 42
     },
     {
       "login": "niclaz",
@@ -456,6 +456,27 @@
       "repos_url": "https://api.github.com/users/vorcigernix/repos",
       "events_url": "https://api.github.com/users/vorcigernix/events{/privacy}",
       "received_events_url": "https://api.github.com/users/vorcigernix/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 2
+    },
+    {
+      "login": "kauri-hero",
+      "id": 55721017,
+      "node_id": "MDQ6VXNlcjU1NzIxMDE3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55721017?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kauri-hero",
+      "html_url": "https://github.com/kauri-hero",
+      "followers_url": "https://api.github.com/users/kauri-hero/followers",
+      "following_url": "https://api.github.com/users/kauri-hero/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kauri-hero/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kauri-hero/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kauri-hero/subscriptions",
+      "organizations_url": "https://api.github.com/users/kauri-hero/orgs",
+      "repos_url": "https://api.github.com/users/kauri-hero/repos",
+      "events_url": "https://api.github.com/users/kauri-hero/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kauri-hero/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 2
