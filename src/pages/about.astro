@@ -29,7 +29,7 @@ import AboutWidget from "../components/AboutWidget.astro";
             <a class="button inverted" href={core.links.manifesto}
               ><button>Read manifesto</button></a
             >
-            <a class="button" href={core.links.manifesto}
+            <a class="button" href={core.links.telegram}
               ><button>Join us</button></a
             >
           </div>
@@ -70,10 +70,10 @@ import AboutWidget from "../components/AboutWidget.astro";
           <h1>Our Projects & research</h1>
           <div set:html={config.landing.research} />
           <div class="mt-8 flex gap-6 items-center w-full">
-            <a class="button inverted" href={"/projects"}
+            <a class="button inverted" href={core.links.projects}
               ><button>Projects</button></a
             >
-            <a class="button inverted" href={"/research"}
+            <a class="button inverted" href={core.links.research}
               ><button>Research</button></a
             >
           </div>
@@ -86,7 +86,7 @@ import AboutWidget from "../components/AboutWidget.astro";
         </div> -->
       </div>
     </div>
-    <AboutWidget />
+    <AboutWidget variant="membership" />
     <div
       class="flex md:flex-row flex-col items-center gap-[24px] justify-center w-full mt-[24px]"
     >
@@ -94,8 +94,8 @@ import AboutWidget from "../components/AboutWidget.astro";
         <h1>empowering community with our brand</h1>
         <div set:html={config.landing.merch} />
         <div class="mt-8 flex gap-6 items-center w-full">
-          <a class="button inverted" href={"/merch"}
-            ><button>MERCH STORE</button></a
+          <a class="button inverted" href={core.links.brand}
+            ><button>Brand on Github</button></a
           >
         </div>
       </div>
