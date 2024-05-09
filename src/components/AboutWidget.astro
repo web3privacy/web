@@ -111,13 +111,15 @@ const { variant = "about" } = Astro.props;
       </div>
     </div>
   </div>
-  <span
-    class="text-white md:text-center text-left w-full flex md:items-center justify-center mt-[24px]"
-  >
-    <span class="flex md:items-center items-start gap-[8px]">
-      <img src="/icons/gift.svg" alt="" class="md:mt-[0px] mt-[4px]" />
-      Or if you like our ideas and community you can privately donate via Ethereum
-      / Bitcoin / Monero or support us on Gitcoin Grants
+  <a href={core.links.donate} target="_blank">
+    <span
+      class="text-white md:text-center text-left w-full flex md:items-center justify-center mt-[24px]"
+    >
+      <span class="flex md:items-center items-start gap-[8px]">
+        <img src="/icons/gift.svg" alt="" class="md:mt-[0px] mt-[4px]" />
+        Or if you like our ideas and community you can privately donate via Ethereum
+        / Bitcoin / Monero or support us on Gitcoin Grants
+      </span>
     </span>
-  </span>
+  </a>
 </div>

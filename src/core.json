@@ -20,7 +20,8 @@
     "signal": "https://signal.group/#CjQKILd3qhOu7_p8OB0bob3bU3Ko0jfgfxm9DK39oK1eiMe_EhA47ns-aCFke2YA3iMnuxqJ",
     "projects": "https://docs.web3privacy.info/#our-projects",
     "research": "https://web3privacy.info/research/",
-    "brand":"https://github.com/web3privacy/brand"
+    "brand":"https://github.com/web3privacy/brand",
+    "donate":"https://docs.web3privacy.info/donate/"
   },
   "teams": {
     "core-team": [
