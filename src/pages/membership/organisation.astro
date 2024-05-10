@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../../layouts/base.astro";
-import * as config from "../config.yaml";
+import * as config from "../../config.yaml";
 import core from "../../core.json";
 import AboutFooter from "../../components/AboutFooter.astro";
 import AboutWidget from "../../components/AboutWidget.astro";
@@ -14,7 +14,7 @@ import OrganisationTableMobile from "../../components/OrganisationTableMobile.as
   subimage="/membership/membership.png"
 >
   <div class="middle-pane-medium my-10">
-    <div class="flex flex-col gap-8 md:max-w-[1000px]">
+    <div class="flex flex-col gap-8">
       <div class="flex flex-col gap-2">
         <h1 class="mb-[0px]">organisation membership</h1>
         <span class="">
@@ -147,156 +147,30 @@ import OrganisationTableMobile from "../../components/OrganisationTableMobile.as
           <p class="text-white text-[24px] font-bold my-8">
             Value we can deliver
           </p>
-          <div class="mb-16">
-            <p class="font-bold text-white text-[24px] mb-2">Events</p>
-            <ul class="list-disc ml-4 text-white">
-              <li>10M annual reach (socials, media, events)</li>
-              <li>
-                Visibility - before, during and after - at our Summits, Meetups
-                & Hackathons (Logo, Merch, Talks, Workshops, Recordings)
-              </li>
-              <li>Free Tickets for team and discounts for your partners</li>
-              <li>
-                Finding right builders for your beta, product to test or develop
-              </li>
-              <li>Speaking and mentoring opportunities</li>
-              <li>Panel curation upon specific needs</li>
-              <li>
-                Bigger outreach and Impact (we bring your brand, your team and
-                developing needs around every event we attend  (ETHDam, ETHRome,
-                ETHBrno, ETHBarcelona, BlackSky…)
-              </li>
-              <li>50 contributors (beyond core team)</li>
-            </ul>
-          </div>
-          <div class="mb-6">
-            <p class="font-bold text-white text-[24px]">Research</p>
-            <span class="mb-2">
-              We carry on research delivering essays, reports, infographics,
-              github repos, decks, guidelines
-            </span>
-            <div class="mt-4">
-              <p class="text-white font-bold text-[16px]">Brand</p>
-              <ul class="list-disc ml-4 text-white">
-                <li>
-                  Raise awareness within specific inputs (category, specs,
-                  market)
-                </li>
-                <li>
-                  Empower trust (product of choice, Tier1 category service, top
-                  of mind)
-                </li>
-                <li>Logo at the end of every report</li>
-                <li>
-                  Use report’s results stating you are supporting privacy
-                  research (positive image)
-                </li>
-                <li>Underline your role in the market</li>
-              </ul>
-            </div>
-            <div class="mt-6">
-              <p class="text-white font-bold text-[16px]">Growth</p>
-              <ul class="list-disc ml-4 text-white">
-                <li>
-                  Engage target audience via using (your and others) experts
-                  opinion
-                </li>
-                <li>
-                  Additional marketing content from infographics to charts
-                </li>
-                <li>
-                  Third party validation of your specific claims (if they are
-                  attested)
-                </li>
-                <li>Community building content</li>
-                <li>Priority in our publications and newsletter</li>
-                <li>Tailor made articles based upon specific needs</li>
-              </ul>
-            </div>
-          </div>
-          <div class="mb-6">
-            <p class="font-bold text-white text-[24px]">Explorer</p>
-            <span class="mb-2">
-              3in1: a ranking system, database & comprehensive profiling to
-              empower the general public in discerning the privacy levels,
-              security, and reliability of Web3 projects.
-            </span>
-            <div class="mt-4">
-              <p class="text-white font-bold text-[16px]">Brand</p>
-              <ul class="list-disc ml-4 text-white">
-                <li>Raise awareness within the category (gain reach)</li>
-                <li>Increase trust by building great profile</li>
-                <li>Improve trust by receiving a third party validation</li>
-                <li>Visibility through benchmarks</li>
-              </ul>
-            </div>
-            <div class="mt-4">
-              <p class="text-white font-bold text-[16px]">Product</p>
-              <ul class="list-disc ml-4 text-white">
-                <li>
-                  Increase trial or generate leads by building a transparent
-                  profile
-                </li>
-                <li>Support your releases</li>
-              </ul>
-            </div>
-          </div>
-          <div class="mb-4">
-            <p class="font-bold text-white text-[24px]">Academy</p>
-            <span class="mb-2">
-              We aim to realize Academy to educate tech and non tech people,
-              giving basics about digital privacy and practical use-cases,
-              directions…
-            </span>
-            <div class="mt-4">
-              <ul class="list-disc ml-4 text-white">
-                <li>Feature your experts opinion and content</li>
-                <li>Content joint production</li>
-                <li>
-                  Co-develop domain-specific courses (wallet privacy 101,
-                  ethereum privacy…)
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="mb-4">
-            <p class="font-bold text-white text-[24px]">Financial</p>
+          {
+            config.organisation.paragraphs.map((item) => (
+              <div class="mb-16">
+                <p class="font-bold text-white text-[24px] mb-2">
+                  {item.heading}
+                </p>
+                <span class="mb-2">{item.subheading}</span>
+                {item.text.map((textItem) => (
+                  <>
+                    <p class="text-white font-bold text-[16px] mt-4">
+                      {textItem.subtext}
+                    </p>
 
-            <div class="mt-4">
-              <ul class="list-disc ml-4 text-white">
-                <li>Tax optimization through donation</li>
-              </ul>
-            </div>
-          </div>
-          <div class="mb-4">
-            <p class="font-bold text-white text-[24px]">Other</p>
+                    <ul class="list-disc ml-4 text-white">
+                      {textItem.items.map((item) => (
+                        <li>{item}</li>
+                      ))}
+                    </ul>
+                  </>
+                ))}
+              </div>
+            ))
+          }
 
-            <div class="mt-4">
-              <ul class="list-disc ml-4 text-white">
-                <li>
-                  Organizing educational seminars for your employees, clients,
-                  target audience
-                </li>
-                <li>Job listings (web, newsletter, socials…)</li>
-                <li>
-                  We transform content you share in conferences into educational
-                  material
-                </li>
-                <li>Special insights on market growth and evolution</li>
-                <li>Group for company members</li>
-                <li>Access to special members-only events</li>
-              </ul>
-            </div>
-          </div>
-          <div class="mb-4">
-            <p class="font-bold text-white text-[24px]">Tiers</p>
-            <div class="mt-4">
-              <ul class="list-disc ml-4 text-white">
-                <li>Membership fee: 7K - 40K EUR / year (depends on tier)</li>
-                <li>Non-profit membership fee: 1K EUR / year</li>
-              </ul>
-            </div>
-          </div>
           <span class="text-white">
             For Tier breakdown and details please write us
             <a href="mailto:hello@web3privacy.info" class="underline"

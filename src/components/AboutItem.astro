@@ -9,12 +9,12 @@ const { title, subtext, variant = "primary" } = Astro.props;
 
 <div>
   <div
-    class={`border-2 border-white w-full p-[24px] relative text-[1.2rem] ${
+    class={`border-2 border-white w-full p-[24px] relative text-[1rem] ${
       variant === "secondary" ? "border-dashed border-[#909090]" : ""
     }`}
   >
     <span
-      class={`absolute bg-black z-10 top-[-20px] px-[12px] uppercase text-[1.2rem] ${variant === "secondary" ? "text-[#909090]" : "text-white"} font-bold`}
+      class={`absolute bg-black z-10 top-[-20px] px-[12px] uppercase text-[1rem] ${variant === "secondary" ? "text-[#909090]" : "text-white"} font-bold`}
     >
       {title}
     </span>
