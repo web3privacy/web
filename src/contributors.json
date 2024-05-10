@@ -38,7 +38,7 @@
       "received_events_url": "https://api.github.com/users/Msiusko/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 2058
+      "contributions": 2074
     },
     {
       "login": "burningtree",
@@ -122,7 +122,7 @@
       "received_events_url": "https://api.github.com/users/ethanolo-eth/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 125
+      "contributions": 141
     },
     {
       "login": "f1nass",
@@ -185,7 +185,7 @@
       "received_events_url": "https://api.github.com/users/coinmandeer/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 29
+      "contributions": 31
     },
     {
       "login": "niclaz",
@@ -225,6 +225,27 @@
       "repos_url": "https://api.github.com/users/jakubklim/repos",
       "events_url": "https://api.github.com/users/jakubklim/events{/privacy}",
       "received_events_url": "https://api.github.com/users/jakubklim/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 12
+    },
+    {
+      "login": "Diex5",
+      "id": 71428580,
+      "node_id": "MDQ6VXNlcjcxNDI4NTgw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71428580?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Diex5",
+      "html_url": "https://github.com/Diex5",
+      "followers_url": "https://api.github.com/users/Diex5/followers",
+      "following_url": "https://api.github.com/users/Diex5/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Diex5/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Diex5/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Diex5/subscriptions",
+      "organizations_url": "https://api.github.com/users/Diex5/orgs",
+      "repos_url": "https://api.github.com/users/Diex5/repos",
+      "events_url": "https://api.github.com/users/Diex5/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Diex5/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 12
@@ -351,27 +372,6 @@
       "repos_url": "https://api.github.com/users/wslyvh/repos",
       "events_url": "https://api.github.com/users/wslyvh/events{/privacy}",
       "received_events_url": "https://api.github.com/users/wslyvh/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 3
-    },
-    {
-      "login": "Diex5",
-      "id": 71428580,
-      "node_id": "MDQ6VXNlcjcxNDI4NTgw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/71428580?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Diex5",
-      "html_url": "https://github.com/Diex5",
-      "followers_url": "https://api.github.com/users/Diex5/followers",
-      "following_url": "https://api.github.com/users/Diex5/following{/other_user}",
-      "gists_url": "https://api.github.com/users/Diex5/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/Diex5/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/Diex5/subscriptions",
-      "organizations_url": "https://api.github.com/users/Diex5/orgs",
-      "repos_url": "https://api.github.com/users/Diex5/repos",
-      "events_url": "https://api.github.com/users/Diex5/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/Diex5/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 3
