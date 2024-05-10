@@ -1,147 +1,231 @@
 ---
 //import { ViewTransitions } from 'astro:transitions';
 
-import * as config from '../config.yaml';
-import * as pkg from '../../package.json';
-import core from '../core.json';
-import '../styles/base.css';
-import MetaTags from '../components/MetaTags.astro';
+import * as config from "../config.yaml";
+import * as pkg from "../../package.json";
+import core from "../core.json";
+import "../styles/base.css";
+import MetaTags from "../components/MetaTags.astro";
 
-const {banner, title, metaTitle, description, image} = Astro.props;
+const { banner, title, metaTitle, description, image, subtext, subimage } =
+  Astro.props;
 
-import cfonts from 'cfonts';
+import cfonts from "cfonts";
 
 function genHeading(str) {
-	return cfonts.render(str + ' ', { font: '', maxLength: 5000 }, null, null, {width: "5000", height: "5000"}).string;
+  return cfonts.render(str + " ", { font: "", maxLength: 5000 }, null, null, {
+    width: "5000",
+    height: "5000",
+  }).string;
 }
-
 ---
+
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-		   <MetaTags
-            title={metaTitle ? metaTitle : (title ? title : config.name)}
-            description={description ? description : config.description}
-            image={image}
-        />
+    <MetaTags
+      title={metaTitle ? metaTitle : title ? title : config.name}
+      description={description ? description : config.description}
+      image={image}
+    />
 
-		<link
-			rel="preload"
-			href="/fonts/archivo-regular-latin-ext.woff2"
-			as="font"
-			type="font/woff2"
-			crossorigin
-	  	/>
-		<link
-		  rel="preload"
-		  href="/fonts/archivo-regular-latin.woff2"
-		  as="font"
-		  type="font/woff2"
-		  crossorigin
-		/>
-		<link
-			rel="preload"
-			href="/fonts/major-mono-display-v13-latin-regular.woff2"
-			as="font"
-			type="font/woff2"
-			crossorigin
-		/>
-		<link
-			rel="preload"
-			href="/fonts/dm-mono-regular-latin.woff2"
-			as="font"
-			type="font/woff2"
-			crossorigin
-		/>
-	</head>
-	<body class="bg-black text-white">
-		<div class="nav-links">
-			<div class="w-full">
-				{config.header.menu.map((menuItem) => (
-					<div class="uppercase w-full">
-						<a href={core.links[menuItem.link] || menuItem.url} class="inline-block hover:underline px-4 py-2" class:list={[menuItem.url?.match(/^http/) ? "external" : ""]}>{menuItem.name}</a>
-					</div>
-				))}
-			</div>
-		</div>
-		<div class="w-full z-10 relative" class:list={[typeof banner === 'object' ? 'aspect-video' : (banner ? "h-[600px]" : "pb-6")]} id={banner === "true" ? "intro" : "no-intro"}>
-			{typeof banner === 'object' &&
-				<div class="absolute w-full aspect-video -z-10">
-					<div class="w-full h-full" style={`background-image: url(${banner.img}); background-size: 100% 100%; background-position: 0rem 0rem;`}></div>
-				</div>
-			}
-			<header class="flex pt-6 middle-pane-big">
-				<div class="mr-4 lg:hidden">
-					<div class="hamburger"></div>
-				</div>
-				<div class="w-40">
-					<a href="/" class="w3pn-logo" class:list={["w-32 lg:w-40", banner ? "hidden" : "block"]}></a>
-				</div>
-				<div class="hidden lg:flex grow gap-0 xl:gap-2 justify-center">
-					{config.header.menu.map((menuItem) => (
-						<div class="uppercase hover:text-[#c2c2c2]" class:list={[menuItem.link ? "xexternal" : "", Astro.url.pathname === menuItem.url ? "text-white" : ""]}>
-							<a href={core.links[menuItem.link] || menuItem.url} class="inline-block hover:underline px-4 py-2">
-								{menuItem.name}
+    <link
+      rel="preload"
+      href="/fonts/archivo-regular-latin-ext.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/archivo-regular-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/major-mono-display-v13-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/dm-mono-regular-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+  </head>
+  <body class="bg-black text-white">
+    <div class="nav-links">
+      <div class="w-full">
+        {
+          config.header.menu.map((menuItem) => (
+            <div class="uppercase w-full">
+              <a
+                href={core.links[menuItem.link] || menuItem.url}
+                class="inline-block hover:underline px-4 py-2"
+                class:list={[menuItem.url?.match(/^http/) ? "external" : ""]}
+              >
+                {menuItem.name}
+              </a>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div
+      class="w-full z-10 relative"
+      style={subimage
+        ? `background-image: url(${subimage}); background-size: cover; background-position: 0rem 0rem;`
+        : "	"}
+      class:list={[
+        typeof banner === "object"
+          ? "aspect-video"
+          : banner
+            ? "h-[600px]"
+            : "pb-6",
+      ]}
+      id={banner === "true" ? "intro" : "no-intro"}
+    >
+      {
+        typeof banner === "object" && (
+          <div class="absolute w-full aspect-video -z-10">
+            <div
+              class="w-full h-full"
+              style={`background-image: url(${banner.img}); background-size: 100% 100%; background-position: 0rem 0rem;`}
+            />
+          </div>
+        )
+      }
+      <header class="flex pt-6 middle-pane-big">
+        <div class="mr-4 lg:hidden">
+          <div class="hamburger"></div>
+        </div>
+        <div class="w-40">
+          <a
+            href="/"
+            class="w3pn-logo"
+            class:list={["w-32 lg:w-40", banner ? "hidden" : "block"]}></a>
+        </div>
+        <div class="hidden lg:flex grow gap-0 xl:gap-2 justify-center">
+          {
+            config.header.menu.map((menuItem) => (
+              <div
+                class="uppercase hover:text-[#c2c2c2]"
+                class:list={[
+                  menuItem.link ? "xexternal" : "",
+                  Astro.url.pathname === menuItem.url ? "text-white" : "",
+                ]}
+              >
+                <a
+                  href={core.links[menuItem.link] || menuItem.url}
+                  class="inline-block hover:underline px-4 py-2"
+                >
+                  {menuItem.name}
+                </a>
+              </div>
+            ))
+          }
+        </div>
+        <div
+          class="flex grow lg:grow-0 gap-3 lg:gap-6 justify-end pt-1 lg:pt-2.5"
+        >
+          {
+            config.header.rightMenu.map((key) => (
+              <a
+                href={core.links[key]}
+                class="block icon xsmall sm:small opacity-50 hover:opacity-100"
+                class:list={[key]}
+                target="_blank"
+              />
+            ))
+          }
+        </div>
+      </header>
+      {
+        banner && typeof banner !== "object" && (
+          <div class="w-full flex mt-20 sm:mt-32 middle-pane-medium">
+            <div>
+              <div class="w3pn-logo w-64 sm:w-72 lg:w-80 xl:w-96" />
+              <div class="text-left mt-10">{config.hero.text}</div>
+              <div class="mt-6">
+                <a class="button" href="/about">
+                  <button>About Web3Privacy Now</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        )
+      }
+      {
+        !banner && (
+          <>
+            <div class="middle-pane-medium mt-8 sm:mt-14 mb-2 sm:mb-8">
+              <div class="leading-none flex justify-center text-[4px] sm:text-[8px] text-white">
+                {/*<img src="/page-events.png" class="h-8 sm:h-14" title="Events" />*/}
+                <pre>
+                  <code class="font-mono layout-heading  ">
+                    {genHeading(title)}
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <div class="flex items-center justify-center w-full text-center">
+              <h3 class=" w-full max-w-[938px]">{subtext}</h3>
+            </div>
+          </>
+        )
+      }
+    </div>
 
-							</a>
-						</div>
-					))}
-				</div>
-				<div class="flex grow lg:grow-0 gap-3 lg:gap-6 justify-end pt-1 lg:pt-2.5">
-					{config.header.rightMenu.map((key) => (
-						<a href={core.links[key]} class="block icon xsmall sm:small opacity-50 hover:opacity-100" class:list={[key]} target="_blank"></a>
-					))}
-				</div>
-			</header>
-			{banner && typeof banner !== 'object' &&
-				<div class="w-full flex mt-20 sm:mt-32 middle-pane-medium">
-					<div>
-						<div class="w3pn-logo w-64 sm:w-72 lg:w-80 xl:w-96"></div>
-						<div class="text-left mt-10">
-							{config.hero.text}
-						</div>
-						<div class="mt-6">
-							<a class="button" href="/about"><button>About Web3Privacy Now</button></a>
-						</div>
-					</div>
-				</div>
-			}
-			{!banner &&
-				<div class="middle-pane-medium mt-8 sm:mt-14 mb-2 sm:mb-8">
-					<div class="leading-none flex justify-center text-[4px] sm:text-[8px] text-white">
-						{/*<img src="/page-events.png" class="h-8 sm:h-14" title="Events" />*/}
-						<pre><code class="font-mono layout-heading">{genHeading(title)}</code></pre>
-					</div>
-				</div>
-			}
-		</div>
+    <slot />
 
-		<slot />
-
-		<div class="border border-t-2 border-b-0 border-l-0 border-r-0 border-[#0f0f0f] mt-20 pt-10 pb-10">
-			<div class="middle-pane-big">
-				<div class="flex gap-10 text-lg items-center flex-wrap align-top" id="footerMenu">
-					<a href="/" class="w3pn-logo w-32"></a>
-					<div class="text-md"><a href="https://github.com/web3privacy/web" class="text-white hover:underline">v{pkg.version}</a></div>
-					<div class="grow flex sm:justify-end">
-						<div class="sm:flex justify-center flex-wrap gap-4 lg:gap-10">
-							{config.footer.menu.map((item) => (
-								<div class="flex gap-4 items-center menuItem lg:mb-0 mb-2">
-									<div class="icon small opacity-50" class:list={[item.ico]}></div>
-									<div class="text-white hover:underline"><a href={item.url || core.links[item.link]}>{item.title}</a></div>
-								</div>
-							))}
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			document.querySelector('.hamburger').addEventListener('click', () => {
-			  document.querySelector('.nav-links').classList.toggle('expanded');
-			});
-		</script>
-	</body>
+    <div
+      class="border border-t-2 border-b-0 border-l-0 border-r-0 border-[#0f0f0f] mt-20 pt-10 pb-10"
+    >
+      <div class="middle-pane-big">
+        <div
+          class="flex gap-10 text-lg items-center flex-wrap align-top"
+          id="footerMenu"
+        >
+          <a href="/" class="w3pn-logo w-32"></a>
+          <div class="text-md">
+            <a
+              href="https://github.com/web3privacy/web"
+              class="text-white hover:underline">v{pkg.version}</a
+            >
+          </div>
+          <div class="grow flex sm:justify-end">
+            <div class="sm:flex justify-center flex-wrap gap-4 lg:gap-10">
+              {
+                config.footer.menu.map((item) => (
+                  <div class="flex gap-4 items-center menuItem lg:mb-0 mb-2">
+                    <div
+                      class="icon small opacity-50"
+                      class:list={[item.ico]}
+                    />
+                    <div class="text-white hover:underline">
+                      <a href={item.url || core.links[item.link]}>
+                        {item.title}
+                      </a>
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".hamburger").addEventListener("click", () => {
+        document.querySelector(".nav-links").classList.toggle("expanded");
+      });
+    </script>
+  </body>
 </html>

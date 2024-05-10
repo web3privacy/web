@@ -1,26 +1,34 @@
 ---
-
-import * as config from '../config.yaml';
-import core from '../core.json';
-import contributors from '../contributors.json';
-import { getPersonByGH } from '../lib/core.js';
-import PeopleCarousel from '../components/PeopleCarousel.astro';
+import * as config from "../config.yaml";
+import core from "../core.json";
+import contributors from "../contributors.json";
+import { getPersonByGH } from "../lib/core.js";
+import PeopleCarousel from "../components/PeopleCarousel.astro";
 
 function findPerson(src) {
-    const p = core.people.find(p => src.refs?.twitter ? p.refs?.twitter === src.refs.twitter : (src.refs?.bsky ? p.refs.bsky === src.refs.bsky : {}))
-    if (p) {
-        p.ct = src
-    }
-    return p
+  const p = core.people.find((p) =>
+    src.refs?.twitter
+      ? p.refs?.twitter === src.refs.twitter
+      : src.refs?.bsky
+        ? p.refs.bsky === src.refs.bsky
+        : {}
+  );
+  if (p) {
+    p.ct = src;
+  }
+  return p;
 }
 
 function personLink(person) {
-    return person.refs?.twitter ? `https://twitter.com/${person.refs.twitter}` : (person.refs?.bsky ? `https://bsky.app/profile/${person.refs.bsky}` : '#')
+  return person.refs?.twitter
+    ? `https://twitter.com/${person.refs.twitter}`
+    : person.refs?.bsky
+      ? `https://bsky.app/profile/${person.refs.bsky}`
+      : "#";
 }
-
 ---
 
-<div class="mt-20">
+<!-- <div class="mt-20">
     <h1><a href="https://docs.web3privacy.info/follow-us">Follow us</a></h1>
     <div class="w3pn-wgrid">
         {config.landing.follow.map((item) => (
@@ -43,39 +51,65 @@ function personLink(person) {
             </a>
         ))}
     </div>
-</div>
+</div> -->
 <div class="mt-16">
-    <h1><a href="https://docs.web3privacy.info/get-involved">Join the Community</a></h1>
-    <div>{config.landing.community}</div>
+  <h1>
+    <a href="https://docs.web3privacy.info/get-involved">Join the Community</a>
+  </h1>
+  <div>{config.landing.community}</div>
 
-    <h2 class="my-6">Speakers</h2>
-    <div class="flex gap-3 flex-wrap items-center">
-        {core.people.filter(p => !core.teams['core-team'].includes(p.id)).filter(p => p.imageUrl).map((person) => (
-            <div>
-                <a href={personLink(person)}>
-                    <img src={person.imageUrl} title={person.name} class="w-14 rounded-full aspect-square" />
-                </a>
-            </div>
-        ))}
-    </div>
+  <h2 class="my-6">Speakers</h2>
+  <div class="flex gap-3 flex-wrap items-center">
+    {
+      core.people
+        .filter((p) => !core.teams["core-team"].includes(p.id))
+        .filter((p) => p.imageUrl)
+        .map((person) => (
+          <div>
+            <a href={personLink(person)}>
+              <img
+                src={person.imageUrl}
+                title={person.name}
+                class="w-14 rounded-full aspect-square"
+              />
+            </a>
+          </div>
+        ))
+    }
+  </div>
 
-    <div class="flex gap-3 lg:gap-6 pt-4 flex-wrap mt-4 mb-14">
-        <a href={core.links.cfp} class="button inverted"><button>Submit your proposal (CfP)</button></a>
+  <div class="flex gap-3 lg:gap-6 pt-4 flex-wrap mt-4 mb-14">
+    <a href={core.links.cfp} class="button inverted"
+      ><button>Submit your proposal (CfP)</button></a
+    >
+  </div>
 
-    </div>
+  <h2 class="my-6">Git Contributors</h2>
+  <div class="flex gap-3 flex-wrap mb-4 items-center">
+    {
+      // filter(p => !core.teams['core-team'].includes(getPersonByGH(p.login)?.id))
+      contributors.items.map((contrib) => (
+        <div>
+          <a href={contrib.html_url} target="_blank" title={contrib.login}>
+            <img
+              src={contrib.avatar_url}
+              class="w-14 rounded-full aspect-square"
+            />
+          </a>
+        </div>
+      ))
+    }
+  </div>
 
-    <h2 class="my-6">Git Contributors</h2>
-    <div class="flex gap-3 flex-wrap mb-4 items-center">
-
-        { // filter(p => !core.teams['core-team'].includes(getPersonByGH(p.login)?.id))
-        contributors.items.map((contrib) => (
-            <div><a href={contrib.html_url} target="_blank" title={contrib.login}><img src={contrib.avatar_url} class="w-14 rounded-full aspect-square"></a></div>
-        ))}
-    </div>
-
-    <div class="flex gap-4 lg:gap-6 pt-4 flex-wrap">
-        <a href="https://docs.web3privacy.info/get-involved" class="button inverted"><button>Get involved</button></a>
-        <a href="/leaderboard" class="button inverted"><button>Leaderboard</button></a>
-        <a href="https://docs.web3privacy.info/donate/" class="button inverted"><button>Donate</button></a>
-    </div>
+  <div class="flex gap-4 lg:gap-6 pt-4 flex-wrap">
+    <a href={core.links.telegram} class="button inverted"
+      ><button>Telegram</button></a
+    >
+    <a href={core.links.signal} class="button inverted"
+      ><button>Signal</button></a
+    >
+    <a href={core.links.matrix} class="button inverted"
+      ><button>matrix hub</button></a
+    >
+  </div>
 </div>
