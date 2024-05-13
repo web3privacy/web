@@ -38,7 +38,7 @@
       "received_events_url": "https://api.github.com/users/Msiusko/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 2091
+      "contributions": 2163
     },
     {
       "login": "burningtree",
@@ -122,7 +122,7 @@
       "received_events_url": "https://api.github.com/users/ethanolo-eth/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 148
+      "contributions": 164
     },
     {
       "login": "f1nass",
@@ -209,6 +209,27 @@
       "contributions": 21
     },
     {
+      "login": "Ressac-No1",
+      "id": 119933943,
+      "node_id": "U_kgDOByYL9w",
+      "avatar_url": "https://avatars.githubusercontent.com/u/119933943?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Ressac-No1",
+      "html_url": "https://github.com/Ressac-No1",
+      "followers_url": "https://api.github.com/users/Ressac-No1/followers",
+      "following_url": "https://api.github.com/users/Ressac-No1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Ressac-No1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Ressac-No1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Ressac-No1/subscriptions",
+      "organizations_url": "https://api.github.com/users/Ressac-No1/orgs",
+      "repos_url": "https://api.github.com/users/Ressac-No1/repos",
+      "events_url": "https://api.github.com/users/Ressac-No1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Ressac-No1/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 13
+    },
+    {
       "login": "jakubklim",
       "id": 93137966,
       "node_id": "U_kgDOBY0sLg",
@@ -246,27 +267,6 @@
       "repos_url": "https://api.github.com/users/Diex5/repos",
       "events_url": "https://api.github.com/users/Diex5/events{/privacy}",
       "received_events_url": "https://api.github.com/users/Diex5/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 12
-    },
-    {
-      "login": "Ressac-No1",
-      "id": 119933943,
-      "node_id": "U_kgDOByYL9w",
-      "avatar_url": "https://avatars.githubusercontent.com/u/119933943?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Ressac-No1",
-      "html_url": "https://github.com/Ressac-No1",
-      "followers_url": "https://api.github.com/users/Ressac-No1/followers",
-      "following_url": "https://api.github.com/users/Ressac-No1/following{/other_user}",
-      "gists_url": "https://api.github.com/users/Ressac-No1/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/Ressac-No1/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/Ressac-No1/subscriptions",
-      "organizations_url": "https://api.github.com/users/Ressac-No1/orgs",
-      "repos_url": "https://api.github.com/users/Ressac-No1/repos",
-      "events_url": "https://api.github.com/users/Ressac-No1/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/Ressac-No1/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 12
@@ -356,6 +356,27 @@
       "contributions": 5
     },
     {
+      "login": "0xdevant",
+      "id": 26415019,
+      "node_id": "MDQ6VXNlcjI2NDE1MDE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26415019?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/0xdevant",
+      "html_url": "https://github.com/0xdevant",
+      "followers_url": "https://api.github.com/users/0xdevant/followers",
+      "following_url": "https://api.github.com/users/0xdevant/following{/other_user}",
+      "gists_url": "https://api.github.com/users/0xdevant/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/0xdevant/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/0xdevant/subscriptions",
+      "organizations_url": "https://api.github.com/users/0xdevant/orgs",
+      "repos_url": "https://api.github.com/users/0xdevant/repos",
+      "events_url": "https://api.github.com/users/0xdevant/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/0xdevant/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 4
+    },
+    {
       "login": "wslyvh",
       "id": 25974464,
       "node_id": "MDQ6VXNlcjI1OTc0NDY0",
@@ -393,27 +414,6 @@
       "repos_url": "https://api.github.com/users/ligi/repos",
       "events_url": "https://api.github.com/users/ligi/events{/privacy}",
       "received_events_url": "https://api.github.com/users/ligi/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 3
-    },
-    {
-      "login": "0xdevant",
-      "id": 26415019,
-      "node_id": "MDQ6VXNlcjI2NDE1MDE5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26415019?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/0xdevant",
-      "html_url": "https://github.com/0xdevant",
-      "followers_url": "https://api.github.com/users/0xdevant/followers",
-      "following_url": "https://api.github.com/users/0xdevant/following{/other_user}",
-      "gists_url": "https://api.github.com/users/0xdevant/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/0xdevant/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/0xdevant/subscriptions",
-      "organizations_url": "https://api.github.com/users/0xdevant/orgs",
-      "repos_url": "https://api.github.com/users/0xdevant/repos",
-      "events_url": "https://api.github.com/users/0xdevant/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/0xdevant/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 3
