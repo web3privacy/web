@@ -7,8 +7,9 @@ import articles from '../articles.json';
 import talks from '../talks.json';
 import explorer from '../explorer.json';
 import dbRepo from '../db-repo.json';
-import { isPast, format } from 'date-fns';
+import { format } from 'date-fns';
 import EventItem from '../components/EventItem.astro';
+import { isFutureDate } from '../lib/date';
 
 const events = core.events;
 
@@ -16,10 +17,7 @@ const upcomingEvents = []
 let eventsPast = 0
 let eventsUpcoming = 0
 for (const ev of events) {
-	let future = true
-	if (ev.date.match(/^\d{4}-\d{2}-\d{2}$/) && isPast(new Date(ev.date))) {
-		future = false
-	}
+	let future = isFutureDate(ev.date)
 	if (future) {
 		upcomingEvents.push(ev)
 		eventsUpcoming++

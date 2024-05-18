@@ -5,6 +5,7 @@ import core from '../core.json';
 import EventItem from '../components/EventItem.astro';
 import { isFuture } from 'date-fns';
 import { types, countryNames } from '../lib/events.js';
+import { isFutureDate } from '../lib/date';
 
 const { type: selectedType } = Astro.props;
 const { country: selectedCountry } = Astro.props;
@@ -43,12 +44,22 @@ function eventsFilter (year, future=true) {
 }
 
 const pastYears = [...new Set(events.map(e => e.date.match(/^(\d{4})/)[1]))];
-const upcoming = events.filter(x => x.date.match(/^2024/))
+
+let upcomingEvents = [];
+let pastEvents = [];
+for (const e of events) {
+	if (isFutureDate(e.date)) {
+		upcomingEvents.push(e)
+	} else {
+		pastEvents.push(e)
+	}
+}
+const upcoming = events.filter(x => isFutureDate(x.date))
 
 const past = {}
 let pastTotal = 0
 for (const year of pastYears.reverse()) {
-	past[year] = events.filter(eventsFilter(year, false)).reverse()
+	past[year] = pastEvents.filter(eventsFilter(year, false)).reverse()
 	pastTotal += past[year].length
 }
 
