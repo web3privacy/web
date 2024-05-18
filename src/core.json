@@ -1266,6 +1266,25 @@
       }
     },
     {
+      "id": "c24ber",
+      "type": "privacy-corner",
+      "date": "2024-05-24",
+      "days": 3,
+      "city": "Berlin",
+      "country": "de",
+      "coincidence": "ETHBerlin",
+      "lead": "Tree",
+      "helpers": [
+        "Mykola",
+        "Coinmandeer"
+      ],
+      "design": {
+        "image": "berlin01"
+      },
+      "images": {},
+      "thumbs": {}
+    },
+    {
       "id": "s24prg",
       "issue": 11,
       "type": "summit",
