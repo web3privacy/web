@@ -1276,8 +1276,12 @@
       "lead": "Tree",
       "helpers": [
         "Mykola",
-        "Coinmandeer"
+        "Coinmandeer",
+        "Robert"
       ],
+      "links": {
+        "web": "https://c24ber.web3privacy.info/"
+      },
       "design": {
         "image": "berlin01"
       },

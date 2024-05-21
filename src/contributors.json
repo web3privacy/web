@@ -59,7 +59,7 @@
       "received_events_url": "https://api.github.com/users/burningtree/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 949
+      "contributions": 950
     },
     {
       "login": "EclecticSamurai",
@@ -164,7 +164,7 @@
       "received_events_url": "https://api.github.com/users/coinmandeer/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 53
+      "contributions": 54
     },
     {
       "login": "jiricepelka",
