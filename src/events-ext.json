@@ -1,15 +1,5 @@
 [
   {
-    "url": "w3pn-meetup-berlin1",
-    "name": "Web3Privacy now @ ETHBerlin 4",
-    "period": [
-      "2024-05-22T14:00:00.000Z",
-      "2024-05-22T20:00:00.000Z"
-    ],
-    "coverUrl": "https://images.lumacdn.com/event-covers/cy/10b124c9-2200-4201-bed9-b7f1299ba9e6",
-    "guestCount": 0
-  },
-  {
     "url": "w3pn-summit-prague2",
     "name": "Web3Privacy now Summit @ ETHPrague 2024",
     "period": [
@@ -17,7 +7,7 @@
       "2024-05-31T01:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/sd/eb883e68-22e9-45b1-add6-abea53a0ac0b",
-    "guestCount": 187
+    "guestCount": 188
   },
   {
     "url": "w3pn-bled-hackathon1",
