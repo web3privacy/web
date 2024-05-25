@@ -37,7 +37,7 @@
       "2024-06-24T01:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/ig/1f239f2c-574d-4c00-b827-c23a8c4317eb",
-    "guestCount": 3
+    "guestCount": 4
   },
   {
     "url": "w3pn-meetup-bru1",
@@ -57,7 +57,7 @@
       "2024-09-07T17:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/xu/a38ee4c1-e138-4d4a-acd2-a0ffbc877efa",
-    "guestCount": 1
+    "guestCount": 2
   },
   {
     "url": "w3pn-m24cph",
@@ -67,7 +67,7 @@
       "2024-09-19T18:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/bb/c8f15bb1-5ddd-4f92-a114-fbca834ec4de",
-    "guestCount": 2
+    "guestCount": 3
   },
   {
     "url": "w3pn-meetup-rome1",
@@ -77,7 +77,7 @@
       "2024-10-03T19:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/80/e9b19f3d-3b20-4773-8c3a-cecfb16e8fc1",
-    "guestCount": 4
+    "guestCount": 5
   },
   {
     "url": "w3pn-summit-brno1",
@@ -87,7 +87,7 @@
       "2024-10-25T02:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/ax/fbcb295d-bd4e-4446-8928-336ef75b8aa9",
-    "guestCount": 4
+    "guestCount": 5
   },
   {
     "url": "w3pn-meetup-devcon7",
@@ -97,6 +97,6 @@
       "2024-11-11T14:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/uq/487a6e04-6d50-4f50-8aa8-8148c7a807c4",
-    "guestCount": 8
+    "guestCount": 9
   }
 ]
