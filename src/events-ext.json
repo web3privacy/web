@@ -10,16 +10,6 @@
     "guestCount": 2
   },
   {
-    "url": "w3pn-os24q2",
-    "name": "W3PN ONLINE Summit Q2/2024",
-    "period": [
-      "2024-06-23T16:00:00.000Z",
-      "2024-06-24T01:00:00.000Z"
-    ],
-    "coverUrl": "https://images.lumacdn.com/event-covers/ig/1f239f2c-574d-4c00-b827-c23a8c4317eb",
-    "guestCount": 8
-  },
-  {
     "url": "w3pn-meetup-bru1",
     "name": "Web3Privacy now \"Occupy meetup\" @ EthCC 7",
     "period": [
@@ -27,7 +17,7 @@
       "2024-07-12T16:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/5n/343db27e-349c-4194-acd1-9f4a1765b606",
-    "guestCount": 98
+    "guestCount": 99
   },
   {
     "url": "w3pn-m24waw",
