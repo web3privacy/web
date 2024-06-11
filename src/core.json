@@ -448,7 +448,7 @@
       "caption": "Founder, [Fileverse](https://fileverse.io)",
       "country": "gr",
       "refs": {
-        "twitter": "https://twitter.com/miroyato"
+        "twitter": "miroyato"
       },
       "imageUrl": "https://data.web3privacy.info/img/people/andreas-tsamados.jpg",
       "thumbs": {}
@@ -594,6 +594,16 @@
         "128": "https://data.web3privacy.info/img/people/thumbs/ameen-soleimani-128px.webp",
         "400": "https://data.web3privacy.info/img/people/thumbs/ameen-soleimani-400px.webp"
       }
+    },
+    {
+      "id": "sterlin-lujan",
+      "name": "Sterlin Lujan",
+      "caption": "Panarchy, crypto-futurism, relational governance",
+      "refs": {
+        "twitter": "SterlinLujan"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/sterlin-lujan.jpg",
+      "thumbs": {}
     },
     {
       "id": "jaya-klara-brekke",
@@ -824,6 +834,16 @@
         "128": "https://data.web3privacy.info/img/people/thumbs/manu-alzuru-128px.webp",
         "400": "https://data.web3privacy.info/img/people/thumbs/manu-alzuru-400px.webp"
       }
+    },
+    {
+      "id": "moritz-boullenger",
+      "name": "Moritz Boullenger",
+      "caption": "Co-founder of fluidkey",
+      "refs": {
+        "twitter": "m0zrt"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/moritz-boullenger.jpg",
+      "thumbs": {}
     },
     {
       "id": "coinmandeer",
@@ -1115,6 +1135,7 @@
       "optional": true,
       "slots": 3,
       "lead": "Mykola",
+      "visitors": 80,
       "design": {
         "image": "bucharest01"
       },
@@ -1166,6 +1187,7 @@
       "place": "[Vrij Paleis](https://www.vrijpaleis.nl/)",
       "place-address": "Paleisstraat 107, 1012 ZL Amsterdam, Paesi Bassi",
       "lead": "PG",
+      "visitors": 90,
       "helpers": [
         "Mykola",
         "Alina"
@@ -1178,6 +1200,8 @@
       },
       "speakers": [
         "kieran-mesquita",
+        "moritz-boullenger",
+        "sterlin-lujan",
         "pg",
         "serinko"
       ],
@@ -1223,6 +1247,7 @@
       "place-address": "Rungestraße 20, 10179 Berlin",
       "coincidence": "ETHBerlin",
       "lead": "Mykola",
+      "visitors": 150,
       "helpers": [
         "ligi"
       ],
@@ -1230,7 +1255,8 @@
         "afri-schoedon",
         "joshua-davila",
         "vaclav-pavlin",
-        "jaya-klara-brekke"
+        "jaya-klara-brekke",
+        "mykola-siusko"
       ],
       "slots": 4,
       "links": {
@@ -1279,6 +1305,7 @@
         "Coinmandeer",
         "Robert"
       ],
+      "visitors": 210,
       "links": {
         "web": "https://c24ber.web3privacy.info/"
       },
@@ -1297,6 +1324,7 @@
       "country": "cz",
       "coincidence": "ETHPrague",
       "lead": "PG",
+      "visitors": 180,
       "helpers": [
         "PG",
         "Mykola",
@@ -1316,7 +1344,16 @@
         "andreas-tsamados",
         "serinko",
         "sebastian-burgel",
-        "mykola-siusko"
+        "mykola-siusko",
+        "ameen-soleimani",
+        "steffen-kux",
+        "althea",
+        "nick-almond",
+        "juraj-bednar",
+        "max-hampshire",
+        "mario-havel",
+        "alex-kampa",
+        "sterlin-lujan"
       ],
       "design": {
         "image": "prague01"
