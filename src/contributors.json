@@ -101,7 +101,7 @@
       "received_events_url": "https://api.github.com/users/ethanolo-eth/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 309
+      "contributions": 310
     },
     {
       "login": "cryptomar1o",
@@ -209,6 +209,27 @@
       "contributions": 22
     },
     {
+      "login": "0xdevant",
+      "id": 26415019,
+      "node_id": "MDQ6VXNlcjI2NDE1MDE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26415019?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/0xdevant",
+      "html_url": "https://github.com/0xdevant",
+      "followers_url": "https://api.github.com/users/0xdevant/followers",
+      "following_url": "https://api.github.com/users/0xdevant/following{/other_user}",
+      "gists_url": "https://api.github.com/users/0xdevant/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/0xdevant/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/0xdevant/subscriptions",
+      "organizations_url": "https://api.github.com/users/0xdevant/orgs",
+      "repos_url": "https://api.github.com/users/0xdevant/repos",
+      "events_url": "https://api.github.com/users/0xdevant/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/0xdevant/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 14
+    },
+    {
       "login": "Ressac-No1",
       "id": 119933943,
       "node_id": "U_kgDOByYL9w",
@@ -267,27 +288,6 @@
       "repos_url": "https://api.github.com/users/Diex5/repos",
       "events_url": "https://api.github.com/users/Diex5/events{/privacy}",
       "received_events_url": "https://api.github.com/users/Diex5/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 12
-    },
-    {
-      "login": "0xdevant",
-      "id": 26415019,
-      "node_id": "MDQ6VXNlcjI2NDE1MDE5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26415019?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/0xdevant",
-      "html_url": "https://github.com/0xdevant",
-      "followers_url": "https://api.github.com/users/0xdevant/followers",
-      "following_url": "https://api.github.com/users/0xdevant/following{/other_user}",
-      "gists_url": "https://api.github.com/users/0xdevant/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/0xdevant/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/0xdevant/subscriptions",
-      "organizations_url": "https://api.github.com/users/0xdevant/orgs",
-      "repos_url": "https://api.github.com/users/0xdevant/repos",
-      "events_url": "https://api.github.com/users/0xdevant/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/0xdevant/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 12
