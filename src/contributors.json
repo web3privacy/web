@@ -38,7 +38,7 @@
       "received_events_url": "https://api.github.com/users/Msiusko/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 2821
+      "contributions": 2822
     },
     {
       "login": "burningtree",
@@ -834,6 +834,27 @@
       "repos_url": "https://api.github.com/users/zksquirrel/repos",
       "events_url": "https://api.github.com/users/zksquirrel/events{/privacy}",
       "received_events_url": "https://api.github.com/users/zksquirrel/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 1
+    },
+    {
+      "login": "brenzi",
+      "id": 10366175,
+      "node_id": "MDQ6VXNlcjEwMzY2MTc1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10366175?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/brenzi",
+      "html_url": "https://github.com/brenzi",
+      "followers_url": "https://api.github.com/users/brenzi/followers",
+      "following_url": "https://api.github.com/users/brenzi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/brenzi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/brenzi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/brenzi/subscriptions",
+      "organizations_url": "https://api.github.com/users/brenzi/orgs",
+      "repos_url": "https://api.github.com/users/brenzi/repos",
+      "events_url": "https://api.github.com/users/brenzi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/brenzi/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 1
