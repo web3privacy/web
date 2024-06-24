@@ -38,7 +38,7 @@
       "received_events_url": "https://api.github.com/users/Msiusko/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 2820
+      "contributions": 2821
     },
     {
       "login": "burningtree",
@@ -897,6 +897,27 @@
       "repos_url": "https://api.github.com/users/toml01/repos",
       "events_url": "https://api.github.com/users/toml01/events{/privacy}",
       "received_events_url": "https://api.github.com/users/toml01/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 1
+    },
+    {
+      "login": "0xturboblitz",
+      "id": 62038140,
+      "node_id": "MDQ6VXNlcjYyMDM4MTQw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62038140?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/0xturboblitz",
+      "html_url": "https://github.com/0xturboblitz",
+      "followers_url": "https://api.github.com/users/0xturboblitz/followers",
+      "following_url": "https://api.github.com/users/0xturboblitz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/0xturboblitz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/0xturboblitz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/0xturboblitz/subscriptions",
+      "organizations_url": "https://api.github.com/users/0xturboblitz/orgs",
+      "repos_url": "https://api.github.com/users/0xturboblitz/repos",
+      "events_url": "https://api.github.com/users/0xturboblitz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/0xturboblitz/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 1
