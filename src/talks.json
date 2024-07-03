@@ -1,5 +1,11 @@
 [
   {
+    "url": "https://www.youtube.com/watch?v=f6XFIdy4MXg",
+    "title": "Hey Cypherpunk, Embrace Diversity - Ying Tong",
+    "img": "https://i3.ytimg.com/vi/f6XFIdy4MXg/maxresdefault.jpg",
+    "date": "2024-07-03T15:55:30.000Z"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=7Bl2C11iLFA",
     "title": "Solidarity is key for Cypherpunks to Be Practical - Jaromil x Dyne.org",
     "img": "https://i4.ytimg.com/vi/7Bl2C11iLFA/maxresdefault.jpg",
@@ -7,13 +13,13 @@
   },
   {
     "url": "https://www.youtube.com/watch?v=M7WmOMENvPo",
-    "title": "Privacy is a Mistake - Awa Sunyin x Namada & Anoma",
+    "title": "Privacy is Freedom - Awa Sunyin x Namada & Anoma",
     "img": "https://i2.ytimg.com/vi/M7WmOMENvPo/maxresdefault.jpg",
     "date": "2024-07-03T11:28:47.000Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=iBOdg0clbBE",
-    "title": "We Need More Crypto Collectives | Franzi x Department of Decentralization [ETHBerlin, Protocol Berg]",
+    "title": "Values and Identity for Crypto Events | Franzi x Department of Decentralization [ETHBerlin]",
     "img": "https://i2.ytimg.com/vi/iBOdg0clbBE/maxresdefault.jpg",
     "date": "2024-07-01T13:43:20.000Z"
   },
@@ -82,11 +88,5 @@
     "title": "ajs [Monerokon] on Collaboration tooling x Web3Privacy Now summit",
     "img": "https://i1.ytimg.com/vi/0b736g-xQRk/maxresdefault.jpg",
     "date": "2024-06-06T10:22:51.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=hhcQCdz_Kl0",
-    "title": "Free Software to End Mass Surveillance with Ahmed Ghappour [GC, Espresso Systems]",
-    "img": "https://i1.ytimg.com/vi/hhcQCdz_Kl0/maxresdefault.jpg",
-    "date": "2024-06-05T09:51:43.000Z"
   }
 ]
