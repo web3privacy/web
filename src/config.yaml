@@ -196,19 +196,19 @@ organisation:
 
   table:
     events:
-      - objective: 6+ Events in different countires
+      - objective: 11+ Events in different countires
         details: |
-          1 Summit + 1 Hackathon + 3 Meetups [target outreach: 1000 people IRL]
+          1 Congress + 2 Summit + 1 Hackathon + 7 Meetups [IRL outreach: 2000 people]
         height: 50
     research:
       - objective: Privacy in Ethereum
         details: |
-          The most comprehensive report of privacy
+          Comprehensive mapping of Ethereum-centric privacy services, use cases, product stages, missing areas (use cases), funding landscape, etc.
         url: /research/ethereum
         height: 40
-      - objective: Use cases DB update & improve (500 → 700 privacy projects
+      - objective: Use cases DB update & improve (700 → 1200 projects)
         details: |
-          Most extensive web3 db of privacy-enhancing solutions
+          The most extensive web3 database of privacy-enhancing solutions
         url: /research/ethereum
         height: 60
       - objective: Privacy Annual Report (150+ pages)
@@ -234,7 +234,7 @@ organisation:
     tools:
       - objective: Privacy Explorer V.2
         details: |
-          300 services, 5 new categories, improve scoring model
+          600 services, 5 new categories, improve scoring model
         url: /research/ethereum
         height: 40
       - objective: Privacy Routing tool (V0.1 release)
@@ -245,7 +245,7 @@ organisation:
     education:
       - objective: Academy
         details: |
-          101 privacy educational track with our partners
+          Structured learning paths, playlists, and cohort-based programs 
 
         height: 40
       - objective: Hackathon Curation Pack
