@@ -1524,8 +1524,11 @@
       },
       "speakers": [
         "jaromil",
-        "vaclav-pavlin",
-        "mykola-siusko"
+        "arturo-filasto",
+        "luca-lezzerini",
+        "andrea-togni",
+        "emanuele-russo",
+        "marco-castignoli",
       ],
       "images": {
         "poster-simple": "https://data.web3privacy.info/img/events/2024/m24rom-poster-simple.png",
@@ -1552,5 +1555,89 @@
         "wide:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24rom-wide-360px.webp"
       }
     }
+    {
+      "id": "c24bkk",
+      "issue": 6,
+      "type": "congress",
+      "tags": [
+        "sfe"
+      ],
+      "date": "2024-11-11",
+      "city": "Bangkok",
+      "country": "de",
+      "place": "[TBA](https://congress.web3privacy.info/)",
+      "place-address": "TBA",
+      "coincidence": "DevCon",
+      "lead": "Mykola",
+      "visitors": 300,
+      "helpers": [
+        "pg"
+      ],
+      "speakers": [
+        "scott-moore",
+        "silke-noa",
+        "kurt-opsahl",
+        "nick-almond",
+        "ameen-solemani",
+        "jarrad-hope",
+        "adrian-brink",
+        "tsu-kareta",
+        "andreas-miroyato",
+        "ahmed-ghappour",
+        "alex-gluchowski",
+        "amit-chaudhary",
+        "ann-brody",
+        "claire-kart",
+        "costanza-gallo",
+        "daniel-luca",
+        "lefteris-karapetsas",
+        "lasha-antatze",
+        "auryn-macmillan",
+        "bob-summerwill",
+        "manu-alzuru",
+        "dapplion",
+        "kris",
+        "hsinju-chuang",
+        "michelle-lai",
+        "ying-tong",
+        "remi-gai",
+        "pie-man",
+        "oskarth",
+        "nate",
+        "gavin-birch",
+      ],
+      "slots": 4,
+      "links": {
+        "rsvp": "http://lu.ma/w3pn-meetup-devcon7",
+        "web": "https://congress.web3privacy.info"
+      },
+      "design": {
+        "image": "bangkok01"
+      },
+      "images": {
+        "wide-square": "https://data.web3privacy.info/img/events/2024/c24bkk-wide-square.png",
+        "poster": "https://data.web3privacy.info/img/events/2024/c24bkk-poster.png",
+        "poster-simple": "https://data.web3privacy.info/img/events/2024/c24bkk-poster-simple.png",
+        "square": "https://data.web3privacy.info/img/events/2024/c24bkk-square.png",
+        "wide": "https://data.web3privacy.info/img/events/2024/c24bkk-wide.png"
+      },
+      "thumbs": {
+        "poster-simple:128": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-poster-simple-128px.webp",
+        "wide:128": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-wide-128px.webp",
+        "wide-square:640": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-wide-square-640px.webp",
+        "wide:360": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-wide-360px.webp",
+        "wide-square:360": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-wide-square-360px.webp",
+        "poster:640": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-poster-640px.webp",
+        "poster-simple:360": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-poster-simple-360px.webp",
+        "square:128": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-square-128px.webp",
+        "square:640": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-square-640px.webp",
+        "poster:128": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-poster-128px.webp",
+        "square:360": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-square-360px.webp",
+        "poster-simple:640": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-poster-simple-640px.webp",
+        "poster:360": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-poster-360px.webp",
+        "wide:640": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-wide-640px.webp",
+        "wide-square:128": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-wide-square-128px.webp"
+      }
+    },
   ]
 }
