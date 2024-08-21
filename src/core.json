@@ -1010,7 +1010,80 @@
         "128": "https://data.web3privacy.info/img/people/thumbs/serinko-128px.webp",
         "400": "https://data.web3privacy.info/img/people/thumbs/serinko-400px.webp"
       }
-    }
+    },
+    {
+      "id": "Arturo",
+      "name": "Arturo Filastò",
+      "nickname": "Arturo Filasto",
+      "caption": "founder & CTO of [Open Observatory of Network Interference](https://ooni.org/)",
+      "refs": {
+        "linkedin": "arturofb"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/arturo-filasto.png",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/arturo-filasto-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/arturo-filasto-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/arturo-filasto-400px.webp"
+      }
+    },
+    {
+      "id": "luca-lezzerini",
+      "name": "Luca Lezzerini",
+      "nickname": "Luca",
+      "caption": "Academic Professor in Software Engineering & Data Science, true activist",
+      "refs": {
+        "linkedin": "luca-lezzerini-7044304"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/luca-lezzerini.png",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/luca-lezzerini-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/luca-lezzerini-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/luca-lezzerini-400px.webp"
+      }
+    },
+        {
+      "id": "andrea-togni",
+      "name": "Andrea Togni",
+      "nickname": "Andrea",
+      "caption": "Philosopher, [Monero Privacy Policy](https://getmonero.org/)",
+      "refs": {
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/andrea-togni.jpeg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/andrea-togni-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/andrea-togni-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/andrea-togni-400px.webp"
+      }
+    },
+        {
+      "id": "emanuele-russo",
+      "name": "Emanuele Russo",
+      "nickname": "Emanuele",
+      "caption": "Human Rights Education Expert, Inventor [Hate Trackers]https://www.hate-trackers.com/beyondborders)",
+      "refs": {
+        "linkedin": "emanuele-russo-ph-d-40037b11/"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/emanuele-russo.jpeg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/emanuele-russo-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/emanuele-russo-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/emanuele-russo-400px.webp"
+      }
+    },
+        {
+      "id": "marco-castignoli",
+      "name": "Marco Castignoli",
+      "nickname": "Marco",
+      "caption": "Dev [Ethereum Foundation](https://ethereum.foundation), Open Source Maintainer",
+      "refs": {
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/marco-castignoli.jpeg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/marco-castignoli-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/marco-castignoli-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/marco-castignoli-400px.webp"
+      }
+    },
   ],
   "events": [
     {
