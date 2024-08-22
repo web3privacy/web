@@ -58,7 +58,7 @@ export function nameRenderer (item, full = false) {
     switch (item.type) {
         case 'summit':
             //num = item.id.match(/^w3ps(\d+)$/)[1]
-            return `Summmit ${item.city}` + (full ? ` ${date.year}`: '')// + (cc ? ` @ ${cc}` : '')
+            return `Summit ${item.city}` + (full ? ` ${date.year}`: '')// + (cc ? ` @ ${cc}` : '')
             break;
         case 'meetup':
             //num = item.id.match(/(\d+)$/)
