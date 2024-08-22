@@ -6,7 +6,7 @@ export const types = [
     { id: "summit", name: 'Summit', plural: 'Summits' },
     { id: "privacy-corner", name: 'Privacy Corner', plural: 'Privacy Corners' },
     { id: "online-summit", name: 'Online Summit', plural: 'Online Summits' },
-    { id: 'meta-hackathon', name: 'Meta-hackathon', plural: 'Meta-hacktahons'},
+    { id: 'meta-hackathon', name: 'Meta-hackathon', plural: 'Meta-hackathons'},
 ]
 
 export const countryNames = {
