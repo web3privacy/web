@@ -17,6 +17,7 @@
     "events-ext": "deno run --allow-all utils/events-ext.js",
     "db-repo": "deno run --allow-all utils/db-repo.js",
     "gen-images": "deno run --allow-all utils/gen-images.js",
+    "dependency-fix": "npm fund && npm audit fix --force",
     "sync-all": "npm run core && npm run contribs && npm run articles && npm run talks && npm run explorer && npm run events-ext && npm run db-repo"
   },
   "dependencies": {
