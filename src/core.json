@@ -546,9 +546,10 @@
     {
       "id": "juraj-bednar",
       "name": "Juraj Bednar",
-      "caption": "Educator, writer, cryptoanarchist & biohacker [blog](https://juraj.bednar.io/)",
+      "caption": "Educator, writer, cryptoanarchist & biohacker ([blog](https://juraj.bednar.io/))",
+      "country": "sk",
       "refs": {
-        "twitter": "SterlinLujan"
+        "twitter": "jurbed"
       },
       "imageUrl": "https://data.web3privacy.info/img/people/juraj-bednar.jpg",
       "thumbs": {
