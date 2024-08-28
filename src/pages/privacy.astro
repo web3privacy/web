@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/base.astro";
+import * as config from "../config.yaml";
+import core from "../core.json";
+import AboutFooter from "../components/AboutFooter.astro";
+import AboutItemGrid from "../components/AboutItemGrid.astro";
+import AboutWidget from "../components/AboutWidget.astro";
+---
+
+<BaseLayout
+  title="Privacy Policy"
+  image="og_index"
+  subtext="Privacy Policy - Web3PrivacyNow"
+>
+  <div class="middle-pane-medium mt-10">
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-16 mb-[82px]">
+      <div class="flex flex-col gap-[36px] md:order-2">
+        <div class="md:hidden block mb-[12px]">
+          <div><p>WORK IN PROGRESS</p></div>
+          </div>
+        </div>
+      </div>
+    <AboutFooter />
+  </div>
+</BaseLayout>
