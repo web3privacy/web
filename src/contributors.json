@@ -461,6 +461,27 @@
       "contributions": 3
     },
     {
+      "login": "danielklein-arch",
+      "id": 82767072,
+      "node_id": "MDQ6VXNlcjgyNzY3MDcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/82767072?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/danielklein-arch",
+      "html_url": "https://github.com/danielklein-arch",
+      "followers_url": "https://api.github.com/users/danielklein-arch/followers",
+      "following_url": "https://api.github.com/users/danielklein-arch/following{/other_user}",
+      "gists_url": "https://api.github.com/users/danielklein-arch/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/danielklein-arch/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/danielklein-arch/subscriptions",
+      "organizations_url": "https://api.github.com/users/danielklein-arch/orgs",
+      "repos_url": "https://api.github.com/users/danielklein-arch/repos",
+      "events_url": "https://api.github.com/users/danielklein-arch/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/danielklein-arch/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 3
+    },
+    {
       "login": "ligi",
       "id": 111600,
       "node_id": "MDQ6VXNlcjExMTYwMA==",
