@@ -3,11 +3,11 @@
     "url": "w3pn-meetup-rome1",
     "name": "Web3Privacy Now Meetup @ ETHRome 2024",
     "period": [
-      "2024-10-03T13:00:00.000Z",
-      "2024-10-03T19:00:00.000Z"
+      "2024-10-03T12:30:00.000Z",
+      "2024-10-03T20:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/3q/4f28bcb7-a158-412a-92d8-27419b113e58",
-    "guestCount": 45
+    "guestCount": 49
   },
   {
     "url": "w3pn-meetup-devcon7",
@@ -17,6 +17,6 @@
       "2024-11-11T12:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/7g/87ce6260-c05a-46be-9576-93d5c02f766f",
-    "guestCount": 242
+    "guestCount": 307
   }
 ]

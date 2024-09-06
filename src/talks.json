@@ -1,5 +1,17 @@
 [
   {
+    "url": "https://www.youtube.com/watch?v=Sr72VSjoOWw",
+    "title": "Use Open-Source Technologies | Franzi x Department of Decentralization [ETHBerlin]",
+    "img": "https://i4.ytimg.com/vi/Sr72VSjoOWw/maxresdefault.jpg",
+    "date": "2024-09-02T10:23:10.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=EavS_QabTcg",
+    "title": "The Moral Character of Cryptographic Work - Phillip Rogaway",
+    "img": "https://i2.ytimg.com/vi/EavS_QabTcg/maxresdefault.jpg",
+    "date": "2024-08-29T13:08:53.000Z"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=3KYKLrrkOtk",
     "title": "The power of decentralized cryptomarkets | Pavol Lupták",
     "img": "https://i4.ytimg.com/vi/3KYKLrrkOtk/maxresdefault.jpg",
@@ -25,7 +37,7 @@
   },
   {
     "url": "https://www.youtube.com/watch?v=f6XFIdy4MXg",
-    "title": "Hey Cypherpunk, Embrace Diversity - Ying Tong",
+    "title": "We need Diversity in the Room - the words of a cryptographer - Ying Tong",
     "img": "https://i3.ytimg.com/vi/f6XFIdy4MXg/maxresdefault.jpg",
     "date": "2024-07-03T15:55:30.000Z"
   },
@@ -75,18 +87,6 @@
     "url": "https://www.youtube.com/watch?v=MzbT2farBQw",
     "title": "Why we are all here | Mykola Siusko, Web3Privacy Now | Berlin Meetup",
     "img": "https://i2.ytimg.com/vi/MzbT2farBQw/maxresdefault.jpg",
-    "date": "2024-06-11T08:02:11.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=emf63mSS11I",
-    "title": "From Tornado Cash to sustainable privacy panel | Valkenburgh -Lefteris-Fatemeh | W3PN Berlin Meetup",
-    "img": "https://i2.ytimg.com/vi/emf63mSS11I/maxresdefault.jpg",
-    "date": "2024-06-11T08:02:11.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=uNRA5Tg3aHo",
-    "title": "On community building & post-web | Stella R. Magnet | Web3Privacy Now Berlin Meetup 2024",
-    "img": "https://i2.ytimg.com/vi/uNRA5Tg3aHo/maxresdefault.jpg",
     "date": "2024-06-11T08:02:11.000Z"
   }
 ]
