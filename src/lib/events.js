@@ -291,6 +291,10 @@ export function nameRenderer (item, full = false) {
             //num = item.id.match(/^w3ps(\d+)$/)[1]
             return `Summit ${item.city}` + (full ? ` ${date.year}`: '')// + (cc ? ` @ ${cc}` : '')
             break;
+        case 'congress':
+            //num = item.id.match(/^w3ps(\d+)$/)[1]
+            return `Congress ${item.city}` + (full ? ` ${date.year}`: '')// + (cc ? ` @ ${cc}` : '')
+            break;
         case 'meetup':
             //num = item.id.match(/(\d+)$/)
             return `Meetup ${item.city}` + (full ? ` ${date.year}`: '')// + (cc ? ` @ ${cc}` : '')
