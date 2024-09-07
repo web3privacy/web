@@ -38,7 +38,7 @@
       "received_events_url": "https://api.github.com/users/Msiusko/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 3000
+      "contributions": 3001
     },
     {
       "login": "burningtree",
@@ -122,7 +122,7 @@
       "received_events_url": "https://api.github.com/users/niclaz/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 274
+      "contributions": 281
     },
     {
       "login": "cryptomar1o",
