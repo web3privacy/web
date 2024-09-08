@@ -1,4 +1,4 @@
-import "https://deno.land/std@0.206.0/dotenv/load.ts";
+import "jsr:@std/dotenv@0.224.0";
 
 const contributorRepos = [
   // main repos
