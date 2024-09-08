@@ -66,7 +66,7 @@
         "npm:cfonts@^3.2.0",
         "npm:date-fns@^2.30.0",
         "npm:marked@^11.1.1",
-        "npm:svelte@^4.2.12",
+        "npm:svelte@^4.2.19",
         "npm:tailwindcss@^3.4.1",
         "npm:typescript@^5.3.3"
       ]
