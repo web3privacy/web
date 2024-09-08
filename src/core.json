@@ -362,7 +362,11 @@
         "twitter": "miroyato"
       },
       "imageUrl": "https://data.web3privacy.info/img/people/andreas-tsamados.jpg",
-      "thumbs": {}
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/andreas-tsamados-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/andreas-tsamados-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/andreas-tsamados-400px.webp"
+      }
     },
     {
       "id": "joshua-davila",
@@ -551,7 +555,11 @@
         "twitter": "emanuele82"
       },
       "imageUrl": "https://data.web3privacy.info/img/people/emanuele-russo.png",
-      "thumbs": {}
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/emanuele-russo-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/emanuele-russo-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/emanuele-russo-400px.webp"
+      }
     },
     {
       "id": "odysseas",
@@ -676,7 +684,11 @@
       "caption": "Academic Professor in Software Engineering & Data Science, true activist",
       "country": "it",
       "imageUrl": "https://data.web3privacy.info/img/people/luca-lezzerini.png",
-      "thumbs": {}
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/luca-lezzerini-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/luca-lezzerini-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/luca-lezzerini-400px.webp"
+      }
     },
     {
       "id": "dcbuilder",
@@ -804,7 +816,11 @@
         "twitter": "hellais"
       },
       "imageUrl": "https://data.web3privacy.info/img/people/arturo-filasto.png",
-      "thumbs": {}
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/arturo-filasto-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/arturo-filasto-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/arturo-filasto-400px.webp"
+      }
     },
     {
       "id": "rachel-rose-oleary",
@@ -1018,7 +1034,11 @@
         "twitter": "jayapapaya"
       },
       "imageUrl": "https://data.web3privacy.info/img/people/jaya-klara-brekke.jpg",
-      "thumbs": {}
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/jaya-klara-brekke-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/jaya-klara-brekke-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/jaya-klara-brekke-400px.webp"
+      }
     },
     {
       "id": "nate",
@@ -1112,7 +1132,11 @@
         "twitter": "m0zrt"
       },
       "imageUrl": "https://data.web3privacy.info/img/people/moritz-boullenger.jpg",
-      "thumbs": {}
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/moritz-boullenger-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/moritz-boullenger-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/moritz-boullenger-400px.webp"
+      }
     },
     {
       "id": "vaclav-pavlin",
@@ -1175,7 +1199,11 @@
         "twitter": "CastignoliMarco"
       },
       "imageUrl": "https://data.web3privacy.info/img/people/marco-castignoli.png",
-      "thumbs": {}
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/marco-castignoli-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/marco-castignoli-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/marco-castignoli-400px.webp"
+      }
     },
     {
       "id": "silke-noa",
@@ -1242,7 +1270,11 @@
         "twitter": "SterlinLujan"
       },
       "imageUrl": "https://data.web3privacy.info/img/people/sterlin-lujan.jpg",
-      "thumbs": {}
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/sterlin-lujan-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/sterlin-lujan-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/sterlin-lujan-400px.webp"
+      }
     },
     {
       "id": "sebastian-burgel",
@@ -1253,7 +1285,11 @@
         "twitter": "SCBuergel"
       },
       "imageUrl": "https://data.web3privacy.info/img/people/sebastian-burgel.jpg",
-      "thumbs": {}
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/sebastian-burgel-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/sebastian-burgel-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/sebastian-burgel-400px.webp"
+      }
     },
     {
       "id": "lefteris-karapetsas",
@@ -1331,7 +1367,23 @@
         "square": "https://data.web3privacy.info/img/events/2024/c24bkk-square.png",
         "poster": "https://data.web3privacy.info/img/events/2024/c24bkk-poster.png"
       },
-      "thumbs": {}
+      "thumbs": {
+        "poster:360": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-poster-360px.webp",
+        "square:360": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-square-360px.webp",
+        "wide:360": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-wide-360px.webp",
+        "poster-simple:640": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-poster-simple-640px.webp",
+        "square:128": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-square-128px.webp",
+        "wide:128": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-wide-128px.webp",
+        "poster-simple:360": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-poster-simple-360px.webp",
+        "square:640": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-square-640px.webp",
+        "poster:640": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-poster-640px.webp",
+        "poster:128": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-poster-128px.webp",
+        "wide-square:360": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-wide-square-360px.webp",
+        "wide:640": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-wide-640px.webp",
+        "wide-square:640": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-wide-square-640px.webp",
+        "wide-square:128": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-wide-square-128px.webp",
+        "poster-simple:128": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-poster-simple-128px.webp"
+      }
     },
     {
       "id": "s23prg",
