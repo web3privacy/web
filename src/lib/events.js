@@ -4,7 +4,7 @@ export const types = [
     { id: "", plural: 'All events'},
     { id: "meetup", name: 'Meetup', plural: 'Meetups' },
     { id: "summit", name: 'Summit', plural: 'Summits' },
-    { id: "congress", name: 'Congress', plural: 'Congresses' }.
+    { id: "congress", name: 'Congress', plural: 'Congresses' },
     { id: "privacy-corner", name: 'Privacy Corner', plural: 'Privacy Corners' },
     { id: "online-summit", name: 'Online Summit', plural: 'Online Summits' },
     { id: 'meta-hackathon', name: 'Meta-hackathon', plural: 'Meta-hackathons'},
