@@ -1,4 +1,4 @@
-import { join } from "https://deno.land/std@0.216.0/path/join.ts";
+import { join } from "jsr:@std/path@0.224.0";
 
 const src = JSON.parse(await Deno.readTextFile("./src/core.json"));
 const usedFlags = [...new Set(src.events.map((e) => e.country + ".svg"))];
