@@ -1324,8 +1324,8 @@
       "slots": 16,
       "visitors": 300,
       "links": {
-        "web": "https://congress.web3privacy.info/",
-        "git": "https://github.com/web3privacy/c24bkk"
+        "rsvp": "https://lu.ma/w3pn-meetup-devcon7",
+        "web": "https://congress.web3privacy.info/"
       },
       "speakers": [
         "ameen-soleimani",

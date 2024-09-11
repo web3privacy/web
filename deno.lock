@@ -2,11 +2,15 @@
   "version": "3",
   "packages": {
     "specifiers": {
-      "jsr:@maxim-mazurok/sax-ts@1.2.13": "jsr:@maxim-mazurok/sax-ts@1.2.13"
+      "jsr:@maxim-mazurok/sax-ts@1.2.13": "jsr:@maxim-mazurok/sax-ts@1.2.13",
+      "jsr:@std/dotenv@0.224.0": "jsr:@std/dotenv@0.224.0"
     },
     "jsr": {
       "@maxim-mazurok/sax-ts@1.2.13": {
         "integrity": "9f2f9a3ac1b142400940a4c9e916656fe63d4710a78102aeb8e08e863de2c76d"
+      },
+      "@std/dotenv@0.224.0": {
+        "integrity": "d9234cdf551507dcda60abb6c474289843741d8c07ee8ce540c60f5c1b220a1d"
       }
     }
   },
