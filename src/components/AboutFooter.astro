@@ -2,114 +2,147 @@
 import * as config from "../config.yaml";
 import core from "../core.json";
 import contributors from "../contributors.json";
-import { getPersonByGH } from "../lib/core.js";
-import PeopleCarousel from "../components/PeopleCarousel.astro";
+import SpeakerGrid from "./SpeakerGrid.astro";
+import SliderTestimonial from "./SliderTestimonial.astro";
+import MembersGrid from "./MembersGrid.astro";
 
-function findPerson(src) {
-  const p = core.people.find((p) =>
-    src.refs?.twitter
-      ? p.refs?.twitter === src.refs.twitter
-      : src.refs?.bsky
-        ? p.refs.bsky === src.refs.bsky
-        : {}
-  );
-  if (p) {
-    p.ct = src;
-  }
-  return p;
-}
+// Accept sectionsConfig as a prop
+const {
+  sectionsConfig = [
+    { name: "community", visible: true, order: 1 },
+    { name: "socialLinks", visible: true, order: 2 },
+    { name: "speakers", visible: true, order: 3 },
+    { name: "core contributors", visible: true, order: 4 },
+    { name: "contributors", visible: true, order: 5 },
+    { name: "testimonials", visible: true, order: 6 },
+    { name: "membersGrid", visible: true, order: 7 },
+    { name: "communityPartners", visible: true, order: 8 },
+  ],
+} = Astro.props;
 
-function personLink(person) {
-  return person.refs?.twitter
-    ? `https://twitter.com/${person.refs.twitter}`
-    : person.refs?.bsky
-      ? `https://bsky.app/profile/${person.refs.bsky}`
-      : "#";
-}
+console.log(sectionsConfig);
+// Function to sort sections by order
+const sortedSections = sectionsConfig
+  .filter((section) => section.visible)
+  .sort((a, b) => a.order - b.order);
 ---
 
-<!-- <div class="mt-20">
-    <h1><a href="https://docs.web3privacy.info/follow-us">Follow us</a></h1>
-    <div class="w3pn-wgrid">
-        {config.landing.follow.map((item) => (
-            <a href={item.url || core.links[item.link]} target="_blank">
-                <span><span class="icon" class:list={[item.ico || ""]}></span></span>
-                <span class="title">{item.name}</span>
-                <span>{item.text}</span>
+{
+  sortedSections.map((section) => (
+    <div>
+      {section.name === "community" && (
+        <div class="middle-pane-medium mt-16">
+          <h1>
+            <a
+              class="glitch-text"
+              href="https://docs.web3privacy.info/get-involved"
+            >
+              Join the Community
             </a>
-        ))}
-    </div>
-</div>
-<div class="mt-10">
-    <h1><a href="https://docs.web3privacy.info/communication">Coordination</a></h1>
-    <div class="w3pn-wgrid">
-        {config.landing.coord.map((item) => (
-            <a href={item.url || core.links[item.link]} target="_blank">
-                <span><span class="icon" class:list={[item.ico || ""]}></span></span>
-                <span class="title">{item.name}</span>
-                <span>{item.text}</span>
-            </a>
-        ))}
-    </div>
-</div> -->
-<div class="mt-16">
-  <h1>
-    <a href="https://docs.web3privacy.info/get-involved">Join the Community</a>
-  </h1>
-  <div>{config.landing.community}</div>
+          </h1>
+          <div>{config.landing.community}</div>
+        </div>
+      )}
 
-  <h2 class="my-6">Speakers</h2>
-  <div class="flex gap-3 flex-wrap items-center">
-    {
-      core.people
-        .filter((p) => !core.teams["core-team"].includes(p.id))
-        .filter((p) => p.imageUrl)
-        .map((person) => (
-          <div>
-            <a href={personLink(person)}>
-              <img
-                src={person.imageUrl}
-                title={person.name}
-                class="w-14 rounded-full aspect-square"
-              />
-            </a>
-          </div>
-        ))
-    }
-  </div>
-
-  <div class="flex gap-3 lg:gap-6 pt-4 flex-wrap mt-4 mb-14">
-    <a href={core.links.cfp} class="button inverted"
-      ><button>Submit your proposal (CfP)</button></a
-    >
-  </div>
-
-  <h2 class="my-6">Git Contributors</h2>
-  <div class="flex gap-3 flex-wrap mb-4 items-center">
-    {
-      // filter(p => !core.teams['core-team'].includes(getPersonByGH(p.login)?.id))
-      contributors.items.map((contrib) => (
-        <div>
-          <a href={contrib.html_url} target="_blank" title={contrib.login}>
-            <img
-              src={contrib.avatar_url}
-              class="w-14 rounded-full aspect-square"
-            />
+      {section.name === "socialLinks" && (
+        <div class="grid place-items-center grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 pt-4 w-full">
+          <a
+            href={core.links.twitter}
+            class="bg-[#101010] w-full flex items-center justify-center w-full h-40 overflow-hidden"
+          >
+            <button class="flex flex-col items-center justify-center">
+              <div class="icon twitter" />
+              @web3privacy
+            </button>
+          </a>
+          <a
+            href={core.links.telegram}
+            class="bg-[#101010] w-full flex items-center justify-center w-full h-40 overflow-hidden"
+          >
+            <button class="flex flex-col items-center justify-center">
+              <div class="icon telegram" />
+              Telegram
+            </button>
+          </a>
+          <a
+            href={core.links.signal}
+            class="bg-[#101010] w-full flex items-center justify-center w-full h-40 overflow-hidden"
+          >
+            <button class="flex flex-col items-center justify-center">
+              <div class="icon">
+                <img src="/icons/signal.svg" alt="" />
+              </div>
+              Signal
+            </button>
+          </a>
+          <a
+            href={core.links.matrix}
+            class="bg-[#101010]  w-full flex items-center justify-center w-full h-40 overflow-hidden"
+          >
+            <button class="flex flex-col items-center justify-center">
+              <div class="icon matrix" />
+              matrix
+            </button>
           </a>
         </div>
-      ))
-    }
-  </div>
+      )}
 
-  <div class="flex gap-4 lg:gap-6 pt-4 flex-wrap">
-    <a href={core.links.telegram} class="button inverted"
-      ><button>Telegram</button></a
-    >
-    <a href={core.links.signal} class="button inverted"
-      ><button>Signal</button></a
-    >
-    <a href={core.links.matrix} class="button inverted"
-      ><button>matrix hub</button></a
-    >
-  </div>
-</div>
+      {section.name === "speakers" && (
+        <div class="middle-pane-medium mt-16">
+          <h1 class="my-6 glitch-text">Speakers</h1>
+          <SpeakerGrid people={core.people} team={core.teams["core-team"]} />
+        </div>
+      )}
+
+      {section.name === "core contributors" && (
+        <div class="middle-pane-medium mt-16">
+          <h1 class="my-6 glitch-text">Core Contributors</h1>
+          <SpeakerGrid people={core.people} team={core.teams["core-team"]} />
+        </div>
+      )}
+
+      {section.name === "contributors" && (
+        <div class="middle-pane-medium">
+          <h1 class="my-6 glitch-text">Contributors</h1>
+          <div class="flex gap-3 flex-wrap mb-4 items-center">
+            {contributors.items.map((contrib) => (
+              <div>
+                <a
+                  href={contrib.html_url}
+                  target="_blank"
+                  title={contrib.login}
+                >
+                  <img
+                    src={contrib.avatar_url}
+                    class="w-14 rounded-full aspect-square"
+                  />
+                </a>
+              </div>
+            ))}
+          </div>
+          <div class="flex gap-4 lg:gap-6 pt-4 flex-wrap">
+            <a href={core.links.telegram} class="button inverted">
+              <button>Become a Contributor</button>
+            </a>
+          </div>
+        </div>
+      )}
+
+      {section.name === "testimonials" && (
+        <div class="middle-pane-medium">
+          <h1 class="my-6 mt-16 glitch-text">
+            What People Have To Say About US
+          </h1>
+          <SliderTestimonial />
+        </div>
+      )}
+
+      {section.name === "membersGrid" && (
+        <div class="middle-pane-medium mt-16">
+          <h1 class="my-6 glitch-text">Members</h1>
+          <MembersGrid people={core.people} team={core.teams["core-team"]} />
+        </div>
+      )}
+    </div>
+  ))
+}

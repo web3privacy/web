@@ -1,0 +1,49 @@
+---
+const { people, team } = Astro.props;
+
+// Filter the people and limit the results to 12
+const filteredPeople = people
+  .filter((p) => !team.includes(p.id))
+  .filter((p) => p.imageUrl)
+  .slice(0, 12); // Limit to the first 12 people
+
+function personLink(person) {
+  return person.refs?.twitter
+    ? `https://twitter.com/${person.refs.twitter}`
+    : person.refs?.bsky
+    ? `https://bsky.app/profile/${person.refs.bsky}`
+    : "#";
+}
+
+function truncateCaption(caption) {
+  if (!caption) return "";
+  const words = caption.split(" ");
+  if (words.length > 10) {
+    return words.slice(0, 20).join(" ") + "...";
+  }
+  return caption;
+}
+---
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+  {filteredPeople.map((person) => (
+    <div
+      class="max-w-xs w-full h-[340px] bg-transparent overflow-hidden p-1 space-y-1 mb-2"
+    >
+      <a href={personLink(person)}>
+        <img
+          src={person.imageUrl}
+          alt={person.name}
+          class="w-full h-48 object-cover"
+        />
+      </a>
+      <div class="mt-4">
+        <h3 class="text-lg font-bold">{person.name}</h3>
+        {person.refs && person.refs.twitter && (
+          <p class="text-sm text-gray-500">@{person.refs.twitter}</p>
+        )}
+        <p class="text-sm">{truncateCaption(person.caption)}</p>
+      </div>
+    </div>
+  ))}
+</div>

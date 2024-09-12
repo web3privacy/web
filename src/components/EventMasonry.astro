@@ -1,0 +1,29 @@
+---
+const {
+  images = [
+    "/events/masonry/1.webp",
+    "/events/masonry/2.webp",
+    "/events/masonry/3.webp",
+    "/events/masonry/4.webp",
+    "/events/masonry/5.webp",
+    "/events/masonry/6.webp",
+    "/events/masonry/7.webp",
+    "/events/masonry/8.webp",
+    "/events/masonry/9.webp",
+  ],
+} = Astro.props;
+---
+
+<div class="flex flex-wrap gap-[3px]">
+  {
+    images.map((image, index) => (
+      <div class="flex-auto overflow-hidden">
+        <img
+          class="object-cover w-full lg:max-h-[120px] xl:max-h-[223px]"
+          src={image}
+          alt={`Image ${index + 1}`}
+        />
+      </div>
+    ))
+  }
+</div>
