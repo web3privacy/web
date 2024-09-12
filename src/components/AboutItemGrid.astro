@@ -2,137 +2,236 @@
 import AboutItem from "../components/AboutItem.astro";
 ---
 
-<AboutItem title="RESEARCH" subtext="">
-  <div class="w-full">
-    <div class="flex flex-col gap-[8px]">
-      <p>
-        We cultivate and foster a culture of privacy in web3 making data free
-        and public.
-      </p>
-      <p>
-        Check our annual reports, infographics, privacy awards, newsletter, and
-        guidelines.
-      </p>
-      <a class="button inverted"><button>web3privacy Research</button></a>
+<div>
+  <AboutItem
+    title="AUDIENCES"
+    subtext="For all of them we are building private platform to discuss and build privavy tooling and research"
+  >
+    <div class="w-full grid grid-cols-2">
+      <div class="flex flex-col gap-[8px] text-white font-bold">
+        <span> General public </span>
+        <span> Projects </span>
+        <span> Startupers</span>
+      </div>
+      <div class="flex flex-col gap-[8px] text-white font-bold">
+        <span> Developers </span>
+        <span> Audit companies </span>
+        <span> Investors</span>
+      </div>
     </div>
-  </div>
-</AboutItem>
-<AboutItem title="PROJECTS & TOOLS PRODUCTION" subtext="">
-  <p class="mb-5">
-    By developing free and open tools, <br /> we empower people to make informed
-    decisions:
-  </p>
-
-  <div class="flex flex-col gap-5">
-    <div class="flex gap-[12px] md:items-center items-start w-full">
-      <div class="flex flex-row space-x-5 w-full">
-        <div>
-          <img src="/icons/database.svg" class="inline-block" />
+  </AboutItem>
+  <AboutItem
+    title="PLATFORM"
+    subtext="We need to create activation points, that will push community around privacy forward and establish new connections"
+  >
+    <div class="flex flex-col gap-[8px] items-start">
+      <div class="flex gap-[12px] md:items-center items-start w-full">
+        <img src="/icons/query_stats.svg" class="inline-block" />
+        <div
+          class="flex md:flex-row flex-col md:items-center md:gap-[12px] w-full"
+        >
+          <span
+            class="font-bold text-white leading-[1rem] w-full max-w-[110px]"
+          >
+            Market stats
+          </span>
+          <span class="md:block hidden">-</span>
+          <span class="text-[1rem] w-full">
+            Like Crunchbase, but free forever
+          </span>
         </div>
-        <div>
-          <div class="flex items-center flex-nowrap space-x-5">
-            <span class="font-bold text-white"> PRIVACY EXPLORER </span>
-          </div>
-          <span class="text-[1rem] mt-0 w-full"
+      </div>
+
+      <div class="flex gap-[12px] md:items-center items-start w-full">
+        <img src="/icons/star_half.svg" class="inline-block" />
+        <div
+          class="flex md:flex-row flex-col md:items-center md:gap-[12px] w-full"
+        >
+          <span
+            class="font-bold text-white leading-[1rem] w-full max-w-[140px]"
+          >
+            Privacy Ranking
+          </span>
+          <span class="md:block hidden">-</span>
+          <span class="text-[1rem] w-full">
+            Scoring and review of current privacy projects
+          </span>
+        </div>
+      </div>
+      <div class="flex gap-[12px] md:items-center items-start w-full">
+        <img src="/icons/school.svg" class="inline-block" />
+        <div
+          class="flex md:flex-row flex-col md:items-center md:gap-[12px] w-full"
+        >
+          <span class="font-bold text-white leading-[1rem] w-fit max-w-[140px]">
+            Academy
+          </span>
+          <span class="md:block hidden">-</span>
+          <span class="text-[1rem] w-full"
+            >Education for general public how to reach privacy
+          </span>
+        </div>
+      </div>
+      <div class="flex gap-[12px] md:items-center items-start w-full">
+        <img src="/icons/experiment.svg" class="inline-block" />
+        <div
+          class="flex md:flex-row flex-col md:items-center md:gap-[12px] w-full"
+        >
+          <span class="font-bold text-white leading-[1rem] w-fit max-w-[140px]">
+            Research
+          </span>
+          <span class="md:block hidden">-</span>
+          <span class="text-[1rem] w-full">
+            Anual reports, Frameworks, Tools, Books
+          </span>
+        </div>
+      </div>
+      <div class="flex gap-[12px] md:items-center items-start w-full">
+        <img src="/icons/database.svg" class="inline-block" />
+        <div
+          class="flex md:flex-row flex-col md:items-center md:gap-[12px] w-full"
+        >
+          <span class="font-bold text-white leading-[1rem] w-fit max-w-[140px]">
+            Data
+          </span>
+          <span class="md:block hidden">-</span>
+          <span class="text-[1rem] w-full"
             >For Projects, Use-case list, Market & Funding info
           </span>
         </div>
       </div>
     </div>
-
-    <div class="flex gap-[12px] md:items-center items-start w-full">
-      <div class="flex flex-row space-x-5 w-full">
-        <div>
-          <img src="/icons/database.svg" class="inline-block" />
+  </AboutItem>
+  <AboutItem
+    title="ACTIVATIONS"
+    subtext="With all of that we want to focus everybody more in web3 related privacy issues, those are our estimates and long-term goals"
+  >
+    <div class="flex flex-col gap-[8px] items-start">
+      <div class="flex gap-[12px] md:items-center items-start w-full">
+        <img src="/icons/visibility_lock.svg" class="inline-block" />
+        <div
+          class="flex md:flex-row flex-col md:items-center md:gap-[12px] w-full"
+        >
+          <span class="font-bold text-white leading-[1rem] w-fit">
+            Advocacy
+          </span>
+          <span class="md:block hidden">-</span>
+          <span class="text-[1rem] w-full">
+            Branding “decentralization = privacy”
+          </span>
         </div>
-        <div>
-          <div class="flex items-center flex-nowrap space-x-5">
-            <span class="font-bold text-white w-fit">
-              HACKATHON IDEA GENERATOR
-            </span>
-          </div>
-          <span class="text-[1rem] mt-0 w-full"
-            >Helps developers build applications that address real-world
-            problems, that people will actually use.
+      </div>
+
+      <div class="flex gap-[12px] md:items-center items-start w-full">
+        <img src="/icons/calendar_today.svg" class="inline-block" />
+        <div
+          class="flex md:flex-row flex-col md:items-center md:gap-[12px] w-full"
+        >
+          <span class="font-bold text-white leading-[1rem] w-fit">
+            Events
+          </span>
+          <span class="md:block hidden">-</span>
+          <span class="text-[1rem] w-full">
+            Meetups, Summits, Hackathons, Camps
+          </span>
+        </div>
+      </div>
+      <div class="flex gap-[12px] md:items-center items-start w-full">
+        <img src="/icons/group_work.svg" class="inline-block" />
+        <div
+          class="flex md:flex-row flex-col md:items-center md:gap-[12px] w-full"
+        >
+          <span
+            class="font-bold text-white leading-[1rem] w-full max-w-[220px]"
+          >
+            Ecosystems collaboration
+          </span>
+          <span class="md:block hidden">-</span>
+          <span class="text-[1rem] w-full"> Networks, Alliances, Media </span>
+        </div>
+      </div>
+      <div class="flex gap-[12px] md:items-center items-start w-full">
+        <img src="/icons/encrypted.svg" class="inline-block" />
+        <div
+          class="flex md:flex-row flex-col md:items-center md:gap-[12px] w-full"
+        >
+          <span class="font-bold text-white leading-[1rem] w-fit max-w-[140px]">
+            Standartisation
+          </span>
+          <span class="md:block hidden">-</span>
+          <span class="text-[1rem] w-full">
+            Privacy-features, security audit (example)
+          </span>
+        </div>
+      </div>
+      <div class="flex gap-[12px] md:items-center items-start w-full">
+        <img src="/icons/local_florist.svg" class="inline-block" />
+        <div
+          class="flex md:flex-row flex-col md:items-center md:gap-[12px] w-full"
+        >
+          <span class="font-bold text-white leading-[1rem] w-fit max-w-[140px]">
+            Incubation
+          </span>
+          <span class="md:block hidden">-</span>
+          <span class="text-[1rem] w-full"
+            >Product managers facilitation, Business sustainability
           </span>
         </div>
       </div>
     </div>
-    <div class="flex gap-[12px] md:items-center items-start w-full">
-      <div class="flex flex-row space-x-5 w-full">
-        <div>
-          <img src="/icons/database.svg" class="inline-block" />
-        </div>
-        <div>
-          <div class="flex items-center flex-nowrap space-x-5">
-            <span class="font-bold text-white w-fit"> WEEK IN PRIVACY </span>
-          </div>
-          <span class="text-[1rem] mt-0 w-full"
-            >Weekly newsletter with round-up of the most important news
-            happening around privacy in Web3
+  </AboutItem>
+  <AboutItem variant="secondary" title="GOALS">
+    <div class="flex md:flex-row flex-col gap-[32px]">
+      <div class="flex flex-col gap-[16px]">
+        <div class="flex flex-col gap-[4px]">
+          <span class="font-bold text-white my-2 leading-[1rem] uppercase">
+            GENERAL PUBLIC
           </span>
+          <ul class="list-decimal ml-[18px]">
+            <li>Milions of educated users</li>
+            <li>Higher privacy culture</li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-[4px]">
+          <span class="font-bold text-white my-2 leading-[1rem] uppercase">
+            PROJECTS
+          </span>
+          <ul class="list-decimal ml-[18px]">
+            <li>Better privacy features</li>
+            <li>New use-cases</li>
+            <li>Efficient demos</li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-[4px]">
+          <span class="font-bold text-white my-2 leading-[1rem] uppercase">
+            SECURITY AUDIT COMPANIES
+          </span>
+          <ul class="list-decimal ml-[18px]">
+            <li>New “privacy audit” category</li>
+            <li>Significant growth of audited projects.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col gap-[16px]">
+        <div class="flex flex-col gap-[4px]">
+          <span class="font-bold text-white mb-2 mt-0 leading-[1rem] uppercase">
+            DEVELOPERS
+          </span>
+          <ul class="list-decimal ml-[18px] w-full">
+            <li>More devs building privacy</li>
+            <li>More sustainable projects.</li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-[4px] w-full">
+          <span class="font-bold text-white my-2 leading-[1rem] uppercase">
+            STARTUPERS
+          </span>
+          <ul class="list-decimal ml-[18px]">
+            <li>More privacy-oriented projects</li>
+            <li>Longer runway</li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- <div class="flex gap-[12px] md:items-center items-start w-full">
-      <img src="/icons/star_half.svg" class="inline-block" />
-      <div
-        class="flex md:flex-row flex-col md:items-center md:gap-[12px] w-full"
-      >
-        <span class="font-bold text-white leading-[1rem] w-full max-w-[140px]">
-          Privacy Ranking
-        </span>
-        <span class="md:block hidden">-</span>
-        <span class="text-[1rem] w-full">
-          Scoring and review of current privacy projects
-        </span>
-      </div>
-    </div>
-    <div class="flex gap-[12px] md:items-center items-start w-full">
-      <img src="/icons/school.svg" class="inline-block" />
-      <div
-        class="flex md:flex-row flex-col md:items-center md:gap-[12px] w-full"
-      >
-        <span class="font-bold text-white leading-[1rem] w-fit max-w-[140px]">
-          Academy
-        </span>
-        <span class="md:block hidden">-</span>
-        <span class="text-[1rem] w-full"
-          >Education for general public how to reach privacy
-        </span>
-      </div>
-    </div>
-    <div class="flex gap-[12px] md:items-center items-start w-full">
-      <img src="/icons/experiment.svg" class="inline-block" />
-      <div
-        class="flex md:flex-row flex-col md:items-center md:gap-[12px] w-full"
-      >
-        <span class="font-bold text-white leading-[1rem] w-fit max-w-[140px]">
-          Research
-        </span>
-        <span class="md:block hidden">-</span>
-        <span class="text-[1rem] w-full">
-          Anual reports, Frameworks, Tools, Books
-        </span>
-      </div>
-    </div> -->
-</AboutItem>
-
-<AboutItem title="EDUCATION" subtext="">
-  <div class="w-full">
-    <div class="flex flex-col gap-[8px]">
-      <p>
-        We make privacy accessible for everyone, empowering people to learn and
-        implement best practices effectively.
-      </p>
-      <p>
-        From mentoring at hackathons, guidelines for developers, and the
-        Cypherpunk Academy - we offer training, incubation, and acceleration
-        programs.
-      </p>
-      <a class="button inverted"><button>Privacy Academy</button></a>
-    </div>
-  </div>
-</AboutItem>
+  </AboutItem>
+</div>

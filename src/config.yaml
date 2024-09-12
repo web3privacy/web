@@ -22,7 +22,7 @@ header:
       link: news
     - name: Docs
       link: docs
-    - name: Get Involved
+    - name: Membership
       link: membership
       url: /membership
     #- name: Manifesto

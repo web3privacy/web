@@ -1,24 +1,13 @@
 ---
 import BaseLayout from "../../layouts/base.astro";
+import * as config from "../config.yaml";
 import core from "../../core.json";
 import AboutFooter from "../../components/AboutFooter.astro";
-import MembershipWidget from "../../components/MembershipWidget.astro";
-import contributors from "../../contributors.json";
-import MembershipOtherOptionsWidget from "../../components/MembershipOtherOptionsWidget.astro";
-import MembersGrid from "../../components/MembersGrid.astro";
-
-const sectionsConfig = [
-  // { name: "membersGrid", visible: true, order: 1 },
-  // { name: "socialLinks", visible: true, order: 2 },
-  // { name: "testimonials", visible: true, order: 1 },
-  // { name: "speakers", visible: true, order: 2 },
-  // { name: "contributors", visible: true, order: 3 },
-  // { name: "community", visible: false, order: 6 },
-];
+import AboutWidget from "../../components/AboutWidget.astro";
 ---
 
 <BaseLayout
-  title="GET INVOLVED"
+  title="MEMBERSHIP"
   image="og_membership"
   subimage="/membership/membership.png"
 >
@@ -32,115 +21,10 @@ const sectionsConfig = [
         part of our ecosystem.
       </h3>
     </div>
-  </div>
-
-  <div class="middle-pane-medium my-10">
-    <div class="border-4 border-white">
-      <div class="bg-white w-full px-[16px] text-black">
-        <h3 style="color:black !important " class="pb-[3px] pl-4 font-[21px]">
-          Github Contributors
-        </h3>
-      </div>
-
-      <div class="w-full text-center my-10 text-lg">
-        <p>
-          This is the kind of support we value most: open-source, grassroots
-          initiatives driven by individual passion and the desire to create
-          something meaningful.
-        </p>
-      </div>
-
-      <div class="flex gap-3 flex-wrap mb-4 justify-center items-center mx-4">
-        
-        {
-          contributors.items.map((contrib) => (
-            <div>
-              <a href={contrib.html_url} target="_blank" title={contrib.login}>
-                <img
-                  src={contrib.avatar_url}
-                  class="w-14 rounded-full aspect-square"
-                />
-              </a>
-            </div>
-          ))
-        }
-      </div>
-      <div class="flex gap-4 p-4 lg:gap-6 pt-4 flex-wrap">
-        <a href={core.links.telegram} class="button inverted">
-          <button>Become a Contributor</button>
-        </a>
-      </div>
+    <div>
+      <AboutWidget variant="membership" />
     </div>
-    <div class="my-10">
-      <h1 class="font-[32px]">membership</h1>
-      <MembershipWidget />
-    </div>
-  </div>
-  <div class="middle-pane-medium mt-20">
-    <h1 class="font-[32px]">other ways</h1>
 
-    <MembershipOtherOptionsWidget />
+    <AboutFooter />
   </div>
-
-  <div class="mt-16">
-    <h1 class="my-6 middle-pane-medium">Members</h1>
-    <MembersGrid people={core.people} team={core.teams["core-team"]} />
-  </div>
-
-  <div class="middle-pane-medium my-10">
-    <h1>Join the community</h1>
-    <p>
-      We thrive on uniting diverse perspectives, skills, and visions. Both
-      online and offline, we bring together tech and non-tech individuals,
-      activists, key players, hackers, lawyers, researchers, philosophers,
-      policymakers, local communities, and grassroots movements.
-    </p>
-    <div
-      class="grid place-items-center grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 pt-4 w-full"
-    >
-      <a
-        href={core.links.twitter}
-        class="bg-[#101010] w-full flex items-center justify-center w-full h-40 overflow-hidden"
-      >
-        <button class="flex flex-col items-center justify-center">
-          <div class="icon twitter"></div>
-          @web3privacy
-        </button>
-      </a>
-      <a
-        href={core.links.telegram}
-        class="bg-[#101010] w-full flex items-center justify-center w-full h-40 overflow-hidden"
-      >
-        <button class="flex flex-col items-center justify-center">
-          <div class="icon telegram"></div>
-          Telegram
-        </button>
-      </a>
-      <a
-        href={core.links.signal}
-        class="bg-[#101010] w-full flex items-center justify-center w-full h-40 overflow-hidden"
-      >
-        <button class="flex flex-col items-center justify-center">
-          <div class="icon"><img src="/icons/signal.svg" alt=""></div>
-          Signal
-        </button>
-      </a>
-      <a
-        href={core.links.matrix}
-        class="bg-[#101010] w-full flex items-center justify-center w-full h-40 overflow-hidden"
-      >
-        <button class="flex flex-col items-center justify-center">
-          <div class="icon matrix"></div>
-          matrix
-        </button>
-      </a>
-    </div>
-  </div>
-
-  <div class="mt-16">
-    <h1 class="my-6 middle-pane-medium">Community Partners</h1>
-    <MembersGrid people={core.people} team={core.teams["core-team"]} />
-  </div>
-
-  <AboutFooter {sectionsConfig} />
 </BaseLayout>
