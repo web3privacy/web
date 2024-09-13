@@ -319,6 +319,12 @@
       "caption": "Cofounder at [INCO](https://www.inco.org/)",
       "refs": {
         "twitter": "remi_gai"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/remi-gai.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/remi-gai-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/remi-gai-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/remi-gai-400px.webp"
       }
     },
     {
@@ -336,6 +342,12 @@
       "country": "it",
       "refs": {
         "twitter": "cleanunicorn"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/daniel-luca.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/daniel-luca-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/daniel-luca-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/daniel-luca-400px.webp"
       }
     },
     {
@@ -390,6 +402,12 @@
       "country": "us",
       "refs": {
         "twitter": "notscottmoore"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/scott-moore.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/scott-moore-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/scott-moore-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/scott-moore-400px.webp"
       }
     },
     {
@@ -437,6 +455,12 @@
       "country": "us",
       "refs": {
         "twitter": "gluk64"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/alex-gluchowski.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/alex-gluchowski-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/alex-gluchowski-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/alex-gluchowski-400px.webp"
       }
     },
     {
@@ -535,6 +559,12 @@
       "caption": "ex-Ops for [Gitcoin Citizens](https://www.gitcoin.co/program)",
       "refs": {
         "twitter": "krrisis"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/kris.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/kris-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/kris-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/kris-400px.webp"
       }
     },
     {
@@ -544,6 +574,12 @@
       "country": "us",
       "refs": {
         "twitter": "LashaAntadze"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/lasha-antatze.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/lasha-antatze-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/lasha-antatze-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/lasha-antatze-400px.webp"
       }
     },
     {
@@ -642,6 +678,12 @@
       "caption": "Independent Researcher",
       "refs": {
         "twitter": "oskarth"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/oskarth.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/oskarth-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/oskarth-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/oskarth-400px.webp"
       }
     },
     {
@@ -676,6 +718,12 @@
       "caption": "Cofounder of [Fairblock Network](https://www.fairblock.network/)",
       "refs": {
         "twitter": "Pememoni"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/pie-man.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/pie-man-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/pie-man-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/pie-man-400px.webp"
       }
     },
     {
@@ -752,6 +800,12 @@
       "country": "us",
       "refs": {
         "twitter": "dapplion"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/dapplion.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/dapplion-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/dapplion-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/dapplion-400px.webp"
       }
     },
     {
@@ -790,6 +844,12 @@
       "country": "us",
       "refs": {
         "twitter": "Ether_Gavin"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/gavin-birch.png",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/gavin-birch-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/gavin-birch-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/gavin-birch-400px.webp"
       }
     },
     {
@@ -895,6 +955,12 @@
       "caption": "Independent cryptographer & [Geometry Research](https://geometry.xyz/)",
       "refs": {
         "twitter": "therealyingtong"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/ying-tong.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/ying-tong-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/ying-tong-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/ying-tong-400px.webp"
       }
     },
     {
@@ -904,6 +970,12 @@
       "country": "us",
       "refs": {
         "twitter": "adrianbrink"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/adrian-brink.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/adrian-brink-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/adrian-brink-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/adrian-brink-400px.webp"
       }
     },
     {
@@ -928,6 +1000,12 @@
       "country": "us",
       "refs": {
         "twitter": "kurtopsahl"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/kurt-opsahl.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/kurt-opsahl-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/kurt-opsahl-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/kurt-opsahl-400px.webp"
       }
     },
     {
@@ -983,6 +1061,12 @@
       "country": "gb",
       "refs": {
         "twitter": "clairekart"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/claire-kart.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/claire-kart-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/claire-kart-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/claire-kart-400px.webp"
       }
     },
     {
@@ -1023,6 +1107,12 @@
       "country": "us",
       "refs": {
         "twitter": "bobsummerwill"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/bob-summerwill.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/bob-summerwill-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/bob-summerwill-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/bob-summerwill-400px.webp"
       }
     },
     {
@@ -1047,6 +1137,12 @@
       "country": "us",
       "refs": {
         "twitter": "OfficialESC"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/nate.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/nate-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/nate-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/nate-400px.webp"
       }
     },
     {
@@ -1083,6 +1179,12 @@
       "country": "us",
       "refs": {
         "twitter": "auryn_macmillan"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/auryn-macmillan.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/auryn-macmillan-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/auryn-macmillan-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/auryn-macmillan-400px.webp"
       }
     },
     {
@@ -1107,6 +1209,12 @@
       "country": "gb",
       "refs": {
         "twitter": "ghappour"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/ahmed-ghappour.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/ahmed-ghappour-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/ahmed-ghappour-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/ahmed-ghappour-400px.webp"
       }
     },
     {
@@ -1160,6 +1268,12 @@
       "country": "in",
       "refs": {
         "twitter": "amitchax"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/amit-chaudhary.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/amit-chaudhary-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/amit-chaudhary-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/amit-chaudhary-400px.webp"
       }
     },
     {
@@ -1212,6 +1326,12 @@
       "country": "gb",
       "refs": {
         "twitter": "silkenoa"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/silke-noa.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/silke-noa-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/silke-noa-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/silke-noa-400px.webp"
       }
     },
     {
@@ -1231,6 +1351,12 @@
       "caption": "Head of Growth at [Fhenix](https://www.fhenix.io/)",
       "refs": {
         "twitter": "hsinjuchuang"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/hsinju-chuang.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/hsinju-chuang-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/hsinju-chuang-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/hsinju-chuang-400px.webp"
       }
     },
     {
@@ -1240,6 +1366,12 @@
       "country": "us",
       "refs": {
         "twitter": "annbrody7"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/ann-brody.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/ann-brody-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/ann-brody-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/ann-brody-400px.webp"
       }
     },
     {
@@ -1298,6 +1430,12 @@
       "country": "ge",
       "refs": {
         "twitter": "LefterisJP"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/lefteris-karapetsas.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/lefteris-karapetsas-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/lefteris-karapetsas-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/lefteris-karapetsas-400px.webp"
       }
     },
     {
@@ -1306,6 +1444,12 @@
       "caption": "Board at [Electric Coin Co](https://electriccoin.co/)",
       "refs": {
         "twitter": "michlai007"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/michelle-lai.jpg",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/michelle-lai-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/michelle-lai-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/michelle-lai-400px.webp"
       }
     }
   ],
@@ -1321,7 +1465,6 @@
       "confirmed": true,
       "coincidence": "[DevCon](https://devcon.org)",
       "lead": "Mykola",
-      "slots": 16,
       "visitors": 300,
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-devcon7",
@@ -1353,12 +1496,7 @@
         "kris",
         "hsinju-chuang",
         "michelle-lai",
-        "ying-tong",
-        "remi-gai",
-        "pie-man",
-        "oskarth",
-        "nate",
-        "gavin-birch"
+        "ying-tong"
       ],
       "images": {
         "wide": "https://data.web3privacy.info/img/events/2024/c24bkk-wide.png",
@@ -1515,8 +1653,7 @@
         "Alina"
       ],
       "links": {
-        "rsvp": "https://lu.ma/w3pn-meetup-bucharest1",
-        "signal": "https://signal.group/#CjQKILd3qhOu7_p8OB0bob3bU3Ko0jfgfxm9DK39oK1eiMe_EhA47ns-aCFke2YA3iMnuxqJ"
+        "rsvp": "https://lu.ma/w3pn-meetup-bucharest1"
       },
       "speakers": [
         "tim-bansemer",
@@ -1567,8 +1704,7 @@
       "coincidence": "[ETHDam](https://www.ethdam.com/)",
       "slots": 3,
       "links": {
-        "rsvp": "https://lu.ma/w3pn-meetup-ams1",
-        "signal": "https://signal.group/#CjQKIEZbdyGk2CnVLXJ4u87cdRPPE2W4crwz7U-Tt1AFHsu2EhCxC25OkPV47uoTrNa2dww6"
+        "rsvp": "https://lu.ma/w3pn-meetup-ams1"
       },
       "speakers": [
         "kieran-mesquita",
@@ -1609,9 +1745,6 @@
       "id": "m24ber",
       "issue": 6,
       "type": "meetup",
-      "tags": [
-        "sfe"
-      ],
       "date": "2024-05-22",
       "city": "Berlin",
       "country": "de",
@@ -1632,8 +1765,7 @@
       ],
       "slots": 4,
       "links": {
-        "rsvp": "https://lu.ma/w3pn-meetup-berlin1",
-        "signal": "https://signal.group/#CjQKIHv5swzLDOrTd1QqR4L9eb-6XPZERnp3ZEoxBCJeY12fEhAPmoC2dqZzLMRWV7wlAq5A"
+        "rsvp": "https://lu.ma/w3pn-meetup-berlin1"
       },
       "design": {
         "image": "berlin03"
@@ -1682,10 +1814,32 @@
         "web": "https://c24ber.web3privacy.info/"
       },
       "design": {
-        "image": "berlin01"
+        "image": "berlin02"
       },
-      "images": {},
-      "thumbs": {}
+      "images": {
+        "poster": "https://data.web3privacy.info/img/events/2024/pc24ber-poster.png",
+        "square": "https://data.web3privacy.info/img/events/2024/pc24ber-square.png",
+        "poster-simple": "https://data.web3privacy.info/img/events/2024/pc24ber-poster-simple.png",
+        "wide-square": "https://data.web3privacy.info/img/events/2024/pc24ber-wide-square.png",
+        "wide": "https://data.web3privacy.info/img/events/2024/pc24ber-wide.png"
+      },
+      "thumbs": {
+        "square:128": "https://data.web3privacy.info/img/events/2024/thumbs/pc24ber-square-128px.webp",
+        "wide:360": "https://data.web3privacy.info/img/events/2024/thumbs/pc24ber-wide-360px.webp",
+        "wide:640": "https://data.web3privacy.info/img/events/2024/thumbs/pc24ber-wide-640px.webp",
+        "poster-simple:128": "https://data.web3privacy.info/img/events/2024/thumbs/pc24ber-poster-simple-128px.webp",
+        "poster:360": "https://data.web3privacy.info/img/events/2024/thumbs/pc24ber-poster-360px.webp",
+        "wide-square:128": "https://data.web3privacy.info/img/events/2024/thumbs/pc24ber-wide-square-128px.webp",
+        "wide-square:360": "https://data.web3privacy.info/img/events/2024/thumbs/pc24ber-wide-square-360px.webp",
+        "poster:128": "https://data.web3privacy.info/img/events/2024/thumbs/pc24ber-poster-128px.webp",
+        "poster-simple:360": "https://data.web3privacy.info/img/events/2024/thumbs/pc24ber-poster-simple-360px.webp",
+        "square:640": "https://data.web3privacy.info/img/events/2024/thumbs/pc24ber-square-640px.webp",
+        "square:360": "https://data.web3privacy.info/img/events/2024/thumbs/pc24ber-square-360px.webp",
+        "wide-square:640": "https://data.web3privacy.info/img/events/2024/thumbs/pc24ber-wide-square-640px.webp",
+        "wide:128": "https://data.web3privacy.info/img/events/2024/thumbs/pc24ber-wide-128px.webp",
+        "poster:640": "https://data.web3privacy.info/img/events/2024/thumbs/pc24ber-poster-640px.webp",
+        "poster-simple:640": "https://data.web3privacy.info/img/events/2024/thumbs/pc24ber-poster-simple-640px.webp"
+      }
     },
     {
       "id": "s24prg",
