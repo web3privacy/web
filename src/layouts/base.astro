@@ -151,11 +151,16 @@ function genHeading(str) {
         banner && typeof banner !== "object" && (
           <div class="w-full flex mt-20 sm:mt-32 middle-pane-medium">
             <div>
-              <div class="w3pn-logo w-64 sm:w-72 lg:w-80 xl:w-96" />
+              {/* <div class="w3pn-logo w-64 sm:w-72 lg:w-80 xl:w-96" /> */}
+              <h1 class="glitch-text-interval text-6xl">
+                web3privacy summit #1
+              </h1>
               <div class="text-left mt-10">{config.hero.text}</div>
               <div class="mt-6">
                 <a class="button" href="/about">
-                  <button>About Web3Privacy Now</button>
+                  <button>
+                    <strong>About US</strong>
+                  </button>
                 </a>
               </div>
             </div>
@@ -165,18 +170,13 @@ function genHeading(str) {
       {
         !banner && (
           <>
-            <div class="middle-pane-medium mt-8 sm:mt-14 mb-2 sm:mb-8">
-              <div class="leading-none flex justify-center text-[4px] sm:text-[8px] text-white">
-                {/*<img src="/page-events.png" class="h-8 sm:h-14" title="Events" />*/}
-                <pre>
-                  <code class="font-mono layout-heading  ">
-                    {genHeading(title)}
-                  </code>
-                </pre>
+            <div class="middle-pane-medium mt-8  sm:mt-14 sm:mb-8">
+              <div class="leading-none flex justify-center mb-3 text-[4px] sm:text-[8px] text-white">
+                <pre>{genHeading(title)}</pre>
               </div>
-            </div>
-            <div class="flex items-center justify-center w-full text-center">
-              <h3 class=" w-full max-w-[938px]">{subtext}</h3>
+              <div class="flex items-center justify-center w-full text-center">
+                <h3 class=" w-full max-w-[938px] glitch-text">{subtext}</h3>
+              </div>
             </div>
           </>
         )
@@ -188,40 +188,79 @@ function genHeading(str) {
     <div
       class="border border-t-2 border-b-0 border-l-0 border-r-0 border-[#0f0f0f] mt-20 pt-10 pb-10"
     >
-      <div class="middle-pane-big">
-        <div
-          class="flex gap-10 text-lg items-center flex-wrap align-top"
-          id="footerMenu"
-        >
-          <a href="/" class="w3pn-logo w-32"></a>
-          <div class="text-md">
-            <a
-              href="https://github.com/web3privacy/web"
-              class="text-white hover:underline">v{pkg.version}</a
-            >
-          </div>
-          <div class="grow flex sm:justify-end">
-            <div class="sm:flex justify-center flex-wrap gap-4 lg:gap-10">
-              {
-                config.footer.menu.map((item) => (
-                  <div class="flex gap-4 items-center menuItem lg:mb-0 mb-2">
-                    <div
-                      class="icon small opacity-50"
-                      class:list={[item.ico]}
-                    />
-                    <div class="text-white hover:underline">
-                      <a href={item.url || core.links[item.link]}>
-                        {item.title}
-                      </a>
-                    </div>
-                  </div>
-                ))
-              }
+      <div
+        class="flex mx-6 gap-10 text-lg items-center flex-wrap align-top"
+        id="footerMenu"
+      >
+        <a href="/" class="w3pn-logo w-52"></a>
+        <div class="text-md">
+          <a
+            href="https://github.com/web3privacy/web"
+            class="text-white hover:underline">v{pkg.version}</a
+          >
+        </div>
+      </div>
+
+      <div class="flex justify-between">
+        <div class="mx-6 py-10 text-center md:text-left">
+          <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div class="">
+              <p class="mb-4">
+                <a href="#!">Manifesto</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!">How to get involved?</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!">Grants / Support Us</a>
+              </p>
+            </div>
+            <div>
+              <p class="mb-4">
+                <a href="#!">Events</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!">Articles</a>
+              </p>
+              <p class="mb-4">
+                <a href="#!">Talks</a>
+              </p>
+            </div>
+            <div>
+              <p class="mb-4">
+                <a href="/#">Privacy Explorer</a>
+              </p>
+              <p class="mb-4">
+                <a href="/#">Privacy use-cases database</a>
+              </p>
             </div>
           </div>
         </div>
+        <div class="py-10 md:text-left">
+          <div class="grid-1 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+            {
+              config.footer.menu.map((item) => (
+                <div>
+                  <p class="mb-4">
+                    <a href={item.url || core.links[item.link]}>{item.title}</a>
+                  </p>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+
+      <!--Copyright section-->
+      <div class="bg-black/5 p-6 text-start">
+        <a class="font-semibold" href="https://tw-elements.com/"
+          >All rights not reserved, Creative commons 2024 - Web3Privacy z.s.</a
+        >
       </div>
     </div>
+
+    <!-- Load TextScramble.js -->
+    <script src="/scripts/text-scramble.js" type="module"></script>
     <script>
       document.querySelector(".hamburger").addEventListener("click", () => {
         document.querySelector(".nav-links").classList.toggle("expanded");

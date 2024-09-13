@@ -1,0 +1,163 @@
+---
+import core from "../core.json";
+---
+
+<div class="flex flex-col md:flex-row gap-8">
+  <div>
+    <div class="bg-white w-full px-[16px] text-black">
+      <h3 style="color:black !important" class="pb-[3px] pt-2">INDIVIDUAL</h3>
+    </div>
+    <div class="border-4 h-full border-white w-full">
+      <div
+        class="w-full h-full md:border-x-4 md:border-b-4 border-l-0 md:border-b-0 border-b-4 border-white"
+      >
+        <div class="flex flex-col h-full justify-between px-6 z-[10] relative">
+          <div class="flex flex-col my-4">
+            <p>
+              Members are our chosen collaborators for mutual support and
+              growth. Rather than one-time deals for individual events or
+              projects, we strive for consistent collaboration to achieve
+              lasting impact.
+            </p>
+            <span class="leading-[1.4rem]">
+              Become an integral part of our community! Join us with building
+              privacy platform we all need.
+            </span>
+            <div class="flex flex-col gap-[16px] md:p-[24px] z-[10]">
+              <span class="text-white font-bold text-[18px] leading-[1.4rem]">
+                Benefits
+              </span>
+              <ul class="list-disc ml-[18px] text-white">
+                <li>You are supporting a good thing!</li>
+                <li>Guaranteed access to all our events</li>
+                <li>Swag Privacy Pack</li>
+                <li>Deals from our partners</li>
+                <li>Voting rights in our association</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="flex relative w-full md:justify-between md:flex-row flex-col gap-[8px] md:items-end"
+          >
+            <div class="flex flex-col justify-end h-full gap-4 mb-4 md:mb-8 z-50">
+              <span>Price</span>
+              <span class="text-white font-bold text-[24px] leading-[1.4rem]">
+                €100 / Year
+              </span>
+              <a class="button inverted" href={core.links.individual}
+                ><button>BECOME A MEMBER</button></a
+              >
+              <p class="max-w-72 text-sm">
+                After making your donation, kindly send us the tx hash, your
+                T-shirt size, and let us know if you would like your membership
+                to be public or kept private.
+              </p>
+            </div>
+            <img
+              src="/about/image1.png"
+              alt=""
+              class="absolute hidden md:block right-0 bottom-0 md:w-[280px] md:h-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="bg-white w-full px-[16px] text-black">
+      <h3 style="color:black !important" class="pb-[3px] pt-2">
+        Organisations
+      </h3>
+    </div>
+    <div class="border-4 h-full border-white w-full">
+      <div
+        class="w-full h-full md:border-x-4 md:border-b-4 border-l-0 md:border-b-0 border-b-4 border-white"
+      >
+        <div class="flex flex-col h-full justify-between px-6 z-[10] relative">
+          <div class="flex flex-col my-4">
+            <p>
+              Members are our chosen collaborators for mutual support and
+              growth. Rather than one-time deals for individual events or
+              projects, we strive for consistent collaboration to achieve
+              lasting impact.
+            </p>
+          </div>
+          <div class="flex flex-col gap-[16px] md:p-[24px] z-[10]">
+            <span class="text-white font-bold text-[18px] leading-[1.4rem]">
+              Benefits
+            </span>
+            <ul class="list-disc ml-4 text-white">
+              <li>
+                <span class="font-bold leading-wide"> Greater Exposure </span>
+                <p>
+                  Ensure visibility at all our events [Congresses, Summits &
+                  Hackathons]
+                </p>
+              </li>
+              <li>
+                <span class="font-bold leading-wide"> Access to Talent </span>
+
+                <p>Grow impact through strategic, targeted communications.</p>
+              </li>
+              <li>
+                <span class="font-bold leading-wide"> Tought Leadership </span>
+
+                <p>Participate in speaking engagements and mentorship roles.</p>
+              </li>
+              <li>
+                <span class="font-bold leading-wide">
+                  Deals from our partners
+                </span>
+
+                <p>More details about the deals from our partners.</p>
+              </li>
+              <li>
+                <span class="font-bold leading-wide"> Focused Engagement </span>
+                <p>
+                  Reach and interact with specific, highly-relevant audiences.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex w-full md:justify-between md:flex-row flex-col gap-[8px] md:items-end"
+          >
+            <div
+              class="relative flex w-full md:justify-between md:flex-row flex-col gap-[8px] md:items-end"
+            >
+              <div
+                class="flex flex-col justify-end h-full gap-4 mb-4 md:mb-8 z-50"
+              >
+                <div class="flex flex-col justify-end h-full gap-2">
+                  <span>Our membership has multiple tiers ranging from</span>
+                  <span
+                    class="text-white font-bold text-[24px] leading-[1.4rem]"
+                  >
+                    7,000 to 70,000 € / year
+                  </span>
+                  <span
+                    >Membership for registered non-profit organizations is
+                  </span>
+                  <span
+                    class="text-white font-bold text-[24px] leading-[1.4rem]"
+                  >
+                    3,000 € / year
+                  </span>
+                </div>
+                <a class="button inverted" href={core.links.individual}
+                  ><button>Request Tier Breakdown</button></a
+                >
+              </div>
+              <img
+                src="/about/image2.png"
+                alt=""
+                class="absolute hidden md:block right-0 bottom-0 md:w-[450px] md:h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
