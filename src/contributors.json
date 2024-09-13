@@ -101,7 +101,7 @@
       "received_events_url": "https://api.github.com/users/ethanolo-eth/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 508
+      "contributions": 509
     },
     {
       "login": "niclaz",
@@ -227,7 +227,7 @@
       "received_events_url": "https://api.github.com/users/DeBelg/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 39
+      "contributions": 40
     },
     {
       "login": "0xdevant",
