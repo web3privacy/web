@@ -25,13 +25,22 @@ for (const ev of events) {
   }
 }
 
+const allowedFeaturedTypes = [
+  "summit",
+  "meetup",
+  "online-summit",
+  "congress",
+  "privacy-corner",
+  "meta-hackathons",
+];
+
 const featuredEvents = [];
 for (const e of upcomingEvents) {
   if (featuredEvents.length > 2) {
     break;
   }
   if (
-    ["summit", "meetup", "online-summit"].includes(e.type) &&
+    allowedFeaturedTypes.includes(e.type) &&
     e.links?.rsvp &&
     !featuredEvents.find((ex) => ex.type === e.type)
   ) {
