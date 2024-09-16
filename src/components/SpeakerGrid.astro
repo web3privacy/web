@@ -1,11 +1,12 @@
 ---
-const { people, team } = Astro.props;
+const { people, team, core } = Astro.props;
 
-// Filter the people and limit the results to 12
-const filteredPeople = people
-  .filter((p) => !team.includes(p.id))
-  .filter((p) => p.imageUrl)
-  .slice(0, 12); // Limit to the first 12 people
+// Filter based on the `core` parameter
+const members = core
+  ? people.filter((p) => team.includes(p.id)) // If `core` is true, filter for team members
+  : people.filter((p) => !team.includes(p.id)); // If `core` is false or undefined, filter for non-team members
+
+const filteredPeople = members.filter((p) => p.imageUrl).slice(0, 12);
 
 function personLink(person) {
   if (person.refs?.twitter) {
@@ -24,15 +25,6 @@ function personLink(person) {
     return "#";
   }
 }
-
-function truncateCaption(caption) {
-  if (!caption) return "";
-  const words = caption.split(" ");
-  if (words.length > 10) {
-    return words.slice(0, 20).join(" ") + "...";
-  }
-  return caption;
-}
 ---
 
 <div
@@ -40,7 +32,7 @@ function truncateCaption(caption) {
 >
   {
     filteredPeople.map((person) => (
-      <div class="max-w-xs w-full h-[340px] bg-transparent overflow-hidden p-1 space-y-1 mb-2">
+      <div class="max-w-xs w-full max-h-[340px] bg-transparent overflow-hidden p-1 space-y-1 mb-2">
         <a href={personLink(person)}>
           <img
             src={person.imageUrl}
