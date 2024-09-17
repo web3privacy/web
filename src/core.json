@@ -3,21 +3,25 @@
   "email": "web3privacynow@protonmail.com",
   "domain": "web3privacy.info",
   "links": {
-    "docs": "https://docs.web3privacy.info/",
-    "manifesto": "https://docs.web3privacy.info/manifesto",
+    "docs": "https://docs.web3privacy.info",
+    "manifesto": "https://docs.web3privacy.info/about-us/manifesto",
     "github": "https://github.com/web3privacy",
     "git": "https://git.web3privacy.info",
-    "twitter": "https://twitter.com/web3privacy",
-    "matrix": "https://matrix.web3privacy.info",
-    "bluesky": "https://bsky.app/profile/web3privacy.info",
-    "mirror": "https://mirror.xyz/0x0f1F3DAf416B74DB3DE55Eb4D7513a80F4841073/",
-    "youtube": "https://youtube.com/@Web3PrivacyNow/",
+    "research": "https://web3privacy.info/research",
     "forum": "https://forum.web3privacy.info",
     "explorer": "https://explorer.web3privacy.info",
     "news": "https://news.web3privacy.info",
-    "telegram": "https://t.me/+AKj7mTSVcTc3N2Q0",
     "cfp": "https://cfp.web3privacy.info",
-    "individual": "https://docs.web3privacy.info/membership/"
+    "membership overview": "https://web3privacy.info/membership",
+    "individual membership": "https://docs.web3privacy.info/get-involved/personal-benefits",
+    "organisational membership": "https://docs.web3privacy.info/get-involved/org-benefits",
+    "donate": "https://docs.web3privacy.info/get-involved/donate",
+    "twitter": "https://twitter.com/web3privacy",
+    "matrix": "https://matrix.web3privacy.info",
+    "bluesky": "https://bsky.app/profile/web3privacy.info",
+    "mirror": "https://mirror.xyz/0x0f1F3DAf416B74DB3DE55Eb4D7513a80F4841073",
+    "youtube": "https://youtube.com/@Web3PrivacyNow",
+    "telegram": "https://t.me/+AKj7mTSVcTc3N2Q0"
   },
   "teams": {
     "core-team": [
@@ -446,6 +450,12 @@
       "country": "es",
       "refs": {
         "twitter": "miroyato"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/andreas-miroyato.png",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/andreas-miroyato-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/andreas-miroyato-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/andreas-miroyato-400px.webp"
       }
     },
     {
@@ -903,6 +913,12 @@
       "country": "au",
       "refs": {
         "twitter": "jarradhope_"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/jarrad-hope.png",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/jarrad-hope-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/jarrad-hope-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/jarrad-hope-400px.webp"
       }
     },
     {
@@ -1465,6 +1481,7 @@
       "confirmed": true,
       "coincidence": "[DevCon](https://devcon.org)",
       "lead": "Mykola",
+      "slots": 16,
       "visitors": 300,
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-devcon7",
@@ -1522,117 +1539,6 @@
         "wide-square:128": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-wide-square-128px.webp",
         "poster-simple:128": "https://data.web3privacy.info/img/events/2024/thumbs/c24bkk-poster-simple-128px.webp"
       }
-    },
-    {
-      "id": "s23prg",
-      "type": "summit",
-      "date": "2023-06-05",
-      "city": "Prague",
-      "country": "cz",
-      "place": "[X10](https://www.divadlox10.cz/)",
-      "place-address": "Charvátova 39/10, 11000 Prague 1",
-      "confirmed": true,
-      "coincidence": "[ETHPrague](https://ethprague.com/)",
-      "lead": "Tree",
-      "slots": 16,
-      "visitors": 180,
-      "links": {
-        "web": "https://prague.web3privacy.info/",
-        "git": "https://github.com/web3privacy/w3ps1"
-      },
-      "speakers": [
-        "ameen-soleimani",
-        "guy-zyskind",
-        "max-hampshire",
-        "antoni-zolciak",
-        "rachel-rose-oleary",
-        "alex-kampa",
-        "oliver-gale",
-        "mario-havel",
-        "costanza-gallo",
-        "manu-alzuru",
-        "nick-almond",
-        "juraj-bednar",
-        "dcbuilder",
-        "alona-shevchenko",
-        "tibor-csoka",
-        "merula",
-        "serinko",
-        "steffen-kux",
-        "althea",
-        "mykola-siusko",
-        "pg",
-        "tree"
-      ],
-      "images": {
-        "poster": "https://data.web3privacy.info/img/events/2023/s23prg-poster.png"
-      },
-      "thumbs": {
-        "poster:360": "https://data.web3privacy.info/img/events/2023/thumbs/s23prg-poster-360px.webp",
-        "poster:640": "https://data.web3privacy.info/img/events/2023/thumbs/s23prg-poster-640px.webp",
-        "poster:128": "https://data.web3privacy.info/img/events/2023/thumbs/s23prg-poster-128px.webp"
-      }
-    },
-    {
-      "id": "s23rom",
-      "type": "summit",
-      "date": "2023-10-05",
-      "city": "Rome",
-      "country": "it",
-      "place": "[Villaggio Globale](https://maps.app.goo.gl/S7kUruNvbpjgHuSh9)",
-      "place-address": "Largo Dino Frisullo, 00153 Roma RM",
-      "confirmed": true,
-      "coincidence": "[ETHRome](https://ethrome.org/)",
-      "lead": "PG",
-      "slots": 10,
-      "visitors": 139,
-      "links": {
-        "web": "https://lu.ma/web3privacynow_rome"
-      },
-      "speakers": [
-        "eleanore-blanc",
-        "rik-krieger",
-        "vincenzo-iovino",
-        "alan-scott",
-        "kieran-mesquita",
-        "andrea-togni",
-        "jaromil",
-        "serinko",
-        "vaclav-pavlin",
-        "alex-zaidelson",
-        "r-prokh",
-        "carlo-chialastri",
-        "limone-eth",
-        "costanza-gallo",
-        "pg",
-        "catsnaks"
-      ],
-      "images": {},
-      "thumbs": {}
-    },
-    {
-      "id": "m23prg",
-      "type": "meetup",
-      "date": "2023-11-14",
-      "city": "Prague",
-      "country": "cz",
-      "place": "[Dílna](https://kafevdilne.cz/)",
-      "place-address": "Smíchovská náplavka - Kobka č. 10, Hořejší nábřeží, Praha 5",
-      "confirmed": true,
-      "coincidence": "[DCxPrague](https://dcxprague.org/)",
-      "lead": "Tree",
-      "slots": 3,
-      "visitors": 15,
-      "links": {
-        "web": "https://lu.ma/w3pm-prg1"
-      },
-      "speakers": [
-        "vaclav-pavlin",
-        "radek-svarz",
-        "marcel-kolaja"
-      ],
-      "images": {},
-      "thumbs": {}
     },
     {
       "id": "m24buc",
@@ -2007,6 +1913,117 @@
         "wide:128": "https://data.web3privacy.info/img/events/2024/thumbs/m24rom-wide-128px.webp",
         "square:360": "https://data.web3privacy.info/img/events/2024/thumbs/m24rom-square-360px.webp"
       }
+    },
+    {
+      "id": "s23prg",
+      "type": "summit",
+      "date": "2023-06-05",
+      "city": "Prague",
+      "country": "cz",
+      "place": "[X10](https://www.divadlox10.cz/)",
+      "place-address": "Charvátova 39/10, 11000 Prague 1",
+      "confirmed": true,
+      "coincidence": "[ETHPrague](https://ethprague.com/)",
+      "lead": "Tree",
+      "slots": 16,
+      "visitors": 180,
+      "links": {
+        "web": "https://prague.web3privacy.info/",
+        "git": "https://github.com/web3privacy/w3ps1"
+      },
+      "speakers": [
+        "ameen-soleimani",
+        "guy-zyskind",
+        "max-hampshire",
+        "antoni-zolciak",
+        "rachel-rose-oleary",
+        "alex-kampa",
+        "oliver-gale",
+        "mario-havel",
+        "costanza-gallo",
+        "manu-alzuru",
+        "nick-almond",
+        "juraj-bednar",
+        "dcbuilder",
+        "alona-shevchenko",
+        "tibor-csoka",
+        "merula",
+        "serinko",
+        "steffen-kux",
+        "althea",
+        "mykola-siusko",
+        "pg",
+        "tree"
+      ],
+      "images": {
+        "poster": "https://data.web3privacy.info/img/events/2023/s23prg-poster.png"
+      },
+      "thumbs": {
+        "poster:360": "https://data.web3privacy.info/img/events/2023/thumbs/s23prg-poster-360px.webp",
+        "poster:640": "https://data.web3privacy.info/img/events/2023/thumbs/s23prg-poster-640px.webp",
+        "poster:128": "https://data.web3privacy.info/img/events/2023/thumbs/s23prg-poster-128px.webp"
+      }
+    },
+    {
+      "id": "s23rom",
+      "type": "summit",
+      "date": "2023-10-05",
+      "city": "Rome",
+      "country": "it",
+      "place": "[Villaggio Globale](https://maps.app.goo.gl/S7kUruNvbpjgHuSh9)",
+      "place-address": "Largo Dino Frisullo, 00153 Roma RM",
+      "confirmed": true,
+      "coincidence": "[ETHRome](https://ethrome.org/)",
+      "lead": "PG",
+      "slots": 10,
+      "visitors": 139,
+      "links": {
+        "web": "https://lu.ma/web3privacynow_rome"
+      },
+      "speakers": [
+        "eleanore-blanc",
+        "rik-krieger",
+        "vincenzo-iovino",
+        "alan-scott",
+        "kieran-mesquita",
+        "andrea-togni",
+        "jaromil",
+        "serinko",
+        "vaclav-pavlin",
+        "alex-zaidelson",
+        "r-prokh",
+        "carlo-chialastri",
+        "limone-eth",
+        "costanza-gallo",
+        "pg",
+        "catsnaks"
+      ],
+      "images": {},
+      "thumbs": {}
+    },
+    {
+      "id": "m23prg",
+      "type": "meetup",
+      "date": "2023-11-14",
+      "city": "Prague",
+      "country": "cz",
+      "place": "[Dílna](https://kafevdilne.cz/)",
+      "place-address": "Smíchovská náplavka - Kobka č. 10, Hořejší nábřeží, Praha 5",
+      "confirmed": true,
+      "coincidence": "[DCxPrague](https://dcxprague.org/)",
+      "lead": "Tree",
+      "slots": 3,
+      "visitors": 15,
+      "links": {
+        "web": "https://lu.ma/w3pm-prg1"
+      },
+      "speakers": [
+        "vaclav-pavlin",
+        "radek-svarz",
+        "marcel-kolaja"
+      ],
+      "images": {},
+      "thumbs": {}
     }
   ]
 }
