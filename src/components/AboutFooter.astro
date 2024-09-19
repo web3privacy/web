@@ -20,7 +20,6 @@ const {
   ],
 } = Astro.props;
 
-console.log(sectionsConfig);
 // Function to sort sections by order
 const sortedSections = sectionsConfig
   .filter((section) => section.visible)
@@ -90,21 +89,29 @@ const sortedSections = sectionsConfig
       {section.name === "speakers" && (
         <div class="middle-pane-medium mt-16">
           <h1 class="my-6 glitch-text ">Speakers</h1>
-          <SpeakerGrid people={core.people} team={core.teams["core-team"]} />
+          <SpeakerGrid
+            people={core.people}
+            team={core.teams["core-team"]}
+            core={false}
+          />
         </div>
       )}
 
       {section.name === "core contributors" && (
         <div class="middle-pane-medium mt-16">
           <h1 class="my-6 glitch-text">Core Contributors</h1>
-          <SpeakerGrid people={core.people} team={core.teams["core-team"]} />
+          <SpeakerGrid
+            people={core.people}
+            team={core.teams["core-team"]}
+            core={true}
+          />
         </div>
       )}
 
       {section.name === "contributors" && (
         <div class="middle-pane-medium">
           <h1 class="my-6 glitch-text">Contributors</h1>
-          <div class="flex gap-3 flex-wrap mb-4 items-center">
+          <div class="flex gap-3 flex-wrap mb-4 items-center justify-center md:justify-start">
             {contributors.items.map((contrib) => (
               <div>
                 <a
@@ -114,7 +121,7 @@ const sortedSections = sectionsConfig
                 >
                   <img
                     src={contrib.avatar_url}
-                    class="w-14 rounded-full aspect-square"
+                    class="w-6 md:w-14 rounded-full aspect-square"
                   />
                 </a>
               </div>

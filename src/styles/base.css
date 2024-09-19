@@ -33,6 +33,25 @@
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+.glitch-text {
+  font-family: Major Mono Display, ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+  text-transform: lowercase!important;
+  flex-wrap: nowrap;
+}
+
+.testimonial-fade {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.testimonial-fade.active {
+  opacity: 1;
+}
+
 @tailwind components;
 
 @layer components {
@@ -86,7 +105,6 @@
   a.button button {
     fill: #fff;
     stroke: #fff;
-
   }
 
   a.button button::after {

@@ -21,8 +21,10 @@ let currentTestimonial = 0;
 ---
 
 <div class="w-full mx-auto px-8 border-2 border-[#202020]">
-  <div class="relative testimonial-fade active" id="testimonial-container">
-    <div class="flex items-center justify-center overflow-hidden">
+  <div class="relative" id="testimonial-container">
+    <div
+      class="flex flex-col md:flex-row my-4 md:my-0 items-center justify-center testimonial-fade active overflow-hidden"
+    >
       <div>
         <img
           src={testimonials[currentTestimonial].imageUrl}
