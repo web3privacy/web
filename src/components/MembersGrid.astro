@@ -86,42 +86,51 @@ let filteredPeople = [
 const limitedPeople = filteredPeople.slice(0, 12);
 
 function personLink(person) {
-  return person.refs?.twitter
-    ? `https://twitter.com/${person.refs.twitter}`
-    : person.refs?.bsky
-      ? `https://bsky.app/profile/${person.refs.bsky}`
-      : "#";
+  if (person.refs?.twitter) {
+    return `https://twitter.com/${person.refs.twitter}`;
+  } else if (person.refs?.bsky) {
+    return `https://bsky.app/profile/${person.refs.bsky}`;
+  } else if (person.refs?.linkedin) {
+    return `https://www.linkedin.com/in/${person.refs.linkedin}`;
+  } else if (person.refs?.github) {
+    return `https://github.com/${person.refs.github}`;
+  } else if (person.refs?.matrix) {
+    return `https://matrix.to/#/${person.refs.matrix}`;
+  } else if (person.refs?.email) {
+    return `mailto:${person.refs.email}`;
+  } else {
+    return "#";
+  }
 }
 
-function truncateCaption(caption) {
-  if (!caption) return "";
-  const words = caption.split(" ");
-  if (words.length > 10) {
-    return words.slice(0, 20).join(" ") + "...";
-  }
-  return caption;
-}
+
 ---
 
 <div
-  class="grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2"
+  class="grid place-items-start grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2"
 >
   {
     limitedPeople.map((person) => (
-      <div class=" max-w-xs w-full h-[340px] bg-transparent overflow-hidden p-1 space-y-1 mb-2">
+    <div class="max-w-xs w-full max-h-[340px] bg-transparent overflow-hidden p-1 space-y-1 mb-2">
         <a href={personLink(person)}>
           <img
             src={person.imageUrl}
             alt={person.name}
-            class="w-full h-48 object-cover filter grayscale"
+            class="h-24 w-full md:h-48 object-cover object-center h-full grayscale"
           />
         </a>
-        <div class=" flex items-center justify-center  flex-col pt-8">
-          <h3 class="text-lg font-bold">{person.name}</h3>
-          {person.refs && person.refs.twitter && (
-            <p class="text-sm text-gray-500">@{person.refs.twitter}</p>
+        <div class="mt-4 flex items-center justify-center flex-col ">
+          <h3 class="text-xs md:text-lg font-bold leading-6">{person.name}</h3>
+          {person.refs && (
+            <p class="text-xs md:text-sm text-gray-500">
+              {person.refs.twitter && `@${person.refs.twitter}`}
+              {person.refs.bsky && ` | bsky: ${person.refs.bsky}`}
+              {person.refs.linkedin && ` | LinkedIn: ${person.refs.linkedin}`}
+              {person.refs.github && ` | GitHub: ${person.refs.github}`}
+              {person.refs.matrix && ` | Matrix: ${person.refs.matrix}`}
+              {person.refs.email && ` | Email: ${person.refs.email}`}
+            </p>
           )}
-          {/* <p class="text-sm">{truncateCaption(person.caption)}</p> */}
         </div>
       </div>
     ))

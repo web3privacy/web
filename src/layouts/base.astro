@@ -151,10 +151,12 @@ function genHeading(str) {
         banner && typeof banner !== "object" && (
           <div class="w-full flex mt-20 sm:mt-32 middle-pane-medium">
             <div>
-              {/* <div class="w3pn-logo w-64 sm:w-72 lg:w-80 xl:w-96" /> */}
-              <h1 class="glitch-text-interval text-6xl">
+              <div class="w3pn-logo w-64 sm:w-72 lg:w-80 xl:w-96" />
+           
+
+              {/* <h1 class="glitch-text-interval text-6xl">
                 web3privacy summit #1
-              </h1>
+              </h1> */}
               <div class="text-left mt-10">{config.hero.text}</div>
               <div class="mt-6">
                 <a class="button" href="/about">
@@ -172,7 +174,11 @@ function genHeading(str) {
           <>
             <div class="middle-pane-medium mt-8  sm:mt-14 sm:mb-8">
               <div class="leading-none flex justify-center mb-3 text-[4px] sm:text-[8px] text-white">
-                <pre>{genHeading(title)}</pre>
+                <pre>
+                  <code class="font-mono layout-heading  ">
+                    {genHeading(title)}
+                  </code>
+                </pre>
               </div>
               <div class="flex items-center justify-center w-full text-center">
                 <h3 class=" w-full max-w-[938px] glitch-text">{subtext}</h3>

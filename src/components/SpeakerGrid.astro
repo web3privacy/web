@@ -28,7 +28,7 @@ function personLink(person) {
 ---
 
 <div
-  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 place-items-center md:place-items-start"
+  class="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 md:gap-4 place-items-start"
 >
   {
     filteredPeople.map((person) => (
@@ -37,13 +37,13 @@ function personLink(person) {
           <img
             src={person.imageUrl}
             alt={person.name}
-            class="w-full h-48 object-cover"
+            class="h-24 w-full md:h-48 object-cover object-center h-full"
           />
         </a>
         <div class="mt-4">
-          <h3 class="text-lg font-bold leading-6">{person.name}</h3>
+          <h3 class="text-xs md:text-lg font-bold leading-6">{person.name}</h3>
           {person.refs && (
-            <p class="text-sm text-gray-500">
+            <p class="text-xs text-gray-500">
               {person.refs.twitter && `@${person.refs.twitter}`}
               {person.refs.bsky && ` | bsky: ${person.refs.bsky}`}
               {person.refs.linkedin && ` | LinkedIn: ${person.refs.linkedin}`}

@@ -50,14 +50,14 @@ const sectionsConfig = [
         </p>
       </div>
 
-      <div class="flex gap-3 flex-wrap mb-4 justify-start mx-4">
+      <div class="flex gap-3 flex-wrap mb-4 justify-center md:justify-start mx-4">
         {
           contributors.items.map((contrib) => (
             <div>
               <a href={contrib.html_url} target="_blank" title={contrib.login}>
                 <img
                   src={contrib.avatar_url}
-                  class="w-14 rounded-full aspect-square"
+                  class="w-6 md:w-14 rounded-full aspect-square"
                 />
               </a>
             </div>

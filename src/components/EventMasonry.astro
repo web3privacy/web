@@ -14,12 +14,14 @@ const {
 } = Astro.props;
 ---
 
-<div class="middle-pane-big flex flex-wrap lg:flex-nowrap gap-[3px]">
+<div
+  class="middle-pane-big grid grid-cols-2 lg:flex lg:flex-nowrap gap-2 md:gap-[3px]"
+>
   {
     images.slice(0, 4).map((image, index) => (
-      <div class="flex-auto overflow-hidden" key={index}>
+      <div class="flex-auto overflow-hidden">
         <img
-          class="object-cover w-full max-h-[223px] cursor-pointer gallery-image"
+          class="object-cover w-full max-h-28 md:max-h-[223px] cursor-pointer gallery-image"
           src={image}
           alt={`Image ${index + 1}`}
           data-index={index}
@@ -29,12 +31,14 @@ const {
   }
 </div>
 
-<div class="middle-pane-big flex flex-wrap lg:flex-nowrap gap-[3px]">
+<div
+class="middle-pane-big grid grid-cols-2 lg:flex lg:flex-nowrap gap-2 md:gap-[3px]"
+>
   {
     images.slice(4).map((image, index) => (
-      <div class="flex-auto overflow-hidden" key={index + 4}>
+      <div class="flex-auto overflow-hidden">
         <img
-          class="object-cover w-full max-h-[223px] cursor-pointer gallery-image"
+          class="object-cover w-full max-h-28 md:max-h-[223px] cursor-pointer gallery-image"
           src={image}
           alt={`Image ${index + 5}`}
           data-index={index + 4}
@@ -49,8 +53,7 @@ const {
 >
   <div class="relative modal-content">
     <button class="absolute top-6 right-0 text-white close-modal z-100"
-      ></button
-    >
+    ></button>
   </div>
   <div class="flex flex-col" style="width: 54vw; height: 60vh;">
     <img
@@ -64,7 +67,6 @@ const {
     {
       images.map((image, index) => (
         <img
-          key={index}
           class="w-24 h-24 object-contain cursor-pointer thumbnail-image"
           src={image}
           alt={`Thumbnail ${index + 1}`}
