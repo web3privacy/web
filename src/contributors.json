@@ -206,7 +206,7 @@
       "received_events_url": "https://api.github.com/users/DeBelg/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 45
+      "contributions": 46
     },
     {
       "login": "jiricepelka",
@@ -438,6 +438,27 @@
       "type": "User",
       "site_admin": false,
       "contributions": 5
+    },
+    {
+      "login": "ElektrikSheep",
+      "id": 182003614,
+      "node_id": "U_kgDOCtknng",
+      "avatar_url": "https://avatars.githubusercontent.com/u/182003614?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ElektrikSheep",
+      "html_url": "https://github.com/ElektrikSheep",
+      "followers_url": "https://api.github.com/users/ElektrikSheep/followers",
+      "following_url": "https://api.github.com/users/ElektrikSheep/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ElektrikSheep/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ElektrikSheep/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ElektrikSheep/subscriptions",
+      "organizations_url": "https://api.github.com/users/ElektrikSheep/orgs",
+      "repos_url": "https://api.github.com/users/ElektrikSheep/repos",
+      "events_url": "https://api.github.com/users/ElektrikSheep/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ElektrikSheep/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 4
     },
     {
       "login": "PEPE-3000",
@@ -687,27 +708,6 @@
       "repos_url": "https://api.github.com/users/kauri-hero/repos",
       "events_url": "https://api.github.com/users/kauri-hero/events{/privacy}",
       "received_events_url": "https://api.github.com/users/kauri-hero/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 2
-    },
-    {
-      "login": "ElektrikSheep",
-      "id": 182003614,
-      "node_id": "U_kgDOCtknng",
-      "avatar_url": "https://avatars.githubusercontent.com/u/182003614?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/ElektrikSheep",
-      "html_url": "https://github.com/ElektrikSheep",
-      "followers_url": "https://api.github.com/users/ElektrikSheep/followers",
-      "following_url": "https://api.github.com/users/ElektrikSheep/following{/other_user}",
-      "gists_url": "https://api.github.com/users/ElektrikSheep/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/ElektrikSheep/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/ElektrikSheep/subscriptions",
-      "organizations_url": "https://api.github.com/users/ElektrikSheep/orgs",
-      "repos_url": "https://api.github.com/users/ElektrikSheep/repos",
-      "events_url": "https://api.github.com/users/ElektrikSheep/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/ElektrikSheep/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 2
