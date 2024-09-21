@@ -39,7 +39,7 @@
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
-  text-transform: lowercase!important;
+  text-transform: lowercase !important;
   flex-wrap: nowrap;
 }
 
@@ -50,6 +50,35 @@
 
 .testimonial-fade.active {
   opacity: 1;
+}
+
+/* Members, Community Partners & More */
+.person-item {
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.partner-item:hover {
+  filter: grayscale(25%);
+  cursor: help;
+  outline: white;
+  outline-style: dashed;
+  outline-width: 3px;
+}
+.partner-item .partner-text {
+  color: #ffffff;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.person-item img {
+  filter: grayscale(100%);
+}
+.person-item:hover img {
+  filter: grayscale(0%);
 }
 
 @tailwind components;

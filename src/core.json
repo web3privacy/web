@@ -24,10 +24,194 @@
     "telegram": "https://t.me/+AKj7mTSVcTc3N2Q0"
   },
   "teams": {
-    "core-team": [
-      "mykola-siusko",
-      "pg",
-      "coinmandeer"
+    "core-team": ["mykola-siusko", "pg", "coinmandeer"],
+    "members": [
+      {
+        "name": "LOGOS",
+        "imageUrl": "/membersLogo/logos.svg",
+        "refs": {
+          "website": "https://logos.co/",
+          "twitter": "logos_network"
+        }
+      },
+      {
+        "name": "WAKU",
+        "imageUrl": "/membersLogo/waku.svg",
+        "refs": {
+          "website": "https://waku.org/",
+          "twitter": "waku_org"
+        }
+      },
+      {
+        "name": "Nomos",
+        "imageUrl": "/membersLogo/nomos.svg",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "Nomos_tech"
+        }
+      },
+      {
+        "name": "Codex",
+        "imageUrl": "/membersLogo/codex.svg",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "Codex_storage"
+        }
+      },
+      {
+        "name": "Dyne",
+        "imageUrl": "/membersLogo/dyne.png",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "dyneorg"
+        }
+      },
+      {
+        "name": "DNOSIS DAO",
+        "imageUrl": "/membersLogo/gnosisdao.png",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "dyneorg"
+        }
+      },
+      {
+        "name": "0xbow",
+        "imageUrl": "/membersLogo/0xbow.png",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "0xbowio"
+        }
+      },
+      {
+        "name": "Labyrinth",
+        "imageUrl": "/membersLogo/labyrinth.png",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "Labyrinth_HQ"
+        }
+      },
+      {
+        "name": "Namada",
+        "imageUrl": "/membersLogo/namada.png",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "namada"
+        }
+      },
+      {
+        "name": "Intmax",
+        "imageUrl": "/membersLogo/intmax.png",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "intmaxIO"
+        }
+      },
+      {
+        "name": "MorosNet",
+        "imageUrl": "/membersLogo/moros.png",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "morosnet"
+        }
+      },
+      {
+        "name": "TokenDynamics",
+        "imageUrl": "/membersLogo/tokendynamics.png",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "tokendynamics"
+        }
+      }
+    ],
+    "community-partners": [
+      {
+        "name": "HOPR",
+        "imageUrl": "/membersLogo/hopr.svg",
+        "refs": {
+          "website": "https://hoprnet.org/",
+          "twitter": "hoprnet"
+        }
+      },
+      {
+        "name": "ETHRome",
+        "imageUrl": "/membersLogo/ETHRome.png",
+        "refs": {
+          "website": "https://www.ethrome.org/",
+          "twitter": "ETHRome"
+        }
+      },
+      {
+        "name": "LunarDAO",
+        "imageUrl": "/membersLogo/LunarDAO.png",
+        "refs": {
+          "website": "https://lunardao.net/",
+          "twitter": "lunarpunksquad"
+        }
+      },
+      {
+        "name": "MolochDAO",
+        "imageUrl": "/membersLogo/MolochDAO.png",
+        "refs": {
+          "website": "https://molochdao.com/",
+          "twitter": "molochdao"
+        }
+      },
+      {
+        "name": "Urbe.eth",
+        "imageUrl": "/membersLogo/Urbe.png",
+        "refs": {
+          "website": "https://linktr.ee/urbe.eth",
+          "twitter": "urbeEth"
+        }
+      },
+      {
+        "name": "CryptoCanal",
+        "imageUrl": "/membersLogo/CryptoCanal.png",
+        "refs": {
+          "website": "https://lu.ma/cryptocanal",
+          "twitter": "cryptocanal"
+        }
+      },
+      {
+        "name": "ParalelniPolis",
+        "imageUrl": "/membersLogo/polis.png",
+        "refs": {
+          "website": "https://www.paralelnipolis.cz/en/",
+          "twitter": "Paralelni_polis"
+        }
+      },
+      {
+        "name": "GCCofCommons",
+        "imageUrl": "/membersLogo/GCC.png",
+        "refs": {
+          "website": "https://www.gccofficial.org/en",
+          "twitter": "GCCofCommons"
+        }
+      },
+      {
+        "name": "Zcash",
+        "imageUrl": "/membersLogo/zcash.png",
+        "refs": {
+          "website": "https://z.cash/",
+          "twitter": "zcash"
+        }
+      },
+      {
+        "name": "Kernel Community",
+        "imageUrl": "/membersLogo/kernel.png",
+        "refs": {
+          "website": "https://kernel.community/",
+          "twitter": "Kernel0x"
+        }
+      },
+      {
+        "name": "Shielding Summit",
+        "imageUrl": "/membersLogo/ssummit.png",
+        "refs": {
+          "website": "https://shieldingsummit.org/",
+          "twitter": "ShieldingSummit"
+        }
+      }
     ]
   },
   "research": [
@@ -36,12 +220,8 @@
       "title": "ZK solutions DB",
       "status": "live",
       "sort": 1,
-      "labels": [
-        "db"
-      ],
-      "assignees": [
-        "Msiusko"
-      ],
+      "labels": ["db"],
+      "assignees": ["Msiusko"],
       "caption": "General DB aggregation focused on ZK for privacy.",
       "links": {
         "web": "https://github.com/web3privacy/web3privacy/tree/main/ZKprivacylandscape#readme",
@@ -53,12 +233,8 @@
       "title": "Privacy Use-Cases DB",
       "status": "live",
       "sort": 3,
-      "labels": [
-        "db"
-      ],
-      "assignees": [
-        "Msiusko"
-      ],
+      "labels": ["db"],
+      "assignees": ["Msiusko"],
       "caption": "Basic DB of the privacy-centric use-cases.",
       "links": {
         "web": "https://github.com/Msiusko/web3privacy/blob/main/Use-cases.md",
@@ -71,9 +247,7 @@
       "status": "live",
       "sort": 5,
       "labels": [],
-      "assignees": [
-        "Msiusko"
-      ],
+      "assignees": ["Msiusko"],
       "caption": "Pagency framework for facilitation privacy use-cases (privacy services modelling)",
       "links": {
         "web": "https://github.com/web3privacy/web3privacy/blob/main/Pagency/Pagency%20-%20privacy%20use-case%20facilitation%20framework.pdf",
@@ -85,12 +259,8 @@
       "title": "Privacy Projects Hiring",
       "status": "live",
       "sort": 4,
-      "labels": [
-        "db"
-      ],
-      "assignees": [
-        "Msiusko"
-      ],
+      "labels": ["db"],
+      "assignees": ["Msiusko"],
       "caption": "Hiring snapshot across the market: total vacancies, grades, technical x non-technical positions, hiring scope within specific companies & domains.",
       "links": {
         "web": "https://docs.google.com/spreadsheets/d/1dN6bIWyOh01Dl-y1iZh-1TASZxKUefD098BUALcnUb8/edit?usp=sharing",
@@ -112,10 +282,7 @@
       "status": "backlog",
       "sort": 2,
       "labels": [],
-      "assignees": [
-        "EclecticSamurai",
-        "Msiusko"
-      ],
+      "assignees": ["EclecticSamurai", "Msiusko"],
       "links": {}
     },
     {
@@ -124,10 +291,7 @@
       "status": "backlog",
       "sort": 3,
       "labels": [],
-      "assignees": [
-        "EclecticSamurai",
-        "Msiusko"
-      ],
+      "assignees": ["EclecticSamurai", "Msiusko"],
       "links": {}
     },
     {
@@ -136,9 +300,7 @@
       "status": "in-progress",
       "sort": 0,
       "labels": [],
-      "assignees": [
-        "Msiusko"
-      ],
+      "assignees": ["Msiusko"],
       "caption": "Comprehensive privacy-centric research aimed to map Ethereum-centric privacy services, use-cases, product stages, missing areas (use-cases), funding landscape etc Supported by MolochDAO",
       "links": {
         "web": "https://github.com/web3privacy/web3privacy/blob/main/Market%20overview/Ethereum%20Ecosystem/Readme.md",
@@ -150,9 +312,7 @@
       "title": "Privacy use-cases DB 2.0 (major update)",
       "status": "backlog",
       "sort": 4,
-      "labels": [
-        "db"
-      ],
+      "labels": ["db"],
       "assignees": [],
       "links": {}
     },
@@ -162,9 +322,7 @@
       "status": "backlog",
       "sort": 1,
       "labels": [],
-      "assignees": [
-        "Msiusko"
-      ],
+      "assignees": ["Msiusko"],
       "links": {}
     },
     {
@@ -173,9 +331,7 @@
       "status": "in-progress",
       "sort": 1,
       "labels": [],
-      "assignees": [
-        "Msiusko"
-      ],
+      "assignees": ["Msiusko"],
       "links": {}
     },
     {
@@ -184,9 +340,7 @@
       "status": "live",
       "sort": 2,
       "labels": [],
-      "assignees": [
-        "Msiusko"
-      ],
+      "assignees": ["Msiusko"],
       "caption": "150-pages report on the state of privacy x web3 from funding to key projects.",
       "links": {
         "web": "https://github.com/web3privacy/web3privacy/blob/main/Market%20overview/Privacy%20market%20outlook%20in%20Web3%20by%20Mykola%20Siusko%20(Jan%202023).pdf"
@@ -198,9 +352,7 @@
       "status": "live",
       "sort": 6,
       "labels": [],
-      "assignees": [
-        "Msiusko"
-      ],
+      "assignees": ["Msiusko"],
       "caption": "Research how privacy tools can protect human rights, vulnerable audiences within the war, migration & cross-border relations. Supported by Zcash Foundation.",
       "links": {
         "web": "https://github.com/web3privacy/grants/blob/main/staticobjects/Privacy%20use%20cases%20with%20the%20focus%20on%20Zcash%20(privacy%20coins)_Siusko.pdf"
@@ -212,9 +364,7 @@
       "status": "live",
       "sort": 0,
       "labels": [],
-      "assignees": [
-        "Msiusko"
-      ],
+      "assignees": ["Msiusko"],
       "caption": "Privacy services x web3 initial market DB aggregation: segmentation, key links (web, git, docs), ecosystem, product liveliness etc. 600 projects in the DB.",
       "links": {
         "web": "https://github.com/web3privacy/web3privacy?tab=readme-ov-file#contents"
@@ -1555,9 +1705,7 @@
       "design": {
         "image": "bucharest01"
       },
-      "helpers": [
-        "Alina"
-      ],
+      "helpers": ["Alina"],
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-bucharest1"
       },
@@ -1603,10 +1751,7 @@
       "place-address": "Paleisstraat 107, 1012 ZL Amsterdam, Paesi Bassi",
       "lead": "PG",
       "visitors": 90,
-      "helpers": [
-        "Mykola",
-        "Alina"
-      ],
+      "helpers": ["Mykola", "Alina"],
       "coincidence": "[ETHDam](https://www.ethdam.com/)",
       "slots": 3,
       "links": {
@@ -1659,9 +1804,7 @@
       "coincidence": "ETHBerlin",
       "lead": "Mykola",
       "visitors": 150,
-      "helpers": [
-        "ligi"
-      ],
+      "helpers": ["ligi"],
       "speakers": [
         "afri-schoedon",
         "joshua-davila",
@@ -1710,11 +1853,7 @@
       "country": "de",
       "coincidence": "ETHBerlin",
       "lead": "Tree",
-      "helpers": [
-        "Mykola",
-        "Coinmandeer",
-        "Robert"
-      ],
+      "helpers": ["Mykola", "Coinmandeer", "Robert"],
       "visitors": 210,
       "links": {
         "web": "https://c24ber.web3privacy.info/"
@@ -1757,11 +1896,7 @@
       "coincidence": "ETHPrague",
       "lead": "PG",
       "visitors": 180,
-      "helpers": [
-        "PG",
-        "Mykola",
-        "Coinmandeer"
-      ],
+      "helpers": ["PG", "Mykola", "Coinmandeer"],
       "slots": 16,
       "links": {
         "rsvp": "https://lu.ma/w3pn-summit-prague2"
@@ -1831,11 +1966,7 @@
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-bru1"
       },
-      "speakers": [
-        "edward-fricker",
-        "joshua-davila",
-        "mykola-siusko"
-      ],
+      "speakers": ["edward-fricker", "joshua-davila", "mykola-siusko"],
       "images": {
         "wide-square": "https://data.web3privacy.info/img/events/2024/m24bru-wide-square.png",
         "poster": "https://data.web3privacy.info/img/events/2024/m24bru-poster.png",
@@ -1874,10 +2005,7 @@
       "design": {
         "image": "rome02"
       },
-      "helpers": [
-        "Mykola",
-        "Alina"
-      ],
+      "helpers": ["Mykola", "Alina"],
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-rome1"
       },
@@ -2017,11 +2145,7 @@
       "links": {
         "web": "https://lu.ma/w3pm-prg1"
       },
-      "speakers": [
-        "vaclav-pavlin",
-        "radek-svarz",
-        "marcel-kolaja"
-      ],
+      "speakers": ["vaclav-pavlin", "radek-svarz", "marcel-kolaja"],
       "images": {},
       "thumbs": {}
     }

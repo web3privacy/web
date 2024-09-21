@@ -9,8 +9,18 @@ import { format } from "date-fns";
 import EventItem from "../components/EventItem.astro";
 import { isFutureDate } from "../lib/date";
 import EventMasonry from "../components/EventMasonry.astro";
+import * as config from "../config.yaml";
 
 const events = core.events;
+
+const sectionsConfig = [
+  { name: "socialLinks", visible: false, order: 2 },
+  { name: "speakers", visible: true, order: 2 },
+  { name: "contributors", visible: true, order: 3 },
+  { name: "testimonials", visible: true, order: 4 },
+  { name: "membersGrid", visible: true, order: 5 },
+  // { name: "community", visible: false, order: 6 },
+];
 
 const upcomingEvents = [];
 let eventsPast = 0;
@@ -80,8 +90,7 @@ for (const e of upcomingEvents) {
             <div class="text-white mt-1 ml-1.5">
               <a
                 href="https://github.com/web3privacy/web3privacy/blob/main/README.md#contents"
-                class="glitch-text"
-                >Web3 Privacy Database</a
+                class="glitch-text">Web3 Privacy Database</a
               >
             </div>
           </div>
@@ -116,7 +125,6 @@ for (const e of upcomingEvents) {
   </div>
 
   <div class="middle-pane-medium mt-10">
-
     <div class="mt-16">
       <h1 class="glitch-text">Featured Events</h1>
     </div>
@@ -204,7 +212,58 @@ for (const e of upcomingEvents) {
       >
     </div>
   </div>
-  <AboutFooter />
+  <div class="middle-pane-medium mt-16">
+    <h1>
+      <a class="glitch-text" href="https://docs.web3privacy.info/get-involved">
+        Join the Community
+      </a>
+    </h1>
+    <div>{config.landing.community}</div>
+    <div
+      class="grid place-items-center grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 pt-4 w-full"
+    >
+      <a
+        href={core.links.twitter}
+        class="bg-[#101010] w-full flex items-center justify-center w-full h-40 overflow-hidden"
+      >
+        <button class="flex flex-col items-center justify-center">
+          <div class="icon twitter"></div>
+          @web3privacy
+        </button>
+      </a>
+      <a
+        href={core.links.telegram}
+        class="bg-[#101010] w-full flex items-center justify-center w-full h-40 overflow-hidden"
+      >
+        <button class="flex flex-col items-center justify-center">
+          <div class="icon telegram"></div>
+          Telegram
+        </button>
+      </a>
+      <a
+        href={core.links.signal}
+        class="bg-[#101010] w-full flex items-center justify-center w-full h-40 overflow-hidden"
+      >
+        <button class="flex flex-col items-center justify-center">
+          <div class="icon">
+            <img src="/icons/signal.svg" alt="" />
+          </div>
+          Signal
+        </button>
+      </a>
+      <a
+        href={core.links.matrix}
+        class="bg-[#101010] w-full flex items-center justify-center w-full h-40 overflow-hidden"
+      >
+        <button class="flex flex-col items-center justify-center">
+          <div class="icon matrix"></div>
+          matrix
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <AboutFooter {sectionsConfig} />
   <script is:inline>
     document.querySelectorAll(".w3pn-hp-grid > div").forEach((el) => {
       el.addEventListener("click", () => {

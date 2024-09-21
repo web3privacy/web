@@ -1,86 +1,9 @@
 ---
-const { people, team } = Astro.props;
-// Dummy data for now:
-let filteredPeople = [
-  {
-    id: "guy-zyskind",
-    name: "Guy Zyskind",
-    caption:
-      "Founder of [Secret Network](https://scrt.network/), CEO [SCRT Labs](https://www.scrtlabs.com/)",
-    country: "is",
-    refs: {
-      twitter: "GuyZys",
-    },
-    imageUrl: "https://data.web3privacy.info/img/people/guy-zyskind.jpg",
-    thumbs: {
-      "64": "https://data.web3privacy.info/img/people/thumbs/guy-zyskind-64px.webp",
-      "128":
-        "https://data.web3privacy.info/img/people/thumbs/guy-zyskind-128px.webp",
-      "400":
-        "https://data.web3privacy.info/img/people/thumbs/guy-zyskind-400px.webp",
-    },
-  },
-  {
-    id: "guy-zyskind",
-    name: "Guy Zyskind",
-    caption:
-      "Founder of [Secret Network](https://scrt.network/), CEO [SCRT Labs](https://www.scrtlabs.com/)",
-    country: "is",
-    refs: {
-      twitter: "GuyZys",
-    },
-    imageUrl: "https://data.web3privacy.info/img/people/guy-zyskind.jpg",
-    thumbs: {
-      "64": "https://data.web3privacy.info/img/people/thumbs/guy-zyskind-64px.webp",
-      "128":
-        "https://data.web3privacy.info/img/people/thumbs/guy-zyskind-128px.webp",
-      "400":
-        "https://data.web3privacy.info/img/people/thumbs/guy-zyskind-400px.webp",
-    },
-  },
-  {
-    id: "guy-zyskind",
-    name: "Guy Zyskind",
-    caption:
-      "Founder of [Secret Network](https://scrt.network/), CEO [SCRT Labs](https://www.scrtlabs.com/)",
-    country: "is",
-    refs: {
-      twitter: "GuyZys",
-    },
-    imageUrl: "https://data.web3privacy.info/img/people/guy-zyskind.jpg",
-    thumbs: {
-      "64": "https://data.web3privacy.info/img/people/thumbs/guy-zyskind-64px.webp",
-      "128":
-        "https://data.web3privacy.info/img/people/thumbs/guy-zyskind-128px.webp",
-      "400":
-        "https://data.web3privacy.info/img/people/thumbs/guy-zyskind-400px.webp",
-    },
-  },
-  {
-    id: "guy-zyskind",
-    name: "Guy Zyskind",
-    caption:
-      "Founder of [Secret Network](https://scrt.network/), CEO [SCRT Labs](https://www.scrtlabs.com/)",
-    country: "is",
-    refs: {
-      twitter: "GuyZys",
-    },
-    imageUrl: "https://data.web3privacy.info/img/people/guy-zyskind.jpg",
-    thumbs: {
-      "64": "https://data.web3privacy.info/img/people/thumbs/guy-zyskind-64px.webp",
-      "128":
-        "https://data.web3privacy.info/img/people/thumbs/guy-zyskind-128px.webp",
-      "400":
-        "https://data.web3privacy.info/img/people/thumbs/guy-zyskind-400px.webp",
-    },
-  },
-];
+const { team, people, core } = Astro.props;
 
-// NOTE: Uncomment this if you want to filter people dynamically based upon a specific parameter
-
-// const filteredPeople = people
-//   .filter((p) => !team.includes(p.id))
-//   .filter((p) => p.imageUrl);
+const filteredPeople = core
+  ? people.filter((p) => !team.includes(p.id)).filter((p) => p.imageUrl)
+  : team;
 
 // Limit the number of members to 12 (2 rows with a max of 6 columns each)
 const limitedPeople = filteredPeople.slice(0, 12);
@@ -102,24 +25,24 @@ function personLink(person) {
     return "#";
   }
 }
-
-
 ---
 
 <div
-  class="grid place-items-start grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2"
+  class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 gap-y-10 md:gap-y-2 mb-6"
 >
   {
     limitedPeople.map((person) => (
-    <div class="max-w-xs w-full max-h-[340px] bg-transparent overflow-hidden p-1 space-y-1 mb-2">
+      <div
+        class={`partner-item ${core ? "person-item" : ""} text-center items-center p-2`}
+      >
         <a href={personLink(person)}>
           <img
             src={person.imageUrl}
             alt={person.name}
-            class="h-24 w-full md:h-48 object-cover object-center h-full grayscale"
+            class="partner-img  h-24   md:h-48 aspect-[16/11] w-full h-full object-contain p-0 "
           />
         </a>
-        <div class="mt-4 flex items-center justify-center flex-col ">
+        <div class="p-2 partner-text">
           <h3 class="text-xs md:text-lg font-bold leading-6">{person.name}</h3>
           {person.refs && (
             <p class="text-xs md:text-sm text-gray-500">

@@ -32,8 +32,10 @@ function personLink(person) {
 >
   {
     filteredPeople.map((person) => (
-      <div class="max-w-xs w-full max-h-[340px] bg-transparent overflow-hidden p-1 space-y-1 mb-2">
-        <a href={personLink(person)}>
+      <div
+        class={`max-w-xs w-full  max-h-[340px] bg-transparent overflow-hidden p-1 space-y-1 mb-2`}
+      >
+        <a href={personLink(person)} class={`${core ? "person-item" : ""}`}>
           <img
             src={person.imageUrl}
             alt={person.name}
