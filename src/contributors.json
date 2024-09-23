@@ -38,7 +38,7 @@
       "received_events_url": "https://api.github.com/users/Msiusko/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 3013
+      "contributions": 3019
     },
     {
       "login": "burningtree",
@@ -62,27 +62,6 @@
       "contributions": 950
     },
     {
-      "login": "EclecticSamurai",
-      "id": 101947219,
-      "node_id": "U_kgDOBhOXUw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/101947219?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/EclecticSamurai",
-      "html_url": "https://github.com/EclecticSamurai",
-      "followers_url": "https://api.github.com/users/EclecticSamurai/followers",
-      "following_url": "https://api.github.com/users/EclecticSamurai/following{/other_user}",
-      "gists_url": "https://api.github.com/users/EclecticSamurai/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/EclecticSamurai/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/EclecticSamurai/subscriptions",
-      "organizations_url": "https://api.github.com/users/EclecticSamurai/orgs",
-      "repos_url": "https://api.github.com/users/EclecticSamurai/repos",
-      "events_url": "https://api.github.com/users/EclecticSamurai/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/EclecticSamurai/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 528
-    },
-    {
       "login": "ethanolo-eth",
       "id": 167983675,
       "node_id": "U_kgDOCgM6Ow",
@@ -101,7 +80,28 @@
       "received_events_url": "https://api.github.com/users/ethanolo-eth/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 521
+      "contributions": 530
+    },
+    {
+      "login": "EclecticSamurai",
+      "id": 101947219,
+      "node_id": "U_kgDOBhOXUw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101947219?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/EclecticSamurai",
+      "html_url": "https://github.com/EclecticSamurai",
+      "followers_url": "https://api.github.com/users/EclecticSamurai/followers",
+      "following_url": "https://api.github.com/users/EclecticSamurai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/EclecticSamurai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/EclecticSamurai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/EclecticSamurai/subscriptions",
+      "organizations_url": "https://api.github.com/users/EclecticSamurai/orgs",
+      "repos_url": "https://api.github.com/users/EclecticSamurai/repos",
+      "events_url": "https://api.github.com/users/EclecticSamurai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/EclecticSamurai/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 529
     },
     {
       "login": "niclaz",
@@ -122,7 +122,7 @@
       "received_events_url": "https://api.github.com/users/niclaz/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 329
+      "contributions": 357
     },
     {
       "login": "cryptomar1o",
@@ -185,7 +185,7 @@
       "received_events_url": "https://api.github.com/users/DeBelg/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 58
+      "contributions": 67
     },
     {
       "login": "coinmandeer",
@@ -248,7 +248,7 @@
       "received_events_url": "https://api.github.com/users/0xdevant/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 21
+      "contributions": 27
     },
     {
       "login": "Ressac-No1",
