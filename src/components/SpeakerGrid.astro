@@ -2,9 +2,7 @@
 const { people, team, core } = Astro.props;
 
 // Filter based on the `core` parameter
-const members = core
-  ? people.filter((p) => team.includes(p.id)) // If `core` is true, filter for team members
-  : people.filter((p) => !team.includes(p.id)); // If `core` is false or undefined, filter for non-team members
+const members = team
 
 const filteredPeople = members.filter((p) => p.imageUrl).slice(0, 12);
 
@@ -19,6 +17,8 @@ function personLink(person) {
     return `https://github.com/${person.refs.github}`;
   } else if (person.refs?.matrix) {
     return `https://matrix.to/#/${person.refs.matrix}`;
+  } else if (person.refs?.designation) {
+    return `${person.refs.designation}`;
   } else if (person.refs?.email) {
     return `mailto:${person.refs.email}`;
   } else {
@@ -28,7 +28,7 @@ function personLink(person) {
 ---
 
 <div
-  class="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 md:gap-4 place-items-start"
+  class="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-6  place-items-start"
 >
   {
     filteredPeople.map((person) => (
@@ -43,15 +43,20 @@ function personLink(person) {
           />
         </a>
         <div class="mt-4">
-          <h3 class="text-xs md:text-lg font-bold leading-6">{person.name}</h3>
+          <h3 class="text-xs md:text-[16px] font-bold leading-9">{person.name}</h3>
           {person.refs && (
             <p class="text-xs text-gray-500">
               {person.refs.twitter && `@${person.refs.twitter}`}
+              {person.refs.email && ` | Email: ${person.refs.email}`}
               {person.refs.bsky && ` | bsky: ${person.refs.bsky}`}
               {person.refs.linkedin && ` | LinkedIn: ${person.refs.linkedin}`}
               {person.refs.github && ` | GitHub: ${person.refs.github}`}
               {person.refs.matrix && ` | Matrix: ${person.refs.matrix}`}
               {person.refs.email && ` | Email: ${person.refs.email}`}
+            </p>
+            <p class="text-xs text-gray-500">
+              {person.refs.designation && `${person.refs.designation}`}
+
             </p>
           )}
         </div>

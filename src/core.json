@@ -212,6 +212,116 @@
           "twitter": "ShieldingSummit"
         }
       }
+    ],
+    "speakers": [
+      {
+        "name": "DAVID CHAUM",
+        "imageUrl": "/speakers/davidchaum.png",
+        "refs": {
+          "website": "https://hoprnet.org/",
+          "twitter": "hoprnet",
+          "designation": "Founder of Secret Network, CEO, SCRT Labs"
+        }
+      },
+      {
+        "name": "TOR EKELAND",
+        "imageUrl": "/speakers/torekeland.png",
+        "refs": {
+          "website": "https://hoprnet.org/",
+          "twitter": "hoprnet",
+          "designation": "Founder of Secret Network, CEO, SCRT Labs"
+        }
+      },
+      {
+        "name": "MICHAEL BAUWENS",
+        "imageUrl": "/speakers/michaelbauwens.png",
+        "refs": {
+          "website": "https://hoprnet.org/",
+          "twitter": "hoprnet",
+          "designation": "Founder of Secret Network, CEO, SCRT Labs"
+        }
+      },
+      {
+        "name": "VITALIK BUTERIN",
+        "imageUrl": "/speakers/vitalikbuterin.png",
+        "refs": {
+          "website": "https://hoprnet.org/",
+          "twitter": "hoprnet",
+          "designation": "Founder of Secret Network, CEO, SCRT Labs"
+        }
+      },
+      {
+        "name": "PAUL DYLAN-ENNIS",
+        "imageUrl": "/speakers/paul.png",
+        "refs": {
+          "website": "https://hoprnet.org/",
+          "twitter": "hoprnet",
+          "designation": "Founder of Secret Network, CEO, SCRT Labs"
+        }
+      },
+      {
+        "name": "JAROMIL",
+        "imageUrl": "/speakers/jaromil.png",
+        "refs": {
+          "website": "https://hoprnet.org/",
+          "twitter": "hoprnet",
+          "designation": "Founder of Secret Network, CEO, SCRT Labs"
+        }
+      },
+      {
+        "name": "AMEEN",
+        "imageUrl": "/speakers/ameen.png",
+        "refs": {
+          "website": "https://hoprnet.org/",
+          "twitter": "hoprnet",
+          "designation": "Founder of Secret Network, CEO, SCRT Labs"
+        }
+      },
+      {
+        "name": "AHMED",
+        "imageUrl": "/speakers/ahmed.png",
+        "refs": {
+          "website": "https://hoprnet.org/",
+          "twitter": "hoprnet",
+          "designation": "Founder of Secret Network, CEO, SCRT Labs"
+        }
+      },
+      {
+        "name": "SCOTT MOORE",
+        "imageUrl": "/speakers/scottmoore.png",
+        "refs": {
+          "website": "https://hoprnet.org/",
+          "twitter": "hoprnet",
+          "designation": "Founder of Secret Network, CEO, SCRT Labs"
+        }
+      },
+      {
+        "name": "GUY ZYSKIND",
+        "imageUrl": "/speakers/guy.png",
+        "refs": {
+          "website": "https://hoprnet.org/",
+          "twitter": "hoprnet",
+          "designation": "Founder of Secret Network, CEO, SCRT Labs"
+        }
+      },
+      {
+        "name": "GUY ZYSKIND",
+        "imageUrl": "/speakers/guy.png",
+        "refs": {
+          "website": "https://hoprnet.org/",
+          "twitter": "hoprnet",
+          "designation": "Founder of Secret Network, CEO, SCRT Labs"
+        }
+      },
+      {
+        "name": "GUY ZYSKIND",
+        "imageUrl": "/speakers/guy.png",
+        "refs": {
+          "website": "https://hoprnet.org/",
+          "twitter": "hoprnet",
+          "designation": "Founder of Secret Network, CEO, SCRT Labs"
+        }
+      }
     ]
   },
   "research": [

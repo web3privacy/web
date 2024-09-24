@@ -35,11 +35,11 @@ function personLink(person) {
       <div
         class={`partner-item ${core ? "person-item" : ""} text-center items-center p-2`}
       >
-        <a href={personLink(person)}>
+        <a href={personLink(person)} class={`${core ? "person-item" : ""}`}>
           <img
             src={person.imageUrl}
             alt={person.name}
-            class="partner-img  h-24   md:h-48 aspect-[16/11] w-full h-full object-contain p-0 "
+            class="partner-img h-24 md:h-48 aspect-[16/11] w-full h-full object-contain p-0 "
           />
         </a>
         <div class="p-2 partner-text">
