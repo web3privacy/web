@@ -227,29 +227,62 @@
       "kurt-opsahl",
       "guy-zyskind"
     ],
-    "all-speakers": [
-      "ameen-soleimani",
-      "guy-zyskind",
-      "max-hampshire",
-      "antoni-zolciak",
-      "rachel-rose-oleary",
-      "alex-kampa",
-      "oliver-gale",
-      "mario-havel",
-      "costanza-gallo",
-      "manu-alzuru",
-      "nick-almond",
-      "juraj-bednar",
-      "dcbuilder",
-      "alona-shevchenko",
-      "tibor-csoka",
-      "merula",
-      "serinko",
-      "steffen-kux",
-      "althea",
-      "mykola-siusko",
-      "pg",
-      "tree"
+    "core-contributors": [
+      {
+        "id": "mykola-siusko",
+        "name": "Mykola Siusko",
+        "caption": "Chief empathy officer",
+        "country": "es",
+        "imageUrl": "https://data.web3privacy.info/img/people/mykola-siusko.png"
+      },
+      {
+        "id": "pg",
+        "name": "PG",
+        "caption": "Larrikin sling master",
+        "country": "it",
+        "imageUrl": "https://data.web3privacy.info/img/people/pg.jpg"
+      },
+      {
+        "id": "michael-parenti",
+        "name": "Michael Parenti",
+        "caption": "Ops & vibe",
+        "country": "us",
+        "imageUrl": "/core-contributors/michael-parenti.png"
+      },
+      {
+        "id": "coinmandeer",
+        "name": "Coinmandeer",
+        "caption": "UI/UX Design & Brand",
+
+        "imageUrl": "https://data.web3privacy.info/img/people/coinmandeer.png"
+      },
+      {
+        "id": "robert",
+        "name": "Robert De Groot",
+        "caption": "Partnership & Volunteers",
+
+        "imageUrl": "https://data.web3privacy.info/img/people/coinmandeer.png"
+      },
+      {
+        "id": "cat",
+        "name": "CAT THAT LURKS",
+        "caption": "“Like all pure creatures, cats are practical.” – William S. Burroughs",
+
+        "imageUrl": "/core-contributors/cat.png"
+      },
+      {
+        "id": "odd",
+        "name": "ODD",
+        "caption": "Copywriting & Education",
+        "imageUrl": "/core-contributors/odd.png"
+      },
+      {
+        "id": "mf",
+        "name": "MF",
+        "caption": "master of caffeine",
+
+        "imageUrl": "/core-contributors/mf.png"
+      }
     ]
   },
   "research": [

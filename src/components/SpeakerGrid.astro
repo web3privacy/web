@@ -2,14 +2,14 @@
 const { people, team, core } = Astro.props;
 
 // Filter based on the `core` parameter
-const members = people.filter((p) => {
-  console.log(p)
+const members = core ? people.filter((p) => {
  return  team.includes(p.id)
-}).filter((p) => p.imageUrl);
+}).filter((p) => p.imageUrl) : team;
 
 // const filteredPeople = members.filter((p) => p.imageUrl).slice(0, 12);
 const filteredPeople = members.filter((p) => p.imageUrl);
 
+console.log(filteredPeople)
 function personLink(person) {
   if (person.refs?.twitter) {
     return `https://twitter.com/${person.refs.twitter}`;
@@ -48,6 +48,9 @@ function personLink(person) {
         </a>
         <div class="mt-4">
           <h3 class="text-xs md:text-[16px] font-bold leading-9">{person.name}</h3>
+          <p class="text-xs text-gray-500">
+            {person.caption}
+            </p>
           {person.refs && (
             <p class="text-xs text-gray-500">
               {person.refs.twitter && `@${person.refs.twitter}`}
