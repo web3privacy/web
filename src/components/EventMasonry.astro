@@ -1,28 +1,29 @@
 ---
 const {
   images = [
-    "/events/masonry/1.png",
-    "/events/masonry/2.png",
-    "/events/masonry/3.png",
-    "/events/masonry/4.png",
-    "/events/masonry/5.png",
-    "/events/masonry/6.png",
-    "/events/masonry/7.png",
-    "/events/masonry/8.png",
-    "/events/masonry/9.png",
+    { webp: "/events/masonry/1.webp", png: "/events/masonry/1.png" },
+    { webp: "/events/masonry/2.webp", png: "/events/masonry/2.png" },
+    { webp: "/events/masonry/3.webp", png: "/events/masonry/3.png" },
+    { webp: "/events/masonry/4.webp", png: "/events/masonry/4.png" },
+    { webp: "/events/masonry/5.webp", png: "/events/masonry/5.png" },
+    { webp: "/events/masonry/6.webp", png: "/events/masonry/6.png" },
+    { webp: "/events/masonry/7.webp", png: "/events/masonry/7.png" },
+    { webp: "/events/masonry/8.webp", png: "/events/masonry/8.png" },
+    { webp: "/events/masonry/9.webp", png: "/events/masonry/9.png" },
   ],
 } = Astro.props;
 ---
 
+<!-- Display gallery with webp images -->
 <div
   class="middle-pane-big grid grid-cols-2 lg:flex lg:flex-nowrap gap-2 md:gap-[3px]"
 >
   {
     images.slice(0, 4).map((image, index) => (
-      <div class="flex-auto overflow-hidden ">
+      <div class="flex-auto overflow-hidden">
         <img
           class="object-cover w-full max-h-28 md:max-h-[223px] cursor-pointer gallery-image"
-          src={image}
+          src={image.webp}
           alt={`Image ${index + 1}`}
           data-index={index}
         />
@@ -39,7 +40,7 @@ const {
       <div class="flex-auto overflow-hidden">
         <img
           class="object-cover w-full max-h-28 md:max-h-[223px] cursor-pointer gallery-image"
-          src={image}
+          src={image.webp}
           alt={`Image ${index + 5}`}
           data-index={index + 4}
         />
@@ -48,6 +49,7 @@ const {
   }
 </div>
 
+<!-- Modal for fullscreen images -->
 <div
   class="image-modal hidden fixed inset-0 bg-black flex-col flex items-center justify-center z-50"
 >
@@ -60,6 +62,7 @@ const {
       class="w-full h-full object-contain modal-image"
       src=""
       alt="Selected Image"
+      loading="lazy"
     />
   </div>
 
@@ -68,7 +71,7 @@ const {
       images.map((image, index) => (
         <img
           class="w-24 h-24 object-contain cursor-pointer thumbnail-image"
-          src={image}
+          src={image.webp}
           alt={`Thumbnail ${index + 1}`}
           data-index={index}
         />
@@ -80,15 +83,15 @@ const {
 <script>
   let selectedIndex = 0;
   const images = [
-    "/events/masonry/1.png",
-    "/events/masonry/2.png",
-    "/events/masonry/3.png",
-    "/events/masonry/4.png",
-    "/events/masonry/5.png",
-    "/events/masonry/6.png",
-    "/events/masonry/7.png",
-    "/events/masonry/8.png",
-    "/events/masonry/9.png",
+    { webp: "/events/masonry/1.webp", png: "/events/masonry/1.png" },
+    { webp: "/events/masonry/2.webp", png: "/events/masonry/2.png" },
+    { webp: "/events/masonry/3.webp", png: "/events/masonry/3.png" },
+    { webp: "/events/masonry/4.webp", png: "/events/masonry/4.png" },
+    { webp: "/events/masonry/5.webp", png: "/events/masonry/5.png" },
+    { webp: "/events/masonry/6.webp", png: "/events/masonry/6.png" },
+    { webp: "/events/masonry/7.webp", png: "/events/masonry/7.png" },
+    { webp: "/events/masonry/8.webp", png: "/events/masonry/8.png" },
+    { webp: "/events/masonry/9.webp", png: "/events/masonry/9.png" },
   ];
 
   function openModal(index) {
@@ -102,7 +105,7 @@ const {
   }
 
   function updateModalImage() {
-    const imageSrc = images[selectedIndex];
+    const imageSrc = images[selectedIndex].png;
     document.querySelector(".modal-image").src = imageSrc;
   }
 

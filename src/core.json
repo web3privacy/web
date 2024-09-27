@@ -227,6 +227,7 @@
       "kurt-opsahl",
       "guy-zyskind"
     ],
+
     "core-contributors": [
       {
         "id": "mykola-siusko",
@@ -261,7 +262,7 @@
         "name": "Robert De Groot",
         "caption": "Partnership & Volunteers",
 
-        "imageUrl": "https://data.web3privacy.info/img/people/coinmandeer.png"
+        "imageUrl": "/core-contributors/robert.png"
       },
       {
         "id": "cat",
