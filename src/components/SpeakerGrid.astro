@@ -9,7 +9,6 @@ const members = core ? people.filter((p) => {
 // const filteredPeople = members.filter((p) => p.imageUrl).slice(0, 12);
 const filteredPeople = members.filter((p) => p.imageUrl);
 
-console.log(filteredPeople)
 function personLink(person) {
   if (person.refs?.twitter) {
     return `https://twitter.com/${person.refs.twitter}`;

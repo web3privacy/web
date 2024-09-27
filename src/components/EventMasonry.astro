@@ -1,15 +1,15 @@
 ---
 const {
   images = [
-    "/events/masonry/1.webp",
-    "/events/masonry/2.webp",
-    "/events/masonry/3.webp",
-    "/events/masonry/4.webp",
-    "/events/masonry/5.webp",
-    "/events/masonry/6.webp",
-    "/events/masonry/7.webp",
-    "/events/masonry/8.webp",
-    "/events/masonry/9.webp",
+    "/events/masonry/1.png",
+    "/events/masonry/2.png",
+    "/events/masonry/3.png",
+    "/events/masonry/4.png",
+    "/events/masonry/5.png",
+    "/events/masonry/6.png",
+    "/events/masonry/7.png",
+    "/events/masonry/8.png",
+    "/events/masonry/9.png",
   ],
 } = Astro.props;
 ---
@@ -32,7 +32,7 @@ const {
 </div>
 
 <div
-class="middle-pane-big grid grid-cols-2 lg:flex lg:flex-nowrap gap-2 md:gap-[3px]"
+  class="middle-pane-big grid grid-cols-2 lg:flex lg:flex-nowrap gap-2 md:gap-[3px]"
 >
   {
     images.slice(4).map((image, index) => (
@@ -80,15 +80,15 @@ class="middle-pane-big grid grid-cols-2 lg:flex lg:flex-nowrap gap-2 md:gap-[3px
 <script>
   let selectedIndex = 0;
   const images = [
-    "/events/masonry/1.webp",
-    "/events/masonry/2.webp",
-    "/events/masonry/3.webp",
-    "/events/masonry/4.webp",
-    "/events/masonry/5.webp",
-    "/events/masonry/6.webp",
-    "/events/masonry/7.webp",
-    "/events/masonry/8.webp",
-    "/events/masonry/9.webp",
+    "/events/masonry/1.png",
+    "/events/masonry/2.png",
+    "/events/masonry/3.png",
+    "/events/masonry/4.png",
+    "/events/masonry/5.png",
+    "/events/masonry/6.png",
+    "/events/masonry/7.png",
+    "/events/masonry/8.png",
+    "/events/masonry/9.png",
   ];
 
   function openModal(index) {
