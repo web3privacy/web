@@ -1,5 +1,4 @@
 export function parseAndWrapCaptions(caption) {
-    console.log(caption)
     return caption.replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g, (match,text, content) => {
         // Split the content by spaces to identify potential URLs
         const parts = content.split(' ');
@@ -10,7 +9,7 @@ export function parseAndWrapCaptions(caption) {
             // If a URL is found, wrap the content in an anchor tag using the first URL
             return `<a href="${url}"
             target="_blank"
-            class="underline"
+            class="text-white underline"
             style="text-underline-offset: 4px;"
             >${text}</a>`;
         } else {
