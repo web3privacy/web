@@ -22,7 +22,7 @@ const {
     images.slice(0, 4).map((image, index) => (
       <div class="flex-auto overflow-hidden">
         <img
-          class="object-cover w-full max-h-28 md:max-h-[223px] cursor-pointer gallery-image"
+          class="object-cover w-full max-h-28 max-h-[80px] md:max-h-[223px] cursor-pointer gallery-image"
           src={image.webp}
           alt={`Image ${index + 1}`}
           data-index={index}
@@ -39,7 +39,7 @@ const {
     images.slice(4).map((image, index) => (
       <div class="flex-auto overflow-hidden">
         <img
-          class="object-cover w-full max-h-28 md:max-h-[223px] cursor-pointer gallery-image"
+          class="object-cover w-full max-h-28 max-h-[80px] md:max-h-[223px] cursor-pointer gallery-image"
           src={image.webp}
           alt={`Image ${index + 5}`}
           data-index={index + 4}

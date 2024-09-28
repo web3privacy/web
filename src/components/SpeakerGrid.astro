@@ -1,4 +1,6 @@
 ---
+import { parseAndWrapCaptions } from "../../utils/captionParser";
+
 const { people, team, core } = Astro.props;
 
 // Filter based on the `core` parameter
@@ -58,9 +60,9 @@ function personLink(person) {
               {person.refs.matrix && ` | Matrix: ${person.refs.matrix}`}
               {person.refs.email && ` | Email: ${person.refs.email}`}
             </p>
-              <p class="text-xs text-gray-500">
-            {person.caption && person.caption}
-            </p>
+       <p class="text-xs text-gray-500" set:html={person.caption && parseAndWrapCaptions(person.caption)}></p>
+
+
             <p class="text-xs text-gray-500">
               {person.refs.designation && `${person.refs.designation}`}
 
