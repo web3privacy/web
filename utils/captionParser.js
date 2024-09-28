@@ -4,7 +4,6 @@ export function parseAndWrapCaptions(caption) {
         const parts = content.split(' ');
         const url = parts.find(part => part.startsWith('https://'));
 
-        console.log(content)
         if (url) {
             // If a URL is found, wrap the content in an anchor tag using the first URL
             return `<a href="${url}"

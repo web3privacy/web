@@ -16,13 +16,13 @@ const {
 
 <!-- Display gallery with webp images -->
 <div
-  class="middle-pane-big grid grid-cols-2 lg:flex lg:flex-nowrap gap-2 md:gap-[3px]"
+  class="middle-pane-big grid grid-cols-2 lg:flex lg:flex-nowrap gap-2 md:gap-[3px] pb-2 md:pb-0"
 >
   {
     images.slice(0, 4).map((image, index) => (
       <div class="flex-auto overflow-hidden">
         <img
-          class="object-cover w-full max-h-28 max-h-[80px] md:max-h-[223px] cursor-pointer gallery-image"
+          class="object-cover w-full max-h-[75px] md:max-h-[200px] cursor-pointer gallery-image"
           src={image.webp}
           alt={`Image ${index + 1}`}
           data-index={index}
@@ -39,7 +39,7 @@ const {
     images.slice(4).map((image, index) => (
       <div class="flex-auto overflow-hidden">
         <img
-          class="object-cover w-full max-h-28 max-h-[80px] md:max-h-[223px] cursor-pointer gallery-image"
+          class="object-cover w-full max-h-[75px] md:max-h-[200px] cursor-pointer gallery-image"
           src={image.webp}
           alt={`Image ${index + 5}`}
           data-index={index + 4}

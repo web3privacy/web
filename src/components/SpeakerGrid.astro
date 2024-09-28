@@ -44,11 +44,11 @@ function personLink(person) {
           <img
             src={person.imageUrl}
             alt={person.name}
-            class="h-24 w-full md:h-48 object-cover object-center h-full transition duration-200 ease-in"
+            class="min-h-[110px] w-full md:h-48 object-cover object-center transition duration-200 ease-in"
           />
         </a>
         <div class="mt-4">
-          <h3 class="text-xs md:text-[16px] font-bold leading-9">{person.name}</h3>
+          <h3 class="text-[10px] pt-2 font-bold leading-3 md:leading-9 md:text-[16px] ">{person.name}</h3>
         
           {person.refs && (
             <p class="text-xs text-gray-500">
