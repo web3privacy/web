@@ -1,0 +1,61 @@
+---
+const { team, people, core } = Astro.props;
+
+const filteredPeople = core
+  ? people.filter((p) => !team.includes(p.id)).filter((p) => p.imageUrl)
+  : team;
+
+// Limit the number of members to 12 (2 rows with a max of 6 columns each)
+const limitedPeople = filteredPeople.slice(0, 12);
+
+function personLink(person) {
+  if (person.refs?.twitter) {
+    return `https://twitter.com/${person.refs.twitter}`;
+  } else if (person.refs?.bsky) {
+    return `https://bsky.app/profile/${person.refs.bsky}`;
+  } else if (person.refs?.linkedin) {
+    return `https://www.linkedin.com/in/${person.refs.linkedin}`;
+  } else if (person.refs?.github) {
+    return `https://github.com/${person.refs.github}`;
+  } else if (person.refs?.matrix) {
+    return `https://matrix.to/#/${person.refs.matrix}`;
+  } else if (person.refs?.email) {
+    return `mailto:${person.refs.email}`;
+  } else {
+    return "#";
+  }
+}
+---
+
+<div
+  class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 gap-y-10 md:gap-y-2 mb-6"
+>
+  {
+    limitedPeople.map((person) => (
+      <div
+        class={`partner-item ${core ? "person-item" : ""} text-center items-center p-2`}
+      >
+        <a href={personLink(person)} class={`${core ? "person-item" : ""}`}>
+          <img
+            src={person.imageUrl}
+            alt={person.name}
+            class="partner-img h-24 md:h-48 aspect-[16/11] w-full h-full object-contain p-0 "
+          />
+        </a>
+        <div class="p-2 partner-text">
+          <h3 class="text-xs md:text-lg font-bold leading-6">{person.name}</h3>
+          {person.refs && (
+            <p class="text-xs md:text-sm text-gray-500">
+              {person.refs.twitter && `@${person.refs.twitter}`}
+              {person.refs.bsky && ` | bsky: ${person.refs.bsky}`}
+              {person.refs.linkedin && ` | LinkedIn: ${person.refs.linkedin}`}
+              {person.refs.github && ` | GitHub: ${person.refs.github}`}
+              {person.refs.matrix && ` | Matrix: ${person.refs.matrix}`}
+              {person.refs.email && ` | Email: ${person.refs.email}`}
+            </p>
+          )}
+        </div>
+      </div>
+    ))
+  }
+</div>

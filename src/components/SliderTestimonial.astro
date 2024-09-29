@@ -1,0 +1,274 @@
+---
+const testimonials = [
+  {
+    id: "jaromil",
+    author: "Jaromil",
+    designation: "Hacktivist, Founder & Director at Dyne.org Foundation",
+    reviewText:
+      "Privacy-by-design is the best way to approach the web3 frontier and develop something that empowers people and builds the critical mass for its sustainability. Web3Privacy Now focuses on the best possible goals for crypto developments: privacy, independence and decentralisation.",
+    imageUrl: "/testimonials/jaromil.png",
+  },
+  {
+    id: "hackguru",
+    author: "HackGuru",
+    designation: "Developer Relation at Waku",
+    reviewText:
+      "They have been organising amazing pro-privacy initiatives. Been a big fan and excited to continue contributing to this amazing community : )",
+    imageUrl: "/testimonials/hack-guru.jpg",
+  },
+  {
+    id: "lunar-dao",
+    author: "Lunar Dao",
+    designation: null,
+    reviewText:
+      "A catalyst leading a brilliant charge into privacy content for the web3 ecosystem.",
+    imageUrl: "/testimonials/lunar-dao.jpg",
+  },
+  {
+    id: "amit-chaudhary",
+    author: "Amit Chaudhary",
+    designation: "Founder Labyrinth, Ex Head of DeFi Research Polygon",
+    reviewText:
+      "This is the best community for privacy that unites people to collaborate and turns user privacy into reality with exciting narratives.",
+    imageUrl: "/testimonials/amit-chaudary.jpg",
+  },
+  {
+    id: "andreea",
+    author: "Andreea",
+    designation: null,
+    reviewText:
+      "I loved the event, the place, the people, the conversations, the swag. You guys are incredible! I think I won’t be attending other crypto events that much anymore.",
+    imageUrl: "/testimonials/andreea.jpg",
+  },
+  {
+    id: "cryptocanal",
+    author: "CryptoCanal",
+    designation: null,
+    reviewText:
+      "One event at a time, they are building an ecosystem to ensure that no one forgets the political frontiers being pushed by crypto. Web3Privacy Now has been rallying support and ensuring that privacy holds a prime spot at all the major conferences worldwide.",
+    imageUrl: "/testimonials/cryptocanal.jpg",
+  },
+  {
+    id: "matteo-tambussi",
+    author: "Matteo Tambussi",
+    designation: "Founder of Spaghetteth, Project Manager StakeCapital",
+    reviewText:
+      "The balance between Transparency and Privacy, accountable and unaccountable, manifest and secret, convex and concave, 1 and 0 is one of the most fun puzzles blockchain tech has to solve for the world. W3P community approaches this with incredible humility and an unravel-the-knot open debate approach. Also I like how they dress.",
+    imageUrl: "/testimonials/matteo-tambussi.jpg",
+  },
+  {
+    id: "pie-man",
+    author: "Pie Man",
+    designation: "Co-Founder Fairblock Network",
+    reviewText:
+      "Most bullish event by far in EthCC was Web3Privacy Now: right in the middle of the park without anything fancy going on, the only incentive to stay was lovely people with extreme passion for deep but practical steps, cryptography, and amazing applications.",
+    imageUrl: "/testimonials/pie-man.jpg",
+  },
+];
+
+// Usage
+let currentTestimonial = 0;
+---
+
+<div class="w-full mx-auto px-8 border-2 border-[#202020]">
+  <div class="relative" id="testimonial-container">
+    <div
+      class="flex flex-col md:flex-row my-4 md:my-0 items-center justify-center testimonial-fade active overflow-hidden person-item"
+    >
+      <img
+        src={testimonials[currentTestimonial].imageUrl}
+        class="grayscale h-24 rounded-full"
+        alt="Review Image"
+        id="testimonial-image"
+      />
+      <div class="relative lg:w-9/12">
+        <div class="relative py-12 px-8 text-gray-700 leading-relaxed">
+          <h2 class="font-bold" id="testimonial-author">
+            {testimonials[currentTestimonial].author}:
+          </h2>
+          <p class="leading-tight" id="testimonial-text">
+            "{testimonials[currentTestimonial].reviewText}"
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="absolute inset-y-0 left-0 lg:flex lg:items-center">
+      <button
+        class="mt-24 lg:mt-0 -ml-6 h-12 w-12 rounded-full p-3 shadow-lg"
+        id="prev-button"
+      >
+        <svg
+          class="h-full w-full text-white"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M5.41 11H21a1 1 0 0 1 0 2H5.41l5.3 5.3a1 1 0 0 1-1.42 1.4l-7-7a1 1 0 0 1 0-1.4l7-7a1 1 0 0 1 1.42 1.4L5.4 11z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <div class="absolute inset-y-0 right-0 lg:flex lg:items-center">
+      <button
+        class="mt-24 lg:mt-0 -mr-6 h-12 w-12 rounded-full p-3 shadow-lg"
+        id="next-button"
+      >
+        <svg
+          class="h-full w-full text-white"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+
+    <div
+      class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2"
+    >
+      {
+        testimonials.map((_, index) => (
+          <button
+            class={`h-3 w-3 rounded-full ${index === currentTestimonial ? "bg-white" : "bg-transparent border"}`}
+            id={`dot-${index}`}
+          />
+        ))
+      }
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const testimonials = [
+      {
+        id: "jaromil",
+        author: "Jaromil",
+        designation: "Hacktivist, Founder & Director at Dyne.org Foundation",
+        reviewText:
+          "Privacy-by-design is the best way to approach the web3 frontier and develop something that empowers people and builds the critical mass for its sustainability. Web3Privacy Now focuses on the best possible goals for crypto developments: privacy, independence and decentralisation.",
+        imageUrl: "/testimonials/jaromil.png",
+      },
+      {
+        id: "hackguru",
+        author: "HackGuru",
+        designation: "Developer Relation at Waku",
+        reviewText:
+          "They have been organising amazing pro-privacy initiatives. Been a big fan and excited to continue contributing to this amazing community : )",
+        imageUrl: "/testimonials/hack-guru.jpg",
+      },
+      {
+        id: "lunar-dao",
+        author: "Lunar Dao",
+        designation: null,
+        reviewText:
+          "A catalyst leading a brilliant charge into privacy content for the web3 ecosystem.",
+        imageUrl: "/testimonials/lunar-dao.jpg",
+      },
+      {
+        id: "amit-chaudhary",
+        author: "Amit Chaudhary",
+        designation: "Founder Labyrinth, Ex Head of DeFi Research Polygon",
+        reviewText:
+          "This is the best community for privacy that unites people to collaborate and turns user privacy into reality with exciting narratives.",
+        imageUrl: "/testimonials/amit-chaudary.jpg",
+      },
+      {
+        id: "andreea",
+        author: "Andreea",
+        designation: null,
+        reviewText:
+          "I loved the event, the place, the people, the conversations, the swag. You guys are incredible! I think I won’t be attending other crypto events that much anymore.",
+        imageUrl: "/testimonials/andreea.jpg",
+      },
+      {
+        id: "cryptocanal",
+        author: "CryptoCanal",
+        designation: null,
+        reviewText:
+          "One event at a time, they are building an ecosystem to ensure that no one forgets the political frontiers being pushed by crypto. Web3Privacy Now has been rallying support and ensuring that privacy holds a prime spot at all the major conferences worldwide.",
+        imageUrl: "/testimonials/cryptocanal.jpg",
+      },
+      {
+        id: "matteo-tambussi",
+        author: "Matteo Tambussi",
+        designation: "Founder of Spaghetteth, Project Manager StakeCapital",
+        reviewText:
+          "The balance between Transparency and Privacy, accountable and unaccountable, manifest and secret, convex and concave, 1 and 0 is one of the most fun puzzles blockchain tech has to solve for the world. W3P community approaches this with incredible humility and an unravel-the-knot open debate approach. Also I like how they dress.",
+        imageUrl: "/testimonials/matteo-tambussi.jpg",
+      },
+      {
+        id: "pie-man",
+        author: "Pie Man",
+        designation: "Co-Founder Fairblock Network",
+        reviewText:
+          "Most bullish event by far in EthCC was Web3Privacy Now: right in the middle of the park without anything fancy going on, the only incentive to stay was lovely people with extreme passion for deep but practical steps, cryptography, and amazing applications.",
+        imageUrl: "/testimonials/pie-man.jpg",
+      },
+    ];
+    let currentTestimonial = 0;
+
+    const container = document.getElementById("testimonial-container");
+    const authorElement = document.getElementById("testimonial-author");
+    const textElement = document.getElementById("testimonial-text");
+    const imageElement = document.getElementById("testimonial-image");
+
+    const dots = testimonials.map((_, index) =>
+      document.getElementById(`dot-${index}`)
+    );
+
+    function showTestimonial(index) {
+      currentTestimonial = index;
+      const testimonial = testimonials[currentTestimonial];
+
+      // Add fade-out class before changing the content
+      container.classList.remove("active");
+
+      setTimeout(() => {
+        // Update content after fade-out
+        authorElement.innerText = testimonial.author;
+        textElement.innerText = `"${testimonial.reviewText}"`;
+        imageElement.src = testimonial.imageUrl;
+
+        // Add fade-in class
+        container.classList.add("active");
+      }, 500); // Match with the CSS transition duration
+
+      // Update dots
+      dots.forEach((dot, i) => {
+        if (i === currentTestimonial) {
+          dot.classList.add("bg-white");
+          dot.classList.remove("bg-transparent", "border");
+        } else {
+          dot.classList.remove("bg-white");
+          dot.classList.add("bg-transparent", "border");
+        }
+      });
+    }
+
+    document.getElementById("prev-button").addEventListener("click", () => {
+      showTestimonial(
+        (currentTestimonial - 1 + testimonials.length) % testimonials.length
+      );
+    });
+
+    document.getElementById("next-button").addEventListener("click", () => {
+      showTestimonial((currentTestimonial + 1) % testimonials.length);
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        showTestimonial(index);
+      });
+    });
+
+    // Automatically change testimonial every 6 seconds
+    setInterval(() => {
+      showTestimonial((currentTestimonial + 1) % testimonials.length);
+    }, 6000);
+  });
+</script>

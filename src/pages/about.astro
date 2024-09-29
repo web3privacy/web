@@ -4,43 +4,89 @@ import * as config from "../config.yaml";
 import core from "../core.json";
 import AboutFooter from "../components/AboutFooter.astro";
 import AboutItemGrid from "../components/AboutItemGrid.astro";
-import AboutWidget from "../components/AboutWidget.astro";
+import EventMasonry from "../components/EventMasonry.astro";
+import EventItem from "../components/EventItem.astro";
+import { isFutureDate } from "../lib/date";
+
+const events = core.events;
+
+const upcomingEvents = [];
+let eventsPast = 0;
+let eventsUpcoming = 0;
+
+const sectionsConfig = [
+  { name: "testimonials", visible: true, order: 1 },
+  { name: "core contributors", visible: true, order: 2 },
+  { name: "contributors", visible: true, order: 3 },
+  { name: "membersGrid", visible: true, order: 4 },
+  { name: "socialLinks", visible: true, order: 5 },
+];
+
+for (const ev of events) {
+  let future = isFutureDate(ev.date);
+  if (future) {
+    upcomingEvents.push(ev);
+    eventsUpcoming++;
+  } else {
+    eventsPast++;
+  }
+}
+
+const allowedFeaturedTypes = [
+  "summit",
+  "meetup",
+  "online-summit",
+  "congress",
+  "privacy-corner",
+  "meta-hackathons",
+];
+
+const featuredEvents = [];
+for (const e of upcomingEvents) {
+  if (featuredEvents.length > 2) {
+    break;
+  }
+  if (
+    allowedFeaturedTypes.includes(e.type) &&
+    e.links?.rsvp &&
+    !featuredEvents.find((ex) => ex.type === e.type)
+  ) {
+    featuredEvents.push(e);
+  }
+}
+
+
 ---
+
 
 <BaseLayout
   title="About web3privacy"
   image="og_about"
   subimage="/about/about.png"
-  subtext="we are a privacy focused ecosystem of hacktivists, researchers, lawyers, event organisers... pushing web3privacy forward"
+  subtext="We are a think-and-do tank of hundreds of people, projects, and organizations committed to protecting and advancing civil liberties, decentralization, and open-source software."
 >
-  <div class="middle-pane-medium mt-10">
-    <!--  <div class="mb-20">
-      <a href="https://docs.web3privacy.info/manifesto"
-        ><img src="/bringing-100m-to-privacy-market.png" /></a
-      >
-    </div> -->
-
+  <div class="middle-pane-medium mt-10">th
     <div class="grid grid-cols-1 xl:grid-cols-2 gap-16 mb-[82px]">
       <div class="flex flex-col gap-[36px] md:order-2">
         <div class="md:hidden block mb-[12px]">
-          <h1>Our mission</h1>
+          <h1>activism. care. solidarity.</h1>
           <div set:html={config.landing.mission} />
           <div class="mt-8 flex gap-6 items-center w-full">
             <a class="button inverted" href={core.links.manifesto}
               ><button>Read manifesto</button></a
             >
-            <a class="button" href={core.links.telegram}
+            <a class="button font-bold" href={core.links.telegram}
               ><button>Join us</button></a
             >
           </div>
         </div>
-        <h1>how we support privacy in web3</h1>
+        <h1 class="glitch-text">how we support privacy in web3</h1>
 
         <AboutItemGrid />
       </div>
       <div class="md:order-1 order-2">
         <div class="md:block hidden">
-          <h1>Our mission</h1>
+          <h1 class="glitch-text">activism. care. solidarity.</h1>
           <div set:html={config.landing.mission} />
           <div class="mt-8 flex gap-6 items-center w-full">
             <a class="button inverted" href={core.links.manifesto}
@@ -51,58 +97,57 @@ import AboutWidget from "../components/AboutWidget.astro";
             >
           </div>
         </div>
-        <div class="md:mt-[56px] mt-[26px]">
-          <h1>our events</h1>
-          <div set:html={config.landing.event} />
-          <div class="mt-8 flex flex-col gap-6 items-start w-full">
-            <div class="grid grid-cols-2 gap-[8px]">
-              <img src="/about/1.png" alt="" />
-              <img src="/about/2.png" alt="" />
-              <img src="/about/3.png" alt="" />
-              <img src="/about/4.png" alt="" />
-            </div>
-            <a class="button inverted" href={"/events"}
-              ><button>EVENTS</button></a
-            >
-          </div>
+        <hr class="mt-10 border-[#e0e0e0]" />
+        <div class="md:block hidden mt-[26px]">
+          <h1 class="glitch-text">Our mission</h1>
+          <div set:html={config.landing.mission} />
         </div>
-        <div class="md:mt-[56px] mt-[26px]">
-          <h1>Our Projects & research</h1>
-          <div set:html={config.landing.research} />
+        <hr class="mt-10 border-[#e0e0e0]" />
+
+        <div class="mt-[26px]">
+          <h1 class="glitch-text">why privacy</h1>
+          <p class="mt-0 w-full">
+            In any society, privacy is essential for protecting civil liberties
+            and human rights.
+            <br />
+            <br />
+            Privacy enables individuals to participate in political processes without
+            fear of retribution or surveillance, ensuring that they can freely express
+            their views, associate with others, and engage in activism. <br />
+            <br />
+            Robust privacy practices assist in balancing power between individuals
+            and the state or corporations. Without them, unchecked surveillance and
+            control leads to a loss of personal freedoms and the rise of authoritarianism.
+            <br />
+            <br /> When we talk about privacy, we are discussing more than just data
+            protection. We are addressing the fate of our societies, their present,
+            and their future.
+          </p>
           <div class="mt-8 flex gap-6 items-center w-full">
-            <a class="button inverted" href={core.links.projects}
-              ><button>Projects</button></a
-            >
-            <a class="button inverted" href={core.links.research}
-              ><button>Research</button></a
+            <a class="button inverted" href={core.links.manifesto}
+              ><button>Read More</button></a
             >
           </div>
         </div>
-        <!-- <div>
-          <h1>Topics</h1>
-          <div class="columns-2 uppercase text-sm w3pn-topics">
-            {config.landing.topics.map((topic) => <div>{topic}</div>)}
-          </div>
-        </div> -->
       </div>
     </div>
-    <AboutWidget variant="membership" />
-    <div
-      class="flex md:flex-row flex-col items-center gap-[24px] justify-center w-full mt-[24px]"
-    >
-      <div class="md:mt-[56px] mt-[26px] max-w-[460px] md:order-1 order-2">
-        <h1>empowering community with our brand</h1>
-        <div set:html={config.landing.merch} />
-        <div class="mt-8 flex gap-6 items-center w-full">
-          <a class="button inverted" href={core.links.brand}
-            ><button>Brand on Github</button></a
-          >
-        </div>
-      </div>
-      <div class="md:order-2 order-1">
-        <img src="/about/stickers.png" alt="" />
-      </div>
+  </div>
+  <div class="my-10">
+    <EventMasonry />
+  </div>
+
+  <div class="middle-pane-medium">
+    <div class="mb-6">
+      {featuredEvents.map((event) => <EventItem item={event} />)}
     </div>
-    <AboutFooter />
+
+    <div class="mt-6">
+      <a href="/events" class="button inverted"
+        ><button>Show all events</button></a
+      >
+    </div>
+  </div>
+  <div class="middle-pane-medium mt-10">
+    <AboutFooter {sectionsConfig} />
   </div>
 </BaseLayout>

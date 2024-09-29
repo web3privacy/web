@@ -1,159 +1,279 @@
 ---
-
-import BaseLayout from '../layouts/base.astro';
-import AboutFooter from '../components/AboutFooter.astro';
-import core from '../core.json';
-import articles from '../articles.json';
-import talks from '../talks.json';
-import explorer from '../explorer.json';
-import dbRepo from '../db-repo.json';
-import { format } from 'date-fns';
-import EventItem from '../components/EventItem.astro';
-import { isFutureDate } from '../lib/date';
+import BaseLayout from "../layouts/base.astro";
+import AboutFooter from "../components/AboutFooter.astro";
+import core from "../core.json";
+import articles from "../articles.json";
+import talks from "../talks.json";
+import dbRepo from "../db-repo.json";
+import { format } from "date-fns";
+import EventItem from "../components/EventItem.astro";
+import { isFutureDate } from "../lib/date";
+import EventMasonry from "../components/EventMasonry.astro";
+import * as config from "../config.yaml";
 
 const events = core.events;
 
-const upcomingEvents = []
-let eventsPast = 0
-let eventsUpcoming = 0
+const sectionsConfig = [
+  { name: "socialLinks", visible: false, order: 2 },
+  { name: "speakers", visible: true, order: 2 },
+  { name: "contributors", visible: true, order: 3 },
+  { name: "testimonials", visible: true, order: 4 },
+  { name: "membersGrid", visible: true, order: 5 },
+  // { name: "community", visible: false, order: 6 },
+];
+
+const upcomingEvents = [];
+let eventsPast = 0;
+let eventsUpcoming = 0;
 for (const ev of events) {
-	let future = isFutureDate(ev.date)
-	if (future) {
-		upcomingEvents.push(ev)
-		eventsUpcoming++
-	} else {
-		eventsPast++
-	}
+  let future = isFutureDate(ev.date);
+  if (future) {
+    upcomingEvents.push(ev);
+    eventsUpcoming++;
+  } else {
+    eventsPast++;
+  }
 }
 
-const featuredEvents = []
+const allowedFeaturedTypes = [
+  "summit",
+  "meetup",
+  "online-summit",
+  "congress",
+  "privacy-corner",
+  "meta-hackathons",
+];
+
+const featuredEvents = [];
 for (const e of upcomingEvents) {
-	if (featuredEvents.length > 2) {
-		break;
-	}
-	if (['summit', 'meetup', 'online-summit'].includes(e.type) &&
-			e.links?.rsvp && !featuredEvents.find(ex => ex.type === e.type))  {
-		featuredEvents.push(e)
-	}
+  if (featuredEvents.length > 2) {
+    break;
+  }
+  if (
+    allowedFeaturedTypes.includes(e.type) &&
+    e.links?.rsvp &&
+    !featuredEvents.find((ex) => ex.type === e.type)
+  ) {
+    featuredEvents.push(e);
+  }
 }
-
 ---
 
-<BaseLayout banner="true" description="Advocates worldwide are uniting to make privacy fundamental pillar of the Web3 industry, transforming it into a cultural movement that champions freedom and decentralization.">
+<BaseLayout
+  banner="true"
+  description="Advocates worldwide are uniting to make privacy fundamental pillar of the Web3 industry, transforming it into a cultural movement that champions freedom and decentralization."
+>
+  <div class="middle-pane-big">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w3pn-hp-grid gap-2 mt-2"
+    >
+      <div class="bg-events" data-url="/events">
+        <div class="title glitch-text">Events</div>
+        <div class="numbers">
+          <div>
+            <div class="big">{eventsUpcoming}</div>
+            <div>Upcoming events</div>
+          </div>
+          <div>
+            <div class="big">{eventsPast}</div>
+            <div>Past events</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-projects relative"
+        data-url="https://github.com/web3privacy/web3privacy/blob/main/README.md#contents"
+      >
+        <div class="title">
+          <div class="flex items-center">
+            <div class="icon github small mr-1.5 inline-block"></div>
+            <div class="text-white mt-1 ml-1.5">
+              <a
+                href="https://github.com/web3privacy/web3privacy/blob/main/README.md#contents"
+                class="glitch-text">Web3 Privacy Database</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Place this tag where you want the button to render. -->
+        <div
+          class="flex items-center absolute top-4 right-4 text-white opacity-30"
+        >
+          <div class="icon star small mr-1.5"></div>
+          {dbRepo.stars}
+        </div>
+        <div class="numbers">
+          <div>
+            <div class="big">{dbRepo.count}</div>
+            <div>Projects</div>
+          </div>
+          <div>
+            <div class="big">{dbRepo.contributors}</div>
+            <div>Contributors</div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-talks" data-url="/research">
+        <div class="title glitch-text">Research</div>
+        <div class="numbers">
+          <div>
+            <div class="big">{core.research.length} research projects →</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<div class="middle-pane-big">
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w3pn-hp-grid gap-2 mt-2">
-			<div class="bg-events" data-url="/events">
-				<div class="title">Events</div>
-				<div class="numbers">
-					<div>
-						<div class="big">{eventsUpcoming}</div>
-						<div>Upcoming events</div>
-					</div>
-					<div>
-						<div class="big">{ eventsPast}</div>
-						<div>Past events</div>
-					</div>
-				</div>
-			</div>
-			<div class="bg-projects relative" data-url="https://github.com/web3privacy/web3privacy/blob/main/README.md#contents">
-				<div class="title">
-					<div class="flex items-center">
-						<div class="icon github small mr-1.5 inline-block"></div>
-						<div class="text-white mt-1 ml-1.5"><a href="https://github.com/web3privacy/web3privacy/blob/main/README.md#contents">Web3 Privacy Database</a></div>
-					</div>
-				</div>
-				<!-- Place this tag where you want the button to render. -->
-				<div class="flex items-center absolute top-4 right-4 text-white opacity-30"><div class="icon star small mr-1.5"></div> {dbRepo.stars}</div>
-				<div class="numbers">
-					<div>
-						<div class="big">{dbRepo.count}</div>
-						<div>Projects</div>
-					</div>
-					<div>
-						<div class="big">{dbRepo.contributors}</div>
-						<div>Contributors</div>
-					</div>
-				</div>
-			</div>
-			<div class="bg-talks" data-url="/research">
-				<div class="title">Research</div>
-				<div class="numbers">
-					<div>
-						<div class="big">{core.research.length} research projects →</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="middle-pane-medium mt-10">
+    <div class="mt-16">
+      <h1 class="glitch-text">Featured Events</h1>
+    </div>
 
+    <div class="text-left">
+      Our gatherings aim to build understanding and solidarity among diverse
+      interest groups, cultures, states, chains, ecosystems, and backgrounds. We
+      bring together Web3 and non-tech individuals, builders, researchers,
+      philosophers, lawyers, policymakers, hacktivists, key players, local
+      communities, and the general public. Formats: Meetups, Summits,
+      Congresses, Hackathons, Camp fires
+    </div>
+  </div>
 
-	<div class="middle-pane-medium mt-10">
-		<!--div class="mt-10">
-			<h1>Our Projects</h1>
-		</div-->
+  <div class="my-10">
+    <EventMasonry />
+  </div>
 
-		<div class="mt-16">
-			<h1>Featured Upcoming Events</h1>
-		</div>
+  <div class="middle-pane-medium">
+    <div class="mb-6">
+      {featuredEvents.map((event) => <EventItem item={event} />)}
+    </div>
 
-		<div class="mb-6">
-			{featuredEvents.map((event) => (
-				<EventItem item={event} />
-			))}
-		</div>
+    <div class="mt-6">
+      <a href="/events" class="button inverted"
+        ><button>Show all events</button></a
+      >
+    </div>
 
-		<div class="mt-6">
-			<a href="/events" class="button inverted"><button>Show all events</button></a>
-		</div>
+    <div class="mt-16">
+      <h1 class="glitch-text">Latest Articles</h1>
+    </div>
 
-		<div class="mt-16">
-			<h1>Latest Articles</h1>
-		</div>
+    <div class="w3pn-articles grid md:grid-cols-2 gap-6">
+      {
+        articles.slice(0, 4).map((entry) => (
+          <div
+            class="basegrid-entry aspect-video"
+            style={{
+              backgroundImage: `url("${entry.img}")`,
+              backgroundSize: "100% 100%;",
+            }}
+          >
+            <div class="title">
+              <a href={entry.url}>{entry.title}</a>
+              <span class="date">
+                {format(new Date(entry.date), "MMMM do, yyyy")}
+              </span>
+            </div>
+          </div>
+        ))
+      }
+    </div>
 
-		<div class="w3pn-articles grid md:grid-cols-2 gap-6">
-			{articles.slice(0,4).map((entry) => (
-				<div class="basegrid-entry aspect-video" style={{backgroundImage: `url("${entry.img}")`, backgroundSize: '100% 100%;'}}>
-					<div class="title">
-						<a href={entry.url}>{entry.title}</a>
-						<span class="date">{format(new Date(entry.date), 'MMMM do, yyyy')}</span>
-					</div>
-				</div>
-			))}
-		</div>
+    <div class="mt-8">
+      <a href={core.links.mirror} class="button inverted"
+        ><button>More articles on Mirror</button></a
+      >
+    </div>
 
-		<div class="mt-8">
-			<a href={core.links.mirror} class="button inverted"><button>More articles on Mirror</button></a>
-		</div>
+    <div class="mt-16">
+      <h1 class="glitch-text">Latest Talks</h1>
+    </div>
 
-		<div class="mt-16">
-			<h1>Latest Talks</h1>
-		</div>
+    <div class="grid md:grid-cols-2 gap-6">
+      {
+        talks.slice(0, 4).map((entry) => (
+          <div
+            class="basegrid-entry aspect-video"
+            style={{
+              backgroundImage: `url("${entry.img}")`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <a href={entry.url} class="w-full h-full" title={entry.title} />
+          </div>
+        ))
+      }
+    </div>
 
-		<div class="grid md:grid-cols-2 gap-6">
-			{talks.slice(0,4).map((entry) => (
-				<div class="basegrid-entry aspect-video" style={{backgroundImage: `url("${entry.img}")`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-					<a href={entry.url} class="w-full h-full" title={entry.title}></a>
-				</div>
-			))}
-		</div>
+    <div class="mt-8">
+      <a href={core.links.youtube} class="button inverted"
+        ><button>More talks on YouTube</button></a
+      >
+    </div>
+  </div>
+  <div class="middle-pane-medium mt-16">
+    <h1>
+      <a class="glitch-text" href="https://docs.web3privacy.info/get-involved">
+        Join the Community
+      </a>
+    </h1>
+    <div>{config.landing.community}</div>
+    <div
+      class="grid place-items-center grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 pt-4 w-full"
+    >
+      <a
+        href={core.links.twitter}
+        class="bg-[#101010] w-full flex items-center justify-center w-full h-40 overflow-hidden"
+      >
+        <button class="flex flex-col items-center justify-center">
+          <div class="icon twitter"></div>
+          @web3privacy
+        </button>
+      </a>
+      <a
+        href={core.links.telegram}
+        class="bg-[#101010] w-full flex items-center justify-center w-full h-40 overflow-hidden"
+      >
+        <button class="flex flex-col items-center justify-center">
+          <div class="icon telegram"></div>
+          Telegram
+        </button>
+      </a>
+      <a
+        href={core.links.signal}
+        class="bg-[#101010] w-full flex items-center justify-center w-full h-40 overflow-hidden"
+      >
+        <button class="flex flex-col items-center justify-center">
+          <div class="icon">
+            <img src="/icons/signal.svg" alt="" />
+          </div>
+          Signal
+        </button>
+      </a>
+      <a
+        href={core.links.matrix}
+        class="bg-[#101010] w-full flex items-center justify-center w-full h-40 overflow-hidden"
+      >
+        <button class="flex flex-col items-center justify-center">
+          <div class="icon matrix"></div>
+          matrix
+        </button>
+      </a>
+    </div>
+  </div>
 
-		<div class="mt-8">
-			<a href={core.links.youtube} class="button inverted"><button>More talks on YouTube</button></a>
-		</div>
-
-		<AboutFooter />
-	</div>
-	<script is:inline>
-		document.querySelectorAll('.w3pn-hp-grid > div').forEach(el => {
-			el.addEventListener('click', () => {
-			  window.location = el.getAttribute('data-url');
-			});
-		});
-		document.querySelectorAll('.w3pn-articles > div').forEach(el => {
-			el.addEventListener('click', () => {
-			  window.location = el.querySelector('a').getAttribute('href');
-			});
-		});
-	</script>
+  <AboutFooter {sectionsConfig} />
+  <script is:inline>
+    document.querySelectorAll(".w3pn-hp-grid > div").forEach((el) => {
+      el.addEventListener("click", () => {
+        window.location = el.getAttribute("data-url");
+      });
+    });
+    document.querySelectorAll(".w3pn-articles > div").forEach((el) => {
+      el.addEventListener("click", () => {
+        window.location = el.querySelector("a").getAttribute("href");
+      });
+    });
+  </script>
 </BaseLayout>

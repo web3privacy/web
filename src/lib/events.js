@@ -321,7 +321,7 @@ export function ccRenderer (item) {
     return cc
 }
 
-export function eventStatus (item) {
+export function eventStatus(item) {
     const statuses = {
         preregistration: {
             title: 'Pre-registration',
@@ -340,10 +340,13 @@ export function eventStatus (item) {
             color: 'text-green-800',
         }
     }
-    
-    const date = dateInfo(item)
+
+    const date = dateInfo(item);
+    const eventDate = new Date(item.date);
+    const currentDate = new Date();
+
     return item.confirmed
-        ? (date.isDate ? statuses.past : statuses.confirmed)
+        ? (eventDate < currentDate ? statuses.past : statuses.confirmed)
         : (item.links?.rsvp ? statuses.preregistration : statuses.unconfirmed);
 }
 

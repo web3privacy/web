@@ -1,5 +1,5 @@
 title: Web3Privacy Now
-description: Advocates worldwide are uniting to make privacy fundamental pillar of the Web3 industry, transforming it into a cultural movement that champions freedom and decentralization.
+description: The leading nonprofit advancing Privacy & Freedom in the web3 industry.  In our Ecosystem, we foster a culture that empowers decentralization, open-source , and anti surveillance.
 header:
   menu:
     - name: Home
@@ -22,7 +22,7 @@ header:
       link: news
     - name: Docs
       link: docs
-    - name: Membership
+    - name: Get Involved
       link: membership
       url: /membership
     #- name: Manifesto
@@ -54,7 +54,9 @@ footer:
       link: matrix
 hero:
   text: |
-    Advocates worldwide are uniting to make privacy fundamental pillar of the Web3 industry, transforming it into a cultural movement that champions freedom and decentralization.
+    The leading nonprofit advancing Privacy & Freedom in the web3 industry. 
+    <br />
+    In our Ecosystem, we foster a culture that empowers decentralization, open-source, and anti surveillance.
 landing:
   merch: |
     To make humans gain control over their privacy by utilizing Web3 stack. So privacy would become a cultural phenomena & active lifestyle.
