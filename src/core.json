@@ -24,10 +24,266 @@
     "telegram": "https://t.me/+AKj7mTSVcTc3N2Q0"
   },
   "teams": {
-    "core-team": [
-      "mykola-siusko",
-      "pg",
-      "coinmandeer"
+    "core-team": ["mykola-siusko", "pg", "coinmandeer"],
+    "members": [
+      {
+        "name": "LOGOS",
+        "imageUrl": "/membersLogo/logos.svg",
+        "refs": {
+          "website": "https://logos.co/",
+          "twitter": "logos_network"
+        }
+      },
+      {
+        "name": "WAKU",
+        "imageUrl": "/membersLogo/waku.svg",
+        "refs": {
+          "website": "https://waku.org/",
+          "twitter": "waku_org"
+        }
+      },
+      {
+        "name": "Nomos",
+        "imageUrl": "/membersLogo/nomos.svg",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "Nomos_tech"
+        }
+      },
+      {
+        "name": "Codex",
+        "imageUrl": "/membersLogo/codex.svg",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "Codex_storage"
+        }
+      },
+      {
+        "name": "Dyne",
+        "imageUrl": "/membersLogo/dyne.png",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "dyneorg"
+        }
+      },
+      {
+        "name": "DNOSIS DAO",
+        "imageUrl": "/membersLogo/gnosisdao.png",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "dyneorg"
+        }
+      },
+      {
+        "name": "0xbow",
+        "imageUrl": "/membersLogo/0xbow.png",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "0xbowio"
+        }
+      },
+      {
+        "name": "Labyrinth",
+        "imageUrl": "/membersLogo/labyrinth.png",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "Labyrinth_HQ"
+        }
+      },
+      {
+        "name": "Namada",
+        "imageUrl": "/membersLogo/namada.png",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "namada"
+        }
+      },
+      {
+        "name": "Intmax",
+        "imageUrl": "/membersLogo/intmax.png",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "intmaxIO"
+        }
+      },
+      {
+        "name": "MorosNet",
+        "imageUrl": "/membersLogo/moros.png",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "morosnet"
+        }
+      },
+      {
+        "name": "TokenDynamics",
+        "imageUrl": "/membersLogo/tokendynamics.png",
+        "refs": {
+          "website": "https://nomos.tech/",
+          "twitter": "tokendynamics"
+        }
+      }
+    ],
+    "community-partners": [
+      {
+        "name": "HOPR",
+        "imageUrl": "/membersLogo/hopr.svg",
+        "refs": {
+          "website": "https://hoprnet.org/",
+          "twitter": "hoprnet"
+        }
+      },
+      {
+        "name": "ETHRome",
+        "imageUrl": "/membersLogo/ETHRome.png",
+        "refs": {
+          "website": "https://www.ethrome.org/",
+          "twitter": "ETHRome"
+        }
+      },
+      {
+        "name": "LunarDAO",
+        "imageUrl": "/membersLogo/LunarDAO.png",
+        "refs": {
+          "website": "https://lunardao.net/",
+          "twitter": "lunarpunksquad"
+        }
+      },
+      {
+        "name": "MolochDAO",
+        "imageUrl": "/membersLogo/MolochDAO.png",
+        "refs": {
+          "website": "https://molochdao.com/",
+          "twitter": "molochdao"
+        }
+      },
+      {
+        "name": "Urbe.eth",
+        "imageUrl": "/membersLogo/Urbe.png",
+        "refs": {
+          "website": "https://linktr.ee/urbe.eth",
+          "twitter": "urbeEth"
+        }
+      },
+      {
+        "name": "CryptoCanal",
+        "imageUrl": "/membersLogo/CryptoCanal.png",
+        "refs": {
+          "website": "https://lu.ma/cryptocanal",
+          "twitter": "cryptocanal"
+        }
+      },
+      {
+        "name": "ParalelniPolis",
+        "imageUrl": "/membersLogo/polis.png",
+        "refs": {
+          "website": "https://www.paralelnipolis.cz/en/",
+          "twitter": "Paralelni_polis"
+        }
+      },
+      {
+        "name": "GCCofCommons",
+        "imageUrl": "/membersLogo/GCC.png",
+        "refs": {
+          "website": "https://www.gccofficial.org/en",
+          "twitter": "GCCofCommons"
+        }
+      },
+      {
+        "name": "Zcash",
+        "imageUrl": "/membersLogo/zcash.png",
+        "refs": {
+          "website": "https://z.cash/",
+          "twitter": "zcash"
+        }
+      },
+      {
+        "name": "Kernel Community",
+        "imageUrl": "/membersLogo/kernel.png",
+        "refs": {
+          "website": "https://kernel.community/",
+          "twitter": "Kernel0x"
+        }
+      },
+      {
+        "name": "Shielding Summit",
+        "imageUrl": "/membersLogo/ssummit.png",
+        "refs": {
+          "website": "https://shieldingsummit.org/",
+          "twitter": "ShieldingSummit"
+        }
+      }
+    ],
+    "core-speakers": [
+      "david-chaum",
+      "tor-ekeland",
+      "michael-bauwens",
+      "vitalik-buterin",
+      "paul-dylan-ennis",
+      "jaromil",
+      "ameen-soleimani",
+      "ahmed-ghappour",
+      "scott-moore",
+      "juraj-bednar",
+      "kurt-opsahl",
+      "guy-zyskind"
+    ],
+
+    "core-contributors": [
+      {
+        "id": "mykola-siusko",
+        "name": "Mykola Siusko",
+        "caption": "Chief empathy officer",
+        "country": "es",
+        "imageUrl": "https://data.web3privacy.info/img/people/mykola-siusko.png"
+      },
+      {
+        "id": "pg",
+        "name": "PG",
+        "caption": "Larrikin sling master",
+        "country": "it",
+        "imageUrl": "https://data.web3privacy.info/img/people/pg.jpg"
+      },
+      {
+        "id": "michael-parenti",
+        "name": "Michael Parenti",
+        "caption": "Ops & vibe",
+        "country": "us",
+        "imageUrl": "/core-contributors/michael-parenti.png"
+      },
+      {
+        "id": "coinmandeer",
+        "name": "Coinmandeer",
+        "caption": "UI/UX Design & Brand",
+
+        "imageUrl": "https://data.web3privacy.info/img/people/coinmandeer.png"
+      },
+      {
+        "id": "robert",
+        "name": "Robert De Groot",
+        "caption": "Partnership & Volunteers",
+
+        "imageUrl": "/core-contributors/robert.png"
+      },
+      {
+        "id": "cat",
+        "name": "CAT THAT LURKS",
+        "caption": "“Like all pure creatures, cats are practical.” – William S. Burroughs",
+
+        "imageUrl": "/core-contributors/cat.png"
+      },
+      {
+        "id": "odd",
+        "name": "ODD",
+        "caption": "Copywriting & Education",
+        "imageUrl": "/core-contributors/odd.png"
+      },
+      {
+        "id": "mf",
+        "name": "MF",
+        "caption": "master of caffeine",
+
+        "imageUrl": "/core-contributors/mf.png"
+      }
     ]
   },
   "research": [
