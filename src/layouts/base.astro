@@ -152,12 +152,11 @@ function genHeading(str) {
           <div class="w-full flex mt-20 sm:mt-32 middle-pane-medium">
             <div>
               <div class="w3pn-logo w-64 sm:w-72 lg:w-80 xl:w-96" />
-           
 
               {/* <h1 class="glitch-text-interval text-6xl">
                 web3privacy summit #1
               </h1> */}
-              <div class="text-left mt-10">{config.hero.text}</div>
+              <div class="text-left mt-10" set:html={config.hero.text} />
               <div class="mt-6">
                 <a class="button" href="/about">
                   <button>
@@ -192,7 +191,7 @@ function genHeading(str) {
     <slot />
 
     <div
-      class="border border-t-2 border-b-0 border-l-0 border-r-0 border-[#0f0f0f] mt-20 pt-10 pb-10"
+      class="border border-t-2 border-b-0 border-l-0 border-r-0 border-[#0f0f0f] mt-20 pt-10 pb-10 middle-pane-medium"
     >
       <div
         class="flex mx-6 gap-10 text-lg items-center flex-wrap align-top"

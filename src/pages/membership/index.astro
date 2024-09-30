@@ -23,9 +23,7 @@ const sectionsConfig = [
   subimage="/membership/membership.png"
 >
   <div class="middle-pane-medium my-10">
-    <div
-      class="flex items-center justify-center w-full text-center my-12"
-    >
+    <div class="flex items-center justify-center w-full text-center my-12">
       <h3 class="max-w-[900px] w-full">
         for all privacy advocates, projects and companies, we offer a simple and
         straightforward way to support us financially and become an integral
@@ -50,7 +48,9 @@ const sectionsConfig = [
         </p>
       </div>
 
-      <div class="flex gap-3 flex-wrap mb-4 justify-center md:justify-start mx-4">
+      <div
+        class="flex gap-3 flex-wrap mb-4 justify-center md:justify-start mx-4"
+      >
         {
           contributors.items.map((contrib) => (
             <div>
@@ -81,12 +81,18 @@ const sectionsConfig = [
     <MembershipOtherOptionsWidget />
   </div>
 
-  <div class="mt-16 middle-pane-medium">
-    <h1 class="my-6 ">Members</h1>
-    <MembersGrid people={core.people} team={core.teams["core-team"]} />
+  <div class="mx-4 mt-16">
+    <h1 class="my-6 middle-pane-medium">Members</h1>
+    <div class="middle-pane-big">
+      <MembersGrid
+        people={core.people}
+        team={core.teams["members"]}
+        core={false}
+      />
+    </div>
   </div>
 
-  <div class="middle-pane-medium my-10">
+  <div class="middle-pane-medium my-10 mt-20 md:mt-10">
     <h1>Join the community</h1>
     <p>
       We thrive on uniting diverse perspectives, skills, and visions. Both
@@ -136,9 +142,14 @@ const sectionsConfig = [
     </div>
   </div>
 
-  <div class="mt-16 middle-pane-medium">
-    <h1 class="my-6 ">Community Partners</h1>
-    <MembersGrid people={core.people} team={core.teams["core-team"]} />
+  <div class="mt-16 mx-4">
+    <h1 class="my-6 middle-pane-medium">Community Partners</h1>
+    <div class="middle-pane-big">
+      <MembersGrid
+        people={core.people}
+        team={core.teams["community-partners"]}
+      />
+    </div>
   </div>
 
   <AboutFooter {sectionsConfig} />
