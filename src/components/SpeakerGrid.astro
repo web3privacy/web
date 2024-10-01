@@ -1,7 +1,7 @@
 ---
 import { parseAndWrapCaptions } from "../../utils/captionParser";
 
-const { people, team, core } = Astro.props;
+const { people, team, core, contributors } = Astro.props;
 
 // Filter based on the `core` parameter
 const members = core ? people.filter((p) => {
@@ -40,7 +40,7 @@ function personLink(person) {
       <div
         class={`max-w-xs w-full  max-h-[340px] bg-transparent overflow-hidden p-1 space-y-1 mb-2`}
       >
-        <a href={personLink(person)} class={`${core ? "person-item" : ""}`}>
+        <a href={personLink(person)} class={`${core ? "person-item" : ""}`} target="_blank">
           <img
             src={person.imageUrl}
             alt={person.name}
@@ -50,7 +50,7 @@ function personLink(person) {
         <div class="mt-4">
           <h3 class="text-[10px] pt-2 font-bold leading-3 md:leading-9 md:text-[16px] ">{person.name}</h3>
         
-          {person.refs && (
+          {!contributors ? person.refs && (
             <p class="text-xs text-gray-500">
               {person.refs.twitter && `@${person.refs.twitter}`}
               {person.refs.email && ` | Email: ${person.refs.email}`}
@@ -60,14 +60,13 @@ function personLink(person) {
               {person.refs.matrix && ` | Matrix: ${person.refs.matrix}`}
               {person.refs.email && ` | Email: ${person.refs.email}`}
             </p>
-       <p class="text-xs text-gray-500" set:html={person.caption && parseAndWrapCaptions(person.caption)}></p>
-
-
+            <p class="text-xs text-gray-500" set:html={person.caption && parseAndWrapCaptions(person.caption)}></p>
             <p class="text-xs text-gray-500">
               {person.refs.designation && `${person.refs.designation}`}
 
             </p>
-          )}
+          ) : 
+          <p class="text-xs text-gray-500" set:html={person.caption && parseAndWrapCaptions(person.caption)}></p>}
         </div>
       </div>
     ))
