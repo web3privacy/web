@@ -5,7 +5,6 @@ const filteredPeople = core
   ? people.filter((p) => !team.includes(p.id)).filter((p) => p.imageUrl)
   : team;
 
-  console.log(team, core)
 // Limit the number of members to 12 (2 rows with a max of 6 columns each)
 const limitedPeople = filteredPeople.slice(0, 12);
 
