@@ -337,7 +337,11 @@
       "name": "Odd",
       "caption": "Copywriting & Education",
       "imageUrl": "https://data.web3privacy.info/img/people/odd.png",
-      "thumbs": {}
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/odd-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/odd-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/odd-400px.webp"
+      }
     },
     {
       "id": "wesley",
@@ -426,7 +430,11 @@
       "name": "MF",
       "caption": "Master of Caffeine",
       "imageUrl": "https://data.web3privacy.info/img/people/mf.png",
-      "thumbs": {}
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/mf-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/mf-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/mf-400px.webp"
+      }
     },
     {
       "id": "hsinju-chuang",
@@ -1033,7 +1041,11 @@
       "name": "Robert de Groot",
       "caption": "Partnership & Volunteers",
       "imageUrl": "https://data.web3privacy.info/img/people/robert.png",
-      "thumbs": {}
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/robert-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/robert-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/robert-400px.webp"
+      }
     },
     {
       "id": "kris",
@@ -1069,7 +1081,11 @@
       "name": "cat",
       "caption": "Like all pure creatures, cats are practical. – William S. Burroughs",
       "imageUrl": "https://data.web3privacy.info/img/people/cat.png",
-      "thumbs": {}
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/cat-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/cat-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/cat-400px.webp"
+      }
     },
     {
       "id": "steffen-kux",
