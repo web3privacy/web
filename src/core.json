@@ -28,6 +28,36 @@
       "mykola-siusko",
       "pg",
       "coinmandeer"
+    ],
+    "members": {
+      "$load": "members"
+    },
+    "community-partners": {
+      "$load": "community-partners"
+    },
+    "core-speakers": [
+      "david-chaum",
+      "tor-ekeland",
+      "michael-bauwens",
+      "vitalik-buterin",
+      "paul-dylan-ennis",
+      "jaromil",
+      "ameen-soleimani",
+      "ahmed-ghappour",
+      "scott-moore",
+      "juraj-bednar",
+      "kurt-opsahl",
+      "guy-zyskind"
+    ],
+    "core-contributors": [
+      "mykola-siusko",
+      "pg",
+      "michael-parenti",
+      "coinmandeer",
+      "robert",
+      "cat",
+      "odd",
+      "mf"
     ]
   },
   "research": [
@@ -303,6 +333,17 @@
   ],
   "people": [
     {
+      "id": "odd",
+      "name": "Odd",
+      "caption": "Copywriting & Education",
+      "imageUrl": "https://data.web3privacy.info/img/people/odd.png",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/odd-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/odd-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/odd-400px.webp"
+      }
+    },
+    {
       "id": "wesley",
       "name": "Wesley",
       "caption": "Events at Ethereum",
@@ -382,6 +423,17 @@
         "64": "https://data.web3privacy.info/img/people/thumbs/mario-havel-64px.webp",
         "128": "https://data.web3privacy.info/img/people/thumbs/mario-havel-128px.webp",
         "400": "https://data.web3privacy.info/img/people/thumbs/mario-havel-400px.webp"
+      }
+    },
+    {
+      "id": "mf",
+      "name": "MF",
+      "caption": "Master of Caffeine",
+      "imageUrl": "https://data.web3privacy.info/img/people/mf.png",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/mf-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/mf-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/mf-400px.webp"
       }
     },
     {
@@ -623,14 +675,14 @@
     {
       "id": "mykola-siusko",
       "name": "Mykola Siusko",
-      "caption": "Web3 privacy advocate behind [Web3Privacy Now](https://web3privacy.info/)",
+      "caption": "Chief Empathy Officer",
       "country": "es",
+      "imageUrl": "https://data.web3privacy.info/img/people/mykola-siusko.png",
       "refs": {
         "twitter": "nicksvyaznoy",
         "github": "msiusko",
         "matrix": "k1983:matrix.org"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/mykola-siusko.png",
       "thumbs": {
         "64": "https://data.web3privacy.info/img/people/thumbs/mykola-siusko-64px.webp",
         "128": "https://data.web3privacy.info/img/people/thumbs/mykola-siusko-128px.webp",
@@ -867,12 +919,12 @@
     {
       "id": "michael-parenti",
       "name": "Michael Parenti",
-      "caption": "Cofounder of Bitcoiners Without Borders",
+      "caption": "Ops & vibe",
+      "imageUrl": "https://data.web3privacy.info/img/people/michael-parenti.png",
       "country": "at",
       "refs": {
         "twitter": "exiledsurfer"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/michael-parenti.png",
       "thumbs": {
         "64": "https://data.web3privacy.info/img/people/thumbs/michael-parenti-64px.webp",
         "128": "https://data.web3privacy.info/img/people/thumbs/michael-parenti-128px.webp",
@@ -941,12 +993,13 @@
     {
       "id": "coinmandeer",
       "name": "Coinmandeer",
+      "caption": "UI/UX Design & Brand",
+      "imageUrl": "https://data.web3privacy.info/img/people/coinmandeer.png",
       "refs": {
         "twitter": "KeenOfCoin",
         "github": "coinmandeer",
         "matrix": "coinmandeer:matrix.org"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/coinmandeer.png",
       "thumbs": {
         "64": "https://data.web3privacy.info/img/people/thumbs/coinmandeer-64px.webp",
         "128": "https://data.web3privacy.info/img/people/thumbs/coinmandeer-128px.webp",
@@ -984,6 +1037,17 @@
       }
     },
     {
+      "id": "robert",
+      "name": "Robert de Groot",
+      "caption": "Partnership & Volunteers",
+      "imageUrl": "https://data.web3privacy.info/img/people/robert.png",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/robert-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/robert-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/robert-400px.webp"
+      }
+    },
+    {
       "id": "kris",
       "name": "Kris",
       "caption": "ex-Ops for [Gitcoin Citizens](https://www.gitcoin.co/program)",
@@ -1010,6 +1074,17 @@
         "64": "https://data.web3privacy.info/img/people/thumbs/lasha-antatze-64px.webp",
         "128": "https://data.web3privacy.info/img/people/thumbs/lasha-antatze-128px.webp",
         "400": "https://data.web3privacy.info/img/people/thumbs/lasha-antatze-400px.webp"
+      }
+    },
+    {
+      "id": "cat",
+      "name": "cat",
+      "caption": "Like all pure creatures, cats are practical. – William S. Burroughs",
+      "imageUrl": "https://data.web3privacy.info/img/people/cat.png",
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/cat-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/cat-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/cat-400px.webp"
       }
     },
     {
@@ -1366,14 +1441,14 @@
     {
       "id": "pg",
       "name": "PG",
-      "caption": "Organizing [ETHRome](https://ethrome.org) w/ [urbe.eth](https://linktr.ee/urbe.eth), making sauce w/ [SpaghettETH](https://linktr.ee/spaghetteth)",
+      "caption": "Larrikin sling master",
       "country": "it",
+      "imageUrl": "https://data.web3privacy.info/img/people/pg.jpg",
       "refs": {
         "twitter": "PG_CDG",
         "github": "EclecticSamurai",
         "matrix": "pg_cdg:matrix.org"
       },
-      "imageUrl": "https://data.web3privacy.info/img/people/pg.jpg",
       "thumbs": {
         "64": "https://data.web3privacy.info/img/people/thumbs/pg-64px.webp",
         "128": "https://data.web3privacy.info/img/people/thumbs/pg-128px.webp",
