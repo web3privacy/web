@@ -29,12 +29,6 @@
       "pg",
       "coinmandeer"
     ],
-    "members": {
-      "$load": "members"
-    },
-    "community-partners": {
-      "$load": "community-partners"
-    },
     "core-speakers": [
       "david-chaum",
       "tor-ekeland",
@@ -60,6 +54,217 @@
       "mf"
     ]
   },
+  "members": [
+    {
+      "id": "tokendynamics",
+      "name": "TokenDynamics",
+      "imageUrl": "https://web3privacy.info/membersLogo/tokendynamics.png",
+      "refs": {
+        "website": "https://tokendynamics.xyz/",
+        "twitter": "tokendynamics"
+      }
+    },
+    {
+      "id": "codex",
+      "name": "Codex",
+      "imageUrl": "https://web3privacy.info/membersLogo/codex.svg",
+      "refs": {
+        "website": "https://codex.storage",
+        "twitter": "Codex_storage"
+      }
+    },
+    {
+      "id": "moros",
+      "name": "MorosNet",
+      "imageUrl": "https://web3privacy.info/membersLogo/moros.png",
+      "refs": {
+        "website": "https://morosnet.com/",
+        "twitter": "morosnet"
+      }
+    },
+    {
+      "id": "namada",
+      "name": "Namada",
+      "imageUrl": "https://web3privacy.info/membersLogo/namada.png",
+      "refs": {
+        "website": "https://namada.net/",
+        "twitter": "namada"
+      }
+    },
+    {
+      "id": "gnosis",
+      "name": "Gnosis DAO",
+      "imageUrl": "https://web3privacy.info/membersLogo/gnosisdao.png",
+      "refs": {
+        "website": "https://www.gnosis.io/gnosisdao",
+        "twitter": "gnosischain"
+      }
+    },
+    {
+      "id": "logos",
+      "name": "LOGOS",
+      "imageUrl": "https://web3privacy.info/membersLogo/logos.svg",
+      "refs": {
+        "website": "https://logos.co",
+        "twitter": "logos_network"
+      }
+    },
+    {
+      "id": "waku",
+      "name": "WAKU",
+      "imageUrl": "https://web3privacy.info/membersLogo/waku.svg",
+      "refs": {
+        "website": "https://waku.org",
+        "twitter": "waku_org"
+      }
+    },
+    {
+      "id": "intmax",
+      "name": "Intmax",
+      "imageUrl": "https://web3privacy.info/membersLogo/intmax.png",
+      "refs": {
+        "website": "https://www.intmax.io",
+        "twitter": "intmaxIO"
+      }
+    },
+    {
+      "id": "labyrinth",
+      "name": "Labyrinth",
+      "imageUrl": "https://web3privacy.info/membersLogo/labyrinth.png",
+      "refs": {
+        "website": "https://www.labyrinth.technology",
+        "twitter": "Labyrinth_HQ"
+      }
+    },
+    {
+      "id": "0xbow",
+      "name": "0xbow",
+      "imageUrl": "https://web3privacy.info/membersLogo/0xbow.png",
+      "refs": {
+        "website": "https://0xbow.io",
+        "twitter": "0xbowio"
+      }
+    },
+    {
+      "id": "dyne",
+      "name": "Dyne",
+      "imageUrl": "https://web3privacy.info/membersLogo/dyne.png",
+      "refs": {
+        "website": "https://dyne.org",
+        "twitter": "dyneorg"
+      }
+    },
+    {
+      "id": "nomos",
+      "name": "Nomos",
+      "imageUrl": "https://web3privacy.info/membersLogo/nomos.svg",
+      "refs": {
+        "website": "https://nomos.tech",
+        "twitter": "Nomos_tech"
+      }
+    }
+  ],
+  "community-partners": [
+    {
+      "id": "gcc",
+      "name": "GCC of Commons",
+      "imageUrl": "https://web3privacy.info/membersLogo/GCC.png",
+      "refs": {
+        "website": "https://www.gccofficial.org/en",
+        "twitter": "GCCofCommons"
+      }
+    },
+    {
+      "id": "hopr",
+      "name": "HOPR",
+      "imageUrl": "https://web3privacy.info/membersLogo/hopr.svg",
+      "refs": {
+        "website": "https://hoprnet.org",
+        "twitter": "hoprnet"
+      }
+    },
+    {
+      "id": "urbe",
+      "name": "Urbe.eth",
+      "imageUrl": "https://web3privacy.info/membersLogo/Urbe.png",
+      "refs": {
+        "website": "https://linktr.ee/urbe.eth",
+        "twitter": "urbeEth"
+      }
+    },
+    {
+      "id": "kernel",
+      "name": "Kernel Community",
+      "imageUrl": "https://web3privacy.info/membersLogo/kernel.png",
+      "refs": {
+        "website": "https://kernel.community/",
+        "twitter": "Kernel0x"
+      }
+    },
+    {
+      "id": "ethrome",
+      "name": "ETHRome",
+      "imageUrl": "https://web3privacy.info/membersLogo/ETHRome.png",
+      "refs": {
+        "website": "https://ethrome.org",
+        "twitter": "ETHRome"
+      }
+    },
+    {
+      "id": "molochdao",
+      "name": "Moloch DAO",
+      "imageUrl": "https://web3privacy.info/membersLogo/MolochDAO.png",
+      "refs": {
+        "website": "https://molochdao.com",
+        "twitter": "molochdao"
+      }
+    },
+    {
+      "id": "paralelnipolis",
+      "name": "Paralelni Polis",
+      "imageUrl": "https://web3privacy.info/membersLogo/polis.png",
+      "refs": {
+        "website": "https://paralelnipolis.cz/en",
+        "twitter": "Paralelni_polis"
+      }
+    },
+    {
+      "id": "shieldingsummit",
+      "name": "Shielding Summit",
+      "imageUrl": "https://web3privacy.info/membersLogo/ssummit.png",
+      "refs": {
+        "website": "https://shieldingsummit.org",
+        "twitter": "ShieldingSummit"
+      }
+    },
+    {
+      "id": "lunardao",
+      "name": "LunarDAO",
+      "imageUrl": "https://web3privacy.info/membersLogo/LunarDAO.png",
+      "refs": {
+        "website": "https://lunardao.net",
+        "twitter": "lunarpunksquad"
+      }
+    },
+    {
+      "id": "cryptocanal",
+      "name": "CryptoCanal",
+      "imageUrl": "https://web3privacy.info/membersLogo/CryptoCanal.png",
+      "refs": {
+        "website": "https://lu.ma/cryptocanal",
+        "twitter": "cryptocanal"
+      }
+    },
+    {
+      "id": "zcash",
+      "name": "Zcash",
+      "imageUrl": "https://web3privacy.info/membersLogo/zcash.png",
+      "refs": {
+        "website": "https://z.cash",
+        "twitter": "zcash"
+      }
+    }
+  ],
   "research": [
     {
       "issue": 1,
