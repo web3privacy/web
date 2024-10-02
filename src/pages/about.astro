@@ -54,10 +54,7 @@ for (const e of upcomingEvents) {
     featuredEvents.push(e);
   }
 }
-
-
 ---
-
 
 <BaseLayout
   title="About web3privacy"
@@ -70,7 +67,19 @@ for (const e of upcomingEvents) {
       <div class="flex flex-col gap-[36px] md:order-2">
         <div class="md:hidden block mb-[12px]">
           <h1>activism. care. solidarity.</h1>
-          <div set:html={config.landing.mission} />
+          <!-- <div set:html={config.landing.mission} /> -->
+          <div>
+            We are a think-and-Do tank of hundreds of people, projects, and
+            organizations committed to protecting and advancing civil liberties,
+            decentralization, and open-source software.
+
+            <br />
+
+            Ecosystem is a catalyst for change: we facilitate cross-stack and
+            cross-community collaboration with a poly-disciplinary approach to
+            drive meaningful impact.
+            <br />
+          </div>
           <div class="mt-8 flex gap-6 items-center w-full">
             <a class="button inverted" href={core.links.manifesto}
               ><button>Read manifesto</button></a
@@ -87,7 +96,19 @@ for (const e of upcomingEvents) {
       <div class="md:order-1 order-2">
         <div class="md:block hidden">
           <h1 class="glitch-text">activism. care. solidarity.</h1>
-          <div set:html={config.landing.mission} />
+          <div>
+            We are a think-and-Do tank of hundreds of people, projects, and
+            organizations committed to protecting and advancing civil liberties,
+            decentralization, and open-source software.
+
+            <br />
+            <br />
+
+            Ecosystem is a catalyst for change: we facilitate cross-stack and
+            cross-community collaboration with a poly-disciplinary approach to
+            drive meaningful impact.
+            <br />
+          </div>
           <div class="mt-8 flex gap-6 items-center w-full">
             <a class="button inverted" href={core.links.manifesto}
               ><button>Read manifesto</button></a

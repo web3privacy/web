@@ -3,13 +3,27 @@ import { parseAndWrapCaptions } from "../../utils/captionParser";
 
 const { people, team, core, contributors } = Astro.props;
 
-// Filter based on the `core` parameter
-const members = core ? people.filter((p) => {
- return  team.includes(p.id)
-}).filter((p) => p.imageUrl) : team;
+const coreContributorsOrder = [
+  'mykola-siusko',
+  'pg',
+  'michael-parenti',
+  'coinmandeer',
+  'robert',
+  'cat',
+  'odd',
+  'mf'
+];
 
-// const filteredPeople = members.filter((p) => p.imageUrl).slice(0, 12);
-const filteredPeople = members.filter((p) => p.imageUrl);
+// Filter based on the `core` parameter
+const members = core 
+  ? people.filter((p) => team.includes(p.id)).filter((p) => p.imageUrl)
+  : team;
+
+// Filter and sort `filteredPeople` based on `coreContributorsOrder`
+const filteredPeople = members.filter((p) => p.imageUrl).sort((a, b) => {
+  return coreContributorsOrder.indexOf(a.id) - coreContributorsOrder.indexOf(b.id);
+});
+
 
 function personLink(person) {
   if (person.refs?.twitter) {
@@ -31,6 +45,7 @@ function personLink(person) {
   }
 }
 ---
+
 
 <div
   class="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-6  place-items-start"
