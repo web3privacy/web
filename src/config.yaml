@@ -63,9 +63,11 @@ landing:
   research: |
     We cultivate a culture of privacy in web3 making data free and public.  Enjoy our researches, infographics, annual reports, tools, newsletter, guidelines & more.
   mission: |
-    Empower individuals to take control of their digital privacy.
+    We aim to manifest profound political and social change by advocating  Privacy in the Web3 Era. 
     <br><br>
-     We envision a world where privacy is a conscious, actively chosen lifestyle, accessible to everyone, everywhere. To turn this into reality, we need to unite our efforts and carve out a path toward a more equitable, decentralized and privacy-respecting digital space.
+    With unified efforts, we carve out a path toward a more equitable, decentralized and freedom-respecting digital commons.
+    <br><br>
+    <i>'Our task is to secure self-determination where we can, to hold back the coming dystopia where we cannot, and if all else fails, to accelerate its  self-destruction'   - Julian Assange, Cypherpunks (2012).</i>
   event: |
     Our aim with gatherings is to build understanding and solidarity between different groups of interests, cultures, states, chains, ecosystems and backgrounds.
     <br><br>
@@ -247,7 +249,7 @@ organisation:
     education:
       - objective: Academy
         details: |
-          Structured learning paths, playlists, and cohort-based programs 
+          Structured learning paths, playlists, and cohort-based programs
 
         height: 40
       - objective: Hackathon Curation Pack
