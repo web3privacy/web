@@ -7,7 +7,7 @@
       "2024-10-03T20:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/3q/4f28bcb7-a158-412a-92d8-27419b113e58",
-    "guestCount": 117
+    "guestCount": 118
   },
   {
     "url": "w3pn-meetup-devcon7",
@@ -17,6 +17,36 @@
       "2024-11-11T12:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/7g/87ce6260-c05a-46be-9576-93d5c02f766f",
-    "guestCount": 717
+    "guestCount": 726
+  },
+  {
+    "url": "73go30ij",
+    "name": "Web3privacy now meetup x ETHDam",
+    "period": [
+      "2025-05-08T14:00:00.000Z",
+      "2025-05-08T19:30:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/sz/cd55ed43-8334-4c9a-8caa-f8d3586f1eb6",
+    "guestCount": 0
+  },
+  {
+    "url": "gdp7vt8u",
+    "name": "Web3Privacy now summit x Berlin Blockchain Week",
+    "period": [
+      "2025-06-15T08:00:00.000Z",
+      "2025-06-15T19:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/pu/b8462b1e-c992-4c76-9088-51ad295feb3f",
+    "guestCount": 0
+  },
+  {
+    "url": "8jv4odjn",
+    "name": "Web3Privacy now meetup x ETHRome",
+    "period": [
+      "2025-10-09T13:00:00.000Z",
+      "2025-10-09T19:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/a3/005231e6-dec7-4179-b992-ca6feca0dd4c",
+    "guestCount": 0
   }
 ]
