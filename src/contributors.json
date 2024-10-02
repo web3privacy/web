@@ -80,7 +80,7 @@
       "received_events_url": "https://api.github.com/users/EclecticSamurai/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 533
+      "contributions": 534
     },
     {
       "login": "niclaz",
@@ -188,27 +188,6 @@
       "contributions": 76
     },
     {
-      "login": "coinmandeer",
-      "id": 62942796,
-      "node_id": "MDQ6VXNlcjYyOTQyNzk2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/62942796?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/coinmandeer",
-      "html_url": "https://github.com/coinmandeer",
-      "followers_url": "https://api.github.com/users/coinmandeer/followers",
-      "following_url": "https://api.github.com/users/coinmandeer/following{/other_user}",
-      "gists_url": "https://api.github.com/users/coinmandeer/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/coinmandeer/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/coinmandeer/subscriptions",
-      "organizations_url": "https://api.github.com/users/coinmandeer/orgs",
-      "repos_url": "https://api.github.com/users/coinmandeer/repos",
-      "events_url": "https://api.github.com/users/coinmandeer/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/coinmandeer/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 58
-    },
-    {
       "login": "NoobDeveloper412",
       "id": 74310120,
       "node_id": "MDQ6VXNlcjc0MzEwMTIw",
@@ -225,6 +204,27 @@
       "repos_url": "https://api.github.com/users/NoobDeveloper412/repos",
       "events_url": "https://api.github.com/users/NoobDeveloper412/events{/privacy}",
       "received_events_url": "https://api.github.com/users/NoobDeveloper412/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 64
+    },
+    {
+      "login": "coinmandeer",
+      "id": 62942796,
+      "node_id": "MDQ6VXNlcjYyOTQyNzk2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62942796?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/coinmandeer",
+      "html_url": "https://github.com/coinmandeer",
+      "followers_url": "https://api.github.com/users/coinmandeer/followers",
+      "following_url": "https://api.github.com/users/coinmandeer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/coinmandeer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/coinmandeer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/coinmandeer/subscriptions",
+      "organizations_url": "https://api.github.com/users/coinmandeer/orgs",
+      "repos_url": "https://api.github.com/users/coinmandeer/repos",
+      "events_url": "https://api.github.com/users/coinmandeer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/coinmandeer/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 58
