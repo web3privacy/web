@@ -7,7 +7,7 @@
       "2024-10-03T20:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/3q/4f28bcb7-a158-412a-92d8-27419b113e58",
-    "guestCount": 118
+    "guestCount": 120
   },
   {
     "url": "w3pn-meetup-devcon7",
@@ -17,7 +17,7 @@
       "2024-11-11T12:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/7g/87ce6260-c05a-46be-9576-93d5c02f766f",
-    "guestCount": 726
+    "guestCount": 732
   },
   {
     "url": "73go30ij",
@@ -27,6 +27,16 @@
       "2025-05-08T19:30:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/sz/cd55ed43-8334-4c9a-8caa-f8d3586f1eb6",
+    "guestCount": 0
+  },
+  {
+    "url": "jhp1iapn",
+    "name": "Web3Privacy now summit #2 x ETHPrague",
+    "period": [
+      "2025-06-06T08:00:00.000Z",
+      "2025-06-06T19:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/pm/df76b5f0-909d-42c9-884b-66170636b2f6",
     "guestCount": 0
   },
   {
