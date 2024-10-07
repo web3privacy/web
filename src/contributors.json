@@ -38,7 +38,7 @@
       "received_events_url": "https://api.github.com/users/Msiusko/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 3033
+      "contributions": 3034
     },
     {
       "login": "burningtree",
@@ -419,6 +419,27 @@
       "contributions": 12
     },
     {
+      "login": "organizedpunk",
+      "id": 125484615,
+      "node_id": "U_kgDOB3q-Rw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/125484615?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/organizedpunk",
+      "html_url": "https://github.com/organizedpunk",
+      "followers_url": "https://api.github.com/users/organizedpunk/followers",
+      "following_url": "https://api.github.com/users/organizedpunk/following{/other_user}",
+      "gists_url": "https://api.github.com/users/organizedpunk/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/organizedpunk/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/organizedpunk/subscriptions",
+      "organizations_url": "https://api.github.com/users/organizedpunk/orgs",
+      "repos_url": "https://api.github.com/users/organizedpunk/repos",
+      "events_url": "https://api.github.com/users/organizedpunk/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/organizedpunk/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 10
+    },
+    {
       "login": "haochizzle",
       "id": 36713098,
       "node_id": "MDQ6VXNlcjM2NzEzMDk4",
@@ -438,27 +459,6 @@
       "type": "User",
       "site_admin": false,
       "contributions": 10
-    },
-    {
-      "login": "organizedpunk",
-      "id": 125484615,
-      "node_id": "U_kgDOB3q-Rw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/125484615?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/organizedpunk",
-      "html_url": "https://github.com/organizedpunk",
-      "followers_url": "https://api.github.com/users/organizedpunk/followers",
-      "following_url": "https://api.github.com/users/organizedpunk/following{/other_user}",
-      "gists_url": "https://api.github.com/users/organizedpunk/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/organizedpunk/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/organizedpunk/subscriptions",
-      "organizations_url": "https://api.github.com/users/organizedpunk/orgs",
-      "repos_url": "https://api.github.com/users/organizedpunk/repos",
-      "events_url": "https://api.github.com/users/organizedpunk/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/organizedpunk/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 8
     },
     {
       "login": "chair28980",
