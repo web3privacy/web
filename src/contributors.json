@@ -227,7 +227,7 @@
       "received_events_url": "https://api.github.com/users/DomWane/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 61
+      "contributions": 64
     },
     {
       "login": "coinmandeer",
@@ -251,6 +251,27 @@
       "contributions": 60
     },
     {
+      "login": "DeBelg",
+      "id": 38403795,
+      "node_id": "MDQ6VXNlcjM4NDAzNzk1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38403795?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DeBelg",
+      "html_url": "https://github.com/DeBelg",
+      "followers_url": "https://api.github.com/users/DeBelg/followers",
+      "following_url": "https://api.github.com/users/DeBelg/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DeBelg/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DeBelg/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DeBelg/subscriptions",
+      "organizations_url": "https://api.github.com/users/DeBelg/orgs",
+      "repos_url": "https://api.github.com/users/DeBelg/repos",
+      "events_url": "https://api.github.com/users/DeBelg/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DeBelg/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 47
+    },
+    {
       "login": "jiricepelka",
       "id": 87526329,
       "node_id": "MDQ6VXNlcjg3NTI2MzI5",
@@ -270,27 +291,6 @@
       "type": "User",
       "site_admin": false,
       "contributions": 45
-    },
-    {
-      "login": "DeBelg",
-      "id": 38403795,
-      "node_id": "MDQ6VXNlcjM4NDAzNzk1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/38403795?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/DeBelg",
-      "html_url": "https://github.com/DeBelg",
-      "followers_url": "https://api.github.com/users/DeBelg/followers",
-      "following_url": "https://api.github.com/users/DeBelg/following{/other_user}",
-      "gists_url": "https://api.github.com/users/DeBelg/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/DeBelg/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/DeBelg/subscriptions",
-      "organizations_url": "https://api.github.com/users/DeBelg/orgs",
-      "repos_url": "https://api.github.com/users/DeBelg/repos",
-      "events_url": "https://api.github.com/users/DeBelg/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/DeBelg/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 44
     },
     {
       "login": "Diex5",
