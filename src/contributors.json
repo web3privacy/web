@@ -80,7 +80,7 @@
       "received_events_url": "https://api.github.com/users/EclecticSamurai/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 537
+      "contributions": 539
     },
     {
       "login": "niclaz",
@@ -101,7 +101,7 @@
       "received_events_url": "https://api.github.com/users/niclaz/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 505
+      "contributions": 518
     },
     {
       "login": "ethanolo-eth",
