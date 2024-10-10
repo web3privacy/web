@@ -80,7 +80,7 @@
       "received_events_url": "https://api.github.com/users/EclecticSamurai/received_events",
       "type": "User",
       "site_admin": false,
-      "contributions": 539
+      "contributions": 540
     },
     {
       "login": "niclaz",
@@ -167,6 +167,27 @@
       "contributions": 168
     },
     {
+      "login": "DeBelg",
+      "id": 38403795,
+      "node_id": "MDQ6VXNlcjM4NDAzNzk1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38403795?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DeBelg",
+      "html_url": "https://github.com/DeBelg",
+      "followers_url": "https://api.github.com/users/DeBelg/followers",
+      "following_url": "https://api.github.com/users/DeBelg/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DeBelg/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DeBelg/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DeBelg/subscriptions",
+      "organizations_url": "https://api.github.com/users/DeBelg/orgs",
+      "repos_url": "https://api.github.com/users/DeBelg/repos",
+      "events_url": "https://api.github.com/users/DeBelg/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DeBelg/received_events",
+      "type": "User",
+      "site_admin": false,
+      "contributions": 77
+    },
+    {
       "login": "danielklein-arch",
       "id": 82767072,
       "node_id": "MDQ6VXNlcjgyNzY3MDcy",
@@ -204,27 +225,6 @@
       "repos_url": "https://api.github.com/users/DomWane/repos",
       "events_url": "https://api.github.com/users/DomWane/events{/privacy}",
       "received_events_url": "https://api.github.com/users/DomWane/received_events",
-      "type": "User",
-      "site_admin": false,
-      "contributions": 72
-    },
-    {
-      "login": "DeBelg",
-      "id": 38403795,
-      "node_id": "MDQ6VXNlcjM4NDAzNzk1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/38403795?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/DeBelg",
-      "html_url": "https://github.com/DeBelg",
-      "followers_url": "https://api.github.com/users/DeBelg/followers",
-      "following_url": "https://api.github.com/users/DeBelg/following{/other_user}",
-      "gists_url": "https://api.github.com/users/DeBelg/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/DeBelg/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/DeBelg/subscriptions",
-      "organizations_url": "https://api.github.com/users/DeBelg/orgs",
-      "repos_url": "https://api.github.com/users/DeBelg/repos",
-      "events_url": "https://api.github.com/users/DeBelg/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/DeBelg/received_events",
       "type": "User",
       "site_admin": false,
       "contributions": 72
