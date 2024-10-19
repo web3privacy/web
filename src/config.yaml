@@ -1,5 +1,5 @@
 title: Web3Privacy Now
-description: The leading nonprofit advancing Privacy & Freedom in the web3 industry.  In our Ecosystem, we foster a culture that empowers decentralization, open-source , and anti surveillance.
+description: The open-source Ecosystem championing Privacy & Freedom in web3.
 header:
   menu:
     - name: Home
@@ -54,9 +54,7 @@ footer:
       link: matrix
 hero:
   text: |
-    The leading nonprofit advancing Privacy & Freedom in the web3 industry. 
-    <br />
-    In our Ecosystem, we foster a culture that empowers decentralization, open-source, and anti surveillance.
+    The open-source Ecosystem championing Privacy & Freedom in the web3 industry. 
 landing:
   merch: |
     To make humans gain control over their privacy by utilizing Web3 stack. So privacy would become a cultural phenomena & active lifestyle.
