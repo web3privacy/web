@@ -39,7 +39,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 3057
+      "contributions": 3058
     },
     {
       "login": "burningtree",
@@ -64,6 +64,28 @@
       "contributions": 950
     },
     {
+      "login": "niclaz",
+      "id": 83479948,
+      "node_id": "MDQ6VXNlcjgzNDc5OTQ4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/83479948?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/niclaz",
+      "html_url": "https://github.com/niclaz",
+      "followers_url": "https://api.github.com/users/niclaz/followers",
+      "following_url": "https://api.github.com/users/niclaz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/niclaz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/niclaz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/niclaz/subscriptions",
+      "organizations_url": "https://api.github.com/users/niclaz/orgs",
+      "repos_url": "https://api.github.com/users/niclaz/repos",
+      "events_url": "https://api.github.com/users/niclaz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/niclaz/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "contributions": 601
+    },
+    {
       "login": "EclecticSamurai",
       "id": 101947219,
       "node_id": "U_kgDOBhOXUw",
@@ -84,28 +106,6 @@
       "user_view_type": "public",
       "site_admin": false,
       "contributions": 548
-    },
-    {
-      "login": "niclaz",
-      "id": 83479948,
-      "node_id": "MDQ6VXNlcjgzNDc5OTQ4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/83479948?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/niclaz",
-      "html_url": "https://github.com/niclaz",
-      "followers_url": "https://api.github.com/users/niclaz/followers",
-      "following_url": "https://api.github.com/users/niclaz/following{/other_user}",
-      "gists_url": "https://api.github.com/users/niclaz/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/niclaz/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/niclaz/subscriptions",
-      "organizations_url": "https://api.github.com/users/niclaz/orgs",
-      "repos_url": "https://api.github.com/users/niclaz/repos",
-      "events_url": "https://api.github.com/users/niclaz/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/niclaz/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false,
-      "contributions": 518
     },
     {
       "login": "ethanolo-eth",
