@@ -196,6 +196,28 @@
       "contributions": 156
     },
     {
+      "login": "DomWane",
+      "id": 82064987,
+      "node_id": "MDQ6VXNlcjgyMDY0OTg3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/82064987?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DomWane",
+      "html_url": "https://github.com/DomWane",
+      "followers_url": "https://api.github.com/users/DomWane/followers",
+      "following_url": "https://api.github.com/users/DomWane/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DomWane/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DomWane/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DomWane/subscriptions",
+      "organizations_url": "https://api.github.com/users/DomWane/orgs",
+      "repos_url": "https://api.github.com/users/DomWane/repos",
+      "events_url": "https://api.github.com/users/DomWane/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DomWane/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "contributions": 77
+    },
+    {
       "login": "danielklein-arch",
       "id": 82767072,
       "node_id": "MDQ6VXNlcjgyNzY3MDcy",
@@ -216,28 +238,6 @@
       "user_view_type": "public",
       "site_admin": false,
       "contributions": 76
-    },
-    {
-      "login": "DomWane",
-      "id": 82064987,
-      "node_id": "MDQ6VXNlcjgyMDY0OTg3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/82064987?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/DomWane",
-      "html_url": "https://github.com/DomWane",
-      "followers_url": "https://api.github.com/users/DomWane/followers",
-      "following_url": "https://api.github.com/users/DomWane/following{/other_user}",
-      "gists_url": "https://api.github.com/users/DomWane/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/DomWane/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/DomWane/subscriptions",
-      "organizations_url": "https://api.github.com/users/DomWane/orgs",
-      "repos_url": "https://api.github.com/users/DomWane/repos",
-      "events_url": "https://api.github.com/users/DomWane/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/DomWane/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false,
-      "contributions": 72
     },
     {
       "login": "NoobDeveloper412",
@@ -325,7 +325,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 43
+      "contributions": 44
     },
     {
       "login": "Diex5",
