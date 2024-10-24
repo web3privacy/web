@@ -215,7 +215,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 77
+      "contributions": 80
     },
     {
       "login": "danielklein-arch",
@@ -284,6 +284,28 @@
       "contributions": 60
     },
     {
+      "login": "MufCZ",
+      "id": 90514921,
+      "node_id": "MDQ6VXNlcjkwNTE0OTIx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/90514921?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/MufCZ",
+      "html_url": "https://github.com/MufCZ",
+      "followers_url": "https://api.github.com/users/MufCZ/followers",
+      "following_url": "https://api.github.com/users/MufCZ/following{/other_user}",
+      "gists_url": "https://api.github.com/users/MufCZ/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/MufCZ/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/MufCZ/subscriptions",
+      "organizations_url": "https://api.github.com/users/MufCZ/orgs",
+      "repos_url": "https://api.github.com/users/MufCZ/repos",
+      "events_url": "https://api.github.com/users/MufCZ/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/MufCZ/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "contributions": 45
+    },
+    {
       "login": "jiricepelka",
       "id": 87526329,
       "node_id": "MDQ6VXNlcjg3NTI2MzI5",
@@ -304,28 +326,6 @@
       "user_view_type": "public",
       "site_admin": false,
       "contributions": 45
-    },
-    {
-      "login": "MufCZ",
-      "id": 90514921,
-      "node_id": "MDQ6VXNlcjkwNTE0OTIx",
-      "avatar_url": "https://avatars.githubusercontent.com/u/90514921?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/MufCZ",
-      "html_url": "https://github.com/MufCZ",
-      "followers_url": "https://api.github.com/users/MufCZ/followers",
-      "following_url": "https://api.github.com/users/MufCZ/following{/other_user}",
-      "gists_url": "https://api.github.com/users/MufCZ/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/MufCZ/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/MufCZ/subscriptions",
-      "organizations_url": "https://api.github.com/users/MufCZ/orgs",
-      "repos_url": "https://api.github.com/users/MufCZ/repos",
-      "events_url": "https://api.github.com/users/MufCZ/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/MufCZ/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false,
-      "contributions": 44
     },
     {
       "login": "Diex5",
