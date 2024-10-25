@@ -215,7 +215,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 80
+      "contributions": 121
     },
     {
       "login": "danielklein-arch",
@@ -303,7 +303,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 45
+      "contributions": 50
     },
     {
       "login": "jiricepelka",
@@ -394,6 +394,28 @@
       "contributions": 23
     },
     {
+      "login": "kleinpetr",
+      "id": 17269309,
+      "node_id": "MDQ6VXNlcjE3MjY5MzA5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17269309?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kleinpetr",
+      "html_url": "https://github.com/kleinpetr",
+      "followers_url": "https://api.github.com/users/kleinpetr/followers",
+      "following_url": "https://api.github.com/users/kleinpetr/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kleinpetr/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kleinpetr/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kleinpetr/subscriptions",
+      "organizations_url": "https://api.github.com/users/kleinpetr/orgs",
+      "repos_url": "https://api.github.com/users/kleinpetr/repos",
+      "events_url": "https://api.github.com/users/kleinpetr/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kleinpetr/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "contributions": 13
+    },
+    {
       "login": "Ressac-No1",
       "id": 119933943,
       "node_id": "U_kgDOByYL9w",
@@ -432,28 +454,6 @@
       "repos_url": "https://api.github.com/users/jakubklim/repos",
       "events_url": "https://api.github.com/users/jakubklim/events{/privacy}",
       "received_events_url": "https://api.github.com/users/jakubklim/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false,
-      "contributions": 12
-    },
-    {
-      "login": "kleinpetr",
-      "id": 17269309,
-      "node_id": "MDQ6VXNlcjE3MjY5MzA5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/17269309?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/kleinpetr",
-      "html_url": "https://github.com/kleinpetr",
-      "followers_url": "https://api.github.com/users/kleinpetr/followers",
-      "following_url": "https://api.github.com/users/kleinpetr/following{/other_user}",
-      "gists_url": "https://api.github.com/users/kleinpetr/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/kleinpetr/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/kleinpetr/subscriptions",
-      "organizations_url": "https://api.github.com/users/kleinpetr/orgs",
-      "repos_url": "https://api.github.com/users/kleinpetr/repos",
-      "events_url": "https://api.github.com/users/kleinpetr/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/kleinpetr/received_events",
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
