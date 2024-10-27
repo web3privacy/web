@@ -1,13 +1,25 @@
 [
   {
+    "url": "https://www.youtube.com/watch?v=s-v43r6i8y8",
+    "title": "Parallel Society - Marco Castignoli | Web3Privacy Now - Rome Meetup 2024",
+    "img": "https://i4.ytimg.com/vi/s-v43r6i8y8/maxresdefault.jpg",
+    "date": "2024-10-27T21:11:39.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=qMNSKPArl-k",
+    "title": "Buidl for Peoples not Machinez - Arturo Filastò | Web3Privacy Now - Rome Meetup 2024",
+    "img": "https://i2.ytimg.com/vi/qMNSKPArl-k/maxresdefault.jpg",
+    "date": "2024-10-27T21:05:08.000Z"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=P13CJN3Z7kk",
-    "title": "Edit your project on Explorer: How To",
+    "title": "Edit your project on Explorer",
     "img": "https://i1.ytimg.com/vi/P13CJN3Z7kk/maxresdefault.jpg",
     "date": "2024-10-09T10:26:16.000Z"
   },
   {
     "url": "https://www.youtube.com/watch?v=YpfBQD2gyoY",
-    "title": "Add a project to Explorer: How to",
+    "title": "How to Add a Project to Explorer",
     "img": "https://i2.ytimg.com/vi/YpfBQD2gyoY/maxresdefault.jpg",
     "date": "2024-10-09T10:23:42.000Z"
   },
@@ -75,18 +87,6 @@
     "url": "https://www.youtube.com/watch?v=NW6ViGipnT8",
     "title": "Collective, Non-Profit. Private | afri | Web3Privacy Now Berlin Meetup 2024",
     "img": "https://i3.ytimg.com/vi/NW6ViGipnT8/maxresdefault.jpg",
-    "date": "2024-06-11T08:02:12.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=XrpjfyEK7Hs",
-    "title": "Cryptography and Privacy in Context | Ying Tong | Web3Privacy Now Berlin Meetup 2024",
-    "img": "https://i1.ytimg.com/vi/XrpjfyEK7Hs/maxresdefault.jpg",
-    "date": "2024-06-11T08:02:12.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=woRkyy9ougs",
-    "title": "The tension between privacy and solidarity | Josh Davila | Web3Privacy Now Berlin Meetup 2024",
-    "img": "https://i4.ytimg.com/vi/woRkyy9ougs/maxresdefault.jpg",
     "date": "2024-06-11T08:02:12.000Z"
   }
 ]
