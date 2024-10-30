@@ -87,7 +87,7 @@
   body,
   p,
   div {
-    @apply text-[#909090] leading-8;
+    @apply text-[#909090] leading-8 text-lg;
   }
 
   h1,
