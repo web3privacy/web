@@ -127,7 +127,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 505
+      "contributions": 506
     },
     {
       "login": "cryptomar1o",
@@ -152,6 +152,28 @@
       "contributions": 257
     },
     {
+      "login": "DeBelg",
+      "id": 38403795,
+      "node_id": "MDQ6VXNlcjM4NDAzNzk1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38403795?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/DeBelg",
+      "html_url": "https://github.com/DeBelg",
+      "followers_url": "https://api.github.com/users/DeBelg/followers",
+      "following_url": "https://api.github.com/users/DeBelg/following{/other_user}",
+      "gists_url": "https://api.github.com/users/DeBelg/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/DeBelg/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/DeBelg/subscriptions",
+      "organizations_url": "https://api.github.com/users/DeBelg/orgs",
+      "repos_url": "https://api.github.com/users/DeBelg/repos",
+      "events_url": "https://api.github.com/users/DeBelg/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/DeBelg/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "contributions": 169
+    },
+    {
       "login": "f1nass",
       "id": 167763861,
       "node_id": "U_kgDOCf_flQ",
@@ -174,28 +196,6 @@
       "contributions": 168
     },
     {
-      "login": "DeBelg",
-      "id": 38403795,
-      "node_id": "MDQ6VXNlcjM4NDAzNzk1",
-      "avatar_url": "https://avatars.githubusercontent.com/u/38403795?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/DeBelg",
-      "html_url": "https://github.com/DeBelg",
-      "followers_url": "https://api.github.com/users/DeBelg/followers",
-      "following_url": "https://api.github.com/users/DeBelg/following{/other_user}",
-      "gists_url": "https://api.github.com/users/DeBelg/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/DeBelg/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/DeBelg/subscriptions",
-      "organizations_url": "https://api.github.com/users/DeBelg/orgs",
-      "repos_url": "https://api.github.com/users/DeBelg/repos",
-      "events_url": "https://api.github.com/users/DeBelg/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/DeBelg/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false,
-      "contributions": 160
-    },
-    {
       "login": "DomWane",
       "id": 82064987,
       "node_id": "MDQ6VXNlcjgyMDY0OTg3",
@@ -215,7 +215,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 132
+      "contributions": 133
     },
     {
       "login": "danielklein-arch",
