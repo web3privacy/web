@@ -65,6 +65,15 @@
       }
     },
     {
+      "id": "swarm",
+      "name": "Swarm",
+      "imageUrl": "https://web3privacy.info/membersLogo/swarm.png",
+      "refs": {
+        "website": "https://www.ethswarm.org/",
+        "twitter": "ethswarm"
+      }
+    },
+    {
       "id": "namada",
       "name": "Namada",
       "imageUrl": "https://web3privacy.info/membersLogo/namada.png",
