@@ -193,6 +193,15 @@
       }
     },
     {
+      "id": "fileverse",
+      "name": "Fileverse",
+      "imageUrl": "https://web3privacy.info/membersLogo/fileverse.png",
+      "refs": {
+        "website": "https://fileverse.io",
+        "twitter": "fileverse"
+      }
+    },
+    {
       "id": "urbe",
       "name": "Urbe.eth",
       "imageUrl": "https://web3privacy.info/membersLogo/Urbe.png",
@@ -208,6 +217,15 @@
       "refs": {
         "website": "https://lu.ma/cryptocanal",
         "twitter": "cryptocanal"
+      }
+    },
+    {
+      "id": "pse",
+      "name": "PSE",
+      "imageUrl": "https://web3privacy.info/membersLogo/PSE.svg",
+      "refs": {
+        "website": "https://pse.dev/en",
+        "twitter": "PrivacyScaling"
       }
     },
     {
@@ -262,6 +280,15 @@
       "refs": {
         "website": "https://www.gccofficial.org/en",
         "twitter": "GCCofCommons"
+      }
+    },
+    {
+      "id": "railgun",
+      "name": "Railgun",
+      "imageUrl": "https://web3privacy.info/membersLogo/railgun.svg",
+      "refs": {
+        "website": "https://www.railgun.org/",
+        "twitter": "RAILGUN_Project"
       }
     },
     {
