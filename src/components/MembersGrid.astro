@@ -6,7 +6,7 @@ const filteredPeople = core
   : team;
 
 // Limit the number of members to 12 (2 rows with a max of 6 columns each)
-const limitedPeople = filteredPeople.slice(0, 12);
+const limitedPeople = filteredPeople.slice(0, 40);
 
 function personLink(person) {
   if (person.refs?.twitter) {
