@@ -1,12 +1,34 @@
 ---
 const { team, people, core } = Astro.props;
 
+// Define the desired order for members
+const membersOrder = [
+  "logos",
+  "waku",
+  "nomos",
+  "codex",
+  "dyne",
+  "gnosis",
+  "moros",
+  "0xbow",
+  "labyrinth",
+  "namada",
+  "tokendynamics",
+  "swarm",
+  "intmax",
+];
+
 const filteredPeople = core
   ? people.filter((p) => !team.includes(p.id)).filter((p) => p.imageUrl)
   : team;
 
 // Limit the number of members to 12 (2 rows with a max of 6 columns each)
-const limitedPeople = filteredPeople.slice(0, 40);
+// const limitedPeople = filteredPeople.slice(0, 40);
+
+const limitedPeople = filteredPeople.filter((p) => p.imageUrl).sort((a, b) => {
+  return membersOrder.indexOf(a.id) - membersOrder.indexOf(b.id);
+});
+
 
 function personLink(person) {
   if (person.refs?.twitter) {
