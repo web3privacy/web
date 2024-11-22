@@ -11,7 +11,11 @@ const coreContributorsOrder = [
   'robert',
   'cat',
   'odd',
-  'mf'
+  'mf',
+  "jensei",
+  "andreea",
+  "ann-brody",
+  "alina"
 ];
 
 // Filter based on the `core` parameter
@@ -81,7 +85,7 @@ function personLink(person) {
 
             </p>
           ) : 
-          <p class="text-xs text-gray-500" set:html={person.caption && parseAndWrapCaptions(person.caption)}></p>}
+          <p class="text-xs text-gray-500" set:html={person.job ? person.job : person.caption && parseAndWrapCaptions(person.caption)}></p>}
         </div>
       </div>
     ))
