@@ -105,7 +105,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 568
+      "contributions": 570
     },
     {
       "login": "ethanolo-eth",
@@ -218,6 +218,28 @@
       "contributions": 133
     },
     {
+      "login": "NoobDeveloper412",
+      "id": 74310120,
+      "node_id": "MDQ6VXNlcjc0MzEwMTIw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74310120?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/NoobDeveloper412",
+      "html_url": "https://github.com/NoobDeveloper412",
+      "followers_url": "https://api.github.com/users/NoobDeveloper412/followers",
+      "following_url": "https://api.github.com/users/NoobDeveloper412/following{/other_user}",
+      "gists_url": "https://api.github.com/users/NoobDeveloper412/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/NoobDeveloper412/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/NoobDeveloper412/subscriptions",
+      "organizations_url": "https://api.github.com/users/NoobDeveloper412/orgs",
+      "repos_url": "https://api.github.com/users/NoobDeveloper412/repos",
+      "events_url": "https://api.github.com/users/NoobDeveloper412/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/NoobDeveloper412/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "contributions": 81
+    },
+    {
       "login": "danielklein-arch",
       "id": 82767072,
       "node_id": "MDQ6VXNlcjgyNzY3MDcy",
@@ -238,28 +260,6 @@
       "user_view_type": "public",
       "site_admin": false,
       "contributions": 76
-    },
-    {
-      "login": "NoobDeveloper412",
-      "id": 74310120,
-      "node_id": "MDQ6VXNlcjc0MzEwMTIw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/74310120?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/NoobDeveloper412",
-      "html_url": "https://github.com/NoobDeveloper412",
-      "followers_url": "https://api.github.com/users/NoobDeveloper412/followers",
-      "following_url": "https://api.github.com/users/NoobDeveloper412/following{/other_user}",
-      "gists_url": "https://api.github.com/users/NoobDeveloper412/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/NoobDeveloper412/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/NoobDeveloper412/subscriptions",
-      "organizations_url": "https://api.github.com/users/NoobDeveloper412/orgs",
-      "repos_url": "https://api.github.com/users/NoobDeveloper412/repos",
-      "events_url": "https://api.github.com/users/NoobDeveloper412/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/NoobDeveloper412/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false,
-      "contributions": 75
     },
     {
       "login": "coinmandeer",
