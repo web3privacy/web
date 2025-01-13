@@ -1,4 +1,4 @@
-import "jsr:@std/dotenv@0.224.0";
+import "jsr:@std/dotenv@0.225.3";
 
 const contributorRepos = [
   // main repos
