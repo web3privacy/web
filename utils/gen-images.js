@@ -1,5 +1,5 @@
-import { run } from "https://deno.land/x/run_simple/mod.ts";
-import { join } from "jsr:@std/path@0.224.0";
+import { run } from "jsr:@hugojosefson/run-simple@2.3.12";
+import { join } from "jsr:@std/path@1.0.8";
 
 const IMG_DIR = "./public/gen-img/events";
 
