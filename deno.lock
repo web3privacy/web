@@ -3,14 +3,25 @@
   "packages": {
     "specifiers": {
       "jsr:@maxim-mazurok/sax-ts@1.2.13": "jsr:@maxim-mazurok/sax-ts@1.2.13",
-      "jsr:@std/dotenv@0.224.0": "jsr:@std/dotenv@0.224.0"
+      "jsr:@mikaelporttila/rss@1.1.1": "jsr:@mikaelporttila/rss@1.1.1",
+      "jsr:@std/dotenv@0.224.0": "jsr:@std/dotenv@0.224.0",
+      "jsr:@std/dotenv@0.225.3": "jsr:@std/dotenv@0.225.3"
     },
     "jsr": {
       "@maxim-mazurok/sax-ts@1.2.13": {
         "integrity": "9f2f9a3ac1b142400940a4c9e916656fe63d4710a78102aeb8e08e863de2c76d"
       },
+      "@mikaelporttila/rss@1.1.1": {
+        "integrity": "f07d7a5a269398f00efd6913d14a92defa55bcb66a4de196a5a5c99ec9df4b8b",
+        "dependencies": [
+          "jsr:@maxim-mazurok/sax-ts@1.2.13"
+        ]
+      },
       "@std/dotenv@0.224.0": {
         "integrity": "d9234cdf551507dcda60abb6c474289843741d8c07ee8ce540c60f5c1b220a1d"
+      },
+      "@std/dotenv@0.225.3": {
+        "integrity": "a95e5b812c27b0854c52acbae215856d9cce9d4bbf774d938c51d212711e8d4a"
       }
     }
   },
@@ -53,16 +64,25 @@
     "https://esm.sh/v135/domhandler@5.0.3/denonext/domhandler.mjs": "8c6e56c4596bbe7e9fd9d615f8fcdec7f11075f217bdc966a02ebe89c01b9f6f",
     "https://esm.sh/v135/domutils@3.1.0/denonext/domutils.mjs": "2a86554cc5f543a068bbf6ea6ed0647f4ad4c3ccb555f0da9fae09180cd7b611",
     "https://esm.sh/v135/domutils@3.2.2/denonext/domutils.mjs": "2a86554cc5f543a068bbf6ea6ed0647f4ad4c3ccb555f0da9fae09180cd7b611",
+    "https://esm.sh/v135/encoding-sniffer@0.2.0/denonext/encoding-sniffer.mjs": "08c03ae2c199028b500c657e42390f51de870415a005c8fabde9cd9045511451",
     "https://esm.sh/v135/entities@4.5.0/denonext/entities.mjs": "a9e8f9c22022c34755d1189030ac30c68545ccf8532fa32654c50fe9d90a13a1",
     "https://esm.sh/v135/entities@4.5.0/denonext/lib/decode.js": "7fea6d8bd725edbbf7ea05031d2ea1bbbc1166dc11e3345d541198dd2dc16f1e",
     "https://esm.sh/v135/entities@4.5.0/denonext/lib/escape.js": "7ebdc622bf3618bab25db40da4a49e2b9d03f044745f125f0bc3359f2d060def",
     "https://esm.sh/v135/htmlparser2@10.0.0/denonext/htmlparser2.mjs": "219a31d81c87d8ea21bec9be33d0d03bb8942c8b79fb8b9e2e6a05b826fc24dc",
     "https://esm.sh/v135/htmlparser2@8.0.2/denonext/htmlparser2.mjs": "219a31d81c87d8ea21bec9be33d0d03bb8942c8b79fb8b9e2e6a05b826fc24dc",
+    "https://esm.sh/v135/htmlparser2@9.1.0/denonext/htmlparser2.mjs": "e5186144ca1dd8829bda984fd778500356f241597c67e2c674213c684168e985",
+    "https://esm.sh/v135/iconv-lite@0.6.3/denonext/iconv-lite.mjs": "768e37377191ab3c7414bbb15fce202a328c411da0429764984c79b8bc65abd4",
     "https://esm.sh/v135/nth-check@2.1.1/denonext/nth-check.mjs": "638b4f5a22236cd05c7d1d43e5c6ea719695c4a8bc7beccdf8d97a434bea96dc",
     "https://esm.sh/v135/parse5-htmlparser2-tree-adapter@7.0.0/denonext/parse5-htmlparser2-tree-adapter.mjs": "2e8c24c6859e24e7c0f1e634574f8c014860868a603e85430b98212460e25091",
     "https://esm.sh/v135/parse5-htmlparser2-tree-adapter@7.1.0/denonext/parse5-htmlparser2-tree-adapter.mjs": "18462653ef289e549b778c7d55869f0f452394a91d7955a0bb2bd4e9935a9dba",
+    "https://esm.sh/v135/parse5-parser-stream@7.1.2/denonext/parse5-parser-stream.mjs": "ea8541ac707228dc40625fc0e4618a92bb51510fd5f4d4dfbaf833bb881162e3",
     "https://esm.sh/v135/parse5@7.1.2/denonext/parse5.mjs": "35bb04ec36a1c25c8cd8137296d64d16fd523a8ad1c2b63c41ba867fcd455c36",
     "https://esm.sh/v135/parse5@7.2.1/denonext/parse5.mjs": "1fc13be00aa36d894f2960fe0ff1ab1b4e6834be86420f05ede9981921a04619",
+    "https://esm.sh/v135/safer-buffer@2.1.2/denonext/safer-buffer.mjs": "ce0e787812c668ba082ad5b75958490c714b6e05836bd5b6013d9f75727c006f",
+    "https://esm.sh/v135/undici@6.19.6/denonext/undici.mjs": "ae6d6e0028a3f9543cd50e2911ae6f66b1d2e6bca262a39581867359cba99ad6",
+    "https://esm.sh/v135/undici@6.21.0/denonext/undici.mjs": "fdddf58a204efd4b2f49e65fe19297100c2ec6eb4dda6e4c02d4087a030fac53",
+    "https://esm.sh/v135/whatwg-encoding@3.1.1/denonext/whatwg-encoding.mjs": "ecb7f2fe9fe4686e801ffaf4fa924e5860cbc3d07594a89e639d5c2ed20ca067",
+    "https://esm.sh/v135/whatwg-mimetype@4.0.0/denonext/whatwg-mimetype.mjs": "52577070194b4b1ebc78e6e9b457a078ca28d6f8477457bce914da555d92a5bb",
     "https://jsr.io/@mikaelporttila/rss@1.1.1/deps.ts": "24c068a645f2af4e56c2fac530254446ce357b03e994a4dff9826820c09e00fd",
     "https://jsr.io/@mikaelporttila/rss@1.1.1/mod.ts": "122921a892de67c9d1efdd1321d653f8399f9eb91222c6e4bf90f797412805f2",
     "https://jsr.io/@mikaelporttila/rss@1.1.1/src/deserializer.ts": "bdd109f11983d4544e68ec997e0589f010e6bb81275472d7bd32bbdf0ec9a624",
