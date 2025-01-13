@@ -1,5 +1,5 @@
-import { parseFeed } from "https://deno.land/x/rss/mod.ts";
-import * as cheerio from "https://esm.sh/cheerio@1.0.0-rc.12";
+import { parseFeed } from "jsr:@mikaelporttila/rss@1.1.1";
+import * as cheerio from "https://esm.sh/cheerio@1.0.0";
 
 const resp = await fetch(
   "https://mirror.xyz/0x0f1F3DAf416B74DB3DE55Eb4D7513a80F4841073/feed/atom",
