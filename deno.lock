@@ -58,7 +58,7 @@
     "https://esm.sh/v135/htmlparser2@10.0.0/denonext/htmlparser2.mjs": "219a31d81c87d8ea21bec9be33d0d03bb8942c8b79fb8b9e2e6a05b826fc24dc",
     "https://esm.sh/v135/nth-check@2.1.1/denonext/nth-check.mjs": "638b4f5a22236cd05c7d1d43e5c6ea719695c4a8bc7beccdf8d97a434bea96dc",
     "https://esm.sh/v135/parse5-htmlparser2-tree-adapter@7.1.0/denonext/parse5-htmlparser2-tree-adapter.mjs": "18462653ef289e549b778c7d55869f0f452394a91d7955a0bb2bd4e9935a9dba",
-    "https://esm.sh/v135/parse5@7.2.1/denonext/parse5.mjs": "35bb04ec36a1c25c8cd8137296d64d16fd523a8ad1c2b63c41ba867fcd455c36"
+    "https://esm.sh/v135/parse5@7.2.1/denonext/parse5.mjs": "1fc13be00aa36d894f2960fe0ff1ab1b4e6834be86420f05ede9981921a04619"
   },
   "workspace": {
     "packageJson": {
