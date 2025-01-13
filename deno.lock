@@ -112,7 +112,7 @@
         "npm:@astrojs/svelte@^5.2.0",
         "npm:@astrojs/tailwind@^5.1.0",
         "npm:@rollup/plugin-yaml@^4.1.2",
-        "npm:astro@^4.5.5",
+        "npm:astro@^4.16.16",
         "npm:cfonts@^3.2.0",
         "npm:date-fns@^2.30.0",
         "npm:marked@^11.1.1",
