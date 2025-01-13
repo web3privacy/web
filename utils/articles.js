@@ -1,4 +1,4 @@
-import { parseFeed } from "https://jsr.io/@mikaelporttila/rss/1.1.1/mod.ts";
+import { parseFeed } from "jsr:@mikaelporttila/rss/1.1.1/mod.ts";
 import * as cheerio from "https://esm.sh/cheerio@1.0.0";
 
 const resp = await fetch(
