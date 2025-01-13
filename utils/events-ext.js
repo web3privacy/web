@@ -1,5 +1,5 @@
-import { parseFeed } from "https://deno.land/x/rss/mod.ts";
-import * as cheerio from "https://esm.sh/cheerio@1.0.0-rc.12";
+import { parseFeed } from "jsr:@mikaelporttila/rss/mod@1.1.1";
+import * as cheerio from "https://esm.sh/cheerio@1.0.0";
 
 const resp = await fetch("https://lu.ma/web3privacy");
 const html = await resp.text();
