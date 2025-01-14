@@ -1,5 +1,15 @@
 [
   {
+    "url": "8jv4odjn",
+    "name": "Web3Privacy Now Meetup x ETHRome 2025",
+    "period": [
+      "2025-04-10T13:00:00.000Z",
+      "2025-04-10T19:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/z0/3d6f7a21-4472-4a47-bf7e-fc9d79c36141",
+    "guestCount": 0
+  },
+  {
     "url": "73go30ij",
     "name": "Web3privacy Now Meetup x ETHDam 2025",
     "period": [
@@ -13,10 +23,20 @@
     "url": "jhp1iapn",
     "name": "Web3Privacy Now Meetup x ETHPrague 2025",
     "period": [
-      "2025-06-06T08:00:00.000Z",
-      "2025-06-06T19:00:00.000Z"
+      "2025-05-26T08:00:00.000Z",
+      "2025-05-26T19:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/6d/472c918f-e35b-4f0e-a4f2-0cacb123a6cb",
+    "guestCount": 0
+  },
+  {
+    "url": "wero3jvo",
+    "name": "Hackathon 2025",
+    "period": [
+      "2025-06-13T12:00:00.000Z",
+      "2025-06-15T15:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/gx/126448b6-85e6-4696-866f-097f883c307c",
     "guestCount": 0
   },
   {
@@ -27,16 +47,6 @@
       "2025-06-15T19:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/co/30d85bcf-970f-4916-a19d-928edf8b4b3e",
-    "guestCount": 0
-  },
-  {
-    "url": "8jv4odjn",
-    "name": "Web3Privacy Now Meetup x ETHRome 2025",
-    "period": [
-      "2025-10-09T13:00:00.000Z",
-      "2025-10-09T19:00:00.000Z"
-    ],
-    "coverUrl": "https://images.lumacdn.com/event-covers/z0/3d6f7a21-4472-4a47-bf7e-fc9d79c36141",
     "guestCount": 0
   },
   {
