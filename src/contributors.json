@@ -149,7 +149,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 341
+      "contributions": 351
     },
     {
       "login": "cryptomar1o",
@@ -193,7 +193,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 191
+      "contributions": 205
     },
     {
       "login": "f1nass",
@@ -680,6 +680,28 @@
       "contributions": 4
     },
     {
+      "login": "jen-sei",
+      "id": 101796507,
+      "node_id": "U_kgDOBhFKmw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101796507?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jen-sei",
+      "html_url": "https://github.com/jen-sei",
+      "followers_url": "https://api.github.com/users/jen-sei/followers",
+      "following_url": "https://api.github.com/users/jen-sei/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jen-sei/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jen-sei/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jen-sei/subscriptions",
+      "organizations_url": "https://api.github.com/users/jen-sei/orgs",
+      "repos_url": "https://api.github.com/users/jen-sei/repos",
+      "events_url": "https://api.github.com/users/jen-sei/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jen-sei/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "contributions": 4
+    },
+    {
       "login": "wslyvh",
       "id": 25974464,
       "node_id": "MDQ6VXNlcjI1OTc0NDY0",
@@ -718,28 +740,6 @@
       "repos_url": "https://api.github.com/users/ligi/repos",
       "events_url": "https://api.github.com/users/ligi/events{/privacy}",
       "received_events_url": "https://api.github.com/users/ligi/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false,
-      "contributions": 3
-    },
-    {
-      "login": "jen-sei",
-      "id": 101796507,
-      "node_id": "U_kgDOBhFKmw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/101796507?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/jen-sei",
-      "html_url": "https://github.com/jen-sei",
-      "followers_url": "https://api.github.com/users/jen-sei/followers",
-      "following_url": "https://api.github.com/users/jen-sei/following{/other_user}",
-      "gists_url": "https://api.github.com/users/jen-sei/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/jen-sei/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/jen-sei/subscriptions",
-      "organizations_url": "https://api.github.com/users/jen-sei/orgs",
-      "repos_url": "https://api.github.com/users/jen-sei/repos",
-      "events_url": "https://api.github.com/users/jen-sei/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/jen-sei/received_events",
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
