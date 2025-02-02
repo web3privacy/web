@@ -124,7 +124,7 @@ function genHeading(str) {
               >
                 <a
                   href={core.links[menuItem.link] || menuItem.url}
-                  class="inline-block hover:underline px-4 py-2"
+                  class="inline-block hover:underline px-2 py-2"
                 >
                   {menuItem.name}
                 </a>
@@ -133,10 +133,11 @@ function genHeading(str) {
           }
         </div>
         <div
-          class="flex grow lg:grow-0 gap-3 lg:gap-6 justify-end pt-1 lg:pt-2.5"
+          class="flex grow lg:grow-0 gap-3 lg:gap-6 justify-end pt-1 lg:pr-3 lg:pt-2.5"
         >
           {
             config.header.rightMenu.map((key) => (
+              
               <a
                 href={core.links[key]}
                 class="block icon xsmall sm:small opacity-50 hover:opacity-100"

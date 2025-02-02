@@ -10,6 +10,7 @@ import EventItem from "../components/EventItem.astro";
 import { isFutureDate } from "../lib/date";
 import EventMasonry from "../components/EventMasonry.astro";
 import * as config from "../config.yaml";
+import SpeakerGrid from "../components/SpeakerGrid.astro";
 
 const events = core.events;
 
@@ -130,10 +131,10 @@ for (const e of upcomingEvents) {
     </div>
 
     <div class="text-left">
-      Our gatherings aim to build solidarity among diverse
-      interest groups, cultures, ecosystems, and backgrounds. We
-      bring together researchers and philosophers with policymakers and lawyers, hackers and inventors with local
-      communities and the general public.
+      Our gatherings aim to build solidarity among diverse interest groups,
+      cultures, ecosystems, and backgrounds. We bring together researchers and
+      philosophers with policymakers and lawyers, hackers and inventors with
+      local communities and the general public.
     </div>
   </div>
 
@@ -183,6 +184,15 @@ for (const e of upcomingEvents) {
       >
     </div>
 
+    <div class="middle-pane-medium mt-16">
+      <h1 class="my-6 glitch-text">Contributors</h1>
+      <SpeakerGrid
+        people={core.people}
+        team={core.teams["core-speakers"]}
+        core={true}
+      />
+    </div>
+
     <div class="mt-16">
       <h1 class="glitch-text">Latest Talks</h1>
     </div>
@@ -198,8 +208,14 @@ for (const e of upcomingEvents) {
               backgroundPosition: "center",
             }}
           >
-            <a href={entry.url} class="w-full h-full" title={entry.title} />
+            <div class="title">
+              <a href={entry.url}>{entry.title}</a>
+              <span class="date">
+                {format(new Date(entry.date), "MMMM do, yyyy")}
+              </span>
+            </div>
           </div>
+          
         ))
       }
     </div>
