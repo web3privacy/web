@@ -1,5 +1,17 @@
 [
   {
+    "url": "https://www.youtube.com/watch?v=xCpqpRIQ_sw",
+    "title": "Securing internet trust & establishing Digital Human Rights: Juan Benet [Protocol Labs]",
+    "img": "https://i1.ytimg.com/vi/xCpqpRIQ_sw/maxresdefault.jpg",
+    "date": "2025-02-03T13:56:19.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=7FKJQut6YPk",
+    "title": "Privacy infrastructure vs end-user applications: Michelle Lai, Nathan Ginnever, Kieran Mesquita...",
+    "img": "https://i4.ytimg.com/vi/7FKJQut6YPk/maxresdefault.jpg",
+    "date": "2025-02-03T13:56:09.000Z"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=u2fXqZWTtEI",
     "title": "A Rehydrated Understanding of #Privacy by Meredith Whittaker",
     "img": "https://i2.ytimg.com/vi/u2fXqZWTtEI/maxresdefault.jpg",
@@ -76,17 +88,5 @@
     "title": "Collective self-determination by Sam Hart [Skip] x Ethereum Cypherpunk Congress",
     "img": "https://i3.ytimg.com/vi/fSJly21DtkM/maxresdefault.jpg",
     "date": "2025-01-11T21:38:40.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=ux5l12IgwH4",
-    "title": "Decentralizing the internet collaboration layer by Andreas [Fileverse] x Ethereum Cyphepunk Congress",
-    "img": "https://i2.ytimg.com/vi/ux5l12IgwH4/maxresdefault.jpg",
-    "date": "2025-01-11T20:47:05.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=bz6b6YeM4NM",
-    "title": "The Privacy paradox in AI by Daniel Luca [Eden Block] x Ethereum Cypherpunk Congress",
-    "img": "https://i3.ytimg.com/vi/bz6b6YeM4NM/maxresdefault.jpg",
-    "date": "2025-01-11T16:16:30.000Z"
   }
 ]
