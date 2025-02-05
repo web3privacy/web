@@ -6,8 +6,12 @@ header:
       url: /
     - name: About
       url: /about
+    - name: Explorer
+      url: https://explorer.web3privacy.info/
     - name: Research
       url: /research
+    - name: Academy
+      url: https://academy.web3privacy.info/
     - name: Events
       url: /events
     #- name: Talks
@@ -29,6 +33,7 @@ header:
     #  url: /manifesto
   rightMenu:
     - twitter
+    - bluesky
     - mirror
     - github
     - matrix
@@ -87,10 +92,10 @@ landing:
       link: twitter
       text: 800+ followers
       ico: twitter
-    #- name: "@web3privacy.info"
-    #  link: bluesky
-    #  text: Bluesky
-    #  ico: bluesky
+    # - name: "@web3privacy.info"
+    #   link: bluesky
+    #   text: Bluesky
+    #   ico: bluesky
     - name: Telegram
       link: telegram
       text: Telegram group
