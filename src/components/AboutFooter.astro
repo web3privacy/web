@@ -6,13 +6,15 @@ import SpeakerGrid from "./SpeakerGrid.astro";
 import SliderTestimonial from "./SliderTestimonial.astro";
 import MembersGrid from "./MembersGrid.astro";
 import { fade } from "astro:transitions";
+import TieredContributors from "./TieredContributors.astro";
 
 // Accept sectionsConfig as a prop
 const {
   sectionsConfig = [
     { name: "community", visible: true, order: 1 },
     { name: "socialLinks", visible: true, order: 2 },
-    { name: "speakers", visible: true, order: 3 },
+    // { name: "speakers", visible: true, order: 3 },
+    { name: "tieredContributors", visible: true, order: 3 },
     { name: "core contributors", visible: true, order: 4 },
     { name: "contributors", visible: true, order: 5 },
     { name: "testimonials", visible: true, order: 6 },
@@ -87,10 +89,12 @@ const sortedSections = sectionsConfig
         </div>
       )}
 
-      {section.name === "speakers" && (
+      {section.name === "tieredContributors" && (
         <div class="middle-pane-medium mt-16">
-          <h1 class="my-6 glitch-text ">Speakers</h1>
-          <SpeakerGrid
+          <h1 class="my-6 glitch-text bg-white py-4 px-3.5 text-black !w-max text-mono">
+            tier 1 contributors from gitcoin to tor
+          </h1>
+          <TieredContributors
             people={core.people}
             team={core.teams["core-speakers"]}
             core={true}
@@ -150,7 +154,11 @@ const sortedSections = sectionsConfig
         <div class="mx-4 mt-16">
           <h1 class="my-6 middle-pane-medium glitch-text">Members</h1>
           <div class="middle-pane-medium">
-            <MembersGrid people={core.people} team={core.members} core={false} />
+            <MembersGrid
+              people={core.people}
+              team={core.members}
+              core={false}
+            />
           </div>
         </div>
       )}
