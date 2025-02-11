@@ -60,6 +60,20 @@
       "andreea",
       "ann-brody",
       "alina"
+    ],
+    "tiered-contributors": [
+      "vitalik-buterin",
+      "scott-moore",
+      "naomi-brockwell",
+      "roger-dingledine",
+      "chelsea-manning",
+      "alex-gluchowski",
+      "sebastian-burgel",
+      "ameen-soleimani",
+      "jarrad-hope",
+      "adrian-brink",
+      "amir-taaki",
+      "david-chaum"
     ]
   },
   "members": [
@@ -969,6 +983,15 @@
       }
     },
     {
+      "id": "roger",
+      "name": "Roger Dingledine",
+      "refs": {
+        "twitter": "naomibrockwell"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/roger.png",
+      "thumbs": {}
+    },
+    {
       "id": "vaclav-pavlin",
       "name": "Václav Pavlín",
       "caption": "Core contributor @ [Status](https://status.app/), [Logos](https://logos.co/about), [Waku](https://waku.org/)",
@@ -1028,6 +1051,15 @@
         "128": "https://data.web3privacy.info/img/people/thumbs/tree-128px.webp",
         "400": "https://data.web3privacy.info/img/people/thumbs/tree-400px.webp"
       }
+    },
+    {
+      "id": "naomi-brockwell",
+      "name": "Naomi Brockwell",
+      "refs": {
+        "twitter": "naomibrockwell"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/naomi-brockwell.jpg",
+      "thumbs": {}
     },
     {
       "id": "adrian-brink",
@@ -1226,6 +1258,15 @@
         "128": "https://data.web3privacy.info/img/people/thumbs/andreas-miroyato-128px.webp",
         "400": "https://data.web3privacy.info/img/people/thumbs/andreas-miroyato-400px.webp"
       }
+    },
+    {
+      "id": "amir-taaki",
+      "name": "Naomi Brockwell",
+      "refs": {
+        "twitter": "Narodism"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/amir-taaki.png",
+      "thumbs": {}
     },
     {
       "id": "oliver-gale",
