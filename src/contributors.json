@@ -39,7 +39,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 3159
+      "contributions": 3160
     },
     {
       "login": "burningtree",
@@ -105,7 +105,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 601
+      "contributions": 602
     },
     {
       "login": "ethanolo-eth",
@@ -149,7 +149,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 366
+      "contributions": 372
     },
     {
       "login": "cryptomar1o",
@@ -193,7 +193,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 250
+      "contributions": 251
     },
     {
       "login": "f1nass",
@@ -259,7 +259,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 89
+      "contributions": 90
     },
     {
       "login": "danielklein-arch",
@@ -325,7 +325,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 56
+      "contributions": 57
     },
     {
       "login": "MufCZ",
@@ -614,6 +614,28 @@
       "contributions": 6
     },
     {
+      "login": "shan8851",
+      "id": 39712238,
+      "node_id": "MDQ6VXNlcjM5NzEyMjM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39712238?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/shan8851",
+      "html_url": "https://github.com/shan8851",
+      "followers_url": "https://api.github.com/users/shan8851/followers",
+      "following_url": "https://api.github.com/users/shan8851/following{/other_user}",
+      "gists_url": "https://api.github.com/users/shan8851/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/shan8851/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/shan8851/subscriptions",
+      "organizations_url": "https://api.github.com/users/shan8851/orgs",
+      "repos_url": "https://api.github.com/users/shan8851/repos",
+      "events_url": "https://api.github.com/users/shan8851/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/shan8851/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "contributions": 5
+    },
+    {
       "login": "jen-sei",
       "id": 101796507,
       "node_id": "U_kgDOBhFKmw",
@@ -678,28 +700,6 @@
       "user_view_type": "public",
       "site_admin": false,
       "contributions": 5
-    },
-    {
-      "login": "shan8851",
-      "id": 39712238,
-      "node_id": "MDQ6VXNlcjM5NzEyMjM4",
-      "avatar_url": "https://avatars.githubusercontent.com/u/39712238?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/shan8851",
-      "html_url": "https://github.com/shan8851",
-      "followers_url": "https://api.github.com/users/shan8851/followers",
-      "following_url": "https://api.github.com/users/shan8851/following{/other_user}",
-      "gists_url": "https://api.github.com/users/shan8851/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/shan8851/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/shan8851/subscriptions",
-      "organizations_url": "https://api.github.com/users/shan8851/orgs",
-      "repos_url": "https://api.github.com/users/shan8851/repos",
-      "events_url": "https://api.github.com/users/shan8851/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/shan8851/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false,
-      "contributions": 4
     },
     {
       "login": "PEPE-3000",
