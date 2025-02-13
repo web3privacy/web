@@ -91,12 +91,14 @@ const sortedSections = sectionsConfig
 
       {section.name === "tieredContributors" && (
         <div class="middle-pane-medium mt-16">
-          <h1 class="my-6 glitch-text bg-white py-4 px-3.5 text-black !w-max text-mono">
-            tier 1 contributors from gitcoin to tor
-          </h1>
+          <div class="w-auto lg:w-max">
+            <h1 class="my-6 bg-white py-4 px-3.5 text-black text-mono">
+              tier 1 contributors from gitcoin to tor
+            </h1>
+          </div>
           <TieredContributors
             people={core.people}
-            team={core.teams["core-speakers"]}
+            team={core.teams["tiered-contributors"]}
             core={true}
           />
         </div>
