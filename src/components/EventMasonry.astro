@@ -1,147 +1,168 @@
 ---
 const {
   images = [
-    { webp: "/events/masonry/1.webp", png: "/events/masonry/1.png" },
-    { webp: "/events/masonry/2.webp", png: "/events/masonry/2.png" },
-    { webp: "/events/masonry/3.webp", png: "/events/masonry/3.png" },
-    { webp: "/events/masonry/4.webp", png: "/events/masonry/4.png" },
-    { webp: "/events/masonry/5.webp", png: "/events/masonry/5.png" },
-    { webp: "/events/masonry/6.webp", png: "/events/masonry/6.png" },
-    { webp: "/events/masonry/7.webp", png: "/events/masonry/7.png" },
-    { webp: "/events/masonry/8.webp", png: "/events/masonry/8.png" },
-    { webp: "/events/masonry/9.webp", png: "/events/masonry/9.png" },
+    { jpg: "/events/masonry/1_scaled.jpg" },
+    { jpg: "/events/masonry/2_scaled.jpg" },
+    { jpg: "/events/masonry/3_scaled.jpg" },
+    { jpg: "/events/masonry/4_scaled.jpg" },
+    { jpg: "/events/masonry/5_scaled.jpg" },
+    { jpg: "/events/masonry/6_scaled.jpg" },
+    { jpg: "/events/masonry/7_scaled.jpg" },
+    { jpg: "/events/masonry/8_scaled.jpg" },
+    { jpg: "/events/masonry/9_scaled.jpg" },
+    { jpg: "/events/masonry/10_scaled.jpg" },
+    { jpg: "/events/masonry/11_scaled.jpg" },
+    { jpg: "/events/masonry/12_scaled.jpg" },
+    { jpg: "/events/masonry/13_scaled.jpg" },
+    { jpg: "/events/masonry/14_scaled.jpg" },
+    { jpg: "/events/masonry/15_scaled.jpg" },
   ],
 } = Astro.props;
+
+const INITIAL_CENTER = 1;
 ---
 
-<!-- Display gallery with webp images -->
 <div
-  class="middle-pane-big grid grid-cols-2 lg:flex lg:flex-nowrap gap-2 md:gap-[3px] pb-2 md:pb-0"
+  class="relative hidden md:flex items-center justify-center w-full h-[400px] overflow-hidden"
 >
-  {
-    images.slice(0, 4).map((image, index) => (
-      <div class="flex-auto overflow-hidden">
-        <img
-          class="object-cover w-full max-h-[75px] md:max-h-[200px] cursor-pointer gallery-image"
-          src={image.webp}
-          alt={`Image ${index + 1}`}
-          data-index={index}
-        />
-      </div>
-    ))
-  }
-</div>
-
-<div
-  class="middle-pane-big grid grid-cols-2 lg:flex lg:flex-nowrap gap-2 md:gap-[3px]"
->
-  {
-    images.slice(4).map((image, index) => (
-      <div class="flex-auto overflow-hidden">
-        <img
-          class="object-cover w-full max-h-[75px] md:max-h-[200px] cursor-pointer gallery-image"
-          src={image.webp}
-          alt={`Image ${index + 5}`}
-          data-index={index + 4}
-        />
-      </div>
-    ))
-  }
-</div>
-
-<!-- Modal for fullscreen images -->
-<div
-  class="image-modal hidden fixed inset-0 bg-black flex-col flex items-center justify-center z-50"
->
-  <div class="relative modal-content">
-    <button class="absolute top-6 right-0 text-white close-modal z-100"
-    ></button>
-  </div>
-  <div class="flex flex-col" style="width: 54vw; height: 60vh;">
+  <div id="left-wrapper" class="absolute left-pos hidden lg:block">
     <img
-      class="w-full h-full object-contain modal-image"
-      src=""
-      alt="Selected Image"
-      loading="lazy"
+      id="left-image"
+      class="object-cover w-[580px] h-[350px] rounded-md shadow-lg"
+      src={images[0].jpg}
+      alt="Left"
     />
   </div>
 
-  <div class="flex overflow-x-auto gap-3 mt-4 thumbnails">
-    {
-      images.map((image, index) => (
-        <img
-          class="w-24 h-24 object-contain cursor-pointer thumbnail-image"
-          src={image.webp}
-          alt={`Thumbnail ${index + 1}`}
-          data-index={index}
-        />
-      ))
-    }
+  <div id="center-wrapper" class="absolute center-pos">
+    <img
+      id="center-image"
+      class="object-cover w-full md:w-[600px] md:h-[380px] rounded-md shadow-xl"
+      src={images[1].jpg}
+      alt="Center"
+    />
+  </div>
+
+  <div id="right-wrapper" class="absolute right-pos hidden lg:block">
+    <img
+      id="right-image"
+      class="object-cover w-[550px] h-[320px] rounded-md shadow-lg"
+      src={images[2].jpg}
+      alt="Right"
+    />
+  </div>
+
+  <div class="absolute bottom-0 flex gap-4 z-50">
+    <button
+      id="prev-btn"
+      class="px-4 py-2 border-2 border-white text-white bg-[#171717] bg-opacity-50 rounded hover:bg-white hover:text-black"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="M15.41 7.41L14 6l-6 6l6 6l1.41-1.41L10.83 12z"></path>
+      </svg>
+    </button>
+    <button
+      id="next-btn"
+      class="px-4 py-2 border-2 border-white rotate-180 text-white bg-[#171717] bg-opacity-50 rounded hover:bg-white hover:text-black"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="M15.41 7.41L14 6l-6 6l6 6l1.41-1.41L10.83 12z"></path>
+      </svg>
+    </button>
   </div>
 </div>
 
-<script>
-  let selectedIndex = 0;
-  const images = [
-    { webp: "/events/masonry/1.webp", png: "/events/masonry/1.png" },
-    { webp: "/events/masonry/2.webp", png: "/events/masonry/2.png" },
-    { webp: "/events/masonry/3.webp", png: "/events/masonry/3.png" },
-    { webp: "/events/masonry/4.webp", png: "/events/masonry/4.png" },
-    { webp: "/events/masonry/5.webp", png: "/events/masonry/5.png" },
-    { webp: "/events/masonry/6.webp", png: "/events/masonry/6.png" },
-    { webp: "/events/masonry/7.webp", png: "/events/masonry/7.png" },
-    { webp: "/events/masonry/8.webp", png: "/events/masonry/8.png" },
-    { webp: "/events/masonry/9.webp", png: "/events/masonry/9.png" },
-  ];
+<div
+  class="flex md:hidden overflow-x-auto hidden-scrollbar snap-x snap-mandatory gap-4 p-4"
+>
+  {
+    images.map((img, i) => (
+      <img
+        key={i}
+        src={img.jpg}
+        alt={`Image ${i + 1}`}
+        class="w-[100vw] snap-center object-cover rounded-md"
+      />
+    ))
+  }
+</div>
 
-  function openModal(index) {
-    selectedIndex = index;
-    updateModalImage();
-    document.querySelector(".image-modal").classList.remove("hidden");
+<style>
+  .left-pos {
+    transform: translate(-140%, -50%) scale(0.9);
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    opacity: 0.7;
+  }
+  .center-pos {
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+    left: 50%;
+    z-index: 20;
+    opacity: 1;
+  }
+  .right-pos {
+    transform: translate(40%, -50%) scale(0.9);
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    opacity: 0.7;
+  }
+</style>
+
+<script define:vars={{ images, INITIAL_CENTER }}>
+  const imagesArray = images;
+  let centerIndex = INITIAL_CENTER;
+  const total = imagesArray.length;
+
+  const leftImg = document.getElementById("left-image");
+  const centerImg = document.getElementById("center-image");
+  const rightImg = document.getElementById("right-image");
+
+  function wrapIndex(i) {
+    return (i + total) % total;
   }
 
-  function closeModal() {
-    document.querySelector(".image-modal").classList.add("hidden");
+  function updatePositions() {
+    const leftIdx = wrapIndex(centerIndex - 1);
+    const rightIdx = wrapIndex(centerIndex + 1);
+    leftImg.src = imagesArray[leftIdx].jpg;
+    centerImg.src = imagesArray[centerIndex].jpg;
+    rightImg.src = imagesArray[rightIdx].jpg;
   }
 
-  function updateModalImage() {
-    const imageSrc = images[selectedIndex].png;
-    document.querySelector(".modal-image").src = imageSrc;
+  function showNext() {
+    centerIndex = wrapIndex(centerIndex + 1);
+    updatePositions();
   }
 
-  function showNextImage() {
-    selectedIndex = (selectedIndex + 1) % images.length;
-    updateModalImage();
+  function showPrev() {
+    centerIndex = wrapIndex(centerIndex - 1);
+    updatePositions();
   }
 
-  function showPrevImage() {
-    selectedIndex = (selectedIndex - 1 + images.length) % images.length;
-    updateModalImage();
-  }
+  document.getElementById("next-btn").addEventListener("click", showNext);
+  document.getElementById("prev-btn").addEventListener("click", showPrev);
 
-  document.querySelectorAll(".gallery-image").forEach((image) => {
-    image.addEventListener("click", (event) => {
-      const index = event.target.getAttribute("data-index");
-      openModal(Number(index));
-    });
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") showNext();
+    else if (e.key === "ArrowLeft") showPrev();
   });
 
-  document.querySelector(".close-modal").addEventListener("click", closeModal);
-
-  document.querySelector(".image-modal").addEventListener("click", (event) => {
-    if (event.target === document.querySelector(".image-modal")) closeModal();
-  });
-
-  document.querySelectorAll(".thumbnail-image").forEach((thumbnail) => {
-    thumbnail.addEventListener("click", (event) => {
-      const index = event.target.getAttribute("data-index");
-      openModal(Number(index));
-    });
-  });
-
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "ArrowRight") showNextImage();
-    if (event.key === "ArrowLeft") showPrevImage();
-    if (event.key === "Escape") closeModal();
-  });
+  updatePositions();
 </script>

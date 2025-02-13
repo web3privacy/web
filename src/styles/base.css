@@ -48,6 +48,12 @@
   /* border: 2px solid #555555; */
 }
 
+.hidden-scrollbar::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  /* background-color: #f5f5f5; */
+}
+
 .glitch-text {
   font-family: Major Mono Display, ui-monospace, SFMono-Regular, Menlo, Monaco,
     Consolas, "Liberation Mono", "Courier New", monospace;

@@ -1,0 +1,88 @@
+---
+import { parseAndWrapCaptions } from "../../utils/captionParser";
+
+const { people, team, core, contributors } = Astro.props;
+
+const coreContributorsOrder = [
+  "vitalik-buterin",
+  "scott-moore",
+  "naomi-brockwell",
+  "roger-dingledine",
+  "chelsea-manning",
+  "alex-gluchowski",
+  "sebastian-burgel",
+  "ameen-soleimani",
+  "jarrad-hope",
+  "adrian-brink",
+  "amir-taaki",
+  "david-chaum",
+];
+
+// Filter based on the `core` parameter
+const members = core
+  ? people.filter((p) => team.includes(p.id)).filter((p) => p.imageUrl)
+  : team;
+
+// Filter and sort `filteredPeople` based on `coreContributorsOrder`
+const filteredPeople = members
+  .filter((p) => p.imageUrl)
+  .sort((a, b) => {
+    return (
+      coreContributorsOrder.indexOf(a.id) - coreContributorsOrder.indexOf(b.id)
+    );
+  });
+
+function personLink(person) {
+  if (person.refs?.twitter) {
+    return `https://twitter.com/${person.refs.twitter}`;
+  } else if (person.refs?.bsky) {
+    return `https://bsky.app/profile/${person.refs.bsky}`;
+  } else if (person.refs?.linkedin) {
+    return `https://www.linkedin.com/in/${person.refs.linkedin}`;
+  } else if (person.refs?.github) {
+    return `https://github.com/${person.refs.github}`;
+  } else if (person.refs?.matrix) {
+    return `https://matrix.to/#/${person.refs.matrix}`;
+  } else if (person.refs?.designation) {
+    return `${person.refs.designation}`;
+  } else if (person.refs?.email) {
+    return `mailto:${person.refs.email}`;
+  } else {
+    return "#";
+  }
+}
+
+function formatPersonName(name) {
+  const parts = name.split(" ");
+  if (parts.length === 1) return parts[0];
+  return `${parts[0]}<br>${parts[parts.length - 1]}`;
+}
+---
+
+<div class="grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 place-items-start">
+  {
+    filteredPeople.map((person) => (
+      <div
+        class={`max-w-xs w-full max-h-[340px] bg-transparent overflow-hidden p-1 space-y-1 mb-2`}
+      >
+        <a
+          href={personLink(person)}
+          class={`${core ? "person-item" : ""}`}
+          target="_blank"
+        >
+          <img
+            src={person.imageUrl}
+            alt={person.name}
+            class="min-h-[110px] w-full md:h-48 object-cover object-center transition duration-200 ease-in"
+          />
+        </a>
+        <div class="mt-4">
+          <h3
+            class="text-[10px] pt-2 font-bold leading-3 md:leading-7 md:text-xl"
+            set:html={formatPersonName(person.name)}
+          />
+        </div>
+      </div>
+    ))
+  }
+</div>
