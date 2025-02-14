@@ -193,6 +193,15 @@
         "website": "https://nomos.tech",
         "twitter": "Nomos_tech"
       }
+    },
+    {
+      "id": "protocollabs",
+      "name": "Protocol Labs",
+      "imageUrl": "https://web3privacy.info/membersLogo/ProtocolLabs.png",
+      "refs": {
+        "website": "https://www.protocol.ai/",
+        "twitter": "protocollabs"
+      }
     }
   ],
   "community-partners": [
