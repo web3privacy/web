@@ -1287,7 +1287,11 @@
       "id": "roger-dingledine",
       "name": "Roger Dingledine",
       "imageUrl": "https://data.web3privacy.info/img/people/roger-dingledine.png",
-      "thumbs": {}
+      "thumbs": {
+        "64": "https://data.web3privacy.info/img/people/thumbs/roger-dingledine-64px.webp",
+        "128": "https://data.web3privacy.info/img/people/thumbs/roger-dingledine-128px.webp",
+        "400": "https://data.web3privacy.info/img/people/thumbs/roger-dingledine-400px.webp"
+      }
     },
     {
       "id": "paul-dylan-ennis",
@@ -1858,7 +1862,7 @@
     },
     {
       "id": "amir-taaki",
-      "name": "Naomi Brockwell",
+      "name": "Amir Taaki",
       "refs": {
         "twitter": "Narodism"
       },
