@@ -11,13 +11,14 @@ import { isFutureDate } from "../lib/date";
 import EventMasonry from "../components/EventMasonry.astro";
 import * as config from "../config.yaml";
 import SpeakerGrid from "../components/SpeakerGrid.astro";
+import TieredContributors from "../components/TieredContributors.astro";
 
 const events = core.events;
 
 const sectionsConfig = [
   { name: "socialLinks", visible: false, order: 2 },
   // { name: "speakers", visible: true, order: 2 },
-  { name: "tieredContributors", visible: true, order: 2 },
+  // { name: "tieredContributors", visible: true, order: 2 },
   { name: "contributors", visible: true, order: 3 },
   { name: "testimonials", visible: true, order: 4 },
   { name: "membersGrid", visible: true, order: 5 },
@@ -185,11 +186,21 @@ for (const e of upcomingEvents) {
       >
     </div>
 
-    <div class="middle-pane-medium mt-16">
+    <!--  <div class="middle-pane-medium mt-16">
       <h1 class="my-6 glitch-text">Contributors</h1>
       <SpeakerGrid
         people={core.people}
         team={core.teams["core-speakers"]}
+        core={true}
+      />
+    </div> -->
+
+    <div class="middle-pane-medium mt-16">
+      <h1 class="my-6 glitch-text">Contributors</h1>
+
+      <TieredContributors
+        people={core.people}
+        team={core.teams["tiered-contributors"]}
         core={true}
       />
     </div>
@@ -216,7 +227,6 @@ for (const e of upcomingEvents) {
               </span>
             </div>
           </div>
-          
         ))
       }
     </div>

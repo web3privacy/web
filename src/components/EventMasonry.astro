@@ -87,6 +87,7 @@ const INITIAL_CENTER = 1;
 </div>
 
 <div
+  id="mobile-gallery"
   class="flex md:hidden overflow-x-auto hidden-scrollbar snap-x snap-mandatory gap-4 p-4"
 >
   {
@@ -156,13 +157,75 @@ const INITIAL_CENTER = 1;
     updatePositions();
   }
 
-  document.getElementById("next-btn").addEventListener("click", showNext);
-  document.getElementById("prev-btn").addEventListener("click", showPrev);
+  let autoSlideTimerDesktop;
+  function startAutoSlideDesktop() {
+    autoSlideTimerDesktop = setInterval(() => showNext(), 2000);
+  }
+  function resetAutoSlideDesktop() {
+    clearInterval(autoSlideTimerDesktop);
+    startAutoSlideDesktop();
+  }
 
+  document.getElementById("next-btn").addEventListener("click", () => {
+    showNext();
+    resetAutoSlideDesktop();
+    resetAutoSlideMobile();
+  });
+  document.getElementById("prev-btn").addEventListener("click", () => {
+    showPrev();
+    resetAutoSlideDesktop();
+    resetAutoSlideMobile();
+  });
   window.addEventListener("keydown", (e) => {
-    if (e.key === "ArrowRight") showNext();
-    else if (e.key === "ArrowLeft") showPrev();
+    if (e.key === "ArrowRight") {
+      showNext();
+      resetAutoSlideDesktop();
+      resetAutoSlideMobile();
+    } else if (e.key === "ArrowLeft") {
+      showPrev();
+      resetAutoSlideDesktop();
+      resetAutoSlideMobile();
+    }
   });
 
+  startAutoSlideDesktop();
   updatePositions();
+
+  const mobileGallery = document.getElementById("mobile-gallery");
+  let mobileIndex = 0;
+  let autoSlideTimerMobile;
+  function updateMobileScroll() {
+    if (mobileGallery) {
+      mobileGallery.scrollTo({
+        left: mobileIndex * mobileGallery.clientWidth,
+        behavior: "smooth",
+      });
+    }
+  }
+  function showNextMobile() {
+    mobileIndex = (mobileIndex + 1) % total;
+    updateMobileScroll();
+  }
+  function startAutoSlideMobile() {
+    if (mobileGallery) {
+      autoSlideTimerMobile = setInterval(() => showNextMobile(), 2000);
+    }
+  }
+  function resetAutoSlideMobile() {
+    if (mobileGallery) {
+      clearInterval(autoSlideTimerMobile);
+      startAutoSlideMobile();
+    }
+  }
+  if (mobileGallery) {
+    mobileGallery.addEventListener("touchstart", resetAutoSlideMobile);
+    mobileGallery.addEventListener("mousedown", resetAutoSlideMobile);
+    mobileGallery.addEventListener("scroll", () => {
+      mobileIndex = Math.round(
+        mobileGallery.scrollLeft / mobileGallery.clientWidth
+      );
+      resetAutoSlideMobile();
+    });
+    startAutoSlideMobile();
+  }
 </script>
