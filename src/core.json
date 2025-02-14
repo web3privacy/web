@@ -193,15 +193,6 @@
         "website": "https://nomos.tech",
         "twitter": "Nomos_tech"
       }
-    },
-    {
-      "id": "protocollabs",
-      "name": "Protocol Labs",
-      "imageUrl": "https://web3privacy.info/membersLogo/ProtocolLabs.png",
-      "refs": {
-        "website": "https://www.protocol.ai/",
-        "twitter": "protocollabs"
-      }
     }
   ],
   "community-partners": [
@@ -1978,8 +1969,6 @@
       "confirmed": true,
       "coincidence": "[DevCon](https://devcon.org)",
       "lead": "Mykola",
-      "slots": 16,
-      "visitors": 3000,
       "links": {
         "rsvp": "https://lu.ma/u2sw5kpv",
         "web": "https://congress.web3privacy.info/"
@@ -2026,8 +2015,6 @@
       "confirmed": true,
       "coincidence": "[ETHRome](https://www.ethrome.org)",
       "lead": "Mykola",
-      "slots": 16,
-      "visitors": 300,
       "links": {
         "rsvp": "https://lu.ma/8jv4odjn"
       },
@@ -2073,8 +2060,6 @@
       "confirmed": true,
       "coincidence": "Berlin Blockchain Week",
       "lead": "Mykola",
-      "slots": 16,
-      "visitors": 300,
       "links": {
         "rsvp": "https://lu.ma/gdp7vt8u",
         "web": "https://summit.web3privacy.info/"
@@ -2121,8 +2106,6 @@
       "confirmed": true,
       "coincidence": "[ETHPrague](https://ethprague.com)",
       "lead": "Mykola",
-      "slots": 16,
-      "visitors": 300,
       "links": {
         "rsvp": "https://lu.ma/jhp1iapn"
       },
@@ -2146,8 +2129,6 @@
       "confirmed": true,
       "coincidence": "[ETHDam](https://www.ethdam.com)",
       "lead": "Mykola",
-      "slots": 16,
-      "visitors": 300,
       "links": {
         "rsvp": "https://lu.ma/73go30ij",
         "web": "https://congress.web3privacy.info"
@@ -2172,8 +2153,6 @@
       "confirmed": true,
       "coincidence": "[DevCon](https://devcon.org)",
       "lead": "Mykola",
-      "slots": 16,
-      "visitors": 300,
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-devcon7",
         "web": "https://congress.web3privacy.info"
@@ -2236,7 +2215,6 @@
       "country": "it",
       "coincidence": "ETHRome",
       "lead": "PG",
-      "slots": 5,
       "design": {
         "image": "rome02"
       },
@@ -2287,7 +2265,6 @@
       "city": "Brussels",
       "country": "be",
       "coincidence": "[EthCC](https://www.ethcc.io)",
-      "slots": 3,
       "design": {
         "image": "brussels01"
       },
@@ -2333,13 +2310,11 @@
       "country": "cz",
       "coincidence": "ETHPrague",
       "lead": "PG",
-      "visitors": 180,
       "helpers": [
         "PG",
         "Mykola",
         "Coinmandeer"
       ],
-      "slots": 16,
       "links": {
         "rsvp": "https://lu.ma/w3pn-summit-prague2"
       },
@@ -2406,7 +2381,6 @@
         "Coinmandeer",
         "Robert"
       ],
-      "visitors": 210,
       "links": {
         "web": "https://c24ber.web3privacy.info"
       },
@@ -2448,7 +2422,6 @@
       "place-address": "Rungestraße 20, 10179 Berlin",
       "coincidence": "ETHBerlin",
       "lead": "Mykola",
-      "visitors": 150,
       "helpers": [
         "ligi"
       ],
@@ -2459,7 +2432,6 @@
         "jaya-klara-brekke",
         "mykola-siusko"
       ],
-      "slots": 4,
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-berlin1"
       },
@@ -2500,13 +2472,11 @@
       "place": "[Vrij Paleis](https://www.vrijpaleis.nl)",
       "place-address": "Paleisstraat 107, 1012 ZL Amsterdam",
       "lead": "PG",
-      "visitors": 90,
       "helpers": [
         "Mykola",
         "Alina"
       ],
       "coincidence": "[ETHDam](https://www.ethdam.com)",
-      "slots": 3,
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-ams1"
       },
@@ -2553,9 +2523,7 @@
       "country": "ro",
       "coincidence": "[ETHBucharest](https://www.ethbucharest.xyz)",
       "optional": true,
-      "slots": 3,
       "lead": "Mykola",
-      "visitors": 80,
       "design": {
         "image": "bucharest01"
       },
@@ -2607,8 +2575,6 @@
       "confirmed": true,
       "coincidence": "[DCxPrague](https://dcxprague.org)",
       "lead": "Tree",
-      "slots": 3,
-      "visitors": 15,
       "links": {
         "web": "https://lu.ma/w3pm-prg1"
       },
@@ -2631,8 +2597,6 @@
       "confirmed": true,
       "coincidence": "[ETHRome](https://ethrome.org)",
       "lead": "PG",
-      "slots": 10,
-      "visitors": 139,
       "links": {
         "web": "https://lu.ma/web3privacynow_rome"
       },
@@ -2651,7 +2615,6 @@
         "carlo-chialastri",
         "limone-eth",
         "costanza-gallo",
-        "pg",
         "catsnaks"
       ],
       "images": {},
@@ -2668,8 +2631,6 @@
       "confirmed": true,
       "coincidence": "[ETHPrague](https://ethprague.com)",
       "lead": "Tree",
-      "slots": 16,
-      "visitors": 180,
       "links": {
         "web": "https://prague.web3privacy.info/",
         "git": "https://github.com/web3privacy/w3ps1"
@@ -2693,10 +2654,7 @@
         "merula",
         "serinko",
         "steffen-kux",
-        "althea",
-        "mykola-siusko",
-        "pg",
-        "tree"
+        "althea"
       ],
       "images": {
         "poster": "https://data.web3privacy.info/img/events/2023/s23prg-poster.png"
