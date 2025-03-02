@@ -7,7 +7,7 @@
       "2025-04-01T17:30:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/6i/a6786101-2521-4c0c-88b2-ce8032399015.jpg",
-    "guestCount": 3
+    "guestCount": 0
   },
   {
     "url": "73go30ij",
@@ -47,6 +47,16 @@
       "2025-06-16T04:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/eo/071c01ea-3bd1-4e01-a486-67500e8d73ab.png",
+    "guestCount": 0
+  },
+  {
+    "url": "sq2vtmdg",
+    "name": "Dappcon Intervention",
+    "period": [
+      "2025-06-16T08:00:00.000Z",
+      "2025-06-18T16:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/pv/797b70c8-33f1-4a26-97e6-bc552ea89cba.png",
     "guestCount": 0
   },
   {
