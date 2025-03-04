@@ -2113,11 +2113,11 @@
         "coinmandeer"
       ],
       "images": {
-        "poster -wide": "https://data.web3privacy.info/img/events/2025/m25buc-poster -wide.jpg",
-        "poster -simple": "https://data.web3privacy.info/img/events/2025/m25buc-poster -simple.jpg",
-        "poster -wide-square": "https://data.web3privacy.info/img/events/2025/m25buc-poster -wide-square.jpg",
-        "poster -square": "https://data.web3privacy.info/img/events/2025/m25buc-poster -square.jpg",
-        "poster": "https://data.web3privacy.info/img/events/2025/m25buc-poster.jpg"
+        "square": "https://data.web3privacy.info/img/events/2025/m25buc-square.png",
+        "poster": "https://data.web3privacy.info/img/events/2025/m25buc-poster.png",
+        "wide-square": "https://data.web3privacy.info/img/events/2025/m25buc-wide-square.png",
+        "poster-simple": "https://data.web3privacy.info/img/events/2025/m25buc-poster-simple.png",
+        "wide": "https://data.web3privacy.info/img/events/2025/m25buc-wide.png"
       },
       "thumbs": {}
     },
