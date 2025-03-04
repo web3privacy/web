@@ -1982,7 +1982,6 @@
       "images": {
         "poster-simple": "https://data.web3privacy.info/img/events/2025/c25bue-poster-simple.png",
         "wide-square": "https://data.web3privacy.info/img/events/2025/c25bue-wide-square.png",
-        "square-wide": "https://data.web3privacy.info/img/events/2025/c25bue-square-wide.png",
         "poster": "https://data.web3privacy.info/img/events/2025/c25bue-poster.png",
         "square": "https://data.web3privacy.info/img/events/2025/c25bue-square.png"
       },
@@ -2094,6 +2093,32 @@
         "mf"
       ],
       "images": {},
+      "thumbs": {}
+    },
+    {
+      "id": "m25buc",
+      "type": "meetup",
+      "date": "2025-04-01",
+      "city": "Bucharest",
+      "country": "ro",
+      "place": "[Please register to see exact location](https://lu.ma/web3privacy)",
+      "place-address": "Please register to see exact location",
+      "confirmed": true,
+      "lead": "Andrea",
+      "links": {
+        "rsvp": "https://lu.ma/9ni8jbzx"
+      },
+      "speakers": [
+        "pg",
+        "coinmandeer"
+      ],
+      "images": {
+        "poster -wide": "https://data.web3privacy.info/img/events/2025/m25buc-poster -wide.jpg",
+        "poster -simple": "https://data.web3privacy.info/img/events/2025/m25buc-poster -simple.jpg",
+        "poster -wide-square": "https://data.web3privacy.info/img/events/2025/m25buc-poster -wide-square.jpg",
+        "poster -square": "https://data.web3privacy.info/img/events/2025/m25buc-poster -square.jpg",
+        "poster": "https://data.web3privacy.info/img/events/2025/m25buc-poster.jpg"
+      },
       "thumbs": {}
     },
     {
