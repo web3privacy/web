@@ -21,10 +21,10 @@
     "sync-all": "npm run core && npm run contribs && npm run articles && npm run talks && npm run explorer && npm run events-ext && npm run db-repo"
   },
   "dependencies": {
-    "@astrojs/svelte": "^5.2.0",
-    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/svelte": "^7.0.5",
+    "@astrojs/tailwind": "^5.1.5",
     "@rollup/plugin-yaml": "^4.1.2",
-    "astro": "^4.16.18",
+    "astro": "^5.4.0",
     "cfonts": "^3.2.0",
     "date-fns": "^2.30.0",
     "gsap": "^3.12.7",
