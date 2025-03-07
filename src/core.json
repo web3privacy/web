@@ -1491,6 +1491,17 @@
       }
     },
     {
+      "id": "peter-farbey",
+      "name": "Peter Farbey",
+      "caption": "Cat whisperer",
+      "job": "Growth Hacker",
+      "refs": {
+        "twitter": "0xfarbey"
+      },
+      "imageUrl": "https://data.web3privacy.info/img/people/peter-farbey.png",
+      "thumbs": {}
+    },
+    {
       "id": "ahmed-ghappour",
       "name": "Ahmed Ghappour",
       "caption": "General Counsel of [Espresso Systems](https://www.espressosys.com/)",
@@ -1961,22 +1972,21 @@
     {
       "id": "c25bue",
       "type": "congress",
-      "date": "2025-11-01",
+      "date": "2025-11-16",
       "city": "Buenos Aires",
       "country": "ar",
       "place": "[TBA](https://congress.web3privacy.info)",
       "place-address": "TBA",
       "confirmed": true,
-      "coincidence": "[DevCon](https://devcon.org)",
-      "lead": "Mykola",
+      "coincidence": "[Devconnect](https://devconnect.org)",
+      "lead": "robert",
       "links": {
         "rsvp": "https://lu.ma/u2sw5kpv",
         "web": "https://congress.web3privacy.info/"
       },
       "speakers": [
         "mykola-siusko",
-        "pg",
-        "coinmandeer",
+        "robert",
         "mf"
       ],
       "images": {
@@ -2013,7 +2023,7 @@
       "place-address": "TBA",
       "confirmed": true,
       "coincidence": "[ETHRome](https://www.ethrome.org)",
-      "lead": "Mykola",
+      "lead": "pg",
       "links": {
         "rsvp": "https://lu.ma/8jv4odjn"
       },
@@ -2049,24 +2059,100 @@
       }
     },
     {
+      "id": "s25ber",
+      "type": "summit",
+      "date": "2025-11-16",
+      "city": "Berlin",
+      "country": "de",
+      "place": "[TBA](http://dappcon.io)",
+      "place-address": "TBA",
+      "confirmed": true,
+      "coincidence": "[Berlin Blockchain Week](https://blockchainweek.berlin)",
+      "lead": "mykola",
+      "links": {
+        "rsvp": "https://lu.ma/sq2vtmdg",
+        "web": "http://dappcon.io"
+      },
+      "speakers": [
+        "pg",
+        "robert",
+        "cat"
+      ],
+      "images": {
+        "poster": "https://data.web3privacy.info/img/events/2025/s25ber-poster.png",
+        "poster-simple": "https://data.web3privacy.info/img/events/2025/s25ber-poster-simple.png",
+        "wide-square": "https://data.web3privacy.info/img/events/2025/s25ber-wide-square.png",
+        "square": "https://data.web3privacy.info/img/events/2025/s25ber-square.png",
+        "wide": "https://data.web3privacy.info/img/events/2025/s25ber-wide.png"
+      },
+      "thumbs": {
+        "wide-sequare:360": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-wide-sequare-360px.webp",
+        "wide:640": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-wide-640px.webp",
+        "wide:360": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-wide-360px.webp",
+        "square:360": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-square-360px.webp",
+        "wide-square:640": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-wide-square-640px.webp",
+        "wide-square:128": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-wide-square-128px.webp",
+        "wide-square:360": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-wide-square-360px.webp",
+        "poster-simple:128": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-poster-simple-128px.webp",
+        "poster:640": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-poster-640px.webp",
+        "poster:128": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-poster-128px.webp",
+        "wide-sequare:128": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-wide-sequare-128px.webp",
+        "poster:360": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-poster-360px.webp",
+        "poster-simple:640": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-poster-simple-640px.webp",
+        "square:640": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-square-640px.webp",
+        "wide-sequare:640": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-wide-sequare-640px.webp",
+        "poster-simple:360": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-poster-simple-360px.webp",
+        "square:128": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-square-128px.webp",
+        "wide:128": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-wide-128px.webp"
+      }
+    },
+    {
+      "id": "h25ber",
+      "type": "hackathon",
+      "date": "2025-11-13",
+      "city": "Berlin",
+      "country": "de",
+      "place": "[TBA](https://hackathon.web3privacy.info)",
+      "place-address": "TBA",
+      "confirmed": true,
+      "coincidence": "[Berlin Blockchain Week](https://blockchainweek.berlin)",
+      "lead": "mf",
+      "links": {
+        "rsvp": "https://hackathon.web3privacy.info",
+        "web": "https://hackathon.web3privacy.info"
+      },
+      "speakers": [
+        "mf",
+        "robert",
+        "cat"
+      ],
+      "images": {
+        "wide": "https://data.web3privacy.info/img/events/2025/h25ber-wide.png",
+        "poster-simple": "https://data.web3privacy.info/img/events/2025/h25ber-poster-simple.png",
+        "poster": "https://data.web3privacy.info/img/events/2025/h25ber-poster.png",
+        "wide-square": "https://data.web3privacy.info/img/events/2025/h25ber-wide-square.png",
+        "square": "https://data.web3privacy.info/img/events/2025/h25ber-square.png"
+      },
+      "thumbs": {}
+    },
+    {
       "id": "m25prg",
       "type": "meetup",
-      "date": "2025-06-06",
+      "date": "2025-05-29",
       "city": "Prague",
       "country": "cz",
-      "place": "[TBA](https://congress.web3privacy.info)",
+      "place": "TBA",
       "place-address": "TBA",
       "confirmed": true,
       "coincidence": "[ETHPrague](https://ethprague.com)",
-      "lead": "Mykola",
+      "lead": "alina",
       "links": {
         "rsvp": "https://lu.ma/jhp1iapn"
       },
       "speakers": [
-        "mykola-siusko",
         "pg",
         "coinmandeer",
-        "mf"
+        "alina"
       ],
       "images": {},
       "thumbs": {}
@@ -2081,7 +2167,7 @@
       "place-address": "TBA",
       "confirmed": true,
       "coincidence": "[ETHDam](https://www.ethdam.com)",
-      "lead": "Mykola",
+      "lead": "pg",
       "links": {
         "rsvp": "https://lu.ma/73go30ij",
         "web": "https://congress.web3privacy.info"
@@ -2089,7 +2175,6 @@
       "speakers": [
         "mykola-siusko",
         "pg",
-        "coinmandeer",
         "mf"
       ],
       "images": {},
@@ -2104,13 +2189,13 @@
       "place": "[Please register to see exact location](https://lu.ma/web3privacy)",
       "place-address": "Please register to see exact location",
       "confirmed": true,
-      "lead": "Andrea",
+      "lead": "andrea",
       "links": {
         "rsvp": "https://lu.ma/9ni8jbzx"
       },
       "speakers": [
         "pg",
-        "coinmandeer"
+        "mf"
       ],
       "images": {
         "square": "https://data.web3privacy.info/img/events/2025/m25buc-square.png",
@@ -2119,7 +2204,23 @@
         "poster-simple": "https://data.web3privacy.info/img/events/2025/m25buc-poster-simple.png",
         "wide": "https://data.web3privacy.info/img/events/2025/m25buc-wide.png"
       },
-      "thumbs": {}
+      "thumbs": {
+        "wide-square:640": "https://data.web3privacy.info/img/events/2025/thumbs/m25buc-wide-square-640px.webp",
+        "wide-square:128": "https://data.web3privacy.info/img/events/2025/thumbs/m25buc-wide-square-128px.webp",
+        "square:128": "https://data.web3privacy.info/img/events/2025/thumbs/m25buc-square-128px.webp",
+        "wide-square:360": "https://data.web3privacy.info/img/events/2025/thumbs/m25buc-wide-square-360px.webp",
+        "poster:640": "https://data.web3privacy.info/img/events/2025/thumbs/m25buc-poster-640px.webp",
+        "poster:360": "https://data.web3privacy.info/img/events/2025/thumbs/m25buc-poster-360px.webp",
+        "wide:128": "https://data.web3privacy.info/img/events/2025/thumbs/m25buc-wide-128px.webp",
+        "wide:360": "https://data.web3privacy.info/img/events/2025/thumbs/m25buc-wide-360px.webp",
+        "poster:128": "https://data.web3privacy.info/img/events/2025/thumbs/m25buc-poster-128px.webp",
+        "wide:640": "https://data.web3privacy.info/img/events/2025/thumbs/m25buc-wide-640px.webp",
+        "square:640": "https://data.web3privacy.info/img/events/2025/thumbs/m25buc-square-640px.webp",
+        "poster-simple:360": "https://data.web3privacy.info/img/events/2025/thumbs/m25buc-poster-simple-360px.webp",
+        "poster-simple:128": "https://data.web3privacy.info/img/events/2025/thumbs/m25buc-poster-simple-128px.webp",
+        "poster-simple:640": "https://data.web3privacy.info/img/events/2025/thumbs/m25buc-poster-simple-640px.webp",
+        "square:360": "https://data.web3privacy.info/img/events/2025/thumbs/m25buc-square-360px.webp"
+      }
     },
     {
       "id": "c24bkk",
