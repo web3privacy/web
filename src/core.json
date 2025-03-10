@@ -2075,17 +2075,17 @@
     {
       "id": "s25ber",
       "type": "summit",
-      "date": "2025-11-16",
+      "date": "2025-06-16",
       "city": "Berlin",
       "country": "de",
-      "place": "[TBA](http://dappcon.io)",
+      "place": "[TBA](https://dappcon.io)",
       "place-address": "TBA",
       "confirmed": true,
-      "coincidence": "[Berlin Blockchain Week](https://blockchainweek.berlin)",
+      "coincidence": "[Dappcon](https://dappcon.io)",
       "lead": "Mykola",
       "links": {
         "rsvp": "https://lu.ma/sq2vtmdg",
-        "web": "http://dappcon.io"
+        "web": "https://dappcon.io"
       },
       "speakers": [
         "pg",
@@ -2120,7 +2120,7 @@
     {
       "id": "h25ber",
       "type": "hackathon",
-      "date": "2025-11-13",
+      "date": "2025-06-13",
       "city": "Berlin",
       "country": "de",
       "place": "[TBA](https://hackathon.web3privacy.info)",
