@@ -2073,8 +2073,8 @@
       }
     },
     {
-      "id": "s25ber",
-      "type": "summit",
+      "id": "co25ber",
+      "type": "collab",
       "date": "2025-06-16",
       "city": "Berlin",
       "country": "de",
@@ -2092,30 +2092,35 @@
         "robert",
         "cat"
       ],
-      "images": {
-        "poster": "https://data.web3privacy.info/img/events/2025/s25ber-poster.png",
-        "poster-simple": "https://data.web3privacy.info/img/events/2025/s25ber-poster-simple.png",
-        "wide-square": "https://data.web3privacy.info/img/events/2025/s25ber-wide-square.png",
-        "square": "https://data.web3privacy.info/img/events/2025/s25ber-square.png",
-        "wide": "https://data.web3privacy.info/img/events/2025/s25ber-wide.png"
+      "images": {},
+      "thumbs": {}
+    },
+    {
+      "id": "r25ber",
+      "type": "rave",
+      "date": "2025-06-15",
+      "city": "Berlin",
+      "country": "de",
+      "place": "TBA",
+      "place-address": "TBA",
+      "confirmed": true,
+      "coincidence": "[W3PN Hackathon](https://hackathon.web3privacy.info)",
+      "lead": "mf",
+      "links": {
+        "rsvp": "https://lu.ma/h3ithkl3"
       },
-      "thumbs": {
-        "wide:640": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-wide-640px.webp",
-        "wide:360": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-wide-360px.webp",
-        "square:360": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-square-360px.webp",
-        "wide-square:640": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-wide-square-640px.webp",
-        "wide-square:128": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-wide-square-128px.webp",
-        "wide-square:360": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-wide-square-360px.webp",
-        "poster-simple:128": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-poster-simple-128px.webp",
-        "poster:640": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-poster-640px.webp",
-        "poster:128": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-poster-128px.webp",
-        "poster:360": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-poster-360px.webp",
-        "poster-simple:640": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-poster-simple-640px.webp",
-        "square:640": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-square-640px.webp",
-        "poster-simple:360": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-poster-simple-360px.webp",
-        "square:128": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-square-128px.webp",
-        "wide:128": "https://data.web3privacy.info/img/events/2025/thumbs/s25ber-wide-128px.webp"
-      }
+      "speakers": [
+        "mf",
+        "cat"
+      ],
+      "images": {
+        "wide-square": "https://data.web3privacy.info/img/events/2025/r25ber-wide-square.png",
+        "poster": "https://data.web3privacy.info/img/events/2025/r25ber-poster.png",
+        "square": "https://data.web3privacy.info/img/events/2025/r25ber-square.png",
+        "poster-simple": "https://data.web3privacy.info/img/events/2025/r25ber-poster-simple.png",
+        "wide": "https://data.web3privacy.info/img/events/2025/r25ber-wide.png"
+      },
+      "thumbs": {}
     },
     {
       "id": "h25ber",
@@ -2477,7 +2482,7 @@
     },
     {
       "id": "pc24ber",
-      "type": "privacy-corner",
+      "type": "privacycorner",
       "date": "2024-05-24",
       "days": 3,
       "city": "Berlin",
