@@ -1992,7 +1992,7 @@
       "place": "[TBA](https://congress.web3privacy.info)",
       "place-address": "TBA",
       "confirmed": true,
-      "coincidence": "[Devconnect](https://devconnect.org)",
+      "coincidence": "Devconnect",
       "lead": "robert",
       "links": {
         "rsvp": "https://lu.ma/u2sw5kpv",
@@ -2036,7 +2036,7 @@
       "place": "[TBA](https://web3privacy.info)",
       "place-address": "TBA",
       "confirmed": true,
-      "coincidence": "[ETHRome](https://www.ethrome.org)",
+      "coincidence": "ETHRome",
       "lead": "pg",
       "links": {
         "rsvp": "https://lu.ma/8jv4odjn"
@@ -2081,7 +2081,7 @@
       "place": "[TBA](https://dappcon.io)",
       "place-address": "TBA",
       "confirmed": true,
-      "coincidence": "[Dappcon](https://dappcon.io)",
+      "coincidence": "Dappcon",
       "lead": "Mykola",
       "links": {
         "rsvp": "https://lu.ma/sq2vtmdg",
@@ -2104,7 +2104,7 @@
       "place": "TBA",
       "place-address": "TBA",
       "confirmed": true,
-      "coincidence": "[W3PN Hackathon](https://hackathon.web3privacy.info)",
+      "coincidence": "W3PN Hackathon",
       "lead": "mf",
       "links": {
         "rsvp": "https://lu.ma/h3ithkl3"
@@ -2120,7 +2120,23 @@
         "poster-simple": "https://data.web3privacy.info/img/events/2025/r25ber-poster-simple.png",
         "wide": "https://data.web3privacy.info/img/events/2025/r25ber-wide.png"
       },
-      "thumbs": {}
+      "thumbs": {
+        "square:128": "https://data.web3privacy.info/img/events/2025/thumbs/r25ber-square-128px.webp",
+        "square:360": "https://data.web3privacy.info/img/events/2025/thumbs/r25ber-square-360px.webp",
+        "poster-simple:128": "https://data.web3privacy.info/img/events/2025/thumbs/r25ber-poster-simple-128px.webp",
+        "poster:360": "https://data.web3privacy.info/img/events/2025/thumbs/r25ber-poster-360px.webp",
+        "poster-simple:360": "https://data.web3privacy.info/img/events/2025/thumbs/r25ber-poster-simple-360px.webp",
+        "square:640": "https://data.web3privacy.info/img/events/2025/thumbs/r25ber-square-640px.webp",
+        "poster:128": "https://data.web3privacy.info/img/events/2025/thumbs/r25ber-poster-128px.webp",
+        "wide:360": "https://data.web3privacy.info/img/events/2025/thumbs/r25ber-wide-360px.webp",
+        "poster-simple:640": "https://data.web3privacy.info/img/events/2025/thumbs/r25ber-poster-simple-640px.webp",
+        "wide-square:360": "https://data.web3privacy.info/img/events/2025/thumbs/r25ber-wide-square-360px.webp",
+        "wide-square:128": "https://data.web3privacy.info/img/events/2025/thumbs/r25ber-wide-square-128px.webp",
+        "wide:640": "https://data.web3privacy.info/img/events/2025/thumbs/r25ber-wide-640px.webp",
+        "poster:640": "https://data.web3privacy.info/img/events/2025/thumbs/r25ber-poster-640px.webp",
+        "wide-square:640": "https://data.web3privacy.info/img/events/2025/thumbs/r25ber-wide-square-640px.webp",
+        "wide:128": "https://data.web3privacy.info/img/events/2025/thumbs/r25ber-wide-128px.webp"
+      }
     },
     {
       "id": "h25ber",
@@ -2131,7 +2147,7 @@
       "place": "[TBA](https://hackathon.web3privacy.info)",
       "place-address": "TBA",
       "confirmed": true,
-      "coincidence": "[BerlinBlockchainWeek](https://blockchainweek.berlin)",
+      "coincidence": "Berlin Blockchain Week",
       "lead": "mf",
       "links": {
         "rsvp": "https://hackathon.web3privacy.info",
@@ -2176,7 +2192,7 @@
       "place": "TBA",
       "place-address": "TBA",
       "confirmed": true,
-      "coincidence": "[ETHPrague](https://ethprague.com)",
+      "coincidence": "ETHPrague",
       "lead": "alina",
       "links": {
         "rsvp": "https://lu.ma/jhp1iapn"
@@ -2198,7 +2214,7 @@
       "place": "[TBA](https://congress.web3privacy.info)",
       "place-address": "TBA",
       "confirmed": true,
-      "coincidence": "[ETHDam](https://www.ethdam.com)",
+      "coincidence": "ETHDam",
       "lead": "pg",
       "links": {
         "rsvp": "https://lu.ma/73go30ij",
@@ -2264,7 +2280,7 @@
       "place": "[Lido Connect](https://lidoconnect.com)",
       "place-address": "256, RAMA I Road, Pathum Wan Bangkok",
       "confirmed": true,
-      "coincidence": "[DevCon](https://devcon.org)",
+      "coincidence": "DevCon",
       "lead": "Mykola",
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-devcon7",
@@ -2377,7 +2393,7 @@
       "date": "2024-07-12",
       "city": "Brussels",
       "country": "be",
-      "coincidence": "[EthCC](https://www.ethcc.io)",
+      "coincidence": "EthCC",
       "design": {
         "image": "brussels01"
       },
@@ -2634,7 +2650,7 @@
       "date": "2024-03-28",
       "city": "Bucharest",
       "country": "ro",
-      "coincidence": "[ETHBucharest](https://www.ethbucharest.xyz)",
+      "coincidence": "ETHBucharest",
       "optional": true,
       "lead": "Mykola",
       "design": {
@@ -2686,7 +2702,7 @@
       "place": "[Dílna](https://kafevdilne.cz)",
       "place-address": "Smíchovská náplavka - Kobka č. 10, Hořejší nábřeží, Praha 5",
       "confirmed": true,
-      "coincidence": "[DCxPrague](https://dcxprague.org)",
+      "coincidence": "DCxPrague",
       "lead": "Tree",
       "links": {
         "web": "https://lu.ma/w3pm-prg1"
@@ -2708,7 +2724,7 @@
       "place": "[Villaggio Globale](https://maps.app.goo.gl/S7kUruNvbpjgHuSh9)",
       "place-address": "Largo Dino Frisullo, 00153 Roma RM",
       "confirmed": true,
-      "coincidence": "[ETHRome](https://ethrome.org)",
+      "coincidence": "ETHRome",
       "lead": "PG",
       "links": {
         "web": "https://lu.ma/web3privacynow_rome"
@@ -2742,7 +2758,7 @@
       "place": "[X10](https://www.divadlox10.cz)",
       "place-address": "Charvátova 39/10, 11000 Prague 1",
       "confirmed": true,
-      "coincidence": "[ETHPrague](https://ethprague.com)",
+      "coincidence": "ETHPrague",
       "lead": "Tree",
       "links": {
         "web": "https://prague.web3privacy.info/",
