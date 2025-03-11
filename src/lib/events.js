@@ -7,7 +7,7 @@ export const types = [
     { id: "hackathon", name: 'Hackathon', plural: 'Hackathons' },
     { id: "meetup", name: 'Meetup', plural: 'Meetups' },
     { id: "online", name: 'Online', plural: 'Online' },
-    { id: "privacy-corner", name: 'Privacy Corner', plural: 'Privacy Corners' },
+    { id: "privacycorner", name: 'Privacy Corner', plural: 'Privacy Corners' },
     { id: "rave", name: 'Rave', plural: 'Raves' },
     { id: "summit", name: 'Summit', plural: 'Summits' },
 ]
