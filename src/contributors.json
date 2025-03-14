@@ -83,7 +83,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 616
+      "contributions": 617
     },
     {
       "login": "niclaz",
@@ -171,7 +171,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 363
+      "contributions": 365
     },
     {
       "login": "cryptomar1o",
@@ -1032,22 +1032,22 @@
       "contributions": 2
     },
     {
-      "login": "Jaguaras",
-      "id": 73285987,
-      "node_id": "MDQ6VXNlcjczMjg1OTg3",
-      "avatar_url": "https://avatars.githubusercontent.com/u/73285987?v=4",
+      "login": "Danyylka",
+      "id": 37103154,
+      "node_id": "MDQ6VXNlcjM3MTAzMTU0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37103154?v=4",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/Jaguaras",
-      "html_url": "https://github.com/Jaguaras",
-      "followers_url": "https://api.github.com/users/Jaguaras/followers",
-      "following_url": "https://api.github.com/users/Jaguaras/following{/other_user}",
-      "gists_url": "https://api.github.com/users/Jaguaras/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/Jaguaras/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/Jaguaras/subscriptions",
-      "organizations_url": "https://api.github.com/users/Jaguaras/orgs",
-      "repos_url": "https://api.github.com/users/Jaguaras/repos",
-      "events_url": "https://api.github.com/users/Jaguaras/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/Jaguaras/received_events",
+      "url": "https://api.github.com/users/Danyylka",
+      "html_url": "https://github.com/Danyylka",
+      "followers_url": "https://api.github.com/users/Danyylka/followers",
+      "following_url": "https://api.github.com/users/Danyylka/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Danyylka/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Danyylka/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Danyylka/subscriptions",
+      "organizations_url": "https://api.github.com/users/Danyylka/orgs",
+      "repos_url": "https://api.github.com/users/Danyylka/repos",
+      "events_url": "https://api.github.com/users/Danyylka/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Danyylka/received_events",
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
