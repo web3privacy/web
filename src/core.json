@@ -128,7 +128,7 @@
       "name": "Labyrinth",
       "imageUrl": "https://web3privacy.info/membersLogo/labyrinth.png",
       "refs": {
-        "website": "https://www.labyrinth.technology",
+        "website": "https://www.labyrinth.ac",
         "twitter": "Labyrinth_HQ"
       }
     },
@@ -2211,17 +2211,16 @@
       "date": "2025-05-08",
       "city": "Amsterdam",
       "country": "nl",
-      "place": "[TBA](https://congress.web3privacy.info)",
+      "place": "TBA",
       "place-address": "TBA",
       "confirmed": true,
       "coincidence": "ETHDam",
       "lead": "pg",
       "links": {
-        "rsvp": "https://lu.ma/73go30ij",
-        "web": "https://congress.web3privacy.info"
+        "rsvp": "https://lu.ma/73go30ij"
       },
       "speakers": [
-        "mykola-siusko",
+        "robert",
         "pg",
         "mf"
       ],
@@ -2284,7 +2283,7 @@
       "lead": "Mykola",
       "links": {
         "rsvp": "https://lu.ma/w3pn-meetup-devcon7",
-        "web": "https://congress.web3privacy.info"
+        "web": "https://c24bkk.web3privacy.info"
       },
       "speakers": [
         "ameen-soleimani",
@@ -2445,7 +2444,8 @@
         "Coinmandeer"
       ],
       "links": {
-        "rsvp": "https://lu.ma/w3pn-summit-prague2"
+        "rsvp": "https://lu.ma/w3pn-summit-prague2",
+        "web": "https://s24prg.web3privacy.info"
       },
       "speakers": [
         "pavol-luptak",
@@ -2761,8 +2761,7 @@
       "coincidence": "ETHPrague",
       "lead": "Tree",
       "links": {
-        "web": "https://prague.web3privacy.info/",
-        "git": "https://github.com/web3privacy/w3ps1"
+        "web": "https://prague22.web3privacy.info/"
       },
       "speakers": [
         "ameen-soleimani",

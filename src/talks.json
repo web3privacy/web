@@ -1,5 +1,11 @@
 [
   {
+    "url": "https://www.youtube.com/watch?v=KsucCpe6t4s",
+    "title": "This is Web3Privacy Now // ep01",
+    "img": "https://i4.ytimg.com/vi/KsucCpe6t4s/maxresdefault.jpg",
+    "date": "2025-03-14T13:14:14.000Z"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=xCpqpRIQ_sw",
     "title": "Securing internet trust & establishing Digital Human Rights: Juan Benet [Protocol Labs]",
     "img": "https://i1.ytimg.com/vi/xCpqpRIQ_sw/maxresdefault.jpg",
@@ -82,11 +88,5 @@
     "title": "Permissionless (ZK) Registers by Lasha Antatze [Rarimo] x Ethereum Cypherpunk Congress",
     "img": "https://i3.ytimg.com/vi/zYjHhCPRP2Q/maxresdefault.jpg",
     "date": "2025-01-12T10:10:06.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=fSJly21DtkM",
-    "title": "Collective self-determination by Sam Hart [Skip] x Ethereum Cypherpunk Congress",
-    "img": "https://i3.ytimg.com/vi/fSJly21DtkM/maxresdefault.jpg",
-    "date": "2025-01-11T21:38:40.000Z"
   }
 ]
