@@ -2,14 +2,12 @@ import { format, compareAsc, addDays, isFuture } from 'date-fns';
 
 export const types = [
     { id: "", plural: 'All events'},
-    { id: "collab", name: 'Collaboration', plural: 'Collaborations' },
-    { id: "congress", name: 'Congress', plural: 'Congresses' },
-    { id: "hackathon", name: 'Hackathon', plural: 'Hackathons' },
     { id: "meetup", name: 'Meetup', plural: 'Meetups' },
-    { id: "online", name: 'Online', plural: 'Online' },
-    { id: "privacycorner", name: 'Privacy Corner', plural: 'Privacy Corners' },
-    { id: "rave", name: 'Rave', plural: 'Raves' },
     { id: "summit", name: 'Summit', plural: 'Summits' },
+    { id: "congress", name: 'Congress', plural: 'Congresses' },
+    { id: "privacy-corner", name: 'Privacy Corner', plural: 'Privacy Corners' },
+    { id: "online-summit", name: 'Online Summit', plural: 'Online Summits' },
+    { id: 'meta-hackathon', name: 'Meta-hackathon', plural: 'Meta-hackathons'},
 ]
 
 export const countryNames = {
@@ -308,15 +306,11 @@ export function nameRenderer (item, full = false) {
         case 'privacy-corner':
             return `Privacy Corner at `+ (item.coincidenceFull ? item.coincidenceFull : `${item.coincidence} ${date.year}`)
             break;
-        case 'collab':
-            return `Collaboration with `+ (item.coincidenceFull ? item.coincidenceFull : `${item.coincidence} ${date.year}`)
+        case 'online-summit':
+            return "ONLINE Summit" + (item['name-extension'] ? ' ' + item['name-extension'] : '') + (full ? ` ${date.year}` : '');
             break;
-        case 'rave':
-            return `Rave ${item.city}` + (full ? ` ${date.year}`: '')
-            break;
-        case 'online':
-            //num = item.id.match(/^w3ph(\d+)$/)[1]
-            return `Online ${item.city}` + (full ? ` ${date.year}`: '')// + (cc ? ` @ ${cc}` : '')
+        case 'meta-hackathon':
+            return `Meta-hackathon ${item.city}` + (full ? ` ${date.year}`: '')
             break;
     }
 }
