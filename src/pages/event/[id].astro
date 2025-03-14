@@ -48,7 +48,7 @@ const imageFormats = {
                 <h1 id="upcoming">W3PN {nameRenderer(item, true)}</h1>
 
                 <div class="flex gap-2 mb-4 text-lg">
-                    {item.type !== 'online' &&
+                    {item.type !== 'online-summit' &&
                         <img src={`/flags/${item.country}.svg`} class="w-4" />
                         <div>
                             {item.city}, {item.country.toUpperCase()}
@@ -57,7 +57,7 @@ const imageFormats = {
                             }
                         </div>
                     }
-                    {item.type === 'online' && 
+                    {item.type === 'online-summit' && 
                         <img src="/flags/other/earth.svg" class="w-4" />
                         <div>Online</div>
                     }
@@ -66,7 +66,7 @@ const imageFormats = {
                 <div>
                     <div>Date: <span class="text-white">{dateFormat(item.date)} {item.days ? ' - ' + dateFormat(dateEnd(item.date, item.days)) + ` (${item.days} days)` : ''}</span></div>
                     <div>
-                        {item.type !== 'online' &&
+                        {item.type !== 'online-summit' &&
                             <div>Venue: {item.place && <span class="text-white" set:html={marked.parseInline(item.place)}></span> || "TBD"}</div>
                         }
                         {item.place && item['place-address'] && 
