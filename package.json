@@ -21,16 +21,16 @@
     "sync-all": "npm run core && npm run contribs && npm run articles && npm run talks && npm run explorer && npm run events-ext && npm run db-repo"
   },
   "dependencies": {
-    "@astrojs/svelte": "^5.2.0",
-    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/svelte": "^7.0.6",
+    "@astrojs/tailwind": "^6.0.0",
     "@rollup/plugin-yaml": "^4.1.2",
-    "astro": "^4.16.18",
-    "cfonts": "^3.2.0",
-    "date-fns": "^2.30.0",
+    "astro": "^5.5.0",
+    "cfonts": "^3.3.0",
+    "date-fns": "^4.1.0",
     "gsap": "^3.12.7",
-    "marked": "^11.1.1",
-    "svelte": "^4.2.19",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3"
+    "marked": "^15.0.0",
+    "svelte": "^5.23.00",
+    "tailwindcss": "^4.0.14",
+    "typescript": "^5.8.2"
   }
 }
