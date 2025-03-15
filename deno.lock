@@ -182,17 +182,17 @@
   "workspace": {
     "packageJson": {
       "dependencies": [
-        "npm:@astrojs/svelte@^7.0.5",
-        "npm:@astrojs/tailwind@^5.1.5",
+        "npm:@astrojs/svelte@^7.0.6",
+        "npm:@astrojs/tailwind@^6.0.0",
         "npm:@rollup/plugin-yaml@^4.1.2",
-        "npm:astro@^5.4.0",
-        "npm:cfonts@^3.2.0",
-        "npm:date-fns@^2.30.0",
+        "npm:astro@^5.5.0",
+        "npm:cfonts@^3.3.0",
+        "npm:date-fns@^4.1.0",
         "npm:gsap@^3.12.7",
-        "npm:marked@^11.1.1",
+        "npm:marked@^15.0.0",
         "npm:svelte@^5.23.0",
-        "npm:tailwindcss@^4.0.14",
-        "npm:typescript@^5.3.3"
+        "npm:tailwindcss@^3.0.24",
+        "npm:typescript@^5.8.2"
       ]
     }
   }
