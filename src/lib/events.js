@@ -2,12 +2,14 @@ import { format, compareAsc, addDays, isFuture } from 'date-fns';
 
 export const types = [
     { id: "", plural: 'All events'},
-    { id: "meetup", name: 'Meetup', plural: 'Meetups' },
-    { id: "summit", name: 'Summit', plural: 'Summits' },
+    { id: "collab", name: 'Collaboration', plural: 'Collaborations' },
     { id: "congress", name: 'Congress', plural: 'Congresses' },
-    { id: "privacy-corner", name: 'Privacy Corner', plural: 'Privacy Corners' },
-    { id: "online-summit", name: 'Online Summit', plural: 'Online Summits' },
-    { id: 'meta-hackathon', name: 'Meta-hackathon', plural: 'Meta-hackathons'},
+    { id: "hackathon", name: 'Hackathon', plural: 'Hackathons' },
+    { id: "meetup", name: 'Meetup', plural: 'Meetups' },
+    { id: "online", name: 'Online', plural: 'Online' },
+    { id: "privacycorner", name: 'Privacy Corner', plural: 'Privacy Corners' },
+    { id: "rave", name: 'Rave', plural: 'Raves' },
+    { id: "summit", name: 'Summit', plural: 'Summits' },
 ]
 
 export const countryNames = {
@@ -303,14 +305,17 @@ export function nameRenderer (item, full = false) {
             //num = item.id.match(/^w3ph(\d+)$/)[1]
             return `Hackathon ${item.city}` + (full ? ` ${date.year}`: '')// + (cc ? ` @ ${cc}` : '')
             break;
-        case 'privacy-corner':
+        case 'privacycorner':
             return `Privacy Corner at `+ (item.coincidenceFull ? item.coincidenceFull : `${item.coincidence} ${date.year}`)
             break;
-        case 'online-summit':
-            return "ONLINE Summit" + (item['name-extension'] ? ' ' + item['name-extension'] : '') + (full ? ` ${date.year}` : '');
+        case 'collab':
+            return `W3PN collaboration at `+ (item.coincidenceFull ? item.coincidenceFull : `${item.coincidence} ${date.year}`)
             break;
-        case 'meta-hackathon':
-            return `Meta-hackathon ${item.city}` + (full ? ` ${date.year}`: '')
+        case 'rave':
+            return `Rave ${item.city}` + (full ? ` ${date.year}`: '')
+            break;
+       case 'online':
+            return `Online ${item.city}` + (full ? ` ${date.year}`: '')
             break;
     }
 }
