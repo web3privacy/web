@@ -17,7 +17,7 @@ for (const entry of feed.entries) {
     title: entry.title.value,
     img: entry["media:group"]["media:thumbnail"].url.replace(
       "hqdefault",
-      "maxresdefault",
+      "sddefault",
     ),
     date: entry.published,
   });
