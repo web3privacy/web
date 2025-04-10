@@ -2208,8 +2208,8 @@
       "date": "2025-05-29",
       "city": "Prague",
       "country": "cz",
-      "place": "TBA",
-      "place-address": "TBA",
+      "place": "Klub Centrála",
+      "place-address": "Hlavní město Praha",
       "confirmed": true,
       "coincidence": "ETHPrague",
       "lead": "alina",
@@ -2217,7 +2217,7 @@
         "rsvp": "https://lu.ma/jhp1iapn"
       },
       "speakers": [
-        "pg",
+        "cat",
         "coinmandeer",
         "alina"
       ],
