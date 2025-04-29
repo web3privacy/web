@@ -88,6 +88,15 @@
       }
     },
     {
+      "id": "calimero",
+      "name": "Calimero",
+      "imageUrl": "./public/membersLogo/calimero.svg",
+      "refs": {
+        "website": "https://calimero.network//",
+        "twitter": "CalimeroNetwork"
+      }
+    },
+    {
       "id": "0xbow",
       "name": "0xbow",
       "imageUrl": "https://web3privacy.info/membersLogo/0xbow.png",
