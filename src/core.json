@@ -90,10 +90,19 @@
     {
       "id": "calimero",
       "name": "Calimero",
-      "imageUrl": "./public/membersLogo/calimero.svg",
+      "imageUrl": "https://web3privacy.info/membersLogo/calimero.svg",
       "refs": {
-        "website": "https://calimero.network//",
+        "website": "https://calimero.network/",
         "twitter": "CalimeroNetwork"
+      }
+    },
+    {
+      "id": "euci",
+      "name": "European Crypto Initiative",
+      "imageUrl": "https://web3privacy.info/membersLogo/EUCI_logo_white.png",
+      "refs": {
+        "website": "https://eu.ci/",
+        "twitter": "EuCInitiative"
       }
     },
     {
