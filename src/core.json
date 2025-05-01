@@ -164,7 +164,7 @@
       "name": "Labyrinth",
       "imageUrl": "https://web3privacy.info/membersLogo/labyrinth.png",
       "refs": {
-        "website": "https://www.labyrinth.ac",
+        "website": "https://labyrinth.ac",
         "twitter": "Labyrinth_HQ"
       }
     },
@@ -238,7 +238,7 @@
       "name": "Paralelni Polis",
       "imageUrl": "https://web3privacy.info/membersLogo/polis.png",
       "refs": {
-        "website": "https://paralelnipolis.cz/en",
+        "website": "https://paralelnipolis.info",
         "twitter": "Paralelni_polis"
       }
     },
@@ -354,7 +354,7 @@
   "research": [
     {
       "title": "ZK solutions DB",
-      "status": "live",
+      "status": "backlog",
       "sort": 1,
       "labels": [
         "db"
@@ -364,13 +364,12 @@
       ],
       "caption": "General DB aggregation focused on ZK for privacy.",
       "links": {
-        "web": "https://github.com/web3privacy/web3privacy/tree/main/ZKprivacylandscape#readme",
         "docs": "https://docs.web3privacy.info/research/zk-solutions"
       }
     },
     {
       "title": "Privacy Use-Cases DB",
-      "status": "live",
+      "status": "backlog",
       "sort": 3,
       "labels": [
         "db"
@@ -380,7 +379,6 @@
       ],
       "caption": "Basic DB of the privacy-centric use-cases.",
       "links": {
-        "web": "https://github.com/Msiusko/web3privacy/blob/main/Use-cases.md",
         "docs": "https://docs.web3privacy.info/research/usecase-db"
       }
     },
@@ -394,7 +392,6 @@
       ],
       "caption": "Pagency framework for facilitation privacy use-cases (privacy services modelling)",
       "links": {
-        "web": "https://github.com/web3privacy/web3privacy/blob/main/Pagency/Pagency%20-%20privacy%20use-case%20facilitation%20framework.pdf",
         "docs": "https://docs.web3privacy.info/research/pagency"
       }
     },
@@ -454,7 +451,6 @@
       ],
       "caption": "Comprehensive privacy-centric research aimed to map Ethereum-centric privacy services, use-cases, product stages, missing areas (use-cases), funding landscape etc Supported by MolochDAO",
       "links": {
-        "web": "https://github.com/web3privacy/web3privacy/blob/main/Market%20overview/Ethereum%20Ecosystem/Readme.md",
         "docs": "https://docs.web3privacy.info/research/ethereum-privacy-ecosystem/"
       }
     },
@@ -470,11 +466,11 @@
     },
     {
       "title": "Privacy features audit concept for security audit organizations & whitehackers",
-      "status": "backlog",
+      "status": "in-progress",
       "sort": 1,
       "labels": [],
       "assignees": [
-        "Msiusko"
+        "mf"
       ],
       "links": {}
     },
@@ -486,7 +482,10 @@
       "assignees": [
         "Msiusko"
       ],
-      "links": {}
+      "links": {
+        "web": "https://github.com/web3privacy/explorer/blob/main/Research.md#scoring-model",
+        "docs": "https://docs.web3privacy.info/research/scoring-model/"
+      }
     },
     {
       "title": "Privacy market outlook (2022)",
@@ -1144,7 +1143,7 @@
     {
       "id": "mario-havel",
       "name": "Mario Havel",
-      "caption": "Hacker, Cofounder of [Bordel Hackerspace](https://bordel.paralelnipolis.cz/)",
+      "caption": "Hacker, Cofounder of [Bordel Hackerspace](https://github.com/Bordel)",
       "country": "cz",
       "refs": {
         "twitter": "TMIYChao"
@@ -1473,7 +1472,7 @@
     {
       "id": "manu-alzuru",
       "name": "Manu Alzuru",
-      "caption": "Humanist, solarpunk, Founder of [DoinGud](https://doingud.com/) & [ETH Barcelona](https://ethbarcelona.com/)",
+      "caption": "Humanist, solarpunk, Founder of DoinGud & [ETH Barcelona](https://ethbarcelona.com)",
       "country": "es",
       "refs": {
         "twitter": "ManuAlzuru"
@@ -1535,7 +1534,7 @@
       "id": "pavol-luptak",
       "name": "Pavol Lupták",
       "nickname": "wilder",
-      "caption": "Perpetual traveler focused on technology and society hacking ([Nethemba](https://nethemba.com/), [Liberation Travel](https://www.liberationtravel.com/))",
+      "caption": "Perpetual traveler focused on technology and society hacking ([Nethemba](https://nethemba.com), [Liberation Travel](https://www.liberation.travel))",
       "refs": {
         "twitter": "wilderko"
       },
@@ -1992,7 +1991,7 @@
     {
       "id": "ameen-soleimani",
       "name": "Ameen Soleimani",
-      "caption": "Summoner of [IranUnchained](https://www.iranunchained.com/), [Privacy Pools](https://www.privacypools.com/), [MolochDAO](https://molochdao.com/)",
+      "caption": "Summoner of [IranUnchained](https://www.iranunchained.com), [Privacy Pools](https://privacypools.com), [MolochDAO](https://molochdao.com)",
       "country": "us",
       "refs": {
         "twitter": "ameensol"
