@@ -81,7 +81,7 @@
     {
       "id": "calimero",
       "name": "Calimero",
-      "imageUrl": "https://web3privacy.info/membersLogo/calimero.svg",
+      "imageUrl": "https://web3privacy.info/membersLogo/calimero.png",
       "refs": {
         "website": "https://calimero.network",
         "twitter": "CalimeroNetwork"
@@ -90,7 +90,7 @@
     {
       "id": "euci",
       "name": "European Crypto Initiative",
-      "imageUrl": "https://web3privacy.info/membersLogo/EUCI_logo_white.png",
+      "imageUrl": "https://web3privacy.info/membersLogo/EUCI.png",
       "refs": {
         "website": "https://eu.ci/",
         "twitter": "eucinitiative"
@@ -1442,7 +1442,7 @@
     {
       "id": "amit-chaudhary",
       "name": "Amit Chaudhary",
-      "caption": "Founder of [Labyrinth](https://www.labyrinth.technology/)",
+      "caption": "Founder of [Labyrinth](https://labyrinth.ac/)",
       "country": "in",
       "refs": {
         "twitter": "amitchax"
@@ -2114,8 +2114,8 @@
       "date": "2025-06-16",
       "city": "Berlin",
       "country": "de",
-      "place": "[TBA](https://dappcon.io)",
-      "place-address": "TBA",
+      "place": "[Radialsystem](https://maps.app.goo.gl/cMi3ccPzUvKYnpVp7)",
+      "place-address": "Holzmarktstraße 33, 10243 Berlin",
       "confirmed": true,
       "coincidence": "Dappcon",
       "lead": "Mykola",
@@ -2128,8 +2128,30 @@
         "robert",
         "cat"
       ],
-      "images": {},
-      "thumbs": {}
+      "images": {
+        "square": "https://data.web3privacy.info/img/events/2025/co25ber-square.jpeg",
+        "poster-simple": "https://data.web3privacy.info/img/events/2025/co25ber-poster-simple.jpeg",
+        "poster": "https://data.web3privacy.info/img/events/2025/co25ber-poster.jpeg",
+        "wide": "https://data.web3privacy.info/img/events/2025/co25ber-wide.jpeg",
+        "wide-square": "https://data.web3privacy.info/img/events/2025/co25ber-wide-square.jpeg"
+      },
+      "thumbs": {
+        "poster-simple:360": "https://data.web3privacy.info/img/events/2025/thumbs/co25ber-poster-simple-360px.webp",
+        "poster:128": "https://data.web3privacy.info/img/events/2025/thumbs/co25ber-poster-128px.webp",
+        "poster-simple:128": "https://data.web3privacy.info/img/events/2025/thumbs/co25ber-poster-simple-128px.webp",
+        "wide:128": "https://data.web3privacy.info/img/events/2025/thumbs/co25ber-wide-128px.webp",
+        "poster:640": "https://data.web3privacy.info/img/events/2025/thumbs/co25ber-poster-640px.webp",
+        "square:128": "https://data.web3privacy.info/img/events/2025/thumbs/co25ber-square-128px.webp",
+        "wide:360": "https://data.web3privacy.info/img/events/2025/thumbs/co25ber-wide-360px.webp",
+        "square:640": "https://data.web3privacy.info/img/events/2025/thumbs/co25ber-square-640px.webp",
+        "square:360": "https://data.web3privacy.info/img/events/2025/thumbs/co25ber-square-360px.webp",
+        "wide-square:360": "https://data.web3privacy.info/img/events/2025/thumbs/co25ber-wide-square-360px.webp",
+        "poster:360": "https://data.web3privacy.info/img/events/2025/thumbs/co25ber-poster-360px.webp",
+        "wide:640": "https://data.web3privacy.info/img/events/2025/thumbs/co25ber-wide-640px.webp",
+        "poster-simple:640": "https://data.web3privacy.info/img/events/2025/thumbs/co25ber-poster-simple-640px.webp",
+        "wide-square:640": "https://data.web3privacy.info/img/events/2025/thumbs/co25ber-wide-square-640px.webp",
+        "wide-square:128": "https://data.web3privacy.info/img/events/2025/thumbs/co25ber-wide-square-128px.webp"
+      }
     },
     {
       "id": "r25ber",
@@ -2217,6 +2239,49 @@
         "wide:128": "https://data.web3privacy.info/img/events/2025/thumbs/h25ber-wide-128px.webp",
         "square:360": "https://data.web3privacy.info/img/events/2025/thumbs/h25ber-square-360px.webp",
         "wide:360": "https://data.web3privacy.info/img/events/2025/thumbs/h25ber-wide-360px.webp"
+      }
+    },
+    {
+      "id": "co25ftc",
+      "type": "collab",
+      "date": "2025-06-10",
+      "city": "Berlin",
+      "country": "de",
+      "place": "[Engelnest](https://engelnest.de)",
+      "place-address": "Wilhelm-Kabus-Str. 24, 10829 Berlin",
+      "confirmed": true,
+      "coincidence": "Berlin Blockchain Week",
+      "lead": "pg",
+      "links": {
+        "rsvp": "https://lu.ma/ftc-berlin-2025",
+        "web": "https://www.fundingthecommons.io/berlin-2025"
+      },
+      "speakers": [
+        "pg"
+      ],
+      "images": {
+        "wide-square": "https://data.web3privacy.info/img/events/2025/co25ftc-wide-square.jpeg",
+        "square": "https://data.web3privacy.info/img/events/2025/co25ftc-square.jpeg",
+        "poster-simple": "https://data.web3privacy.info/img/events/2025/co25ftc-poster-simple.jpeg",
+        "poster": "https://data.web3privacy.info/img/events/2025/co25ftc-poster.jpeg",
+        "wide": "https://data.web3privacy.info/img/events/2025/co25ftc-wide.jpeg"
+      },
+      "thumbs": {
+        "poster-simple:360": "https://data.web3privacy.info/img/events/2025/thumbs/co25ftc-poster-simple-360px.webp",
+        "poster-simple:640": "https://data.web3privacy.info/img/events/2025/thumbs/co25ftc-poster-simple-640px.webp",
+        "square:640": "https://data.web3privacy.info/img/events/2025/thumbs/co25ftc-square-640px.webp",
+        "poster:128": "https://data.web3privacy.info/img/events/2025/thumbs/co25ftc-poster-128px.webp",
+        "poster-simple:128": "https://data.web3privacy.info/img/events/2025/thumbs/co25ftc-poster-simple-128px.webp",
+        "wide-square:360": "https://data.web3privacy.info/img/events/2025/thumbs/co25ftc-wide-square-360px.webp",
+        "square:128": "https://data.web3privacy.info/img/events/2025/thumbs/co25ftc-square-128px.webp",
+        "poster:360": "https://data.web3privacy.info/img/events/2025/thumbs/co25ftc-poster-360px.webp",
+        "poster:640": "https://data.web3privacy.info/img/events/2025/thumbs/co25ftc-poster-640px.webp",
+        "wide-square:640": "https://data.web3privacy.info/img/events/2025/thumbs/co25ftc-wide-square-640px.webp",
+        "wide-square:128": "https://data.web3privacy.info/img/events/2025/thumbs/co25ftc-wide-square-128px.webp",
+        "wide:640": "https://data.web3privacy.info/img/events/2025/thumbs/co25ftc-wide-640px.webp",
+        "square:360": "https://data.web3privacy.info/img/events/2025/thumbs/co25ftc-square-360px.webp",
+        "wide:360": "https://data.web3privacy.info/img/events/2025/thumbs/co25ftc-wide-360px.webp",
+        "wide:128": "https://data.web3privacy.info/img/events/2025/thumbs/co25ftc-wide-128px.webp"
       }
     },
     {
