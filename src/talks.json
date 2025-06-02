@@ -1,7 +1,19 @@
 [
   {
+    "url": "https://www.youtube.com/watch?v=oJtdw8v_Ytw",
+    "title": "Tien - Activist, FNV | Web3Privacy Now - Amsterdam Meetup 2025",
+    "img": "https://i4.ytimg.com/vi/oJtdw8v_Ytw/sddefault.jpg",
+    "date": "2025-05-31T12:10:11.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=xwgTfo39u4M",
+    "title": "Joachim Schwerin & Judith De Boer | Web3Privacy Now @ ETHDam 2025",
+    "img": "https://i1.ytimg.com/vi/xwgTfo39u4M/sddefault.jpg",
+    "date": "2025-05-29T13:31:28.000Z"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=ZYsiidDiuPM",
-    "title": "Ameen Soleimani | Web3Privacy Now - Amsterdam Meetup 2025",
+    "title": "Ameen Soleimani - OxBow, MolochDAO | Web3Privacy Now - Amsterdam Meetup 2025",
     "img": "https://i3.ytimg.com/vi/ZYsiidDiuPM/sddefault.jpg",
     "date": "2025-05-21T15:01:56.000Z"
   },
@@ -76,17 +88,5 @@
     "title": "Programmable Cryptography in the context of Plurality by Oskarth x Ethereum Cypherpunk Congress",
     "img": "https://i2.ytimg.com/vi/9RmXxcseMQ8/sddefault.jpg",
     "date": "2025-01-12T11:11:28.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=C-i11RN0L2U",
-    "title": "Unmasking Crypto's Moloch by Kris Is [Gitcoin Citizen] x Ethereum Cypherpunk Congress",
-    "img": "https://i4.ytimg.com/vi/C-i11RN0L2U/sddefault.jpg",
-    "date": "2025-01-12T10:56:44.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=OT1MYlona2E",
-    "title": "Decolonizing Money by Julio Linares [Poetic Technologies] x Ethereum Cypherpunk Congress",
-    "img": "https://i4.ytimg.com/vi/OT1MYlona2E/sddefault.jpg",
-    "date": "2025-01-12T10:49:18.000Z"
   }
 ]
