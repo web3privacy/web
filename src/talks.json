@@ -1,5 +1,11 @@
 [
   {
+    "url": "https://www.youtube.com/watch?v=R2kGeTiee_c",
+    "title": "Vitalik @ Ethereum Cypherpunk Congress #01",
+    "img": "https://i3.ytimg.com/vi/R2kGeTiee_c/sddefault.jpg",
+    "date": "2025-06-06T12:42:04.000Z"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=oJtdw8v_Ytw",
     "title": "Tien - Activist, FNV | Web3Privacy Now - Amsterdam Meetup 2025",
     "img": "https://i4.ytimg.com/vi/oJtdw8v_Ytw/sddefault.jpg",
@@ -82,11 +88,5 @@
     "title": "Privacy laws and the surveillance state by Costanza Gallo [Swarm] x Ethereum Cypherpunk Congress",
     "img": "https://i1.ytimg.com/vi/lV1XoF9uxEA/sddefault.jpg",
     "date": "2025-01-12T11:13:30.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=9RmXxcseMQ8",
-    "title": "Programmable Cryptography in the context of Plurality by Oskarth x Ethereum Cypherpunk Congress",
-    "img": "https://i2.ytimg.com/vi/9RmXxcseMQ8/sddefault.jpg",
-    "date": "2025-01-12T11:11:28.000Z"
   }
 ]
