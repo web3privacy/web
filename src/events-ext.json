@@ -1,12 +1,32 @@
 [
   {
-    "url": "sq2vtmdg",
-    "name": "Dappcon Intervention",
+    "url": "jbzohah1",
+    "name": "Web3privacy Now Meet-up Cluj 2025",
     "period": [
-      "2025-06-16T08:00:00.000Z",
-      "2025-06-18T16:00:00.000Z"
+      "2025-06-25T15:30:00.000Z",
+      "2025-06-25T18:30:00.000Z"
     ],
-    "coverUrl": "https://images.lumacdn.com/event-covers/pv/797b70c8-33f1-4a26-97e6-bc552ea89cba.png",
+    "coverUrl": "https://images.lumacdn.com/event-covers/06/be098f92-11e0-4066-88fd-5cb76a57ce9d.png",
+    "guestCount": 21
+  },
+  {
+    "url": "goib96as",
+    "name": "Occupy EthCC",
+    "period": [
+      "2025-07-01T16:00:00.000Z",
+      "2025-07-01T19:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/xg/e54f2a89-9030-44a9-b9a5-b268f06b84ab.jpg",
+    "guestCount": 0
+  },
+  {
+    "url": "glt7ukv2",
+    "name": "10 years of Ethereum cypherpunk culture [online]",
+    "period": [
+      "2025-07-30T10:00:00.000Z",
+      "2025-07-30T16:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/cn/60bfbcde-9a3d-4c58-a3e8-980391d0029b.png",
     "guestCount": 0
   },
   {
