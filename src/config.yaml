@@ -7,7 +7,7 @@ header:
     - name: About
       url: /about
     - name: Explorer
-      url: https://explorer.web3privacy.info/home
+      url: https://explorer.web3privacy.info/
     - name: Research
       url: /research
     - name: Academy
