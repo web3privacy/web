@@ -1,5 +1,29 @@
 [
   {
+    "url": "https://www.youtube.com/shorts/avA7EO_mlEA",
+    "title": "Why Privacy Now? - Vitalik Buterin @ W3PN HACKs",
+    "img": "https://i2.ytimg.com/vi/avA7EO_mlEA/sddefault.jpg",
+    "date": "2025-06-27T12:31:35.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/0FK-4SNrZqw",
+    "title": "Crypto, Cypherpunk, and Signal - Vitalik Buterin @ W3PN HACKs",
+    "img": "https://i1.ytimg.com/vi/0FK-4SNrZqw/sddefault.jpg",
+    "date": "2025-06-27T12:31:32.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/G-fUrAuPbY4",
+    "title": "Vitalik Buterin on Whistleblowing @ W3PN HACKs",
+    "img": "https://i4.ytimg.com/vi/G-fUrAuPbY4/sddefault.jpg",
+    "date": "2025-06-27T12:31:29.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/7vBM_Mj40hc",
+    "title": "Privacy in Ethereum w/ Vitalik Buterin @ W3PN HACKs",
+    "img": "https://i4.ytimg.com/vi/7vBM_Mj40hc/sddefault.jpg",
+    "date": "2025-06-27T12:31:24.000Z"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=oCANLFSCPq8",
     "title": "Vitalik Buterin on Ethereum Privacy @Web3Privacy hackathon, Berlin 2025",
     "img": "https://i4.ytimg.com/vi/oCANLFSCPq8/sddefault.jpg",
@@ -64,29 +88,5 @@
     "title": "Turning Degens Into Cypherpunks panel @ Ethereum Cypherpunk Congress",
     "img": "https://i4.ytimg.com/vi/wzGhjGHHgWE/sddefault.jpg",
     "date": "2025-01-23T13:05:00.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=Gjkpinu_Zco",
-    "title": "Love, Privacy, and the Politics of Intellectual Shame - Meredith Whittaker, 38c3 | CCC",
-    "img": "https://i4.ytimg.com/vi/Gjkpinu_Zco/sddefault.jpg",
-    "date": "2025-01-19T16:51:14.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=AOri8sxxr-A",
-    "title": "My ongoing escape by Bob Summerwill [ETC Cooperative] x Ethereum Cypherpunk Congress",
-    "img": "https://i2.ytimg.com/vi/AOri8sxxr-A/sddefault.jpg",
-    "date": "2025-01-12T11:52:26.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=ryvtBhTBy5k",
-    "title": "What does a encrypted supercomputer look like? Yannik Schrade [Arcium] & Robert De Groot in dialogue",
-    "img": "https://i3.ytimg.com/vi/ryvtBhTBy5k/sddefault.jpg",
-    "date": "2025-01-12T11:34:03.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=LguumxmzRKo",
-    "title": "Sifrpunk by Wassim Alsindi [0xSalon] x Ethereum Cypherpunk Congress",
-    "img": "https://i1.ytimg.com/vi/LguumxmzRKo/sddefault.jpg",
-    "date": "2025-01-12T11:25:17.000Z"
   }
 ]
