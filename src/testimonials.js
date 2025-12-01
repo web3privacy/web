@@ -173,7 +173,7 @@ export const testimonials = [
   {
     id: "amit-chaudhary",
     author: "Amit Chaudhary",
-    designation: "Labyrinth",
+    designation: "Veilnyx",
     reviewText:
       "Web3Privacy Now is the best community for privacy that unites people to collaborate and turns user privacy into reality with exciting narratives.",
     imageUrl: "/testimonials/amit-chaudary.jpg",
