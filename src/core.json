@@ -126,12 +126,12 @@
       }
     },
     {
-      "id": "labyrinth",
-      "name": "Labyrinth",
-      "imageUrl": "https://web3privacy.info/membersLogo/labyrinth.png",
+      "id": "veilnyx",
+      "name": "Veilnyx",
+      "imageUrl": "https://web3privacy.info/membersLogo/veilnyx.png",
       "refs": {
-        "website": "https://labyrinth.ac",
-        "twitter": "Labyrinth_HQ"
+        "website": "https://veilnyx.com",
+        "twitter": "veilnyx_hq"
       }
     },
     {
@@ -1116,7 +1116,7 @@
     {
       "id": "amit-chaudhary",
       "name": "Amit Chaudhary",
-      "caption": "Founder of [Labyrinth](https://labyrinth.ac/)",
+      "caption": "Founder of [Veilnyx](https://veilnyx.com/)",
       "country": "in",
       "refs": {
         "twitter": "amitchax"
