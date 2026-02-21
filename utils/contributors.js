@@ -7,7 +7,6 @@ const contributorRepos = [
   "web3privacy/docs",
   "web3privacy/web",
   "web3privacy/brand",
-  "web3privacy/association",
 
   // events workgroup
   "web3privacy/events",
