@@ -1,32 +1,62 @@
 [
   {
-    "url": "glt7ukv2",
-    "name": "10 years of Ethereum cypherpunk culture [online]",
+    "url": "98pzi0jh",
+    "name": "Web3Privacy now Prague meetup",
     "period": [
-      "2025-07-30T10:00:00.000Z",
-      "2025-07-30T16:00:00.000Z"
+      "2026-05-07T15:00:00.000Z",
+      "2026-05-07T20:00:00.000Z"
     ],
-    "coverUrl": "https://images.lumacdn.com/event-covers/cn/60bfbcde-9a3d-4c58-a3e8-980391d0029b.png",
+    "coverUrl": "https://images.lumacdn.com/event-covers/kx/6a7544f9-4546-41d3-ae8a-018f7116ee16.jpg",
     "guestCount": 0
   },
   {
-    "url": "8jv4odjn",
-    "name": "Web3Privacy Now Meetup x ETHRome 2025",
+    "url": "f47k4xnd",
+    "name": "Neocypherpunk Summit by Web3Privacy now",
     "period": [
-      "2025-10-16T13:00:00.000Z",
-      "2025-10-16T20:00:00.000Z"
+      "2026-06-14T08:00:00.000Z",
+      "2026-06-14T17:00:00.000Z"
     ],
-    "coverUrl": "https://images.lumacdn.com/event-covers/o8/ca0a8b5b-c2f1-4784-9f7d-20ca0bd72635.png",
+    "coverUrl": "https://images.lumacdn.com/event-covers/u8/aa4e3d95-339d-4cad-95a7-cf0bc6633916.png",
     "guestCount": 0
   },
   {
-    "url": "u2sw5kpv",
-    "name": "Ethereum Cypherpunk Congress #2",
+    "url": "sixp297m",
+    "name": "Web3Privacy now meetup",
     "period": [
-      "2025-11-16T12:00:00.000Z",
-      "2025-11-16T22:00:00.000Z"
+      "2026-09-01T13:00:00.000Z",
+      "2026-09-01T18:00:00.000Z"
     ],
-    "coverUrl": "https://images.lumacdn.com/event-covers/dx/424655ad-4274-4dcb-ae61-d3facc02c497.png",
+    "coverUrl": "https://images.lumacdn.com/event-covers/ot/853d5947-6274-4b02-aa17-98daedcec8c0.png",
     "guestCount": 0
+  },
+  {
+    "url": "q1sdbqf3",
+    "name": "Web3Privacy now Rome meetup",
+    "period": [
+      "2026-09-10T12:00:00.000Z",
+      "2026-09-10T17:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/ad/e0018c33-e3b1-4d34-a86d-d3a876fe847a.png",
+    "guestCount": 0
+  },
+  {
+    "url": "ispxo30p",
+    "name": "Web3Privacy now Tokyo meetup",
+    "period": [
+      "2026-09-18T12:00:00.000Z",
+      "2026-09-18T17:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/ub/5d0d6f70-bf08-419c-83e7-6b8f50b5ca1d.png",
+    "guestCount": 0
+  },
+  {
+    "url": "spsnos9t",
+    "name": "Ethereum Cypherpunk Congress #3",
+    "period": [
+      "2026-11-02T04:30:00.000Z",
+      "2026-11-02T13:30:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/v4/5350e418-d370-4536-a6fd-2df3f02f2f0d.png",
+    "guestCount": 406
   }
 ]
