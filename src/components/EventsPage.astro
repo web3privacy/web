@@ -59,7 +59,7 @@ const upcoming = events.filter(x => isFutureDate(x.date))
 const past = {}
 let pastTotal = 0
 for (const year of pastYears.reverse()) {
-	past[year] = pastEvents.filter(eventsFilter(year, false)).reverse()
+	past[year] = pastEvents.filter(eventsFilter(year, false))
 	pastTotal += past[year].length
 }
 
@@ -122,7 +122,7 @@ places = places.sort((x, y) => x.num < y.num ? 1 : -1)
 		{pastTotal > 0 &&
 			<div>
 				<h1 id="past">Past {title} ({events.length-upcoming.length})</h1>
-				{pastYears.map((year) => (
+				{pastYears.reverse().map((year) => (
 					past[year].length > 0 &&
 						<h2>{year} ({past[year].length})</h2>
 						<div class="mt-4 mb-10">
