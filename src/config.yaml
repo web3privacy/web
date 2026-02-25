@@ -72,7 +72,7 @@ landing:
   event: |
     Our aim with gatherings is to build understanding and solidarity between different groups of interests, cultures, states, chains, ecosystems and backgrounds.
     <br><br>
-      We aggregate web3 & non-tech people, builders, researchers, philosophers, lawyers, policymakers, hacktivists,  key players, local communities and the general public.
+    We aggregate web3 & non-tech people, builders, researchers, philosophers, lawyers, policymakers, hacktivists,  key players, local communities and the general public.
   topics:
     - Identity
     - Private Messaging
@@ -138,7 +138,7 @@ organisation:
             - "Finding right builders for your beta, product to test or develop"
             - "Speaking and mentoring opportunities"
             - "Panel curation upon specific needs"
-            - "Bigger outreach and Impact (we bring your brand, your team and developing needs around every event we attend  (ETHDam, ETHRome, ETHBrno, ETHBarcelona, BlackSky…)"
+            - "Bigger outreach and Impact (we bring your brand, your team and developing needs around every event we attend (ETHDam, ETHRome, ETHBrno, ETHBarcelona, BlackSky…)"
             - "50 contributors (beyond core team)"
     - heading: Research
       subheading: We carry on research delivering essays, reports, infographics, github repos, decks, guidelines
