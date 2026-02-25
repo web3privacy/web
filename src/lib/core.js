@@ -15,7 +15,7 @@ export function personLink (p) {
         return `https://github.com/${p.refs.github}`
     }
     if (p.refs?.linkedin) {
-        return `https://linkedin.com/in/${p.refs.github}`
+        return `https://linkedin.com/in/${p.refs.linkedin}`
     }
     return '#'
 }
