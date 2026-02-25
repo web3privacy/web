@@ -170,11 +170,13 @@
     @apply p-6 bg-black/80 w-full font-semibold;
   }
 
-  .basegrid-entry .title a {
+  .basegrid-entry .title a,
+  .basegrid-entry .title > span:first-child {
     @apply text-white text-lg;
   }
 
-  .basegrid-entry:hover .title a {
+  .basegrid-entry:hover .title a,
+  .basegrid-entry:hover .title > span:first-child {
     @apply underline;
   }
 

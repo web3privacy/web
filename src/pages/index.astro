@@ -2,8 +2,62 @@
 import BaseLayout from "../layouts/base.astro";
 import AboutFooter from "../components/AboutFooter.astro";
 import core from "../core.json";
-import articles from "../articles.json";
-import talks from "../talks.json";
+// import articles from "../articles.json";
+// import talks from "../talks.json";
+
+const manualArticles = [
+  {
+    url: "https://paragraph.com/@web3privacy/web3privacy-awards-2025-projects-category-longlist",
+    title: "Web3Privacy Awards 2025: Projects Category Longlist",
+    img: "https://img.paragraph.com/cdn-cgi/image/format=auto,width=1920,quality=85/https://storage.googleapis.com/papyrus_images/21e7a3cb65f4327fe12dfaed241fb6486960a9eae7b676484b07d5b05feb075d.jpg",
+    date: "2026-02-16T00:00:00.000Z",
+  },
+  {
+    url: "https://paragraph.com/@web3privacy/ethereum-privacy-ecosystem-mapping",
+    title: "Ethereum Privacy Ecosystem mapping",
+    img: "https://img.paragraph.com/cdn-cgi/image/format=auto,width=1920,quality=85/https://storage.googleapis.com/papyrus_images/180edd773e43cf718e20f4559cb33844279f2791c0a03534c354304d006fde84.jpg",
+    date: "2026-02-11T00:00:00.000Z",
+  },
+  {
+    url: "https://paragraph.com/@web3privacy/ethereum-cypherpunk-congress-2-case-study",
+    title: "Ethereum Cypherpunk Congress #2 Case Study",
+    img: "https://img.paragraph.com/cdn-cgi/image/format=auto,width=1920,quality=85/https://storage.googleapis.com/papyrus_images/67799472a8fd671f6f15b767d0dee37bc6e48776910cf8bd0cfe5dbc21824fea.jpg",
+    date: "2026-02-09T00:00:00.000Z",
+  },
+  {
+    url: "https://paragraph.com/@web3privacy/annual-delivery-by-web3privacy-now",
+    title: "Annual Report: Privacy impact in 2025",
+    img: "https://img.paragraph.com/cdn-cgi/image/format=auto,width=1920,quality=85/https://storage.googleapis.com/papyrus_images/2cf98ed2b1446a6cf5f3a030ea8bfb1f023fd2e77dea479f4b3d55153f22cf77.jpg",
+    date: "2026-01-08T00:00:00.000Z",
+  },
+];
+
+const manualTalks = [
+  {
+    url: "https://www.youtube.com/watch?v=_evGcDWRuyg",
+    title: "\"We're Losing the Web. Publishers Are Rewriting History.\" - Brewster Kahle, Internet Archive",
+    img: "https://img.youtube.com/vi/_evGcDWRuyg/maxresdefault.jpg",
+    date: "2025-12-18T00:00:00.000Z",
+  },
+  {
+    url: "https://www.youtube.com/watch?v=PSEDY2W9d8A",
+    title: "\"Kohaku: Wallet privacy on Ethereum\" by Vitalik Buterin, Consigny & Kassandra",
+    img: "https://img.youtube.com/vi/PSEDY2W9d8A/maxresdefault.jpg",
+    date: "2025-12-12T00:00:00.000Z",
+  },
+  {
+    url: "https://www.youtube.com/watch?v=ykxHnBon7TI",
+    title: "\"Lessons Learned from Tor\" by Roger Dingledine",
+    img: "https://img.youtube.com/vi/ykxHnBon7TI/maxresdefault.jpg",
+    date: "2025-12-12T00:00:00.000Z",
+  },
+  {
+    url: "https://www.youtube.com/watch?v=S3PiMK8iguY",
+    title: "\"Cyberfascism: what is it and how we can fight it?\" by Eva Galperin",
+    img: "https://img.youtube.com/vi/S3PiMK8iguY/maxresdefault.jpg",
+    date: "2025-12-12T00:00:00.000Z",
+  },
+];
 import dbRepo from "../db-repo.json";
 import { format } from "date-fns";
 import EventItem from "../components/EventItem.astro";
@@ -164,21 +218,20 @@ for (const e of upcomingEvents) {
 
     <div class="w3pn-articles grid md:grid-cols-2 gap-6">
       {
-        articles.slice(0, 4).map((entry) => (
-          <div
-            class="basegrid-entry aspect-video"
+        manualArticles.map((entry) => (
+          <a href={entry.url} target="_blank" class="basegrid-entry aspect-video"
             style={{
               backgroundImage: `url("${entry.img}")`,
               backgroundSize: "100% 100%;",
             }}
           >
             <div class="title">
-              <a href={entry.url}>{entry.title}</a>
+              <span>{entry.title}</span>
               <span class="date">
                 {format(new Date(entry.date), "MMMM do, yyyy")}
               </span>
             </div>
-          </div>
+          </a>
         ))
       }
     </div>
@@ -214,9 +267,8 @@ for (const e of upcomingEvents) {
 
     <div class="grid md:grid-cols-2 gap-6">
       {
-        talks.slice(0, 4).map((entry) => (
-          <div
-            class="basegrid-entry aspect-video"
+        manualTalks.map((entry) => (
+          <a href={entry.url} target="_blank" class="basegrid-entry aspect-video"
             style={{
               backgroundImage: `url("${entry.img}")`,
               backgroundSize: "cover",
@@ -224,12 +276,12 @@ for (const e of upcomingEvents) {
             }}
           >
             <div class="title">
-              <a href={entry.url}>{entry.title}</a>
+              <span>{entry.title}</span>
               <span class="date">
                 {format(new Date(entry.date), "MMMM do, yyyy")}
               </span>
             </div>
-          </div>
+          </a>
         ))
       }
     </div>
