@@ -38,7 +38,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 3311
+      "contributions": 3313
     },
     {
       "login": "burningtree",
@@ -82,7 +82,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 800
+      "contributions": 803
     },
     {
       "login": "EclecticSamurai",
@@ -368,7 +368,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 53
+      "contributions": 59
     },
     {
       "login": "MufCZ",
@@ -415,6 +415,28 @@
       "contributions": 45
     },
     {
+      "login": "0xdevant",
+      "id": 26415019,
+      "node_id": "MDQ6VXNlcjI2NDE1MDE5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26415019?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/0xdevant",
+      "html_url": "https://github.com/0xdevant",
+      "followers_url": "https://api.github.com/users/0xdevant/followers",
+      "following_url": "https://api.github.com/users/0xdevant/following{/other_user}",
+      "gists_url": "https://api.github.com/users/0xdevant/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/0xdevant/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/0xdevant/subscriptions",
+      "organizations_url": "https://api.github.com/users/0xdevant/orgs",
+      "repos_url": "https://api.github.com/users/0xdevant/repos",
+      "events_url": "https://api.github.com/users/0xdevant/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/0xdevant/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "contributions": 39
+    },
+    {
       "login": "Diex5",
       "id": 71428580,
       "node_id": "MDQ6VXNlcjcxNDI4NTgw",
@@ -435,28 +457,6 @@
       "user_view_type": "public",
       "site_admin": false,
       "contributions": 38
-    },
-    {
-      "login": "0xdevant",
-      "id": 26415019,
-      "node_id": "MDQ6VXNlcjI2NDE1MDE5",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26415019?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/0xdevant",
-      "html_url": "https://github.com/0xdevant",
-      "followers_url": "https://api.github.com/users/0xdevant/followers",
-      "following_url": "https://api.github.com/users/0xdevant/following{/other_user}",
-      "gists_url": "https://api.github.com/users/0xdevant/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/0xdevant/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/0xdevant/subscriptions",
-      "organizations_url": "https://api.github.com/users/0xdevant/orgs",
-      "repos_url": "https://api.github.com/users/0xdevant/repos",
-      "events_url": "https://api.github.com/users/0xdevant/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/0xdevant/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false,
-      "contributions": 34
     },
     {
       "login": "lucilapastore",

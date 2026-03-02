@@ -17,7 +17,7 @@
     "explorer-data": "https://explorer-data.web3privacy.info",
     "jobs": "https://jobs.web3privacy.info",
     "news": "https://news.web3privacy.info",
-    "cfp": "https://cfp.web3privacy.info",
+    "cfp": "https://tally.so/forms/nrOzXl",
     "membership overview": "https://web3privacy.info/membership",
     "individual membership": "https://docs.web3privacy.info/get-involved/personal-benefits",
     "organisational membership": "https://docs.web3privacy.info/get-involved/org-benefits",
@@ -2873,6 +2873,9 @@
       "confirmed": true,
       "coincidence": "ETHRome",
       "lead": "PG",
+      "design": {
+        "image": "rome01"
+      },
       "links": {
         "web": "https://lu.ma/web3privacynow_rome"
       },
