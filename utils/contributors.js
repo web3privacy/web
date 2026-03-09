@@ -48,6 +48,14 @@ async function getContributors() {
       },
     );
     const arr = await response.json();
+    if (!response.ok) {
+      console.warn(`GitHub API ${response.status} for ${cr}:`, arr?.message ?? arr);
+      continue;
+    }
+    if (!Array.isArray(arr)) {
+      console.warn(`Non-array response for ${cr}:`, arr?.message ?? arr);
+      continue;
+    }
     for (const item of arr) {
       if (isBlacklisted(item.login)) {
         continue;
