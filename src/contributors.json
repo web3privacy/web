@@ -38,7 +38,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 3313
+      "contributions": 3316
     },
     {
       "login": "burningtree",
@@ -82,7 +82,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 803
+      "contributions": 808
     },
     {
       "login": "EclecticSamurai",
@@ -327,6 +327,28 @@
       "contributions": 71
     },
     {
+      "login": "Ma-xvx",
+      "id": 229830690,
+      "node_id": "U_kgDODbLwIg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/229830690?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Ma-xvx",
+      "html_url": "https://github.com/Ma-xvx",
+      "followers_url": "https://api.github.com/users/Ma-xvx/followers",
+      "following_url": "https://api.github.com/users/Ma-xvx/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Ma-xvx/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Ma-xvx/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Ma-xvx/subscriptions",
+      "organizations_url": "https://api.github.com/users/Ma-xvx/orgs",
+      "repos_url": "https://api.github.com/users/Ma-xvx/repos",
+      "events_url": "https://api.github.com/users/Ma-xvx/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Ma-xvx/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "contributions": 62
+    },
+    {
       "login": "coinmandeer",
       "id": 62942796,
       "node_id": "MDQ6VXNlcjYyOTQyNzk2",
@@ -347,28 +369,6 @@
       "user_view_type": "public",
       "site_admin": false,
       "contributions": 60
-    },
-    {
-      "login": "Ma-xvx",
-      "id": 229830690,
-      "node_id": "U_kgDODbLwIg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/229830690?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Ma-xvx",
-      "html_url": "https://github.com/Ma-xvx",
-      "followers_url": "https://api.github.com/users/Ma-xvx/followers",
-      "following_url": "https://api.github.com/users/Ma-xvx/following{/other_user}",
-      "gists_url": "https://api.github.com/users/Ma-xvx/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/Ma-xvx/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/Ma-xvx/subscriptions",
-      "organizations_url": "https://api.github.com/users/Ma-xvx/orgs",
-      "repos_url": "https://api.github.com/users/Ma-xvx/repos",
-      "events_url": "https://api.github.com/users/Ma-xvx/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/Ma-xvx/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false,
-      "contributions": 59
     },
     {
       "login": "MufCZ",
@@ -434,7 +434,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 39
+      "contributions": 40
     },
     {
       "login": "Diex5",
