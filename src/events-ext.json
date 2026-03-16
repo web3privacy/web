@@ -6,7 +6,17 @@
       "2026-05-07T15:00:00.000Z",
       "2026-05-07T20:00:00.000Z"
     ],
-    "coverUrl": "https://images.lumacdn.com/event-covers/kx/6a7544f9-4546-41d3-ae8a-018f7116ee16.jpg",
+    "coverUrl": "https://images.lumacdn.com/event-covers/oe/daa35655-2175-4151-b02f-751351080255.png",
+    "guestCount": 0
+  },
+  {
+    "url": "zttuflbr",
+    "name": "Web3Privacy now Cluj meetup",
+    "period": [
+      "2026-05-12T13:00:00.000Z",
+      "2026-05-12T16:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/gallery-images/ll/e2f4f925-c2f4-4258-ab7b-5ffa176284e8",
     "guestCount": 0
   },
   {
@@ -57,6 +67,6 @@
       "2026-11-02T13:30:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/cv/284c4fdb-ab37-4cb2-9981-12311c5d62f0.png",
-    "guestCount": 445
+    "guestCount": 462
   }
 ]
