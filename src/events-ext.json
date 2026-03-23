@@ -1,5 +1,15 @@
 [
   {
+    "url": "l3hxaaii",
+    "name": "Occupy EthCC",
+    "period": [
+      "2026-03-31T14:30:00.000Z",
+      "2026-03-31T18:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/cm/d8add5a2-9b20-481a-86ee-5f3d1bf689fa.png",
+    "guestCount": 0
+  },
+  {
     "url": "98pzi0jh",
     "name": "Web3Privacy now Prague meetup",
     "period": [
@@ -7,6 +17,16 @@
       "2026-05-07T20:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/oe/daa35655-2175-4151-b02f-751351080255.png",
+    "guestCount": 0
+  },
+  {
+    "url": "q1sdbqf3",
+    "name": "Web3Privacy now Rome Meetup",
+    "period": [
+      "2026-05-08T13:30:00.000Z",
+      "2026-05-08T19:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/event-covers/tc/2f498448-e7e9-439e-a559-83112aa7a660.png",
     "guestCount": 0
   },
   {
@@ -26,7 +46,7 @@
       "2026-06-14T08:00:00.000Z",
       "2026-06-14T17:00:00.000Z"
     ],
-    "coverUrl": "https://images.lumacdn.com/event-covers/4v/c80dcfc1-71f1-4a97-aa91-dfb5121ec9a1.png",
+    "coverUrl": "https://images.lumacdn.com/event-covers/9i/b7c2c0df-55a9-4de3-8106-e6eac6e10a13.png",
     "guestCount": 0
   },
   {
@@ -37,16 +57,6 @@
       "2026-09-01T18:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/ot/853d5947-6274-4b02-aa17-98daedcec8c0.png",
-    "guestCount": 0
-  },
-  {
-    "url": "q1sdbqf3",
-    "name": "Web3Privacy now Rome meetup",
-    "period": [
-      "2026-09-10T12:00:00.000Z",
-      "2026-09-10T17:00:00.000Z"
-    ],
-    "coverUrl": "https://images.lumacdn.com/event-covers/ad/e0018c33-e3b1-4d34-a86d-d3a876fe847a.png",
     "guestCount": 0
   },
   {
@@ -67,6 +77,6 @@
       "2026-11-02T13:30:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/cv/284c4fdb-ab37-4cb2-9981-12311c5d62f0.png",
-    "guestCount": 462
+    "guestCount": 480
   }
 ]
