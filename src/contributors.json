@@ -38,7 +38,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 3320
+      "contributions": 3324
     },
     {
       "login": "burningtree",
@@ -82,7 +82,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 818
+      "contributions": 821
     },
     {
       "login": "EclecticSamurai",
@@ -283,6 +283,28 @@
       "contributions": 104
     },
     {
+      "login": "Ma-xvx",
+      "id": 229830690,
+      "node_id": "U_kgDODbLwIg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/229830690?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Ma-xvx",
+      "html_url": "https://github.com/Ma-xvx",
+      "followers_url": "https://api.github.com/users/Ma-xvx/followers",
+      "following_url": "https://api.github.com/users/Ma-xvx/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Ma-xvx/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Ma-xvx/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Ma-xvx/subscriptions",
+      "organizations_url": "https://api.github.com/users/Ma-xvx/orgs",
+      "repos_url": "https://api.github.com/users/Ma-xvx/repos",
+      "events_url": "https://api.github.com/users/Ma-xvx/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Ma-xvx/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "contributions": 76
+    },
+    {
       "login": "danielklein-arch",
       "id": 82767072,
       "node_id": "MDQ6VXNlcjgyNzY3MDcy",
@@ -303,28 +325,6 @@
       "user_view_type": "public",
       "site_admin": false,
       "contributions": 76
-    },
-    {
-      "login": "Ma-xvx",
-      "id": 229830690,
-      "node_id": "U_kgDODbLwIg",
-      "avatar_url": "https://avatars.githubusercontent.com/u/229830690?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Ma-xvx",
-      "html_url": "https://github.com/Ma-xvx",
-      "followers_url": "https://api.github.com/users/Ma-xvx/followers",
-      "following_url": "https://api.github.com/users/Ma-xvx/following{/other_user}",
-      "gists_url": "https://api.github.com/users/Ma-xvx/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/Ma-xvx/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/Ma-xvx/subscriptions",
-      "organizations_url": "https://api.github.com/users/Ma-xvx/orgs",
-      "repos_url": "https://api.github.com/users/Ma-xvx/repos",
-      "events_url": "https://api.github.com/users/Ma-xvx/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/Ma-xvx/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false,
-      "contributions": 72
     },
     {
       "login": "organizedpunk",
