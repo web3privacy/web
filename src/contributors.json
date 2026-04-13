@@ -38,7 +38,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 3325
+      "contributions": 3326
     },
     {
       "login": "burningtree",
@@ -82,7 +82,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 821
+      "contributions": 823
     },
     {
       "login": "EclecticSamurai",
@@ -302,7 +302,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 80
+      "contributions": 84
     },
     {
       "login": "danielklein-arch",
@@ -368,7 +368,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 60
+      "contributions": 61
     },
     {
       "login": "MufCZ",
@@ -591,28 +591,6 @@
       "contributions": 10
     },
     {
-      "login": "sanada08",
-      "id": 45681066,
-      "node_id": "MDQ6VXNlcjQ1NjgxMDY2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/45681066?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/sanada08",
-      "html_url": "https://github.com/sanada08",
-      "followers_url": "https://api.github.com/users/sanada08/followers",
-      "following_url": "https://api.github.com/users/sanada08/following{/other_user}",
-      "gists_url": "https://api.github.com/users/sanada08/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/sanada08/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/sanada08/subscriptions",
-      "organizations_url": "https://api.github.com/users/sanada08/orgs",
-      "repos_url": "https://api.github.com/users/sanada08/repos",
-      "events_url": "https://api.github.com/users/sanada08/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/sanada08/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false,
-      "contributions": 9
-    },
-    {
       "login": "0xMilica",
       "id": 16452832,
       "node_id": "MDQ6VXNlcjE2NDUyODMy",
@@ -629,6 +607,28 @@
       "repos_url": "https://api.github.com/users/0xMilica/repos",
       "events_url": "https://api.github.com/users/0xMilica/events{/privacy}",
       "received_events_url": "https://api.github.com/users/0xMilica/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "contributions": 9
+    },
+    {
+      "login": "sanada08",
+      "id": 45681066,
+      "node_id": "MDQ6VXNlcjQ1NjgxMDY2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45681066?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sanada08",
+      "html_url": "https://github.com/sanada08",
+      "followers_url": "https://api.github.com/users/sanada08/followers",
+      "following_url": "https://api.github.com/users/sanada08/following{/other_user}",
+      "gists_url": "https://api.github.com/users/sanada08/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/sanada08/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/sanada08/subscriptions",
+      "organizations_url": "https://api.github.com/users/sanada08/orgs",
+      "repos_url": "https://api.github.com/users/sanada08/repos",
+      "events_url": "https://api.github.com/users/sanada08/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/sanada08/received_events",
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
