@@ -1,5 +1,17 @@
 [
   {
+    "url": "https://www.youtube.com/watch?v=nAigLthdBPY",
+    "title": "Roger Dingledine from Tor on why ecosystem funding matters",
+    "img": "https://i3.ytimg.com/vi/nAigLthdBPY/sddefault.jpg",
+    "date": "2026-05-26T10:37:39.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=VgWmWEGtQ5U",
+    "title": "Naomi Brockwell [NBTV, Ludlow Institute] on why Tor ecosystem funding matters",
+    "img": "https://i3.ytimg.com/vi/VgWmWEGtQ5U/sddefault.jpg",
+    "date": "2026-05-25T21:29:48.000Z"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=srg3BlUoLe0",
     "title": "Kurt Opsahl [ex-EFF, Filecoin Foundation] on why Tor ecosystem funding matters",
     "img": "https://i4.ytimg.com/vi/srg3BlUoLe0/sddefault.jpg",
@@ -76,17 +88,5 @@
     "title": "Using multiple tools and minimizing digital traces // #crypto #tech #neocypherpunk #privacy",
     "img": "https://i3.ytimg.com/vi/jiejXmuj5FU/sddefault.jpg",
     "date": "2026-05-01T10:01:10.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=9l32nr2Mb6I",
-    "title": "Privacy Isn’t a Feature. It’s Who You Are // Chris McCabe (Session)",
-    "img": "https://i2.ytimg.com/vi/9l32nr2Mb6I/sddefault.jpg",
-    "date": "2026-04-30T10:41:23.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/shorts/XQaHl7qSpvg",
-    "title": "#Privacy as a collective movement beyond technologists // #crypto #neocypherpunk #tech",
-    "img": "https://i1.ytimg.com/vi/XQaHl7qSpvg/sddefault.jpg",
-    "date": "2026-04-30T10:00:55.000Z"
   }
 ]
