@@ -1,7 +1,19 @@
 [
   {
+    "url": "https://www.youtube.com/watch?v=kHy7gaPAtGY",
+    "title": "Eva Galperin [Electronic Frontier Foundation] on why Tor ecosystem funding matters.",
+    "img": "https://i4.ytimg.com/vi/kHy7gaPAtGY/sddefault.jpg",
+    "date": "2026-06-05T14:53:26.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=bEr6cHscm3w",
+    "title": "Sometimes Freedom Cant Be Expressed | the Tor Project + Funding the Commons pwrd by W3PN",
+    "img": "https://i3.ytimg.com/vi/bEr6cHscm3w/sddefault.jpg",
+    "date": "2026-06-04T14:03:31.000Z"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=nAigLthdBPY",
-    "title": "Roger Dingledine from Tor on why ecosystem funding matters",
+    "title": "Roger Dingledine [ the Tor Project] on why Tor ecosystem funding matters",
     "img": "https://i3.ytimg.com/vi/nAigLthdBPY/sddefault.jpg",
     "date": "2026-05-26T10:37:39.000Z"
   },
@@ -76,17 +88,5 @@
     "title": "Rejecting cookies as “digital disobedience” part 2",
     "img": "https://i4.ytimg.com/vi/cBTw_wRB0EI/sddefault.jpg",
     "date": "2026-05-03T10:00:57.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/shorts/_RuobtP16fk",
-    "title": "Rejecting cookies as “digital disobedience” // #privacy #crypto #tech",
-    "img": "https://i4.ytimg.com/vi/_RuobtP16fk/sddefault.jpg",
-    "date": "2026-05-02T10:00:57.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/shorts/jiejXmuj5FU",
-    "title": "Using multiple tools and minimizing digital traces // #crypto #tech #neocypherpunk #privacy",
-    "img": "https://i3.ytimg.com/vi/jiejXmuj5FU/sddefault.jpg",
-    "date": "2026-05-01T10:01:10.000Z"
   }
 ]
