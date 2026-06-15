@@ -1,15 +1,5 @@
 [
   {
-    "url": "f47k4xnd",
-    "name": "Neocypherpunk Summit by Web3Privacy now",
-    "period": [
-      "2026-06-14T08:00:00.000Z",
-      "2026-06-14T17:00:00.000Z"
-    ],
-    "coverUrl": "https://images.lumacdn.com/event-covers/aw/837f2238-008b-44cb-b511-b59bc9cf51c0.png",
-    "guestCount": 0
-  },
-  {
     "url": "sixp297m",
     "name": "Web3Privacy now meetup",
     "period": [
@@ -37,6 +27,6 @@
       "2026-11-02T13:30:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/cv/284c4fdb-ab37-4cb2-9981-12311c5d62f0.png",
-    "guestCount": 978
+    "guestCount": 1052
   }
 ]
