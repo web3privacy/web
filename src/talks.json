@@ -1,5 +1,17 @@
 [
   {
+    "url": "https://www.youtube.com/watch?v=TxOAID1UsIQ",
+    "title": "\"Ethereum Has a Funding Problem - Here's the Fix \"/ Devansh Mehta x Ethereum Foundation",
+    "img": "https://i1.ytimg.com/vi/TxOAID1UsIQ/sddefault.jpg",
+    "date": "2026-07-24T13:20:36.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=5xVSAU3o3gI",
+    "title": "\"Privacy Isn't About Hiding — It's About Being Human\".  Jaya Klara Brekke / NYM",
+    "img": "https://i2.ytimg.com/vi/5xVSAU3o3gI/sddefault.jpg",
+    "date": "2026-07-21T10:45:53.000Z"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=Bk6UH6kbc94",
     "title": "Programmable Cryptography and the Art of Selling Your Face || Moist Cryptography",
     "img": "https://i3.ytimg.com/vi/Bk6UH6kbc94/sddefault.jpg",
@@ -76,17 +88,5 @@
     "title": "Naming the Harm: A Privacy Threat Vocabulary for Cypherpunks| Mate Soos and Daniel Calderon",
     "img": "https://i4.ytimg.com/vi/C7pIXsdhMf0/sddefault.jpg",
     "date": "2026-07-08T13:10:28.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=Q39Ut1kpCso",
-    "title": "Measuring the Internet to fight censorship / Arturo Filastro, OONI",
-    "img": "https://i2.ytimg.com/vi/Q39Ut1kpCso/sddefault.jpg",
-    "date": "2026-07-07T10:30:15.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=rokjXy0FlXU",
-    "title": "Neo-Cypherpunk Summit Berlin 2026 // Aftermovie",
-    "img": "https://i3.ytimg.com/vi/rokjXy0FlXU/sddefault.jpg",
-    "date": "2026-07-06T18:19:53.000Z"
   }
 ]
