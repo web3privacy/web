@@ -1,5 +1,17 @@
 [
   {
+    "url": "https://www.youtube.com/watch?v=1tTJDN0o3nc",
+    "title": "Who Really Controls Ethereum? - Paul Dylan Ennis x Ethereum",
+    "img": "https://i2.ytimg.com/vi/1tTJDN0o3nc/sddefault.jpg",
+    "date": "2026-07-31T10:42:49.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=G9toY-dZr60",
+    "title": "Can Blockchain Really Make Us Free? - Julio Linares / Poetic Technologies",
+    "img": "https://i4.ytimg.com/vi/G9toY-dZr60/sddefault.jpg",
+    "date": "2026-07-28T10:57:44.000Z"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=TxOAID1UsIQ",
     "title": "\"Ethereum Has a Funding Problem - Here's the Fix \"/ Devansh Mehta x Ethereum Foundation",
     "img": "https://i1.ytimg.com/vi/TxOAID1UsIQ/sddefault.jpg",
@@ -76,17 +88,5 @@
     "title": "We Promised Decentralization, but Forgot to Build the Infrastructure | Shayan Eskandari",
     "img": "https://i3.ytimg.com/vi/bt9mLR6wOQs/sddefault.jpg",
     "date": "2026-07-08T13:25:30.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=RZnGN-O9hfc",
-    "title": "From standardizing Messaging Layer Security to building Air,  new private messenger | Raphael Robert",
-    "img": "https://i3.ytimg.com/vi/RZnGN-O9hfc/sddefault.jpg",
-    "date": "2026-07-08T13:20:13.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=C7pIXsdhMf0",
-    "title": "Naming the Harm: A Privacy Threat Vocabulary for Cypherpunks| Mate Soos and Daniel Calderon",
-    "img": "https://i4.ytimg.com/vi/C7pIXsdhMf0/sddefault.jpg",
-    "date": "2026-07-08T13:10:28.000Z"
   }
 ]
