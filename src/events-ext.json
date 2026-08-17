@@ -20,6 +20,16 @@
     "guestCount": 0
   },
   {
+    "url": "mmfpumzi",
+    "name": "W3PN x MozFest meetup",
+    "period": [
+      "2026-10-27T16:00:00.000Z",
+      "2026-10-27T20:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/uploads/cu/a5a439f4-aff3-4664-9f58-8cfad4f0b892.png",
+    "guestCount": 0
+  },
+  {
     "url": "spsnos9t",
     "name": "Ethereum Cypherpunk Congress #3",
     "period": [
@@ -27,6 +37,6 @@
       "2026-11-02T13:30:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/cv/284c4fdb-ab37-4cb2-9981-12311c5d62f0.png",
-    "guestCount": 1640
+    "guestCount": 1691
   }
 ]
