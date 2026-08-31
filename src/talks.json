@@ -1,5 +1,17 @@
 [
   {
+    "url": "https://www.youtube.com/watch?v=MnDXcZussgA",
+    "title": "We Built the Wrong Internet. Rob Knight 0xPARC",
+    "img": "https://i2.ytimg.com/vi/MnDXcZussgA/sddefault.jpg",
+    "date": "2026-08-25T12:28:31.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=E8vw4N2rc3A",
+    "title": "Why Ethereum Needs Milady? - Tim Clancy",
+    "img": "https://i2.ytimg.com/vi/E8vw4N2rc3A/sddefault.jpg",
+    "date": "2026-08-25T12:19:13.000Z"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=1tTJDN0o3nc",
     "title": "Who Really Controls Ethereum? - Paul Dylan Ennis x Ethereum",
     "img": "https://i2.ytimg.com/vi/1tTJDN0o3nc/sddefault.jpg",
@@ -76,17 +88,5 @@
     "title": "Privacy, and Real and Local Collective Actions || PG, Kris Decoodt, Bastin Jafari, Koss",
     "img": "https://i1.ytimg.com/vi/x0iwjFirizU/sddefault.jpg",
     "date": "2026-07-08T13:55:29.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=6oIzZRsk4e8",
-    "title": "No Longer Just Concrete: the Collapse of Private Space || Una Wang",
-    "img": "https://i3.ytimg.com/vi/6oIzZRsk4e8/sddefault.jpg",
-    "date": "2026-07-08T13:38:02.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=bt9mLR6wOQs",
-    "title": "We Promised Decentralization, but Forgot to Build the Infrastructure | Shayan Eskandari",
-    "img": "https://i3.ytimg.com/vi/bt9mLR6wOQs/sddefault.jpg",
-    "date": "2026-07-08T13:25:30.000Z"
   }
 ]
