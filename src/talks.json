@@ -1,5 +1,11 @@
 [
   {
+    "url": "https://www.youtube.com/watch?v=Ah5exWsuGvs",
+    "title": "The Plural Monolith by SWARM // Neo Cypherpunk Summit 2026",
+    "img": "https://i2.ytimg.com/vi/Ah5exWsuGvs/sddefault.jpg",
+    "date": "2026-09-01T12:25:03.000Z"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=MnDXcZussgA",
     "title": "We Built the Wrong Internet. Rob Knight 0xPARC",
     "img": "https://i2.ytimg.com/vi/MnDXcZussgA/sddefault.jpg",
@@ -82,11 +88,5 @@
     "title": "State of Privacy in Web3: Where We Are, Where We're Going || panel discussion",
     "img": "https://i2.ytimg.com/vi/myRlASvXA_w/sddefault.jpg",
     "date": "2026-07-08T14:09:47.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=x0iwjFirizU",
-    "title": "Privacy, and Real and Local Collective Actions || PG, Kris Decoodt, Bastin Jafari, Koss",
-    "img": "https://i1.ytimg.com/vi/x0iwjFirizU/sddefault.jpg",
-    "date": "2026-07-08T13:55:29.000Z"
   }
 ]
