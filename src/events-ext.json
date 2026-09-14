@@ -1,15 +1,5 @@
 [
   {
-    "url": "kpcrvvlm",
-    "name": "Web3Privacy Now Rome Meetup",
-    "period": [
-      "2026-09-11T14:00:00.000Z",
-      "2026-09-11T15:00:00.000Z"
-    ],
-    "coverUrl": "https://images.lumacdn.com/uploads/4e/3a6284b1-6e59-44ea-beda-41a59e8d1305.png",
-    "guestCount": 9
-  },
-  {
     "url": "ispxo30p",
     "name": "Web3Privacy now Tokyo meetup",
     "period": [
@@ -37,6 +27,6 @@
       "2026-11-02T13:30:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/cv/284c4fdb-ab37-4cb2-9981-12311c5d62f0.png",
-    "guestCount": 1953
+    "guestCount": 2055
   }
 ]
