@@ -3,8 +3,8 @@
     "url": "ispxo30p",
     "name": "Web3Privacy now Tokyo meetup",
     "period": [
-      "2026-09-18T12:00:00.000Z",
-      "2026-09-18T17:00:00.000Z"
+      "2026-09-24T06:00:00.000Z",
+      "2026-09-24T09:00:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/ub/5d0d6f70-bf08-419c-83e7-6b8f50b5ca1d.png",
     "guestCount": 0
@@ -27,6 +27,16 @@
       "2026-11-02T13:30:00.000Z"
     ],
     "coverUrl": "https://images.lumacdn.com/event-covers/cv/284c4fdb-ab37-4cb2-9981-12311c5d62f0.png",
-    "guestCount": 2055
+    "guestCount": 2112
+  },
+  {
+    "url": "u99lzvan",
+    "name": "Neo-cypherpunk Summit 2027",
+    "period": [
+      "2027-06-13T07:30:00.000Z",
+      "2027-06-13T18:00:00.000Z"
+    ],
+    "coverUrl": "https://images.lumacdn.com/uploads/bv/2db9b625-8a08-43cb-874c-5a444c24e7a9.png",
+    "guestCount": 0
   }
 ]
