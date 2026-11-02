@@ -38,7 +38,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 3239
+      "contributions": 3342
     },
     {
       "login": "undecidedpathways",
@@ -82,7 +82,29 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 786
+      "contributions": 933
+    },
+    {
+      "login": "EclecticSamurai",
+      "id": 101947219,
+      "node_id": "U_kgDOBhOXUw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/101947219?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/EclecticSamurai",
+      "html_url": "https://github.com/EclecticSamurai",
+      "followers_url": "https://api.github.com/users/EclecticSamurai/followers",
+      "following_url": "https://api.github.com/users/EclecticSamurai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/EclecticSamurai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/EclecticSamurai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/EclecticSamurai/subscriptions",
+      "organizations_url": "https://api.github.com/users/EclecticSamurai/orgs",
+      "repos_url": "https://api.github.com/users/EclecticSamurai/repos",
+      "events_url": "https://api.github.com/users/EclecticSamurai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/EclecticSamurai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "contributions": 631
     },
     {
       "login": "niclaz",
@@ -105,28 +127,6 @@
       "user_view_type": "public",
       "site_admin": false,
       "contributions": 614
-    },
-    {
-      "login": "EclecticSamurai",
-      "id": 101947219,
-      "node_id": "U_kgDOBhOXUw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/101947219?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/EclecticSamurai",
-      "html_url": "https://github.com/EclecticSamurai",
-      "followers_url": "https://api.github.com/users/EclecticSamurai/followers",
-      "following_url": "https://api.github.com/users/EclecticSamurai/following{/other_user}",
-      "gists_url": "https://api.github.com/users/EclecticSamurai/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/EclecticSamurai/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/EclecticSamurai/subscriptions",
-      "organizations_url": "https://api.github.com/users/EclecticSamurai/orgs",
-      "repos_url": "https://api.github.com/users/EclecticSamurai/repos",
-      "events_url": "https://api.github.com/users/EclecticSamurai/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/EclecticSamurai/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false,
-      "contributions": 554
     },
     {
       "login": "ethanolo-eth",
@@ -170,7 +170,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 469
+      "contributions": 473
     },
     {
       "login": "DeBelg",
@@ -346,7 +346,7 @@
       "type": "User",
       "user_view_type": "public",
       "site_admin": false,
-      "contributions": 59
+      "contributions": 61
     },
     {
       "login": "MufCZ",
@@ -523,6 +523,28 @@
       "user_view_type": "public",
       "site_admin": false,
       "contributions": 13
+    },
+    {
+      "login": "jakubklim",
+      "id": 93137966,
+      "node_id": "U_kgDOBY0sLg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93137966?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jakubklim",
+      "html_url": "https://github.com/jakubklim",
+      "followers_url": "https://api.github.com/users/jakubklim/followers",
+      "following_url": "https://api.github.com/users/jakubklim/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jakubklim/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jakubklim/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jakubklim/subscriptions",
+      "organizations_url": "https://api.github.com/users/jakubklim/orgs",
+      "repos_url": "https://api.github.com/users/jakubklim/repos",
+      "events_url": "https://api.github.com/users/jakubklim/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jakubklim/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "contributions": 12
     },
     {
       "login": "shan8851",
@@ -765,6 +787,28 @@
       "user_view_type": "public",
       "site_admin": false,
       "contributions": 7
+    },
+    {
+      "login": "sripwoud",
+      "id": 38692952,
+      "node_id": "MDQ6VXNlcjM4NjkyOTUy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38692952?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/sripwoud",
+      "html_url": "https://github.com/sripwoud",
+      "followers_url": "https://api.github.com/users/sripwoud/followers",
+      "following_url": "https://api.github.com/users/sripwoud/following{/other_user}",
+      "gists_url": "https://api.github.com/users/sripwoud/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/sripwoud/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/sripwoud/subscriptions",
+      "organizations_url": "https://api.github.com/users/sripwoud/orgs",
+      "repos_url": "https://api.github.com/users/sripwoud/repos",
+      "events_url": "https://api.github.com/users/sripwoud/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/sripwoud/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "contributions": 6
     },
     {
       "login": "hackyguru",
@@ -1139,6 +1183,28 @@
       "user_view_type": "public",
       "site_admin": false,
       "contributions": 4
+    },
+    {
+      "login": "wslyvh",
+      "id": 25974464,
+      "node_id": "MDQ6VXNlcjI1OTc0NDY0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/25974464?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wslyvh",
+      "html_url": "https://github.com/wslyvh",
+      "followers_url": "https://api.github.com/users/wslyvh/followers",
+      "following_url": "https://api.github.com/users/wslyvh/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wslyvh/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wslyvh/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wslyvh/subscriptions",
+      "organizations_url": "https://api.github.com/users/wslyvh/orgs",
+      "repos_url": "https://api.github.com/users/wslyvh/repos",
+      "events_url": "https://api.github.com/users/wslyvh/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wslyvh/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "contributions": 3
     },
     {
       "login": "guelowrd",
