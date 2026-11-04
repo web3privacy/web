@@ -73,7 +73,7 @@ const eventPoster = getEventPoster(item)
                     </div>
                 }
                 {/*<div class="text-sm"></div>*/}
-                {item.links?.rsvp &&
+                {status.title !== 'Already happened' && item.links?.rsvp &&
                         <a href={item.links?.rsvp} class="button inverted border-2"><button>Join</button></a>
                 }
             </div>
@@ -99,8 +99,11 @@ const eventPoster = getEventPoster(item)
 
             <div class="mt-4 mb-2 flex flex-wrap gap-4">
                 <a href={`/event/${item.id}`} class="button inverted"><button>More details</button></a>
-                {item.links?.rsvp &&
+                {status.title !== 'Already happened' && item.links?.rsvp &&
                     <a href={item.links.rsvp} class="button inverted"><button>RSVP</button></a>
+                }
+                {status.title === 'Already happened' && core.links.youtube &&
+                    <a href={core.links.youtube} target="_blank" rel="noopener noreferrer" class="button inverted"><button>Watch recordings</button></a>
                 }
                 {item.links?.web &&
                     <a href={item.links.web} class="button inverted"><button>Website</button></a>

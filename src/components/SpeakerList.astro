@@ -1,9 +1,11 @@
 ---
 import { marked,  } from 'marked';
 const { item, thumbSize } = Astro.props;
-import { getSpeaker, getSpeakerImage } from '../lib/events.js';
+import { getSpeaker, getSpeakerImage, eventStatus } from '../lib/events.js';
 import core from "../core.json";
 
+const status = eventStatus(item);
+const isPast = status.title === 'Already happened';
 ---
 
 {item.speakers &&
@@ -26,8 +28,13 @@ import core from "../core.json";
             ))}
         </div>
 
-        <div class="mt-8">
-            <a href={core.links.cfp} class="button inverted"><button>Submit proposal (CfP)</button></a>
+        <div class="mt-8 flex flex-wrap gap-4">
+            {!isPast && core.links.cfp &&
+                <a href={core.links.cfp} class="button inverted"><button>Submit proposal (CfP)</button></a>
+            }
+            {isPast && core.links.youtube &&
+                <a href={core.links.youtube} target="_blank" rel="noopener noreferrer" class="button inverted"><button>Watch recordings</button></a>
+            }
         </div>
     </div>
 }
@@ -35,10 +42,15 @@ import core from "../core.json";
     <div class="my-6">
         <h2>Speakers (0)</h2>
 
-        <div class="mt-4">Stay tuned. Speakers coming :-)</div>
+        <div class="mt-4">{isPast ? 'No speaker records available.' : 'Stay tuned. Speakers coming :-)'}</div>
 
-        <div class="mt-6">
-            <a href={core.links.cfp} class="button inverted"><button>Submit proposal (CfP)</button></a>
+        <div class="mt-6 flex flex-wrap gap-4">
+            {!isPast && core.links.cfp &&
+                <a href={core.links.cfp} class="button inverted"><button>Submit proposal (CfP)</button></a>
+            }
+            {isPast && core.links.youtube &&
+                <a href={core.links.youtube} target="_blank" rel="noopener noreferrer" class="button inverted"><button>Watch recordings</button></a>
+            }
         </div>
     </div>
 }
