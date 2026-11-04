@@ -86,9 +86,12 @@ const imageFormats = {
                             <span>n/a</span>
                         }
                     </div>
-                    <div class="mt-4 mb-2">
-                        {item.links?.rsvp &&
+                    <div class="mt-4 mb-2 flex flex-wrap gap-4">
+                        {status.title !== 'Already happened' && item.links?.rsvp &&
                             <a href={item.links.rsvp} class="button inverted"><button>{status.title === 'Pre-registration' ? 'Pre-registration' : 'Registration'}</button></a>
+                        }
+                        {status.title === 'Already happened' && core.links.youtube &&
+                            <a href={core.links.youtube} target="_blank" rel="noopener noreferrer" class="button inverted"><button>Watch recordings</button></a>
                         }
                         {item.links?.web &&
                             <a href={item.links.web} class="button inverted"><button>Website</button></a>

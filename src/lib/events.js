@@ -350,8 +350,12 @@ export function eventStatus(item) {
     const eventDate = new Date(item.date);
     const currentDate = new Date();
 
+    if (item.date && eventDate < currentDate) {
+        return statuses.past;
+    }
+
     return item.confirmed
-        ? (eventDate < currentDate ? statuses.past : statuses.confirmed)
+        ? statuses.confirmed
         : (item.links?.rsvp ? statuses.preregistration : statuses.unconfirmed);
 }
 
