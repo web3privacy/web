@@ -1,5 +1,47 @@
 [
   {
+    "url": "https://www.youtube.com/watch?v=bz3QSu2pUhM",
+    "title": "Without Privacy, You Have Nothing. | Eva Galperin,  Electronic Frontier Foundation (EFF)",
+    "img": "https://i3.ytimg.com/vi/bz3QSu2pUhM/sddefault.jpg",
+    "date": "2026-11-09T12:04:24.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/e1ADs6OQZVA",
+    "title": "#privacy #tech as #freedom or anti-system technologies",
+    "img": "https://i2.ytimg.com/vi/e1ADs6OQZVA/sddefault.jpg",
+    "date": "2026-11-09T09:00:18.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/vxp_3CnmX9U",
+    "title": "#everyday #privacy tools",
+    "img": "https://i3.ytimg.com/vi/vxp_3CnmX9U/sddefault.jpg",
+    "date": "2026-11-08T10:00:22.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/EXRCNPkbOxE",
+    "title": "#privacyfirst habits and using #tools by default // #tech",
+    "img": "https://i2.ytimg.com/vi/EXRCNPkbOxE/sddefault.jpg",
+    "date": "2026-11-07T11:00:34.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/McnlBJHGS_4",
+    "title": "From #cypherpunk to #neocypherpunk and collective systems // #privacy",
+    "img": "https://i2.ytimg.com/vi/McnlBJHGS_4/sddefault.jpg",
+    "date": "2026-11-06T12:00:08.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/shorts/NPdvElQO56k",
+    "title": "#privacy as #anonymity and selective disclosure",
+    "img": "https://i3.ytimg.com/vi/NPdvElQO56k/sddefault.jpg",
+    "date": "2026-11-05T14:00:14.000Z"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=u6-IHS6_CSg",
+    "title": "Pranesh Prakash message to Cypherpunk Congress attendees, Mumbai",
+    "img": "https://i2.ytimg.com/vi/u6-IHS6_CSg/sddefault.jpg",
+    "date": "2026-11-03T07:15:47.000Z"
+  },
+  {
     "url": "https://www.youtube.com/watch?v=kV3053HHMAA",
     "title": "Audrey Tang – Opening Speech | Ethereum Cypherpunk Congress",
     "img": "https://i4.ytimg.com/vi/kV3053HHMAA/sddefault.jpg",
@@ -37,7 +79,7 @@
   },
   {
     "url": "https://www.youtube.com/watch?v=uWwbepwaAl8",
-    "title": "How to Design Ethereum for 1,000 Years? - Tomo Saito, designer x Ethereum Foundation.",
+    "title": "How to Design Ethereum for 1,000 Years? | Tomo Saito, designer x Ethereum Foundation.",
     "img": "https://i2.ytimg.com/vi/uWwbepwaAl8/sddefault.jpg",
     "date": "2026-09-16T14:00:59.000Z"
   },
@@ -46,47 +88,5 @@
     "title": "The World Has a Governance Problem | Nick Almond (Jito)",
     "img": "https://i4.ytimg.com/vi/crggxW8r0iY/sddefault.jpg",
     "date": "2026-09-16T13:52:36.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=Nx0L9zYSU70",
-    "title": "Ethereum Cypherpunk Congress #3 - Web3Privacy Now // Promo",
-    "img": "https://i3.ytimg.com/vi/Nx0L9zYSU70/sddefault.jpg",
-    "date": "2026-09-11T07:44:05.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=Ah5exWsuGvs",
-    "title": "The Plural Monolith by SWARM // Neo Cypherpunk Summit 2026",
-    "img": "https://i2.ytimg.com/vi/Ah5exWsuGvs/sddefault.jpg",
-    "date": "2026-09-01T12:25:03.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=MnDXcZussgA",
-    "title": "We Built the Wrong Internet. Rob Knight 0xPARC",
-    "img": "https://i2.ytimg.com/vi/MnDXcZussgA/sddefault.jpg",
-    "date": "2026-08-25T12:28:31.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=E8vw4N2rc3A",
-    "title": "Why Ethereum Needs Milady? - Tim Clancy",
-    "img": "https://i2.ytimg.com/vi/E8vw4N2rc3A/sddefault.jpg",
-    "date": "2026-08-25T12:19:13.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=1tTJDN0o3nc",
-    "title": "Who Really Controls Ethereum? - Paul Dylan Ennis x Ethereum",
-    "img": "https://i2.ytimg.com/vi/1tTJDN0o3nc/sddefault.jpg",
-    "date": "2026-07-31T10:42:49.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=G9toY-dZr60",
-    "title": "Can Blockchain Really Make Us Free? - Julio Linares / Poetic Technologies",
-    "img": "https://i4.ytimg.com/vi/G9toY-dZr60/sddefault.jpg",
-    "date": "2026-07-28T10:57:44.000Z"
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=TxOAID1UsIQ",
-    "title": "\"Ethereum Has a Funding Problem - Here's the Fix \"/ Devansh Mehta x Ethereum Foundation",
-    "img": "https://i1.ytimg.com/vi/TxOAID1UsIQ/sddefault.jpg",
-    "date": "2026-07-24T13:20:36.000Z"
   }
 ]
