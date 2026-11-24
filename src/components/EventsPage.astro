@@ -43,7 +43,7 @@ function eventsFilter (year, future=true) {
 	}
 }
 
-const pastYears = [...new Set(events.map(e => e.date.match(/^(\d{4})/)[1]))];
+const pastYears = [...new Set(events.map(e => e.date.match(/^(\d{4})/)[1]))].sort((a, b) => b.localeCompare(a));
 
 let upcomingEvents = [];
 let pastEvents = [];
@@ -58,7 +58,7 @@ const upcoming = events.filter(x => isFutureDate(x.date))
 
 const past = {}
 let pastTotal = 0
-for (const year of pastYears.reverse()) {
+for (const year of pastYears) {
 	past[year] = pastEvents.filter(eventsFilter(year, false))
 	pastTotal += past[year].length
 }
@@ -122,7 +122,7 @@ places = places.sort((x, y) => x.num < y.num ? 1 : -1)
 		{pastTotal > 0 &&
 			<div>
 				<h1 id="past">Past {title} ({events.length-upcoming.length})</h1>
-				{pastYears.reverse().map((year) => (
+				{pastYears.map((year) => (
 					past[year].length > 0 &&
 						<h2>{year} ({past[year].length})</h2>
 						<div class="mt-4 mb-10">
